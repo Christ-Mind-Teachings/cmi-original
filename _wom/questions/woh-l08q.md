@@ -1,0 +1,166 @@
+# Lesson Eight \
+Question and Answer {#QA08}
+
+## <span class="hide">Question One</span> {#l08q1}
+
+<!-- Track q1 -->
+
+*Question One:* During a period of higher consciousness, I was aware of a
+presence that encompassed individuals. It was plain to me that it
+performed a function of guiding the person into appropriate experiences.
+I’m not clear if this is what you call The Holy Spirit. It seemed to be
+like an Oversoul of the person. Would you please clarify this presence
+and the Holy Spirit?
+
+*Answer:* Beloved friend, the answer to be given fully would require some
+complexity and a great expanse of your time. For there are many
+qualities or nuances of experience within consciousness, what you would
+call “higher consciousness,” though personally, I know of no such higher
+or lower. There is merely *awareness of*, which is what consciousness is.
+
+What I have called as the *Holy Spirit* is not an *entity*. It is a *form of
+energy*. I’ve called it before *right-mindedness*, which merely means Mind
+that is operating in alignment with unlimitedness, aligned with the Mind
+of God. Therefore, what is required, by way of guidance or knowledge,
+simply flows in an unimpeded way. The Holy Spirit is that aspect of
+one’s own Mind that is, indeed, and has always remained aligned with the
+Mind of God. Therefore, it would be very appropriate to say that The
+Holy Spirit is as your Oversoul, if you will. It is an aspect of your
+own beingness given and shared equally by all. The Comforter, The Holy
+Spirit, is right-mindedness, correct seeing, right alignment.
+
+In the experience that you had, it was a very valid experience. You
+weren’t coloring what you were experiencing at all. You were just
+witnessing it. It would be very appropriate to say that you were,
+indeed, seeing, perceiving, feeling, what you can call the Oversoul, an
+aspect of one’s soul. And yet, at the same time, it was and is, remains
+the presence of the Holy Spirit, that part of the Spirit of that being
+that has remained whole always. Often what is called guidance, those
+little intuitive nudges, the clear pictures and visions, the feelings
+throughout the body, emanate from that part of your own
+right-mindedness. It seems to be speaking to you from another place only
+because you have not yet cultivated the quality of understanding that
+that is more you than the you that you thought was you.
+
+Higher consciousness — there is no such thing. There is only the
+remembrance and the recognition of what is true always. Yes, you can
+constrict yourself into what you call lower consciousness, but what’s
+present? Consciousness, the free will choice and the use of unlimited
+power to generate experience for yourself. That doesn’t sound very low
+to me at all. It is infinite. It’s just that perhaps tomorrow, you might
+not make that same choice again. But it does not make it lower. Lower
+and higher are a judgment.
+
+There is Love and fear, but I’ve never said that fear is *lower* than
+Love. It is merely a choice. And *from choice comes experience*. And you
+are free to gather to yourself whatever form of experience you wish —
+that which expresses Love or fear. But underneath each of them, the
+power to choose remains one and the same — infinite forever, unstoppable
+forever — given to you freely by a Creator Who loves you, Who loves you
+so much that you are given perfect freedom.
+
+<!-- +filter -->
+
+## <span class="hide">Question Two</span> {#l08q2}
+
+<!-- -filter -->
+
+<!-- Track q2 -->
+
+*Question Two:* What is the difference between that which needs to be healed
+and just being the perfect being we are?
+
+*Answer:* There is no difference. When you are, in Truth, being the
+perfect being that you are, you will find that there is an absence of
+resistance. The mind that seeks to try to understand what must be
+healed, or the mind that says,
+
+> Well, this is coming up and I really don’t think that’s who and what I
+> am anyway, so why don’t I just abide in some spiritual realm?
+
+That mind is in *resistance*. It has lost its humility. It has lost its
+perfect trust that the Father of all things knows how to guide you home.
+And home is merely back to a place where you become willing to allow
+something to be extended through you.
+
+Let me share with all of you something that’s rather important that has
+not truly been brought out as clearly as it needs to be. Often, when
+something comes up for healing, it is an energy, listen well, although
+you seem to associate it with some memory or experience that you think
+is within your very private realm of experience, what is actually coming
+up to be healed is an energy that is involved and is controlling the
+life of another soul. It’s being presented to *your consciousness* because
+*you* are at a place where you have the *power* and the *clarity* to
+*understand* that it *can be healed*.
+
+And that is why when you choose healing, when you don’t resist what
+comes up, when you realize that Love trusts all things, embraces all
+things, allows all things and transcends all things, when you realize
+that you are merely the bringer of Love, then it doesn’t matter what
+comes up!
+
+> Oh! This needs healing.
+
+And you heal it from an *impersonal level*. You don’t identify with it,
+even if you think it’s linked somehow to something you are quite certain
+has been part of your past experience.
+
+Sometimes you can’t even remember where you put your car keys. How do
+you know for sure it’s from your past? Just heal it. Because when you do
+that, you are being the perfection of the beingness you are. You are
+being Christ that is saying,
+
+> Come and lay your sins upon the altar of my Heart, and I will heal it
+> for you.
+
+It doesn’t matter where it came from. It doesn’t matter who caused it.
+All that matters is the healing. If it comes up and you recognize
+there’s an obstacle, something that requires healing from the perfection
+of your being, wrap the Love of Christ around it and heal it. And when
+you do that, you uplift a brother or sister who you may never physically
+meet.
+
+If your commitment is to Christ, your commitment is to the healing of
+anything that is unlike Love. It’s mere entertainment to try to figure
+out whether its your stuff or somebody else’s. Does it matter? And is
+there a separation between you and all of your brothers and sisters? To
+assist another to heal is to heal yourself. To heal yourself is to
+uplift another. There is only Love and fear. Ultimately, you are really
+just healing fear by bringing Love to it.
+
+There seem to be many minds and individuals through which Love and fear
+seem to battle for ascendancy. That is like the waves on top of the
+ocean. In this realm of experience, you believe that there are many
+separate minds. Ultimately you are all but an aspect of one another. And
+there is only one Child of God that exists.
+
+Heal what is presented to your consciousness, and stop identifying it as
+yours. There is Love. There is fear. There is the need to heal, which is
+the bridge between the two. Will you choose to identify as fear and,
+therefore, deny Love? Or will you identify yourself as Love and get on
+with it? If you are abiding in the perfection of your being, I believe
+the answer becomes self-evident.
+
+So! There are so many that come and ask me questions, but I never get to
+ask one. So I’m going to ask a question.
+
+> Will you, you who hear these words, will you be willing to be the Light
+> that lights this world, by fully becoming committed, in each moment and
+> with each breath, to the choice for healing through Love and
+> forgiveness?
+
+Just something to think about from time to time. Peace be with you,
+then.
+
+And those of you that are listening to this tape, or hearing these words
+and are near the time when you are to lay the body down and get the
+precious “beauty sleep” you need, will you rest your head upon the
+pillow this evening and give me just a moment of your time by
+acknowledging that you know that there is no distance between us at all,
+save the width of a thought you would choose to think? Think, therefore,
+and know that I am with you. And we will, indeed, journey together while
+the body slumbers.
+
+Peace be with you always.
+
+Amen.

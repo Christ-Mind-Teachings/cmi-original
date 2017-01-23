@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Teachings of Christ Mind"
+---
+<div class="introduction">
+  <h1>Welcome</h1>
+  <div class="toc">
+    <h2>Teachings of Christ Mind Library</h2>
+    <ol class="post">
+    {% for volume in site.data.library.volumes %}
+      <li class="post-title">
+        <a href="{{ volume.url }}">
+          {{ volume.title }}
+        </a>
+      </li>
+    {% endfor %}
+    </ol>
+  </div>
+</div>
+

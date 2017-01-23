@@ -1,0 +1,44 @@
+{% comment %}
+  Next/Previous Navigation
+  - page.home: base url
+  - page.prev: previous page uri
+  - page.next: next page uri
+
+  Jekyll has next and previous data built in. I don't know how it determines the 
+  order of files in a collection though. Example:
+  <div>
+    <p>Page.next.url: {{page.next.url}}</p>
+    <p>Page.next.title: {{page.next.title}}</p>
+    <p>Page.prev.url: {{page.previous.url}}</p>
+    <p>Page.prev.title: {{page.previous.title}}</p>
+  </div>
+  I think files are ordered by filename.
+<ul class="fa-ul">
+  <li>
+    <a title="Previous Page" href="{{page.home}}{{page.prev | append: "/"}}">
+      <i class="fa-li fa fa-hand-o-left"></i>&nbsp;&nbsp;
+    </a>
+  </li>
+  <li>
+    <a title="Next Page" href="{{page.home}}{{page.nxt | append: "/"}}">
+      <i class="fa-li fa fa-hand-o-right"></i>
+    </a>
+  </li>
+</ul>
+
+trying 'next' and 'previous' from Jekyll, seems to work well after I ordered
+files in the collection by name.
+{% endcomment %}
+<ul class="fa-ul">
+  <li>
+    <a title="Previous Page" href="{{page.previous.url}}">
+      <i class="fa-li fa fa-hand-o-left"></i>&nbsp;&nbsp;
+    </a>
+  </li>
+  <li>
+    <a title="Next Page" href="{{page.next.url}}">
+      <i class="fa-li fa fa-hand-o-right"></i>
+    </a>
+  </li>
+</ul>
+

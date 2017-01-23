@@ -1,0 +1,15 @@
+<div class="toc">
+<h2>Contents</h2>
+  <ul class="post">
+  {% for lesson in site.wom do %}
+    {% if lesson.url contains page.permalink %}
+      <li class="post-title">
+        <a href="{{ lesson.url }}">
+          {{ lesson.title | remove: page.title | remove: " - " }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+

@@ -1,0 +1,10 @@
+volumes:
+- title: The Way of Mastery
+  id: wom
+  url: /wom/
+  img: /public/img/wom
+- title: The Northwest Foundation for ACIM
+  id: nwffacim
+  url: /nwffacim/
+  img: /public/img/nwffacim
+

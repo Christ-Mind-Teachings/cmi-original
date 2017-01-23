@@ -1,0 +1,31 @@
+---
+layout: page
+permalink: /nwffacim/
+title: Northwest Foundation for ACIM
+source: Northwest Foundation for ACIM
+surl: /nwffacim/
+publish: true
+---
+
+<div class="introduction">
+
+  <p>
+  Raj is a very practical and down to earth teacher of ACIM through Paul Tuttle. You
+  can learn more about Raj and Paul at the <a href="http://nwffacim.org/about.asp">
+  Northwest Foundation for ACIM</a>.
+  </p>
+
+  <section>
+
+  {% for book in site.data.nwffacim.contents.books %}
+    <header>
+      <a href="{{book.url}}">{{book.title}}</a>
+    </header>
+    <section>
+      <p>{{book.desc}}</p>
+    </section>
+  {% endfor %}
+
+  </section>
+</div>
+

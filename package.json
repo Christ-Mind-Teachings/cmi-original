@@ -1,0 +1,33 @@
+{
+  "name": "cmi",
+  "version": "1.0.0",
+  "description": "Library of Christ Mind teachings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmercer33/christmind.info.git"
+  },
+  "author": "Rick Mercer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmercer33/christmind.info/issues"
+  },
+  "homepage": "https://github.com/rmercer33/christmind.info#readme",
+  "devDependencies": {
+    "eslint-grunt": "^1.0.0",
+    "grunt": "^1.0.1",
+    "grunt-aws-s3": "^0.14.5",
+    "grunt-browserify": "^5.0.0",
+    "jit-grunt": "^0.10.0"
+  },
+  "dependencies": {
+    "dom-anchor-text-quote": "^4.0.1",
+    "scroll-into-view": "^1.7.1",
+    "sjcl": "^1.0.6",
+    "underscore": "^1.8.3",
+    "wrap-range-text": "^1.0.1"
+  }
+}

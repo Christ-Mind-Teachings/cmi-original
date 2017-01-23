@@ -1,0 +1,17 @@
+books:
+- title: You Are the Answer
+  id: yaa
+  url: /nwffacim/yaa/
+  img: /public/img/nwffacim/yaa
+  desc: Conversations between Paul and Raj from February to June, 1982.
+- title: Graduation
+  id: grad
+  url: /nwffacim/grad/
+  img: /public/img/nwffacim/grad
+  desc: Further conversations between Paul and Raj from 1991.
+- title: ACIM Study Group
+  id: acimsg
+  url: /nwffacim/acim/
+  img: /public/img/nwffacim/acim
+  desc: Transcripts of ACIM study group session with Raj beginning 2002.
+

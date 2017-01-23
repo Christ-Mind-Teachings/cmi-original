@@ -1,0 +1,14 @@
+books:
+- title: The Way of the Heart
+  id: woh
+  url: /wom/woh/
+  img: /public/img/wom/woh
+- title: The Way of Transformation
+  id: wot
+  url: /wom/wot/
+  img: /public/img/wom/wot
+- title: The Way of Knowing
+  id: wok
+  url: /wom/wok/
+  img: /public/img/wom/wok
+

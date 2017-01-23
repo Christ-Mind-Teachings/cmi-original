@@ -1,0 +1,49 @@
+---
+---
+
+@import 0-plugins/plugins-dir
+@import 1-base/base-dir
+@import 2-modules/modules-dir
+@import 3-layouts/layouts-dir
+
+section
+  +outer-container
+  header
+    +span-columns(4)
+  section
+    +span-columns(8)
+
+//without this, section wraps under header - ???
+section header
+  margin-right: 0
+
+.accordion
+  $base-border-color: gainsboro !default
+  $dark-gray: #333 !default
+  $base-font-color: $dark-gray !default
+  $accordion-menu-color: $base-font-color
+  $accordion-menu-border-color: $base-border-color
+  $accordion-menu-background: lighten($accordion-menu-border-color, 20%)
+  $accordion-menu-hover: lighten($accordion-menu-background, 5%)
+
+  //use san-sarif font for list
+  font-family: $helvetica
+
+  //remove artifact caused by bourbon
+  li
+    border-bottom: none
+
+  ul.submenu > section
+    margin: auto 10%
+
+    header a
+      //color: $base-font-color
+      display: block
+
+      &:last-child
+        border: 0
+
+      &:focus,
+      &:hover
+        background-color: $accordion-menu-hover
+
