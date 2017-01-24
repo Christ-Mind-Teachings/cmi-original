@@ -5,7 +5,12 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ page.title }}</p>
+    <p>
+      {% if page.book %}
+        {{page.book}} <br/>
+      {% endif %}
+      {{ page.title }}
+    </p>
   </div>
 
   <nav class="sidebar-nav">
@@ -21,13 +26,13 @@
     {% for node in page.toc %}
     <a class="sidebar-nav-item sidebar-nav-item-toc" href="#{{ node | slugify }}">{{ node }}</a>
     {% endfor %}
+    {% if page.contents %}
+      {% include {{page.contents}} %}
+    {% endif %}
 
   </nav>
 
   <div class="sidebar-item">
-    {% if page.nav == "nextprev" %}
-      {% include ui/nextprev.html %}
-    {% endif %}
     {% if page.editor %}
       <p>
        Edited by {{ page.editor }}, {{ site.time | date: '%Y' }}.

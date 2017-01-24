@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON("package.json"),
     aws: grunt.file.readJSON("config/aws-keys.json"),
     browserify: {
-      hypothesis: {
+      cmi: {
         files: {
           'public/js/cmi.js': ['src/js/cmi.js']
         }

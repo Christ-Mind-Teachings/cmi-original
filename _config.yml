@@ -42,21 +42,33 @@ defaults:
     values:
       bid: wot
       book: Way of Transformation
+      nav: nextprev
+      fa: true
       home: /wom/wot/
+      contents: wom/wot/contents.html
+      class: grad
   - scope:
       path: "_wom/woh"
       type: wom
     values:
       bid: woh
       book: Way of the Heart
+      nav: nextprev
+      fa: true
       home: /wom/woh/
+      contents: wom/woh/contents.html
+      class: woh
   - scope:
       path: "_wom/wok"
       type: wom
     values:
       bid: wok
       book: Way of Knowing
+      nav: nextprev
+      fa: true
       home: /wom/wok/
+      contents: wom/wok/contents.html
+      class: grad
   - scope:
       path: ""
       type: nwffacim
@@ -167,6 +179,7 @@ defaults:
       home: /nwffacim/grad/
       class: grad
       nav: nextprev
+      contents: nwffacim/grad/contents.html
       fa: true
 
 

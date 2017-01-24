@@ -1,0 +1,59 @@
+contents:
+  base: /wom/wok/
+  book: Way of Knowning
+  pages:
+  - url: l01/
+    title: Lesson One
+    next: l02/
+    prev:  l11/
+
+  - url: l02/
+    title: Lesson Two
+    next: l03/
+    prev:  l01/
+
+  - url: l03/
+    title: Lesson Three
+    next: l04/
+    prev:  l02/
+
+  - url: l04/
+    title: Lesson Four
+    next: l05/
+    prev:  l03/
+
+  - url: l05/
+    title: Lesson Five
+    next: l06/
+    prev:  l04/
+
+  - url: l06/
+    title: Lesson Six
+    next: l07/
+    prev:  l05/
+
+  - url: l07/
+    title: Lesson Seven
+    next: l08/
+    prev: l06/
+
+  - url: l08/
+    title: Lesson Eight
+    next: l09/
+    prev: l07/
+
+  - url: l09/
+    title: Lesson Nine
+    next: l10/
+    prev: l08/
+
+  - url: l10/
+    title: Lesson Ten
+    next: l11/
+    prev: l09/
+
+  - url: l11/
+    title: Lesson Eleven
+    next: l01/
+    prev: l10/
+
