@@ -47,6 +47,9 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
+    {% if page.footer == true %}
+      {% include footer.html %}
+    {% endif %}
     <script>
 
     // Highlight search Query
