@@ -2,10 +2,15 @@ contents:
   base: /wom/wot/
   book: Way of Transformation
   pages:
+  - url: wot/
+    title: About
+    next: l01/
+    prev:  l12/
+
   - url: l01/
     title: Lesson One
     next: l02/
-    prev:  l12/
+    prev:  wot/
 
   - url: l02/
     title: Lesson Two
@@ -59,6 +64,6 @@ contents:
 
   - url: l12/
     title: Lesson Twelve
-    next: l01/
+    next: wot/
     prev: l11/
 

@@ -2,10 +2,15 @@ contents:
   base: /wom/wok/
   book: Way of Knowning
   pages:
+  - url: wok/
+    title: Introduction
+    next: l01/
+    prev:  l11/
+
   - url: l01/
     title: Lesson One
     next: l02/
-    prev:  l11/
+    prev:  wok/
 
   - url: l02/
     title: Lesson Two
@@ -54,6 +59,6 @@ contents:
 
   - url: l11/
     title: Lesson Eleven
-    next: l01/
+    next: wok/
     prev: l10/
 

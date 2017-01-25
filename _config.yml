@@ -44,7 +44,7 @@ defaults:
       book: Way of Transformation
       nav: nextprev
       fa: true
-      home: /wom/wot/
+      home: "#"
       contents: wom/wot/contents.html
       class: grad
   - scope:
@@ -55,7 +55,7 @@ defaults:
       book: Way of the Heart
       nav: nextprev
       fa: true
-      home: /wom/woh/
+      home: "#"
       contents: wom/woh/contents.html
       class: woh
   - scope:
@@ -66,7 +66,7 @@ defaults:
       book: Way of Knowing
       nav: nextprev
       fa: true
-      home: /wom/wok/
+      home: "#"
       contents: wom/wok/contents.html
       class: grad
   - scope:

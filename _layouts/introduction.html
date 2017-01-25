@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.nav == "nextprev" %}
+    {% include ui/nextprev.html %}
+  {% endif %}
+  {{ content }}
+</div>

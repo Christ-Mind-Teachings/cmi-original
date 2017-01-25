@@ -2,25 +2,30 @@ contents:
   base: /wom/woh/
   book: Way of the Heart
   pages:
+  - url: woh/
+    title: About
+    next: l01/
+    prev:  l12/
+
   - url: l01/
     title: Lesson One
     next: l02/
-    prev:  l12/
+    prev: woh/
 
   - url: l02/
     title: Lesson Two
     next: l03/
-    prev:  l01/
+    prev: l01/
 
   - url: l03/
     title: Lesson Three
     next: l04/
-    prev:  l02/
+    prev: l02/
 
   - url: l04/
     title: Lesson Four
     next: l05/
-    prev:  l03/
+    prev: l03/
 
   - url: l05/
     title: Lesson Five
@@ -59,6 +64,6 @@ contents:
 
   - url: l12/
     title: Lesson Twelve
-    next: l01/
+    next: woh/
     prev: l11/
 

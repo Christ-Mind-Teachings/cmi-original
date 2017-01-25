@@ -8,9 +8,11 @@
 
     <!-- This if statement decides which sidebar to use -->
     {% if page.toc or page.layout == "narrative" %}
-    {% include sidebar-toc.html %}
+      {% include sidebar-toc.html %}
+    {% elsif page.layout == "introduction" %}
+      {% include sidebar-toc.html %}
     {% else %}
-    {% include sidebar.html %}
+      {% include sidebar.html %}
     {% endif %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
@@ -22,8 +24,13 @@
             {% if page.source and page.book %}
               <br><small>
                 <a href="{{page.surl}}">{{ page.source }}</a>
-                <span>/</span>
-                <a href="{{page.home}}">{{ page.book }}</a>
+                {% if page.home == "#" %}
+                  <span>:</span>
+                  {{ page.book }}
+                {% else %}
+                  <span>/</span>
+                  <a href="{{page.home}}">{{ page.book }}</a>
+                {% endif %}
               </small>
             {% elsif page.source %}
               <br><small>
