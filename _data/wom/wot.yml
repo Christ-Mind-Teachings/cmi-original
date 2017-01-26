@@ -3,7 +3,7 @@ contents:
   book: Way of Transformation
   pages:
   - url: wot/
-    title: About
+    title: Introduction
     next: l01/
     prev:  l12/
 

@@ -176,7 +176,7 @@ defaults:
     values:
       bid: grad
       book: Graduation
-      home: /nwffacim/grad/
+      home: "#"
       class: grad
       nav: nextprev
       contents: nwffacim/grad/contents.html

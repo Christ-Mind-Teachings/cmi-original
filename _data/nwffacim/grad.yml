@@ -2,24 +2,29 @@ contents:
   base: /nwffacim/grad/
   pages:
   - url: g000000/
-    title: Title Page
+    title: Introduction
     next: g000001/
     prev:  g032991/
 
   - url: g000001/
-    title: Author’s Note
+    title: Title Page
     next: g000002/
     prev:  g000000/
 
   - url: g000002/
+    title: Author’s Note
+    next: g000003/
+    prev:  g000001/
+
+  - url: g000003/
     title: Foreword
     next: g010491/
-    prev:  g000001/
+    prev:  g000002/
 
   - url: g010491/
     title: January 4, 1991 Friday
     next: g010591/
-    prev:  g000002/
+    prev:  g000003/
 
   - url: g010591/
     title: January 5, 1991 Saturday
