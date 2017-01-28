@@ -1,4 +1,5 @@
 {
+  "video": "http://www.celestialrealm.com/",
   "audio_domain": "http://www.celestialrealm.com/",
   "pdf_domain": "http://www.celestialrealm.com/",
   "rtf_domain": "http://www.pamelaparnell.com/",
@@ -16,7 +17,7 @@
       "idx": 1,
       "title": "Jun 12, 2002",
       "rtf": "2002-06-12.rtf",
-      "pdf": "uploads/2002-6-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3",
+      "pdf": "uploads/2002-06-12_Raj_Christ_Jesus_A_Course_In_Miracle_ACIM_Study_Group.pdf",
       "audio": "uploads/2002-6-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3",
       "next": "073102/",
       "prev": "2002/"
@@ -24,6 +25,7 @@
     {
       "url": "073102/",
       "idx": 2,
+      "rtf": "2002-07-31.rtf",
       "title": "Jul 31, 2002",
       "next": "080702/",
       "prev": "061202/"

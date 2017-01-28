@@ -1,0 +1,95 @@
+{% comment %}
+  ** Required Page Front Matter **
+    page.mask: "nwffacim/acim/2002/" - for example
+
+  The two includes create these variables:
+    year: the data for all files in the year
+    index: index of the current page within the year
+    page-data: data for the page within the year.
+
+  If index == 0 either the page was not found in the
+  data file or it is an 'About' page and not a transcript
+{% endcomment %}
+{% include nwffacim/acim/resolve-year.html %}
+{% include nwffacim/acim/calc-index.html %}
+{% assign base = year.base %}
+{% assign count = 0 %}
+{% assign resource = "" %}
+
+{% comment %}
+  Increment count so prev/next controls are generated even
+  when other resources are not present for the page
+{% endcomment %}
+{% if page.nav == "npdata" %}
+  {% assign count = count | plus: 1 %}
+{% endif %}
+
+{% if page-data.rtf %}
+  {% assign count = count | plus: 1 %}
+  {% assign rtf-href = year.rtf_domain | append: page-data.rtf %}
+  {% assign resource = resource | append: "rtf=" | append: rtf-href %}
+{% endif %}
+
+{% if page-data.pdf %}
+  {% assign count = count | plus: 1 %}
+  {% assign pdf-href = year.pdf_domain | append: page-data.pdf %}
+  {% assign resource = resource | append: ",pdf=" | append: pdf-href %}
+{% endif %}
+
+{% if page-data.audio %}
+  {% assign count = count | plus: 1 %}
+  {% assign audio-href = year.audio_domain | append: page-data.audio %}
+  {% assign resource = resource | append: ",audio=" | append: audio-href %}
+{% endif %}
+
+{% if page-data.video %}
+  {% assign count = count | plus: 1 %}
+  {% assign video-href = year.video | append: page-data.video %}
+  {% assign resource = resource | append: ",video=" | append: video-href %}
+{% endif %}
+
+{% if count > 0 %}
+  {% assign bits = resource | split: "," %}
+  <ul class="fa-ul">
+  {% if page.nav == "npdata" %}
+    <li>
+      <a title="Previous Page" href="{{base}}{{page-data.prev}}">
+        <i class="fa-li fa fa-hand-o-left"></i>&nbsp;&nbsp;
+      </a>
+    </li>
+    <li>
+      <a title="Next Page" href="{{base}}{{page-data.next}}">
+        <i class="fa-li fa fa-hand-o-right"></i>
+      </a>
+    </li>
+  {% endif %}
+  {% for bit in bits %}
+    {% assign parts = bit | split: "=" %}
+    {% assign title = "" %}
+    {% assign target = "" %}
+    {% case parts[0] %}
+      {% when "pdf" %}
+        {% assign class = "fa-li fa fa-file-pdf-o" %}
+        {% assign title = 'title="Display/Download PDF (on new page/tab)"' %}
+        {% assign target = 'target="_blank"' %}
+      {% when "rtf" %}
+        {% assign class = "fa-li fa fa-file-text-o" %}
+        {% assign title = 'title="Download RTF"' %}
+      {% when "audio" %}
+        {% assign class = "fa-li fa fa-volume-up" %}
+        {% assign title = 'title="Listen To Recording (on new page/tab)"' %}
+        {% assign target = 'target="_blank"' %}
+      {% when "video" %}
+        {% assign class = "fa-li fa fa-play" %}
+        {% assign title = 'title="Play Video (on new page/tab)"' %}
+        {% assign target = 'target="_blank"' %}
+      {% else %}
+        {% assign class = "fa-li fa question-circle-o" %}
+        {% assign title = 'title="Unknown URL"' %}
+    {% endcase %}
+    <li><a {{target}} {{title}} href="{{parts[1]}}"><i class="{{class}}"></i></a></li>
+  {% endfor %}
+  </ul>
+{% endif %}
+
+

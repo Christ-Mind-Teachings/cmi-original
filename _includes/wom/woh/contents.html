@@ -12,7 +12,7 @@
   {% endif %}
   {% if page.url == link %}
     {% assign extra = extra | append: " active" | append: " selected-item" %}
-    {% assign title = title | prepend: "> " | append: " <" %}
+    {% assign title = title | prepend: "&gt; " | append: " &lt;" %}
     {% assign link = "#" %}
   {% endif %}
   <a class="{{class}} {{extra}}" href="{{link}}"> {{ title }} </a>

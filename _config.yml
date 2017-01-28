@@ -83,6 +83,7 @@ defaults:
       nav: npdata
       class: grad
       contents: nwffacim/acim/contents.html
+      links: nwffacim/acim/resource-links.html
   - scope:
       path: "_nwffacim/acim/2002"
       type: nwffacim
