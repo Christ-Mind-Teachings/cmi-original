@@ -2,16 +2,25 @@
 layout: default
 ---
 
+{% comment %}
+Work out how to add FA links to PDF, RTF, and MP3 resources
+Place them after the title
+{% endcomment %}
+
 <div class="narrative">
   <h1 class="post-title">{{ page.title }}</h1>
   {% if page.nav == "nextprev" %}
-    {% include ui/nextprev.html %}
+    {% include ui/np-page.html %}
+  {% elsif page.nav == "npdata" %}
+    {% include ui/np-data.html %}
   {% endif %}
   {% if page.author %}
     <p class="citation"> by {{ page.author }}</p>
   {% endif %}
   {{ content }}
   {% if page.nav == "nextprev" %}
-    {% include ui/nextprev.html %}
+    {% include ui/np-page.html %}
+  {% elsif page.nav == "npdata" %}
+    {% include ui/np-data.html %}
   {% endif %}
 </div>

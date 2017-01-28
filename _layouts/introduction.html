@@ -5,7 +5,9 @@ layout: default
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
   {% if page.nav == "nextprev" %}
-    {% include ui/nextprev.html %}
+    {% include ui/np-page.html %}
+  {% elsif page.nav == "npdata" %}
+    {% include ui/np-data.html %}
   {% endif %}
   {{ content }}
 </div>

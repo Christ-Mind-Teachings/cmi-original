@@ -62,11 +62,17 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml"/>
 
-  {% if page.fa == true %}
+  {% comment %}
+  page.nav = nextprev or npdata supports next/prev links using FA icons
+  {% endcomment %}
+  {% if page.nav == "nextprev" or page.nav == "npdata" %}
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6c994f43a5.js"></script>
   {% endif %}
 
+  {% comment %}
+  Hypothes.is may be loaded on narrative pages, so we inculde configuration info
+  {% endcomment %}
   {% if page.layout == "narrative" %}
     <script type="application/json" class="js-hypothesis-config">
       {"showHighlights": false}

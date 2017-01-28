@@ -1,0 +1,151 @@
+{
+  "audio_domain": "http://www.celestialrealm.com/",
+  "pdf_domain": "http://www.celestialrealm.com/",
+  "rtf_domain": "http://www.pamelaparnell.com/",
+  "base": "/nwffacim/acim/2002/",
+  "page": [
+    {
+      "url": "2002/",
+      "idx": 0,
+      "title": "About",
+      "next": "061202/",
+      "prev": "121902/"
+    },
+    {
+      "url": "061202/",
+      "idx": 1,
+      "title": "Jun 12, 2002",
+      "rtf": "2002-06-12.rtf",
+      "pdf": "uploads/2002-6-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3",
+      "audio": "uploads/2002-6-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3",
+      "next": "073102/",
+      "prev": "2002/"
+    },
+    {
+      "url": "073102/",
+      "idx": 2,
+      "title": "Jul 31, 2002",
+      "next": "080702/",
+      "prev": "061202/"
+    },
+    {
+      "url": "080702/",
+      "idx": 3,
+      "title": "Aug 7, 2002",
+      "next": "081402/",
+      "prev": "073102/"
+    },
+    {
+      "url": "081402/",
+      "idx": 4,
+      "title": "Aug 14, 2002",
+      "next": "082802/",
+      "prev": "080702/"
+    },
+    {
+      "url": "082802/",
+      "idx": 5,
+      "title": "Aug 28, 2002",
+      "next": "090402/",
+      "prev": "081402/"
+    },
+    {
+      "url": "090402/",
+      "idx": 6,
+      "title": "Sep 4, 2002",
+      "next": "091102/",
+      "prev": "082802/"
+    },
+    {
+      "url": "091102/",
+      "idx": 7,
+      "title": "Sep 11, 2002",
+      "next": "091802/",
+      "prev": "090402/"
+    },
+    {
+      "url": "091802/",
+      "idx": 8,
+      "title": "Sep 18, 2002",
+      "next": "092502/",
+      "prev": "091102/"
+    },
+    {
+      "url": "092502/",
+      "idx": 9,
+      "title": "Sep 25, 2002",
+      "next": "100202/",
+      "prev": "091802/"
+    },
+    {
+      "url": "100202/",
+      "idx": 10,
+      "title": "Oct 2, 2002",
+      "next": "101002/",
+      "prev": "092502/"
+    },
+    {
+      "url": "101002/",
+      "idx": 11,
+      "title": "Oct 10, 2002",
+      "next": "101702/",
+      "prev": "100202/"
+    },
+    {
+      "url": "101702/",
+      "idx": 12,
+      "title": "Oct 17, 2002",
+      "next": "102402/",
+      "prev": "101002/"
+    },
+    {
+      "url": "102402/",
+      "idx": 13,
+      "title": "Oct 24, 2002",
+      "next": "103102/",
+      "prev": "101702/"
+    },
+    {
+      "url": "103102/",
+      "idx": 14,
+      "title": "Oct 31, 2002",
+      "next": "110702/",
+      "prev": "102402/"
+    },
+    {
+      "url": "110702/",
+      "idx": 15,
+      "title": "Nov 7, 2002",
+      "next": "112102/",
+      "prev": "103102/"
+    },
+    {
+      "url": "112102/",
+      "idx": 16,
+      "title": "Nov 21, 2002",
+      "next": "120502/",
+      "prev": "110702/"
+    },
+    {
+      "url": "120502/",
+      "idx": 17,
+      "title": "Dec 5, 2002",
+      "next": "121202/",
+      "prev": "112102/"
+    },
+    {
+      "url": "121202/",
+      "idx": 18,
+      "title": "Dec 12, 2002",
+      "next": "121902/",
+      "prev": "120502/"
+    },
+    {
+      "url": "121902/",
+      "idx": 19,
+      "title": "Dec 19, 2002",
+      "next": "2002/",
+      "prev": "121202/"
+    }
+  ]
+}

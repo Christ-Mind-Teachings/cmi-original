@@ -7,8 +7,17 @@ surl: /nwffacim/
 publish: false
 ---
 
-This is the {{page.title}} page.
+This is the {{page.title}} home page.
+<ul>
+  {% assign path = "/nwffacim/acim/" %}
+  {% for y in (2002..2015) %}
+    <li>
+    <a href="{{path}}{{y | append: "/"}}{{y | append: "/"}}">{{y}}</a>
+    </li>
+  {% endfor %}
+</ul>
 
+{% comment %}
 <ul class="accordion">
   {% for y in (2002..2015) %}
     {% assign year = site.nwffacim | where: "year", y %}
@@ -47,3 +56,4 @@ $('.js-accordion-trigger').bind('click', function(e){
   e.preventDefault();
 });
 </script>
+{% endcomment %}

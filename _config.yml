@@ -43,7 +43,6 @@ defaults:
       bid: wot
       book: Way of Transformation
       nav: nextprev
-      fa: true
       home: "#"
       contents: wom/wot/contents.html
       class: grad
@@ -54,7 +53,6 @@ defaults:
       bid: woh
       book: Way of the Heart
       nav: nextprev
-      fa: true
       home: "#"
       contents: wom/woh/contents.html
       class: woh
@@ -65,7 +63,6 @@ defaults:
       bid: wok
       book: Way of Knowing
       nav: nextprev
-      fa: true
       home: "#"
       contents: wom/wok/contents.html
       class: grad
@@ -83,86 +80,105 @@ defaults:
       bid: acimsg
       book: ACIM Study Group
       home: /nwffacim/acim/
+      nav: npdata
+      class: grad
+      contents: nwffacim/acim/contents.html
   - scope:
       path: "_nwffacim/acim/2002"
       type: nwffacim
     values:
       year: 2002
+      mask: "/nwffacim/acim/2002/"
   - scope:
       path: "_nwffacim/acim/2003"
       type: nwffacim
     values:
       year: 2003
+      mask: "/nwffacim/acim/2003/"
   - scope:
       path: "_nwffacim/acim/2004"
       type: nwffacim
     values:
       year: 2004
+      mask: "/nwffacim/acim/2004/"
   - scope:
       path: "_nwffacim/acim/2005"
       type: nwffacim
     values:
       year: 2005
+      mask: "/nwffacim/acim/2005/"
   - scope:
       path: "_nwffacim/acim/2006"
       type: nwffacim
     values:
       year: 2006
+      mask: "/nwffacim/acim/2006/"
   - scope:
       path: "_nwffacim/acim/2007"
       type: nwffacim
     values:
       year: 2007
+      mask: "/nwffacim/acim/2007/"
   - scope:
       path: "_nwffacim/acim/2008"
       type: nwffacim
     values:
       year: 2008
+      mask: "/nwffacim/acim/2008/"
   - scope:
       path: "_nwffacim/acim/2009"
       type: nwffacim
     values:
       year: 2009
+      mask: "/nwffacim/acim/2009/"
   - scope:
       path: "_nwffacim/acim/2010"
       type: nwffacim
     values:
       year: 2010
+      mask: "/nwffacim/acim/2010/"
   - scope:
       path: "_nwffacim/acim/2011"
       type: nwffacim
     values:
       year: 2011
+      mask: "/nwffacim/acim/2011/"
   - scope:
       path: "_nwffacim/acim/2012"
       type: nwffacim
     values:
       year: 2012
+      path: "/nwffacim/acim/2012/"
   - scope:
       path: "_nwffacim/acim/2013"
       type: nwffacim
     values:
       year: 2013
+      mask: "/nwffacim/acim/2013/"
   - scope:
       path: "_nwffacim/acim/2014"
       type: nwffacim
     values:
       year: 2014
+      mask: "/nwffacim/acim/2014/"
   - scope:
       path: "_nwffacim/acim/2015"
       type: nwffacim
     values:
       year: 2015
+      mask: "/nwffacim/acim/2015/"
   - scope:
       path: "_nwffacim/acim/2016"
       type: nwffacim
     values:
       year: 2016
+      mask: "/nwffacim/acim/2016/"
   - scope:
       path: "_nwffacim/acim/2017"
       type: nwffacim
     values:
       year: 2017
+      path: "/nwffacim/acim/2017/"
   - scope:
       path: "_nwffacim/yaa"
       type: nwffacim
@@ -180,8 +196,6 @@ defaults:
       class: grad
       nav: nextprev
       contents: nwffacim/grad/contents.html
-      fa: true
-
 
 # Markdown specs
 markdown: kramdown
