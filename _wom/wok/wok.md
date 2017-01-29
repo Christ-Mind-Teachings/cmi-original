@@ -4,7 +4,7 @@ source: Way of Mastery
 book: Way of Knowing
 title: Introduction
 surl: /wom/
-next: /wom/wok/l01/
+nxt: /wom/wok/l01/
 prev: /wom/wok/l11/
 contents: wom/wok/contents.html
 ---

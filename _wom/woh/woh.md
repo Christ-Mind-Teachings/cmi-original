@@ -5,7 +5,7 @@ book: Way of the Heart
 title: Introduction
 surl: /wom/
 contents: wom/woh/contents.html
-next: /wom/woh/l01/
+nxt: /wom/woh/l01/
 prev: /wom/woh/l12/
 ---
 

@@ -5,7 +5,7 @@ source: Way of Mastery
 book: Way of Transformation
 surl: /wom/
 contents: wom/wot/contents.html
-next: /wom/wot/l01/
+nxt: /wom/wot/l01/
 prev: /wom/wot/l12/
 ---
 
