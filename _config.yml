@@ -42,7 +42,7 @@ defaults:
     values:
       bid: wot
       book: Way of Transformation
-      nav: nextprev
+      nav: ui/np-page.html
       home: "#"
       contents: wom/wot/contents.html
       class: grad
@@ -52,7 +52,7 @@ defaults:
     values:
       bid: woh
       book: Way of the Heart
-      nav: nextprev
+      nav: ui/np-page.html
       home: "#"
       contents: wom/woh/contents.html
       class: woh
@@ -62,7 +62,7 @@ defaults:
     values:
       bid: wok
       book: Way of Knowing
-      nav: nextprev
+      nav: ui/np-page.html
       home: "#"
       contents: wom/wok/contents.html
       class: grad
@@ -80,7 +80,7 @@ defaults:
       bid: acimsg
       book: ACIM Study Group
       home: /nwffacim/acim/
-      nav: npdata
+      nav: nwffacim/acim/np-data.html
       class: grad
       contents: nwffacim/acim/contents.html
       links: nwffacim/acim/resource-links.html
@@ -186,7 +186,10 @@ defaults:
     values:
       bid: yaa
       book: You Are the Answer
-      home: /nwffacim/yaa/
+      home: "#"
+      contents: nwffacim/yaa/contents.html
+      nav: nwffacim/yaa/np-data.html
+      class: grad
   - scope:
       path: "_nwffacim/grad"
       type: nwffacim
@@ -195,7 +198,7 @@ defaults:
       book: Graduation
       home: "#"
       class: grad
-      nav: nextprev
+      nav: ui/np-page.html
       contents: nwffacim/grad/contents.html
 
 # Markdown specs

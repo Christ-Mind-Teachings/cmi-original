@@ -1,0 +1,22 @@
+{% comment %}
+*** Used for NWFFACIM: YAA ***
+Generate next/previous page links from _data files
+{% endcomment %}
+{% assign yaa = site.data.nwffacim.yaa %}
+{% assign base = yaa.base %}
+{% assign key = page.url | remove_first: base %}
+{% assign p = yaa.page | where: "url", key %}
+{% assign page-data = p[0] %}
+<ul class="fa-ul">
+  <li>
+    <a title="Previous Page" href="{{base}}{{page-data.prev}}">
+      <i class="fa-li fa fa-hand-o-left"></i>&nbsp;&nbsp;
+    </a>
+  </li>
+  <li>
+    <a title="Next Page" href="{{base}}{{page-data.next}}">
+      <i class="fa-li fa fa-hand-o-right"></i>
+    </a>
+  </li>
+</ul>
+

@@ -1,7 +1,7 @@
 books:
 - title: You Are the Answer
   id: yaa
-  url: /nwffacim/yaa/
+  url: /nwffacim/yaa/yaa/
   img: /public/img/nwffacim/yaa
   desc: Conversations between Paul and Raj from February to June, 1982.
 - title: Graduation

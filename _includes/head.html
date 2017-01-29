@@ -16,7 +16,7 @@
   <meta name="DC.date" content="{{ page.publication-date }}" />
   <meta name="DC.rights" content="{{ page.rights }}" />
   <meta name="DC.source" content="{{ site.title }}" />
-  
+
     <!-- Open Graph metadata -->
 
     {% if page.layout == "default" %}
@@ -65,7 +65,7 @@
   {% comment %}
   page.nav = nextprev or npdata supports next/prev links using FA icons
   {% endcomment %}
-  {% if page.nav == "nextprev" or page.nav == "npdata" %}
+  {% if page.nav %}
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/6c994f43a5.js"></script>
   {% endif %}

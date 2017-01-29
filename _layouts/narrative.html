@@ -10,19 +10,15 @@ layout: default
   {% endcomment %}
   {% if page.links %}
     {% include {{page.links}} %}
-  {% elsif page.nav == "nextprev" %}
-    {% include ui/np-page.html %}
-  {% elsif page.nav == "npdata" %}
-    {% include ui/np-data.html %}
+  {% elsif page.nav %}
+    {% include {{page.nav}} %}
   {% endif %}
 
   {% if page.author %}
     <p class="citation"> by {{ page.author }}</p>
   {% endif %}
   {{ content }}
-  {% if page.nav == "nextprev" %}
-    {% include ui/np-page.html %}
-  {% elsif page.nav == "npdata" %}
-    {% include ui/np-data.html %}
+  {% if page.nav %}
+    {% include {{page.nav}} %}
   {% endif %}
 </div>
