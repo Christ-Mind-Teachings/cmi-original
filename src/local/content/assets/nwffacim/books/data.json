@@ -1,0 +1,42 @@
+"books": [
+  {
+    "title": "Graduation, The End of Illusions",
+    "id": "grad",
+    "types": [{
+      "type": "epub",
+      "filename": "graduation.epub",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/books/grad.epub"
+    },
+    {
+      "type": "mobi",
+      "filename": "graduation.mobi",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/books/grad.mobi"
+    },
+    {
+      "type": "pdf",
+      "filename": "graduation.pdf",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/books/grad.pdf"
+    }]
+  },
+  {
+    "title": "You Are the Answer, A Journey of Awakening",
+    "id": "yaa",
+    "types": [{
+      "type": "epub",
+      "filename": "you_are_the_answer.epub",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/books/yaa.epub"
+    },
+    {
+      "type": "mobi",
+      "filename": "you_are_the_answer.mobi",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/books/yaa.mobi"
+    },
+    {
+      "type": "pdf",
+      "filename": "you_are_the_answer.pdf",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/books/yaa.pdf"
+    }
+    ]
+  }
+]
+

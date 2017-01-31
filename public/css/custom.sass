@@ -1,0 +1,120 @@
+---
+---
+
+/*
+ * use this for custom cmi pages instead of ed.css
+ */
+
+@import 0-plugins/plugins-dir
+@import 1-base/base-dir
+
+@import '0-plugins/normalize.scss'
+@import 2-modules/modules-dir
+@import 3-layouts/layouts-dir
+
+$body-color: #454545
+$body-background-color: #fff
+$font: "Palatino Linotype", "Book Antiqua", Palatino, serif
+
+html
+  font-family: $font
+  font-size: 16px
+  line-height: 1.5
+
+@media (min-width: 38em)
+  html
+    font-size: 20px
+
+body
+  color: $body-color
+  background-color: $body-background-color
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+
+/*
+ * Wrapper
+ *
+ * The wrapper is used to position site content when the sidebar is toggled. We
+ * use an outter wrap to position the sidebar without interferring with the
+ * regular page content.
+ */
+
+.content
+  margin-bottom: 4rem
+
+.wrap
+  position: relative
+  width: 100%
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container
+  max-width: 38rem
+  padding-left:  1rem
+  padding-right: 1rem
+  margin-left:  auto
+  margin-right: auto
+
+@media (min-width: 38em)
+  .container
+    max-width: 32rem
+
+@media (min-width: 56em)
+  .container
+    max-width: 38rem
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead
+  margin-bottom: 3rem
+  text-align: center
+  padding-top: .8rem
+  padding-bottom: .8rem
+  border-bottom: 1px solid #eee
+
+.masthead-title
+  margin-top: 0
+  margin-bottom: 0
+  color: #505050
+  line-height: 1.5rem
+
+.masthead-title a
+  color: #841212
+
+.masthead-title small
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+  font-size: 1rem
+  font-weight: 400
+  color: #c0c0c0
+  letter-spacing: 0
+
+
+h3.masthead-title
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+  font-size: 1.8rem
+  margin-top: 2px
+
+@media (max-width: 48em)
+  .masthead-title
+    text-align: center
+
+  .masthead-title small
+    display: none
+
+//sidebar toc
+a.sidebar-nav-item-toc
+
+  &.first-item
+    border-top: 1px solid white
+
+  &.selected-item
+    border: 1px dashed white
+
