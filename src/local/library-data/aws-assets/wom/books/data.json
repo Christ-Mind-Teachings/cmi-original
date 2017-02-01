@@ -1,0 +1,87 @@
+"books": [
+  {
+    "title": "Way of the Heart",
+    "id": "woh",
+    "types": [{
+      "type": "epub",
+      "filename": "woh-v3.epub",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/woh-v3.epub"
+    },
+    {
+      "type": "mobi",
+      "filename": "woh.mobi",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/woh.mobi"
+    } ]
+  },
+  {
+    "title": "Way of Transformation",
+    "id": "wot",
+    "types": [{
+      "type": "epub",
+      "filename": "wot-v3.epub",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/wot-v3.epub"
+    },
+    {
+      "type": "mobi",
+      "filename": "wot.mobi",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/wot.mobi"
+    } ]
+  },
+  {
+    "title": "Way of Knowing",
+    "id": "wok",
+    "types": [{
+      "type": "epub",
+      "filename": "wok-v3.epub",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/wok-v3.epub"
+    },
+    {
+      "type": "mobi",
+      "filename": "wok.mobi",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/wok.mobi"
+    } ]
+  },
+  {
+    "title": "Way of the Servant",
+    "id": "wos",
+    "types": [{
+      "type": "epub",
+      "filename": "wos-v3.epub",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/wos-v3.epub"
+    },
+    {
+      "type": "mobi",
+      "filename": "wos.mobi",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/wos.mobi"
+    } ]
+  },
+  {
+    "title": "The Jeshua Letters",
+    "id": "tjl",
+    "types": [{
+      "type": "epub",
+      "filename": "tjl-v3.epub",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/tjl-v3.epub"
+    },
+    {
+      "type": "mobi",
+      "filename": "tjl.mobi",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/tjl.mobi"
+    } ]
+  },
+  {
+    "title": "Cosmic Chocolate Orgasm",
+    "id": "cco",
+    "types": [{
+      "type": "epub",
+      "filename": "cco-v3-en.epub",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/cco-v3-en.epub"
+    },
+    {
+      "type": "mobi",
+      "filename": "cco-lulu-en.mobi",
+      "href": "https://s3.amazonaws.com/assets.christmind.info/wom/books/cco-lulu-en.mobi"
+    } ]
+  }
+]
+

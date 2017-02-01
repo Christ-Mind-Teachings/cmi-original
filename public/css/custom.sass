@@ -12,10 +12,6 @@
 @import 2-modules/modules-dir
 @import 3-layouts/layouts-dir
 
-$body-color: #454545
-$body-background-color: #fff
-$font: "Palatino Linotype", "Book Antiqua", Palatino, serif
-
 html
   font-family: $font
   font-size: 16px
@@ -117,4 +113,26 @@ a.sidebar-nav-item-toc
 
   &.selected-item
     border: 1px dashed white
+
+// ui/side-image adjustments
+.side-image
+  width: auto
+
+  .side-image-content
+    padding: 2em
+
+  .images-wrapper.gradient
+    background-image: url("/public/img/bkgrnd/gradient.jpg")
+
+  .images-wrapper.blur
+    background-image: url("/public/img/bkgrnd/blur.jpg")
+
+  .images-wrapper.globe
+    background-image: url("/public/img/bkgrnd/globe.jpg")
+
+  .images-wrapper.grey-gradient
+    background-image: url("/public/img/bkgrnd/grey-gradient.jpg")
+
+  .images-wrapper.underwater
+    background-image: url("/public/img/bkgrnd/underwater.jpg")
 
