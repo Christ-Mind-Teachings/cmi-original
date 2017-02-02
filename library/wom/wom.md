@@ -7,6 +7,10 @@ surl: /wom/
 publish: true
 ---
 
+{% comment %}
+{% include ui/image-overlay.html %}
+{% endcomment %}
+
 <div class="introduction">
   Hello, this is the home page for the Way of Mastery teachings.
   <hr>

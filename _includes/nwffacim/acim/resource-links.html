@@ -20,7 +20,7 @@
   Increment count so prev/next controls are generated even
   when other resources are not present for the page
 {% endcomment %}
-{% if page.nav == "npdata" %}
+{% if page.nav %}
   {% assign count = count | plus: 1 %}
 {% endif %}
 
@@ -51,7 +51,7 @@
 {% if count > 0 %}
   {% assign bits = resource | split: "," %}
   <ul class="fa-ul">
-  {% if page.nav == "npdata" %}
+  {% if page.nav %}
     <li>
       <a title="Previous Page" href="{{base}}{{page-data.prev}}">
         <i class="fa-li fa fa-hand-o-left"></i>&nbsp;&nbsp;

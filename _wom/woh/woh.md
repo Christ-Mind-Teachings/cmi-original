@@ -66,7 +66,7 @@ bullets:
   </blockquote>
   <p>
     <em>The Way of the Heart</em> lessons, and original question and
-    answer sessions, are the first 12 of 35 monthly lessons given by Jeshua
+    answer sessions, are the first year of 35 monthly lessons given by Jeshua
     during the years 1995-1997. Together they outline the steps and
     practices for awakening in Christ Mind.
   </p>
