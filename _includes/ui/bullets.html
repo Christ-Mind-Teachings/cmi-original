@@ -1,9 +1,18 @@
-<!--
-  bullet-icon images
-  <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
--->
+{% comment %}
+bullet-icon images
+<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
+{% endcomment %}
+
+{% assign iArr = site.data.ui.bullets.page | where: "id", page.bid %}
+{% assign info = iArr[0] %}
+
+{% comment %}
+page.bid: {{page.bid}}
+info: {{info}}
+{% endcomment %}
+
 <ul class="bullets">
-  {% for bullet in page.bullets %}
+  {% for bullet in info.item %}
   <li class="bullet">
     <div class="bullet-icon bullet-icon-{{bullet.icon}}">
     </div>

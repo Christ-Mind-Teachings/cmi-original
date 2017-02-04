@@ -1,0 +1,23 @@
+{
+  "page": [
+    {
+      "id": "wom",
+      "logo": "/public/img/wom/wom-logo-s.jpg",
+      "logo-url": "http://www.wayofmastery.com",
+      "about-text": "About Way of Mastery",
+      "about-url": "#",
+      "contact-url": "#",
+      "facebook-url": "#",
+      "twitter-url": "#",
+      "netlify": false
+    },
+    {
+      "id": "home",
+      "about-url": "#",
+      "contact-url": "#",
+      "facebook-url": "#",
+      "twitter-url": "#",
+      "netlify": true
+    }
+  ]
+}

@@ -4,8 +4,6 @@ layout: default
 
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
-  {% if page.nav %}
-    {% include {{page.nav}} %}
-  {% endif %}
+  {% include {{page.nav}} resource=false %}
   {{ content }}
 </div>

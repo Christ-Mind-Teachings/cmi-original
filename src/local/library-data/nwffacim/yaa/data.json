@@ -3,7 +3,6 @@
   "outfile": "yaa.json",
   "base": "/nwffacim/yaa/",
   "pages": [
-    "yaa",
     "titlepage",
     "ack",
     "foreword",

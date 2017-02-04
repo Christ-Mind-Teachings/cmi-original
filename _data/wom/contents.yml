@@ -2,13 +2,16 @@ books:
 - title: The Way of the Heart
   id: woh
   url: /wom/woh/woh/
-  img: /public/img/wom/woh
+  img: /public/img/wom/woh-lulu-thumbnail.jpg
+  desc: "The Way of Mastery - Book One"
 - title: The Way of Transformation
   id: wot
   url: /wom/wot/wot
-  img: /public/img/wom/wot
+  img: /public/img/wom/wot-lulu-thumbnail.jpg
+  desc: "The Way of Mastery - Book Two"
 - title: The Way of Knowing
   id: wok
   url: /wom/wok/wok
-  img: /public/img/wom/wok
+  img: /public/img/wom/wok-lulu-thumbnail.jpg
+  desc: "The Way of Mastery - Book Three"
 

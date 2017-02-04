@@ -5,7 +5,12 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <p>
+      {{ site.description }}
+      {% if page.title %}
+        <br/>{{page.title}}
+      {% endif %}
+    </p>
   </div>
 
   <nav class="sidebar-nav">
@@ -20,6 +25,15 @@
       `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
 
+    {% for node in site.data.cmi.library.pages %}
+      {% if page.url == node.url %}
+        <a class="sidebar-nav-item active" href="#">{{ node.title }}</a>
+      {% else %}
+        <a class="sidebar-nav-item" href="{{ node.url }}">{{ node.title }}</a>
+      {% endif %}
+    {% endfor %}
+
+    {% comment %}
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
       {% if node.title != null %}
@@ -34,6 +48,7 @@
         {% endif %}
       {% endif %}
     {% endfor %}
+    {% endcomment %}
 
     <!-- The code below is used for manually entered links  -->
 

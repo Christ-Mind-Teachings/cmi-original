@@ -1,14 +1,17 @@
+{% assign iArr = site.data.ui.side-image.page | where: "id", page.bid %}
+{% assign info = iArr[0] %}
+
 {% comment %}
-{% assign side-image = site.data.ui.side-image %}
-{% assign c = side-image.content | where: "cid", page.side-image-cid %}
-{% assign content = c[0] %}
+page.bid: {{page.bid}}
+info: {{info}}
 {% endcomment %}
+
 <div class="side-image">
-  <div class="images-wrapper {{page.side-image.image}}"></div>
+  <div class="images-wrapper {{info.image}}"></div>
     <div class="side-image-content">
-      <h4>{{page.side-image.topic}}</h4>
-      <h1>{{page.side-image.heading}}</h1>
-      {{side-image-content}}
+      <h4>{{info.topic}}</h4>
+      <h1>{{info.heading}}</h1>
+      {{info.content}}
     </div>
 </div>
 

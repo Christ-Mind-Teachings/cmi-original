@@ -1,0 +1,50 @@
+{% comment %}
+Determine what data file to use based on page.bid. See _config.yml in defaults:
+for location page.bid declaration
+{% endcomment %}
+{% case page.bid %}
+  {% when 2002 %}
+    {% assign data = site.data.nwffacim.acim.2002 %}
+  {% when 2003 %}
+    {% assign data = site.data.nwffacim.acim.2003 %}
+  {% when 2004 %}
+    {% assign data = site.data.nwffacim.acim.2004 %}
+  {% when 2005 %}
+    {% assign data = site.data.nwffacim.acim.2005 %}
+  {% when 2006 %}
+    {% assign data = site.data.nwffacim.acim.2006 %}
+  {% when 2007 %}
+    {% assign data = site.data.nwffacim.acim.2007 %}
+  {% when 2008 %}
+    {% assign data = site.data.nwffacim.acim.2008 %}
+  {% when 2009 %}
+    {% assign data = site.data.nwffacim.acim.2009 %}
+  {% when 2010 %}
+    {% assign data = site.data.nwffacim.acim.2010 %}
+  {% when 2011 %}
+    {% assign data = site.data.nwffacim.acim.2011 %}
+  {% when 2012 %}
+    {% assign data = site.data.nwffacim.acim.2012 %}
+  {% when 2013 %}
+    {% assign data = site.data.nwffacim.acim.2013 %}
+  {% when 2014 %}
+    {% assign data = site.data.nwffacim.acim.2014 %}
+  {% when 2015 %}
+    {% assign data = site.data.nwffacim.acim.2015 %}
+  {% when 2016 %}
+    {% assign data = site.data.nwffacim.acim.2016 %}
+  {% when "yaa" %}
+    {% assign data = site.data.nwffacim.yaa %}
+  {% when "grad" %}
+    {% assign data = site.data.nwffacim.grad %}
+  {% when "woh" %}
+    {% assign data = site.data.wom.woh %}
+  {% when "wot" %}
+    {% assign data = site.data.wom.wot %}
+  {% when "wok" %}
+    {% assign data = site.data.wom.wok %}
+  {% else  %}
+    {% assign data = false %}
+{% endcase %}
+
+

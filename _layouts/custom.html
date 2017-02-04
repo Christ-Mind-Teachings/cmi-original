@@ -3,25 +3,27 @@
 
   {% include chead.html %}
 
-  <body>
+  <!-- apply page specific styles, class: {{page.class}} -->
+  <body {% if page.class %}class="{{page.class}}"{% endif %}>
 
-    {% include sidebar-toc.html %}
+    {% if page.sidebar %}
+      {% include {{page.sidebar}} %}
+    {% else %}
+      {% include sidebar-toc.html %}
+    {% endif %}
 
     <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <br><small>{{ site.tagline }}</small>
-          </h3>
-        </div>
-      </div>
+      {% include masthead.html %}
 
       {{ content }}
 
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    {% if page.footer-id %}
+      {% include footer.html id=page.footer-id %}
+    {% endif %}
 
     <script>
 

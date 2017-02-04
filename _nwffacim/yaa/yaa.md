@@ -1,18 +1,24 @@
 ---
-layout: hero
+layout: custom
 title: Introduction
 book: You Are the Answer, A Journey of Awakening
 source: Northwest Foundation for ACIM
 surl: /nwffacim/
+id: "yaa"
 ---
 {% comment %}
 This is the {{page.book}} page.
 {% endcomment %}
 
-<div class="hero">
-  <div class="hero-content">
-    <img src="/public/img/nwffacim/yaa/cover-s.jpg" alt="Logo Image" class="hero-logo">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni modi doloremque excepturi laudantium maxime explicabo cumque deleniti voluptate deserunt.</p>
-  </div>
+<div markdown="1" class="container content">
+
+<div markdown="1" class="image-left">
+![](/public/img/nwffacim/yaa/cover-s.jpg)
+</div>
+
+<div markdown="1" class="image-desc">
+This is a description for yaa
+</div>
+
 </div>
 

@@ -1,18 +1,47 @@
+{% comment %}
+include.id: {{include.id}}
+info: {{info}}
+{% endcomment %}
+
+{% assign iArr = site.data.ui.footer.page | where: "id", include.id %}
+{% assign info = iArr[0] %}
+
 <footer class="footer" role="contentinfo">
+  {% if info.logo %}
   <div class="footer-logo">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
+    {% if info.logo-url %}
+      <a target="_blank" href="{{info.logo-url}}">
+        <img src="{{info.logo}}" alt="Logo image">
+      </a>
+    {% else %}
+      <img src="{{info.logo}}" alt="Logo image">
+    {% endif %}
   </div>
+  {% endif %}
   <div class="footer-links">
     <ul>
       <li><h3>Content</h3></li>
-      <li><a href="javascript:void(0)">About</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
+      {% if info.about-url %}
+        <li>
+          <a href="{{info.about-url}}">
+            {% if info.about-text %}
+              {{info.about-text}}
+            {% else %}
+              About
+            {% endif %}
+          </a>
+        </li>
+      {% endif %}
+      {% if info.contact-url %}
+        <li><a href="{{info.contact-url}}">Contact</a></li>
+      {% endif %}
     </ul>
     <ul>
       <li><h3>Follow Us</h3></li>
       <li><a href="javascript:void(0)">Facebook</a></li>
       <li><a href="javascript:void(0)">Twitter</a></li>
     </ul>
+    {% if info.netlify == true %}
     <ul>
       <li><h3>Supported By</h3></li>
       <li>
@@ -21,6 +50,7 @@
         </a>
       </li>
     </ul>
+    {% endif %}
   </div>
 </footer>
 

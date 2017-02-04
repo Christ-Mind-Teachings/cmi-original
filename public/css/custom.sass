@@ -63,6 +63,17 @@ body
   .container
     max-width: 38rem
 
+h1, h2, h3, h4, h5, h6
+  line-height: 1.25
+  font-weight: 400
+  letter-spacing: -.025rem
+
+a
+  text-decoration: none
+
+  &:hover, &:focus
+    text-decoration: underline
+
 /*
  * Masthead
  *
@@ -92,7 +103,6 @@ body
   color: #c0c0c0
   letter-spacing: 0
 
-
 h3.masthead-title
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
   font-size: 1.8rem
@@ -106,6 +116,9 @@ h3.masthead-title
     display: none
 
 //sidebar toc
+a.sidebar-nav-item
+  text-decoration: none
+
 a.sidebar-nav-item-toc
 
   &.first-item

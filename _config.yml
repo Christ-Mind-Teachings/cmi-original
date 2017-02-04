@@ -2,8 +2,8 @@
 
 # Setup
 title:               'Teachings of Christ Mind'
-tagline:             'A guide for living from the Mind of Christ'
-description:         'A library of Christ Mind teachings.'
+tagline:             'A Guide For Living from the Mind of Christ'
+description:         'A Library of Christ Mind Teachings.'
 url:                 'https://www.christmind.info'
 baseurl:             ''
 
@@ -29,6 +29,8 @@ collections:
     output: true
 
 defaults:
+
+# Way of Mastery
   - scope:
       path: ""
       type: wom
@@ -36,36 +38,42 @@ defaults:
       layout: narrative
       source: Way of Mastery
       surl: /wom/
-  - scope:
-      path: "_wom/wot"
-      type: wom
-    values:
-      bid: wot
-      book: Way of Transformation
-      nav: ui/np-page.html
-      home: "#"
-      contents: wom/wot/contents.html
-      class: grad
+      class: wom
+
+# Way of the Heart
   - scope:
       path: "_wom/woh"
       type: wom
     values:
       bid: woh
       book: Way of the Heart
-      nav: ui/np-page.html
+      nav: nav/np-data.html
       home: "#"
-      contents: wom/woh/contents.html
-      class: woh
+      contents: nav/contents.html
+
+# Way of Transformation
+  - scope:
+      path: "_wom/wot"
+      type: wom
+    values:
+      bid: wot
+      book: Way of Transformation
+      nav: nav/np-data.html
+      home: "#"
+      contents: nav/contents.html
+
+# Way of Knowing
   - scope:
       path: "_wom/wok"
       type: wom
     values:
       bid: wok
       book: Way of Knowing
-      nav: ui/np-page.html
+      nav: nav/np-data.html
       home: "#"
-      contents: wom/wok/contents.html
-      class: grad
+      contents: nav/contents.html
+
+# Paul Tuttle and Raj - Northwest Foundation for ACIM
   - scope:
       path: ""
       type: nwffacim
@@ -73,113 +81,131 @@ defaults:
       layout: narrative
       source: Northwest Foundation for ACIM
       surl: /nwffacim/
+
+# ACIM Study Group - many years of sessions
   - scope:
       path: "_nwffacim/acim"
       type: nwffacim
     values:
-      bid: acimsg
       book: ACIM Study Group
       home: /nwffacim/acim/
-      nav: nwffacim/acim/np-data.html
-      class: grad
-      contents: nwffacim/acim/contents.html
-      links: nwffacim/acim/resource-links.html
+      nav: nav/np-data.html
+      class: nwffacim
+      contents: nav/contents.html
+
+# 2002
   - scope:
       path: "_nwffacim/acim/2002"
       type: nwffacim
     values:
-      year: 2002
-      mask: "/nwffacim/acim/2002/"
+      bid: 2002
+
+# 2003
   - scope:
       path: "_nwffacim/acim/2003"
       type: nwffacim
     values:
-      year: 2003
-      mask: "/nwffacim/acim/2003/"
+      bid: 2003
+
+# 2004
   - scope:
       path: "_nwffacim/acim/2004"
       type: nwffacim
     values:
-      year: 2004
-      mask: "/nwffacim/acim/2004/"
+      bid: 2004
+
+# 2005
   - scope:
       path: "_nwffacim/acim/2005"
       type: nwffacim
     values:
-      year: 2005
-      mask: "/nwffacim/acim/2005/"
+      bid: 2005
+
+# 2006
   - scope:
       path: "_nwffacim/acim/2006"
       type: nwffacim
     values:
-      year: 2006
-      mask: "/nwffacim/acim/2006/"
+      bid: 2006
+
+# 2007
   - scope:
       path: "_nwffacim/acim/2007"
       type: nwffacim
     values:
-      year: 2007
-      mask: "/nwffacim/acim/2007/"
+      bid: 2007
+
+# 2008
   - scope:
       path: "_nwffacim/acim/2008"
       type: nwffacim
     values:
-      year: 2008
-      mask: "/nwffacim/acim/2008/"
+      bid: 2008
+
+# 2009
   - scope:
       path: "_nwffacim/acim/2009"
       type: nwffacim
     values:
-      year: 2009
-      mask: "/nwffacim/acim/2009/"
+      bid: 2009
+
+# 2010
   - scope:
       path: "_nwffacim/acim/2010"
       type: nwffacim
     values:
-      year: 2010
-      mask: "/nwffacim/acim/2010/"
+      bid: 2010
+
+# 2011
   - scope:
       path: "_nwffacim/acim/2011"
       type: nwffacim
     values:
-      year: 2011
-      mask: "/nwffacim/acim/2011/"
+      bid: 2011
+
+# 2012
   - scope:
       path: "_nwffacim/acim/2012"
       type: nwffacim
     values:
-      year: 2012
-      path: "/nwffacim/acim/2012/"
+      bid: 2012
+
+# 2013
   - scope:
       path: "_nwffacim/acim/2013"
       type: nwffacim
     values:
-      year: 2013
-      mask: "/nwffacim/acim/2013/"
+      bid: 2013
+
+# 2014
   - scope:
       path: "_nwffacim/acim/2014"
       type: nwffacim
     values:
-      year: 2014
-      mask: "/nwffacim/acim/2014/"
+      bid: 2014
+
+# 2015
   - scope:
       path: "_nwffacim/acim/2015"
       type: nwffacim
     values:
-      year: 2015
-      mask: "/nwffacim/acim/2015/"
+      bid: 2015
+
+# 2016
   - scope:
       path: "_nwffacim/acim/2016"
       type: nwffacim
     values:
-      year: 2016
-      mask: "/nwffacim/acim/2016/"
+      bid: 2016
+
+# 2017
   - scope:
       path: "_nwffacim/acim/2017"
       type: nwffacim
     values:
-      year: 2017
-      path: "/nwffacim/acim/2017/"
+      bid: 2017
+
+# You Are the Answer ebook
   - scope:
       path: "_nwffacim/yaa"
       type: nwffacim
@@ -187,9 +213,11 @@ defaults:
       bid: yaa
       book: You Are the Answer
       home: "#"
-      contents: nwffacim/yaa/contents.html
-      nav: nwffacim/yaa/np-data.html
-      class: grad
+      contents: nav/contents.html
+      nav: nav/np-data.html
+      class: nwffacim
+
+# Graduation ebook
   - scope:
       path: "_nwffacim/grad"
       type: nwffacim
@@ -197,9 +225,9 @@ defaults:
       bid: grad
       book: Graduation
       home: "#"
-      class: grad
-      nav: ui/np-page.html
-      contents: nwffacim/grad/contents.html
+      class: nwffacim
+      nav: nav/np-data.html
+      contents: nav/contents.html
 
 # Markdown specs
 markdown: kramdown
@@ -217,6 +245,32 @@ kramdown:
 version:             0.0.6
 
 # Exclusions from the final site
-exclude: [src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules]
+exclude: [
+  # _wom/woh,
+  # _wom/wot,
+  # _wom/wok,
+  # _wom,
+  # _nwffacim,
+  # _nwffacim/grad,
+  # _nwffacim/yaa,
+  # _nwffacim/acim,
+  # _nwffacim/acim/2002,
+   _nwffacim/acim/2003,
+   _nwffacim/acim/2004,
+   _nwffacim/acim/2005,
+   _nwffacim/acim/2006,
+   _nwffacim/acim/2007,
+   _nwffacim/acim/2008,
+   _nwffacim/acim/2009,
+   _nwffacim/acim/2010,
+   _nwffacim/acim/2011,
+   _nwffacim/acim/2012,
+   _nwffacim/acim/2013,
+   _nwffacim/acim/2014,
+   _nwffacim/acim/2015,
+   _nwffacim/acim/2016,
+   _nwffacim/acim/2017,
+  src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
+]
 
 

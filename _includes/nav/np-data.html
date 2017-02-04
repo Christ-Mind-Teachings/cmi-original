@@ -1,0 +1,103 @@
+{% comment %}
+Generate next/previous page links from _data files based on page.bid
+- add links to resources (pdf, mp3, etc) if present and requested
+by include parameter 'resource=true'
+{% endcomment %}
+
+{% comment %}
+<!--
+  bid: {{page.bid}}
+  include.resource: {{include.resource}}
+-->
+{% endcomment %}
+
+{% assign include-resource = include.resource | default: false %}
+{% include nav/resolve.html %}
+{% if data %}
+  {% assign count = 1 %}
+  {% assign resource = "" %}
+
+  {% assign base = data.base %}
+  {% assign key = page.url | remove_first: base %}
+  {% assign p = data.page | where: "url", key %}
+  {% assign page-data = p[0] %}
+
+  {% comment %}
+  <!--
+    base: {{base}}
+    key: {{key}}
+    page-data: {{page-data}}
+  -->
+  {% endcomment %}
+
+  {% if include-resource %}
+    {% if page-data.rtf %}
+      {% assign count = count | plus: 1 %}
+      {% assign rtf-href = data.rtf_domain | append: page-data.rtf %}
+      {% assign resource = resource | append: "rtf=" | append: rtf-href %}
+    {% endif %}
+
+    {% if page-data.pdf %}
+      {% assign count = count | plus: 1 %}
+      {% assign pdf-href = data.pdf_domain | append: page-data.pdf %}
+      {% assign resource = resource | append: ",pdf=" | append: pdf-href %}
+    {% endif %}
+
+    {% if page-data.audio %}
+      {% assign count = count | plus: 1 %}
+      {% assign audio-href = data.audio_domain | append: page-data.audio %}
+      {% assign resource = resource | append: ",audio=" | append: audio-href %}
+    {% endif %}
+
+    {% if page-data.video %}
+      {% assign count = count | plus: 1 %}
+      {% assign video-href = data.video | append: page-data.video %}
+      {% assign resource = resource | append: ",video=" | append: video-href %}
+    {% endif %}
+
+    {% assign bits = resource | split: "," %}
+  {% endif %}
+  <ul class="fa-ul">
+    <li>
+      <a title="Previous Page" href="{{base}}{{page-data.prev}}">
+        <i class="fa-li fa fa-hand-o-left"></i>&nbsp;&nbsp;
+      </a>
+    </li>
+    <li>
+      <a title="Next Page" href="{{base}}{{page-data.next}}">
+        <i class="fa-li fa fa-hand-o-right"></i>
+      </a>
+    </li>
+    {% if include-resource %}
+      {% for bit in bits %}
+        {% assign parts = bit | split: "=" %}
+        {% assign title = "" %}
+        {% assign target = "" %}
+        {% case parts[0] %}
+          {% when "pdf" %}
+            {% assign class = "fa-li fa fa-file-pdf-o" %}
+            {% assign title = 'title="Display/Download PDF (on new page/tab)"' %}
+            {% assign target = 'target="_blank"' %}
+          {% when "rtf" %}
+            {% assign class = "fa-li fa fa-file-text-o" %}
+            {% assign title = 'title="Download RTF"' %}
+          {% when "audio" %}
+            {% assign class = "fa-li fa fa-volume-up" %}
+            {% assign title = 'title="Listen To Recording (on new page/tab)"' %}
+            {% assign target = 'target="_blank"' %}
+          {% when "video" %}
+            {% assign class = "fa-li fa fa-play" %}
+            {% assign title = 'title="Play Video (on new page/tab)"' %}
+            {% assign target = 'target="_blank"' %}
+          {% else %}
+            {% assign class = "fa-li fa question-circle-o" %}
+            {% assign title = 'title="Unknown URL"' %}
+        {% endcase %}
+        <li><a {{target}} {{title}} href="{{parts[1]}}"><i class="{{class}}"></i></a></li>
+      {% endfor %}
+    {% endif %}
+  </ul>
+{% else %}
+  <h1> ERROR in nav/np-data.html: data file not found for page.bid: {{page.bid}}</h1>
+{% endif %}
+

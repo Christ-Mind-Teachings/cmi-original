@@ -1,0 +1,220 @@
+# Built with Jekyll 3.2.0
+
+# Setup
+title:               'Teachings of Christ Mind'
+tagline:             'A Guide For Living from the Mind of Christ'
+description:         'A Library of Christ Mind Teachings.'
+url:                 'https://www.christmind.info'
+baseurl:             ''
+
+# About/contact
+author:
+  name:              Rick Mercer
+  url:               https://twitter.com/rmercer33
+  email:             rmercer33@gmail.com
+
+# Permalinks
+
+permalink: pretty
+permalink: /:title/
+
+# Set encoding to UTF-8
+encoding: utf-8
+
+# Collections for texts
+collections:
+  wom:
+    output: true
+  nwffacim:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: wom
+    values:
+      layout: narrative
+      source: Way of Mastery
+      surl: /wom/
+      class: wom
+  - scope:
+      path: "_wom/wot"
+      type: wom
+    values:
+      bid: wot
+      book: Way of Transformation
+      nav: ui/np-page.html
+      home: "#"
+      contents: wom/wot/contents.html
+  - scope:
+      path: "_wom/woh"
+      type: wom
+    values:
+      bid: woh
+      book: Way of the Heart
+      nav: ui/np-page.html
+      home: "#"
+      contents: wom/woh/contents.html
+  - scope:
+      path: "_wom/wok"
+      type: wom
+    values:
+      bid: wok
+      book: Way of Knowing
+      nav: ui/np-page.html
+      home: "#"
+      contents: wom/wok/contents.html
+  - scope:
+      path: ""
+      type: nwffacim
+    values:
+      layout: narrative
+      source: Northwest Foundation for ACIM
+      surl: /nwffacim/
+  - scope:
+      path: "_nwffacim/acim"
+      type: nwffacim
+    values:
+      bid: acimsg
+      book: ACIM Study Group
+      home: /nwffacim/acim/
+      nav: nwffacim/acim/np-data.html
+      class: nwffacim
+      contents: nwffacim/acim/contents.html
+      links: nwffacim/acim/resource-links.html
+  - scope:
+      path: "_nwffacim/acim/2002"
+      type: nwffacim
+    values:
+      year: 2002
+      mask: "/nwffacim/acim/2002/"
+  - scope:
+      path: "_nwffacim/acim/2003"
+      type: nwffacim
+    values:
+      year: 2003
+      mask: "/nwffacim/acim/2003/"
+  - scope:
+      path: "_nwffacim/acim/2004"
+      type: nwffacim
+    values:
+      year: 2004
+      mask: "/nwffacim/acim/2004/"
+  - scope:
+      path: "_nwffacim/acim/2005"
+      type: nwffacim
+    values:
+      year: 2005
+      mask: "/nwffacim/acim/2005/"
+  - scope:
+      path: "_nwffacim/acim/2006"
+      type: nwffacim
+    values:
+      year: 2006
+      mask: "/nwffacim/acim/2006/"
+  - scope:
+      path: "_nwffacim/acim/2007"
+      type: nwffacim
+    values:
+      year: 2007
+      mask: "/nwffacim/acim/2007/"
+  - scope:
+      path: "_nwffacim/acim/2008"
+      type: nwffacim
+    values:
+      year: 2008
+      mask: "/nwffacim/acim/2008/"
+  - scope:
+      path: "_nwffacim/acim/2009"
+      type: nwffacim
+    values:
+      year: 2009
+      mask: "/nwffacim/acim/2009/"
+  - scope:
+      path: "_nwffacim/acim/2010"
+      type: nwffacim
+    values:
+      year: 2010
+      mask: "/nwffacim/acim/2010/"
+  - scope:
+      path: "_nwffacim/acim/2011"
+      type: nwffacim
+    values:
+      year: 2011
+      mask: "/nwffacim/acim/2011/"
+  - scope:
+      path: "_nwffacim/acim/2012"
+      type: nwffacim
+    values:
+      year: 2012
+      path: "/nwffacim/acim/2012/"
+  - scope:
+      path: "_nwffacim/acim/2013"
+      type: nwffacim
+    values:
+      year: 2013
+      mask: "/nwffacim/acim/2013/"
+  - scope:
+      path: "_nwffacim/acim/2014"
+      type: nwffacim
+    values:
+      year: 2014
+      mask: "/nwffacim/acim/2014/"
+  - scope:
+      path: "_nwffacim/acim/2015"
+      type: nwffacim
+    values:
+      year: 2015
+      mask: "/nwffacim/acim/2015/"
+  - scope:
+      path: "_nwffacim/acim/2016"
+      type: nwffacim
+    values:
+      year: 2016
+      mask: "/nwffacim/acim/2016/"
+  - scope:
+      path: "_nwffacim/acim/2017"
+      type: nwffacim
+    values:
+      year: 2017
+      path: "/nwffacim/acim/2017/"
+  - scope:
+      path: "_nwffacim/yaa"
+      type: nwffacim
+    values:
+      bid: yaa
+      book: You Are the Answer
+      home: "#"
+      contents: nwffacim/yaa/contents.html
+      nav: nwffacim/yaa/np-data.html
+      class: nwffacim
+  - scope:
+      path: "_nwffacim/grad"
+      type: nwffacim
+    values:
+      bid: grad
+      book: Graduation
+      home: "#"
+      class: nwffacim
+      nav: ui/np-page.html
+      contents: nwffacim/grad/contents.html
+
+# Markdown specs
+markdown: kramdown
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Custom vars
+version:             0.0.6
+
+# Exclusions from the final site
+exclude: [_nwffacim, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules]
+
+

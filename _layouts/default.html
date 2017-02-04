@@ -17,35 +17,7 @@
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">{{ site.title }}</a>
-            {% if page.source and page.book %}
-              <br><small>
-                <a href="{{page.surl}}">{{ page.source }}</a>
-                {% if page.home == "#" %}
-                  <span>:</span>
-                  {{ page.book }}
-                {% else %}
-                  <span>/</span>
-                  <a href="{{page.home}}">{{ page.book }}</a>
-                {% endif %}
-              </small>
-            {% elsif page.source %}
-              <br><small>
-              {% if page.surl == page.url %}
-                {{ page.source }}
-              {% else %}
-                <a href="{{page.surl}}">{{ page.source }}</a>
-              {% endif %}
-              </small>
-            {% else %}
-              <br><small>{{ site.tagline }}</small>
-            {% endif %}
-          </h3>
-        </div>
-      </div>
+      {% include masthead.html %}
 
       <div class="container content" id="main">
         {{ content }}
@@ -54,9 +26,10 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    {% if page.footer == true %}
-      {% include footer.html %}
+    {% if page.footer-id %}
+      {% include footer.html id=page.footer-id %}
     {% endif %}
+
     <script>
 
     // Highlight search Query
