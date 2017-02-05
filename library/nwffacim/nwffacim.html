@@ -15,8 +15,13 @@ publish: true
   Northwest Foundation for ACIM</a>.
   </p>
 
-  <section>
+  {% include ui/description-list.html data=site.data.nwffacim.contents.books %}
 
+</div>
+
+  {% comment %}
+  <section>
+  
   {% for book in site.data.nwffacim.contents.books %}
     <header>
       <a href="{{book.url}}">{{book.title}}</a>
@@ -25,7 +30,7 @@ publish: true
       <p>{{book.desc}}</p>
     </section>
   {% endfor %}
-
+  
   </section>
-</div>
+  {% endcomment %}
 

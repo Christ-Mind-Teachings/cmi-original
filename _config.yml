@@ -87,8 +87,9 @@ defaults:
       path: "_nwffacim/acim"
       type: nwffacim
     values:
+      bid: acimc
       book: ACIM Study Group
-      home: /nwffacim/acim/
+      home: /nwffacim/acim/acim/
       nav: nav/np-data.html
       class: nwffacim
       contents: nav/contents.html
@@ -255,21 +256,21 @@ exclude: [
   # _nwffacim/yaa,
   # _nwffacim/acim,
   # _nwffacim/acim/2002,
-   _nwffacim/acim/2003,
-   _nwffacim/acim/2004,
-   _nwffacim/acim/2005,
-   _nwffacim/acim/2006,
-   _nwffacim/acim/2007,
-   _nwffacim/acim/2008,
-   _nwffacim/acim/2009,
-   _nwffacim/acim/2010,
-   _nwffacim/acim/2011,
-   _nwffacim/acim/2012,
-   _nwffacim/acim/2013,
-   _nwffacim/acim/2014,
-   _nwffacim/acim/2015,
-   _nwffacim/acim/2016,
-   _nwffacim/acim/2017,
+  # _nwffacim/acim/2003,
+  # _nwffacim/acim/2004,
+  # _nwffacim/acim/2005,
+  # _nwffacim/acim/2006,
+  # _nwffacim/acim/2007,
+  # _nwffacim/acim/2008,
+  # _nwffacim/acim/2009,
+  # _nwffacim/acim/2010,
+  # _nwffacim/acim/2011,
+  # _nwffacim/acim/2012,
+  # _nwffacim/acim/2013,
+  # _nwffacim/acim/2014,
+  # _nwffacim/acim/2015,
+  # _nwffacim/acim/2016,
+  # _nwffacim/acim/2017,
   src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
 

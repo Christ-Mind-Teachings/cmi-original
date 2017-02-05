@@ -1,0 +1,24 @@
+<!--
+  ui/description-list
+  include.base: {{include.base}}
+  include.skip: {{include.skip}}
+-->
+
+{% assign skip = include.skip | default: -1 %}
+{% assign base = include.base | default: "" %}
+
+<section>
+
+{% for book in include.data %}
+  {% if skip != book.idx %}
+    <header>
+      <a href="{{base | append: book.url}}">{{book.title}}</a>
+    </header>
+    <section>
+      <p>{{book.desc | default: "No description yet"}}</p>
+    </section>
+  {% endif %}
+{% endfor %}
+
+</section>
+

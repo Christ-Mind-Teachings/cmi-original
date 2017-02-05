@@ -31,27 +31,27 @@ by include parameter 'resource=true'
   {% endcomment %}
 
   {% if include-resource %}
-    {% if page-data.rtf %}
+    {% if page-data.res.rtf %}
       {% assign count = count | plus: 1 %}
-      {% assign rtf-href = data.rtf_domain | append: page-data.rtf %}
+      {% assign rtf-href = data.domain.rtf | append: page-data.res.rtf %}
       {% assign resource = resource | append: "rtf=" | append: rtf-href %}
     {% endif %}
 
-    {% if page-data.pdf %}
+    {% if page-data.res.pdf %}
       {% assign count = count | plus: 1 %}
-      {% assign pdf-href = data.pdf_domain | append: page-data.pdf %}
+      {% assign pdf-href = data.domain.pdf | append: page-data.res.pdf %}
       {% assign resource = resource | append: ",pdf=" | append: pdf-href %}
     {% endif %}
 
-    {% if page-data.audio %}
+    {% if page-data.res.audio %}
       {% assign count = count | plus: 1 %}
-      {% assign audio-href = data.audio_domain | append: page-data.audio %}
+      {% assign audio-href = data.domain.audio | append: page-data.res.audio %}
       {% assign resource = resource | append: ",audio=" | append: audio-href %}
     {% endif %}
 
-    {% if page-data.video %}
+    {% if page-data.res.video %}
       {% assign count = count | plus: 1 %}
-      {% assign video-href = data.video | append: page-data.video %}
+      {% assign video-href = data.domain.video | append: page-data.res.video %}
       {% assign resource = resource | append: ",video=" | append: video-href %}
     {% endif %}
 

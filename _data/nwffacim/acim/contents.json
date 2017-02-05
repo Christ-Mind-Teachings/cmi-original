@@ -1,0 +1,134 @@
+{
+  "base": "/nwffacim/acim/",
+  "image-base": "/public/img/nwffacim/china/",
+  "year": [
+    {
+      "display": true,
+      "year": "2002",
+      "title": "2002",
+      "about-url": "/2002/",
+      "desc": "20 Session beginning June 12",
+      "image": "horse.jpg"
+    },
+    {
+      "display": true,
+      "year": "2003",
+      "title": "2003",
+      "about-url": "/2003/",
+      "desc": "47 Sessions",
+      "image": "goat.jpg"
+    },
+    {
+      "display": true,
+      "year": "2004",
+      "title": "2004",
+      "about-url": "/2004/",
+      "desc": "41 Sessions",
+      "image": "monkey.jpg"
+    },
+    {
+      "display": true,
+      "year": "2005",
+      "title": "2005",
+      "about-url": "/2005/",
+      "desc": "40 Sessions",
+      "image": "rooster.jpg"
+    },
+    {
+      "display": true,
+      "year": "2006",
+      "title": "2006",
+      "about-url": "/2006/",
+      "desc": "34 Sessions",
+      "image": "dog.jpg"
+    },
+    {
+      "display": true,
+      "year": "2007",
+      "title": "2007",
+      "about-url": "/2007/",
+      "desc": "13 Sessions",
+      "image": "pig.jpg"
+    },
+    {
+      "display": true,
+      "year": "2008",
+      "title": "2008",
+      "about-url": "/2008/",
+      "desc": "33 Sessions",
+      "image": "rat.jpg"
+    },
+    {
+      "display": true,
+      "year": "2009",
+      "title": "2009",
+      "about-url": "/2009/",
+      "desc": "34 Sessions",
+      "image": "ox.jpg"
+    },
+    {
+      "display": true,
+      "year": "2010",
+      "title": "2010",
+      "about-url": "/2010/",
+      "desc": "35 Sessions",
+      "image": "tiger.jpg"
+    },
+    {
+      "display": true,
+      "year": "2011",
+      "title": "2011",
+      "about-url": "/2011/",
+      "desc": "40 Sessions",
+      "image": "rabbit.jpg"
+    },
+    {
+      "display": true,
+      "year": "2012",
+      "title": "2012",
+      "about-url": "/2012/",
+      "desc": "29 Sessions",
+      "image": "dragon.jpg"
+    },
+    {
+      "display": true,
+      "year": "2013",
+      "title": "2013",
+      "about-url": "/2013/",
+      "desc": "27 Sessions",
+      "image": "snake.jpg"
+    },
+    {
+      "display": true,
+      "year": "2014",
+      "title": "2014",
+      "about-url": "/2014/",
+      "desc": "10 Sessions",
+      "image": "horse.jpg"
+    },
+    {
+      "display": true,
+      "year": "2015",
+      "title": "2015",
+      "about-url": "/2015/",
+      "desc": "18 Sessions",
+      "image": "goat.jpg"
+    },
+    {
+      "display": false,
+      "year": "2016",
+      "title": "2016",
+      "about-url": "/2016/",
+      "desc": "?? Sessions",
+      "image": "monkey.jpg"
+    },
+    {
+      "display": false,
+      "year": "2017",
+      "title": "2017",
+      "about-url": "/2017/",
+      "desc": "?? Sessions",
+      "image": "rooster.jpg"
+    }
+  ]
+}
