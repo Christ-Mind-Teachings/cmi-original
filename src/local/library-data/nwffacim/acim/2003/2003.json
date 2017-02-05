@@ -4,7 +4,7 @@
     {
       "url": "2003/",
       "idx": 0,
-      "title": "Invalid date",
+      "title": "About",
       "next": "010203/",
       "prev": "122103/"
     },
@@ -37,6 +37,8 @@
       "prev": "011603/"
     },
     {
+      "fid": "020603",
+      "desc": "T2.VII Cause and Effect",
       "url": "020603/",
       "idx": 5,
       "title": "Feb 6, 2003",
@@ -51,6 +53,8 @@
       "prev": "020603/"
     },
     {
+      "fid": "022003",
+      "desc": "T2.VII Cause and Effect",
       "url": "022003/",
       "idx": 7,
       "title": "Feb 20, 2003",
@@ -58,6 +62,8 @@
       "prev": "021303/"
     },
     {
+      "fid": "022703",
+      "desc": "T2.VII Cause and Effect",
       "url": "022703/",
       "idx": 8,
       "title": "Feb 27, 2003",
@@ -170,6 +176,8 @@
       "prev": "061503/"
     },
     {
+      "fid": "062903",
+      "desc": "T4.In Introduction",
       "url": "062903/",
       "idx": 24,
       "title": "Jun 29, 2003",
@@ -177,6 +185,8 @@
       "prev": "062203/"
     },
     {
+      "fid": "070603",
+      "desc": "T4.1 Right Teaching and Right Learning",
       "url": "070603/",
       "idx": 25,
       "title": "Jul 6, 2003",

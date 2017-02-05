@@ -87,8 +87,9 @@ defaults:
       path: "_nwffacim/acim"
       type: nwffacim
     values:
+      bid: acimc
       book: ACIM Study Group
-      home: /nwffacim/acim/
+      home: /nwffacim/acim/acim/
       nav: nav/np-data.html
       class: nwffacim
       contents: nav/contents.html

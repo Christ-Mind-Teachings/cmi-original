@@ -51,9 +51,19 @@ var example = {
   id: "wom",
   base: "/wom/woh/",
   outfile: "output.filename",
+  domain: {
+    rtf: "rtf.domain.com",
+    pdf: "pdf.domain.com",
+    etc: "etc"
+  },
   pages: [
     "file1",
-    "file2",
+    {
+      fid: "file2",
+      desc: "desc",
+      "...": "etc"
+    },
+    "file3",
     "...",
     "in sequential order"
   ]
@@ -64,6 +74,36 @@ var util = require("util");
 var moment = require("moment");
 var _ = require("underscore");
 
+/*
+ * 'item' might be an object. When it is item.fid is data to return
+ */
+function getItem(item) {
+  var fid = item;
+  if (_.isObject(item)) {
+    fid = item.fid;
+  }
+
+  return fid;
+}
+
+function copyObj(page, item) {
+  var fid = item;
+
+  if (_.isObject(item)) {
+    page = _.extend(page, item);
+    page = _.omit(page, "fid");
+    fid = item.fid;
+  }
+
+  if (typeof fid === "undefined") {
+    console.log("Missing 'fid:' in array object");
+    process.exit(1);
+  }
+
+  return fid;
+}
+
+
 //common between all types
 function next_prev(page, arr) {
   var idx = page.idx;
@@ -71,32 +111,58 @@ function next_prev(page, arr) {
   if (arr.length > 1) {
     //we're at the last element
     if (idx === arr.length - 1) {
-      page.next = util.format("%s/", arr[0]);
-      page.prev = util.format("%s/", arr[idx-1]);
+      page.next = util.format("%s/", getItem(arr[0]));
+      page.prev = util.format("%s/", getItem(arr[idx-1]));
     }
     else if (idx === 0) {
-      page.next = util.format("%s/", arr[idx+1]);
-      page.prev = util.format("%s/", arr[arr.length - 1]);
+      page.next = util.format("%s/", getItem(arr[idx+1]));
+      page.prev = util.format("%s/", getItem(arr[arr.length - 1]));
     }
     else {
-      page.next = util.format("%s/", arr[idx+1]);
-      page.prev = util.format("%s/", arr[idx-1]);
+      page.next = util.format("%s/", getItem(arr[idx+1]));
+      page.prev = util.format("%s/", getItem(arr[idx-1]));
     }
   }
   else {
-    page.next = util.format("%s/", item);
-    page.prev = util.format("%s/", item);
+    page.next = util.format("%s/", getItem(arr[0]));
+    page.prev = util.format("%s/", getItem(arr[0]));
   }
+}
+
+// acim contents procedure for json file conversion
+function acimc(item, idx, arr) {
+  var page = {};
+  var fid = copyObj(page, item);
+
+  if (fid === "acim") {
+    page.title = "About ACIM Study Group ";
+    page.url = util.format("%s/", fid);
+  }
+  else {
+    page.title = "About Year " + fid;
+    page.url = util.format("%s/%s/", fid, fid);
+  }
+  page.idx = idx;
+
+  next_prev(page, arr);
+
+  return page;
 }
 
 // acim procedure for json file conversion
 function acim(item, idx, arr) {
   var page = {};
-  var d = moment(item, "MMDDYY");
+  var fid = copyObj(page, item);
 
-  page.url = util.format("%s/", item);
+  var d = moment(fid, "MMDDYY");
+
+  page.url = util.format("%s/", fid);
   page.idx = idx;
   page.title = d.format("MMM D, YYYY");
+
+  if (page.title === "Invalid date") {
+    page.title = "About";
+  }
   next_prev(page, arr);
 
   return page;
@@ -105,24 +171,25 @@ function acim(item, idx, arr) {
 // yaa procedure for json file conversion
 function yaa(item, idx, arr) {
   var page = {};
+  var fid = copyObj(page, item);
   var d;
 
   // item is not a date
-  if (item[0].search(/\d/) === -1) {
-    page.title = item.charAt(0).toUpperCase() + item.substr(1);
+  if (fid[0].search(/\d/) === -1) {
+    page.title = fid.charAt(0).toUpperCase() + fid.substr(1);
   }
   // item is a date but last char is not
-  else if (item[item.length - 1].search(/\d/) === -1) {
-    d = moment(item.substr(0, item.length-1), "MMDDYY");
+  else if (fid[fid.length - 1].search(/\d/) === -1) {
+    d = moment(fid.substr(0, fid.length-1), "MMDDYY");
     page.title = d.format("MMM D, YYYY");
   }
   // item is a date
   else {
-    d = moment(item, "MMDDYY");
+    d = moment(fid, "MMDDYY");
     page.title = d.format("MMM D, YYYY");
   }
 
-  page.url = util.format("%s/", item);
+  page.url = util.format("%s/", fid);
   page.idx = idx;
   next_prev(page, arr);
 
@@ -132,10 +199,11 @@ function yaa(item, idx, arr) {
 // grad procedure for json file conversion
 function grad(_item, idx, arr) {
   var page = {};
+  var fid = copyObj(page, _item);
   var d;
 
   //remove the 'g'
-  var item = _item.substr(1);
+  var item = fid.substr(1);
 
   // filter non-date values
   switch(item) {
@@ -155,29 +223,29 @@ function grad(_item, idx, arr) {
   }
 
   //restore item to argument value
-  item = _item;
+  item = fid;
   page.url = util.format("%s/", item);
   page.idx = idx;
   next_prev(page, arr);
 
   return page;
 }
-
 
 // grad procedure for json file conversion
 function wom(item, idx, arr) {
   var page = {};
+  var fid = copyObj(page, item);
   var lesson = ["None", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
 
   //Assign title
-  if (item.charAt(0) === "w") {
+  if (fid.charAt(0) === "w") {
     page.title = "About";
   }
   else {
-    page.title = "Lesson " + lesson[Number.parseInt(item.substr(1), 10)];
+    page.title = "Lesson " + lesson[Number.parseInt(fid.substr(1), 10)];
   }
 
-  page.url = util.format("%s/", item);
+  page.url = util.format("%s/", fid);
   page.idx = idx;
 
   next_prev(page, arr);
@@ -185,9 +253,11 @@ function wom(item, idx, arr) {
   return page;
 }
 
-
-var yml = {};
+//input data
 var data = json.readFileSync("data.json");
+
+//output data
+var yml = {};
 
 var outfile;
 var id = "acim";
@@ -201,7 +271,7 @@ if (id === "acim" && !data.year) {
   process.exit(1);
 }
 
-if (!data.outfile || !data.base || !data.pages || !data.outfile ) {
+if (id != "acim" && (!data.outfile || !data.base || !data.pages || !data.outfile )) {
   console.log("data.json syntax error: ");
   console.log("-- example format: ", example);
   process.exit(1);
@@ -209,7 +279,19 @@ if (!data.outfile || !data.base || !data.pages || !data.outfile ) {
 
 console.log("Conversion procedure: %s", id);
 
+var domain = _.pick(data, "domain");
+if (!_.isEmpty(domain)) {
+  yml = domain;
+}
+
 switch (id) {
+  //acim contents by year
+  case "acimc":
+    yml.base = data.base;
+    yml.page = _.map(data.pages, acimc);
+    outfile = data.outfile;
+    break;
+  //acim contents for a given year
   case "acim":
     yml.base = "/nwffacim/acim/" + data.year + "/";
     yml.page = _.map(data.pages, acim);

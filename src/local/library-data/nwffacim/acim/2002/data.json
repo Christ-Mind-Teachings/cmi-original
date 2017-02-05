@@ -1,17 +1,58 @@
 {
+  "domain": {
+    "video": "http://www.celestialrealm.com/",
+    "audio": "http://www.celestialrealm.com/",
+    "pdf": "http://www.celestialrealm.com/",
+    "rtf": "http://www.pamelaparnell.com/"
+  },
   "year": 2002,
   "pages": [
     "2002",
-    "061202",
-    "073102",
-    "080702",
-    "081402",
-    "082802",
-    "090402",
-    "091102",
-    "091802",
-    "092502",
-    "100202",
+    {
+      "fid": "061202",
+      "desc": "T31.II Walking with Christ",
+      "res": {
+        "rtf": "2002-06-12.rtf",
+        "pdf": "uploads/2002-06-12_Raj_Christ_Jesus_A_Course_In_Miracle_ACIM_Study_Group.pdf",
+        "audio": "uploads/2002-6-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
+    },
+    {
+      "fid": "073102",
+      "desc": "T31.VIII Choose Once Again"
+    },
+    {
+      "fid": "080702",
+      "desc": "T1.In Introduction"
+    },
+    {
+      "fid": "081402",
+      "desc": "*No transcript available for this session*"
+    },
+    {
+      "fid": "082802",
+      "desc": "T1.I Principles of Miracles, Principle 33"
+    },
+    {
+      "fid": "090402",
+      "desc": "T1.I Principles of Miracles, Principle 42"
+    },
+    {
+      "fid": "091102",
+      "desc": "T1.I Principles of Miracles, Principle 47"
+    },
+    {
+      "fid": "091802",
+      "desc": "T1.II Revelation, Time and Miracles"
+    },
+    {
+      "fid": "092502",
+      "desc": "T1.III Atonement and Miracles"
+    },
+    {
+      "fid": "100202",
+      "desc": "T1.IV The Escape from Darkness"
+    },
     "101002",
     "101702",
     "102402",

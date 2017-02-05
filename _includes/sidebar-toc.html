@@ -20,14 +20,13 @@
       <a class="sidebar-nav-item" href="{{ page.home }}" >{{ page.book }}</a>
     {% endif %}
     <a class="sidebar-nav-item" href="#" data-proofer-ignore>Top of Page</a>
-    {% comment %}
-    {% if page.toc %}
-      <p class="sidebar-divider">Table of Contents</p>
-    {% endif %}
-    {% endcomment %}
     {% for node in page.toc %}
-    <a class="sidebar-nav-item sidebar-nav-item-toc" href="#{{ node | slugify }}">{{ node }}</a>
+      <a class="sidebar-nav-item sidebar-nav-item-toc" href="#{{ node | slugify }}">{{ node }}</a>
     {% endfor %}
+    <!--
+      sidebar-toc
+      page.contents: {{page.contents}}
+    -->
     {% if page.contents %}
       {% include {{page.contents}} %}
     {% endif %}

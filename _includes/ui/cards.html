@@ -1,51 +1,25 @@
+<!--
+  include.data.base: {{include.data.base}}
+-->
 <div class="cards">
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
-    </div>
-    <div class="card-header">
-      First Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-4.png" alt="">
-    </div>
-    <div class="card-header">
-      Another Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
-    </div>
-    <div class="card-header">
-      The Last Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum color sit amet, consectetur adipisicing elit.</p>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-image">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains-3.png" alt="">
-    </div>
-    <div class="card-header">
-      The Last Card
-    </div>
-    <div class="card-copy">
-      <p>Lorem ipsum color sit amet, consectetur adipisicing elit.</p>
-    </div>
-  </div>
+  {% for year in include.data.year %}
+    {% if year.display == true %}
+      <div class="card">
+        <div class="card-image">
+          <a title="Read Transcripts from {{year.year}}."
+             href="{{include.data.base | append: year.year | append: year.about-url}}">
+            <img src="{{include.data.image-base | append: year.image}}" alt="">
+          </a>
+        </div>
+        <div class="card-header">
+          {{year.title}}
+        </div>
+        <div class="card-copy">
+          {{year.desc}}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>
 
 
