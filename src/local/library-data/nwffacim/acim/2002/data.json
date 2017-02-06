@@ -11,6 +11,7 @@
     {
       "fid": "061202",
       "desc": "T31.II Walking with Christ",
+      "complete": true,
       "res": {
         "rtf": "2002-06-12.rtf",
         "pdf": "uploads/2002-06-12_Raj_Christ_Jesus_A_Course_In_Miracle_ACIM_Study_Group.pdf",
@@ -19,48 +20,93 @@
     },
     {
       "fid": "073102",
+      "complete": true,
       "desc": "T31.VIII Choose Once Again"
     },
     {
       "fid": "080702",
+      "complete": true,
       "desc": "T1.In Introduction"
     },
     {
       "fid": "081402",
+      "complete": true,
       "desc": "*No transcript available for this session*"
     },
     {
       "fid": "082802",
+      "complete": true,
       "desc": "T1.I Principles of Miracles, Principle 33"
     },
     {
       "fid": "090402",
+      "complete": true,
       "desc": "T1.I Principles of Miracles, Principle 42"
     },
     {
       "fid": "091102",
+      "complete": true,
       "desc": "T1.I Principles of Miracles, Principle 47"
     },
     {
       "fid": "091802",
+      "complete": true,
       "desc": "T1.II Revelation, Time and Miracles"
     },
     {
       "fid": "092502",
+      "complete": true,
       "desc": "T1.III Atonement and Miracles"
     },
     {
       "fid": "100202",
+      "complete": true,
       "desc": "T1.IV The Escape from Darkness"
     },
-    "101002",
-    "101702",
-    "102402",
-    "103102",
-    "110702",
-    "112102",
-    "120502",
-    "121202",
-    "121902"
+    {
+      "fid": "101002",
+      "desc": "T2.II Healing as Release from Fear",
+      "complete": true
+    },
+    {
+      "fid": "101702",
+      "desc": "Needs formating",
+      "complete": false
+    },
+    {
+      "fid": "102402",
+      "desc": "Needs formating",
+      "complete": false
+    },
+    {
+      "fid": "103102",
+      "desc": "Needs formating",
+      "complete": false
+    },
+    {
+      "fid": "110702",
+      "desc": "Needs formating",
+      "complete": false
+    },
+    {
+      "fid": "112102",
+      "desc": "Discussion",
+      "complete": false
+    },
+    {
+      "fid": "120502",
+      "desc": "Needs formating",
+      "complete": false
+    },
+    {
+      "fid": "121202",
+      "desc": "Needs formating",
+      "complete": false
+    },
+    {
+      "fid": "121902",
+      "desc": "T2.II Healing as Release from Fear",
+      "complete": true
+    }
   ]
 }

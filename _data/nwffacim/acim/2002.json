@@ -17,6 +17,7 @@
     {
       "fid": "061202",
       "desc": "T31.II Walking with Christ",
+      "complete": true,
       "res": {
         "rtf": "2002-06-12.rtf",
         "pdf": "uploads/2002-06-12_Raj_Christ_Jesus_A_Course_In_Miracle_ACIM_Study_Group.pdf",
@@ -30,6 +31,7 @@
     },
     {
       "fid": "073102",
+      "complete": true,
       "desc": "T31.VIII Choose Once Again",
       "url": "073102/",
       "idx": 2,
@@ -39,6 +41,7 @@
     },
     {
       "fid": "080702",
+      "complete": true,
       "desc": "T1.In Introduction",
       "url": "080702/",
       "idx": 3,
@@ -48,6 +51,7 @@
     },
     {
       "fid": "081402",
+      "complete": true,
       "desc": "*No transcript available for this session*",
       "url": "081402/",
       "idx": 4,
@@ -57,6 +61,7 @@
     },
     {
       "fid": "082802",
+      "complete": true,
       "desc": "T1.I Principles of Miracles, Principle 33",
       "url": "082802/",
       "idx": 5,
@@ -66,6 +71,7 @@
     },
     {
       "fid": "090402",
+      "complete": true,
       "desc": "T1.I Principles of Miracles, Principle 42",
       "url": "090402/",
       "idx": 6,
@@ -75,6 +81,7 @@
     },
     {
       "fid": "091102",
+      "complete": true,
       "desc": "T1.I Principles of Miracles, Principle 47",
       "url": "091102/",
       "idx": 7,
@@ -84,6 +91,7 @@
     },
     {
       "fid": "091802",
+      "complete": true,
       "desc": "T1.II Revelation, Time and Miracles",
       "url": "091802/",
       "idx": 8,
@@ -93,6 +101,7 @@
     },
     {
       "fid": "092502",
+      "complete": true,
       "desc": "T1.III Atonement and Miracles",
       "url": "092502/",
       "idx": 9,
@@ -102,6 +111,7 @@
     },
     {
       "fid": "100202",
+      "complete": true,
       "desc": "T1.IV The Escape from Darkness",
       "url": "100202/",
       "idx": 10,
@@ -110,6 +120,9 @@
       "prev": "092502/"
     },
     {
+      "fid": "101002",
+      "desc": "T2.II Healing as Release from Fear",
+      "complete": true,
       "url": "101002/",
       "idx": 11,
       "title": "Oct 10, 2002",
@@ -117,6 +130,9 @@
       "prev": "100202/"
     },
     {
+      "fid": "101702",
+      "desc": "Needs formating",
+      "complete": false,
       "url": "101702/",
       "idx": 12,
       "title": "Oct 17, 2002",
@@ -124,6 +140,9 @@
       "prev": "101002/"
     },
     {
+      "fid": "102402",
+      "desc": "Needs formating",
+      "complete": false,
       "url": "102402/",
       "idx": 13,
       "title": "Oct 24, 2002",
@@ -131,6 +150,9 @@
       "prev": "101702/"
     },
     {
+      "fid": "103102",
+      "desc": "Needs formating",
+      "complete": false,
       "url": "103102/",
       "idx": 14,
       "title": "Oct 31, 2002",
@@ -138,6 +160,9 @@
       "prev": "102402/"
     },
     {
+      "fid": "110702",
+      "desc": "Needs formating",
+      "complete": false,
       "url": "110702/",
       "idx": 15,
       "title": "Nov 7, 2002",
@@ -145,6 +170,9 @@
       "prev": "103102/"
     },
     {
+      "fid": "112102",
+      "desc": "Discussion",
+      "complete": false,
       "url": "112102/",
       "idx": 16,
       "title": "Nov 21, 2002",
@@ -152,6 +180,9 @@
       "prev": "110702/"
     },
     {
+      "fid": "120502",
+      "desc": "Needs formating",
+      "complete": false,
       "url": "120502/",
       "idx": 17,
       "title": "Dec 5, 2002",
@@ -159,6 +190,9 @@
       "prev": "112102/"
     },
     {
+      "fid": "121202",
+      "desc": "Needs formating",
+      "complete": false,
       "url": "121202/",
       "idx": 18,
       "title": "Dec 12, 2002",
@@ -166,6 +200,9 @@
       "prev": "120502/"
     },
     {
+      "fid": "121902",
+      "desc": "T2.II Healing as Release from Fear",
+      "complete": true,
       "url": "121902/",
       "idx": 19,
       "title": "Dec 19, 2002",

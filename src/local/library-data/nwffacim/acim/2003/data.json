@@ -2,68 +2,241 @@
   "year": 2003,
   "pages": [
     "2003",
-    "010203",
-    "010903",
-    "011603",
-    "012303",
+    {
+      "fid": "010203",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "010903",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "011603",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "012303",
+      "desc": "Discussion",
+      "complete": false
+    },
     {
       "fid": "020603",
+      "complete": true,
       "desc": "T2.VII Cause and Effect"
     },
-    "021303",
+    {
+      "fid": "021303",
+      "ref": "Discussion",
+      "complete": false
+    },
     {
       "fid": "022003",
+      "complete": true,
       "desc": "T2.VII Cause and Effect"
     },
     {
       "fid": "022703",
+      "complete": true,
       "desc": "T2.VII Cause and Effect"
     },
-    "030603",
-    "031303",
-    "032003",
-    "032703",
-    "040303",
-    "041003",
-    "042403",
-    "050103",
-    "051103",
-    "051803",
-    "052503",
-    "060103",
-    "060803",
-    "061503",
-    "062203",
+    {
+      "fid": "030603",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "031303",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "032003",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "032703",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "040303",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "041003",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "042403",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "050103",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "051103",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "051803",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "052503",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "060103",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "060803",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "061503",
+      "desc": "Needs formatting",
+      "complete": false
+    },
+    {
+      "fid": "062203",
+      "desc": "Needs formatting",
+      "complete": false
+    },
     {
       "fid": "062903",
+      "complete": false,
       "desc": "T4.In Introduction"
     },
     {
       "fid": "070603",
+      "complete": false,
       "desc": "T4.1 Right Teaching and Right Learning"
     },
-    "071303",
-    "072003",
-    "072703",
-    "080303",
-    "081003",
-    "081703",
-    "082403",
-    "083103",
-    "090703",
-    "091403",
-    "092103",
-    "092803",
-    "101203",
-    "101903",
-    "102603",
-    "110203",
-    "110903",
-    "111603",
-    "112303",
-    "120703",
-    "121403",
-    "122103"
+    {
+      "fid": "071303",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "072003",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "072703",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "080303",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "081003",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "081703",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "082403",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "083103",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "090703",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "091403",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "092103",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "092803",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "101203",
+      "complete": false,
+      "desc": "Discussion"
+    },
+    {
+      "fid": "101903",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "102603",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "110203",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "110903",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "111603",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "112303",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "120703",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "121403",
+      "complete": false,
+      "desc": "Needs formatting"
+    },
+    {
+      "fid": "122103",
+      "complete": false,
+      "desc": "Needs formatting"
+    }
   ]
 }
 
