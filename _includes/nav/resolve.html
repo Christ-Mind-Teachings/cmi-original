@@ -45,6 +45,8 @@ for location page.bid declaration
     {% assign data = site.data.wom.wok %}
   {% when "acimc" %}
     {% assign data = site.data.nwffacim.acim.acimc %}
+  {% when "early" %}
+    {% assign data = site.data.wom.early %}
   {% else  %}
     <!--
       resolve: page.bid not found

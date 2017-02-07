@@ -14,4 +14,9 @@ books:
   url: /wom/wok/wok
   img: /public/img/wom/wok-lulu-thumbnail.jpg
   desc: "The Way of Mastery - Book Three"
+- title: The Early Years
+  id: early
+  url: /wom/early/early
+  img: /public/img/wom/early-cover.png
+  desc: "The Early Years"
 

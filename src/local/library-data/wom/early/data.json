@@ -1,6 +1,6 @@
 {
   "id": "early",
-  "base": "/wom/early",
+  "base": "/wom/early/",
   "outfile": "early.json",
   "pages": [
     {
