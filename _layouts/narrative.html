@@ -8,11 +8,15 @@ layout: default
   Check for page resources, ie: pdf, rtf, audio, etc
   The page.links include will include prev/next indicators when specified
   {% endcomment %}
-  {% include {{page.nav}} resource=true %}
+  {% if page.nave %}
+    {% include {{page.nav}} resource=true %}
+  {% endif %}
 
   {% if page.author %}
     <p class="citation"> by {{ page.author }}</p>
   {% endif %}
   {{ content }}
-  {% include {{page.nav}} resource=false %}
+  {% if page.nave %}
+    {% include {{page.nav}} resource=false %}
+  {% endif %}
 </div>
