@@ -1,0 +1,27 @@
+{
+  "id": "early",
+  "base": "/wom/early",
+  "outfile": "early.json",
+  "pages": [
+    {
+      "fid": "early",
+      "title": "About"
+    },
+    {
+      "fid": "ble",
+      "title": "The Blessing of Forgiveness"
+    },
+    {
+      "fid": "c2s",
+      "title": "Choose to See"
+    },
+    {
+      "fid": "hoe",
+      "title": "Heaven on Earth"
+    },
+    {
+      "fid": "ign",
+      "title": "Ignorance is Bliss"
+    }
+  ]
+}

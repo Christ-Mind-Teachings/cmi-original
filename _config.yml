@@ -73,6 +73,17 @@ defaults:
       home: "#"
       contents: nav/contents.html
 
+# Early years
+  - scope:
+      path: "_wom/early"
+      type: wom
+    values:
+      bid: early
+      book: The Early Years
+      navx: nav/np-data.html
+      home: "#"
+      contentsx: nav/contents.html
+
 # Paul Tuttle and Raj - Northwest Foundation for ACIM
   - scope:
       path: ""

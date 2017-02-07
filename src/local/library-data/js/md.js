@@ -163,8 +163,7 @@ function grad(_item, idx, arr) {
   return page;
 }
 
-
-// grad procedure for json file conversion
+// wom (woh, t, k)  procedure for json file conversion
 function wom(item, idx, arr) {
   var page = {};
   var lesson = ["None", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
@@ -178,6 +177,20 @@ function wom(item, idx, arr) {
   }
 
   page.url = util.format("%s/", item);
+  page.idx = idx;
+
+  next_prev(page, arr);
+
+  return page;
+}
+
+// wom (early years)  procedure for json file conversion
+function early(item, idx, arr) {
+  var page = {};
+
+  page.title = item.title;
+
+  page.url = util.format("%s/", item.fid);
   page.idx = idx;
 
   next_prev(page, arr);
@@ -230,8 +243,13 @@ switch (id) {
     yml.page = _.map(data.pages, wom);
     outfile = data.outfile;
     break;
+  case "early":
+    yml.base = data.base;
+    yml.page = _.map(data.pages, early);
+    outfile = data.outfile;
+    break;
   default:
-    console.log("Unknown identifier, use either 'acmi', 'yaa', 'grad', or 'wom' [for woh, wot, wok]");
+    console.log("Unknown identifier, use either 'acmi', 'yaa', 'grad', 'early', or 'wom' [for woh, wot, wok]");
     process.exit(1);
 }
 
