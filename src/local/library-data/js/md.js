@@ -103,7 +103,6 @@ function copyObj(page, item) {
   return fid;
 }
 
-
 //common between all types
 function next_prev(page, arr) {
   var idx = page.idx;
@@ -336,6 +335,7 @@ switch (id) {
     process.exit(1);
 }
 
+//console.log(util.inspect(yml, false, null));
 //json.writeFileSync(data.year + ".json", yml, {spaces: 2});
 console.log("writing: %s", outfile);
 json.writeFileSync(outfile, yml, {spaces: 2});

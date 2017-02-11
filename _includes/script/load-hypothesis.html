@@ -1,0 +1,11 @@
+{% comment %}
+Hypothes.is may be loaded on narrative pages, so we inculde configuration info
+{% endcomment %}
+
+{% if page.layout == "narrative" %}
+  <script type="application/json" class="js-hypothesis-config">
+    {"showHighlights": false}
+  </script>
+  {% assign load-cmi = true %}
+{% endif %}
+

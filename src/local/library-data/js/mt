@@ -1,0 +1,34 @@
+#!/bin/bash
+
+currentDir=`pwd`
+scriptDir=`dirname $0`
+scriptName=`basename $0`
+
+if [ "$1" = "" ]; then
+  echo "Missing filename of raw timing data"
+  exit
+fi
+
+rawTimingData=${currentDir}/${1}
+
+#echo "currentDir: $currentDir"
+#echo "scriptDir: $scriptDir"
+#echo "scriptName: $scriptName"
+#echo "rawTimingData: $rawTimingData"
+
+json=`node ${scriptDir}/mt.js ${rawTimingData}`
+
+if [ $? -ne 0 ]; then
+  echo "Conversion failed"
+  echo $json
+  exit
+fi
+
+outfile=`jq '.outfile' ${rawTimingData}`
+
+outfile=${outfile:1}
+outfile=${outfile%?}
+
+echo "writing: ${outfile}"
+echo "var cmi_audio_timing_data = ${json};" > ${currentDir}/${outfile}
+

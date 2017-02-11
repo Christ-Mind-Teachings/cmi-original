@@ -1,7 +1,11 @@
 {% comment %}
 Generate next/previous page links from _data files based on page.bid
 - add links to resources (pdf, mp3, etc) if present and requested
-by include parameter 'resource=true'
+  by include parameter 'resource=true'
+
+** Note: this file sets liquid variable used by the layout
+  - page-contains-audio
+
 {% endcomment %}
 
 {% comment %}
@@ -31,6 +35,7 @@ by include parameter 'resource=true'
   {% endcomment %}
 
   {% if include-resource %}
+
     {% if page-data.res.rtf %}
       {% assign count = count | plus: 1 %}
       {% assign rtf-href = data.domain.rtf | append: page-data.res.rtf %}
@@ -40,19 +45,37 @@ by include parameter 'resource=true'
     {% if page-data.res.pdf %}
       {% assign count = count | plus: 1 %}
       {% assign pdf-href = data.domain.pdf | append: page-data.res.pdf %}
-      {% assign resource = resource | append: ",pdf=" | append: pdf-href %}
+      {% if resource.size == 0 %}
+        {% assign resource = resource | append: "pdf=" | append: pdf-href %}
+      {% else %}
+        {% assign resource = resource | append: ",pdf=" | append: pdf-href %}
+      {% endif %}
     {% endif %}
 
     {% if page-data.res.audio %}
+      {% assign page-contains-audio = true %}
+      <!--
+        setting 'page-contains-audio=true'
+        page-contains-audio: {{page-contains-audio}}
+      -->
       {% assign count = count | plus: 1 %}
       {% assign audio-href = data.domain.audio | append: page-data.res.audio %}
-      {% assign resource = resource | append: ",audio=" | append: audio-href %}
+      {% assign data-audio-title = page-data.title %}
+      {% if resource.size == 0 %}
+        {% assign resource = resource | append: "audio=" | append: audio-href %}
+      {% else %}
+        {% assign resource = resource | append: ",audio=" | append: audio-href %}
+      {% endif %}
     {% endif %}
 
     {% if page-data.res.video %}
       {% assign count = count | plus: 1 %}
       {% assign video-href = data.domain.video | append: page-data.res.video %}
-      {% assign resource = resource | append: ",video=" | append: video-href %}
+      {% if resource.size == 0 %}
+        {% assign resource = resource | append: "video=" | append: video-href %}
+      {% else %}
+        {% assign resource = resource | append: ",video=" | append: video-href %}
+      {% endif %}
     {% endif %}
 
     {% assign bits = resource | split: "," %}
@@ -78,22 +101,29 @@ by include parameter 'resource=true'
             {% assign class = "fa-li fa fa-file-pdf-o" %}
             {% assign title = 'title="Display/Download PDF (on new page/tab)"' %}
             {% assign target = 'target="_blank"' %}
-          {% when "rtf" %}
+            {% when "rtf" %}
             {% assign class = "fa-li fa fa-file-text-o" %}
             {% assign title = 'title="Download RTF"' %}
           {% when "audio" %}
+            {% assign aclass = "audio-toggle" %}
             {% assign class = "fa-li fa fa-volume-up" %}
-            {% assign title = 'title="Listen To Recording (on new page/tab)"' %}
-            {% assign target = 'target="_blank"' %}
+            {% assign title = 'title="Play Recording"' %}
           {% when "video" %}
             {% assign class = "fa-li fa fa-play" %}
-            {% assign title = 'title="Play Video (on new page/tab)"' %}
+            {% assign title = 'title="Play Video"' %}
             {% assign target = 'target="_blank"' %}
           {% else %}
             {% assign class = "fa-li fa question-circle-o" %}
             {% assign title = 'title="Unknown URL"' %}
         {% endcase %}
-        <li><a {{target}} {{title}} href="{{parts[1]}}"><i class="{{class}}"></i></a></li>
+        <li>
+          <a {{target}} {{title}}
+            {% if data-audio-title.size > 0 %}data-audio-title="{{data-audio-title}}"{% endif %}
+            {% if aclass.size > 0 %}class="{{aclass}}"{% endif %}
+             href="{{parts[1]}}">
+            <i class="{{class}}"></i>
+          </a>
+        </li>
       {% endfor %}
     {% endif %}
   </ul>

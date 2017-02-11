@@ -10,11 +10,12 @@ layout: default
   {% endcomment %}
   {% if page.nav %}
     {% include {{page.nav}} resource=true %}
+
+    {% if page-contains-audio == true %}
+      {% include ui/audio-player.html %}
+    {% endif %}
   {% endif %}
 
-  {% if page.author %}
-    <p class="citation"> by {{ page.author }}</p>
-  {% endif %}
   {{ content }}
   {% if page.nav %}
     {% include {{page.nav}} resource=false %}

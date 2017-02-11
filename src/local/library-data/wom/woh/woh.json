@@ -1,4 +1,7 @@
 {
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/wom/audio/woh/"
+  },
   "base": "/wom/woh/",
   "page": [
     {
@@ -9,6 +12,10 @@
       "prev": "l12/"
     },
     {
+      "fid": "l01",
+      "res": {
+        "audio": "l01.mp3"
+      },
       "title": "Lesson One",
       "url": "l01/",
       "idx": 1,
@@ -16,6 +23,11 @@
       "prev": "woh/"
     },
     {
+      "fid": "l02",
+      "res": {
+        "audio": "l02.mp3",
+        "timing": "l02.timing.js"
+      },
       "title": "Lesson Two",
       "url": "l02/",
       "idx": 2,

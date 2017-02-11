@@ -1,0 +1,14 @@
+{% comment %}
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+{% endcomment %}
+
+{% assign jquery-loaded = jquery-loaded | default: false %}
+
+{% if jquery-loaded == false %}
+  <script src="/public/js/lib/jQuery/jquery.min.js"></script>
+  {% assign jquery-loaded = true %}
+{% endif %}
+

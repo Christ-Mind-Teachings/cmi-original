@@ -2953,6 +2953,820 @@ module.exports = function indexOf(arr, ele, start) {
 };
 
 },{}],21:[function(require,module,exports){
+
+var Keyboard = require('./lib/keyboard');
+var Locale   = require('./lib/locale');
+var KeyCombo = require('./lib/key-combo');
+
+var keyboard = new Keyboard();
+
+keyboard.setLocale('us', require('./locales/us'));
+
+exports          = module.exports = keyboard;
+exports.Keyboard = Keyboard;
+exports.Locale   = Locale;
+exports.KeyCombo = KeyCombo;
+
+},{"./lib/key-combo":22,"./lib/keyboard":23,"./lib/locale":24,"./locales/us":25}],22:[function(require,module,exports){
+
+function KeyCombo(keyComboStr) {
+  this.sourceStr = keyComboStr;
+  this.subCombos = KeyCombo.parseComboStr(keyComboStr);
+  this.keyNames  = this.subCombos.reduce(function(memo, nextSubCombo) {
+    return memo.concat(nextSubCombo);
+  });
+}
+
+// TODO: Add support for key combo sequences
+KeyCombo.sequenceDeliminator = '>>';
+KeyCombo.comboDeliminator    = '>';
+KeyCombo.keyDeliminator      = '+';
+
+KeyCombo.parseComboStr = function(keyComboStr) {
+  var subComboStrs = KeyCombo._splitStr(keyComboStr, KeyCombo.comboDeliminator);
+  var combo        = [];
+
+  for (var i = 0 ; i < subComboStrs.length; i += 1) {
+    combo.push(KeyCombo._splitStr(subComboStrs[i], KeyCombo.keyDeliminator));
+  }
+  return combo;
+};
+
+KeyCombo.prototype.check = function(pressedKeyNames) {
+  var startingKeyNameIndex = 0;
+  for (var i = 0; i < this.subCombos.length; i += 1) {
+    startingKeyNameIndex = this._checkSubCombo(
+      this.subCombos[i],
+      startingKeyNameIndex,
+      pressedKeyNames
+    );
+    if (startingKeyNameIndex === -1) { return false; }
+  }
+  return true;
+};
+
+KeyCombo.prototype.isEqual = function(otherKeyCombo) {
+  if (
+    !otherKeyCombo ||
+    typeof otherKeyCombo !== 'string' &&
+    typeof otherKeyCombo !== 'object'
+  ) { return false; }
+
+  if (typeof otherKeyCombo === 'string') {
+    otherKeyCombo = new KeyCombo(otherKeyCombo);
+  }
+
+  if (this.subCombos.length !== otherKeyCombo.subCombos.length) {
+    return false;
+  }
+  for (var i = 0; i < this.subCombos.length; i += 1) {
+    if (this.subCombos[i].length !== otherKeyCombo.subCombos[i].length) {
+      return false;
+    }
+  }
+
+  for (var i = 0; i < this.subCombos.length; i += 1) {
+    var subCombo      = this.subCombos[i];
+    var otherSubCombo = otherKeyCombo.subCombos[i].slice(0);
+
+    for (var j = 0; j < subCombo.length; j += 1) {
+      var keyName = subCombo[j];
+      var index   = otherSubCombo.indexOf(keyName);
+
+      if (index > -1) {
+        otherSubCombo.splice(index, 1);
+      }
+    }
+    if (otherSubCombo.length !== 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+KeyCombo._splitStr = function(str, deliminator) {
+  var s  = str;
+  var d  = deliminator;
+  var c  = '';
+  var ca = [];
+
+  for (var ci = 0; ci < s.length; ci += 1) {
+    if (ci > 0 && s[ci] === d && s[ci - 1] !== '\\') {
+      ca.push(c.trim());
+      c = '';
+      ci += 1;
+    }
+    c += s[ci];
+  }
+  if (c) { ca.push(c.trim()); }
+
+  return ca;
+};
+
+KeyCombo.prototype._checkSubCombo = function(subCombo, startingKeyNameIndex, pressedKeyNames) {
+  subCombo = subCombo.slice(0);
+  pressedKeyNames = pressedKeyNames.slice(startingKeyNameIndex);
+
+  var endIndex = startingKeyNameIndex;
+  for (var i = 0; i < subCombo.length; i += 1) {
+
+    var keyName = subCombo[i];
+    if (keyName[0] === '\\') {
+      var escapedKeyName = keyName.slice(1);
+      if (
+        escapedKeyName === KeyCombo.comboDeliminator ||
+        escapedKeyName === KeyCombo.keyDeliminator
+      ) {
+        keyName = escapedKeyName;
+      }
+    }
+
+    var index = pressedKeyNames.indexOf(keyName);
+    if (index > -1) {
+      subCombo.splice(i, 1);
+      i -= 1;
+      if (index > endIndex) {
+        endIndex = index;
+      }
+      if (subCombo.length === 0) {
+        return endIndex;
+      }
+    }
+  }
+  return -1;
+};
+
+
+module.exports = KeyCombo;
+
+},{}],23:[function(require,module,exports){
+(function (global){
+
+var Locale = require('./locale');
+var KeyCombo = require('./key-combo');
+
+
+function Keyboard(targetWindow, targetElement, platform, userAgent) {
+  this._locale               = null;
+  this._currentContext       = null;
+  this._contexts             = {};
+  this._listeners            = [];
+  this._appliedListeners     = [];
+  this._locales              = {};
+  this._targetElement        = null;
+  this._targetWindow         = null;
+  this._targetPlatform       = '';
+  this._targetUserAgent      = '';
+  this._isModernBrowser      = false;
+  this._targetKeyDownBinding = null;
+  this._targetKeyUpBinding   = null;
+  this._targetResetBinding   = null;
+  this._paused               = false;
+
+  this.setContext('global');
+  this.watch(targetWindow, targetElement, platform, userAgent);
+}
+
+Keyboard.prototype.setLocale = function(localeName, localeBuilder) {
+  var locale = null;
+  if (typeof localeName === 'string') {
+
+    if (localeBuilder) {
+      locale = new Locale(localeName);
+      localeBuilder(locale, this._targetPlatform, this._targetUserAgent);
+    } else {
+      locale = this._locales[localeName] || null;
+    }
+  } else {
+    locale     = localeName;
+    localeName = locale._localeName;
+  }
+
+  this._locale              = locale;
+  this._locales[localeName] = locale;
+  if (locale) {
+    this._locale.pressedKeys = locale.pressedKeys;
+  }
+};
+
+Keyboard.prototype.getLocale = function(localName) {
+  localName || (localName = this._locale.localeName);
+  return this._locales[localName] || null;
+};
+
+Keyboard.prototype.bind = function(keyComboStr, pressHandler, releaseHandler, preventRepeatByDefault) {
+  if (keyComboStr === null || typeof keyComboStr === 'function') {
+    preventRepeatByDefault = releaseHandler;
+    releaseHandler         = pressHandler;
+    pressHandler           = keyComboStr;
+    keyComboStr            = null;
+  }
+
+  if (
+    keyComboStr &&
+    typeof keyComboStr === 'object' &&
+    typeof keyComboStr.length === 'number'
+  ) {
+    for (var i = 0; i < keyComboStr.length; i += 1) {
+      this.bind(keyComboStr[i], pressHandler, releaseHandler);
+    }
+    return;
+  }
+
+  this._listeners.push({
+    keyCombo               : keyComboStr ? new KeyCombo(keyComboStr) : null,
+    pressHandler           : pressHandler           || null,
+    releaseHandler         : releaseHandler         || null,
+    preventRepeat          : preventRepeatByDefault || false,
+    preventRepeatByDefault : preventRepeatByDefault || false
+  });
+};
+Keyboard.prototype.addListener = Keyboard.prototype.bind;
+Keyboard.prototype.on          = Keyboard.prototype.bind;
+
+Keyboard.prototype.unbind = function(keyComboStr, pressHandler, releaseHandler) {
+  if (keyComboStr === null || typeof keyComboStr === 'function') {
+    releaseHandler = pressHandler;
+    pressHandler   = keyComboStr;
+    keyComboStr = null;
+  }
+
+  if (
+    keyComboStr &&
+    typeof keyComboStr === 'object' &&
+    typeof keyComboStr.length === 'number'
+  ) {
+    for (var i = 0; i < keyComboStr.length; i += 1) {
+      this.unbind(keyComboStr[i], pressHandler, releaseHandler);
+    }
+    return;
+  }
+
+  for (var i = 0; i < this._listeners.length; i += 1) {
+    var listener = this._listeners[i];
+
+    var comboMatches          = !keyComboStr && !listener.keyCombo ||
+                                listener.keyCombo && listener.keyCombo.isEqual(keyComboStr);
+    var pressHandlerMatches   = !pressHandler && !releaseHandler ||
+                                !pressHandler && !listener.pressHandler ||
+                                pressHandler === listener.pressHandler;
+    var releaseHandlerMatches = !pressHandler && !releaseHandler ||
+                                !releaseHandler && !listener.releaseHandler ||
+                                releaseHandler === listener.releaseHandler;
+
+    if (comboMatches && pressHandlerMatches && releaseHandlerMatches) {
+      this._listeners.splice(i, 1);
+      i -= 1;
+    }
+  }
+};
+Keyboard.prototype.removeListener = Keyboard.prototype.unbind;
+Keyboard.prototype.off            = Keyboard.prototype.unbind;
+
+Keyboard.prototype.setContext = function(contextName) {
+  if(this._locale) { this.releaseAllKeys(); }
+
+  if (!this._contexts[contextName]) {
+    this._contexts[contextName] = [];
+  }
+  this._listeners      = this._contexts[contextName];
+  this._currentContext = contextName;
+};
+
+Keyboard.prototype.getContext = function() {
+  return this._currentContext;
+};
+
+Keyboard.prototype.withContext = function(contextName, callback) {
+  var previousContextName = this.getContext();
+  this.setContext(contextName);
+
+  callback();
+
+  this.setContext(previousContextName);
+};
+
+Keyboard.prototype.watch = function(targetWindow, targetElement, targetPlatform, targetUserAgent) {
+  var _this = this;
+
+  this.stop();
+
+  if (!targetWindow) {
+    if (!global.addEventListener && !global.attachEvent) {
+      throw new Error('Cannot find global functions addEventListener or attachEvent.');
+    }
+    targetWindow = global;
+  }
+
+  if (typeof targetWindow.nodeType === 'number') {
+    targetUserAgent = targetPlatform;
+    targetPlatform  = targetElement;
+    targetElement   = targetWindow;
+    targetWindow    = global;
+  }
+
+  if (!targetWindow.addEventListener && !targetWindow.attachEvent) {
+    throw new Error('Cannot find addEventListener or attachEvent methods on targetWindow.');
+  }
+
+  this._isModernBrowser = !!targetWindow.addEventListener;
+
+  var userAgent = targetWindow.navigator && targetWindow.navigator.userAgent || '';
+  var platform  = targetWindow.navigator && targetWindow.navigator.platform  || '';
+
+  targetElement   && targetElement   !== null || (targetElement   = targetWindow.document);
+  targetPlatform  && targetPlatform  !== null || (targetPlatform  = platform);
+  targetUserAgent && targetUserAgent !== null || (targetUserAgent = userAgent);
+
+  this._targetKeyDownBinding = function(event) {
+    _this.pressKey(event.keyCode, event);
+  };
+  this._targetKeyUpBinding = function(event) {
+    _this.releaseKey(event.keyCode, event);
+  };
+  this._targetResetBinding = function(event) {
+    _this.releaseAllKeys(event)
+  };
+
+  this._bindEvent(targetElement, 'keydown', this._targetKeyDownBinding);
+  this._bindEvent(targetElement, 'keyup',   this._targetKeyUpBinding);
+  this._bindEvent(targetWindow,  'focus',   this._targetResetBinding);
+  this._bindEvent(targetWindow,  'blur',    this._targetResetBinding);
+
+  this._targetElement   = targetElement;
+  this._targetWindow    = targetWindow;
+  this._targetPlatform  = targetPlatform;
+  this._targetUserAgent = targetUserAgent;
+};
+
+Keyboard.prototype.stop = function() {
+  var _this = this;
+
+  if (!this._targetElement || !this._targetWindow) { return; }
+
+  this._unbindEvent(this._targetElement, 'keydown', this._targetKeyDownBinding);
+  this._unbindEvent(this._targetElement, 'keyup',   this._targetKeyUpBinding);
+  this._unbindEvent(this._targetWindow,  'focus',   this._targetResetBinding);
+  this._unbindEvent(this._targetWindow,  'blur',    this._targetResetBinding);
+
+  this._targetWindow  = null;
+  this._targetElement = null;
+};
+
+Keyboard.prototype.pressKey = function(keyCode, event) {
+  if (this._paused) { return; }
+  if (!this._locale) { throw new Error('Locale not set'); }
+
+  this._locale.pressKey(keyCode);
+  this._applyBindings(event);
+};
+
+Keyboard.prototype.releaseKey = function(keyCode, event) {
+  if (this._paused) { return; }
+  if (!this._locale) { throw new Error('Locale not set'); }
+
+  this._locale.releaseKey(keyCode);
+  this._clearBindings(event);
+};
+
+Keyboard.prototype.releaseAllKeys = function(event) {
+  if (this._paused) { return; }
+  if (!this._locale) { throw new Error('Locale not set'); }
+
+  this._locale.pressedKeys.length = 0;
+  this._clearBindings(event);
+};
+
+Keyboard.prototype.pause = function() {
+  if (this._paused) { return; }
+  if (this._locale) { this.releaseAllKeys(); }
+  this._paused = true;
+};
+
+Keyboard.prototype.resume = function() {
+  this._paused = false;
+};
+
+Keyboard.prototype.reset = function() {
+  this.releaseAllKeys();
+  this._listeners.length = 0;
+};
+
+Keyboard.prototype._bindEvent = function(targetElement, eventName, handler) {
+  return this._isModernBrowser ?
+    targetElement.addEventListener(eventName, handler, false) :
+    targetElement.attachEvent('on' + eventName, handler);
+};
+
+Keyboard.prototype._unbindEvent = function(targetElement, eventName, handler) {
+  return this._isModernBrowser ?
+    targetElement.removeEventListener(eventName, handler, false) :
+    targetElement.detachEvent('on' + eventName, handler);
+};
+
+Keyboard.prototype._getGroupedListeners = function() {
+  var listenerGroups   = [];
+  var listenerGroupMap = [];
+
+  var listeners = this._listeners;
+  if (this._currentContext !== 'global') {
+    listeners = [].concat(listeners, this._contexts.global);
+  }
+
+  listeners.sort(function(a, b) {
+    return (b.keyCombo ? b.keyCombo.keyNames.length : 0) - (a.keyCombo ? a.keyCombo.keyNames.length : 0);
+  }).forEach(function(l) {
+    var mapIndex = -1;
+    for (var i = 0; i < listenerGroupMap.length; i += 1) {
+      if (listenerGroupMap[i] === null && l.keyCombo === null ||
+          listenerGroupMap[i] !== null && listenerGroupMap[i].isEqual(l.keyCombo)) {
+        mapIndex = i;
+      }
+    }
+    if (mapIndex === -1) {
+      mapIndex = listenerGroupMap.length;
+      listenerGroupMap.push(l.keyCombo);
+    }
+    if (!listenerGroups[mapIndex]) {
+      listenerGroups[mapIndex] = [];
+    }
+    listenerGroups[mapIndex].push(l);
+  });
+  return listenerGroups;
+};
+
+Keyboard.prototype._applyBindings = function(event) {
+  var preventRepeat = false;
+
+  event || (event = {});
+  event.preventRepeat = function() { preventRepeat = true; };
+  event.pressedKeys   = this._locale.pressedKeys.slice(0);
+
+  var pressedKeys    = this._locale.pressedKeys.slice(0);
+  var listenerGroups = this._getGroupedListeners();
+
+
+  for (var i = 0; i < listenerGroups.length; i += 1) {
+    var listeners = listenerGroups[i];
+    var keyCombo  = listeners[0].keyCombo;
+
+    if (keyCombo === null || keyCombo.check(pressedKeys)) {
+      for (var j = 0; j < listeners.length; j += 1) {
+        var listener = listeners[j];
+
+        if (keyCombo === null) {
+          listener = {
+            keyCombo               : new KeyCombo(pressedKeys.join('+')),
+            pressHandler           : listener.pressHandler,
+            releaseHandler         : listener.releaseHandler,
+            preventRepeat          : listener.preventRepeat,
+            preventRepeatByDefault : listener.preventRepeatByDefault
+          };
+        }
+
+        if (listener.pressHandler && !listener.preventRepeat) {
+          listener.pressHandler.call(this, event);
+          if (preventRepeat) {
+            listener.preventRepeat = preventRepeat;
+            preventRepeat          = false;
+          }
+        }
+
+        if (listener.releaseHandler && this._appliedListeners.indexOf(listener) === -1) {
+          this._appliedListeners.push(listener);
+        }
+      }
+
+      if (keyCombo) {
+        for (var j = 0; j < keyCombo.keyNames.length; j += 1) {
+          var index = pressedKeys.indexOf(keyCombo.keyNames[j]);
+          if (index !== -1) {
+            pressedKeys.splice(index, 1);
+            j -= 1;
+          }
+        }
+      }
+    }
+  }
+};
+
+Keyboard.prototype._clearBindings = function(event) {
+  event || (event = {});
+
+  for (var i = 0; i < this._appliedListeners.length; i += 1) {
+    var listener = this._appliedListeners[i];
+    var keyCombo = listener.keyCombo;
+    if (keyCombo === null || !keyCombo.check(this._locale.pressedKeys)) {
+      listener.preventRepeat = listener.preventRepeatByDefault;
+      listener.releaseHandler.call(this, event);
+      this._appliedListeners.splice(i, 1);
+      i -= 1;
+    }
+  }
+};
+
+module.exports = Keyboard;
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"./key-combo":22,"./locale":24}],24:[function(require,module,exports){
+
+var KeyCombo = require('./key-combo');
+
+
+function Locale(name) {
+  this.localeName     = name;
+  this.pressedKeys    = [];
+  this._appliedMacros = [];
+  this._keyMap        = {};
+  this._killKeyCodes  = [];
+  this._macros        = [];
+}
+
+Locale.prototype.bindKeyCode = function(keyCode, keyNames) {
+  if (typeof keyNames === 'string') {
+    keyNames = [keyNames];
+  }
+
+  this._keyMap[keyCode] = keyNames;
+};
+
+Locale.prototype.bindMacro = function(keyComboStr, keyNames) {
+  if (typeof keyNames === 'string') {
+    keyNames = [ keyNames ];
+  }
+
+  var handler = null;
+  if (typeof keyNames === 'function') {
+    handler = keyNames;
+    keyNames = null;
+  }
+
+  var macro = {
+    keyCombo : new KeyCombo(keyComboStr),
+    keyNames : keyNames,
+    handler  : handler
+  };
+
+  this._macros.push(macro);
+};
+
+Locale.prototype.getKeyCodes = function(keyName) {
+  var keyCodes = [];
+  for (var keyCode in this._keyMap) {
+    var index = this._keyMap[keyCode].indexOf(keyName);
+    if (index > -1) { keyCodes.push(keyCode|0); }
+  }
+  return keyCodes;
+};
+
+Locale.prototype.getKeyNames = function(keyCode) {
+  return this._keyMap[keyCode] || [];
+};
+
+Locale.prototype.setKillKey = function(keyCode) {
+  if (typeof keyCode === 'string') {
+    var keyCodes = this.getKeyCodes(keyCode);
+    for (var i = 0; i < keyCodes.length; i += 1) {
+      this.setKillKey(keyCodes[i]);
+    }
+    return;
+  }
+
+  this._killKeyCodes.push(keyCode);
+};
+
+Locale.prototype.pressKey = function(keyCode) {
+  if (typeof keyCode === 'string') {
+    var keyCodes = this.getKeyCodes(keyCode);
+    for (var i = 0; i < keyCodes.length; i += 1) {
+      this.pressKey(keyCodes[i]);
+    }
+    return;
+  }
+
+  var keyNames = this.getKeyNames(keyCode);
+  for (var i = 0; i < keyNames.length; i += 1) {
+    if (this.pressedKeys.indexOf(keyNames[i]) === -1) {
+      this.pressedKeys.push(keyNames[i]);
+    }
+  }
+
+  this._applyMacros();
+};
+
+Locale.prototype.releaseKey = function(keyCode) {
+  if (typeof keyCode === 'string') {
+    var keyCodes = this.getKeyCodes(keyCode);
+    for (var i = 0; i < keyCodes.length; i += 1) {
+      this.releaseKey(keyCodes[i]);
+    }
+  }
+
+  else {
+    var keyNames         = this.getKeyNames(keyCode);
+    var killKeyCodeIndex = this._killKeyCodes.indexOf(keyCode);
+    
+    if (killKeyCodeIndex > -1) {
+      this.pressedKeys.length = 0;
+    } else {
+      for (var i = 0; i < keyNames.length; i += 1) {
+        var index = this.pressedKeys.indexOf(keyNames[i]);
+        if (index > -1) {
+          this.pressedKeys.splice(index, 1);
+        }
+      }
+    }
+
+    this._clearMacros();
+  }
+};
+
+Locale.prototype._applyMacros = function() {
+  var macros = this._macros.slice(0);
+  for (var i = 0; i < macros.length; i += 1) {
+    var macro = macros[i];
+    if (macro.keyCombo.check(this.pressedKeys)) {
+      if (macro.handler) {
+        macro.keyNames = macro.handler(this.pressedKeys);
+      }
+      for (var j = 0; j < macro.keyNames.length; j += 1) {
+        if (this.pressedKeys.indexOf(macro.keyNames[j]) === -1) {
+          this.pressedKeys.push(macro.keyNames[j]);
+        }
+      }
+      this._appliedMacros.push(macro);
+    }
+  }
+};
+
+Locale.prototype._clearMacros = function() {
+  for (var i = 0; i < this._appliedMacros.length; i += 1) {
+    var macro = this._appliedMacros[i];
+    if (!macro.keyCombo.check(this.pressedKeys)) {
+      for (var j = 0; j < macro.keyNames.length; j += 1) {
+        var index = this.pressedKeys.indexOf(macro.keyNames[j]);
+        if (index > -1) {
+          this.pressedKeys.splice(index, 1);
+        }
+      }
+      if (macro.handler) {
+        macro.keyNames = null;
+      }
+      this._appliedMacros.splice(i, 1);
+      i -= 1;
+    }
+  }
+};
+
+
+module.exports = Locale;
+
+},{"./key-combo":22}],25:[function(require,module,exports){
+
+module.exports = function(locale, platform, userAgent) {
+
+  // general
+  locale.bindKeyCode(3,   ['cancel']);
+  locale.bindKeyCode(8,   ['backspace']);
+  locale.bindKeyCode(9,   ['tab']);
+  locale.bindKeyCode(12,  ['clear']);
+  locale.bindKeyCode(13,  ['enter']);
+  locale.bindKeyCode(16,  ['shift']);
+  locale.bindKeyCode(17,  ['ctrl']);
+  locale.bindKeyCode(18,  ['alt', 'menu']);
+  locale.bindKeyCode(19,  ['pause', 'break']);
+  locale.bindKeyCode(20,  ['capslock']);
+  locale.bindKeyCode(27,  ['escape', 'esc']);
+  locale.bindKeyCode(32,  ['space', 'spacebar']);
+  locale.bindKeyCode(33,  ['pageup']);
+  locale.bindKeyCode(34,  ['pagedown']);
+  locale.bindKeyCode(35,  ['end']);
+  locale.bindKeyCode(36,  ['home']);
+  locale.bindKeyCode(37,  ['left']);
+  locale.bindKeyCode(38,  ['up']);
+  locale.bindKeyCode(39,  ['right']);
+  locale.bindKeyCode(40,  ['down']);
+  locale.bindKeyCode(41,  ['select']);
+  locale.bindKeyCode(42,  ['printscreen']);
+  locale.bindKeyCode(43,  ['execute']);
+  locale.bindKeyCode(44,  ['snapshot']);
+  locale.bindKeyCode(45,  ['insert', 'ins']);
+  locale.bindKeyCode(46,  ['delete', 'del']);
+  locale.bindKeyCode(47,  ['help']);
+  locale.bindKeyCode(145, ['scrolllock', 'scroll']);
+  locale.bindKeyCode(187, ['equal', 'equalsign', '=']);
+  locale.bindKeyCode(188, ['comma', ',']);
+  locale.bindKeyCode(190, ['period', '.']);
+  locale.bindKeyCode(191, ['slash', 'forwardslash', '/']);
+  locale.bindKeyCode(192, ['graveaccent', '`']);
+  locale.bindKeyCode(219, ['openbracket', '[']);
+  locale.bindKeyCode(220, ['backslash', '\\']);
+  locale.bindKeyCode(221, ['closebracket', ']']);
+  locale.bindKeyCode(222, ['apostrophe', '\'']);
+
+  // 0-9
+  locale.bindKeyCode(48, ['zero', '0']);
+  locale.bindKeyCode(49, ['one', '1']);
+  locale.bindKeyCode(50, ['two', '2']);
+  locale.bindKeyCode(51, ['three', '3']);
+  locale.bindKeyCode(52, ['four', '4']);
+  locale.bindKeyCode(53, ['five', '5']);
+  locale.bindKeyCode(54, ['six', '6']);
+  locale.bindKeyCode(55, ['seven', '7']);
+  locale.bindKeyCode(56, ['eight', '8']);
+  locale.bindKeyCode(57, ['nine', '9']);
+
+  // numpad
+  locale.bindKeyCode(96, ['numzero', 'num0']);
+  locale.bindKeyCode(97, ['numone', 'num1']);
+  locale.bindKeyCode(98, ['numtwo', 'num2']);
+  locale.bindKeyCode(99, ['numthree', 'num3']);
+  locale.bindKeyCode(100, ['numfour', 'num4']);
+  locale.bindKeyCode(101, ['numfive', 'num5']);
+  locale.bindKeyCode(102, ['numsix', 'num6']);
+  locale.bindKeyCode(103, ['numseven', 'num7']);
+  locale.bindKeyCode(104, ['numeight', 'num8']);
+  locale.bindKeyCode(105, ['numnine', 'num9']);
+  locale.bindKeyCode(106, ['nummultiply', 'num*']);
+  locale.bindKeyCode(107, ['numadd', 'num+']);
+  locale.bindKeyCode(108, ['numenter']);
+  locale.bindKeyCode(109, ['numsubtract', 'num-']);
+  locale.bindKeyCode(110, ['numdecimal', 'num.']);
+  locale.bindKeyCode(111, ['numdivide', 'num/']);
+  locale.bindKeyCode(144, ['numlock', 'num']);
+
+  // function keys
+  locale.bindKeyCode(112, ['f1']);
+  locale.bindKeyCode(113, ['f2']);
+  locale.bindKeyCode(114, ['f3']);
+  locale.bindKeyCode(115, ['f4']);
+  locale.bindKeyCode(116, ['f5']);
+  locale.bindKeyCode(117, ['f6']);
+  locale.bindKeyCode(118, ['f7']);
+  locale.bindKeyCode(119, ['f8']);
+  locale.bindKeyCode(120, ['f9']);
+  locale.bindKeyCode(121, ['f10']);
+  locale.bindKeyCode(122, ['f11']);
+  locale.bindKeyCode(123, ['f12']);
+
+  // secondary key symbols
+  locale.bindMacro('shift + `', ['tilde', '~']);
+  locale.bindMacro('shift + 1', ['exclamation', 'exclamationpoint', '!']);
+  locale.bindMacro('shift + 2', ['at', '@']);
+  locale.bindMacro('shift + 3', ['number', '#']);
+  locale.bindMacro('shift + 4', ['dollar', 'dollars', 'dollarsign', '$']);
+  locale.bindMacro('shift + 5', ['percent', '%']);
+  locale.bindMacro('shift + 6', ['caret', '^']);
+  locale.bindMacro('shift + 7', ['ampersand', 'and', '&']);
+  locale.bindMacro('shift + 8', ['asterisk', '*']);
+  locale.bindMacro('shift + 9', ['openparen', '(']);
+  locale.bindMacro('shift + 0', ['closeparen', ')']);
+  locale.bindMacro('shift + -', ['underscore', '_']);
+  locale.bindMacro('shift + =', ['plus', '+']);
+  locale.bindMacro('shift + [', ['opencurlybrace', 'opencurlybracket', '{']);
+  locale.bindMacro('shift + ]', ['closecurlybrace', 'closecurlybracket', '}']);
+  locale.bindMacro('shift + \\', ['verticalbar', '|']);
+  locale.bindMacro('shift + ;', ['colon', ':']);
+  locale.bindMacro('shift + \'', ['quotationmark', '\'']);
+  locale.bindMacro('shift + !,', ['openanglebracket', '<']);
+  locale.bindMacro('shift + .', ['closeanglebracket', '>']);
+  locale.bindMacro('shift + /', ['questionmark', '?']);
+
+  //a-z and A-Z
+  for (var keyCode = 65; keyCode <= 90; keyCode += 1) {
+    var keyName = String.fromCharCode(keyCode + 32);
+    var capitalKeyName = String.fromCharCode(keyCode);
+  	locale.bindKeyCode(keyCode, keyName);
+  	locale.bindMacro('shift + ' + keyName, capitalKeyName);
+  	locale.bindMacro('capslock + ' + keyName, capitalKeyName);
+  }
+
+  // browser caveats
+  var semicolonKeyCode = userAgent.match('Firefox') ? 59  : 186;
+  var dashKeyCode      = userAgent.match('Firefox') ? 173 : 189;
+  var leftCommandKeyCode;
+  var rightCommandKeyCode;
+  if (platform.match('Mac') && (userAgent.match('Safari') || userAgent.match('Chrome'))) {
+    leftCommandKeyCode  = 91;
+    rightCommandKeyCode = 93;
+  } else if(platform.match('Mac') && userAgent.match('Opera')) {
+    leftCommandKeyCode  = 17;
+    rightCommandKeyCode = 17;
+  } else if(platform.match('Mac') && userAgent.match('Firefox')) {
+    leftCommandKeyCode  = 224;
+    rightCommandKeyCode = 224;
+  }
+  locale.bindKeyCode(semicolonKeyCode,    ['semicolon', ';']);
+  locale.bindKeyCode(dashKeyCode,         ['dash', '-']);
+  locale.bindKeyCode(leftCommandKeyCode,  ['command', 'windows', 'win', 'super', 'leftcommand', 'leftwindows', 'leftwin', 'leftsuper']);
+  locale.bindKeyCode(rightCommandKeyCode, ['command', 'windows', 'win', 'super', 'rightcommand', 'rightwindows', 'rightwin', 'rightsuper']);
+
+  // kill keys
+  locale.setKillKey('command');
+};
+
+},{}],26:[function(require,module,exports){
 (function (process){
 // Generated by CoffeeScript 1.7.1
 (function() {
@@ -2988,7 +3802,7 @@ module.exports = function indexOf(arr, ele, start) {
 }).call(this);
 
 }).call(this,require('_process'))
-},{"_process":22}],22:[function(require,module,exports){
+},{"_process":27}],27:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -3170,7 +3984,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],23:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 (function (global){
 var now = require('performance-now')
   , root = typeof window === 'undefined' ? global : window
@@ -3246,7 +4060,7 @@ module.exports.polyfill = function() {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"performance-now":21}],24:[function(require,module,exports){
+},{"performance-now":26}],29:[function(require,module,exports){
 var raf = require('raf'),
     COMPLETE = 'complete',
     CANCELED = 'canceled';
@@ -3413,7 +4227,7 @@ module.exports = function(target, settings, callback){
         }
     }
 };
-},{"raf":23}],25:[function(require,module,exports){
+},{"raf":28}],30:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -4963,7 +5777,7 @@ module.exports = function(target, settings, callback){
   }
 }.call(this));
 
-},{}],26:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
 
 // return all text nodes that are contained within `el`
 function getTextNodes(el) {
@@ -5122,7 +5936,7 @@ function wrapRangeText(wrapperEl, range) {
 
 module.exports = wrapRangeText
 
-},{}],27:[function(require,module,exports){
+},{}],32:[function(require,module,exports){
 /*
   Groups: test=3Pj4aGiy
 */
@@ -5132,6 +5946,7 @@ module.exports = wrapRangeText
 var url = require("./util/url");
 var wrap = require("./h/wrap");
 var scroll = require("scroll-into-view");
+var audio = require("./ui/audio");
 
 var unwrap;
 
@@ -5139,15 +5954,14 @@ function removeHighlight() {
   unwrap.unwrap();
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+/*
+ * check if url parm 'id' is present and attempt to highlight the
+ * annotation with that id on the page.
+ */
+function showRequestedAnnotation() {
   var auth = "6879-22a8900b365e8885a6e44d9d711839fb";
-
-  /*
-   * check if url parm 'id' is present and attempt to highlight the
-   * annotation with that id on the page.
-  */
-
   var id = url.getQueryString("id");
+
   if (id) {
     wrap.showOne(id, auth, function(error, hl) {
       if (error) {
@@ -5162,11 +5976,28 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
+}
+
+//initialize javascript on page when loaded
+document.addEventListener("DOMContentLoaded", function() {
+  var audio_message;
+
+  //display hypothes.is annotation if url contains: id=<annotation id>
+  showRequestedAnnotation();
+
+  //init the audio player
+  console.log(audio.initialize({
+    playerId: "#jquery_jplayer_audio_1",
+    skinWrapper: "#jp_container_audio_1",
+    audioToggle: ".audio-toggle",
+    hidePlayer: ".hide-player",
+    hilightClass: "hilite"
+  }));
 
 });
 
 
-},{"./h/wrap":29,"./util/url":30,"scroll-into-view":24}],28:[function(require,module,exports){
+},{"./h/wrap":34,"./ui/audio":35,"./util/url":38,"scroll-into-view":29}],33:[function(require,module,exports){
 /*
  * Query hypothes.is API
  *
@@ -5190,7 +6021,7 @@ function search(query, auth) {
   xhr.open("GET", searchAPI + query);
 
   if (auth) {
-    xhr.setRequestHeader("Authorization", "Bearer "+auth);
+    xhr.setRequestHeader("Authorization", "Bearer " + auth);
   }
 
   xhr.send();
@@ -5228,7 +6059,7 @@ module.exports = {
 };
 
 
-},{}],29:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 
 "use strict";
 
@@ -5444,7 +6275,348 @@ module.exports = {
 };
 
 
-},{"./api":28,"dom-anchor-text-quote":6,"underscore":25,"wrap-range-text":26}],30:[function(require,module,exports){
+},{"./api":33,"dom-anchor-text-quote":6,"underscore":30,"wrap-range-text":31}],35:[function(require,module,exports){
+var hilight = require("./hilight");
+var capture = require("./capture");
+
+var jPlayer;
+
+//initialize jQuery plugin 'jPlayer'
+function initialize(config) {
+  var url, type, media, options;
+  var hilight_supported = false;
+
+  //check if jQuery installed - if not the audio player (jPlayer) should
+  //not be on the page.
+  if (typeof jQuery == "undefined") {
+    return "jQuery not installed";
+  }
+
+  //get the jPlayer node
+  jPlayer = $(config.playerId);
+
+  //exit if no jPlayer HTML is on the page
+  if (jPlayer.length == 0) {
+    return "no jPlayer HTML on page";
+  }
+
+  // setup 'display player' toggle
+  $(config.audioToggle).on('click', function(e) {
+    e.preventDefault();
+    $(config.hidePlayer).toggle();
+  });
+
+  //player config options
+  options = {
+    ready: function() {
+      $(this).jPlayer("setMedia", media);
+
+      hilight_supported = hilight.initialize(config.hilightClass);
+    },
+    timeupdate: function(e) {
+      hilight.update_time(e.jPlayer.status.currentTime);
+      capture.currentTime(e.jPlayer.status.currentTime);
+    },
+    play: function(e) {
+      hilight.play(e.jPlayer.status.currentTime);
+    },
+    pause: function(e) {
+      hilight.pause(e.jPlayer.status.currentTime);
+    },
+    seeked: function(e) {
+      hilight.seeked(e.jPlayer.status.currentTime);
+    },
+    ended: function(e) {
+      hilight.ended(e.jPlayer.status.currentTime);
+    },
+    cssSelectorAncestor: config.skinWrapper,
+    swfPath: "/public/js/lib/jPlayer",
+    solution: "html,flash",
+    useStateClassSkin: true,
+    autoBlur: false,
+    smoothPlayBar: true,
+    keyEnabled: false,
+    remainingDuration: true,
+    toggleDuration: true
+  };
+
+  media = {title: $(config.audioToggle).attr("data-audio-title")};
+  url = $(config.audioToggle).attr("href");
+  type = url.substr(-3);
+
+  switch(type) {
+    case "mp3":
+      media["mp3"] = url;
+      options.supplied = "mp3";
+      break;
+    default:
+      return "unknown audio type";
+      break;
+  }
+
+  //init player
+  jPlayer.jPlayer(options);
+
+  //keyboard bindings to capture audio paragraph timings
+  capture.initialize(jPlayer);
+
+  return "player initialized";
+}
+
+module.exports = {
+
+  initialize: function(config) {
+    return initialize(config);
+  }
+
+};
+
+
+},{"./capture":36,"./hilight":37}],36:[function(require,module,exports){
+
+"use strict";
+
+var kb = require("keyboardjs");
+var _ = require("underscore");
+var capture = [0];
+var jPlayer;
+
+var recordRequested = false;
+var clearRequested = false;
+
+//if tString contains ':' indicates minutes and or hours
+function convertTime(tString) {
+  var t = tString.split(":");
+  var seconds, minutes, hours;
+  var total;
+
+  switch(t.length) {
+    case 1:
+      total = Number.parseFloat(t[0], 10);
+      break;
+    case 2:
+      seconds = Number.parseFloat(t[1], 10);
+      minutes = Number.parseFloat(t[0], 10) * 60;
+      total = minutes + seconds;
+      break;
+    case 3:
+      seconds = Number.parseFloat(t[2], 10);
+      minutes = Number.parseFloat(t[1], 10) * 60;
+      hours = Number.parseFloat(t[2], 10) * 3600;
+      total = hours + minutes + seconds;
+      break;
+  }
+
+  return _.isNaN(total) ? -1 : total;
+}
+
+function cancelClear() {
+  clearRequested = false;
+  console.log('clear request timeout');
+}
+
+module.exports = {
+
+  initialize: function(player) {
+
+    jPlayer = player;
+
+    //m: indicates to store current audio play time
+    kb.bind('m', function(e) {
+      recordRequested = true;
+    });
+
+    //d: delete most recent audio play time
+    kb.bind('d', function(e) {
+      var t;
+
+      //don't delete the first item, (has a time of zero)
+      if (capture.length > 1) {
+        var t = capture.pop();
+
+        if (typeof t !== "undefined") {
+          console.log('deleted: %s', t);
+        }
+      }
+    });
+
+    //l: list timing object
+    kb.bind('l', function(e) {
+      if (capture.length > 1) {
+        console.log(capture);
+      }
+      else {
+        console.log("no data captured")
+      }
+    });
+
+    //s: seek to a specific time, prompt user for time
+    kb.bind('s', function(e0) {
+      var tString = prompt("Play at specified time");
+      var t;
+      if (tString !== null) {
+        t = convertTime(tString);
+        console.log("Input: %s, time: %s", tString, t);
+
+        if (t > -1) {
+          if (typeof jPlayer !== "undefined") {
+            jPlayer.jPlayer("play", t);
+          }
+          else {
+            console.log("jPlayer is not defined in capture.js");
+          }
+        }
+      }
+    });
+
+    //c: clear array
+    kb.bind('c', function(e) {
+      if (clearRequested) {
+        capture = [0];
+        console.log("cleared");
+        clearRequested = false;
+      }
+      else {
+        if (capture.length > 1) {
+          clearRequested = true;
+          console.log('clear: requested, press "c" again to actually do it.')
+          setTimeout(cancelClear, 2000);
+        }
+      }
+    });
+  },
+
+  currentTime: function(t) {
+    if (recordRequested) {
+      capture.push(t);
+      console.log('captured: %s', t);
+      recordRequested = false;
+    }
+  }
+
+};
+
+},{"keyboardjs":21,"underscore":30}],37:[function(require,module,exports){
+/*
+ * NOTE:
+ *
+ * Declared globally: cmi_audio_timing_data
+ */
+
+"use strict";
+
+var scroll = require("scroll-into-view");
+var _ = require("underscore");
+
+//default class to highlight transcript paragraphs during audio playback
+var hilightClass = "hilite";
+
+//paragraph timing pointers
+var locptr = -1;
+var prevptr = -1;
+
+function showNscroll(idx) {
+  var tinfo = cmi_audio_timing_data.time[idx];
+
+  if (prevptr > -1) {
+    $("#" + cmi_audio_timing_data.time[prevptr].id).removeClass(hilightClass);
+  }
+
+  $("#" + tinfo.id).addClass(hilightClass);
+  prevptr = idx;
+
+  //scroll into view
+  scroll(document.getElementById(tinfo.id));
+}
+
+function getTime(idx) {
+  if (idx < 0 || idx >= cmi_audio_timing_data.time.length ) {
+    return 60 * 60 *24; //return a big number
+  }
+
+  return cmi_audio_timing_data.time[idx].seconds;
+}
+
+//audio is playing: play time at arg: current
+function processCurrentTime(current) {
+  if (locptr == -1 || current > getTime(locptr + 1)) {
+    console.log("hilight event at: %s", current);
+    locptr++;
+    showNscroll(locptr);
+  }
+}
+
+module.exports = {
+  enabled: false,
+
+  //highlight supported when timing data available
+  initialize: function(css_class) {
+
+    if (typeof window.cmi_audio_timing_data !== "undefined") {
+      console.log("timing data available");
+
+      //indicate timing data available
+      this.enabled = true;
+
+      //define id's for each paragraph in the narrative div
+      // - these id's are referenced by the timing data
+      $('.narrative p').each(function(idx) {
+        $(this).attr('id', 'p' + idx);
+      });
+    }
+
+    if (typeof css_class !== "undefined") {
+      hilightClass = css_class;
+    }
+
+    return this.enabled;
+  },
+
+  update_time: function(time) {
+    if (!this.enabled) {
+      return;
+    }
+    processCurrentTime(time);
+  },
+  play: function(time) {
+    console.log("play pressed at %s", time);
+  },
+  pause: function(time) {
+    console.log("pause pressed at %s", time);
+  },
+  seeked: function(time) {
+    console.log("seeked event at %s", time);
+
+    if (!this.enabled) {
+      return;
+    }
+
+    //we don't know if seeked time is earlier or later than
+    //the current time so we look through the timing array
+    locptr = _.findIndex(cmi_audio_timing_data.time, function(t) {
+      return time > t.seconds;
+    });
+
+    if (locptr != -1) {
+      console.log("locptr now at time %s", cmi_audio_timing_data.time[locptr].seconds);
+    }
+  },
+  ended: function(time) {
+    console.log("play ended at: %s", time);
+
+    if (!this.enabled) {
+      return;
+    }
+
+    //reset pointers
+    locptr = -1;
+    prevptr = -1;
+  }
+
+};
+
+
+},{"scroll-into-view":29,"underscore":30}],38:[function(require,module,exports){
 /*
  * Url utilities
  */
@@ -5493,4 +6665,4 @@ module.exports = {
 
 };
 
-},{}]},{},[27]);
+},{}]},{},[32]);

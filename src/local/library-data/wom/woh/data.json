@@ -1,11 +1,25 @@
 {
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/wom/audio/woh/"
+  },
   "base": "/wom/woh/",
   "outfile": "woh.json",
   "id": "wom",
   "pages": [
     "woh",
-    "l01",
-    "l02",
+    {
+      "fid": "l01",
+      "res": {
+        "audio": "l01.mp3"
+      }
+    },
+    {
+      "fid": "l02",
+      "res": {
+        "audio": "l02.mp3",
+        "timing": "l02.timing.js"
+      }
+    },
     "l03",
     "l04",
     "l05",
