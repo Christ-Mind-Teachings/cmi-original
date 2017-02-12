@@ -1,9 +1,6 @@
 {
   "domain": {
-    "video": "http://www.celestialrealm.com/",
-    "audio": "http://www.celestialrealm.com/",
-    "pdf": "http://www.celestialrealm.com/",
-    "rtf": "http://www.pamelaparnell.com/"
+    "audio": "http://www.celestialrealm.com/"
   },
   "year": 2002,
   "pages": [
@@ -13,20 +10,24 @@
       "desc": "T31.II Walking with Christ",
       "complete": true,
       "res": {
-        "rtf": "2002-06-12.rtf",
-        "pdf": "uploads/2002-06-12_Raj_Christ_Jesus_A_Course_In_Miracle_ACIM_Study_Group.pdf",
         "audio": "uploads/2002-6-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       }
     },
     {
       "fid": "073102",
       "complete": true,
-      "desc": "T31.VIII Choose Once Again"
+      "desc": "T31.VIII Choose Once Again",
+      "res": {
+        "audio": "uploads/2002-07-31_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "080702",
       "complete": true,
-      "desc": "T1.In Introduction"
+      "desc": "T1.In Introduction",
+      "res": {
+        "audio": "uploads/2002-08-07_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "081402",
@@ -36,77 +37,122 @@
     {
       "fid": "082802",
       "complete": true,
-      "desc": "T1.I Principles of Miracles, Principle 33"
+      "desc": "T1.I Principles of Miracles, Principle 33",
+      "res": {
+        "audio": "uploads/2002-08-28_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "090402",
       "complete": true,
-      "desc": "T1.I Principles of Miracles, Principle 42"
+      "desc": "T1.I Principles of Miracles, Principle 42",
+      "res": {
+        "audio": "uploads/2002-09-04_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "091102",
       "complete": true,
-      "desc": "T1.I Principles of Miracles, Principle 47"
+      "desc": "T1.I Principles of Miracles, Principle 47",
+      "res": {
+        "audio": "uploads/2002-09-11_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "091802",
       "complete": true,
-      "desc": "T1.II Revelation, Time and Miracles"
+      "desc": "T1.II Revelation, Time and Miracles",
+      "res": {
+        "audio": "uploads/2002-09-18_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "092502",
       "complete": true,
-      "desc": "T1.III Atonement and Miracles"
+      "desc": "T1.III Atonement and Miracles",
+      "res": {
+        "audio": "uploads/2002-09-25_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "100202",
       "complete": true,
-      "desc": "T1.IV The Escape from Darkness"
+      "desc": "T1.IV The Escape from Darkness",
+      "res": {
+        "audio": "uploads/2002-10-02_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "101002",
       "desc": "T2.II Healing as Release from Fear",
-      "complete": true
+      "complete": true,
+      "res": {
+        "audio": "uploads/2002-10-10_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "101702",
       "desc": "Needs formating",
-      "complete": false
+      "complete": false,
+      "res": {
+        "audio": "uploads/2002-10-17_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "102402",
       "desc": "Needs formating",
-      "complete": false
+      "complete": false,
+      "res": {
+        "audio": "uploads/2002-10-24_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "103102",
       "desc": "Needs formating",
-      "complete": false
+      "complete": false,
+      "res": {
+        "audio": "uploads/2002-10-31_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "110702",
       "desc": "Needs formating",
-      "complete": false
+      "complete": false,
+      "res": {
+        "audio": "uploads/2002-11-07_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "112102",
       "desc": "Discussion",
-      "complete": false
+      "complete": false,
+      "res": {
+        "audio": "uploads/2002-11-21_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "120502",
       "desc": "Needs formating",
-      "complete": false
+      "complete": false,
+      "res": {
+        "audio": "uploads/2002-12-05_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "121202",
       "desc": "Needs formating",
-      "complete": false
+      "complete": false,
+      "res": {
+        "audio": "uploads/2002-12-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+      }
     },
     {
       "fid": "121902",
       "desc": "T2.II Healing as Release from Fear",
-      "complete": true
+      "complete": true,
+      "res": {
+        "audio": "uploads/2002-12-19_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles_wma.mp3"
+      }
     }
   ]
 }

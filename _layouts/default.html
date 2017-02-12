@@ -25,6 +25,9 @@
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    {% if page.layout == "narrative" %}
+      {% include ui/modal.html %}
+    {% endif %}
 
     {% if page.footer-id %}
       {% include footer.html id=page.footer-id %}

@@ -24,6 +24,7 @@
     "jit-grunt": "^0.10.0"
   },
   "dependencies": {
+    "clipboard": "^1.6.0",
     "dom-anchor-text-quote": "^4.0.1",
     "jsonfile": "^2.4.0",
     "keyboardjs": "^2.3.3",

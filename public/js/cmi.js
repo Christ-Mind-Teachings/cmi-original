@@ -5997,7 +5997,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-},{"./h/wrap":34,"./ui/audio":35,"./util/url":38,"scroll-into-view":29}],33:[function(require,module,exports){
+},{"./h/wrap":34,"./ui/audio":35,"./util/url":39,"scroll-into-view":29}],33:[function(require,module,exports){
 /*
  * Query hypothes.is API
  *
@@ -6311,7 +6311,13 @@ function initialize(config) {
     ready: function() {
       $(this).jPlayer("setMedia", media);
 
+      //hilight supported when paragraph timing data is loaded
       hilight_supported = hilight.initialize(config.hilightClass);
+
+      //if we don't have timing data enable support to get it
+      if (!hilight_supported) {
+        capture.enableSidebarTimeCapture();
+      }
     },
     timeupdate: function(e) {
       hilight.update_time(e.jPlayer.status.currentTime);
@@ -6319,15 +6325,18 @@ function initialize(config) {
     },
     play: function(e) {
       hilight.play(e.jPlayer.status.currentTime);
+      capture.play(e.jPlayer.status.currentTime);
     },
     pause: function(e) {
       hilight.pause(e.jPlayer.status.currentTime);
+      capture.pause(e.jPlayer.status.currentTime);
     },
     seeked: function(e) {
       hilight.seeked(e.jPlayer.status.currentTime);
     },
     ended: function(e) {
       hilight.ended(e.jPlayer.status.currentTime);
+      capture.ended(e.jPlayer.status.currentTime);
     },
     cssSelectorAncestor: config.skinWrapper,
     swfPath: "/public/js/lib/jPlayer",
@@ -6378,11 +6387,91 @@ module.exports = {
 
 var kb = require("keyboardjs");
 var _ = require("underscore");
-var capture = [0];
-var jPlayer;
+var modal = require("./modal");
+//var Clipboard = require("clipboard");
 
+var jPlayer;
+var clipboard;
+var capture = [0];
+
+var audio_playing = false;
 var recordRequested = false;
-var clearRequested = false;
+var captureRequested = false;
+var captureId = "";
+
+function markAsCaptured(id) {
+  $('#' + id).children('i').removeClass("fa-bullseye").addClass("fa-check");
+}
+
+//add option to sidebar to capture audio play time
+function enableSidebarTimeCapture() {
+
+  //show sidebar menu option
+  $('.pmarker-wrapper').css("display", "block");
+
+  //toggle display of paragraph markers used
+  //to record audio playback time
+  console.log('setting up .pmarker-toggle listener');
+  $('.pmarker-toggle').on('click', function(e) {
+    e.preventDefault();
+    toggleMarkers();
+  });
+
+  $('.time-lister').on('click', function(e) {
+    var data;
+    e.preventDefault();
+
+    if (capture.length < 2) {
+      data = "No data captured yet.";
+    }
+    else {
+      data = JSON.stringify(capture);
+    }
+
+    $('#captured-audio-data').html(data);
+    $('#modal-1').trigger('click');
+  });
+
+  //initialize modal window
+  modal.initialize("#modal-1");
+
+  console.log("clipboard support");
+  console.log("clipboard isSupported: %s", Clipboard.isSupported());
+  clipboard = new Clipboard(".clipboard-btn");
+
+  clipboard.on('error', function(e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
+    alert("Error copying to clipboard - sorry");
+  });
+
+  clipboard.on('success', function(e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+
+    e.clearSelection();
+  });
+
+}
+
+//create listeners for each paragraph
+function createListener() {
+  $('.narrative p i.fa').each(function(idx) {
+    $(this).on('click', function(e) {
+      e.preventDefault();
+      if (audio_playing) {
+        console.log("captureRequested %s", e.target.parentElement.id);
+        captureRequested = true;
+        captureId = e.target.parentElement.id;
+      }
+      else {
+        console.log("capture enabled when audio is playing");
+        alert("capture enabled when audio is playing");
+      }
+    });
+  })
+}
 
 //if tString contains ':' indicates minutes and or hours
 function convertTime(tString) {
@@ -6410,9 +6499,49 @@ function convertTime(tString) {
   return _.isNaN(total) ? -1 : total;
 }
 
-function cancelClear() {
-  clearRequested = false;
-  console.log('clear request timeout');
+function toggleMarkers() {
+  var ids = $('.narrative p').attr('id');
+  var fa = $('.narrative p i.fa');
+
+  //create markers is not on page
+  //- do markers exist?
+  if (fa.length != 0) {
+    //yes - toggle display
+    $('.narrative p i.fa').toggle();
+  }
+  else if (typeof ids !== "undefined") {
+    //console.log("paragraph id's already defined, adding marker");
+    $('.narrative p').each(function(idx) {
+      if (idx > 0) {
+        $(this).prepend('<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>');
+      }
+    });
+
+    createListener();
+  }
+  else {
+    //define id's for each paragraph in the narrative div
+    // - these id's are referenced by the timing data
+    $('.narrative p').each(function(idx) {
+      $(this).attr('id', 'p' + idx);
+
+      if (idx > 0) {
+        $(this).prepend('<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>');
+      }
+    });
+
+    createListener();
+  }
+}
+
+function listShortCuts() {
+  console.log('m: record current audio playback time');
+  console.log('d: delete last recorded playback time');
+  console.log('l: list recorded playback times');
+  console.log('cl: clear recorded playback times');
+  console.log('s: seek audio playback to given time (mm:ss.sss)');
+  console.log('x: show/hide paragraph markers');
+  console.log('?: show this list');
 }
 
 module.exports = {
@@ -6421,9 +6550,24 @@ module.exports = {
 
     jPlayer = player;
 
+    //?: list keyboard shortcuts
+    kb.bind('?', function(e) {
+      listShortCuts();
+    });
+
+    //x: add markers
+    kb.bind('x', function(e) {
+      toggleMarkers();
+    });
+
     //m: indicates to store current audio play time
     kb.bind('m', function(e) {
-      recordRequested = true;
+      if (audio_playing) {
+        recordRequested = true;
+      }
+      else {
+        console.log("capture enabled when audio is playing");
+      }
     });
 
     //d: delete most recent audio play time
@@ -6442,8 +6586,11 @@ module.exports = {
 
     //l: list timing object
     kb.bind('l', function(e) {
+      var time;
       if (capture.length > 1) {
-        console.log(capture);
+        time = JSON.stringify(capture);
+        console.log(time);
+        alert(time);
       }
       else {
         console.log("no data captured")
@@ -6470,33 +6617,57 @@ module.exports = {
     });
 
     //c: clear array
-    kb.bind('c', function(e) {
-      if (clearRequested) {
-        capture = [0];
-        console.log("cleared");
-        clearRequested = false;
-      }
-      else {
-        if (capture.length > 1) {
-          clearRequested = true;
-          console.log('clear: requested, press "c" again to actually do it.')
-          setTimeout(cancelClear, 2000);
-        }
-      }
+    kb.bind('c + l', function(e) {
+      capture = [0];
+      console.log("cleared");
     });
   },
 
+  play: function(t) {
+    audio_playing = true;
+  },
+
+  pause: function(t) {
+    audio_playing = false;
+  },
+
+  ended: function(t) {
+    audio_playing = false;
+  },
+
+  //the audio player calls this every 250ms with the
+  //current play time
   currentTime: function(t) {
+
+    //recordRequested comes from the keyboard
+    // ** doesn't make sense to record time from both click
+    //    and keyboard
     if (recordRequested) {
       capture.push(t);
       console.log('captured: %s', t);
       recordRequested = false;
     }
-  }
+
+    //captureRequested comes from a paragraph click
+    // ** doesn't make sense to record time from both click
+    //    and keyboard
+    if (captureRequested) {
+      capture.push({
+        id: captureId,
+        seconds: t
+      });
+      markAsCaptured(captureId);
+      console.log('captured: %s', t);
+      captureRequested = false;
+    }
+  },
+
+  //show sidebar menu option to enable time capture
+  enableSidebarTimeCapture: enableSidebarTimeCapture
 
 };
 
-},{"keyboardjs":21,"underscore":30}],37:[function(require,module,exports){
+},{"./modal":38,"keyboardjs":21,"underscore":30}],37:[function(require,module,exports){
 /*
  * NOTE:
  *
@@ -6617,6 +6788,34 @@ module.exports = {
 
 
 },{"scroll-into-view":29,"underscore":30}],38:[function(require,module,exports){
+"use strict";
+
+module.exports = {
+
+  initialize: function(trigger) {
+
+    //$("#modal-1").on("change", function() {
+    $(trigger).on("change", function() {
+      if ($(this).is(":checked")) {
+        $("body").addClass("modal-open");
+      } else {
+        $("body").removeClass("modal-open");
+      }
+    });
+
+    $(".modal-fade-screen, .modal-close").on("click", function() {
+      $(".modal-state:checked").prop("checked", false).change();
+    });
+
+    $(".modal-inner").on("click", function(e) {
+      e.stopPropagation();
+    });
+  }
+
+};
+
+
+},{}],39:[function(require,module,exports){
 /*
  * Url utilities
  */

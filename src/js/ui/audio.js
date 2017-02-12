@@ -33,7 +33,13 @@ function initialize(config) {
     ready: function() {
       $(this).jPlayer("setMedia", media);
 
+      //hilight supported when paragraph timing data is loaded
       hilight_supported = hilight.initialize(config.hilightClass);
+
+      //if we don't have timing data enable support to get it
+      if (!hilight_supported) {
+        capture.enableSidebarTimeCapture();
+      }
     },
     timeupdate: function(e) {
       hilight.update_time(e.jPlayer.status.currentTime);
@@ -41,15 +47,18 @@ function initialize(config) {
     },
     play: function(e) {
       hilight.play(e.jPlayer.status.currentTime);
+      capture.play(e.jPlayer.status.currentTime);
     },
     pause: function(e) {
       hilight.pause(e.jPlayer.status.currentTime);
+      capture.pause(e.jPlayer.status.currentTime);
     },
     seeked: function(e) {
       hilight.seeked(e.jPlayer.status.currentTime);
     },
     ended: function(e) {
       hilight.ended(e.jPlayer.status.currentTime);
+      capture.ended(e.jPlayer.status.currentTime);
     },
     cssSelectorAncestor: config.skinWrapper,
     swfPath: "/public/js/lib/jPlayer",

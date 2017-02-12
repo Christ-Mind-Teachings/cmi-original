@@ -19,6 +19,15 @@
     {% if page.home != "#" %}
       <a class="sidebar-nav-item" href="{{ page.home }}" >{{ page.book }}</a>
     {% endif %}
+    <div class="capture pmarker-wrapper">
+      <a class="pmarker-toggle sidebar-nav-item" href="#">
+        <i class="fa fa-bullseye"></i>
+        &nbsp;Capture Time
+      </a>
+      <a class="time-lister sidebar-nav-item" href="#">
+        <i class="fa fa-list"></i>
+      </a>
+    </div>
     <a class="sidebar-nav-item" href="#" data-proofer-ignore>Top of Page</a>
     {% for node in page.toc %}
       <a class="sidebar-nav-item sidebar-nav-item-toc" href="#{{ node | slugify }}">{{ node }}</a>
