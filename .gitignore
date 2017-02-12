@@ -12,6 +12,8 @@ _site
 *.zip
 *.vi
 *~
+*.wma
+*.mp3
 
 # POSSIBLE ENVIRONMENTS
 
