@@ -7169,7 +7169,7 @@ var Clipboard = require("clipboard");
 var jPlayer;
 var clipboard;
 var currentPlayTime = 0;
-var capture = [{id: "#p1", seconds: 0}];
+var capture;
 
 var audio_playing = false;
 var recordRequested = false;
@@ -7177,6 +7177,15 @@ var captureRequested = false;
 var captureId = "";
 var deleteRequested = false;
 var deleteData;
+
+//initialize capture object
+function initCaptureArray() {
+  capture = {
+    base: window.location.pathname,
+    title: $('.post-title').text(),
+    time: [{id: "p1", seconds: 0}]
+  };
+}
 
 function deleteException(message) {
   this.message = message;
@@ -7211,7 +7220,7 @@ function markParagraph(o) {
   //mark as captured
   if (pi.hasClass("fa-bullseye")) {
     pi.removeClass("fa-bullseye").addClass("fa-check");
-    capture.push(o);
+    capture.time.push(o);
     console.log("%s captured at %s", o.id, o.seconds);
   }
   //user clicked a captured paragraph, mark for delete
@@ -7233,12 +7242,12 @@ function markParagraph(o) {
       // - if not something's messed up!!
       if (deleteData.id === o.id) {
         pi.removeClass("fa-trash").addClass("fa-bullseye");
-        pos = _.findLastIndex(capture, {id: o.id});
+        pos = _.findLastIndex(capture.time, {id: o.id});
         if (pos == -1) {
           throw new deleteException("can't find id to delete in capture array");
         }
         else {
-          capture.splice(pos, 1);
+          capture.time.splice(pos, 1);
           console.log("%s deleted at %s", o.id, o.seconds);
           deleteData = null;
         }
@@ -7273,13 +7282,14 @@ function enableSidebarTimeCapture() {
     var data;
     e.preventDefault();
 
-    if (capture.length < 2) {
+    if (capture.time.length < 2) {
       data = "No data captured yet.";
     }
     else {
       data = JSON.stringify(capture);
     }
 
+    $('#audio-data-form').attr('action', capture.base + "?m=timingsent");
     $('#captured-audio-data').html(data);
     $('#modal-1').trigger('click');
   });
@@ -7323,14 +7333,12 @@ function createListener() {
   $('.narrative p i.fa').each(function(idx) {
     $(this).on('click', function(e) {
       e.preventDefault();
-      if (audio_playing) {
-        console.log("captureRequested %s", e.target.parentElement.id);
-        captureRequested = true;
-        captureId = e.target.parentElement.id;
-      }
-      else {
-        console.log("capture enabled when audio is playing");
-        alert("capture enabled when audio is playing");
+      captureRequested = true;
+      captureId = e.target.parentElement.id;
+
+      if (!audio_playing) {
+        //notify user action won't happen until audio plays
+        //and only the last action is honored
       }
     });
   });
@@ -7428,93 +7436,94 @@ function toggleMarkers() {
   }
 }
 
-function listShortCuts() {
-  console.log('m: record current audio playback time');
-  console.log('d: delete last recorded playback time');
-  console.log('l: list recorded playback times');
-  console.log('cl: clear recorded playback times');
-  console.log('s: seek audio playback to given time (mm:ss.sss)');
-  console.log('x: show/hide paragraph markers');
-  console.log('?: show this list');
-}
+//function listShortCuts() {
+  //console.log('m: record current audio playback time');
+  //console.log('d: delete last recorded playback time');
+  //console.log('l: list recorded playback times');
+  //console.log('cl: clear recorded playback times');
+  //console.log('s: seek audio playback to given time (mm:ss.sss)');
+  //console.log('x: show/hide paragraph markers');
+  //console.log('?: show this list');
+//}
 
 module.exports = {
 
   initialize: function(player) {
 
     jPlayer = player;
+    initCaptureArray();
 
     //?: list keyboard shortcuts
-    kb.bind('?', function(e) {
-      listShortCuts();
-    });
+    //kb.bind('?', function(e) {
+      //listShortCuts();
+    //});
 
     //x: add markers
-    kb.bind('x', function(e) {
-      toggleMarkers();
-    });
+    //kb.bind('x', function(e) {
+      //toggleMarkers();
+    //});
 
     //m: indicates to store current audio play time
-    kb.bind('m', function(e) {
-      if (audio_playing) {
-        recordRequested = true;
-      }
-      else {
-        console.log("capture enabled when audio is playing");
-      }
-    });
+    //kb.bind('m', function(e) {
+      //if (audio_playing) {
+        //recordRequested = true;
+      //}
+      //else {
+        //console.log("capture enabled when audio is playing");
+      //}
+    //});
 
     //d: delete most recent audio play time
-    kb.bind('d', function(e) {
-      var t;
+    //kb.bind('d', function(e) {
+      //var t;
 
-      //don't delete the first item, (has a time of zero)
-      if (capture.length > 1) {
-        var t = capture.pop();
+      ////don't delete the first item, (has a time of zero)
+      //if (capture.time.length > 1) {
+        //var t = capture.time.pop();
 
-        if (typeof t !== "undefined") {
-          console.log('deleted: %s', t);
-        }
-      }
-    });
+        //if (typeof t !== "undefined") {
+          //console.log('deleted: %s', t);
+        //}
+      //}
+    //});
 
     //l: list timing object
-    kb.bind('l', function(e) {
-      var time;
-      if (capture.length > 1) {
-        time = JSON.stringify(capture);
-        console.log(time);
-        alert(time);
-      }
-      else {
-        console.log("no data captured")
-      }
-    });
+    //kb.bind('l', function(e) {
+      //var time;
+      //if (capture.time.length > 1) {
+        //time = JSON.stringify(capture);
+        //console.log(time);
+        //alert(time);
+      //}
+      //else {
+        //console.log("no data captured")
+      //}
+    //});
 
     //s: seek to a specific time, prompt user for time
-    kb.bind('s', function(e0) {
-      var tString = prompt("Play at specified time");
-      var t;
-      if (tString !== null) {
-        t = convertTime(tString);
-        console.log("Input: %s, time: %s", tString, t);
+    //kb.bind('s', function(e0) {
+      //var tString = prompt("Play at specified time");
+      //var t;
+      //if (tString !== null) {
+        //t = convertTime(tString);
+        //console.log("Input: %s, time: %s", tString, t);
 
-        if (t > -1) {
-          if (typeof jPlayer !== "undefined") {
-            jPlayer.jPlayer("play", t);
-          }
-          else {
-            console.log("jPlayer is not defined in capture.js");
-          }
-        }
-      }
-    });
+        //if (t > -1) {
+          //if (typeof jPlayer !== "undefined") {
+            //jPlayer.jPlayer("play", t);
+          //}
+          //else {
+            //console.log("jPlayer is not defined in capture.js");
+          //}
+        //}
+      //}
+    //});
 
     //c: clear array
-    kb.bind('c + l', function(e) {
-      capture = [0];
-      console.log("cleared");
-    });
+    //kb.bind('c + l', function(e) {
+      //initCaptureArray();
+      //console.log("cleared");
+    //});
   },
 
   play: function(t) {
@@ -7538,11 +7547,11 @@ module.exports = {
     //recordRequested comes from the keyboard
     // ** doesn't make sense to record time from both click
     //    and keyboard
-    if (recordRequested) {
-      capture.push(t);
-      console.log('captured: %s', t);
-      recordRequested = false;
-    }
+    //if (recordRequested) {
+      //capture.time.push(t);
+      //console.log('captured: %s', t);
+      //recordRequested = false;
+    //}
 
     //captureRequested comes from a paragraph click
     // ** doesn't make sense to record time from both click
