@@ -26,7 +26,7 @@
   .jp-audio .jp-interface
     height: 65px
 
-  .jp-audio, jp-audio-stream, jp-video
+  .jp-audio, .jp-audio-stream, .jp-video
     border: 1px solid transparent
 
   .hilite
@@ -40,6 +40,41 @@
 
   .narrative p i.fa
     cursor: pointer
+
+  .player-fixed
+    position: fixed
+    top: 10px
+    right: 10px
+
+  .hide-cmi-controls
+    display: none
+
+  .cmi-audio-controls
+    top: 25px
+    position: absolute
+    left: 308px
+    width: 200px
+
+    button
+      display: block
+      position: absolute
+      cursor: pointer
+      border: none
+
+    .audio-rewind
+      width: 18px
+      height: 15px
+      top: -11px
+      background-color: #EEEEEE
+
+    .audio-faster
+      width: 18px
+      height: 15px
+      top: -20px
+      left: 55px
+      font-size: xx-large
+      font-weight: bold
+      background-color: #EEEEEE
 
 blockquote
   cite

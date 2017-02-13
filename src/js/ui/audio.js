@@ -46,6 +46,8 @@ function initialize(config) {
       capture.currentTime(e.jPlayer.status.currentTime);
     },
     play: function(e) {
+      console.log("setting player-fixed");
+      $('#jp_container_audio_1').addClass('player-fixed');
       hilight.play(e.jPlayer.status.currentTime);
       capture.play(e.jPlayer.status.currentTime);
     },
@@ -55,8 +57,14 @@ function initialize(config) {
     },
     seeked: function(e) {
       hilight.seeked(e.jPlayer.status.currentTime);
+      if (e.jPlayer.status.currentTime === 0.0) {
+        console.log("removing player-fixed");
+        $('#jp_container_audio_1').removeClass('player-fixed');
+      }
     },
     ended: function(e) {
+      console.log("removing player-fixed");
+      $('#jp_container_audio_1').removeClass('player-fixed');
       hilight.ended(e.jPlayer.status.currentTime);
       capture.ended(e.jPlayer.status.currentTime);
     },

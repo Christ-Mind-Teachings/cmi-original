@@ -19,6 +19,513 @@ function noop(n) {
 }
 
 },{}],2:[function(require,module,exports){
+(function (global, factory) {
+    if (typeof define === "function" && define.amd) {
+        define(['module', 'select'], factory);
+    } else if (typeof exports !== "undefined") {
+        factory(module, require('select'));
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod, global.select);
+        global.clipboardAction = mod.exports;
+    }
+})(this, function (module, _select) {
+    'use strict';
+
+    var _select2 = _interopRequireDefault(_select);
+
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+
+    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+        return typeof obj;
+    } : function (obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var _createClass = function () {
+        function defineProperties(target, props) {
+            for (var i = 0; i < props.length; i++) {
+                var descriptor = props[i];
+                descriptor.enumerable = descriptor.enumerable || false;
+                descriptor.configurable = true;
+                if ("value" in descriptor) descriptor.writable = true;
+                Object.defineProperty(target, descriptor.key, descriptor);
+            }
+        }
+
+        return function (Constructor, protoProps, staticProps) {
+            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+            if (staticProps) defineProperties(Constructor, staticProps);
+            return Constructor;
+        };
+    }();
+
+    var ClipboardAction = function () {
+        /**
+         * @param {Object} options
+         */
+        function ClipboardAction(options) {
+            _classCallCheck(this, ClipboardAction);
+
+            this.resolveOptions(options);
+            this.initSelection();
+        }
+
+        /**
+         * Defines base properties passed from constructor.
+         * @param {Object} options
+         */
+
+
+        _createClass(ClipboardAction, [{
+            key: 'resolveOptions',
+            value: function resolveOptions() {
+                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+                this.action = options.action;
+                this.emitter = options.emitter;
+                this.target = options.target;
+                this.text = options.text;
+                this.trigger = options.trigger;
+
+                this.selectedText = '';
+            }
+        }, {
+            key: 'initSelection',
+            value: function initSelection() {
+                if (this.text) {
+                    this.selectFake();
+                } else if (this.target) {
+                    this.selectTarget();
+                }
+            }
+        }, {
+            key: 'selectFake',
+            value: function selectFake() {
+                var _this = this;
+
+                var isRTL = document.documentElement.getAttribute('dir') == 'rtl';
+
+                this.removeFake();
+
+                this.fakeHandlerCallback = function () {
+                    return _this.removeFake();
+                };
+                this.fakeHandler = document.body.addEventListener('click', this.fakeHandlerCallback) || true;
+
+                this.fakeElem = document.createElement('textarea');
+                // Prevent zooming on iOS
+                this.fakeElem.style.fontSize = '12pt';
+                // Reset box model
+                this.fakeElem.style.border = '0';
+                this.fakeElem.style.padding = '0';
+                this.fakeElem.style.margin = '0';
+                // Move element out of screen horizontally
+                this.fakeElem.style.position = 'absolute';
+                this.fakeElem.style[isRTL ? 'right' : 'left'] = '-9999px';
+                // Move element to the same position vertically
+                var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+                this.fakeElem.style.top = yPosition + 'px';
+
+                this.fakeElem.setAttribute('readonly', '');
+                this.fakeElem.value = this.text;
+
+                document.body.appendChild(this.fakeElem);
+
+                this.selectedText = (0, _select2.default)(this.fakeElem);
+                this.copyText();
+            }
+        }, {
+            key: 'removeFake',
+            value: function removeFake() {
+                if (this.fakeHandler) {
+                    document.body.removeEventListener('click', this.fakeHandlerCallback);
+                    this.fakeHandler = null;
+                    this.fakeHandlerCallback = null;
+                }
+
+                if (this.fakeElem) {
+                    document.body.removeChild(this.fakeElem);
+                    this.fakeElem = null;
+                }
+            }
+        }, {
+            key: 'selectTarget',
+            value: function selectTarget() {
+                this.selectedText = (0, _select2.default)(this.target);
+                this.copyText();
+            }
+        }, {
+            key: 'copyText',
+            value: function copyText() {
+                var succeeded = void 0;
+
+                try {
+                    succeeded = document.execCommand(this.action);
+                } catch (err) {
+                    succeeded = false;
+                }
+
+                this.handleResult(succeeded);
+            }
+        }, {
+            key: 'handleResult',
+            value: function handleResult(succeeded) {
+                this.emitter.emit(succeeded ? 'success' : 'error', {
+                    action: this.action,
+                    text: this.selectedText,
+                    trigger: this.trigger,
+                    clearSelection: this.clearSelection.bind(this)
+                });
+            }
+        }, {
+            key: 'clearSelection',
+            value: function clearSelection() {
+                if (this.target) {
+                    this.target.blur();
+                }
+
+                window.getSelection().removeAllRanges();
+            }
+        }, {
+            key: 'destroy',
+            value: function destroy() {
+                this.removeFake();
+            }
+        }, {
+            key: 'action',
+            set: function set() {
+                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'copy';
+
+                this._action = action;
+
+                if (this._action !== 'copy' && this._action !== 'cut') {
+                    throw new Error('Invalid "action" value, use either "copy" or "cut"');
+                }
+            },
+            get: function get() {
+                return this._action;
+            }
+        }, {
+            key: 'target',
+            set: function set(target) {
+                if (target !== undefined) {
+                    if (target && (typeof target === 'undefined' ? 'undefined' : _typeof(target)) === 'object' && target.nodeType === 1) {
+                        if (this.action === 'copy' && target.hasAttribute('disabled')) {
+                            throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');
+                        }
+
+                        if (this.action === 'cut' && (target.hasAttribute('readonly') || target.hasAttribute('disabled'))) {
+                            throw new Error('Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes');
+                        }
+
+                        this._target = target;
+                    } else {
+                        throw new Error('Invalid "target" value, use a valid Element');
+                    }
+                }
+            },
+            get: function get() {
+                return this._target;
+            }
+        }]);
+
+        return ClipboardAction;
+    }();
+
+    module.exports = ClipboardAction;
+});
+},{"select":36}],3:[function(require,module,exports){
+(function (global, factory) {
+    if (typeof define === "function" && define.amd) {
+        define(['module', './clipboard-action', 'tiny-emitter', 'good-listener'], factory);
+    } else if (typeof exports !== "undefined") {
+        factory(module, require('./clipboard-action'), require('tiny-emitter'), require('good-listener'));
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod, global.clipboardAction, global.tinyEmitter, global.goodListener);
+        global.clipboard = mod.exports;
+    }
+})(this, function (module, _clipboardAction, _tinyEmitter, _goodListener) {
+    'use strict';
+
+    var _clipboardAction2 = _interopRequireDefault(_clipboardAction);
+
+    var _tinyEmitter2 = _interopRequireDefault(_tinyEmitter);
+
+    var _goodListener2 = _interopRequireDefault(_goodListener);
+
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var _createClass = function () {
+        function defineProperties(target, props) {
+            for (var i = 0; i < props.length; i++) {
+                var descriptor = props[i];
+                descriptor.enumerable = descriptor.enumerable || false;
+                descriptor.configurable = true;
+                if ("value" in descriptor) descriptor.writable = true;
+                Object.defineProperty(target, descriptor.key, descriptor);
+            }
+        }
+
+        return function (Constructor, protoProps, staticProps) {
+            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+            if (staticProps) defineProperties(Constructor, staticProps);
+            return Constructor;
+        };
+    }();
+
+    function _possibleConstructorReturn(self, call) {
+        if (!self) {
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        }
+
+        return call && (typeof call === "object" || typeof call === "function") ? call : self;
+    }
+
+    function _inherits(subClass, superClass) {
+        if (typeof superClass !== "function" && superClass !== null) {
+            throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+        }
+
+        subClass.prototype = Object.create(superClass && superClass.prototype, {
+            constructor: {
+                value: subClass,
+                enumerable: false,
+                writable: true,
+                configurable: true
+            }
+        });
+        if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+    }
+
+    var Clipboard = function (_Emitter) {
+        _inherits(Clipboard, _Emitter);
+
+        /**
+         * @param {String|HTMLElement|HTMLCollection|NodeList} trigger
+         * @param {Object} options
+         */
+        function Clipboard(trigger, options) {
+            _classCallCheck(this, Clipboard);
+
+            var _this = _possibleConstructorReturn(this, (Clipboard.__proto__ || Object.getPrototypeOf(Clipboard)).call(this));
+
+            _this.resolveOptions(options);
+            _this.listenClick(trigger);
+            return _this;
+        }
+
+        /**
+         * Defines if attributes would be resolved using internal setter functions
+         * or custom functions that were passed in the constructor.
+         * @param {Object} options
+         */
+
+
+        _createClass(Clipboard, [{
+            key: 'resolveOptions',
+            value: function resolveOptions() {
+                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+                this.action = typeof options.action === 'function' ? options.action : this.defaultAction;
+                this.target = typeof options.target === 'function' ? options.target : this.defaultTarget;
+                this.text = typeof options.text === 'function' ? options.text : this.defaultText;
+            }
+        }, {
+            key: 'listenClick',
+            value: function listenClick(trigger) {
+                var _this2 = this;
+
+                this.listener = (0, _goodListener2.default)(trigger, 'click', function (e) {
+                    return _this2.onClick(e);
+                });
+            }
+        }, {
+            key: 'onClick',
+            value: function onClick(e) {
+                var trigger = e.delegateTarget || e.currentTarget;
+
+                if (this.clipboardAction) {
+                    this.clipboardAction = null;
+                }
+
+                this.clipboardAction = new _clipboardAction2.default({
+                    action: this.action(trigger),
+                    target: this.target(trigger),
+                    text: this.text(trigger),
+                    trigger: trigger,
+                    emitter: this
+                });
+            }
+        }, {
+            key: 'defaultAction',
+            value: function defaultAction(trigger) {
+                return getAttributeValue('action', trigger);
+            }
+        }, {
+            key: 'defaultTarget',
+            value: function defaultTarget(trigger) {
+                var selector = getAttributeValue('target', trigger);
+
+                if (selector) {
+                    return document.querySelector(selector);
+                }
+            }
+        }, {
+            key: 'defaultText',
+            value: function defaultText(trigger) {
+                return getAttributeValue('text', trigger);
+            }
+        }, {
+            key: 'destroy',
+            value: function destroy() {
+                this.listener.destroy();
+
+                if (this.clipboardAction) {
+                    this.clipboardAction.destroy();
+                    this.clipboardAction = null;
+                }
+            }
+        }], [{
+            key: 'isSupported',
+            value: function isSupported() {
+                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ['copy', 'cut'];
+
+                var actions = typeof action === 'string' ? [action] : action;
+                var support = !!document.queryCommandSupported;
+
+                actions.forEach(function (action) {
+                    support = support && !!document.queryCommandSupported(action);
+                });
+
+                return support;
+            }
+        }]);
+
+        return Clipboard;
+    }(_tinyEmitter2.default);
+
+    /**
+     * Helper function to retrieve attribute value.
+     * @param {String} suffix
+     * @param {Element} element
+     */
+    function getAttributeValue(suffix, element) {
+        var attribute = 'data-clipboard-' + suffix;
+
+        if (!element.hasAttribute(attribute)) {
+            return;
+        }
+
+        return element.getAttribute(attribute);
+    }
+
+    module.exports = Clipboard;
+});
+},{"./clipboard-action":2,"good-listener":25,"tiny-emitter":37}],4:[function(require,module,exports){
+var DOCUMENT_NODE_TYPE = 9;
+
+/**
+ * A polyfill for Element.matches()
+ */
+if (Element && !Element.prototype.matches) {
+    var proto = Element.prototype;
+
+    proto.matches = proto.matchesSelector ||
+                    proto.mozMatchesSelector ||
+                    proto.msMatchesSelector ||
+                    proto.oMatchesSelector ||
+                    proto.webkitMatchesSelector;
+}
+
+/**
+ * Finds the closest parent that matches a selector.
+ *
+ * @param {Element} element
+ * @param {String} selector
+ * @return {Function}
+ */
+function closest (element, selector) {
+    while (element && element.nodeType !== DOCUMENT_NODE_TYPE) {
+        if (element.matches(selector)) return element;
+        element = element.parentNode;
+    }
+}
+
+module.exports = closest;
+
+},{}],5:[function(require,module,exports){
+var closest = require('./closest');
+
+/**
+ * Delegates event to a selector.
+ *
+ * @param {Element} element
+ * @param {String} selector
+ * @param {String} type
+ * @param {Function} callback
+ * @param {Boolean} useCapture
+ * @return {Object}
+ */
+function delegate(element, selector, type, callback, useCapture) {
+    var listenerFn = listener.apply(this, arguments);
+
+    element.addEventListener(type, listenerFn, useCapture);
+
+    return {
+        destroy: function() {
+            element.removeEventListener(type, listenerFn, useCapture);
+        }
+    }
+}
+
+/**
+ * Finds closest match and invokes callback.
+ *
+ * @param {Element} element
+ * @param {String} selector
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Function}
+ */
+function listener(element, selector, type, callback) {
+    return function(e) {
+        e.delegateTarget = closest(e.target, selector);
+
+        if (e.delegateTarget) {
+            callback.call(element, e);
+        }
+    }
+}
+
+module.exports = delegate;
+
+},{"./closest":4}],6:[function(require,module,exports){
 'use strict'
 
 /**
@@ -2213,10 +2720,10 @@ module.exports['DIFF_DELETE'] = DIFF_DELETE;
 module.exports['DIFF_INSERT'] = DIFF_INSERT;
 module.exports['DIFF_EQUAL'] = DIFF_EQUAL;
 
-},{}],3:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 module.exports = require('./lib')
 
-},{"./lib":4}],4:[function(require,module,exports){
+},{"./lib":8}],8:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2303,7 +2810,7 @@ function toRange(root) {
   return range;
 }
 
-},{"./range-to-string":5,"dom-node-iterator":9,"dom-seek":18}],5:[function(require,module,exports){
+},{"./range-to-string":9,"dom-node-iterator":13,"dom-seek":22}],9:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2378,10 +2885,10 @@ function rangeToString(range) {
   return text;
 }
 
-},{}],6:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 module.exports = require('./lib');
 
-},{"./lib":7}],7:[function(require,module,exports){
+},{"./lib":11}],11:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2564,16 +3071,16 @@ function toTextPosition(root, selector) {
   return { start: acc.start, end: acc.end };
 }
 
-},{"diff-match-patch":2,"dom-anchor-text-position":3}],8:[function(require,module,exports){
+},{"diff-match-patch":6,"dom-anchor-text-position":7}],12:[function(require,module,exports){
 module.exports = require('./lib/implementation')['default'];
 
-},{"./lib/implementation":12}],9:[function(require,module,exports){
+},{"./lib/implementation":16}],13:[function(require,module,exports){
 module.exports = require('./lib')['default'];
 module.exports.getPolyfill = require('./polyfill');
 module.exports.implementation = require('./implementation');
 module.exports.shim = require('./shim');
 
-},{"./implementation":8,"./lib":13,"./polyfill":16,"./shim":17}],10:[function(require,module,exports){
+},{"./implementation":12,"./lib":17,"./polyfill":20,"./shim":21}],14:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -2627,7 +3134,7 @@ var NodeIterator = function () {
   return NodeIterator;
 }();
 
-},{}],11:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -2642,7 +3149,7 @@ function createNodeIterator(root) {
   return doc.createNodeIterator.call(doc, root, whatToShow, filter);
 }
 
-},{}],12:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -2735,7 +3242,7 @@ var NodeIterator = function () {
   return NodeIterator;
 }();
 
-},{}],13:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -2760,7 +3267,7 @@ polyfill.shim = _shim2['default'];
 
 exports['default'] = polyfill;
 
-},{"./implementation":12,"./polyfill":14,"./shim":15}],14:[function(require,module,exports){
+},{"./implementation":16,"./polyfill":18,"./shim":19}],18:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -2791,7 +3298,7 @@ function getPolyfill() {
   }
 } /*global document*/
 
-},{"./adapter":10,"./builtin":11,"./implementation":12}],15:[function(require,module,exports){
+},{"./adapter":14,"./builtin":15,"./implementation":16}],19:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -2815,16 +3322,16 @@ function shim() {
   return polyfill;
 }
 
-},{"./builtin":11,"./polyfill":14}],16:[function(require,module,exports){
+},{"./builtin":15,"./polyfill":18}],20:[function(require,module,exports){
 module.exports = require('./lib/polyfill')['default'];
 
-},{"./lib/polyfill":14}],17:[function(require,module,exports){
+},{"./lib/polyfill":18}],21:[function(require,module,exports){
 module.exports = require('./lib/shim')['default'];
 
-},{"./lib/shim":15}],18:[function(require,module,exports){
+},{"./lib/shim":19}],22:[function(require,module,exports){
 module.exports = require('./lib')['default'];
 
-},{"./lib":19}],19:[function(require,module,exports){
+},{"./lib":23}],23:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -2918,7 +3425,155 @@ function before(ref, node) {
   return l > r;
 }
 
-},{"ancestors":1,"index-of":20}],20:[function(require,module,exports){
+},{"ancestors":1,"index-of":26}],24:[function(require,module,exports){
+/**
+ * Check if argument is a HTML element.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.node = function(value) {
+    return value !== undefined
+        && value instanceof HTMLElement
+        && value.nodeType === 1;
+};
+
+/**
+ * Check if argument is a list of HTML elements.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.nodeList = function(value) {
+    var type = Object.prototype.toString.call(value);
+
+    return value !== undefined
+        && (type === '[object NodeList]' || type === '[object HTMLCollection]')
+        && ('length' in value)
+        && (value.length === 0 || exports.node(value[0]));
+};
+
+/**
+ * Check if argument is a string.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.string = function(value) {
+    return typeof value === 'string'
+        || value instanceof String;
+};
+
+/**
+ * Check if argument is a function.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.fn = function(value) {
+    var type = Object.prototype.toString.call(value);
+
+    return type === '[object Function]';
+};
+
+},{}],25:[function(require,module,exports){
+var is = require('./is');
+var delegate = require('delegate');
+
+/**
+ * Validates all params and calls the right
+ * listener function based on its target type.
+ *
+ * @param {String|HTMLElement|HTMLCollection|NodeList} target
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listen(target, type, callback) {
+    if (!target && !type && !callback) {
+        throw new Error('Missing required arguments');
+    }
+
+    if (!is.string(type)) {
+        throw new TypeError('Second argument must be a String');
+    }
+
+    if (!is.fn(callback)) {
+        throw new TypeError('Third argument must be a Function');
+    }
+
+    if (is.node(target)) {
+        return listenNode(target, type, callback);
+    }
+    else if (is.nodeList(target)) {
+        return listenNodeList(target, type, callback);
+    }
+    else if (is.string(target)) {
+        return listenSelector(target, type, callback);
+    }
+    else {
+        throw new TypeError('First argument must be a String, HTMLElement, HTMLCollection, or NodeList');
+    }
+}
+
+/**
+ * Adds an event listener to a HTML element
+ * and returns a remove listener function.
+ *
+ * @param {HTMLElement} node
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listenNode(node, type, callback) {
+    node.addEventListener(type, callback);
+
+    return {
+        destroy: function() {
+            node.removeEventListener(type, callback);
+        }
+    }
+}
+
+/**
+ * Add an event listener to a list of HTML elements
+ * and returns a remove listener function.
+ *
+ * @param {NodeList|HTMLCollection} nodeList
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listenNodeList(nodeList, type, callback) {
+    Array.prototype.forEach.call(nodeList, function(node) {
+        node.addEventListener(type, callback);
+    });
+
+    return {
+        destroy: function() {
+            Array.prototype.forEach.call(nodeList, function(node) {
+                node.removeEventListener(type, callback);
+            });
+        }
+    }
+}
+
+/**
+ * Add an event listener to a selector
+ * and returns a remove listener function.
+ *
+ * @param {String} selector
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listenSelector(selector, type, callback) {
+    return delegate(document.body, selector, type, callback);
+}
+
+module.exports = listen;
+
+},{"./is":24,"delegate":5}],26:[function(require,module,exports){
 /*!
  * index-of <https://github.com/jonschlinkert/index-of>
  *
@@ -2952,7 +3607,7 @@ module.exports = function indexOf(arr, ele, start) {
   return -1;
 };
 
-},{}],21:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 
 var Keyboard = require('./lib/keyboard');
 var Locale   = require('./lib/locale');
@@ -2967,7 +3622,7 @@ exports.Keyboard = Keyboard;
 exports.Locale   = Locale;
 exports.KeyCombo = KeyCombo;
 
-},{"./lib/key-combo":22,"./lib/keyboard":23,"./lib/locale":24,"./locales/us":25}],22:[function(require,module,exports){
+},{"./lib/key-combo":28,"./lib/keyboard":29,"./lib/locale":30,"./locales/us":31}],28:[function(require,module,exports){
 
 function KeyCombo(keyComboStr) {
   this.sourceStr = keyComboStr;
@@ -3100,7 +3755,7 @@ KeyCombo.prototype._checkSubCombo = function(subCombo, startingKeyNameIndex, pre
 
 module.exports = KeyCombo;
 
-},{}],23:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 (function (global){
 
 var Locale = require('./locale');
@@ -3469,7 +4124,7 @@ Keyboard.prototype._clearBindings = function(event) {
 module.exports = Keyboard;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./key-combo":22,"./locale":24}],24:[function(require,module,exports){
+},{"./key-combo":28,"./locale":30}],30:[function(require,module,exports){
 
 var KeyCombo = require('./key-combo');
 
@@ -3622,7 +4277,7 @@ Locale.prototype._clearMacros = function() {
 
 module.exports = Locale;
 
-},{"./key-combo":22}],25:[function(require,module,exports){
+},{"./key-combo":28}],31:[function(require,module,exports){
 
 module.exports = function(locale, platform, userAgent) {
 
@@ -3766,7 +4421,7 @@ module.exports = function(locale, platform, userAgent) {
   locale.setKillKey('command');
 };
 
-},{}],26:[function(require,module,exports){
+},{}],32:[function(require,module,exports){
 (function (process){
 // Generated by CoffeeScript 1.7.1
 (function() {
@@ -3802,7 +4457,7 @@ module.exports = function(locale, platform, userAgent) {
 }).call(this);
 
 }).call(this,require('_process'))
-},{"_process":27}],27:[function(require,module,exports){
+},{"_process":33}],33:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -3984,7 +4639,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],28:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 (function (global){
 var now = require('performance-now')
   , root = typeof window === 'undefined' ? global : window
@@ -4060,7 +4715,7 @@ module.exports.polyfill = function() {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"performance-now":26}],29:[function(require,module,exports){
+},{"performance-now":32}],35:[function(require,module,exports){
 var raf = require('raf'),
     COMPLETE = 'complete',
     CANCELED = 'canceled';
@@ -4227,7 +4882,120 @@ module.exports = function(target, settings, callback){
         }
     }
 };
-},{"raf":28}],30:[function(require,module,exports){
+},{"raf":34}],36:[function(require,module,exports){
+function select(element) {
+    var selectedText;
+
+    if (element.nodeName === 'SELECT') {
+        element.focus();
+
+        selectedText = element.value;
+    }
+    else if (element.nodeName === 'INPUT' || element.nodeName === 'TEXTAREA') {
+        var isReadOnly = element.hasAttribute('readonly');
+
+        if (!isReadOnly) {
+            element.setAttribute('readonly', '');
+        }
+
+        element.select();
+        element.setSelectionRange(0, element.value.length);
+
+        if (!isReadOnly) {
+            element.removeAttribute('readonly');
+        }
+
+        selectedText = element.value;
+    }
+    else {
+        if (element.hasAttribute('contenteditable')) {
+            element.focus();
+        }
+
+        var selection = window.getSelection();
+        var range = document.createRange();
+
+        range.selectNodeContents(element);
+        selection.removeAllRanges();
+        selection.addRange(range);
+
+        selectedText = selection.toString();
+    }
+
+    return selectedText;
+}
+
+module.exports = select;
+
+},{}],37:[function(require,module,exports){
+function E () {
+  // Keep this empty so it's easier to inherit from
+  // (via https://github.com/lipsmack from https://github.com/scottcorgan/tiny-emitter/issues/3)
+}
+
+E.prototype = {
+  on: function (name, callback, ctx) {
+    var e = this.e || (this.e = {});
+
+    (e[name] || (e[name] = [])).push({
+      fn: callback,
+      ctx: ctx
+    });
+
+    return this;
+  },
+
+  once: function (name, callback, ctx) {
+    var self = this;
+    function listener () {
+      self.off(name, listener);
+      callback.apply(ctx, arguments);
+    };
+
+    listener._ = callback
+    return this.on(name, listener, ctx);
+  },
+
+  emit: function (name) {
+    var data = [].slice.call(arguments, 1);
+    var evtArr = ((this.e || (this.e = {}))[name] || []).slice();
+    var i = 0;
+    var len = evtArr.length;
+
+    for (i; i < len; i++) {
+      evtArr[i].fn.apply(evtArr[i].ctx, data);
+    }
+
+    return this;
+  },
+
+  off: function (name, callback) {
+    var e = this.e || (this.e = {});
+    var evts = e[name];
+    var liveEvents = [];
+
+    if (evts && callback) {
+      for (var i = 0, len = evts.length; i < len; i++) {
+        if (evts[i].fn !== callback && evts[i].fn._ !== callback)
+          liveEvents.push(evts[i]);
+      }
+    }
+
+    // Remove event from queue to prevent memory leak
+    // Suggested by https://github.com/lazd
+    // Ref: https://github.com/scottcorgan/tiny-emitter/commit/c6ebfaa9bc973b33d110a84a307742b7cf94c953#commitcomment-5024910
+
+    (liveEvents.length)
+      ? e[name] = liveEvents
+      : delete e[name];
+
+    return this;
+  }
+};
+
+module.exports = E;
+
+},{}],38:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -5777,7 +6545,7 @@ module.exports = function(target, settings, callback){
   }
 }.call(this));
 
-},{}],31:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 
 // return all text nodes that are contained within `el`
 function getTextNodes(el) {
@@ -5936,7 +6704,7 @@ function wrapRangeText(wrapperEl, range) {
 
 module.exports = wrapRangeText
 
-},{}],32:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 /*
   Groups: test=3Pj4aGiy
 */
@@ -5997,7 +6765,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-},{"./h/wrap":34,"./ui/audio":35,"./util/url":39,"scroll-into-view":29}],33:[function(require,module,exports){
+},{"./h/wrap":42,"./ui/audio":43,"./util/url":47,"scroll-into-view":35}],41:[function(require,module,exports){
 /*
  * Query hypothes.is API
  *
@@ -6059,7 +6827,7 @@ module.exports = {
 };
 
 
-},{}],34:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 
 "use strict";
 
@@ -6275,7 +7043,7 @@ module.exports = {
 };
 
 
-},{"./api":33,"dom-anchor-text-quote":6,"underscore":30,"wrap-range-text":31}],35:[function(require,module,exports){
+},{"./api":41,"dom-anchor-text-quote":10,"underscore":38,"wrap-range-text":39}],43:[function(require,module,exports){
 var hilight = require("./hilight");
 var capture = require("./capture");
 
@@ -6324,6 +7092,8 @@ function initialize(config) {
       capture.currentTime(e.jPlayer.status.currentTime);
     },
     play: function(e) {
+      console.log("setting player-fixed");
+      $('#jp_container_audio_1').addClass('player-fixed');
       hilight.play(e.jPlayer.status.currentTime);
       capture.play(e.jPlayer.status.currentTime);
     },
@@ -6333,8 +7103,14 @@ function initialize(config) {
     },
     seeked: function(e) {
       hilight.seeked(e.jPlayer.status.currentTime);
+      if (e.jPlayer.status.currentTime === 0.0) {
+        console.log("removing player-fixed");
+        $('#jp_container_audio_1').removeClass('player-fixed');
+      }
     },
     ended: function(e) {
+      console.log("removing player-fixed");
+      $('#jp_container_audio_1').removeClass('player-fixed');
       hilight.ended(e.jPlayer.status.currentTime);
       capture.ended(e.jPlayer.status.currentTime);
     },
@@ -6381,26 +7157,102 @@ module.exports = {
 };
 
 
-},{"./capture":36,"./hilight":37}],36:[function(require,module,exports){
+},{"./capture":44,"./hilight":45}],44:[function(require,module,exports){
 
 "use strict";
 
 var kb = require("keyboardjs");
 var _ = require("underscore");
 var modal = require("./modal");
-//var Clipboard = require("clipboard");
+var Clipboard = require("clipboard");
 
 var jPlayer;
 var clipboard;
-var capture = [0];
+var currentPlayTime = 0;
+var capture = [{id: "#p1", seconds: 0}];
 
 var audio_playing = false;
 var recordRequested = false;
 var captureRequested = false;
 var captureId = "";
+var deleteRequested = false;
+var deleteData;
 
-function markAsCaptured(id) {
-  $('#' + id).children('i').removeClass("fa-bullseye").addClass("fa-check");
+function deleteException(message) {
+  this.message = message;
+  this.name = "deleteException";
+}
+
+function stateException(message) {
+  this.message = message;
+  this.name = "stateException";
+}
+
+//delete timeout
+function deleteCaptureTimeout() {
+  var pi;
+  if (deleteRequested) {
+    deleteRequested = false;
+    pi = $('#' + deleteData.id).children('i');
+
+    if (pi.hasClass("fa-trash")) {
+      pi.removeClass("fa-trash").addClass("fa-check");
+      console.log("delete timeout for %s", deleteData.id);
+
+      deleteData = null;
+    }
+  }
+}
+
+//called only when captureRequested == true
+function markParagraph(o) {
+  var pi = $('#' + o.id).children('i');
+
+  //mark as captured
+  if (pi.hasClass("fa-bullseye")) {
+    pi.removeClass("fa-bullseye").addClass("fa-check");
+    capture.push(o);
+    console.log("%s captured at %s", o.id, o.seconds);
+  }
+  //user clicked a captured paragraph, mark for delete
+  else if (pi.hasClass("fa-check")) {
+    pi.removeClass("fa-check").addClass("fa-trash");
+    deleteRequested = true;
+    deleteData = o;
+    console.log("%s delete requested at %s", o.id, o.seconds);
+    setTimeout(deleteCaptureTimeout, 500);
+  }
+  //delete previously requested and node clicked again confirming delete
+  else if (pi.hasClass("fa-trash")) {
+    var pos;
+    //verify deleteRequested
+    if (deleteRequested) {
+      deleteRequested = false;
+
+      //verify this id is the same as deleteData.id
+      // - if not something's messed up!!
+      if (deleteData.id === o.id) {
+        pi.removeClass("fa-trash").addClass("fa-bullseye");
+        pos = _.findLastIndex(capture, {id: o.id});
+        if (pos == -1) {
+          throw new deleteException("can't find id to delete in capture array");
+        }
+        else {
+          capture.splice(pos, 1);
+          console.log("%s deleted at %s", o.id, o.seconds);
+          deleteData = null;
+        }
+      }
+      else {
+        throw new deleteException("deleteData.id !== o.id");
+      }
+    }
+  }
+  else {
+    throw new stateException("unknown paragraph state for: %s", o.id);
+  }
+
+  captureRequested = false;
 }
 
 //add option to sidebar to capture audio play time
@@ -6435,27 +7287,38 @@ function enableSidebarTimeCapture() {
   //initialize modal window
   modal.initialize("#modal-1");
 
-  console.log("clipboard support");
+
   console.log("clipboard isSupported: %s", Clipboard.isSupported());
-  clipboard = new Clipboard(".clipboard-btn");
 
-  clipboard.on('error', function(e) {
-    console.error('Action:', e.action);
-    console.error('Trigger:', e.trigger);
-    alert("Error copying to clipboard - sorry");
-  });
+  if (Clipboard.isSupported) {
+    //the clipboard does not work when invoked
+    //from a modal dialog. So I copy the clipboard
+    //everytime the modal is displayed.
+    clipboard = new Clipboard(".time-lister", {
+      text: function(trigger) {
+        return JSON.stringify(capture);
+      }
+    });
 
-  clipboard.on('success', function(e) {
-    console.info('Action:', e.action);
-    console.info('Text:', e.text);
-    console.info('Trigger:', e.trigger);
+    clipboard.on('error', function(e) {
+      console.error('Action:', e.action);
+      console.error('Trigger:', e.trigger);
+      alert("Error copying to clipboard - sorry");
+    });
 
-    e.clearSelection();
-  });
+    clipboard.on('success', function(e) {
+      console.info('Action:', e.action);
+      console.info('Text:', e.text);
+      console.info('Trigger:', e.trigger);
+
+      e.clearSelection();
+    });
+  }
 
 }
 
-//create listeners for each paragraph
+//create listeners for each paragraph and
+//show rewind and speed player controls
 function createListener() {
   $('.narrative p i.fa').each(function(idx) {
     $(this).on('click', function(e) {
@@ -6470,7 +7333,38 @@ function createListener() {
         alert("capture enabled when audio is playing");
       }
     });
-  })
+  });
+
+  //enable rewind and faster buttons on audio player
+  console.log("showing cmi audio controls");
+  $('.cmi-audio-controls').removeClass('hide-cmi-controls');
+
+  //set rewind control
+  $('.audio-rewind').on('click', function(e) {
+    e.preventDefault();
+    var skipAmt = 8;
+    var newTime = currentPlayTime - skipAmt;
+    if (newTime <= 0) {
+      newTime = 0;
+    }
+    console.log('rewinding playback to %s from %s', newTime, currentPlayTime);
+    jPlayer.jPlayer("play", newTime);
+
+  });
+
+  //set playbackRate control
+  $('.audio-faster').on('click', function(e) {
+    var currentRate = jPlayer.jPlayer("option", "playbackRate");
+    var newRate = 1;
+    e.preventDefault();
+
+    if (currentRate < 3) {
+      newRate = currentRate + 1;
+    }
+    //console.log("currentRate: %s", currentRate);
+    jPlayer.jPlayer("option", "playbackRate", newRate);
+    $(this).html(newRate);
+  });
 }
 
 //if tString contains ':' indicates minutes and or hours
@@ -6638,6 +7532,8 @@ module.exports = {
   //the audio player calls this every 250ms with the
   //current play time
   currentTime: function(t) {
+    //store current time
+    currentPlayTime = t;
 
     //recordRequested comes from the keyboard
     // ** doesn't make sense to record time from both click
@@ -6652,13 +7548,10 @@ module.exports = {
     // ** doesn't make sense to record time from both click
     //    and keyboard
     if (captureRequested) {
-      capture.push({
+      markParagraph({
         id: captureId,
         seconds: t
       });
-      markAsCaptured(captureId);
-      console.log('captured: %s', t);
-      captureRequested = false;
     }
   },
 
@@ -6667,7 +7560,7 @@ module.exports = {
 
 };
 
-},{"./modal":38,"keyboardjs":21,"underscore":30}],37:[function(require,module,exports){
+},{"./modal":46,"clipboard":3,"keyboardjs":27,"underscore":38}],45:[function(require,module,exports){
 /*
  * NOTE:
  *
@@ -6787,7 +7680,7 @@ module.exports = {
 };
 
 
-},{"scroll-into-view":29,"underscore":30}],38:[function(require,module,exports){
+},{"scroll-into-view":35,"underscore":38}],46:[function(require,module,exports){
 "use strict";
 
 module.exports = {
@@ -6815,7 +7708,7 @@ module.exports = {
 };
 
 
-},{}],39:[function(require,module,exports){
+},{}],47:[function(require,module,exports){
 /*
  * Url utilities
  */
@@ -6864,4 +7757,4 @@ module.exports = {
 
 };
 
-},{}]},{},[32]);
+},{}]},{},[40]);

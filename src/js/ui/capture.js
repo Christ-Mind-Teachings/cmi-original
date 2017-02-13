@@ -4,19 +4,95 @@
 var kb = require("keyboardjs");
 var _ = require("underscore");
 var modal = require("./modal");
-//var Clipboard = require("clipboard");
+var Clipboard = require("clipboard");
 
 var jPlayer;
 var clipboard;
-var capture = [0];
+var currentPlayTime = 0;
+var capture = [{id: "#p1", seconds: 0}];
 
 var audio_playing = false;
 var recordRequested = false;
 var captureRequested = false;
 var captureId = "";
+var deleteRequested = false;
+var deleteData;
 
-function markAsCaptured(id) {
-  $('#' + id).children('i').removeClass("fa-bullseye").addClass("fa-check");
+function deleteException(message) {
+  this.message = message;
+  this.name = "deleteException";
+}
+
+function stateException(message) {
+  this.message = message;
+  this.name = "stateException";
+}
+
+//delete timeout
+function deleteCaptureTimeout() {
+  var pi;
+  if (deleteRequested) {
+    deleteRequested = false;
+    pi = $('#' + deleteData.id).children('i');
+
+    if (pi.hasClass("fa-trash")) {
+      pi.removeClass("fa-trash").addClass("fa-check");
+      console.log("delete timeout for %s", deleteData.id);
+
+      deleteData = null;
+    }
+  }
+}
+
+//called only when captureRequested == true
+function markParagraph(o) {
+  var pi = $('#' + o.id).children('i');
+
+  //mark as captured
+  if (pi.hasClass("fa-bullseye")) {
+    pi.removeClass("fa-bullseye").addClass("fa-check");
+    capture.push(o);
+    console.log("%s captured at %s", o.id, o.seconds);
+  }
+  //user clicked a captured paragraph, mark for delete
+  else if (pi.hasClass("fa-check")) {
+    pi.removeClass("fa-check").addClass("fa-trash");
+    deleteRequested = true;
+    deleteData = o;
+    console.log("%s delete requested at %s", o.id, o.seconds);
+    setTimeout(deleteCaptureTimeout, 500);
+  }
+  //delete previously requested and node clicked again confirming delete
+  else if (pi.hasClass("fa-trash")) {
+    var pos;
+    //verify deleteRequested
+    if (deleteRequested) {
+      deleteRequested = false;
+
+      //verify this id is the same as deleteData.id
+      // - if not something's messed up!!
+      if (deleteData.id === o.id) {
+        pi.removeClass("fa-trash").addClass("fa-bullseye");
+        pos = _.findLastIndex(capture, {id: o.id});
+        if (pos == -1) {
+          throw new deleteException("can't find id to delete in capture array");
+        }
+        else {
+          capture.splice(pos, 1);
+          console.log("%s deleted at %s", o.id, o.seconds);
+          deleteData = null;
+        }
+      }
+      else {
+        throw new deleteException("deleteData.id !== o.id");
+      }
+    }
+  }
+  else {
+    throw new stateException("unknown paragraph state for: %s", o.id);
+  }
+
+  captureRequested = false;
 }
 
 //add option to sidebar to capture audio play time
@@ -51,27 +127,38 @@ function enableSidebarTimeCapture() {
   //initialize modal window
   modal.initialize("#modal-1");
 
-  console.log("clipboard support");
+
   console.log("clipboard isSupported: %s", Clipboard.isSupported());
-  clipboard = new Clipboard(".clipboard-btn");
 
-  clipboard.on('error', function(e) {
-    console.error('Action:', e.action);
-    console.error('Trigger:', e.trigger);
-    alert("Error copying to clipboard - sorry");
-  });
+  if (Clipboard.isSupported) {
+    //the clipboard does not work when invoked
+    //from a modal dialog. So I copy the clipboard
+    //everytime the modal is displayed.
+    clipboard = new Clipboard(".time-lister", {
+      text: function(trigger) {
+        return JSON.stringify(capture);
+      }
+    });
 
-  clipboard.on('success', function(e) {
-    console.info('Action:', e.action);
-    console.info('Text:', e.text);
-    console.info('Trigger:', e.trigger);
+    clipboard.on('error', function(e) {
+      console.error('Action:', e.action);
+      console.error('Trigger:', e.trigger);
+      alert("Error copying to clipboard - sorry");
+    });
 
-    e.clearSelection();
-  });
+    clipboard.on('success', function(e) {
+      console.info('Action:', e.action);
+      console.info('Text:', e.text);
+      console.info('Trigger:', e.trigger);
+
+      e.clearSelection();
+    });
+  }
 
 }
 
-//create listeners for each paragraph
+//create listeners for each paragraph and
+//show rewind and speed player controls
 function createListener() {
   $('.narrative p i.fa').each(function(idx) {
     $(this).on('click', function(e) {
@@ -86,7 +173,38 @@ function createListener() {
         alert("capture enabled when audio is playing");
       }
     });
-  })
+  });
+
+  //enable rewind and faster buttons on audio player
+  console.log("showing cmi audio controls");
+  $('.cmi-audio-controls').removeClass('hide-cmi-controls');
+
+  //set rewind control
+  $('.audio-rewind').on('click', function(e) {
+    e.preventDefault();
+    var skipAmt = 8;
+    var newTime = currentPlayTime - skipAmt;
+    if (newTime <= 0) {
+      newTime = 0;
+    }
+    console.log('rewinding playback to %s from %s', newTime, currentPlayTime);
+    jPlayer.jPlayer("play", newTime);
+
+  });
+
+  //set playbackRate control
+  $('.audio-faster').on('click', function(e) {
+    var currentRate = jPlayer.jPlayer("option", "playbackRate");
+    var newRate = 1;
+    e.preventDefault();
+
+    if (currentRate < 3) {
+      newRate = currentRate + 1;
+    }
+    //console.log("currentRate: %s", currentRate);
+    jPlayer.jPlayer("option", "playbackRate", newRate);
+    $(this).html(newRate);
+  });
 }
 
 //if tString contains ':' indicates minutes and or hours
@@ -254,6 +372,8 @@ module.exports = {
   //the audio player calls this every 250ms with the
   //current play time
   currentTime: function(t) {
+    //store current time
+    currentPlayTime = t;
 
     //recordRequested comes from the keyboard
     // ** doesn't make sense to record time from both click
@@ -268,13 +388,10 @@ module.exports = {
     // ** doesn't make sense to record time from both click
     //    and keyboard
     if (captureRequested) {
-      capture.push({
+      markParagraph({
         id: captureId,
         seconds: t
       });
-      markAsCaptured(captureId);
-      console.log('captured: %s', t);
-      captureRequested = false;
     }
   },
 
