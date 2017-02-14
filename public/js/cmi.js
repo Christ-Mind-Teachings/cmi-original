@@ -19,513 +19,6 @@ function noop(n) {
 }
 
 },{}],2:[function(require,module,exports){
-(function (global, factory) {
-    if (typeof define === "function" && define.amd) {
-        define(['module', 'select'], factory);
-    } else if (typeof exports !== "undefined") {
-        factory(module, require('select'));
-    } else {
-        var mod = {
-            exports: {}
-        };
-        factory(mod, global.select);
-        global.clipboardAction = mod.exports;
-    }
-})(this, function (module, _select) {
-    'use strict';
-
-    var _select2 = _interopRequireDefault(_select);
-
-    function _interopRequireDefault(obj) {
-        return obj && obj.__esModule ? obj : {
-            default: obj
-        };
-    }
-
-    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
-        return typeof obj;
-    } : function (obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
-
-    var _createClass = function () {
-        function defineProperties(target, props) {
-            for (var i = 0; i < props.length; i++) {
-                var descriptor = props[i];
-                descriptor.enumerable = descriptor.enumerable || false;
-                descriptor.configurable = true;
-                if ("value" in descriptor) descriptor.writable = true;
-                Object.defineProperty(target, descriptor.key, descriptor);
-            }
-        }
-
-        return function (Constructor, protoProps, staticProps) {
-            if (protoProps) defineProperties(Constructor.prototype, protoProps);
-            if (staticProps) defineProperties(Constructor, staticProps);
-            return Constructor;
-        };
-    }();
-
-    var ClipboardAction = function () {
-        /**
-         * @param {Object} options
-         */
-        function ClipboardAction(options) {
-            _classCallCheck(this, ClipboardAction);
-
-            this.resolveOptions(options);
-            this.initSelection();
-        }
-
-        /**
-         * Defines base properties passed from constructor.
-         * @param {Object} options
-         */
-
-
-        _createClass(ClipboardAction, [{
-            key: 'resolveOptions',
-            value: function resolveOptions() {
-                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-                this.action = options.action;
-                this.emitter = options.emitter;
-                this.target = options.target;
-                this.text = options.text;
-                this.trigger = options.trigger;
-
-                this.selectedText = '';
-            }
-        }, {
-            key: 'initSelection',
-            value: function initSelection() {
-                if (this.text) {
-                    this.selectFake();
-                } else if (this.target) {
-                    this.selectTarget();
-                }
-            }
-        }, {
-            key: 'selectFake',
-            value: function selectFake() {
-                var _this = this;
-
-                var isRTL = document.documentElement.getAttribute('dir') == 'rtl';
-
-                this.removeFake();
-
-                this.fakeHandlerCallback = function () {
-                    return _this.removeFake();
-                };
-                this.fakeHandler = document.body.addEventListener('click', this.fakeHandlerCallback) || true;
-
-                this.fakeElem = document.createElement('textarea');
-                // Prevent zooming on iOS
-                this.fakeElem.style.fontSize = '12pt';
-                // Reset box model
-                this.fakeElem.style.border = '0';
-                this.fakeElem.style.padding = '0';
-                this.fakeElem.style.margin = '0';
-                // Move element out of screen horizontally
-                this.fakeElem.style.position = 'absolute';
-                this.fakeElem.style[isRTL ? 'right' : 'left'] = '-9999px';
-                // Move element to the same position vertically
-                var yPosition = window.pageYOffset || document.documentElement.scrollTop;
-                this.fakeElem.style.top = yPosition + 'px';
-
-                this.fakeElem.setAttribute('readonly', '');
-                this.fakeElem.value = this.text;
-
-                document.body.appendChild(this.fakeElem);
-
-                this.selectedText = (0, _select2.default)(this.fakeElem);
-                this.copyText();
-            }
-        }, {
-            key: 'removeFake',
-            value: function removeFake() {
-                if (this.fakeHandler) {
-                    document.body.removeEventListener('click', this.fakeHandlerCallback);
-                    this.fakeHandler = null;
-                    this.fakeHandlerCallback = null;
-                }
-
-                if (this.fakeElem) {
-                    document.body.removeChild(this.fakeElem);
-                    this.fakeElem = null;
-                }
-            }
-        }, {
-            key: 'selectTarget',
-            value: function selectTarget() {
-                this.selectedText = (0, _select2.default)(this.target);
-                this.copyText();
-            }
-        }, {
-            key: 'copyText',
-            value: function copyText() {
-                var succeeded = void 0;
-
-                try {
-                    succeeded = document.execCommand(this.action);
-                } catch (err) {
-                    succeeded = false;
-                }
-
-                this.handleResult(succeeded);
-            }
-        }, {
-            key: 'handleResult',
-            value: function handleResult(succeeded) {
-                this.emitter.emit(succeeded ? 'success' : 'error', {
-                    action: this.action,
-                    text: this.selectedText,
-                    trigger: this.trigger,
-                    clearSelection: this.clearSelection.bind(this)
-                });
-            }
-        }, {
-            key: 'clearSelection',
-            value: function clearSelection() {
-                if (this.target) {
-                    this.target.blur();
-                }
-
-                window.getSelection().removeAllRanges();
-            }
-        }, {
-            key: 'destroy',
-            value: function destroy() {
-                this.removeFake();
-            }
-        }, {
-            key: 'action',
-            set: function set() {
-                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'copy';
-
-                this._action = action;
-
-                if (this._action !== 'copy' && this._action !== 'cut') {
-                    throw new Error('Invalid "action" value, use either "copy" or "cut"');
-                }
-            },
-            get: function get() {
-                return this._action;
-            }
-        }, {
-            key: 'target',
-            set: function set(target) {
-                if (target !== undefined) {
-                    if (target && (typeof target === 'undefined' ? 'undefined' : _typeof(target)) === 'object' && target.nodeType === 1) {
-                        if (this.action === 'copy' && target.hasAttribute('disabled')) {
-                            throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');
-                        }
-
-                        if (this.action === 'cut' && (target.hasAttribute('readonly') || target.hasAttribute('disabled'))) {
-                            throw new Error('Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes');
-                        }
-
-                        this._target = target;
-                    } else {
-                        throw new Error('Invalid "target" value, use a valid Element');
-                    }
-                }
-            },
-            get: function get() {
-                return this._target;
-            }
-        }]);
-
-        return ClipboardAction;
-    }();
-
-    module.exports = ClipboardAction;
-});
-},{"select":36}],3:[function(require,module,exports){
-(function (global, factory) {
-    if (typeof define === "function" && define.amd) {
-        define(['module', './clipboard-action', 'tiny-emitter', 'good-listener'], factory);
-    } else if (typeof exports !== "undefined") {
-        factory(module, require('./clipboard-action'), require('tiny-emitter'), require('good-listener'));
-    } else {
-        var mod = {
-            exports: {}
-        };
-        factory(mod, global.clipboardAction, global.tinyEmitter, global.goodListener);
-        global.clipboard = mod.exports;
-    }
-})(this, function (module, _clipboardAction, _tinyEmitter, _goodListener) {
-    'use strict';
-
-    var _clipboardAction2 = _interopRequireDefault(_clipboardAction);
-
-    var _tinyEmitter2 = _interopRequireDefault(_tinyEmitter);
-
-    var _goodListener2 = _interopRequireDefault(_goodListener);
-
-    function _interopRequireDefault(obj) {
-        return obj && obj.__esModule ? obj : {
-            default: obj
-        };
-    }
-
-    function _classCallCheck(instance, Constructor) {
-        if (!(instance instanceof Constructor)) {
-            throw new TypeError("Cannot call a class as a function");
-        }
-    }
-
-    var _createClass = function () {
-        function defineProperties(target, props) {
-            for (var i = 0; i < props.length; i++) {
-                var descriptor = props[i];
-                descriptor.enumerable = descriptor.enumerable || false;
-                descriptor.configurable = true;
-                if ("value" in descriptor) descriptor.writable = true;
-                Object.defineProperty(target, descriptor.key, descriptor);
-            }
-        }
-
-        return function (Constructor, protoProps, staticProps) {
-            if (protoProps) defineProperties(Constructor.prototype, protoProps);
-            if (staticProps) defineProperties(Constructor, staticProps);
-            return Constructor;
-        };
-    }();
-
-    function _possibleConstructorReturn(self, call) {
-        if (!self) {
-            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        }
-
-        return call && (typeof call === "object" || typeof call === "function") ? call : self;
-    }
-
-    function _inherits(subClass, superClass) {
-        if (typeof superClass !== "function" && superClass !== null) {
-            throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-        }
-
-        subClass.prototype = Object.create(superClass && superClass.prototype, {
-            constructor: {
-                value: subClass,
-                enumerable: false,
-                writable: true,
-                configurable: true
-            }
-        });
-        if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-    }
-
-    var Clipboard = function (_Emitter) {
-        _inherits(Clipboard, _Emitter);
-
-        /**
-         * @param {String|HTMLElement|HTMLCollection|NodeList} trigger
-         * @param {Object} options
-         */
-        function Clipboard(trigger, options) {
-            _classCallCheck(this, Clipboard);
-
-            var _this = _possibleConstructorReturn(this, (Clipboard.__proto__ || Object.getPrototypeOf(Clipboard)).call(this));
-
-            _this.resolveOptions(options);
-            _this.listenClick(trigger);
-            return _this;
-        }
-
-        /**
-         * Defines if attributes would be resolved using internal setter functions
-         * or custom functions that were passed in the constructor.
-         * @param {Object} options
-         */
-
-
-        _createClass(Clipboard, [{
-            key: 'resolveOptions',
-            value: function resolveOptions() {
-                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-                this.action = typeof options.action === 'function' ? options.action : this.defaultAction;
-                this.target = typeof options.target === 'function' ? options.target : this.defaultTarget;
-                this.text = typeof options.text === 'function' ? options.text : this.defaultText;
-            }
-        }, {
-            key: 'listenClick',
-            value: function listenClick(trigger) {
-                var _this2 = this;
-
-                this.listener = (0, _goodListener2.default)(trigger, 'click', function (e) {
-                    return _this2.onClick(e);
-                });
-            }
-        }, {
-            key: 'onClick',
-            value: function onClick(e) {
-                var trigger = e.delegateTarget || e.currentTarget;
-
-                if (this.clipboardAction) {
-                    this.clipboardAction = null;
-                }
-
-                this.clipboardAction = new _clipboardAction2.default({
-                    action: this.action(trigger),
-                    target: this.target(trigger),
-                    text: this.text(trigger),
-                    trigger: trigger,
-                    emitter: this
-                });
-            }
-        }, {
-            key: 'defaultAction',
-            value: function defaultAction(trigger) {
-                return getAttributeValue('action', trigger);
-            }
-        }, {
-            key: 'defaultTarget',
-            value: function defaultTarget(trigger) {
-                var selector = getAttributeValue('target', trigger);
-
-                if (selector) {
-                    return document.querySelector(selector);
-                }
-            }
-        }, {
-            key: 'defaultText',
-            value: function defaultText(trigger) {
-                return getAttributeValue('text', trigger);
-            }
-        }, {
-            key: 'destroy',
-            value: function destroy() {
-                this.listener.destroy();
-
-                if (this.clipboardAction) {
-                    this.clipboardAction.destroy();
-                    this.clipboardAction = null;
-                }
-            }
-        }], [{
-            key: 'isSupported',
-            value: function isSupported() {
-                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ['copy', 'cut'];
-
-                var actions = typeof action === 'string' ? [action] : action;
-                var support = !!document.queryCommandSupported;
-
-                actions.forEach(function (action) {
-                    support = support && !!document.queryCommandSupported(action);
-                });
-
-                return support;
-            }
-        }]);
-
-        return Clipboard;
-    }(_tinyEmitter2.default);
-
-    /**
-     * Helper function to retrieve attribute value.
-     * @param {String} suffix
-     * @param {Element} element
-     */
-    function getAttributeValue(suffix, element) {
-        var attribute = 'data-clipboard-' + suffix;
-
-        if (!element.hasAttribute(attribute)) {
-            return;
-        }
-
-        return element.getAttribute(attribute);
-    }
-
-    module.exports = Clipboard;
-});
-},{"./clipboard-action":2,"good-listener":25,"tiny-emitter":37}],4:[function(require,module,exports){
-var DOCUMENT_NODE_TYPE = 9;
-
-/**
- * A polyfill for Element.matches()
- */
-if (Element && !Element.prototype.matches) {
-    var proto = Element.prototype;
-
-    proto.matches = proto.matchesSelector ||
-                    proto.mozMatchesSelector ||
-                    proto.msMatchesSelector ||
-                    proto.oMatchesSelector ||
-                    proto.webkitMatchesSelector;
-}
-
-/**
- * Finds the closest parent that matches a selector.
- *
- * @param {Element} element
- * @param {String} selector
- * @return {Function}
- */
-function closest (element, selector) {
-    while (element && element.nodeType !== DOCUMENT_NODE_TYPE) {
-        if (element.matches(selector)) return element;
-        element = element.parentNode;
-    }
-}
-
-module.exports = closest;
-
-},{}],5:[function(require,module,exports){
-var closest = require('./closest');
-
-/**
- * Delegates event to a selector.
- *
- * @param {Element} element
- * @param {String} selector
- * @param {String} type
- * @param {Function} callback
- * @param {Boolean} useCapture
- * @return {Object}
- */
-function delegate(element, selector, type, callback, useCapture) {
-    var listenerFn = listener.apply(this, arguments);
-
-    element.addEventListener(type, listenerFn, useCapture);
-
-    return {
-        destroy: function() {
-            element.removeEventListener(type, listenerFn, useCapture);
-        }
-    }
-}
-
-/**
- * Finds closest match and invokes callback.
- *
- * @param {Element} element
- * @param {String} selector
- * @param {String} type
- * @param {Function} callback
- * @return {Function}
- */
-function listener(element, selector, type, callback) {
-    return function(e) {
-        e.delegateTarget = closest(e.target, selector);
-
-        if (e.delegateTarget) {
-            callback.call(element, e);
-        }
-    }
-}
-
-module.exports = delegate;
-
-},{"./closest":4}],6:[function(require,module,exports){
 'use strict'
 
 /**
@@ -2720,10 +2213,10 @@ module.exports['DIFF_DELETE'] = DIFF_DELETE;
 module.exports['DIFF_INSERT'] = DIFF_INSERT;
 module.exports['DIFF_EQUAL'] = DIFF_EQUAL;
 
-},{}],7:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 module.exports = require('./lib')
 
-},{"./lib":8}],8:[function(require,module,exports){
+},{"./lib":4}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2810,7 +2303,7 @@ function toRange(root) {
   return range;
 }
 
-},{"./range-to-string":9,"dom-node-iterator":13,"dom-seek":22}],9:[function(require,module,exports){
+},{"./range-to-string":5,"dom-node-iterator":9,"dom-seek":18}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -2885,10 +2378,10 @@ function rangeToString(range) {
   return text;
 }
 
-},{}],10:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 module.exports = require('./lib');
 
-},{"./lib":11}],11:[function(require,module,exports){
+},{"./lib":7}],7:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3071,16 +2564,16 @@ function toTextPosition(root, selector) {
   return { start: acc.start, end: acc.end };
 }
 
-},{"diff-match-patch":6,"dom-anchor-text-position":7}],12:[function(require,module,exports){
+},{"diff-match-patch":2,"dom-anchor-text-position":3}],8:[function(require,module,exports){
 module.exports = require('./lib/implementation')['default'];
 
-},{"./lib/implementation":16}],13:[function(require,module,exports){
+},{"./lib/implementation":12}],9:[function(require,module,exports){
 module.exports = require('./lib')['default'];
 module.exports.getPolyfill = require('./polyfill');
 module.exports.implementation = require('./implementation');
 module.exports.shim = require('./shim');
 
-},{"./implementation":12,"./lib":17,"./polyfill":20,"./shim":21}],14:[function(require,module,exports){
+},{"./implementation":8,"./lib":13,"./polyfill":16,"./shim":17}],10:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -3134,7 +2627,7 @@ var NodeIterator = function () {
   return NodeIterator;
 }();
 
-},{}],15:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -3149,7 +2642,7 @@ function createNodeIterator(root) {
   return doc.createNodeIterator.call(doc, root, whatToShow, filter);
 }
 
-},{}],16:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -3242,7 +2735,7 @@ var NodeIterator = function () {
   return NodeIterator;
 }();
 
-},{}],17:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -3267,7 +2760,7 @@ polyfill.shim = _shim2['default'];
 
 exports['default'] = polyfill;
 
-},{"./implementation":16,"./polyfill":18,"./shim":19}],18:[function(require,module,exports){
+},{"./implementation":12,"./polyfill":14,"./shim":15}],14:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -3298,7 +2791,7 @@ function getPolyfill() {
   }
 } /*global document*/
 
-},{"./adapter":14,"./builtin":15,"./implementation":16}],19:[function(require,module,exports){
+},{"./adapter":10,"./builtin":11,"./implementation":12}],15:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -3322,16 +2815,16 @@ function shim() {
   return polyfill;
 }
 
-},{"./builtin":15,"./polyfill":18}],20:[function(require,module,exports){
+},{"./builtin":11,"./polyfill":14}],16:[function(require,module,exports){
 module.exports = require('./lib/polyfill')['default'];
 
-},{"./lib/polyfill":18}],21:[function(require,module,exports){
+},{"./lib/polyfill":14}],17:[function(require,module,exports){
 module.exports = require('./lib/shim')['default'];
 
-},{"./lib/shim":19}],22:[function(require,module,exports){
+},{"./lib/shim":15}],18:[function(require,module,exports){
 module.exports = require('./lib')['default'];
 
-},{"./lib":23}],23:[function(require,module,exports){
+},{"./lib":19}],19:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -3425,155 +2918,7 @@ function before(ref, node) {
   return l > r;
 }
 
-},{"ancestors":1,"index-of":26}],24:[function(require,module,exports){
-/**
- * Check if argument is a HTML element.
- *
- * @param {Object} value
- * @return {Boolean}
- */
-exports.node = function(value) {
-    return value !== undefined
-        && value instanceof HTMLElement
-        && value.nodeType === 1;
-};
-
-/**
- * Check if argument is a list of HTML elements.
- *
- * @param {Object} value
- * @return {Boolean}
- */
-exports.nodeList = function(value) {
-    var type = Object.prototype.toString.call(value);
-
-    return value !== undefined
-        && (type === '[object NodeList]' || type === '[object HTMLCollection]')
-        && ('length' in value)
-        && (value.length === 0 || exports.node(value[0]));
-};
-
-/**
- * Check if argument is a string.
- *
- * @param {Object} value
- * @return {Boolean}
- */
-exports.string = function(value) {
-    return typeof value === 'string'
-        || value instanceof String;
-};
-
-/**
- * Check if argument is a function.
- *
- * @param {Object} value
- * @return {Boolean}
- */
-exports.fn = function(value) {
-    var type = Object.prototype.toString.call(value);
-
-    return type === '[object Function]';
-};
-
-},{}],25:[function(require,module,exports){
-var is = require('./is');
-var delegate = require('delegate');
-
-/**
- * Validates all params and calls the right
- * listener function based on its target type.
- *
- * @param {String|HTMLElement|HTMLCollection|NodeList} target
- * @param {String} type
- * @param {Function} callback
- * @return {Object}
- */
-function listen(target, type, callback) {
-    if (!target && !type && !callback) {
-        throw new Error('Missing required arguments');
-    }
-
-    if (!is.string(type)) {
-        throw new TypeError('Second argument must be a String');
-    }
-
-    if (!is.fn(callback)) {
-        throw new TypeError('Third argument must be a Function');
-    }
-
-    if (is.node(target)) {
-        return listenNode(target, type, callback);
-    }
-    else if (is.nodeList(target)) {
-        return listenNodeList(target, type, callback);
-    }
-    else if (is.string(target)) {
-        return listenSelector(target, type, callback);
-    }
-    else {
-        throw new TypeError('First argument must be a String, HTMLElement, HTMLCollection, or NodeList');
-    }
-}
-
-/**
- * Adds an event listener to a HTML element
- * and returns a remove listener function.
- *
- * @param {HTMLElement} node
- * @param {String} type
- * @param {Function} callback
- * @return {Object}
- */
-function listenNode(node, type, callback) {
-    node.addEventListener(type, callback);
-
-    return {
-        destroy: function() {
-            node.removeEventListener(type, callback);
-        }
-    }
-}
-
-/**
- * Add an event listener to a list of HTML elements
- * and returns a remove listener function.
- *
- * @param {NodeList|HTMLCollection} nodeList
- * @param {String} type
- * @param {Function} callback
- * @return {Object}
- */
-function listenNodeList(nodeList, type, callback) {
-    Array.prototype.forEach.call(nodeList, function(node) {
-        node.addEventListener(type, callback);
-    });
-
-    return {
-        destroy: function() {
-            Array.prototype.forEach.call(nodeList, function(node) {
-                node.removeEventListener(type, callback);
-            });
-        }
-    }
-}
-
-/**
- * Add an event listener to a selector
- * and returns a remove listener function.
- *
- * @param {String} selector
- * @param {String} type
- * @param {Function} callback
- * @return {Object}
- */
-function listenSelector(selector, type, callback) {
-    return delegate(document.body, selector, type, callback);
-}
-
-module.exports = listen;
-
-},{"./is":24,"delegate":5}],26:[function(require,module,exports){
+},{"ancestors":1,"index-of":20}],20:[function(require,module,exports){
 /*!
  * index-of <https://github.com/jonschlinkert/index-of>
  *
@@ -3607,821 +2952,7 @@ module.exports = function indexOf(arr, ele, start) {
   return -1;
 };
 
-},{}],27:[function(require,module,exports){
-
-var Keyboard = require('./lib/keyboard');
-var Locale   = require('./lib/locale');
-var KeyCombo = require('./lib/key-combo');
-
-var keyboard = new Keyboard();
-
-keyboard.setLocale('us', require('./locales/us'));
-
-exports          = module.exports = keyboard;
-exports.Keyboard = Keyboard;
-exports.Locale   = Locale;
-exports.KeyCombo = KeyCombo;
-
-},{"./lib/key-combo":28,"./lib/keyboard":29,"./lib/locale":30,"./locales/us":31}],28:[function(require,module,exports){
-
-function KeyCombo(keyComboStr) {
-  this.sourceStr = keyComboStr;
-  this.subCombos = KeyCombo.parseComboStr(keyComboStr);
-  this.keyNames  = this.subCombos.reduce(function(memo, nextSubCombo) {
-    return memo.concat(nextSubCombo);
-  });
-}
-
-// TODO: Add support for key combo sequences
-KeyCombo.sequenceDeliminator = '>>';
-KeyCombo.comboDeliminator    = '>';
-KeyCombo.keyDeliminator      = '+';
-
-KeyCombo.parseComboStr = function(keyComboStr) {
-  var subComboStrs = KeyCombo._splitStr(keyComboStr, KeyCombo.comboDeliminator);
-  var combo        = [];
-
-  for (var i = 0 ; i < subComboStrs.length; i += 1) {
-    combo.push(KeyCombo._splitStr(subComboStrs[i], KeyCombo.keyDeliminator));
-  }
-  return combo;
-};
-
-KeyCombo.prototype.check = function(pressedKeyNames) {
-  var startingKeyNameIndex = 0;
-  for (var i = 0; i < this.subCombos.length; i += 1) {
-    startingKeyNameIndex = this._checkSubCombo(
-      this.subCombos[i],
-      startingKeyNameIndex,
-      pressedKeyNames
-    );
-    if (startingKeyNameIndex === -1) { return false; }
-  }
-  return true;
-};
-
-KeyCombo.prototype.isEqual = function(otherKeyCombo) {
-  if (
-    !otherKeyCombo ||
-    typeof otherKeyCombo !== 'string' &&
-    typeof otherKeyCombo !== 'object'
-  ) { return false; }
-
-  if (typeof otherKeyCombo === 'string') {
-    otherKeyCombo = new KeyCombo(otherKeyCombo);
-  }
-
-  if (this.subCombos.length !== otherKeyCombo.subCombos.length) {
-    return false;
-  }
-  for (var i = 0; i < this.subCombos.length; i += 1) {
-    if (this.subCombos[i].length !== otherKeyCombo.subCombos[i].length) {
-      return false;
-    }
-  }
-
-  for (var i = 0; i < this.subCombos.length; i += 1) {
-    var subCombo      = this.subCombos[i];
-    var otherSubCombo = otherKeyCombo.subCombos[i].slice(0);
-
-    for (var j = 0; j < subCombo.length; j += 1) {
-      var keyName = subCombo[j];
-      var index   = otherSubCombo.indexOf(keyName);
-
-      if (index > -1) {
-        otherSubCombo.splice(index, 1);
-      }
-    }
-    if (otherSubCombo.length !== 0) {
-      return false;
-    }
-  }
-
-  return true;
-};
-
-KeyCombo._splitStr = function(str, deliminator) {
-  var s  = str;
-  var d  = deliminator;
-  var c  = '';
-  var ca = [];
-
-  for (var ci = 0; ci < s.length; ci += 1) {
-    if (ci > 0 && s[ci] === d && s[ci - 1] !== '\\') {
-      ca.push(c.trim());
-      c = '';
-      ci += 1;
-    }
-    c += s[ci];
-  }
-  if (c) { ca.push(c.trim()); }
-
-  return ca;
-};
-
-KeyCombo.prototype._checkSubCombo = function(subCombo, startingKeyNameIndex, pressedKeyNames) {
-  subCombo = subCombo.slice(0);
-  pressedKeyNames = pressedKeyNames.slice(startingKeyNameIndex);
-
-  var endIndex = startingKeyNameIndex;
-  for (var i = 0; i < subCombo.length; i += 1) {
-
-    var keyName = subCombo[i];
-    if (keyName[0] === '\\') {
-      var escapedKeyName = keyName.slice(1);
-      if (
-        escapedKeyName === KeyCombo.comboDeliminator ||
-        escapedKeyName === KeyCombo.keyDeliminator
-      ) {
-        keyName = escapedKeyName;
-      }
-    }
-
-    var index = pressedKeyNames.indexOf(keyName);
-    if (index > -1) {
-      subCombo.splice(i, 1);
-      i -= 1;
-      if (index > endIndex) {
-        endIndex = index;
-      }
-      if (subCombo.length === 0) {
-        return endIndex;
-      }
-    }
-  }
-  return -1;
-};
-
-
-module.exports = KeyCombo;
-
-},{}],29:[function(require,module,exports){
-(function (global){
-
-var Locale = require('./locale');
-var KeyCombo = require('./key-combo');
-
-
-function Keyboard(targetWindow, targetElement, platform, userAgent) {
-  this._locale               = null;
-  this._currentContext       = null;
-  this._contexts             = {};
-  this._listeners            = [];
-  this._appliedListeners     = [];
-  this._locales              = {};
-  this._targetElement        = null;
-  this._targetWindow         = null;
-  this._targetPlatform       = '';
-  this._targetUserAgent      = '';
-  this._isModernBrowser      = false;
-  this._targetKeyDownBinding = null;
-  this._targetKeyUpBinding   = null;
-  this._targetResetBinding   = null;
-  this._paused               = false;
-
-  this.setContext('global');
-  this.watch(targetWindow, targetElement, platform, userAgent);
-}
-
-Keyboard.prototype.setLocale = function(localeName, localeBuilder) {
-  var locale = null;
-  if (typeof localeName === 'string') {
-
-    if (localeBuilder) {
-      locale = new Locale(localeName);
-      localeBuilder(locale, this._targetPlatform, this._targetUserAgent);
-    } else {
-      locale = this._locales[localeName] || null;
-    }
-  } else {
-    locale     = localeName;
-    localeName = locale._localeName;
-  }
-
-  this._locale              = locale;
-  this._locales[localeName] = locale;
-  if (locale) {
-    this._locale.pressedKeys = locale.pressedKeys;
-  }
-};
-
-Keyboard.prototype.getLocale = function(localName) {
-  localName || (localName = this._locale.localeName);
-  return this._locales[localName] || null;
-};
-
-Keyboard.prototype.bind = function(keyComboStr, pressHandler, releaseHandler, preventRepeatByDefault) {
-  if (keyComboStr === null || typeof keyComboStr === 'function') {
-    preventRepeatByDefault = releaseHandler;
-    releaseHandler         = pressHandler;
-    pressHandler           = keyComboStr;
-    keyComboStr            = null;
-  }
-
-  if (
-    keyComboStr &&
-    typeof keyComboStr === 'object' &&
-    typeof keyComboStr.length === 'number'
-  ) {
-    for (var i = 0; i < keyComboStr.length; i += 1) {
-      this.bind(keyComboStr[i], pressHandler, releaseHandler);
-    }
-    return;
-  }
-
-  this._listeners.push({
-    keyCombo               : keyComboStr ? new KeyCombo(keyComboStr) : null,
-    pressHandler           : pressHandler           || null,
-    releaseHandler         : releaseHandler         || null,
-    preventRepeat          : preventRepeatByDefault || false,
-    preventRepeatByDefault : preventRepeatByDefault || false
-  });
-};
-Keyboard.prototype.addListener = Keyboard.prototype.bind;
-Keyboard.prototype.on          = Keyboard.prototype.bind;
-
-Keyboard.prototype.unbind = function(keyComboStr, pressHandler, releaseHandler) {
-  if (keyComboStr === null || typeof keyComboStr === 'function') {
-    releaseHandler = pressHandler;
-    pressHandler   = keyComboStr;
-    keyComboStr = null;
-  }
-
-  if (
-    keyComboStr &&
-    typeof keyComboStr === 'object' &&
-    typeof keyComboStr.length === 'number'
-  ) {
-    for (var i = 0; i < keyComboStr.length; i += 1) {
-      this.unbind(keyComboStr[i], pressHandler, releaseHandler);
-    }
-    return;
-  }
-
-  for (var i = 0; i < this._listeners.length; i += 1) {
-    var listener = this._listeners[i];
-
-    var comboMatches          = !keyComboStr && !listener.keyCombo ||
-                                listener.keyCombo && listener.keyCombo.isEqual(keyComboStr);
-    var pressHandlerMatches   = !pressHandler && !releaseHandler ||
-                                !pressHandler && !listener.pressHandler ||
-                                pressHandler === listener.pressHandler;
-    var releaseHandlerMatches = !pressHandler && !releaseHandler ||
-                                !releaseHandler && !listener.releaseHandler ||
-                                releaseHandler === listener.releaseHandler;
-
-    if (comboMatches && pressHandlerMatches && releaseHandlerMatches) {
-      this._listeners.splice(i, 1);
-      i -= 1;
-    }
-  }
-};
-Keyboard.prototype.removeListener = Keyboard.prototype.unbind;
-Keyboard.prototype.off            = Keyboard.prototype.unbind;
-
-Keyboard.prototype.setContext = function(contextName) {
-  if(this._locale) { this.releaseAllKeys(); }
-
-  if (!this._contexts[contextName]) {
-    this._contexts[contextName] = [];
-  }
-  this._listeners      = this._contexts[contextName];
-  this._currentContext = contextName;
-};
-
-Keyboard.prototype.getContext = function() {
-  return this._currentContext;
-};
-
-Keyboard.prototype.withContext = function(contextName, callback) {
-  var previousContextName = this.getContext();
-  this.setContext(contextName);
-
-  callback();
-
-  this.setContext(previousContextName);
-};
-
-Keyboard.prototype.watch = function(targetWindow, targetElement, targetPlatform, targetUserAgent) {
-  var _this = this;
-
-  this.stop();
-
-  if (!targetWindow) {
-    if (!global.addEventListener && !global.attachEvent) {
-      throw new Error('Cannot find global functions addEventListener or attachEvent.');
-    }
-    targetWindow = global;
-  }
-
-  if (typeof targetWindow.nodeType === 'number') {
-    targetUserAgent = targetPlatform;
-    targetPlatform  = targetElement;
-    targetElement   = targetWindow;
-    targetWindow    = global;
-  }
-
-  if (!targetWindow.addEventListener && !targetWindow.attachEvent) {
-    throw new Error('Cannot find addEventListener or attachEvent methods on targetWindow.');
-  }
-
-  this._isModernBrowser = !!targetWindow.addEventListener;
-
-  var userAgent = targetWindow.navigator && targetWindow.navigator.userAgent || '';
-  var platform  = targetWindow.navigator && targetWindow.navigator.platform  || '';
-
-  targetElement   && targetElement   !== null || (targetElement   = targetWindow.document);
-  targetPlatform  && targetPlatform  !== null || (targetPlatform  = platform);
-  targetUserAgent && targetUserAgent !== null || (targetUserAgent = userAgent);
-
-  this._targetKeyDownBinding = function(event) {
-    _this.pressKey(event.keyCode, event);
-  };
-  this._targetKeyUpBinding = function(event) {
-    _this.releaseKey(event.keyCode, event);
-  };
-  this._targetResetBinding = function(event) {
-    _this.releaseAllKeys(event)
-  };
-
-  this._bindEvent(targetElement, 'keydown', this._targetKeyDownBinding);
-  this._bindEvent(targetElement, 'keyup',   this._targetKeyUpBinding);
-  this._bindEvent(targetWindow,  'focus',   this._targetResetBinding);
-  this._bindEvent(targetWindow,  'blur',    this._targetResetBinding);
-
-  this._targetElement   = targetElement;
-  this._targetWindow    = targetWindow;
-  this._targetPlatform  = targetPlatform;
-  this._targetUserAgent = targetUserAgent;
-};
-
-Keyboard.prototype.stop = function() {
-  var _this = this;
-
-  if (!this._targetElement || !this._targetWindow) { return; }
-
-  this._unbindEvent(this._targetElement, 'keydown', this._targetKeyDownBinding);
-  this._unbindEvent(this._targetElement, 'keyup',   this._targetKeyUpBinding);
-  this._unbindEvent(this._targetWindow,  'focus',   this._targetResetBinding);
-  this._unbindEvent(this._targetWindow,  'blur',    this._targetResetBinding);
-
-  this._targetWindow  = null;
-  this._targetElement = null;
-};
-
-Keyboard.prototype.pressKey = function(keyCode, event) {
-  if (this._paused) { return; }
-  if (!this._locale) { throw new Error('Locale not set'); }
-
-  this._locale.pressKey(keyCode);
-  this._applyBindings(event);
-};
-
-Keyboard.prototype.releaseKey = function(keyCode, event) {
-  if (this._paused) { return; }
-  if (!this._locale) { throw new Error('Locale not set'); }
-
-  this._locale.releaseKey(keyCode);
-  this._clearBindings(event);
-};
-
-Keyboard.prototype.releaseAllKeys = function(event) {
-  if (this._paused) { return; }
-  if (!this._locale) { throw new Error('Locale not set'); }
-
-  this._locale.pressedKeys.length = 0;
-  this._clearBindings(event);
-};
-
-Keyboard.prototype.pause = function() {
-  if (this._paused) { return; }
-  if (this._locale) { this.releaseAllKeys(); }
-  this._paused = true;
-};
-
-Keyboard.prototype.resume = function() {
-  this._paused = false;
-};
-
-Keyboard.prototype.reset = function() {
-  this.releaseAllKeys();
-  this._listeners.length = 0;
-};
-
-Keyboard.prototype._bindEvent = function(targetElement, eventName, handler) {
-  return this._isModernBrowser ?
-    targetElement.addEventListener(eventName, handler, false) :
-    targetElement.attachEvent('on' + eventName, handler);
-};
-
-Keyboard.prototype._unbindEvent = function(targetElement, eventName, handler) {
-  return this._isModernBrowser ?
-    targetElement.removeEventListener(eventName, handler, false) :
-    targetElement.detachEvent('on' + eventName, handler);
-};
-
-Keyboard.prototype._getGroupedListeners = function() {
-  var listenerGroups   = [];
-  var listenerGroupMap = [];
-
-  var listeners = this._listeners;
-  if (this._currentContext !== 'global') {
-    listeners = [].concat(listeners, this._contexts.global);
-  }
-
-  listeners.sort(function(a, b) {
-    return (b.keyCombo ? b.keyCombo.keyNames.length : 0) - (a.keyCombo ? a.keyCombo.keyNames.length : 0);
-  }).forEach(function(l) {
-    var mapIndex = -1;
-    for (var i = 0; i < listenerGroupMap.length; i += 1) {
-      if (listenerGroupMap[i] === null && l.keyCombo === null ||
-          listenerGroupMap[i] !== null && listenerGroupMap[i].isEqual(l.keyCombo)) {
-        mapIndex = i;
-      }
-    }
-    if (mapIndex === -1) {
-      mapIndex = listenerGroupMap.length;
-      listenerGroupMap.push(l.keyCombo);
-    }
-    if (!listenerGroups[mapIndex]) {
-      listenerGroups[mapIndex] = [];
-    }
-    listenerGroups[mapIndex].push(l);
-  });
-  return listenerGroups;
-};
-
-Keyboard.prototype._applyBindings = function(event) {
-  var preventRepeat = false;
-
-  event || (event = {});
-  event.preventRepeat = function() { preventRepeat = true; };
-  event.pressedKeys   = this._locale.pressedKeys.slice(0);
-
-  var pressedKeys    = this._locale.pressedKeys.slice(0);
-  var listenerGroups = this._getGroupedListeners();
-
-
-  for (var i = 0; i < listenerGroups.length; i += 1) {
-    var listeners = listenerGroups[i];
-    var keyCombo  = listeners[0].keyCombo;
-
-    if (keyCombo === null || keyCombo.check(pressedKeys)) {
-      for (var j = 0; j < listeners.length; j += 1) {
-        var listener = listeners[j];
-
-        if (keyCombo === null) {
-          listener = {
-            keyCombo               : new KeyCombo(pressedKeys.join('+')),
-            pressHandler           : listener.pressHandler,
-            releaseHandler         : listener.releaseHandler,
-            preventRepeat          : listener.preventRepeat,
-            preventRepeatByDefault : listener.preventRepeatByDefault
-          };
-        }
-
-        if (listener.pressHandler && !listener.preventRepeat) {
-          listener.pressHandler.call(this, event);
-          if (preventRepeat) {
-            listener.preventRepeat = preventRepeat;
-            preventRepeat          = false;
-          }
-        }
-
-        if (listener.releaseHandler && this._appliedListeners.indexOf(listener) === -1) {
-          this._appliedListeners.push(listener);
-        }
-      }
-
-      if (keyCombo) {
-        for (var j = 0; j < keyCombo.keyNames.length; j += 1) {
-          var index = pressedKeys.indexOf(keyCombo.keyNames[j]);
-          if (index !== -1) {
-            pressedKeys.splice(index, 1);
-            j -= 1;
-          }
-        }
-      }
-    }
-  }
-};
-
-Keyboard.prototype._clearBindings = function(event) {
-  event || (event = {});
-
-  for (var i = 0; i < this._appliedListeners.length; i += 1) {
-    var listener = this._appliedListeners[i];
-    var keyCombo = listener.keyCombo;
-    if (keyCombo === null || !keyCombo.check(this._locale.pressedKeys)) {
-      listener.preventRepeat = listener.preventRepeatByDefault;
-      listener.releaseHandler.call(this, event);
-      this._appliedListeners.splice(i, 1);
-      i -= 1;
-    }
-  }
-};
-
-module.exports = Keyboard;
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./key-combo":28,"./locale":30}],30:[function(require,module,exports){
-
-var KeyCombo = require('./key-combo');
-
-
-function Locale(name) {
-  this.localeName     = name;
-  this.pressedKeys    = [];
-  this._appliedMacros = [];
-  this._keyMap        = {};
-  this._killKeyCodes  = [];
-  this._macros        = [];
-}
-
-Locale.prototype.bindKeyCode = function(keyCode, keyNames) {
-  if (typeof keyNames === 'string') {
-    keyNames = [keyNames];
-  }
-
-  this._keyMap[keyCode] = keyNames;
-};
-
-Locale.prototype.bindMacro = function(keyComboStr, keyNames) {
-  if (typeof keyNames === 'string') {
-    keyNames = [ keyNames ];
-  }
-
-  var handler = null;
-  if (typeof keyNames === 'function') {
-    handler = keyNames;
-    keyNames = null;
-  }
-
-  var macro = {
-    keyCombo : new KeyCombo(keyComboStr),
-    keyNames : keyNames,
-    handler  : handler
-  };
-
-  this._macros.push(macro);
-};
-
-Locale.prototype.getKeyCodes = function(keyName) {
-  var keyCodes = [];
-  for (var keyCode in this._keyMap) {
-    var index = this._keyMap[keyCode].indexOf(keyName);
-    if (index > -1) { keyCodes.push(keyCode|0); }
-  }
-  return keyCodes;
-};
-
-Locale.prototype.getKeyNames = function(keyCode) {
-  return this._keyMap[keyCode] || [];
-};
-
-Locale.prototype.setKillKey = function(keyCode) {
-  if (typeof keyCode === 'string') {
-    var keyCodes = this.getKeyCodes(keyCode);
-    for (var i = 0; i < keyCodes.length; i += 1) {
-      this.setKillKey(keyCodes[i]);
-    }
-    return;
-  }
-
-  this._killKeyCodes.push(keyCode);
-};
-
-Locale.prototype.pressKey = function(keyCode) {
-  if (typeof keyCode === 'string') {
-    var keyCodes = this.getKeyCodes(keyCode);
-    for (var i = 0; i < keyCodes.length; i += 1) {
-      this.pressKey(keyCodes[i]);
-    }
-    return;
-  }
-
-  var keyNames = this.getKeyNames(keyCode);
-  for (var i = 0; i < keyNames.length; i += 1) {
-    if (this.pressedKeys.indexOf(keyNames[i]) === -1) {
-      this.pressedKeys.push(keyNames[i]);
-    }
-  }
-
-  this._applyMacros();
-};
-
-Locale.prototype.releaseKey = function(keyCode) {
-  if (typeof keyCode === 'string') {
-    var keyCodes = this.getKeyCodes(keyCode);
-    for (var i = 0; i < keyCodes.length; i += 1) {
-      this.releaseKey(keyCodes[i]);
-    }
-  }
-
-  else {
-    var keyNames         = this.getKeyNames(keyCode);
-    var killKeyCodeIndex = this._killKeyCodes.indexOf(keyCode);
-    
-    if (killKeyCodeIndex > -1) {
-      this.pressedKeys.length = 0;
-    } else {
-      for (var i = 0; i < keyNames.length; i += 1) {
-        var index = this.pressedKeys.indexOf(keyNames[i]);
-        if (index > -1) {
-          this.pressedKeys.splice(index, 1);
-        }
-      }
-    }
-
-    this._clearMacros();
-  }
-};
-
-Locale.prototype._applyMacros = function() {
-  var macros = this._macros.slice(0);
-  for (var i = 0; i < macros.length; i += 1) {
-    var macro = macros[i];
-    if (macro.keyCombo.check(this.pressedKeys)) {
-      if (macro.handler) {
-        macro.keyNames = macro.handler(this.pressedKeys);
-      }
-      for (var j = 0; j < macro.keyNames.length; j += 1) {
-        if (this.pressedKeys.indexOf(macro.keyNames[j]) === -1) {
-          this.pressedKeys.push(macro.keyNames[j]);
-        }
-      }
-      this._appliedMacros.push(macro);
-    }
-  }
-};
-
-Locale.prototype._clearMacros = function() {
-  for (var i = 0; i < this._appliedMacros.length; i += 1) {
-    var macro = this._appliedMacros[i];
-    if (!macro.keyCombo.check(this.pressedKeys)) {
-      for (var j = 0; j < macro.keyNames.length; j += 1) {
-        var index = this.pressedKeys.indexOf(macro.keyNames[j]);
-        if (index > -1) {
-          this.pressedKeys.splice(index, 1);
-        }
-      }
-      if (macro.handler) {
-        macro.keyNames = null;
-      }
-      this._appliedMacros.splice(i, 1);
-      i -= 1;
-    }
-  }
-};
-
-
-module.exports = Locale;
-
-},{"./key-combo":28}],31:[function(require,module,exports){
-
-module.exports = function(locale, platform, userAgent) {
-
-  // general
-  locale.bindKeyCode(3,   ['cancel']);
-  locale.bindKeyCode(8,   ['backspace']);
-  locale.bindKeyCode(9,   ['tab']);
-  locale.bindKeyCode(12,  ['clear']);
-  locale.bindKeyCode(13,  ['enter']);
-  locale.bindKeyCode(16,  ['shift']);
-  locale.bindKeyCode(17,  ['ctrl']);
-  locale.bindKeyCode(18,  ['alt', 'menu']);
-  locale.bindKeyCode(19,  ['pause', 'break']);
-  locale.bindKeyCode(20,  ['capslock']);
-  locale.bindKeyCode(27,  ['escape', 'esc']);
-  locale.bindKeyCode(32,  ['space', 'spacebar']);
-  locale.bindKeyCode(33,  ['pageup']);
-  locale.bindKeyCode(34,  ['pagedown']);
-  locale.bindKeyCode(35,  ['end']);
-  locale.bindKeyCode(36,  ['home']);
-  locale.bindKeyCode(37,  ['left']);
-  locale.bindKeyCode(38,  ['up']);
-  locale.bindKeyCode(39,  ['right']);
-  locale.bindKeyCode(40,  ['down']);
-  locale.bindKeyCode(41,  ['select']);
-  locale.bindKeyCode(42,  ['printscreen']);
-  locale.bindKeyCode(43,  ['execute']);
-  locale.bindKeyCode(44,  ['snapshot']);
-  locale.bindKeyCode(45,  ['insert', 'ins']);
-  locale.bindKeyCode(46,  ['delete', 'del']);
-  locale.bindKeyCode(47,  ['help']);
-  locale.bindKeyCode(145, ['scrolllock', 'scroll']);
-  locale.bindKeyCode(187, ['equal', 'equalsign', '=']);
-  locale.bindKeyCode(188, ['comma', ',']);
-  locale.bindKeyCode(190, ['period', '.']);
-  locale.bindKeyCode(191, ['slash', 'forwardslash', '/']);
-  locale.bindKeyCode(192, ['graveaccent', '`']);
-  locale.bindKeyCode(219, ['openbracket', '[']);
-  locale.bindKeyCode(220, ['backslash', '\\']);
-  locale.bindKeyCode(221, ['closebracket', ']']);
-  locale.bindKeyCode(222, ['apostrophe', '\'']);
-
-  // 0-9
-  locale.bindKeyCode(48, ['zero', '0']);
-  locale.bindKeyCode(49, ['one', '1']);
-  locale.bindKeyCode(50, ['two', '2']);
-  locale.bindKeyCode(51, ['three', '3']);
-  locale.bindKeyCode(52, ['four', '4']);
-  locale.bindKeyCode(53, ['five', '5']);
-  locale.bindKeyCode(54, ['six', '6']);
-  locale.bindKeyCode(55, ['seven', '7']);
-  locale.bindKeyCode(56, ['eight', '8']);
-  locale.bindKeyCode(57, ['nine', '9']);
-
-  // numpad
-  locale.bindKeyCode(96, ['numzero', 'num0']);
-  locale.bindKeyCode(97, ['numone', 'num1']);
-  locale.bindKeyCode(98, ['numtwo', 'num2']);
-  locale.bindKeyCode(99, ['numthree', 'num3']);
-  locale.bindKeyCode(100, ['numfour', 'num4']);
-  locale.bindKeyCode(101, ['numfive', 'num5']);
-  locale.bindKeyCode(102, ['numsix', 'num6']);
-  locale.bindKeyCode(103, ['numseven', 'num7']);
-  locale.bindKeyCode(104, ['numeight', 'num8']);
-  locale.bindKeyCode(105, ['numnine', 'num9']);
-  locale.bindKeyCode(106, ['nummultiply', 'num*']);
-  locale.bindKeyCode(107, ['numadd', 'num+']);
-  locale.bindKeyCode(108, ['numenter']);
-  locale.bindKeyCode(109, ['numsubtract', 'num-']);
-  locale.bindKeyCode(110, ['numdecimal', 'num.']);
-  locale.bindKeyCode(111, ['numdivide', 'num/']);
-  locale.bindKeyCode(144, ['numlock', 'num']);
-
-  // function keys
-  locale.bindKeyCode(112, ['f1']);
-  locale.bindKeyCode(113, ['f2']);
-  locale.bindKeyCode(114, ['f3']);
-  locale.bindKeyCode(115, ['f4']);
-  locale.bindKeyCode(116, ['f5']);
-  locale.bindKeyCode(117, ['f6']);
-  locale.bindKeyCode(118, ['f7']);
-  locale.bindKeyCode(119, ['f8']);
-  locale.bindKeyCode(120, ['f9']);
-  locale.bindKeyCode(121, ['f10']);
-  locale.bindKeyCode(122, ['f11']);
-  locale.bindKeyCode(123, ['f12']);
-
-  // secondary key symbols
-  locale.bindMacro('shift + `', ['tilde', '~']);
-  locale.bindMacro('shift + 1', ['exclamation', 'exclamationpoint', '!']);
-  locale.bindMacro('shift + 2', ['at', '@']);
-  locale.bindMacro('shift + 3', ['number', '#']);
-  locale.bindMacro('shift + 4', ['dollar', 'dollars', 'dollarsign', '$']);
-  locale.bindMacro('shift + 5', ['percent', '%']);
-  locale.bindMacro('shift + 6', ['caret', '^']);
-  locale.bindMacro('shift + 7', ['ampersand', 'and', '&']);
-  locale.bindMacro('shift + 8', ['asterisk', '*']);
-  locale.bindMacro('shift + 9', ['openparen', '(']);
-  locale.bindMacro('shift + 0', ['closeparen', ')']);
-  locale.bindMacro('shift + -', ['underscore', '_']);
-  locale.bindMacro('shift + =', ['plus', '+']);
-  locale.bindMacro('shift + [', ['opencurlybrace', 'opencurlybracket', '{']);
-  locale.bindMacro('shift + ]', ['closecurlybrace', 'closecurlybracket', '}']);
-  locale.bindMacro('shift + \\', ['verticalbar', '|']);
-  locale.bindMacro('shift + ;', ['colon', ':']);
-  locale.bindMacro('shift + \'', ['quotationmark', '\'']);
-  locale.bindMacro('shift + !,', ['openanglebracket', '<']);
-  locale.bindMacro('shift + .', ['closeanglebracket', '>']);
-  locale.bindMacro('shift + /', ['questionmark', '?']);
-
-  //a-z and A-Z
-  for (var keyCode = 65; keyCode <= 90; keyCode += 1) {
-    var keyName = String.fromCharCode(keyCode + 32);
-    var capitalKeyName = String.fromCharCode(keyCode);
-  	locale.bindKeyCode(keyCode, keyName);
-  	locale.bindMacro('shift + ' + keyName, capitalKeyName);
-  	locale.bindMacro('capslock + ' + keyName, capitalKeyName);
-  }
-
-  // browser caveats
-  var semicolonKeyCode = userAgent.match('Firefox') ? 59  : 186;
-  var dashKeyCode      = userAgent.match('Firefox') ? 173 : 189;
-  var leftCommandKeyCode;
-  var rightCommandKeyCode;
-  if (platform.match('Mac') && (userAgent.match('Safari') || userAgent.match('Chrome'))) {
-    leftCommandKeyCode  = 91;
-    rightCommandKeyCode = 93;
-  } else if(platform.match('Mac') && userAgent.match('Opera')) {
-    leftCommandKeyCode  = 17;
-    rightCommandKeyCode = 17;
-  } else if(platform.match('Mac') && userAgent.match('Firefox')) {
-    leftCommandKeyCode  = 224;
-    rightCommandKeyCode = 224;
-  }
-  locale.bindKeyCode(semicolonKeyCode,    ['semicolon', ';']);
-  locale.bindKeyCode(dashKeyCode,         ['dash', '-']);
-  locale.bindKeyCode(leftCommandKeyCode,  ['command', 'windows', 'win', 'super', 'leftcommand', 'leftwindows', 'leftwin', 'leftsuper']);
-  locale.bindKeyCode(rightCommandKeyCode, ['command', 'windows', 'win', 'super', 'rightcommand', 'rightwindows', 'rightwin', 'rightsuper']);
-
-  // kill keys
-  locale.setKillKey('command');
-};
-
-},{}],32:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 (function (process){
 // Generated by CoffeeScript 1.7.1
 (function() {
@@ -4457,7 +2988,7 @@ module.exports = function(locale, platform, userAgent) {
 }).call(this);
 
 }).call(this,require('_process'))
-},{"_process":33}],33:[function(require,module,exports){
+},{"_process":22}],22:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -4639,7 +3170,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],34:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 (function (global){
 var now = require('performance-now')
   , root = typeof window === 'undefined' ? global : window
@@ -4715,7 +3246,7 @@ module.exports.polyfill = function() {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"performance-now":32}],35:[function(require,module,exports){
+},{"performance-now":21}],24:[function(require,module,exports){
 var raf = require('raf'),
     COMPLETE = 'complete',
     CANCELED = 'canceled';
@@ -4882,120 +3413,7 @@ module.exports = function(target, settings, callback){
         }
     }
 };
-},{"raf":34}],36:[function(require,module,exports){
-function select(element) {
-    var selectedText;
-
-    if (element.nodeName === 'SELECT') {
-        element.focus();
-
-        selectedText = element.value;
-    }
-    else if (element.nodeName === 'INPUT' || element.nodeName === 'TEXTAREA') {
-        var isReadOnly = element.hasAttribute('readonly');
-
-        if (!isReadOnly) {
-            element.setAttribute('readonly', '');
-        }
-
-        element.select();
-        element.setSelectionRange(0, element.value.length);
-
-        if (!isReadOnly) {
-            element.removeAttribute('readonly');
-        }
-
-        selectedText = element.value;
-    }
-    else {
-        if (element.hasAttribute('contenteditable')) {
-            element.focus();
-        }
-
-        var selection = window.getSelection();
-        var range = document.createRange();
-
-        range.selectNodeContents(element);
-        selection.removeAllRanges();
-        selection.addRange(range);
-
-        selectedText = selection.toString();
-    }
-
-    return selectedText;
-}
-
-module.exports = select;
-
-},{}],37:[function(require,module,exports){
-function E () {
-  // Keep this empty so it's easier to inherit from
-  // (via https://github.com/lipsmack from https://github.com/scottcorgan/tiny-emitter/issues/3)
-}
-
-E.prototype = {
-  on: function (name, callback, ctx) {
-    var e = this.e || (this.e = {});
-
-    (e[name] || (e[name] = [])).push({
-      fn: callback,
-      ctx: ctx
-    });
-
-    return this;
-  },
-
-  once: function (name, callback, ctx) {
-    var self = this;
-    function listener () {
-      self.off(name, listener);
-      callback.apply(ctx, arguments);
-    };
-
-    listener._ = callback
-    return this.on(name, listener, ctx);
-  },
-
-  emit: function (name) {
-    var data = [].slice.call(arguments, 1);
-    var evtArr = ((this.e || (this.e = {}))[name] || []).slice();
-    var i = 0;
-    var len = evtArr.length;
-
-    for (i; i < len; i++) {
-      evtArr[i].fn.apply(evtArr[i].ctx, data);
-    }
-
-    return this;
-  },
-
-  off: function (name, callback) {
-    var e = this.e || (this.e = {});
-    var evts = e[name];
-    var liveEvents = [];
-
-    if (evts && callback) {
-      for (var i = 0, len = evts.length; i < len; i++) {
-        if (evts[i].fn !== callback && evts[i].fn._ !== callback)
-          liveEvents.push(evts[i]);
-      }
-    }
-
-    // Remove event from queue to prevent memory leak
-    // Suggested by https://github.com/lazd
-    // Ref: https://github.com/scottcorgan/tiny-emitter/commit/c6ebfaa9bc973b33d110a84a307742b7cf94c953#commitcomment-5024910
-
-    (liveEvents.length)
-      ? e[name] = liveEvents
-      : delete e[name];
-
-    return this;
-  }
-};
-
-module.exports = E;
-
-},{}],38:[function(require,module,exports){
+},{"raf":23}],25:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -6545,7 +4963,7 @@ module.exports = E;
   }
 }.call(this));
 
-},{}],39:[function(require,module,exports){
+},{}],26:[function(require,module,exports){
 
 // return all text nodes that are contained within `el`
 function getTextNodes(el) {
@@ -6704,7 +5122,7 @@ function wrapRangeText(wrapperEl, range) {
 
 module.exports = wrapRangeText
 
-},{}],40:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 /*
   Groups: test=3Pj4aGiy
 */
@@ -6765,7 +5183,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-},{"./h/wrap":42,"./ui/audio":43,"./util/url":47,"scroll-into-view":35}],41:[function(require,module,exports){
+},{"./h/wrap":29,"./ui/audio":30,"./util/url":34,"scroll-into-view":24}],28:[function(require,module,exports){
 /*
  * Query hypothes.is API
  *
@@ -6827,7 +5245,7 @@ module.exports = {
 };
 
 
-},{}],42:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 
 "use strict";
 
@@ -7043,7 +5461,7 @@ module.exports = {
 };
 
 
-},{"./api":41,"dom-anchor-text-quote":10,"underscore":38,"wrap-range-text":39}],43:[function(require,module,exports){
+},{"./api":28,"dom-anchor-text-quote":6,"underscore":25,"wrap-range-text":26}],30:[function(require,module,exports){
 var hilight = require("./hilight");
 var capture = require("./capture");
 
@@ -7157,33 +5575,31 @@ module.exports = {
 };
 
 
-},{"./capture":44,"./hilight":45}],44:[function(require,module,exports){
+},{"./capture":31,"./hilight":32}],31:[function(require,module,exports){
 
 "use strict";
 
-var kb = require("keyboardjs");
+//var kb = require("keyboardjs");
 var _ = require("underscore");
 var modal = require("./modal");
-var Clipboard = require("clipboard");
 
 var jPlayer;
-var clipboard;
 var currentPlayTime = 0;
 var capture;
 
 var audio_playing = false;
-var recordRequested = false;
+//var recordRequested = false;
 var captureRequested = false;
 var captureId = "";
-var deleteRequested = false;
-var deleteData;
+
+var increaseSpeed = true;
 
 //initialize capture object
 function initCaptureArray() {
   capture = {
     base: window.location.pathname,
     title: $('.post-title').text(),
-    time: [{id: "p1", seconds: 0}]
+    time: [{id: "p0", seconds: 0}]
   };
 }
 
@@ -7197,25 +5613,10 @@ function stateException(message) {
   this.name = "stateException";
 }
 
-//delete timeout
-function deleteCaptureTimeout() {
-  var pi;
-  if (deleteRequested) {
-    deleteRequested = false;
-    pi = $('#' + deleteData.id).children('i');
-
-    if (pi.hasClass("fa-trash")) {
-      pi.removeClass("fa-trash").addClass("fa-check");
-      console.log("delete timeout for %s", deleteData.id);
-
-      deleteData = null;
-    }
-  }
-}
-
 //called only when captureRequested == true
 function markParagraph(o) {
   var pi = $('#' + o.id).children('i');
+  var pos;
 
   //mark as captured
   if (pi.hasClass("fa-bullseye")) {
@@ -7225,36 +5626,14 @@ function markParagraph(o) {
   }
   //user clicked a captured paragraph, mark for delete
   else if (pi.hasClass("fa-check")) {
-    pi.removeClass("fa-check").addClass("fa-trash");
-    deleteRequested = true;
-    deleteData = o;
-    console.log("%s delete requested at %s", o.id, o.seconds);
-    setTimeout(deleteCaptureTimeout, 500);
-  }
-  //delete previously requested and node clicked again confirming delete
-  else if (pi.hasClass("fa-trash")) {
-    var pos;
-    //verify deleteRequested
-    if (deleteRequested) {
-      deleteRequested = false;
-
-      //verify this id is the same as deleteData.id
-      // - if not something's messed up!!
-      if (deleteData.id === o.id) {
-        pi.removeClass("fa-trash").addClass("fa-bullseye");
-        pos = _.findLastIndex(capture.time, {id: o.id});
-        if (pos == -1) {
-          throw new deleteException("can't find id to delete in capture array");
-        }
-        else {
-          capture.time.splice(pos, 1);
-          console.log("%s deleted at %s", o.id, o.seconds);
-          deleteData = null;
-        }
-      }
-      else {
-        throw new deleteException("deleteData.id !== o.id");
-      }
+    pi.removeClass("fa-check").addClass("fa-bullseye");
+    pos = _.findLastIndex(capture.time, {id: o.id});
+    if (pos == -1) {
+      throw new deleteException("can't find id to delete in capture array");
+    }
+    else {
+      capture.time.splice(pos, 1);
+      console.log("%s deleted at %s", o.id, o.seconds);
     }
   }
   else {
@@ -7289,42 +5668,36 @@ function enableSidebarTimeCapture() {
       data = JSON.stringify(capture);
     }
 
-    $('#audio-data-form').attr('action', capture.base + "?m=timingsent");
+    $('#audio-data-form').attr('action', capture.base);
     $('#captured-audio-data').html(data);
+    $('.submit-message').html("");
     $('#modal-1').trigger('click');
   });
 
   //initialize modal window
   modal.initialize("#modal-1");
 
+  //submit time submit form in modal window
+  $("#audio-data-form").submit(function(e) {
+    e.preventDefault();
 
-  console.log("clipboard isSupported: %s", Clipboard.isSupported());
+    //if no data yet captured, cancel submit
+    if (capture.time.length < 2) {
+      $('.submit-message').html("No data captured yet!");
+      return;
+    }
 
-  if (Clipboard.isSupported) {
-    //the clipboard does not work when invoked
-    //from a modal dialog. So I copy the clipboard
-    //everytime the modal is displayed.
-    clipboard = new Clipboard(".time-lister", {
-      text: function(trigger) {
-        return JSON.stringify(capture);
-      }
-    });
-
-    clipboard.on('error', function(e) {
-      console.error('Action:', e.action);
-      console.error('Trigger:', e.trigger);
-      alert("Error copying to clipboard - sorry");
-    });
-
-    clipboard.on('success', function(e) {
-      console.info('Action:', e.action);
-      console.info('Text:', e.text);
-      console.info('Trigger:', e.trigger);
-
-      e.clearSelection();
-    });
-  }
-
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize())
+      //.then(function() {
+      .done(function() {
+        alert("Thank you!");
+        $(".modal-close").trigger("click");
+      })
+      .fail(function(e) {
+        $('.submit-message').html("Drat! Your submit failed.");
+      });
+  });
 }
 
 //create listeners for each paragraph and
@@ -7344,7 +5717,7 @@ function createListener() {
   });
 
   //enable rewind and faster buttons on audio player
-  console.log("showing cmi audio controls");
+  //console.log("showing cmi audio controls");
   $('.cmi-audio-controls').removeClass('hide-cmi-controls');
 
   //set rewind control
@@ -7363,15 +5736,37 @@ function createListener() {
   //set playbackRate control
   $('.audio-faster').on('click', function(e) {
     var currentRate = jPlayer.jPlayer("option", "playbackRate");
-    var newRate = 1;
+    var newRate, displayRate;
     e.preventDefault();
 
-    if (currentRate < 3) {
-      newRate = currentRate + 1;
+    //normal = 0, slow = -1 and -2, fast = +1 and +2
+    switch (currentRate) {
+      case 0.8:
+        increaseSpeed = true;
+        newRate = 0.9;
+        displayRate = "-1";
+        break;
+      case 0.9:
+        newRate = increaseSpeed? 1: 0.8;
+        displayRate = increaseSpeed? " 0": "-2";
+        break;
+      case 1:
+        newRate = increaseSpeed? 2: 0.9;
+        displayRate = increaseSpeed? "+1": "-1";
+        break;
+      case 2:
+        newRate = increaseSpeed? 3: 1;
+        displayRate = increaseSpeed? "+2": " 0";
+        break;
+      case 3:
+        increaseSpeed = false;
+        newRate = 2;
+        displayRate = "+1";
+        break;
     }
-    //console.log("currentRate: %s", currentRate);
+
     jPlayer.jPlayer("option", "playbackRate", newRate);
-    $(this).html(newRate);
+    $(this).html(displayRate);
   });
 }
 
@@ -7569,7 +5964,7 @@ module.exports = {
 
 };
 
-},{"./modal":46,"clipboard":3,"keyboardjs":27,"underscore":38}],45:[function(require,module,exports){
+},{"./modal":33,"underscore":25}],32:[function(require,module,exports){
 /*
  * NOTE:
  *
@@ -7689,7 +6084,7 @@ module.exports = {
 };
 
 
-},{"scroll-into-view":35,"underscore":38}],46:[function(require,module,exports){
+},{"scroll-into-view":24,"underscore":25}],33:[function(require,module,exports){
 "use strict";
 
 module.exports = {
@@ -7717,7 +6112,7 @@ module.exports = {
 };
 
 
-},{}],47:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 /*
  * Url utilities
  */
@@ -7766,4 +6161,4 @@ module.exports = {
 
 };
 
-},{}]},{},[40]);
+},{}]},{},[27]);

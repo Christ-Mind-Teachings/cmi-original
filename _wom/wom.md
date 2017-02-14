@@ -5,28 +5,34 @@ title: Way of Mastery
 source: Way of Mastery
 surl: /wom/
 sidebar: sidebar.html
-footer-id: wom
+xfooter-id: wom
 ---
 
 <div markdown="1" class="container content">
 
 # The Way of Mastery
 
-This book contains the official extraordinary and transformational
-teachings of Jeshua ben Joseph who speaks not as a savior above us, but
-as our brother and our friend to gently and lovingly guide us to
-remember the Truth of our being. The 35 lessons in this book are a
-pathway to forgiveness, self-love and the acceptance of the perfection
-of each moment, and are designed to return the mind to holiness –
-wholeness.
+The core teaching of [ The Way of Mastery ](/wom/detail/) was given by [ Jeshua
+](/wom/jeshua/) through [ Jayem ](/wom/jayem/) over a three year period
+of monthly sessions. The transcript of each session is available here
+organized by year.
 
-Jeshua speaks to every aspect of living in the world as
-Christ. With practicality, humor and loving direction, He points the way
-to the correction of every belief and perception that would keep us from
-knowing our perfect union with God. The only question left to be asked
-is: How much of God can you receive and then extend to the world?
+- [ Year One: *The Way of the Heart* ](/wom/woh/woh/)
+- [ Year Two: *The Way of Transformation* ](/wom/wot/wot/)
+- [ Year Three: *The Way of Knowning* ](/wom/wok/wok/)
+
+The [ *Early Years* ](/wom/early/) are a collection of messages given before the core
+teachings of The Way of Mastery.
+
+The [ *Answers* ](/wom/questions/) to questions asked of Jeshua
+throughout all the Way of Mastery messages are compiled and available
+here.
+
+Learn more about the [ Way of Mastery ](/wom/detail/) here.
 
 </div>
 
+{% comment %}
 {% include ui/grid-items.html data=site.data.wom.contents.books %}
+{% endcomment %}
 

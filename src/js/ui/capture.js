@@ -1,29 +1,26 @@
 
 "use strict";
 
-var kb = require("keyboardjs");
+//var kb = require("keyboardjs");
 var _ = require("underscore");
 var modal = require("./modal");
-var Clipboard = require("clipboard");
 
 var jPlayer;
-var clipboard;
 var currentPlayTime = 0;
 var capture;
 
 var audio_playing = false;
-var recordRequested = false;
 var captureRequested = false;
 var captureId = "";
-var deleteRequested = false;
-var deleteData;
+
+var increaseSpeed = true;
 
 //initialize capture object
 function initCaptureArray() {
   capture = {
     base: window.location.pathname,
     title: $('.post-title').text(),
-    time: [{id: "p1", seconds: 0}]
+    time: [{id: "p0", seconds: 0}]
   };
 }
 
@@ -37,25 +34,10 @@ function stateException(message) {
   this.name = "stateException";
 }
 
-//delete timeout
-function deleteCaptureTimeout() {
-  var pi;
-  if (deleteRequested) {
-    deleteRequested = false;
-    pi = $('#' + deleteData.id).children('i');
-
-    if (pi.hasClass("fa-trash")) {
-      pi.removeClass("fa-trash").addClass("fa-check");
-      console.log("delete timeout for %s", deleteData.id);
-
-      deleteData = null;
-    }
-  }
-}
-
 //called only when captureRequested == true
 function markParagraph(o) {
   var pi = $('#' + o.id).children('i');
+  var pos;
 
   //mark as captured
   if (pi.hasClass("fa-bullseye")) {
@@ -65,36 +47,14 @@ function markParagraph(o) {
   }
   //user clicked a captured paragraph, mark for delete
   else if (pi.hasClass("fa-check")) {
-    pi.removeClass("fa-check").addClass("fa-trash");
-    deleteRequested = true;
-    deleteData = o;
-    console.log("%s delete requested at %s", o.id, o.seconds);
-    setTimeout(deleteCaptureTimeout, 500);
-  }
-  //delete previously requested and node clicked again confirming delete
-  else if (pi.hasClass("fa-trash")) {
-    var pos;
-    //verify deleteRequested
-    if (deleteRequested) {
-      deleteRequested = false;
-
-      //verify this id is the same as deleteData.id
-      // - if not something's messed up!!
-      if (deleteData.id === o.id) {
-        pi.removeClass("fa-trash").addClass("fa-bullseye");
-        pos = _.findLastIndex(capture.time, {id: o.id});
-        if (pos == -1) {
-          throw new deleteException("can't find id to delete in capture array");
-        }
-        else {
-          capture.time.splice(pos, 1);
-          console.log("%s deleted at %s", o.id, o.seconds);
-          deleteData = null;
-        }
-      }
-      else {
-        throw new deleteException("deleteData.id !== o.id");
-      }
+    pi.removeClass("fa-check").addClass("fa-bullseye");
+    pos = _.findLastIndex(capture.time, {id: o.id});
+    if (pos == -1) {
+      throw new deleteException("can't find id to delete in capture array");
+    }
+    else {
+      capture.time.splice(pos, 1);
+      console.log("%s deleted at %s", o.id, o.seconds);
     }
   }
   else {
@@ -129,42 +89,36 @@ function enableSidebarTimeCapture() {
       data = JSON.stringify(capture);
     }
 
-    $('#audio-data-form').attr('action', capture.base + "?m=timingsent");
+    $('#audio-data-form').attr('action', capture.base);
     $('#captured-audio-data').html(data);
+    $('.submit-message').html("");
     $('#modal-1').trigger('click');
   });
 
   //initialize modal window
   modal.initialize("#modal-1");
 
+  //submit time submit form in modal window
+  $("#audio-data-form").submit(function(e) {
+    e.preventDefault();
 
-  console.log("clipboard isSupported: %s", Clipboard.isSupported());
+    //if no data yet captured, cancel submit
+    if (capture.time.length < 2) {
+      $('.submit-message').html("No data captured yet!");
+      return;
+    }
 
-  if (Clipboard.isSupported) {
-    //the clipboard does not work when invoked
-    //from a modal dialog. So I copy the clipboard
-    //everytime the modal is displayed.
-    clipboard = new Clipboard(".time-lister", {
-      text: function(trigger) {
-        return JSON.stringify(capture);
-      }
-    });
-
-    clipboard.on('error', function(e) {
-      console.error('Action:', e.action);
-      console.error('Trigger:', e.trigger);
-      alert("Error copying to clipboard - sorry");
-    });
-
-    clipboard.on('success', function(e) {
-      console.info('Action:', e.action);
-      console.info('Text:', e.text);
-      console.info('Trigger:', e.trigger);
-
-      e.clearSelection();
-    });
-  }
-
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize())
+      //.then(function() {
+      .done(function() {
+        alert("Thank you!");
+        $(".modal-close").trigger("click");
+      })
+      .fail(function(e) {
+        $('.submit-message').html("Drat! Your submit failed.");
+      });
+  });
 }
 
 //create listeners for each paragraph and
@@ -184,7 +138,7 @@ function createListener() {
   });
 
   //enable rewind and faster buttons on audio player
-  console.log("showing cmi audio controls");
+  //console.log("showing cmi audio controls");
   $('.cmi-audio-controls').removeClass('hide-cmi-controls');
 
   //set rewind control
@@ -203,42 +157,38 @@ function createListener() {
   //set playbackRate control
   $('.audio-faster').on('click', function(e) {
     var currentRate = jPlayer.jPlayer("option", "playbackRate");
-    var newRate = 1;
+    var newRate, displayRate;
     e.preventDefault();
 
-    if (currentRate < 3) {
-      newRate = currentRate + 1;
+    //normal = 0, slow = -1 and -2, fast = +1 and +2
+    switch (currentRate) {
+      case 0.8:
+        increaseSpeed = true;
+        newRate = 0.9;
+        displayRate = "-1";
+        break;
+      case 0.9:
+        newRate = increaseSpeed? 1: 0.8;
+        displayRate = increaseSpeed? " 0": "-2";
+        break;
+      case 1:
+        newRate = increaseSpeed? 2: 0.9;
+        displayRate = increaseSpeed? "+1": "-1";
+        break;
+      case 2:
+        newRate = increaseSpeed? 3: 1;
+        displayRate = increaseSpeed? "+2": " 0";
+        break;
+      case 3:
+        increaseSpeed = false;
+        newRate = 2;
+        displayRate = "+1";
+        break;
     }
-    //console.log("currentRate: %s", currentRate);
+
     jPlayer.jPlayer("option", "playbackRate", newRate);
-    $(this).html(newRate);
+    $(this).html(displayRate);
   });
-}
-
-//if tString contains ':' indicates minutes and or hours
-function convertTime(tString) {
-  var t = tString.split(":");
-  var seconds, minutes, hours;
-  var total;
-
-  switch(t.length) {
-    case 1:
-      total = Number.parseFloat(t[0], 10);
-      break;
-    case 2:
-      seconds = Number.parseFloat(t[1], 10);
-      minutes = Number.parseFloat(t[0], 10) * 60;
-      total = minutes + seconds;
-      break;
-    case 3:
-      seconds = Number.parseFloat(t[2], 10);
-      minutes = Number.parseFloat(t[1], 10) * 60;
-      hours = Number.parseFloat(t[2], 10) * 3600;
-      total = hours + minutes + seconds;
-      break;
-  }
-
-  return _.isNaN(total) ? -1 : total;
 }
 
 function toggleMarkers() {
@@ -276,94 +226,11 @@ function toggleMarkers() {
   }
 }
 
-//function listShortCuts() {
-  //console.log('m: record current audio playback time');
-  //console.log('d: delete last recorded playback time');
-  //console.log('l: list recorded playback times');
-  //console.log('cl: clear recorded playback times');
-  //console.log('s: seek audio playback to given time (mm:ss.sss)');
-  //console.log('x: show/hide paragraph markers');
-  //console.log('?: show this list');
-//}
-
 module.exports = {
 
   initialize: function(player) {
-
     jPlayer = player;
     initCaptureArray();
-
-    //?: list keyboard shortcuts
-    //kb.bind('?', function(e) {
-      //listShortCuts();
-    //});
-
-    //x: add markers
-    //kb.bind('x', function(e) {
-      //toggleMarkers();
-    //});
-
-    //m: indicates to store current audio play time
-    //kb.bind('m', function(e) {
-      //if (audio_playing) {
-        //recordRequested = true;
-      //}
-      //else {
-        //console.log("capture enabled when audio is playing");
-      //}
-    //});
-
-    //d: delete most recent audio play time
-    //kb.bind('d', function(e) {
-      //var t;
-
-      ////don't delete the first item, (has a time of zero)
-      //if (capture.time.length > 1) {
-        //var t = capture.time.pop();
-
-        //if (typeof t !== "undefined") {
-          //console.log('deleted: %s', t);
-        //}
-      //}
-    //});
-
-    //l: list timing object
-    //kb.bind('l', function(e) {
-      //var time;
-      //if (capture.time.length > 1) {
-        //time = JSON.stringify(capture);
-        //console.log(time);
-        //alert(time);
-      //}
-      //else {
-        //console.log("no data captured")
-      //}
-    //});
-
-    //s: seek to a specific time, prompt user for time
-    //kb.bind('s', function(e0) {
-      //var tString = prompt("Play at specified time");
-      //var t;
-      //if (tString !== null) {
-        //t = convertTime(tString);
-        //console.log("Input: %s, time: %s", tString, t);
-
-        //if (t > -1) {
-          //if (typeof jPlayer !== "undefined") {
-            //jPlayer.jPlayer("play", t);
-          //}
-          //else {
-            //console.log("jPlayer is not defined in capture.js");
-          //}
-        //}
-      //}
-    //});
-
-    //c: clear array
-    //kb.bind('c + l', function(e) {
-      //initCaptureArray();
-      //console.log("cleared");
-    //});
   },
 
   play: function(t) {
@@ -384,18 +251,6 @@ module.exports = {
     //store current time
     currentPlayTime = t;
 
-    //recordRequested comes from the keyboard
-    // ** doesn't make sense to record time from both click
-    //    and keyboard
-    //if (recordRequested) {
-      //capture.time.push(t);
-      //console.log('captured: %s', t);
-      //recordRequested = false;
-    //}
-
-    //captureRequested comes from a paragraph click
-    // ** doesn't make sense to record time from both click
-    //    and keyboard
     if (captureRequested) {
       markParagraph({
         id: captureId,

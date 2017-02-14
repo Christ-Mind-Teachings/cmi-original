@@ -16,28 +16,23 @@
         <em>Thank you!</em>
       </p>
       <h2>Captured Data</h2>
-      <button title="Send Email" class="clipboard-btn">
-        <i class="fa fa-envelope-o"></i>
-      </button>
-      <p class="capture-instruction">
-        ** Check Netlify for contact form details **
-        The timing data below has <em>already been copied</em> to
-        the clipboard. When all timing data for this recording
-        has been captured, please...<br/>
-        <em>Thanks again!</em>
-      </p>
+      <p>
+        When you are finished, submit this form to send us the data. 
+        <em>Thanks Again</em>
+      <p>
+      <p class="submit-message"></p>
       <form id="audio-data-form" name="audio-data" action="/wom/woh/woh/" netlify>
         <p>
           <label>Your name:</label>
           <input type="text" name="name">
         </p>
         <p>
-          <label>Your Email</label>
+          <label>Your Email:</label>
           <input type="email" name="email">
         </p>
         <p>
-          <label>Timing Data</label>
-          <textarea id="captured-audio-data" name="data"></textarea>
+          <label>The Data:</label>
+          <textarea readonly id="captured-audio-data" name="data"></textarea>
         </p>
         <p>
           <button>Send</button>

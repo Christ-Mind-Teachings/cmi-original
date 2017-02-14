@@ -262,7 +262,7 @@ exclude: [
   # _wom/wot,
   # _wom/wok,
   # _wom,
-  # _nwffacim,
+   _nwffacim,
   # _nwffacim/grad,
   # _nwffacim/yaa,
   # _nwffacim/acim,
