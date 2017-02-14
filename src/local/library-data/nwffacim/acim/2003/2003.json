@@ -1,4 +1,7 @@
 {
+  "domain": {
+    "audio": "http://www.celestialrealm.com"
+  },
   "base": "/nwffacim/acim/2003/",
   "page": [
     {
@@ -9,6 +12,9 @@
       "prev": "122103/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-01-02_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "010203",
       "desc": "Needs formatting",
       "complete": false,
@@ -19,6 +25,9 @@
       "prev": "2003/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-01-09_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "010903",
       "desc": "Needs formatting",
       "complete": false,
@@ -29,6 +38,9 @@
       "prev": "010203/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-01-16_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "011603",
       "desc": "Needs formatting",
       "complete": false,
@@ -49,6 +61,9 @@
       "prev": "011603/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-02-06_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "020603",
       "complete": true,
       "desc": "T2.VII Cause and Effect",
@@ -59,6 +74,9 @@
       "prev": "012303/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-02-13_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "021303",
       "ref": "Discussion",
       "complete": false,
@@ -69,6 +87,9 @@
       "prev": "020603/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-02-20_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "022003",
       "complete": true,
       "desc": "T2.VII Cause and Effect",
@@ -79,6 +100,9 @@
       "prev": "021303/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-02-27_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "022703",
       "complete": true,
       "desc": "T2.VII Cause and Effect",
@@ -89,6 +113,9 @@
       "prev": "022003/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-03-06_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "030603",
       "desc": "Needs formatting",
       "complete": false,
@@ -99,6 +126,9 @@
       "prev": "022703/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-03-13_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "031303",
       "desc": "Needs formatting",
       "complete": false,
@@ -109,6 +139,9 @@
       "prev": "030603/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-03-20_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "032003",
       "desc": "Needs formatting",
       "complete": false,
@@ -119,6 +152,9 @@
       "prev": "031303/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-03-27_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "032703",
       "desc": "Needs formatting",
       "complete": false,
@@ -129,6 +165,9 @@
       "prev": "032003/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-04-03_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "040303",
       "desc": "Needs formatting",
       "complete": false,
@@ -139,6 +178,9 @@
       "prev": "032703/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-04-10_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "041003",
       "desc": "Needs formatting",
       "complete": false,
@@ -149,6 +191,9 @@
       "prev": "040303/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-04-24_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "042403",
       "desc": "Needs formatting",
       "complete": false,
@@ -159,6 +204,9 @@
       "prev": "041003/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-05-01_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "050103",
       "desc": "Needs formatting",
       "complete": false,
@@ -169,6 +217,9 @@
       "prev": "042403/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-05-11_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "051103",
       "desc": "Needs formatting",
       "complete": false,
@@ -179,6 +230,9 @@
       "prev": "050103/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-05-18_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "051803",
       "desc": "Needs formatting",
       "complete": false,
@@ -189,6 +243,9 @@
       "prev": "051103/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-05-25_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "052503",
       "desc": "Needs formatting",
       "complete": false,
@@ -199,6 +256,9 @@
       "prev": "051803/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-06-01_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "060103",
       "desc": "Needs formatting",
       "complete": false,
@@ -209,6 +269,9 @@
       "prev": "052503/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-06-08_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "060803",
       "desc": "Needs formatting",
       "complete": false,
@@ -219,6 +282,9 @@
       "prev": "060103/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-06-15_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
+      },
       "fid": "061503",
       "desc": "Needs formatting",
       "complete": false,
@@ -229,6 +295,9 @@
       "prev": "060803/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-06-22_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma.mp3"
+      },
       "fid": "062203",
       "desc": "Needs formatting",
       "complete": false,
@@ -239,6 +308,9 @@
       "prev": "061503/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-06-29_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma.mp3"
+      },
       "fid": "062903",
       "complete": false,
       "desc": "T4.In Introduction",
@@ -249,6 +321,9 @@
       "prev": "062203/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-07-06_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma.mp3"
+      },
       "fid": "070603",
       "complete": false,
       "desc": "T4.1 Right Teaching and Right Learning",
@@ -259,6 +334,9 @@
       "prev": "062903/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-07-13_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma.mp3"
+      },
       "fid": "071303",
       "complete": false,
       "desc": "Needs formatting",
@@ -269,6 +347,9 @@
       "prev": "070603/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-07-20_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma.mp3"
+      },
       "fid": "072003",
       "complete": false,
       "desc": "Needs formatting",
@@ -279,6 +360,9 @@
       "prev": "071303/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-07-27_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "072703",
       "complete": false,
       "desc": "Needs formatting",
@@ -289,6 +373,9 @@
       "prev": "072003/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-08-03_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "080303",
       "complete": false,
       "desc": "Needs formatting",
@@ -299,6 +386,9 @@
       "prev": "072703/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-08-10_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "081003",
       "complete": false,
       "desc": "Needs formatting",
@@ -309,6 +399,9 @@
       "prev": "080303/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-08-17_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "081703",
       "complete": false,
       "desc": "Needs formatting",
@@ -319,6 +412,9 @@
       "prev": "081003/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-08-24_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "082403",
       "complete": false,
       "desc": "Needs formatting",
@@ -329,6 +425,9 @@
       "prev": "081703/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-08-31_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "083103",
       "complete": false,
       "desc": "Needs formatting",
@@ -339,6 +438,9 @@
       "prev": "082403/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-09-07_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "090703",
       "complete": false,
       "desc": "Needs formatting",
@@ -349,6 +451,9 @@
       "prev": "083103/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-09-14_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "091403",
       "complete": false,
       "desc": "Needs formatting",
@@ -359,6 +464,9 @@
       "prev": "090703/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-09-21_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "092103",
       "complete": false,
       "desc": "Needs formatting",
@@ -369,6 +477,9 @@
       "prev": "091403/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-09-28_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "092803",
       "complete": false,
       "desc": "Needs formatting",
@@ -379,6 +490,9 @@
       "prev": "092103/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-10-12_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "101203",
       "complete": false,
       "desc": "Discussion",
@@ -389,6 +503,9 @@
       "prev": "092803/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-10-19_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "101903",
       "complete": false,
       "desc": "Needs formatting",
@@ -399,6 +516,9 @@
       "prev": "101203/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-10-26_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "102603",
       "complete": false,
       "desc": "Needs formatting",
@@ -409,6 +529,9 @@
       "prev": "101903/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-11-02_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "110203",
       "complete": false,
       "desc": "Needs formatting",
@@ -419,6 +542,9 @@
       "prev": "102603/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-11-09_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
+      },
       "fid": "110903",
       "complete": false,
       "desc": "Needs formatting",
@@ -429,6 +555,9 @@
       "prev": "110203/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-11-16_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_.mp3"
+      },
       "fid": "111603",
       "complete": false,
       "desc": "Needs formatting",
@@ -439,6 +568,9 @@
       "prev": "110903/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-11-23_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma__wma.mp3"
+      },
       "fid": "112303",
       "complete": false,
       "desc": "Needs formatting",
@@ -449,6 +581,9 @@
       "prev": "111603/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-12-07_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma__wma_wma.mp3"
+      },
       "fid": "120703",
       "complete": false,
       "desc": "Needs formatting",
@@ -459,6 +594,9 @@
       "prev": "112303/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-12-14_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma__wma_wma_wma.mp3"
+      },
       "fid": "121403",
       "complete": false,
       "desc": "Needs formatting",
@@ -469,6 +607,9 @@
       "prev": "120703/"
     },
     {
+      "res": {
+        "audio": "uploads/2003-12-21_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma__wma_wma_wma_wma.mp3"
+      },
       "fid": "122103",
       "complete": false,
       "desc": "Needs formatting",

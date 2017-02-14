@@ -54,12 +54,12 @@ Generate next/previous page links from _data files based on page.bid
 
     {% if page-data.res.audio %}
       {% assign page-contains-audio = true %}
-      <!--
-        setting 'page-contains-audio=true'
-        page-contains-audio: {{page-contains-audio}}
-      -->
       {% assign count = count | plus: 1 %}
-      {% assign audio-href = data.domain.audio | append: page-data.res.audio %}
+      {% if page-data.res.audio-domain %}
+        {% assign audio-href = page-data.res.audio-domain | append: page-data.res.audio %}
+      {% else %}
+        {% assign audio-href = data.domain.audio | append: page-data.res.audio %}
+      {% endif %}
       {% assign data-audio-title = page-data.title %}
       {% if resource.size == 0 %}
         {% assign resource = resource | append: "audio=" | append: audio-href %}

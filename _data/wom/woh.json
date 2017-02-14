@@ -35,6 +35,10 @@
       "prev": "l01/"
     },
     {
+      "fid": "l03",
+      "res": {
+        "audio": "l03.mp3"
+      },
       "title": "Lesson Three",
       "url": "l03/",
       "idx": 3,
@@ -42,6 +46,10 @@
       "prev": "l02/"
     },
     {
+      "fid": "l04",
+      "res": {
+        "audio": "l04.mp3"
+      },
       "title": "Lesson Four",
       "url": "l04/",
       "idx": 4,
@@ -49,6 +57,10 @@
       "prev": "l03/"
     },
     {
+      "fid": "l05",
+      "res": {
+        "audio": "l05.mp3"
+      },
       "title": "Lesson Five",
       "url": "l05/",
       "idx": 5,
@@ -56,6 +68,10 @@
       "prev": "l04/"
     },
     {
+      "fid": "l06",
+      "res": {
+        "audio": "l06.mp3"
+      },
       "title": "Lesson Six",
       "url": "l06/",
       "idx": 6,
@@ -63,6 +79,10 @@
       "prev": "l05/"
     },
     {
+      "fid": "l07",
+      "res": {
+        "audio": "l07.mp3"
+      },
       "title": "Lesson Seven",
       "url": "l07/",
       "idx": 7,
@@ -70,6 +90,10 @@
       "prev": "l06/"
     },
     {
+      "fid": "l08",
+      "res": {
+        "audio": "l08.mp3"
+      },
       "title": "Lesson Eight",
       "url": "l08/",
       "idx": 8,
@@ -77,6 +101,10 @@
       "prev": "l07/"
     },
     {
+      "fid": "l09",
+      "res": {
+        "audio": "l09.mp3"
+      },
       "title": "Lesson Nine",
       "url": "l09/",
       "idx": 9,
@@ -84,6 +112,10 @@
       "prev": "l08/"
     },
     {
+      "fid": "l10",
+      "res": {
+        "audio": "l10.mp3"
+      },
       "title": "Lesson Ten",
       "url": "l10/",
       "idx": 10,
@@ -91,6 +123,10 @@
       "prev": "l09/"
     },
     {
+      "fid": "l11",
+      "res": {
+        "audio": "l11.mp3"
+      },
       "title": "Lesson Eleven",
       "url": "l11/",
       "idx": 11,
@@ -98,6 +134,10 @@
       "prev": "l10/"
     },
     {
+      "fid": "l12",
+      "res": {
+        "audio": "l12.mp3"
+      },
       "title": "Lesson Twelve",
       "url": "l12/",
       "idx": 12,

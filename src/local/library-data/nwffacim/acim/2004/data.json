@@ -1,47 +1,299 @@
 {
+  "domain": {
+    "audio": "http://www.celestialrealm.com/"
+  },
   "year": 2004,
   "pages": [
     "2004",
-    "011104",
-    "011804",
-    "012504",
-    "020104",
-    "020804",
-    "021504",
-    "022204",
-    "030704",
-    "031404",
-    "032804",
-    "040404",
-    "041104",
-    "041804",
-    "042504",
-    "050204",
-    "050904",
-    "051604",
-    "052304",
-    "053004",
-    "061304",
-    "062004",
-    "062704",
-    "071104",
-    "071804",
-    "072504",
-    "080104",
-    "080804",
-    "081504",
-    "082204",
-    "091204",
-    "091904",
-    "092604",
-    "100304",
-    "101004",
-    "101704",
-    "102404",
-    "112104",
-    "112804",
-    "120504",
-    "121204",
-    "121904"
+    {
+      "fid":     "011104",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-01-18_StudyGroup.mp3"
+      },
+      "fid":     "011804",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-01-25_StudyGroup.mp3"
+      },
+      "fid":     "012504",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-02-01_StudyGroup.mp3"
+      },
+      "fid":     "020104",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-02-08_StudyGroup.mp3"
+      },
+      "fid":     "020804",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-02-15_StudyGroup.mp3"
+      },
+      "fid":     "021504",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-02-22_StudyGroup.mp3"
+      },
+      "fid":     "022204",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-03-07_StudyGroup.mp3"
+      },
+      "fid":     "030704",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-03-14_StudyGroup.mp3"
+      },
+      "fid":     "031404",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-03-28_StudyGroup.mp3"
+      },
+      "fid":     "032804",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-04-04_StudyGroup.mp3"
+      },
+      "fid":     "040404",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-04-11_StudyGroup.mp3"
+      },
+      "fid":     "041104",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-04-18_StudyGroup.mp3"
+      },
+      "fid":     "041804",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-04-25_StudyGroup.mp3"
+      },
+      "fid":     "042504",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-05-02_StudyGroup.mp3"
+      },
+      "fid":     "050204",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-05-09_StudyGroup.mp3"
+      },
+      "fid":     "050904",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "051604",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-05-23_StudyGroup.mp3"
+      },
+      "fid":     "052304",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-05-30_StudyGroup.mp3"
+      },
+      "fid":     "053004",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-06-13_StudyGroup.mp3"
+      },
+      "fid":     "061304",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "062004",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "062704",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "071104",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-07-18_StudyGroup.mp3"
+      },
+      "fid":     "071804",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "072504",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-08-01_StudyGroup.mp3"
+      },
+      "fid":     "080104",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-08-08_StudyGroup.mp3"
+      },
+      "fid":     "080804",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "081504",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-08-22_StudyGroup.mp3"
+      },
+      "fid":     "082204",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-09-12_StudyGroup.mp3"
+      },
+      "fid":     "091204",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio-domain": "https://static.secure.website/",
+        "audio": "wscfus/8306833/2322988/2004-09-19-studygroup.mp3"
+      },
+      "fid":     "091904",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "092604",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-10-03_StudyGroup.mp3"
+      },
+      "fid":     "100304",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-10-10_StudyGroup.mp3"
+      },
+      "fid":     "101004",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "101704",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-10-24_StudyGroup.mp3"
+      },
+      "fid":     "102404",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "112104",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "112804",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "120504",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid":     "121204",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "res": {
+        "audio": "uploads/2004-12-19_StudyGroup.mp3"
+      },
+      "fid":     "121904",
+      "desc": "",
+      "complete": false
+    }
   ]
 }
