@@ -1,51 +1,3 @@
-/*
- * Convert data.json to CMI Jekyll data file format. Next/prev url's are generated
- * so navigation can proceed sequentially through the list.
- *
- * data.json: The json file pages array contains files in sequential order.
- *
- * fields:
- *  id: identifies the procedure used to convert the file.
- *    "acim", and "yaa" are supported procedures, "acim" is the default
- *
- *  year: optional, used by "acim" procedure and required by "acim"
- *
- *  outfile: name of output file
- *    optional for "acim", required by "yaa"
- *
- * -------- YAA Format ---------
- {
-  "id": "yaa",
-  "outfile": "yaa.json",
-  "base": "/nwffacim/yaa/",
-  "pages": [
-    "yaa",
-    ...,
-    "ack",
-    "022682a",
-    "022682b",
-    "022682c",
-    "022782",
-    "022882",
-    "afterword"
-  ]
- }
- *
- * -------- ACIM Format ---------
- {
-   "year": 2002,
-   "pages": [
-     "2002",
-     "061202",
-     "073102",
-      ...
-     "121202",
-     "121902"
-   ]
- }
- *
- *
- */
 
 var example = {
   id: "wom",
@@ -403,8 +355,29 @@ function early(item, idx, arr) {
   return page;
 }
 
+//------------ Start Here ----------------
+
+var baseSaveLocation = "/Users/rmercer/Projects/cmi/site/src/local/library-data/data";
+var source;
+
+var inputFile;
+
+if (process.argv.length > 2) {
+  inputFile = process.argv[2];
+}
+else {
+  inputFile = "data.json";
+}
+
 //input data
-var data = json.readFileSync("data.json");
+try {
+  var data = json.readFileSync(inputFile);
+}
+catch(e) {
+  console.log("error opening %s", inputFile);
+  console.log("** exiting");
+  process.exit(1);
+}
 
 //output data
 var yml = {};
@@ -437,6 +410,7 @@ if (!_.isEmpty(domain)) {
 switch (id) {
   //acim contents by year
   case "acimc":
+    source = "nwffacim";
     yml.base = data.base;
     yml.intro = data.intro;
     yml.page = _.map(data.pages, acimc, {base: yml.base, intro: yml.intro});
@@ -444,42 +418,47 @@ switch (id) {
     break;
   //acim contents for a given year
   case "acim":
+    source = "nwffacim/acim";
     yml.base = "/nwffacim/acim/" + data.year + "/";
     yml.intro = data.intro;
     yml.page = _.map(data.pages, acim, {year: data.year, base: yml.base, intro: yml.intro});
     outfile = data.year + ".json";
     break;
   case "yaa":
+    source = "nwffacim";
     yml.base = data.base;
     yml.intro = data.intro;
     yml.page = _.map(data.pages, yaa, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   case "grad":
+    source = "nwffacim";
     yml.base = data.base;
     yml.intro = data.intro;
     yml.page = _.map(data.pages, grad, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   case "wom":
+    source = "wom";
     yml.base = data.base;
     yml.intro = data.intro;
     yml.page = _.map(data.pages, wom, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   case "early":
+    source = "wom";
     yml.base = data.base;
     yml.intro = data.intro;
     yml.page = _.map(data.pages, early, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   default:
-    console.log("Unknown identifier, use either 'acmi', 'yaa', 'grad', 'early', or 'wom' [for woh, wot, wok]");
+    console.log("Unknown identifier, use either 'acim', 'yaa', 'grad', 'early', or 'wom' [for woh, wot, wok]");
     process.exit(1);
 }
 
-//console.log(util.inspect(yml, false, null));
-//json.writeFileSync(data.year + ".json", yml, {spaces: 2});
-console.log("writing: %s", outfile);
+console.log("writing: %s/%s", source, outfile);
+outfile = util.format("%s/%s/%s", baseSaveLocation, source, outfile);
+
 json.writeFileSync(outfile, yml, {spaces: 2});
 
