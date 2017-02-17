@@ -20,7 +20,7 @@ it's pages into an experience that changes lives and the world.
 -   [ *You Are the Answer* ](/nwffacim/intro/yaa/) journals Paul's initial
     adventure with Raj.
 
--   [ *Graduation, the End of Illusion* ](/nwffacim/intro/grad/), gives
+-   [ *Graduation, The End of Illusions* ](/nwffacim/intro/grad/), gives
     an enlightening glimpse into Paul's relationship with Raj nine years
     after their first meeting.
 

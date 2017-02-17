@@ -1,29 +1,15 @@
 <!--
+  ui/cards
   include.data.base: {{include.data.base}}
+  include.source: {{include.source}}
 -->
 <div class="cards">
-  {% for year in include.data.year %}
-    {% if year.display == true %}
-      <div class="card">
-        <div class="card-image">
-          <a title="Read Transcripts from {{year.year}}."
-             {% comment %}
-             old value of href
-             href="{{include.data.base | append: year.year | append: year.about-url}}">
-             {% endcomment %}
-             href="{{include.data.base | append: year.about-url}}">
-            <img src="{{include.data.image-base | append: year.image}}" alt="">
-          </a>
-        </div>
-        <div class="card-header">
-          {{year.title}}
-        </div>
-        <div class="card-copy">
-          {{year.desc}}
-        </div>
-      </div>
-    {% endif %}
-  {% endfor %}
+  {% case include.source %}
+  {% when "acim" %}
+    {% include cards/acim-year.html data=include.data %}
+  {% when "library" %}
+    {% include cards/library-volumes.html data=include.data %}
+  {% endcase %}
 </div>
 
 

@@ -7,30 +7,22 @@
       "url": "/nwffacim/intro/yaa/",
       "fid": "yaa/",
       "idx": 0,
-      "next": "/nwffacim/yaa/titlepage/",
-      "prev": "/nwffacim/yaa/afterword/"
-    },
-    {
-      "title": "Titlepage",
-      "url": "/nwffacim/yaa/titlepage/",
-      "fid": "titlepage/",
-      "idx": 1,
       "next": "/nwffacim/yaa/acknowledgments/",
-      "prev": "/nwffacim/intro/yaa/"
+      "prev": "/nwffacim/yaa/afterword/"
     },
     {
       "title": "Acknowledgments",
       "url": "/nwffacim/yaa/acknowledgments/",
       "fid": "acknowledgments/",
-      "idx": 2,
+      "idx": 1,
       "next": "/nwffacim/yaa/foreword/",
-      "prev": "/nwffacim/yaa/titlepage/"
+      "prev": "/nwffacim/intro/yaa/"
     },
     {
       "title": "Foreword",
       "url": "/nwffacim/yaa/foreword/",
       "fid": "foreword/",
-      "idx": 3,
+      "idx": 2,
       "next": "/nwffacim/yaa/020782/",
       "prev": "/nwffacim/yaa/acknowledgments/"
     },
@@ -38,7 +30,7 @@
       "title": "Feb 7, 1982",
       "url": "/nwffacim/yaa/020782/",
       "fid": "020782/",
-      "idx": 4,
+      "idx": 3,
       "next": "/nwffacim/yaa/020882/",
       "prev": "/nwffacim/yaa/foreword/"
     },
@@ -46,7 +38,7 @@
       "title": "Feb 8, 1982",
       "url": "/nwffacim/yaa/020882/",
       "fid": "020882/",
-      "idx": 5,
+      "idx": 4,
       "next": "/nwffacim/yaa/020982/",
       "prev": "/nwffacim/yaa/020782/"
     },
@@ -54,7 +46,7 @@
       "title": "Feb 9, 1982",
       "url": "/nwffacim/yaa/020982/",
       "fid": "020982/",
-      "idx": 6,
+      "idx": 5,
       "next": "/nwffacim/yaa/021082/",
       "prev": "/nwffacim/yaa/020882/"
     },
@@ -62,7 +54,7 @@
       "title": "Feb 10, 1982",
       "url": "/nwffacim/yaa/021082/",
       "fid": "021082/",
-      "idx": 7,
+      "idx": 6,
       "next": "/nwffacim/yaa/021182a/",
       "prev": "/nwffacim/yaa/020982/"
     },
@@ -70,7 +62,7 @@
       "title": "Feb 11, 1982",
       "url": "/nwffacim/yaa/021182a/",
       "fid": "021182a/",
-      "idx": 8,
+      "idx": 7,
       "next": "/nwffacim/yaa/021182b/",
       "prev": "/nwffacim/yaa/021082/"
     },
@@ -78,7 +70,7 @@
       "title": "Feb 11, 1982",
       "url": "/nwffacim/yaa/021182b/",
       "fid": "021182b/",
-      "idx": 9,
+      "idx": 8,
       "next": "/nwffacim/yaa/021282/",
       "prev": "/nwffacim/yaa/021182a/"
     },
@@ -86,7 +78,7 @@
       "title": "Feb 12, 1982",
       "url": "/nwffacim/yaa/021282/",
       "fid": "021282/",
-      "idx": 10,
+      "idx": 9,
       "next": "/nwffacim/yaa/021382/",
       "prev": "/nwffacim/yaa/021182b/"
     },
@@ -94,7 +86,7 @@
       "title": "Feb 13, 1982",
       "url": "/nwffacim/yaa/021382/",
       "fid": "021382/",
-      "idx": 11,
+      "idx": 10,
       "next": "/nwffacim/yaa/021482/",
       "prev": "/nwffacim/yaa/021282/"
     },
@@ -102,7 +94,7 @@
       "title": "Feb 14, 1982",
       "url": "/nwffacim/yaa/021482/",
       "fid": "021482/",
-      "idx": 12,
+      "idx": 11,
       "next": "/nwffacim/yaa/021682/",
       "prev": "/nwffacim/yaa/021382/"
     },
@@ -110,7 +102,7 @@
       "title": "Feb 16, 1982",
       "url": "/nwffacim/yaa/021682/",
       "fid": "021682/",
-      "idx": 13,
+      "idx": 12,
       "next": "/nwffacim/yaa/021782/",
       "prev": "/nwffacim/yaa/021482/"
     },
@@ -118,7 +110,7 @@
       "title": "Feb 17, 1982",
       "url": "/nwffacim/yaa/021782/",
       "fid": "021782/",
-      "idx": 14,
+      "idx": 13,
       "next": "/nwffacim/yaa/021882a/",
       "prev": "/nwffacim/yaa/021682/"
     },
@@ -126,7 +118,7 @@
       "title": "Feb 18, 1982",
       "url": "/nwffacim/yaa/021882a/",
       "fid": "021882a/",
-      "idx": 15,
+      "idx": 14,
       "next": "/nwffacim/yaa/021882b/",
       "prev": "/nwffacim/yaa/021782/"
     },
@@ -134,7 +126,7 @@
       "title": "Feb 18, 1982",
       "url": "/nwffacim/yaa/021882b/",
       "fid": "021882b/",
-      "idx": 16,
+      "idx": 15,
       "next": "/nwffacim/yaa/021882c/",
       "prev": "/nwffacim/yaa/021882a/"
     },
@@ -142,7 +134,7 @@
       "title": "Feb 18, 1982",
       "url": "/nwffacim/yaa/021882c/",
       "fid": "021882c/",
-      "idx": 17,
+      "idx": 16,
       "next": "/nwffacim/yaa/021982/",
       "prev": "/nwffacim/yaa/021882b/"
     },
@@ -150,7 +142,7 @@
       "title": "Feb 19, 1982",
       "url": "/nwffacim/yaa/021982/",
       "fid": "021982/",
-      "idx": 18,
+      "idx": 17,
       "next": "/nwffacim/yaa/022082/",
       "prev": "/nwffacim/yaa/021882c/"
     },
@@ -158,7 +150,7 @@
       "title": "Feb 20, 1982",
       "url": "/nwffacim/yaa/022082/",
       "fid": "022082/",
-      "idx": 19,
+      "idx": 18,
       "next": "/nwffacim/yaa/022182a/",
       "prev": "/nwffacim/yaa/021982/"
     },
@@ -166,7 +158,7 @@
       "title": "Feb 21, 1982",
       "url": "/nwffacim/yaa/022182a/",
       "fid": "022182a/",
-      "idx": 20,
+      "idx": 19,
       "next": "/nwffacim/yaa/022182b/",
       "prev": "/nwffacim/yaa/022082/"
     },
@@ -174,7 +166,7 @@
       "title": "Feb 21, 1982",
       "url": "/nwffacim/yaa/022182b/",
       "fid": "022182b/",
-      "idx": 21,
+      "idx": 20,
       "next": "/nwffacim/yaa/022382a/",
       "prev": "/nwffacim/yaa/022182a/"
     },
@@ -182,7 +174,7 @@
       "title": "Feb 23, 1982",
       "url": "/nwffacim/yaa/022382a/",
       "fid": "022382a/",
-      "idx": 22,
+      "idx": 21,
       "next": "/nwffacim/yaa/022382b/",
       "prev": "/nwffacim/yaa/022182b/"
     },
@@ -190,7 +182,7 @@
       "title": "Feb 23, 1982",
       "url": "/nwffacim/yaa/022382b/",
       "fid": "022382b/",
-      "idx": 23,
+      "idx": 22,
       "next": "/nwffacim/yaa/022382c/",
       "prev": "/nwffacim/yaa/022382a/"
     },
@@ -198,7 +190,7 @@
       "title": "Feb 23, 1982",
       "url": "/nwffacim/yaa/022382c/",
       "fid": "022382c/",
-      "idx": 24,
+      "idx": 23,
       "next": "/nwffacim/yaa/022482/",
       "prev": "/nwffacim/yaa/022382b/"
     },
@@ -206,7 +198,7 @@
       "title": "Feb 24, 1982",
       "url": "/nwffacim/yaa/022482/",
       "fid": "022482/",
-      "idx": 25,
+      "idx": 24,
       "next": "/nwffacim/yaa/022582/",
       "prev": "/nwffacim/yaa/022382c/"
     },
@@ -214,7 +206,7 @@
       "title": "Feb 25, 1982",
       "url": "/nwffacim/yaa/022582/",
       "fid": "022582/",
-      "idx": 26,
+      "idx": 25,
       "next": "/nwffacim/yaa/022682a/",
       "prev": "/nwffacim/yaa/022482/"
     },
@@ -222,7 +214,7 @@
       "title": "Feb 26, 1982",
       "url": "/nwffacim/yaa/022682a/",
       "fid": "022682a/",
-      "idx": 27,
+      "idx": 26,
       "next": "/nwffacim/yaa/022682b/",
       "prev": "/nwffacim/yaa/022582/"
     },
@@ -230,7 +222,7 @@
       "title": "Feb 26, 1982",
       "url": "/nwffacim/yaa/022682b/",
       "fid": "022682b/",
-      "idx": 28,
+      "idx": 27,
       "next": "/nwffacim/yaa/022682c/",
       "prev": "/nwffacim/yaa/022682a/"
     },
@@ -238,7 +230,7 @@
       "title": "Feb 26, 1982",
       "url": "/nwffacim/yaa/022682c/",
       "fid": "022682c/",
-      "idx": 29,
+      "idx": 28,
       "next": "/nwffacim/yaa/022782/",
       "prev": "/nwffacim/yaa/022682b/"
     },
@@ -246,7 +238,7 @@
       "title": "Feb 27, 1982",
       "url": "/nwffacim/yaa/022782/",
       "fid": "022782/",
-      "idx": 30,
+      "idx": 29,
       "next": "/nwffacim/yaa/022882/",
       "prev": "/nwffacim/yaa/022682c/"
     },
@@ -254,7 +246,7 @@
       "title": "Feb 28, 1982",
       "url": "/nwffacim/yaa/022882/",
       "fid": "022882/",
-      "idx": 31,
+      "idx": 30,
       "next": "/nwffacim/yaa/030182a/",
       "prev": "/nwffacim/yaa/022782/"
     },
@@ -262,7 +254,7 @@
       "title": "Mar 1, 1982",
       "url": "/nwffacim/yaa/030182a/",
       "fid": "030182a/",
-      "idx": 32,
+      "idx": 31,
       "next": "/nwffacim/yaa/030182b/",
       "prev": "/nwffacim/yaa/022882/"
     },
@@ -270,7 +262,7 @@
       "title": "Mar 1, 1982",
       "url": "/nwffacim/yaa/030182b/",
       "fid": "030182b/",
-      "idx": 33,
+      "idx": 32,
       "next": "/nwffacim/yaa/030282/",
       "prev": "/nwffacim/yaa/030182a/"
     },
@@ -278,7 +270,7 @@
       "title": "Mar 2, 1982",
       "url": "/nwffacim/yaa/030282/",
       "fid": "030282/",
-      "idx": 34,
+      "idx": 33,
       "next": "/nwffacim/yaa/030382/",
       "prev": "/nwffacim/yaa/030182b/"
     },
@@ -286,7 +278,7 @@
       "title": "Mar 3, 1982",
       "url": "/nwffacim/yaa/030382/",
       "fid": "030382/",
-      "idx": 35,
+      "idx": 34,
       "next": "/nwffacim/yaa/030482a/",
       "prev": "/nwffacim/yaa/030282/"
     },
@@ -294,7 +286,7 @@
       "title": "Mar 4, 1982",
       "url": "/nwffacim/yaa/030482a/",
       "fid": "030482a/",
-      "idx": 36,
+      "idx": 35,
       "next": "/nwffacim/yaa/030482b/",
       "prev": "/nwffacim/yaa/030382/"
     },
@@ -302,7 +294,7 @@
       "title": "Mar 4, 1982",
       "url": "/nwffacim/yaa/030482b/",
       "fid": "030482b/",
-      "idx": 37,
+      "idx": 36,
       "next": "/nwffacim/yaa/030582a/",
       "prev": "/nwffacim/yaa/030482a/"
     },
@@ -310,7 +302,7 @@
       "title": "Mar 5, 1982",
       "url": "/nwffacim/yaa/030582a/",
       "fid": "030582a/",
-      "idx": 38,
+      "idx": 37,
       "next": "/nwffacim/yaa/030582b/",
       "prev": "/nwffacim/yaa/030482b/"
     },
@@ -318,7 +310,7 @@
       "title": "Mar 5, 1982",
       "url": "/nwffacim/yaa/030582b/",
       "fid": "030582b/",
-      "idx": 39,
+      "idx": 38,
       "next": "/nwffacim/yaa/030682a/",
       "prev": "/nwffacim/yaa/030582a/"
     },
@@ -326,7 +318,7 @@
       "title": "Mar 6, 1982",
       "url": "/nwffacim/yaa/030682a/",
       "fid": "030682a/",
-      "idx": 40,
+      "idx": 39,
       "next": "/nwffacim/yaa/030682b/",
       "prev": "/nwffacim/yaa/030582b/"
     },
@@ -334,7 +326,7 @@
       "title": "Mar 6, 1982",
       "url": "/nwffacim/yaa/030682b/",
       "fid": "030682b/",
-      "idx": 41,
+      "idx": 40,
       "next": "/nwffacim/yaa/030682c/",
       "prev": "/nwffacim/yaa/030682a/"
     },
@@ -342,7 +334,7 @@
       "title": "Mar 6, 1982",
       "url": "/nwffacim/yaa/030682c/",
       "fid": "030682c/",
-      "idx": 42,
+      "idx": 41,
       "next": "/nwffacim/yaa/030682d/",
       "prev": "/nwffacim/yaa/030682b/"
     },
@@ -350,7 +342,7 @@
       "title": "Mar 6, 1982",
       "url": "/nwffacim/yaa/030682d/",
       "fid": "030682d/",
-      "idx": 43,
+      "idx": 42,
       "next": "/nwffacim/yaa/030682e/",
       "prev": "/nwffacim/yaa/030682c/"
     },
@@ -358,7 +350,7 @@
       "title": "Mar 6, 1982",
       "url": "/nwffacim/yaa/030682e/",
       "fid": "030682e/",
-      "idx": 44,
+      "idx": 43,
       "next": "/nwffacim/yaa/030882/",
       "prev": "/nwffacim/yaa/030682d/"
     },
@@ -366,7 +358,7 @@
       "title": "Mar 8, 1982",
       "url": "/nwffacim/yaa/030882/",
       "fid": "030882/",
-      "idx": 45,
+      "idx": 44,
       "next": "/nwffacim/yaa/030982/",
       "prev": "/nwffacim/yaa/030682e/"
     },
@@ -374,7 +366,7 @@
       "title": "Mar 9, 1982",
       "url": "/nwffacim/yaa/030982/",
       "fid": "030982/",
-      "idx": 46,
+      "idx": 45,
       "next": "/nwffacim/yaa/031082a/",
       "prev": "/nwffacim/yaa/030882/"
     },
@@ -382,7 +374,7 @@
       "title": "Mar 10, 1982",
       "url": "/nwffacim/yaa/031082a/",
       "fid": "031082a/",
-      "idx": 47,
+      "idx": 46,
       "next": "/nwffacim/yaa/031082b/",
       "prev": "/nwffacim/yaa/030982/"
     },
@@ -390,7 +382,7 @@
       "title": "Mar 10, 1982",
       "url": "/nwffacim/yaa/031082b/",
       "fid": "031082b/",
-      "idx": 48,
+      "idx": 47,
       "next": "/nwffacim/yaa/031082c/",
       "prev": "/nwffacim/yaa/031082a/"
     },
@@ -398,7 +390,7 @@
       "title": "Mar 10, 1982",
       "url": "/nwffacim/yaa/031082c/",
       "fid": "031082c/",
-      "idx": 49,
+      "idx": 48,
       "next": "/nwffacim/yaa/031182/",
       "prev": "/nwffacim/yaa/031082b/"
     },
@@ -406,7 +398,7 @@
       "title": "Mar 11, 1982",
       "url": "/nwffacim/yaa/031182/",
       "fid": "031182/",
-      "idx": 50,
+      "idx": 49,
       "next": "/nwffacim/yaa/031382/",
       "prev": "/nwffacim/yaa/031082c/"
     },
@@ -414,7 +406,7 @@
       "title": "Mar 13, 1982",
       "url": "/nwffacim/yaa/031382/",
       "fid": "031382/",
-      "idx": 51,
+      "idx": 50,
       "next": "/nwffacim/yaa/031582/",
       "prev": "/nwffacim/yaa/031182/"
     },
@@ -422,7 +414,7 @@
       "title": "Mar 15, 1982",
       "url": "/nwffacim/yaa/031582/",
       "fid": "031582/",
-      "idx": 52,
+      "idx": 51,
       "next": "/nwffacim/yaa/031982/",
       "prev": "/nwffacim/yaa/031382/"
     },
@@ -430,7 +422,7 @@
       "title": "Mar 19, 1982",
       "url": "/nwffacim/yaa/031982/",
       "fid": "031982/",
-      "idx": 53,
+      "idx": 52,
       "next": "/nwffacim/yaa/032982/",
       "prev": "/nwffacim/yaa/031582/"
     },
@@ -438,7 +430,7 @@
       "title": "Mar 29, 1982",
       "url": "/nwffacim/yaa/032982/",
       "fid": "032982/",
-      "idx": 54,
+      "idx": 53,
       "next": "/nwffacim/yaa/033082/",
       "prev": "/nwffacim/yaa/031982/"
     },
@@ -446,7 +438,7 @@
       "title": "Mar 30, 1982",
       "url": "/nwffacim/yaa/033082/",
       "fid": "033082/",
-      "idx": 55,
+      "idx": 54,
       "next": "/nwffacim/yaa/042782/",
       "prev": "/nwffacim/yaa/032982/"
     },
@@ -454,7 +446,7 @@
       "title": "Apr 27, 1982",
       "url": "/nwffacim/yaa/042782/",
       "fid": "042782/",
-      "idx": 56,
+      "idx": 55,
       "next": "/nwffacim/yaa/042882/",
       "prev": "/nwffacim/yaa/033082/"
     },
@@ -462,7 +454,7 @@
       "title": "Apr 28, 1982",
       "url": "/nwffacim/yaa/042882/",
       "fid": "042882/",
-      "idx": 57,
+      "idx": 56,
       "next": "/nwffacim/yaa/042982/",
       "prev": "/nwffacim/yaa/042782/"
     },
@@ -470,7 +462,7 @@
       "title": "Apr 29, 1982",
       "url": "/nwffacim/yaa/042982/",
       "fid": "042982/",
-      "idx": 58,
+      "idx": 57,
       "next": "/nwffacim/yaa/043082/",
       "prev": "/nwffacim/yaa/042882/"
     },
@@ -478,7 +470,7 @@
       "title": "Apr 30, 1982",
       "url": "/nwffacim/yaa/043082/",
       "fid": "043082/",
-      "idx": 59,
+      "idx": 58,
       "next": "/nwffacim/yaa/050182/",
       "prev": "/nwffacim/yaa/042982/"
     },
@@ -486,7 +478,7 @@
       "title": "May 1, 1982",
       "url": "/nwffacim/yaa/050182/",
       "fid": "050182/",
-      "idx": 60,
+      "idx": 59,
       "next": "/nwffacim/yaa/050282/",
       "prev": "/nwffacim/yaa/043082/"
     },
@@ -494,7 +486,7 @@
       "title": "May 2, 1982",
       "url": "/nwffacim/yaa/050282/",
       "fid": "050282/",
-      "idx": 61,
+      "idx": 60,
       "next": "/nwffacim/yaa/050382/",
       "prev": "/nwffacim/yaa/050182/"
     },
@@ -502,7 +494,7 @@
       "title": "May 3, 1982",
       "url": "/nwffacim/yaa/050382/",
       "fid": "050382/",
-      "idx": 62,
+      "idx": 61,
       "next": "/nwffacim/yaa/050782/",
       "prev": "/nwffacim/yaa/050282/"
     },
@@ -510,7 +502,7 @@
       "title": "May 7, 1982",
       "url": "/nwffacim/yaa/050782/",
       "fid": "050782/",
-      "idx": 63,
+      "idx": 62,
       "next": "/nwffacim/yaa/050982/",
       "prev": "/nwffacim/yaa/050382/"
     },
@@ -518,7 +510,7 @@
       "title": "May 9, 1982",
       "url": "/nwffacim/yaa/050982/",
       "fid": "050982/",
-      "idx": 64,
+      "idx": 63,
       "next": "/nwffacim/yaa/051082a/",
       "prev": "/nwffacim/yaa/050782/"
     },
@@ -526,7 +518,7 @@
       "title": "May 10, 1982",
       "url": "/nwffacim/yaa/051082a/",
       "fid": "051082a/",
-      "idx": 65,
+      "idx": 64,
       "next": "/nwffacim/yaa/051082b/",
       "prev": "/nwffacim/yaa/050982/"
     },
@@ -534,7 +526,7 @@
       "title": "May 10, 1982",
       "url": "/nwffacim/yaa/051082b/",
       "fid": "051082b/",
-      "idx": 66,
+      "idx": 65,
       "next": "/nwffacim/yaa/051082c/",
       "prev": "/nwffacim/yaa/051082a/"
     },
@@ -542,7 +534,7 @@
       "title": "May 10, 1982",
       "url": "/nwffacim/yaa/051082c/",
       "fid": "051082c/",
-      "idx": 67,
+      "idx": 66,
       "next": "/nwffacim/yaa/051182/",
       "prev": "/nwffacim/yaa/051082b/"
     },
@@ -550,7 +542,7 @@
       "title": "May 11, 1982",
       "url": "/nwffacim/yaa/051182/",
       "fid": "051182/",
-      "idx": 68,
+      "idx": 67,
       "next": "/nwffacim/yaa/051582/",
       "prev": "/nwffacim/yaa/051082c/"
     },
@@ -558,7 +550,7 @@
       "title": "May 15, 1982",
       "url": "/nwffacim/yaa/051582/",
       "fid": "051582/",
-      "idx": 69,
+      "idx": 68,
       "next": "/nwffacim/yaa/051782/",
       "prev": "/nwffacim/yaa/051182/"
     },
@@ -566,7 +558,7 @@
       "title": "May 17, 1982",
       "url": "/nwffacim/yaa/051782/",
       "fid": "051782/",
-      "idx": 70,
+      "idx": 69,
       "next": "/nwffacim/yaa/052882/",
       "prev": "/nwffacim/yaa/051582/"
     },
@@ -574,7 +566,7 @@
       "title": "May 28, 1982",
       "url": "/nwffacim/yaa/052882/",
       "fid": "052882/",
-      "idx": 71,
+      "idx": 70,
       "next": "/nwffacim/yaa/053082/",
       "prev": "/nwffacim/yaa/051782/"
     },
@@ -582,7 +574,7 @@
       "title": "May 30, 1982",
       "url": "/nwffacim/yaa/053082/",
       "fid": "053082/",
-      "idx": 72,
+      "idx": 71,
       "next": "/nwffacim/yaa/060382/",
       "prev": "/nwffacim/yaa/052882/"
     },
@@ -590,7 +582,7 @@
       "title": "Jun 3, 1982",
       "url": "/nwffacim/yaa/060382/",
       "fid": "060382/",
-      "idx": 73,
+      "idx": 72,
       "next": "/nwffacim/yaa/061082/",
       "prev": "/nwffacim/yaa/053082/"
     },
@@ -598,7 +590,7 @@
       "title": "Jun 10, 1982",
       "url": "/nwffacim/yaa/061082/",
       "fid": "061082/",
-      "idx": 74,
+      "idx": 73,
       "next": "/nwffacim/yaa/061282/",
       "prev": "/nwffacim/yaa/060382/"
     },
@@ -606,7 +598,7 @@
       "title": "Jun 12, 1982",
       "url": "/nwffacim/yaa/061282/",
       "fid": "061282/",
-      "idx": 75,
+      "idx": 74,
       "next": "/nwffacim/yaa/061482/",
       "prev": "/nwffacim/yaa/061082/"
     },
@@ -614,7 +606,7 @@
       "title": "Jun 14, 1982",
       "url": "/nwffacim/yaa/061482/",
       "fid": "061482/",
-      "idx": 76,
+      "idx": 75,
       "next": "/nwffacim/yaa/061982/",
       "prev": "/nwffacim/yaa/061282/"
     },
@@ -622,7 +614,7 @@
       "title": "Jun 19, 1982",
       "url": "/nwffacim/yaa/061982/",
       "fid": "061982/",
-      "idx": 77,
+      "idx": 76,
       "next": "/nwffacim/yaa/062182/",
       "prev": "/nwffacim/yaa/061482/"
     },
@@ -630,7 +622,7 @@
       "title": "Jun 21, 1982",
       "url": "/nwffacim/yaa/062182/",
       "fid": "062182/",
-      "idx": 78,
+      "idx": 77,
       "next": "/nwffacim/yaa/afterword/",
       "prev": "/nwffacim/yaa/061982/"
     },
@@ -638,7 +630,7 @@
       "title": "Afterword",
       "url": "/nwffacim/yaa/afterword/",
       "fid": "afterword/",
-      "idx": 79,
+      "idx": 78,
       "next": "/nwffacim/intro/yaa/",
       "prev": "/nwffacim/yaa/062182/"
     }

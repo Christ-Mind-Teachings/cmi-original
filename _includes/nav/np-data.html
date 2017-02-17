@@ -39,7 +39,7 @@ Generate next/previous page links from _data files based on page.bid
   {% assign resource = "" %}
 
   {% assign base = data.base %}
-  {% assign intro = data.intro %}
+  {% assign intro = data.intro | default: "not found" %}
   {% assign key = page.url | remove_first: base %}
   {% if key == page.url %}
     {% assign key = page.url | remove_first: intro %}
@@ -54,7 +54,6 @@ Generate next/previous page links from _data files based on page.bid
   {% assign transcript-format-complete = page-data.complete | default: false %}
 
   {% comment %}
-  {% endcomment %}
   <!--
     base: {{base}}
     intro: {{intro}}
@@ -66,6 +65,7 @@ Generate next/previous page links from _data files based on page.bid
     ** NO page-data found for page **
     {% endif %}
   -->
+  {% endcomment %}
 
   {% if include-resource %}
 

@@ -20,11 +20,6 @@
       <a class="sidebar-nav-item" href="{{ site.baseurl }}/">Home</a>
     {% endif %}
 
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
-
     {% for node in site.data.cmi.library.pages %}
       {% if page.url == node.url %}
         <a class="sidebar-nav-item active" href="#">{{ node.title }}</a>

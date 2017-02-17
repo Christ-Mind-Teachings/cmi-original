@@ -1,24 +1,16 @@
 ---
-layout: default
+layout: custom
 title: "Teachings of Christ Mind"
+sidebar: sidebar.html
 footer-id: "home"
 footer:
   logo: false
   netlify: true
 ---
-<div class="introduction">
-  <h1>Welcome</h1>
-  <div class="toc">
-    <h2>Teachings of Christ Mind Library</h2>
-    <ol class="post">
-    {% for volume in site.data.library.volumes %}
-      <li class="post-title">
-        <a href="{{ volume.url }}">
-          {{ volume.title }}
-        </a>
-      </li>
-    {% endfor %}
-    </ol>
-  </div>
+
+<div class="container content">
+  <h2>The Library: Teachings of Christ Mind</h2>
+
+  {% include ui/cards.html data=site.data.cmi.volumes source="library" %}
 </div>
 

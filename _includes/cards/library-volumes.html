@@ -1,0 +1,22 @@
+{% comment %}
+<!--
+  library-volumes.html
+  include.data: {{include.data}}
+-->
+{% endcomment %}
+{% for volume in include.data.volumes %}
+  <div class="card">
+    <div class="card-image {{volume.imgClass}}">
+      <a title="{{volume.title}}."
+         href="{{volume.url}}">
+        <img src="{{volume.img}}" alt="">
+      </a>
+    </div>
+    <div class="card-header">
+      {{volume.title}}
+    </div>
+    <div class="card-copy">
+      {{volume.desc}}
+    </div>
+  </div>
+{% endfor %}

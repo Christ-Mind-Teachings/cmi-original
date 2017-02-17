@@ -7,7 +7,10 @@ home: "#"
 nav: nav/np-data.html
 contents: nav/contents.html
 bid: "grad"
+load-fa: true
 ---
 
-This is the {{page.title}} page.
+<div class="custom-side-image">
+  {% include ui/side-image.html %}
+</div>
 
