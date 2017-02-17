@@ -410,7 +410,7 @@ if (!_.isEmpty(domain)) {
 switch (id) {
   //acim contents by year
   case "acimc":
-    source = "nwffacim";
+    source = "nwffacim/acim";
     yml.base = data.base;
     yml.intro = data.intro;
     yml.page = _.map(data.pages, acimc, {base: yml.base, intro: yml.intro});
