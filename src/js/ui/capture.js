@@ -4,10 +4,11 @@
 //var kb = require("keyboardjs");
 var _ = require("underscore");
 var modal = require("./modal");
+var hilight = require("./hilight");
+var capture = require("../ds/capture");
 
 var jPlayer;
 var currentPlayTime = 0;
-var capture;
 
 var audio_playing = false;
 var captureRequested = false;
@@ -15,14 +16,30 @@ var captureId = "";
 
 var increaseSpeed = true;
 
-//initialize capture object
-function initCaptureArray() {
-  capture = {
-    base: window.location.pathname,
-    title: $('.post-title').text(),
-    time: [{id: "p0", seconds: 0}]
+var timeTest = (function() {
+  var enabled = false;
+
+  return {
+    enable: function() {
+      if (enabled) {
+        return;
+      }
+      //show time test menu option
+      console.log("state enabled");
+      $(".time-tester-wrapper").css("display", "block");
+      enabled = true;
+    },
+    disable: function() {
+      if (!enabled) {
+        return;
+      }
+      //hide time test menu option
+      console.log("state disabled");
+      $(".time-tester-wrapper").css("display", "none");
+      enabled = false;
+    }
   };
-}
+})();
 
 function deleteException(message) {
   this.message = message;
@@ -37,24 +54,32 @@ function stateException(message) {
 //called only when captureRequested == true
 function markParagraph(o) {
   var pi = $('#' + o.id).children('i');
-  var pos;
+  var captureLength;
+
+  if (!captureRequested) {
+    return;
+  }
 
   //mark as captured
   if (pi.hasClass("fa-bullseye")) {
     pi.removeClass("fa-bullseye").addClass("fa-check");
-    capture.time.push(o);
+    capture.add(o);
+    timeTest.enable();
     console.log("%s captured at %s", o.id, o.seconds);
   }
   //user clicked a captured paragraph, mark for delete
   else if (pi.hasClass("fa-check")) {
     pi.removeClass("fa-check").addClass("fa-bullseye");
-    pos = _.findLastIndex(capture.time, {id: o.id});
-    if (pos == -1) {
+
+    captureLength = capture.remove(o);
+    if (captureLength == -1) {
       throw new deleteException("can't find id to delete in capture array");
     }
     else {
-      capture.time.splice(pos, 1);
       console.log("%s deleted at %s", o.id, o.seconds);
+      if (captureLength < 2) {
+        timeTest.disable();
+      }
     }
   }
   else {
@@ -66,6 +91,11 @@ function markParagraph(o) {
 
 //add option to sidebar to capture audio play time
 function enableSidebarTimeCapture() {
+
+  if (!transcript_format_complete) {
+    console.log("Formatting for this transcript is incomplete, capture disabled");
+    return;
+  }
 
   //show sidebar menu option
   $('.pmarker-wrapper').css("display", "block");
@@ -82,14 +112,14 @@ function enableSidebarTimeCapture() {
     var data;
     e.preventDefault();
 
-    if (capture.time.length < 2) {
+    if (capture.length() < 2) {
       data = "No data captured yet.";
     }
     else {
-      data = JSON.stringify(capture);
+      data = JSON.stringify(capture.getData());
     }
 
-    $('#audio-data-form').attr('action', capture.base);
+    $('#audio-data-form').attr('action', capture.getBase());
     $('#captured-audio-data').html(data);
     $('.submit-message').html("");
     $('#modal-1').trigger('click');
@@ -103,7 +133,7 @@ function enableSidebarTimeCapture() {
     e.preventDefault();
 
     //if no data yet captured, cancel submit
-    if (capture.time.length < 2) {
+    if (capture.length() < 2) {
       $('.submit-message').html("No data captured yet!");
       return;
     }
@@ -119,12 +149,59 @@ function enableSidebarTimeCapture() {
         $('.submit-message').html("Drat! Your submit failed.");
       });
   });
+
+  //time-tester menu option listener
+  $('.time-tester').on('click', function(e) {
+    e.preventDefault();
+
+    if ($(this).children('i').hasClass('fa-play')) {
+      //run the tester
+      $(this).children('i').removeClass('fa-play').addClass('fa-stop');
+
+      //if capture on turn it off
+      var style = $('#p2 > i').attr('style');
+      if (typeof style == "undefined" || style.length == 0) {
+        toggleMarkers();
+      }
+
+      //setup test
+      console.log("capture test starting");
+      hilight.capture_test.begin(capture.getData());
+
+      //stop the player
+      jPlayer.jPlayer("stop");
+
+      //set playback rate to 1
+      jPlayer.jPlayer("option", "playbackRate", 1);
+      $('.audio-faster').html(" 0");
+      increaseSpeed = true; //reset speed direction
+
+      //scroll to top of page
+      $('html, body').animate({ scrollTop: 0 }, 'fast');
+
+      //start player
+      jPlayer.jPlayer("play");
+    }
+    else {
+      //stop the tester
+      $(this).children('i').removeClass('fa-stop').addClass('fa-play');
+      console.log("capture test ending");
+      hilight.capture_test.end();
+
+      //stop the player
+      jPlayer.jPlayer("stop");
+
+      //scroll to top of page
+      $('html, body').animate({ scrollTop: 0 }, 'fast');
+    }
+  });
+
 }
 
 //create listeners for each paragraph and
 //show rewind and speed player controls
 function createListener() {
-  $('.narrative p i.fa').each(function(idx) {
+  $('.transcript p i.fa').each(function(idx) {
     $(this).on('click', function(e) {
       e.preventDefault();
       captureRequested = true;
@@ -192,36 +269,45 @@ function createListener() {
 }
 
 function toggleMarkers() {
-  var ids = $('.narrative p').attr('id');
-  var fa = $('.narrative p i.fa');
+  var ids = $('.transcript p').attr('id');
+  var fa = $('.transcript p i.fa');
 
   //create markers is not on page
   //- do markers exist?
   if (fa.length != 0) {
     //yes - toggle display
-    $('.narrative p i.fa').toggle();
+    $('.transcript p i.fa').toggle();
+    if ($(".transcript").hasClass("capture")) {
+      $(".transcript").removeClass("capture");
+    }
+    else {
+      $(".transcript").addClass("capture");
+    }
   }
   else if (typeof ids !== "undefined") {
-    //console.log("paragraph id's already defined, adding marker");
-    $('.narrative p').each(function(idx) {
+    console.log("paragraph id's already defined, adding marker");
+    $('.transcript p').each(function(idx) {
       if (idx > 0) {
-        $(this).prepend('<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>');
+        $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
       }
     });
 
+    $(".transcript").addClass("capture");
     createListener();
   }
   else {
     //define id's for each paragraph in the narrative div
     // - these id's are referenced by the timing data
-    $('.narrative p').each(function(idx) {
+    console.log("adding marker to .transcript p");
+    $('.transcript p').each(function(idx) {
       $(this).attr('id', 'p' + idx);
 
       if (idx > 0) {
-        $(this).prepend('<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>');
+        $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
       }
     });
 
+    $(".transcript").addClass("capture");
     createListener();
   }
 }
@@ -229,8 +315,13 @@ function toggleMarkers() {
 module.exports = {
 
   initialize: function(player) {
+    var captureOptions = {
+      base: window.location.pathname,
+      title: $('.post-title').text()
+    };
+
     jPlayer = player;
-    initCaptureArray();
+    capture.init(captureOptions);
   },
 
   play: function(t) {

@@ -37,7 +37,7 @@ defaults:
     values:
       layout: narrative
       source: Way of Mastery
-      surl: /wom/
+      surl: /wom/intro/wom/
       class: wom
 
 # Way of the Heart
@@ -91,7 +91,8 @@ defaults:
     values:
       layout: narrative
       source: Northwest Foundation for ACIM
-      surl: /nwffacim/
+      surl: /nwffacim/intro/nwffacim/
+      class: nwffacim
 
 # ACIM Study Group - many years of sessions
   - scope:
@@ -100,9 +101,8 @@ defaults:
     values:
       bid: acimc
       book: ACIM Study Group
-      home: /nwffacim/acim/acim/
+      home: /nwffacim/intro/acim/
       nav: nav/np-data.html
-      class: nwffacim
       contents: nav/contents.html
 
 # 2002
@@ -227,7 +227,6 @@ defaults:
       home: "#"
       contents: nav/contents.html
       nav: nav/np-data.html
-      class: nwffacim
 
 # Graduation ebook
   - scope:
@@ -237,7 +236,6 @@ defaults:
       bid: grad
       book: Graduation
       home: "#"
-      class: nwffacim
       nav: nav/np-data.html
       contents: nav/contents.html
 
@@ -258,17 +256,15 @@ version:             0.0.6
 
 # Exclusions from the final site
 exclude: [
-  # _wom/woh,
-  # _wom/wot,
-  # _wom/wok,
-  # _wom,
-  # _nwffacim,
-  # _nwffacim/grad,
-  # _nwffacim/yaa,
-  # _nwffacim/acim,
-  # _nwffacim/acim/2002,
+  #  _wom/woh,
+  #  _wom/wot,
+  #  _wom/wok,
+  #  _nwffacim/grad,
+  #  _nwffacim/yaa,
+  #  _nwffacim/acim,
+  #  _nwffacim/acim/2002,
   #  _nwffacim/acim/2003,
-  # _nwffacim/acim/2004,
+  #  _nwffacim/acim/2004,
   #  _nwffacim/acim/2005,
   #  _nwffacim/acim/2006,
   #  _nwffacim/acim/2007,

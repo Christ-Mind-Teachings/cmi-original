@@ -46,10 +46,21 @@ body
  * Container
  *
  * Center the page content.
+ *
+ *    .container
+ *      max-width: 38rem
+ *
+ *    @media (min-width: 38em)
+ *      .container
+ *        max-width: 32rem
+ *
+ *    @media (min-width: 56em)
+ *      .container
+ *
  */
 
 .container
-  max-width: 38rem
+  max-width: 80%
   padding-left:  1rem
   padding-right: 1rem
   margin-left:  auto
@@ -57,11 +68,11 @@ body
 
 @media (min-width: 38em)
   .container
-    max-width: 32rem
+    max-width: 70%
 
 @media (min-width: 56em)
   .container
-    max-width: 38rem
+    max-width: 80%
 
 h1, h2, h3, h4, h5, h6
   line-height: 1.25

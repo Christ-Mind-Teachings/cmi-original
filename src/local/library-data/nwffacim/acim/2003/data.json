@@ -3,8 +3,10 @@
     "audio": "http://www.celestialrealm.com/"
   },
   "year": 2003,
+  "base": "/nwffacim/acim/2003",
+  "intro": "/nwffacim/intro/",
   "pages": [
-    "2003",
+    "*2003",
     {
       "res": {
         "audio": "uploads/2003-01-02_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"

@@ -16,8 +16,13 @@ layout: default
     {% endif %}
   {% endif %}
 
-  {{ content }}
+  <div class="transcript">
+    {{ content }}
+  </div>
   {% if page.nav %}
     {% include {{page.nav}} resource=false %}
   {% endif %}
 </div>
+<script>
+var transcript_format_complete = {{transcript-format-complete}};
+</script>

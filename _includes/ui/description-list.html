@@ -1,8 +1,8 @@
-<!--
+{% comment %}
   ui/description-list
   include.base: {{include.base}}
   include.skip: {{include.skip}}
--->
+{% endcomment %}
 
 {% assign skip = include.skip | default: -1 %}
 {% assign base = include.base | default: "" %}
@@ -11,8 +11,15 @@
 
 {% for book in include.data %}
   {% if skip != book.idx %}
+    {% assign complete = book.complete | default: false %}
+    {% if complete == false %}
+      {% assign class = "<i class='fa fa-fw fa-exclamation'></i>" %}
+    {% endif %}
+
     <header>
-      <a href="{{base | append: book.url}}">{{book.title}}</a>
+      <a href="{{book.url}}">
+        {{class}}&nbsp;{{book.title}}
+      </a>
     </header>
     <section>
       <p>{{book.desc | default: "No description yet"}}</p>

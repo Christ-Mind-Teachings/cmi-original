@@ -1,10 +1,12 @@
 ---
-layout: introduction
+layout: custom
 title: Introduction
 book: Graduation, The End of Illusions
 source: Northwest Foundation for ACIM
-surl: /nwffacim/
-class: grad
+home: "#"
+nav: nav/np-data.html
+contents: nav/contents.html
+bid: "grad"
 ---
 
 This is the {{page.title}} page.

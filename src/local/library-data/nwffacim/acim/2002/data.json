@@ -2,9 +2,11 @@
   "domain": {
     "audio": "http://www.celestialrealm.com/"
   },
+  "base": "/nwffacim/acim/2002",
+  "intro": "/nwffacim/intro/",
   "year": 2002,
   "pages": [
-    "2002",
+    "*2002",
     {
       "fid": "061202",
       "desc": "T31.II Walking with Christ",

@@ -1,96 +1,161 @@
 {
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/wom/audio/wot/"
+  },
   "base": "/wom/wot/",
+  "intro": "/wom/intro/",
   "page": [
     {
+      "fid": "wot/",
       "title": "About",
-      "url": "wot/",
+      "url": "/wom/intro/wot/",
       "idx": 0,
-      "next": "l01/",
-      "prev": "l12/"
+      "next": "/wom/wot/l01/",
+      "prev": "/wom/wot/l12/"
     },
     {
+      "fid": "l01/",
+      "complete": true,
+      "res": {
+        "audio": "L13.mp3"
+      },
       "title": "Lesson One",
-      "url": "l01/",
+      "url": "/wom/wot/l01/",
       "idx": 1,
-      "next": "l02/",
-      "prev": "wot/"
+      "next": "/wom/wot/l02/",
+      "prev": "/wom/intro/wot/"
     },
     {
+      "fid": "l02/",
+      "complete": true,
+      "res": {
+        "audio": "L14.mp3"
+      },
       "title": "Lesson Two",
-      "url": "l02/",
+      "url": "/wom/wot/l02/",
       "idx": 2,
-      "next": "l03/",
-      "prev": "l01/"
+      "next": "/wom/wot/l03/",
+      "prev": "/wom/wot/l01/"
     },
     {
+      "fid": "l03/",
+      "complete": true,
+      "res": {
+        "audio": "L15.mp3"
+      },
       "title": "Lesson Three",
-      "url": "l03/",
+      "url": "/wom/wot/l03/",
       "idx": 3,
-      "next": "l04/",
-      "prev": "l02/"
+      "next": "/wom/wot/l04/",
+      "prev": "/wom/wot/l02/"
     },
     {
+      "fid": "l04/",
+      "complete": true,
+      "res": {
+        "audio": "L16.mp3"
+      },
       "title": "Lesson Four",
-      "url": "l04/",
+      "url": "/wom/wot/l04/",
       "idx": 4,
-      "next": "l05/",
-      "prev": "l03/"
+      "next": "/wom/wot/l05/",
+      "prev": "/wom/wot/l03/"
     },
     {
+      "fid": "l05/",
+      "complete": true,
+      "res": {
+        "audio": "L17.mp3"
+      },
       "title": "Lesson Five",
-      "url": "l05/",
+      "url": "/wom/wot/l05/",
       "idx": 5,
-      "next": "l06/",
-      "prev": "l04/"
+      "next": "/wom/wot/l06/",
+      "prev": "/wom/wot/l04/"
     },
     {
+      "fid": "l06/",
+      "complete": true,
+      "res": {
+        "audio": "L18.mp3"
+      },
       "title": "Lesson Six",
-      "url": "l06/",
+      "url": "/wom/wot/l06/",
       "idx": 6,
-      "next": "l07/",
-      "prev": "l05/"
+      "next": "/wom/wot/l07/",
+      "prev": "/wom/wot/l05/"
     },
     {
+      "fid": "l07/",
+      "complete": true,
+      "res": {
+        "audio": "L19.mp3"
+      },
       "title": "Lesson Seven",
-      "url": "l07/",
+      "url": "/wom/wot/l07/",
       "idx": 7,
-      "next": "l08/",
-      "prev": "l06/"
+      "next": "/wom/wot/l08/",
+      "prev": "/wom/wot/l06/"
     },
     {
+      "fid": "l08/",
+      "complete": true,
+      "res": {
+        "audio": "L20.mp3"
+      },
       "title": "Lesson Eight",
-      "url": "l08/",
+      "url": "/wom/wot/l08/",
       "idx": 8,
-      "next": "l09/",
-      "prev": "l07/"
+      "next": "/wom/wot/l09/",
+      "prev": "/wom/wot/l07/"
     },
     {
+      "fid": "l09/",
+      "complete": true,
+      "res": {
+        "audio": "L21.mp3"
+      },
       "title": "Lesson Nine",
-      "url": "l09/",
+      "url": "/wom/wot/l09/",
       "idx": 9,
-      "next": "l10/",
-      "prev": "l08/"
+      "next": "/wom/wot/l10/",
+      "prev": "/wom/wot/l08/"
     },
     {
+      "fid": "l10/",
+      "complete": true,
+      "res": {
+        "audio": "L22.mp3"
+      },
       "title": "Lesson Ten",
-      "url": "l10/",
+      "url": "/wom/wot/l10/",
       "idx": 10,
-      "next": "l11/",
-      "prev": "l09/"
+      "next": "/wom/wot/l11/",
+      "prev": "/wom/wot/l09/"
     },
     {
+      "fid": "l11/",
+      "complete": true,
+      "res": {
+        "audio": "L23.mp3"
+      },
       "title": "Lesson Eleven",
-      "url": "l11/",
+      "url": "/wom/wot/l11/",
       "idx": 11,
-      "next": "l12/",
-      "prev": "l10/"
+      "next": "/wom/wot/l12/",
+      "prev": "/wom/wot/l10/"
     },
     {
+      "fid": "l12/",
+      "complete": true,
+      "res": {
+        "audio": "L24.mp3"
+      },
       "title": "Lesson Twelve",
-      "url": "l12/",
+      "url": "/wom/wot/l12/",
       "idx": 12,
-      "next": "wot/",
-      "prev": "l11/"
+      "next": "/wom/intro/wot/",
+      "prev": "/wom/wot/l11/"
     }
   ]
 }

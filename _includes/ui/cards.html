@@ -7,7 +7,11 @@
       <div class="card">
         <div class="card-image">
           <a title="Read Transcripts from {{year.year}}."
+             {% comment %}
+             old value of href
              href="{{include.data.base | append: year.year | append: year.about-url}}">
+             {% endcomment %}
+             href="{{include.data.base | append: year.about-url}}">
             <img src="{{include.data.image-base | append: year.image}}" alt="">
           </a>
         </div>

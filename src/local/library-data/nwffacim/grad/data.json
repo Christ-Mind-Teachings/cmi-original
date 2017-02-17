@@ -2,7 +2,9 @@
   "id": "grad",
   "outfile": "grad.json",
   "base": "/nwffacim/grad/",
+  "intro": "/nwffacim/intro/",
   "pages": [
+    "*grad",
     "g000001",
     "g000002",
     "g000003",

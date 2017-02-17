@@ -1,89 +1,149 @@
 {
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/wom/audio/wok/"
+  },
   "base": "/wom/wok/",
+  "intro": "/wom/intro/",
   "page": [
     {
+      "fid": "wok/",
       "title": "About",
-      "url": "wok/",
+      "url": "/wom/intro/wok/",
       "idx": 0,
-      "next": "l01/",
-      "prev": "l11/"
+      "next": "/wom/wok/l01/",
+      "prev": "/wom/wok/l11/"
     },
     {
+      "fid": "l01/",
+      "complete": true,
+      "res": {
+        "audio": "L25.mp3"
+      },
       "title": "Lesson One",
-      "url": "l01/",
+      "url": "/wom/wok/l01/",
       "idx": 1,
-      "next": "l02/",
-      "prev": "wok/"
+      "next": "/wom/wok/l02/",
+      "prev": "/wom/intro/wok/"
     },
     {
+      "fid": "l02/",
+      "complete": true,
+      "res": {
+        "audio": "L26.mp3"
+      },
       "title": "Lesson Two",
-      "url": "l02/",
+      "url": "/wom/wok/l02/",
       "idx": 2,
-      "next": "l03/",
-      "prev": "l01/"
+      "next": "/wom/wok/l03/",
+      "prev": "/wom/wok/l01/"
     },
     {
+      "fid": "l03/",
+      "complete": true,
+      "res": {
+        "audio": "L27.mp3"
+      },
       "title": "Lesson Three",
-      "url": "l03/",
+      "url": "/wom/wok/l03/",
       "idx": 3,
-      "next": "l04/",
-      "prev": "l02/"
+      "next": "/wom/wok/l04/",
+      "prev": "/wom/wok/l02/"
     },
     {
+      "fid": "l04/",
+      "complete": true,
+      "res": {
+        "audio": "L28.mp3"
+      },
       "title": "Lesson Four",
-      "url": "l04/",
+      "url": "/wom/wok/l04/",
       "idx": 4,
-      "next": "l05/",
-      "prev": "l03/"
+      "next": "/wom/wok/l05/",
+      "prev": "/wom/wok/l03/"
     },
     {
+      "fid": "l05/",
+      "complete": true,
+      "res": {
+        "audio": "L29.mp3"
+      },
       "title": "Lesson Five",
-      "url": "l05/",
+      "url": "/wom/wok/l05/",
       "idx": 5,
-      "next": "l06/",
-      "prev": "l04/"
+      "next": "/wom/wok/l06/",
+      "prev": "/wom/wok/l04/"
     },
     {
+      "fid": "l06/",
+      "complete": true,
+      "res": {
+        "audio": "L30.mp3"
+      },
       "title": "Lesson Six",
-      "url": "l06/",
+      "url": "/wom/wok/l06/",
       "idx": 6,
-      "next": "l07/",
-      "prev": "l05/"
+      "next": "/wom/wok/l07/",
+      "prev": "/wom/wok/l05/"
     },
     {
+      "fid": "l07/",
+      "complete": true,
+      "res": {
+        "audio": "L31.mp3"
+      },
       "title": "Lesson Seven",
-      "url": "l07/",
+      "url": "/wom/wok/l07/",
       "idx": 7,
-      "next": "l08/",
-      "prev": "l06/"
+      "next": "/wom/wok/l08/",
+      "prev": "/wom/wok/l06/"
     },
     {
+      "fid": "l08/",
+      "complete": true,
+      "res": {
+        "audio": "L32.mp3"
+      },
       "title": "Lesson Eight",
-      "url": "l08/",
+      "url": "/wom/wok/l08/",
       "idx": 8,
-      "next": "l09/",
-      "prev": "l07/"
+      "next": "/wom/wok/l09/",
+      "prev": "/wom/wok/l07/"
     },
     {
+      "fid": "l09/",
+      "complete": true,
+      "res": {
+        "audio": "L33.mp3"
+      },
       "title": "Lesson Nine",
-      "url": "l09/",
+      "url": "/wom/wok/l09/",
       "idx": 9,
-      "next": "l10/",
-      "prev": "l08/"
+      "next": "/wom/wok/l10/",
+      "prev": "/wom/wok/l08/"
     },
     {
+      "fid": "l10/",
+      "complete": true,
+      "res": {
+        "audio": "L34.mp3"
+      },
       "title": "Lesson Ten",
-      "url": "l10/",
+      "url": "/wom/wok/l10/",
       "idx": 10,
-      "next": "l11/",
-      "prev": "l09/"
+      "next": "/wom/wok/l11/",
+      "prev": "/wom/wok/l09/"
     },
     {
+      "fid": "l11/",
+      "complete": true,
+      "res": {
+        "audio": "L35.mp3"
+      },
       "title": "Lesson Eleven",
-      "url": "l11/",
+      "url": "/wom/wok/l11/",
       "idx": 11,
-      "next": "wok/",
-      "prev": "l10/"
+      "next": "/wom/intro/wok/",
+      "prev": "/wom/wok/l10/"
     }
   ]
 }

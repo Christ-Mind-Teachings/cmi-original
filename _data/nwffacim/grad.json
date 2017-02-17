@@ -1,208 +1,246 @@
 {
   "base": "/nwffacim/grad/",
+  "intro": "/nwffacim/intro/",
   "page": [
     {
-      "title": "Title Page",
-      "url": "g000001/",
+      "title": "Introduction",
+      "url": "/nwffacim/intro/grad/",
       "idx": 0,
-      "next": "g000002/",
-      "prev": "g032991/"
+      "next": "/nwffacim/grad/g000001/",
+      "prev": "/nwffacim/grad/g032991/",
+      "fid": "grad/"
+    },
+    {
+      "title": "Title Page",
+      "url": "/nwffacim/grad/g000001/",
+      "idx": 1,
+      "next": "/nwffacim/grad/g000002/",
+      "prev": "/nwffacim/intro/grad/",
+      "fid": "g000001/"
     },
     {
       "title": "Author's Note",
-      "url": "g000002/",
-      "idx": 1,
-      "next": "g000003/",
-      "prev": "g000001/"
+      "url": "/nwffacim/grad/g000002/",
+      "idx": 2,
+      "next": "/nwffacim/grad/g000003/",
+      "prev": "/nwffacim/grad/g000001/",
+      "fid": "g000002/"
     },
     {
       "title": "Foreword",
-      "url": "g000003/",
-      "idx": 2,
-      "next": "g010491/",
-      "prev": "g000002/"
+      "url": "/nwffacim/grad/g000003/",
+      "idx": 3,
+      "next": "/nwffacim/grad/g010491/",
+      "prev": "/nwffacim/grad/g000002/",
+      "fid": "g000003/"
     },
     {
       "title": "Jan 4, 1991",
-      "url": "g010491/",
-      "idx": 3,
-      "next": "g010591/",
-      "prev": "g000003/"
+      "url": "/nwffacim/grad/g010491/",
+      "idx": 4,
+      "next": "/nwffacim/grad/g010591/",
+      "prev": "/nwffacim/grad/g000003/",
+      "fid": "g010491/"
     },
     {
       "title": "Jan 5, 1991",
-      "url": "g010591/",
-      "idx": 4,
-      "next": "g011491/",
-      "prev": "g010491/"
+      "url": "/nwffacim/grad/g010591/",
+      "idx": 5,
+      "next": "/nwffacim/grad/g011491/",
+      "prev": "/nwffacim/grad/g010491/",
+      "fid": "g010591/"
     },
     {
       "title": "Jan 14, 1991",
-      "url": "g011491/",
-      "idx": 5,
-      "next": "g011591/",
-      "prev": "g010591/"
+      "url": "/nwffacim/grad/g011491/",
+      "idx": 6,
+      "next": "/nwffacim/grad/g011591/",
+      "prev": "/nwffacim/grad/g010591/",
+      "fid": "g011491/"
     },
     {
       "title": "Jan 15, 1991",
-      "url": "g011591/",
-      "idx": 6,
-      "next": "g011691/",
-      "prev": "g011491/"
+      "url": "/nwffacim/grad/g011591/",
+      "idx": 7,
+      "next": "/nwffacim/grad/g011691/",
+      "prev": "/nwffacim/grad/g011491/",
+      "fid": "g011591/"
     },
     {
       "title": "Jan 16, 1991",
-      "url": "g011691/",
-      "idx": 7,
-      "next": "g011891/",
-      "prev": "g011591/"
+      "url": "/nwffacim/grad/g011691/",
+      "idx": 8,
+      "next": "/nwffacim/grad/g011891/",
+      "prev": "/nwffacim/grad/g011591/",
+      "fid": "g011691/"
     },
     {
       "title": "Jan 18, 1991",
-      "url": "g011891/",
-      "idx": 8,
-      "next": "g012091/",
-      "prev": "g011691/"
+      "url": "/nwffacim/grad/g011891/",
+      "idx": 9,
+      "next": "/nwffacim/grad/g012091/",
+      "prev": "/nwffacim/grad/g011691/",
+      "fid": "g011891/"
     },
     {
       "title": "Jan 20, 1991",
-      "url": "g012091/",
-      "idx": 9,
-      "next": "g012591/",
-      "prev": "g011891/"
+      "url": "/nwffacim/grad/g012091/",
+      "idx": 10,
+      "next": "/nwffacim/grad/g012591/",
+      "prev": "/nwffacim/grad/g011891/",
+      "fid": "g012091/"
     },
     {
       "title": "Jan 25, 1991",
-      "url": "g012591/",
-      "idx": 10,
-      "next": "g012791/",
-      "prev": "g012091/"
+      "url": "/nwffacim/grad/g012591/",
+      "idx": 11,
+      "next": "/nwffacim/grad/g012791/",
+      "prev": "/nwffacim/grad/g012091/",
+      "fid": "g012591/"
     },
     {
       "title": "Jan 27, 1991",
-      "url": "g012791/",
-      "idx": 11,
-      "next": "g020291/",
-      "prev": "g012591/"
+      "url": "/nwffacim/grad/g012791/",
+      "idx": 12,
+      "next": "/nwffacim/grad/g020291/",
+      "prev": "/nwffacim/grad/g012591/",
+      "fid": "g012791/"
     },
     {
       "title": "Feb 2, 1991",
-      "url": "g020291/",
-      "idx": 12,
-      "next": "g020591/",
-      "prev": "g012791/"
+      "url": "/nwffacim/grad/g020291/",
+      "idx": 13,
+      "next": "/nwffacim/grad/g020591/",
+      "prev": "/nwffacim/grad/g012791/",
+      "fid": "g020291/"
     },
     {
       "title": "Feb 5, 1991",
-      "url": "g020591/",
-      "idx": 13,
-      "next": "g020691/",
-      "prev": "g020291/"
+      "url": "/nwffacim/grad/g020591/",
+      "idx": 14,
+      "next": "/nwffacim/grad/g020691/",
+      "prev": "/nwffacim/grad/g020291/",
+      "fid": "g020591/"
     },
     {
       "title": "Feb 6, 1991",
-      "url": "g020691/",
-      "idx": 14,
-      "next": "g021291/",
-      "prev": "g020591/"
+      "url": "/nwffacim/grad/g020691/",
+      "idx": 15,
+      "next": "/nwffacim/grad/g021291/",
+      "prev": "/nwffacim/grad/g020591/",
+      "fid": "g020691/"
     },
     {
       "title": "Feb 12, 1991",
-      "url": "g021291/",
-      "idx": 15,
-      "next": "g021391/",
-      "prev": "g020691/"
+      "url": "/nwffacim/grad/g021291/",
+      "idx": 16,
+      "next": "/nwffacim/grad/g021391/",
+      "prev": "/nwffacim/grad/g020691/",
+      "fid": "g021291/"
     },
     {
       "title": "Feb 13, 1991",
-      "url": "g021391/",
-      "idx": 16,
-      "next": "g021491/",
-      "prev": "g021291/"
+      "url": "/nwffacim/grad/g021391/",
+      "idx": 17,
+      "next": "/nwffacim/grad/g021491/",
+      "prev": "/nwffacim/grad/g021291/",
+      "fid": "g021391/"
     },
     {
       "title": "Feb 14, 1991",
-      "url": "g021491/",
-      "idx": 17,
-      "next": "g022091/",
-      "prev": "g021391/"
+      "url": "/nwffacim/grad/g021491/",
+      "idx": 18,
+      "next": "/nwffacim/grad/g022091/",
+      "prev": "/nwffacim/grad/g021391/",
+      "fid": "g021491/"
     },
     {
       "title": "Feb 20, 1991",
-      "url": "g022091/",
-      "idx": 18,
-      "next": "g022591/",
-      "prev": "g021491/"
+      "url": "/nwffacim/grad/g022091/",
+      "idx": 19,
+      "next": "/nwffacim/grad/g022591/",
+      "prev": "/nwffacim/grad/g021491/",
+      "fid": "g022091/"
     },
     {
       "title": "Feb 25, 1991",
-      "url": "g022591/",
-      "idx": 19,
-      "next": "g030291/",
-      "prev": "g022091/"
+      "url": "/nwffacim/grad/g022591/",
+      "idx": 20,
+      "next": "/nwffacim/grad/g030291/",
+      "prev": "/nwffacim/grad/g022091/",
+      "fid": "g022591/"
     },
     {
       "title": "Mar 2, 1991",
-      "url": "g030291/",
-      "idx": 20,
-      "next": "g030891/",
-      "prev": "g022591/"
+      "url": "/nwffacim/grad/g030291/",
+      "idx": 21,
+      "next": "/nwffacim/grad/g030891/",
+      "prev": "/nwffacim/grad/g022591/",
+      "fid": "g030291/"
     },
     {
       "title": "Mar 8, 1991",
-      "url": "g030891/",
-      "idx": 21,
-      "next": "g031491/",
-      "prev": "g030291/"
+      "url": "/nwffacim/grad/g030891/",
+      "idx": 22,
+      "next": "/nwffacim/grad/g031491/",
+      "prev": "/nwffacim/grad/g030291/",
+      "fid": "g030891/"
     },
     {
       "title": "Mar 14, 1991",
-      "url": "g031491/",
-      "idx": 22,
-      "next": "g031991/",
-      "prev": "g030891/"
+      "url": "/nwffacim/grad/g031491/",
+      "idx": 23,
+      "next": "/nwffacim/grad/g031991/",
+      "prev": "/nwffacim/grad/g030891/",
+      "fid": "g031491/"
     },
     {
       "title": "Mar 19, 1991",
-      "url": "g031991/",
-      "idx": 23,
-      "next": "g032091/",
-      "prev": "g031491/"
+      "url": "/nwffacim/grad/g031991/",
+      "idx": 24,
+      "next": "/nwffacim/grad/g032091/",
+      "prev": "/nwffacim/grad/g031491/",
+      "fid": "g031991/"
     },
     {
       "title": "Mar 20, 1991",
-      "url": "g032091/",
-      "idx": 24,
-      "next": "g032191/",
-      "prev": "g031991/"
+      "url": "/nwffacim/grad/g032091/",
+      "idx": 25,
+      "next": "/nwffacim/grad/g032191/",
+      "prev": "/nwffacim/grad/g031991/",
+      "fid": "g032091/"
     },
     {
       "title": "Mar 21, 1991",
-      "url": "g032191/",
-      "idx": 25,
-      "next": "g032291/",
-      "prev": "g032091/"
+      "url": "/nwffacim/grad/g032191/",
+      "idx": 26,
+      "next": "/nwffacim/grad/g032291/",
+      "prev": "/nwffacim/grad/g032091/",
+      "fid": "g032191/"
     },
     {
       "title": "Mar 22, 1991",
-      "url": "g032291/",
-      "idx": 26,
-      "next": "g032591/",
-      "prev": "g032191/"
+      "url": "/nwffacim/grad/g032291/",
+      "idx": 27,
+      "next": "/nwffacim/grad/g032591/",
+      "prev": "/nwffacim/grad/g032191/",
+      "fid": "g032291/"
     },
     {
       "title": "Mar 25, 1991",
-      "url": "g032591/",
-      "idx": 27,
-      "next": "g032991/",
-      "prev": "g032291/"
+      "url": "/nwffacim/grad/g032591/",
+      "idx": 28,
+      "next": "/nwffacim/grad/g032991/",
+      "prev": "/nwffacim/grad/g032291/",
+      "fid": "g032591/"
     },
     {
       "title": "Mar 29, 1991",
-      "url": "g032991/",
-      "idx": 28,
-      "next": "g000001/",
-      "prev": "g032591/"
+      "url": "/nwffacim/grad/g032991/",
+      "idx": 29,
+      "next": "/nwffacim/intro/grad/",
+      "prev": "/nwffacim/grad/g032591/",
+      "fid": "g032991/"
     }
   ]
 }

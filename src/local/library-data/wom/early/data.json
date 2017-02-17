@@ -1,10 +1,11 @@
 {
   "id": "early",
   "base": "/wom/early/",
+  "intro": "/wom/intro/",
   "outfile": "early.json",
   "pages": [
     {
-      "fid": "early",
+      "fid": "*early",
       "title": "About"
     },
     {

@@ -6,7 +6,6 @@ var jPlayer;
 //initialize jQuery plugin 'jPlayer'
 function initialize(config) {
   var url, type, media, options;
-  var hilight_supported = false;
 
   //check if jQuery installed - if not the audio player (jPlayer) should
   //not be on the page.
@@ -31,6 +30,7 @@ function initialize(config) {
   //player config options
   options = {
     ready: function() {
+      var hilight_supported = false;
       $(this).jPlayer("setMedia", media);
 
       //hilight supported when paragraph timing data is loaded

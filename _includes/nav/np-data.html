@@ -5,6 +5,7 @@ Generate next/previous page links from _data files based on page.bid
 
 ** Note: this file sets liquid variable used by the layout
   - page-contains-audio
+  - transcript-format-complete
 
 {% endcomment %}
 
@@ -13,6 +14,22 @@ Generate next/previous page links from _data files based on page.bid
   bid: {{page.bid}}
   include.resource: {{include.resource}}
 -->
+{% assign parent = data.parent %}
+
+{% assign href-prev = {{base}}{{page-data.prev}} %}
+{% assign href-next = {{base}}{{page-data.next}} %}
+
+{% assign prev-test = page-data.pref | remove_first: "/" %}
+{% assign next-test = page-data.pref | remove_first: "/" %}
+
+{% if page-data.prev != prev-test %}
+  {% assign href-prev = {{parent}}{{page-data.prev}} %}
+{% endif %}
+
+{% if page-data.net != next-test %}
+  {% assign href-next = {{parent}}{{page-data.next}} %}
+{% endif %}
+
 {% endcomment %}
 
 {% assign include-resource = include.resource | default: false %}
@@ -22,17 +39,33 @@ Generate next/previous page links from _data files based on page.bid
   {% assign resource = "" %}
 
   {% assign base = data.base %}
+  {% assign intro = data.intro %}
   {% assign key = page.url | remove_first: base %}
-  {% assign p = data.page | where: "url", key %}
+  {% if key == page.url %}
+    {% assign key = page.url | remove_first: intro %}
+  {% endif %}
+  {% assign p = data.page | where: "fid", key %}
   {% assign page-data = p[0] %}
 
   {% comment %}
+    transcript-format-complete, when false, prevents the capture of audio
+    timing data 
+  {% endcomment %}
+  {% assign transcript-format-complete = page-data.complete | default: false %}
+
+  {% comment %}
+  {% endcomment %}
   <!--
     base: {{base}}
+    intro: {{intro}}
     key: {{key}}
-    page-data: {{page-data}}
+    page.url: {{page.url}}
+    {% if page-data %}
+    ** page-data was found for the page **
+    {% else %}
+    ** NO page-data found for page **
+    {% endif %}
   -->
-  {% endcomment %}
 
   {% if include-resource %}
 
@@ -82,12 +115,12 @@ Generate next/previous page links from _data files based on page.bid
   {% endif %}
   <ul class="fa-ul">
     <li>
-      <a title="Previous Page" href="{{base}}{{page-data.prev}}">
+      <a title="Previous Page" href="{{page-data.prev}}">
         <i class="fa-li fa fa-hand-o-left"></i>&nbsp;&nbsp;
       </a>
     </li>
     <li>
-      <a title="Next Page" href="{{base}}{{page-data.next}}">
+      <a title="Next Page" href="{{page-data.next}}">
         <i class="fa-li fa fa-hand-o-right"></i>
       </a>
     </li>

@@ -8,17 +8,46 @@
 {% endcomment %}
 
 <!--
+  load-audio info
   page.bid: {{page.bid}}
 -->
 
 {% if page.bid %}
   {% include nav/resolve.html %}
+    <!--
+      load-audio info
+      page.bid: {{page.bid}}
+      {% if data %}
+      ** A data file was found for page **
+      {% else %}
+      ** NO data file found for page **
+      {% endif %}
+    -->
 
   {% if data %}
     {% assign base = data.base %}
+    {% assign intro = data.intro | default: "not found" %}
     {% assign key = page.url | remove_first: base %}
-    {% assign p = data.page | where: "url", key %}
+    {% if key == page.url %}
+      {% assign key = page.url | remove_first: intro %}
+    {% endif %}
+    {% assign p = data.page | where: "fid", key %}
     {% assign page-data = p[0] %}
+
+    <!--
+      load-audio info
+      page.bid: {{page.bid}}
+
+      base: {{base}}
+      intro: {{intro}}
+      page.url: {{page.url}}
+      key: {{key}}
+      {% if page-data %}
+      ** page-data was found for the page **
+      {% else %}
+      ** NO page-data found for page **
+      {% endif %}
+    -->
 
     {% if page-data.res.audio %}
       {% include script/load-jquery.html %}

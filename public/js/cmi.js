@@ -5183,7 +5183,53 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-},{"./h/wrap":29,"./ui/audio":30,"./util/url":34,"scroll-into-view":24}],28:[function(require,module,exports){
+},{"./h/wrap":30,"./ui/audio":31,"./util/url":35,"scroll-into-view":24}],28:[function(require,module,exports){
+"use strict";
+
+var _ = require("underscore");
+
+var options = {};
+var data = {time: [{id: "p0", seconds: 0}]};
+
+module.exports = {
+
+  init: function(o) {
+    options = o;
+
+    data.base = o.base;
+    data.title = o.title;
+    data.time = [{id: "p0", seconds: 0}];
+  },
+  add: function(o) {
+    data.time.push(o);
+    return data.time.length;
+  },
+
+  remove: function(o) {
+    var pos = _.findLastIndex(data.time, {id: o.id});
+
+    if (pos == -1) {
+      return -1;
+    }
+    else {
+      data.time.splice(pos, 1);
+      return data.time.length;
+    }
+  },
+  length: function() {
+    return data.time.length;
+  },
+  getBase: function() {
+    return data.base;
+  },
+  getData: function() {
+    return data;
+  }
+
+};
+
+
+},{"underscore":25}],29:[function(require,module,exports){
 /*
  * Query hypothes.is API
  *
@@ -5245,7 +5291,7 @@ module.exports = {
 };
 
 
-},{}],29:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 
 "use strict";
 
@@ -5461,7 +5507,7 @@ module.exports = {
 };
 
 
-},{"./api":28,"dom-anchor-text-quote":6,"underscore":25,"wrap-range-text":26}],30:[function(require,module,exports){
+},{"./api":29,"dom-anchor-text-quote":6,"underscore":25,"wrap-range-text":26}],31:[function(require,module,exports){
 var hilight = require("./hilight");
 var capture = require("./capture");
 
@@ -5470,7 +5516,6 @@ var jPlayer;
 //initialize jQuery plugin 'jPlayer'
 function initialize(config) {
   var url, type, media, options;
-  var hilight_supported = false;
 
   //check if jQuery installed - if not the audio player (jPlayer) should
   //not be on the page.
@@ -5495,6 +5540,7 @@ function initialize(config) {
   //player config options
   options = {
     ready: function() {
+      var hilight_supported = false;
       $(this).jPlayer("setMedia", media);
 
       //hilight supported when paragraph timing data is loaded
@@ -5575,33 +5621,49 @@ module.exports = {
 };
 
 
-},{"./capture":31,"./hilight":32}],31:[function(require,module,exports){
+},{"./capture":32,"./hilight":33}],32:[function(require,module,exports){
 
 "use strict";
 
 //var kb = require("keyboardjs");
 var _ = require("underscore");
 var modal = require("./modal");
+var hilight = require("./hilight");
+var capture = require("../ds/capture");
 
 var jPlayer;
 var currentPlayTime = 0;
-var capture;
 
 var audio_playing = false;
-//var recordRequested = false;
 var captureRequested = false;
 var captureId = "";
 
 var increaseSpeed = true;
 
-//initialize capture object
-function initCaptureArray() {
-  capture = {
-    base: window.location.pathname,
-    title: $('.post-title').text(),
-    time: [{id: "p0", seconds: 0}]
+var timeTest = (function() {
+  var enabled = false;
+
+  return {
+    enable: function() {
+      if (enabled) {
+        return;
+      }
+      //show time test menu option
+      console.log("state enabled");
+      $(".time-tester-wrapper").css("display", "block");
+      enabled = true;
+    },
+    disable: function() {
+      if (!enabled) {
+        return;
+      }
+      //hide time test menu option
+      console.log("state disabled");
+      $(".time-tester-wrapper").css("display", "none");
+      enabled = false;
+    }
   };
-}
+})();
 
 function deleteException(message) {
   this.message = message;
@@ -5616,24 +5678,32 @@ function stateException(message) {
 //called only when captureRequested == true
 function markParagraph(o) {
   var pi = $('#' + o.id).children('i');
-  var pos;
+  var captureLength;
+
+  if (!captureRequested) {
+    return;
+  }
 
   //mark as captured
   if (pi.hasClass("fa-bullseye")) {
     pi.removeClass("fa-bullseye").addClass("fa-check");
-    capture.time.push(o);
+    capture.add(o);
+    timeTest.enable();
     console.log("%s captured at %s", o.id, o.seconds);
   }
   //user clicked a captured paragraph, mark for delete
   else if (pi.hasClass("fa-check")) {
     pi.removeClass("fa-check").addClass("fa-bullseye");
-    pos = _.findLastIndex(capture.time, {id: o.id});
-    if (pos == -1) {
+
+    captureLength = capture.remove(o);
+    if (captureLength == -1) {
       throw new deleteException("can't find id to delete in capture array");
     }
     else {
-      capture.time.splice(pos, 1);
       console.log("%s deleted at %s", o.id, o.seconds);
+      if (captureLength < 2) {
+        timeTest.disable();
+      }
     }
   }
   else {
@@ -5645,6 +5715,11 @@ function markParagraph(o) {
 
 //add option to sidebar to capture audio play time
 function enableSidebarTimeCapture() {
+
+  if (!transcript_format_complete) {
+    console.log("Formatting for this transcript is incomplete, capture disabled");
+    return;
+  }
 
   //show sidebar menu option
   $('.pmarker-wrapper').css("display", "block");
@@ -5661,14 +5736,14 @@ function enableSidebarTimeCapture() {
     var data;
     e.preventDefault();
 
-    if (capture.time.length < 2) {
+    if (capture.length() < 2) {
       data = "No data captured yet.";
     }
     else {
-      data = JSON.stringify(capture);
+      data = JSON.stringify(capture.getData());
     }
 
-    $('#audio-data-form').attr('action', capture.base);
+    $('#audio-data-form').attr('action', capture.getBase());
     $('#captured-audio-data').html(data);
     $('.submit-message').html("");
     $('#modal-1').trigger('click');
@@ -5682,7 +5757,7 @@ function enableSidebarTimeCapture() {
     e.preventDefault();
 
     //if no data yet captured, cancel submit
-    if (capture.time.length < 2) {
+    if (capture.length() < 2) {
       $('.submit-message').html("No data captured yet!");
       return;
     }
@@ -5698,12 +5773,59 @@ function enableSidebarTimeCapture() {
         $('.submit-message').html("Drat! Your submit failed.");
       });
   });
+
+  //time-tester menu option listener
+  $('.time-tester').on('click', function(e) {
+    e.preventDefault();
+
+    if ($(this).children('i').hasClass('fa-play')) {
+      //run the tester
+      $(this).children('i').removeClass('fa-play').addClass('fa-stop');
+
+      //if capture on turn it off
+      var style = $('#p2 > i').attr('style');
+      if (typeof style == "undefined" || style.length == 0) {
+        toggleMarkers();
+      }
+
+      //setup test
+      console.log("capture test starting");
+      hilight.capture_test.begin(capture.getData());
+
+      //stop the player
+      jPlayer.jPlayer("stop");
+
+      //set playback rate to 1
+      jPlayer.jPlayer("option", "playbackRate", 1);
+      $('.audio-faster').html(" 0");
+      increaseSpeed = true; //reset speed direction
+
+      //scroll to top of page
+      $('html, body').animate({ scrollTop: 0 }, 'fast');
+
+      //start player
+      jPlayer.jPlayer("play");
+    }
+    else {
+      //stop the tester
+      $(this).children('i').removeClass('fa-stop').addClass('fa-play');
+      console.log("capture test ending");
+      hilight.capture_test.end();
+
+      //stop the player
+      jPlayer.jPlayer("stop");
+
+      //scroll to top of page
+      $('html, body').animate({ scrollTop: 0 }, 'fast');
+    }
+  });
+
 }
 
 //create listeners for each paragraph and
 //show rewind and speed player controls
 function createListener() {
-  $('.narrative p i.fa').each(function(idx) {
+  $('.transcript p i.fa').each(function(idx) {
     $(this).on('click', function(e) {
       e.preventDefault();
       captureRequested = true;
@@ -5770,155 +5892,60 @@ function createListener() {
   });
 }
 
-//if tString contains ':' indicates minutes and or hours
-function convertTime(tString) {
-  var t = tString.split(":");
-  var seconds, minutes, hours;
-  var total;
-
-  switch(t.length) {
-    case 1:
-      total = Number.parseFloat(t[0], 10);
-      break;
-    case 2:
-      seconds = Number.parseFloat(t[1], 10);
-      minutes = Number.parseFloat(t[0], 10) * 60;
-      total = minutes + seconds;
-      break;
-    case 3:
-      seconds = Number.parseFloat(t[2], 10);
-      minutes = Number.parseFloat(t[1], 10) * 60;
-      hours = Number.parseFloat(t[2], 10) * 3600;
-      total = hours + minutes + seconds;
-      break;
-  }
-
-  return _.isNaN(total) ? -1 : total;
-}
-
 function toggleMarkers() {
-  var ids = $('.narrative p').attr('id');
-  var fa = $('.narrative p i.fa');
+  var ids = $('.transcript p').attr('id');
+  var fa = $('.transcript p i.fa');
 
   //create markers is not on page
   //- do markers exist?
   if (fa.length != 0) {
     //yes - toggle display
-    $('.narrative p i.fa').toggle();
+    $('.transcript p i.fa').toggle();
+    if ($(".transcript").hasClass("capture")) {
+      $(".transcript").removeClass("capture");
+    }
+    else {
+      $(".transcript").addClass("capture");
+    }
   }
   else if (typeof ids !== "undefined") {
-    //console.log("paragraph id's already defined, adding marker");
-    $('.narrative p').each(function(idx) {
+    console.log("paragraph id's already defined, adding marker");
+    $('.transcript p').each(function(idx) {
       if (idx > 0) {
-        $(this).prepend('<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>');
+        $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
       }
     });
 
+    $(".transcript").addClass("capture");
     createListener();
   }
   else {
     //define id's for each paragraph in the narrative div
     // - these id's are referenced by the timing data
-    $('.narrative p').each(function(idx) {
+    console.log("adding marker to .transcript p");
+    $('.transcript p').each(function(idx) {
       $(this).attr('id', 'p' + idx);
 
       if (idx > 0) {
-        $(this).prepend('<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>');
+        $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
       }
     });
 
+    $(".transcript").addClass("capture");
     createListener();
   }
 }
 
-//function listShortCuts() {
-  //console.log('m: record current audio playback time');
-  //console.log('d: delete last recorded playback time');
-  //console.log('l: list recorded playback times');
-  //console.log('cl: clear recorded playback times');
-  //console.log('s: seek audio playback to given time (mm:ss.sss)');
-  //console.log('x: show/hide paragraph markers');
-  //console.log('?: show this list');
-//}
-
 module.exports = {
 
   initialize: function(player) {
+    var captureOptions = {
+      base: window.location.pathname,
+      title: $('.post-title').text()
+    };
 
     jPlayer = player;
-    initCaptureArray();
-
-    //?: list keyboard shortcuts
-    //kb.bind('?', function(e) {
-      //listShortCuts();
-    //});
-
-    //x: add markers
-    //kb.bind('x', function(e) {
-      //toggleMarkers();
-    //});
-
-    //m: indicates to store current audio play time
-    //kb.bind('m', function(e) {
-      //if (audio_playing) {
-        //recordRequested = true;
-      //}
-      //else {
-        //console.log("capture enabled when audio is playing");
-      //}
-    //});
-
-    //d: delete most recent audio play time
-    //kb.bind('d', function(e) {
-      //var t;
-
-      ////don't delete the first item, (has a time of zero)
-      //if (capture.time.length > 1) {
-        //var t = capture.time.pop();
-
-        //if (typeof t !== "undefined") {
-          //console.log('deleted: %s', t);
-        //}
-      //}
-    //});
-
-    //l: list timing object
-    //kb.bind('l', function(e) {
-      //var time;
-      //if (capture.time.length > 1) {
-        //time = JSON.stringify(capture);
-        //console.log(time);
-        //alert(time);
-      //}
-      //else {
-        //console.log("no data captured")
-      //}
-    //});
-
-    //s: seek to a specific time, prompt user for time
-    //kb.bind('s', function(e0) {
-      //var tString = prompt("Play at specified time");
-      //var t;
-      //if (tString !== null) {
-        //t = convertTime(tString);
-        //console.log("Input: %s, time: %s", tString, t);
-
-        //if (t > -1) {
-          //if (typeof jPlayer !== "undefined") {
-            //jPlayer.jPlayer("play", t);
-          //}
-          //else {
-            //console.log("jPlayer is not defined in capture.js");
-          //}
-        //}
-      //}
-    //});
-
-    //c: clear array
-    //kb.bind('c + l', function(e) {
-      //initCaptureArray();
-      //console.log("cleared");
-    //});
+    capture.init(captureOptions);
   },
 
   play: function(t) {
@@ -5939,18 +5966,6 @@ module.exports = {
     //store current time
     currentPlayTime = t;
 
-    //recordRequested comes from the keyboard
-    // ** doesn't make sense to record time from both click
-    //    and keyboard
-    //if (recordRequested) {
-      //capture.time.push(t);
-      //console.log('captured: %s', t);
-      //recordRequested = false;
-    //}
-
-    //captureRequested comes from a paragraph click
-    // ** doesn't make sense to record time from both click
-    //    and keyboard
     if (captureRequested) {
       markParagraph({
         id: captureId,
@@ -5964,7 +5979,7 @@ module.exports = {
 
 };
 
-},{"./modal":33,"underscore":25}],32:[function(require,module,exports){
+},{"../ds/capture":28,"./hilight":33,"./modal":34,"underscore":25}],33:[function(require,module,exports){
 /*
  * NOTE:
  *
@@ -5978,16 +5993,20 @@ var _ = require("underscore");
 
 //default class to highlight transcript paragraphs during audio playback
 var hilightClass = "hilite";
+var enabled = false;
+
+//real or test data
+var timing_data;
 
 //paragraph timing pointers
 var locptr = -1;
 var prevptr = -1;
 
 function showNscroll(idx) {
-  var tinfo = cmi_audio_timing_data.time[idx];
+  var tinfo = timing_data.time[idx];
 
   if (prevptr > -1) {
-    $("#" + cmi_audio_timing_data.time[prevptr].id).removeClass(hilightClass);
+    $("#" + timing_data.time[prevptr].id).removeClass(hilightClass);
   }
 
   $("#" + tinfo.id).addClass(hilightClass);
@@ -5998,11 +6017,11 @@ function showNscroll(idx) {
 }
 
 function getTime(idx) {
-  if (idx < 0 || idx >= cmi_audio_timing_data.time.length ) {
+  if (idx < 0 || idx >= timing_data.time.length ) {
     return 60 * 60 *24; //return a big number
   }
 
-  return cmi_audio_timing_data.time[idx].seconds;
+  return timing_data.time[idx].seconds;
 }
 
 //audio is playing: play time at arg: current
@@ -6015,7 +6034,6 @@ function processCurrentTime(current) {
 }
 
 module.exports = {
-  enabled: false,
 
   //highlight supported when timing data available
   initialize: function(css_class) {
@@ -6023,8 +6041,12 @@ module.exports = {
     if (typeof window.cmi_audio_timing_data !== "undefined") {
       console.log("timing data available");
 
+      //do this so we can assign test data when
+      //cmi_audio_timing_data is not present
+      timing_data = cmi_audio_timing_data;
+
       //indicate timing data available
-      this.enabled = true;
+      enabled = true;
 
       //define id's for each paragraph in the narrative div
       // - these id's are referenced by the timing data
@@ -6037,11 +6059,22 @@ module.exports = {
       hilightClass = css_class;
     }
 
-    return this.enabled;
+    return enabled;
   },
 
+  //enable hilight for test data collected by the user
+  // - called by module capture.js
+  capture_test: {
+    begin: function(test_data) {
+      enabled = true;
+      timing_data = test_data;
+    },
+    end: function() {
+      enabled = false;
+    }
+  },
   update_time: function(time) {
-    if (!this.enabled) {
+    if (!enabled) {
       return;
     }
     processCurrentTime(time);
@@ -6055,24 +6088,24 @@ module.exports = {
   seeked: function(time) {
     console.log("seeked event at %s", time);
 
-    if (!this.enabled) {
+    if (!enabled) {
       return;
     }
 
     //we don't know if seeked time is earlier or later than
     //the current time so we look through the timing array
-    locptr = _.findIndex(cmi_audio_timing_data.time, function(t) {
+    locptr = _.findIndex(timing_data.time, function(t) {
       return time > t.seconds;
     });
 
     if (locptr != -1) {
-      console.log("locptr now at time %s", cmi_audio_timing_data.time[locptr].seconds);
+      console.log("locptr now at time %s", timing_data.time[locptr].seconds);
     }
   },
   ended: function(time) {
     console.log("play ended at: %s", time);
 
-    if (!this.enabled) {
+    if (!enabled) {
       return;
     }
 
@@ -6084,7 +6117,7 @@ module.exports = {
 };
 
 
-},{"scroll-into-view":24,"underscore":25}],33:[function(require,module,exports){
+},{"scroll-into-view":24,"underscore":25}],34:[function(require,module,exports){
 "use strict";
 
 module.exports = {
@@ -6112,7 +6145,7 @@ module.exports = {
 };
 
 
-},{}],34:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 /*
  * Url utilities
  */

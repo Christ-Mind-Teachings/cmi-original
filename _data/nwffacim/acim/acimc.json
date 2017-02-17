@@ -1,110 +1,126 @@
 {
   "base": "/nwffacim/acim/",
+  "intro": "/nwffacim/intro/",
   "page": [
     {
       "title": "About ACIM Study Group ",
-      "url": "acim/",
+      "url": "/nwffacim/intro/acim/",
       "idx": 0,
-      "next": "2002/",
-      "prev": "2015/"
+      "next": "/nwffacim/intro/2002/",
+      "prev": "/nwffacim/intro/2015/",
+      "fid": "acim/"
     },
     {
-      "title": "About Year 2002",
-      "url": "2002/2002/",
+      "title": "2002",
+      "url": "/nwffacim/intro/2002/",
       "idx": 1,
-      "next": "2003/",
-      "prev": "acim/"
+      "next": "/nwffacim/intro/2003/",
+      "prev": "/nwffacim/intro/acim/",
+      "fid": "2002/"
     },
     {
-      "title": "About Year 2003",
-      "url": "2003/2003/",
+      "title": "2003",
+      "url": "/nwffacim/intro/2003/",
       "idx": 2,
-      "next": "2004/",
-      "prev": "2002/"
+      "next": "/nwffacim/intro/2004/",
+      "prev": "/nwffacim/intro/2002/",
+      "fid": "2003/"
     },
     {
-      "title": "About Year 2004",
-      "url": "2004/2004/",
+      "title": "2004",
+      "url": "/nwffacim/intro/2004/",
       "idx": 3,
-      "next": "2005/",
-      "prev": "2003/"
+      "next": "/nwffacim/intro/2005/",
+      "prev": "/nwffacim/intro/2003/",
+      "fid": "2004/"
     },
     {
-      "title": "About Year 2005",
-      "url": "2005/2005/",
+      "title": "2005",
+      "url": "/nwffacim/intro/2005/",
       "idx": 4,
-      "next": "2006/",
-      "prev": "2004/"
+      "next": "/nwffacim/intro/2006/",
+      "prev": "/nwffacim/intro/2004/",
+      "fid": "2005/"
     },
     {
-      "title": "About Year 2006",
-      "url": "2006/2006/",
+      "title": "2006",
+      "url": "/nwffacim/intro/2006/",
       "idx": 5,
-      "next": "2007/",
-      "prev": "2005/"
+      "next": "/nwffacim/intro/2007/",
+      "prev": "/nwffacim/intro/2005/",
+      "fid": "2006/"
     },
     {
-      "title": "About Year 2007",
-      "url": "2007/2007/",
+      "title": "2007",
+      "url": "/nwffacim/intro/2007/",
       "idx": 6,
-      "next": "2008/",
-      "prev": "2006/"
+      "next": "/nwffacim/intro/2008/",
+      "prev": "/nwffacim/intro/2006/",
+      "fid": "2007/"
     },
     {
-      "title": "About Year 2008",
-      "url": "2008/2008/",
+      "title": "2008",
+      "url": "/nwffacim/intro/2008/",
       "idx": 7,
-      "next": "2009/",
-      "prev": "2007/"
+      "next": "/nwffacim/intro/2009/",
+      "prev": "/nwffacim/intro/2007/",
+      "fid": "2008/"
     },
     {
-      "title": "About Year 2009",
-      "url": "2009/2009/",
+      "title": "2009",
+      "url": "/nwffacim/intro/2009/",
       "idx": 8,
-      "next": "2010/",
-      "prev": "2008/"
+      "next": "/nwffacim/intro/2010/",
+      "prev": "/nwffacim/intro/2008/",
+      "fid": "2009/"
     },
     {
-      "title": "About Year 2010",
-      "url": "2010/2010/",
+      "title": "2010",
+      "url": "/nwffacim/intro/2010/",
       "idx": 9,
-      "next": "2011/",
-      "prev": "2009/"
+      "next": "/nwffacim/intro/2011/",
+      "prev": "/nwffacim/intro/2009/",
+      "fid": "2010/"
     },
     {
-      "title": "About Year 2011",
-      "url": "2011/2011/",
+      "title": "2011",
+      "url": "/nwffacim/intro/2011/",
       "idx": 10,
-      "next": "2012/",
-      "prev": "2010/"
+      "next": "/nwffacim/intro/2012/",
+      "prev": "/nwffacim/intro/2010/",
+      "fid": "2011/"
     },
     {
-      "title": "About Year 2012",
-      "url": "2012/2012/",
+      "title": "2012",
+      "url": "/nwffacim/intro/2012/",
       "idx": 11,
-      "next": "2013/",
-      "prev": "2011/"
+      "next": "/nwffacim/intro/2013/",
+      "prev": "/nwffacim/intro/2011/",
+      "fid": "2012/"
     },
     {
-      "title": "About Year 2013",
-      "url": "2013/2013/",
+      "title": "2013",
+      "url": "/nwffacim/intro/2013/",
       "idx": 12,
-      "next": "2014/",
-      "prev": "2012/"
+      "next": "/nwffacim/intro/2014/",
+      "prev": "/nwffacim/intro/2012/",
+      "fid": "2013/"
     },
     {
-      "title": "About Year 2014",
-      "url": "2014/2014/",
+      "title": "2014",
+      "url": "/nwffacim/intro/2014/",
       "idx": 13,
-      "next": "2015/",
-      "prev": "2013/"
+      "next": "/nwffacim/intro/2015/",
+      "prev": "/nwffacim/intro/2013/",
+      "fid": "2014/"
     },
     {
-      "title": "About Year 2015",
-      "url": "2015/2015/",
+      "title": "2015",
+      "url": "/nwffacim/intro/2015/",
       "idx": 14,
-      "next": "acim/",
-      "prev": "2014/"
+      "next": "/nwffacim/intro/acim/",
+      "prev": "/nwffacim/intro/2014/",
+      "fid": "2015/"
     }
   ]
 }

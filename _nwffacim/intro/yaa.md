@@ -3,8 +3,10 @@ layout: custom
 title: Introduction
 book: You Are the Answer, A Journey of Awakening
 source: Northwest Foundation for ACIM
-surl: /nwffacim/
-id: "yaa"
+home: "#"
+contents: nav/contents.html
+nav: nav/np-data.html
+bid: "yaa"
 ---
 {% comment %}
 This is the {{page.book}} page.

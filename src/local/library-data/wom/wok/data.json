@@ -1,19 +1,91 @@
 {
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/wom/audio/wok/"
+  },
   "id": "wom",
   "outfile": "wok.json",
   "base": "/wom/wok/",
+  "intro": "/wom/intro/",
   "pages": [
-    "wok",
-    "l01",
-    "l02",
-    "l03",
-    "l04",
-    "l05",
-    "l06",
-    "l07",
-    "l08",
-    "l09",
-    "l10",
-    "l11"
+    {
+      "fid": "*wok"
+    },
+    {
+      "fid": "l01",
+      "complete": true,
+      "res": {
+        "audio": "L25.mp3"
+      }
+    },
+    {
+      "fid": "l02",
+      "complete": true,
+      "res": {
+        "audio": "L26.mp3"
+      }
+    },
+    {
+      "fid": "l03",
+      "complete": true,
+      "res": {
+        "audio": "L27.mp3"
+      }
+    },
+    {
+      "fid": "l04",
+      "complete": true,
+      "res": {
+        "audio": "L28.mp3"
+      }
+    },
+    {
+      "fid": "l05",
+      "complete": true,
+      "res": {
+        "audio": "L29.mp3"
+      }
+    },
+    {
+      "fid": "l06",
+      "complete": true,
+      "res": {
+        "audio": "L30.mp3"
+      }
+    },
+    {
+      "fid": "l07",
+      "complete": true,
+      "res": {
+        "audio": "L31.mp3"
+      }
+    },
+    {
+      "fid": "l08",
+      "complete": true,
+      "res": {
+        "audio": "L32.mp3"
+      }
+    },
+    {
+      "fid": "l09",
+      "complete": true,
+      "res": {
+        "audio": "L33.mp3"
+      }
+    },
+    {
+      "fid": "l10",
+      "complete": true,
+      "res": {
+        "audio": "L34.mp3"
+      }
+    },
+    {
+      "fid": "l11",
+      "complete": true,
+      "res": {
+        "audio": "L35.mp3"
+      }
+    }
   ]
 }

@@ -1,292 +1,334 @@
 {
   "base": "/nwffacim/acim/2005/",
+  "intro": "/nwffacim/intro/",
   "page": [
     {
-      "url": "2005/",
+      "url": "/nwffacim/intro/2005/",
       "idx": 0,
       "title": "About",
-      "next": "010205/",
-      "prev": "121805/"
+      "next": "/nwffacim/acim/2005/010205/",
+      "prev": "/nwffacim/acim/2005/121805/",
+      "fid": "2005/"
     },
     {
-      "url": "010205/",
+      "url": "/nwffacim/acim/2005/010205/",
       "idx": 1,
       "title": "Jan 2, 2005",
-      "next": "011605/",
-      "prev": "2005/"
+      "next": "/nwffacim/acim/2005/011605/",
+      "prev": "/nwffacim/intro/2005/",
+      "fid": "010205/"
     },
     {
-      "url": "011605/",
+      "url": "/nwffacim/acim/2005/011605/",
       "idx": 2,
       "title": "Jan 16, 2005",
-      "next": "012305/",
-      "prev": "010205/"
+      "next": "/nwffacim/acim/2005/012305/",
+      "prev": "/nwffacim/acim/2005/010205/",
+      "fid": "011605/"
     },
     {
-      "url": "012305/",
+      "url": "/nwffacim/acim/2005/012305/",
       "idx": 3,
       "title": "Jan 23, 2005",
-      "next": "013005/",
-      "prev": "011605/"
+      "next": "/nwffacim/acim/2005/013005/",
+      "prev": "/nwffacim/acim/2005/011605/",
+      "fid": "012305/"
     },
     {
-      "url": "013005/",
+      "url": "/nwffacim/acim/2005/013005/",
       "idx": 4,
       "title": "Jan 30, 2005",
-      "next": "021305/",
-      "prev": "012305/"
+      "next": "/nwffacim/acim/2005/021305/",
+      "prev": "/nwffacim/acim/2005/012305/",
+      "fid": "013005/"
     },
     {
-      "url": "021305/",
+      "url": "/nwffacim/acim/2005/021305/",
       "idx": 5,
       "title": "Feb 13, 2005",
-      "next": "022005/",
-      "prev": "013005/"
+      "next": "/nwffacim/acim/2005/022005/",
+      "prev": "/nwffacim/acim/2005/013005/",
+      "fid": "021305/"
     },
     {
-      "url": "022005/",
+      "url": "/nwffacim/acim/2005/022005/",
       "idx": 6,
       "title": "Feb 20, 2005",
-      "next": "030605/",
-      "prev": "021305/"
+      "next": "/nwffacim/acim/2005/030605/",
+      "prev": "/nwffacim/acim/2005/021305/",
+      "fid": "022005/"
     },
     {
-      "url": "030605/",
+      "url": "/nwffacim/acim/2005/030605/",
       "idx": 7,
       "title": "Mar 6, 2005",
-      "next": "031305/",
-      "prev": "022005/"
+      "next": "/nwffacim/acim/2005/031305/",
+      "prev": "/nwffacim/acim/2005/022005/",
+      "fid": "030605/"
     },
     {
-      "url": "031305/",
+      "url": "/nwffacim/acim/2005/031305/",
       "idx": 8,
       "title": "Mar 13, 2005",
-      "next": "032705/",
-      "prev": "030605/"
+      "next": "/nwffacim/acim/2005/032705/",
+      "prev": "/nwffacim/acim/2005/030605/",
+      "fid": "031305/"
     },
     {
-      "url": "032705/",
+      "url": "/nwffacim/acim/2005/032705/",
       "idx": 9,
       "title": "Mar 27, 2005",
-      "next": "040305/",
-      "prev": "031305/"
+      "next": "/nwffacim/acim/2005/040305/",
+      "prev": "/nwffacim/acim/2005/031305/",
+      "fid": "032705/"
     },
     {
-      "url": "040305/",
+      "url": "/nwffacim/acim/2005/040305/",
       "idx": 10,
       "title": "Apr 3, 2005",
-      "next": "041005/",
-      "prev": "032705/"
+      "next": "/nwffacim/acim/2005/041005/",
+      "prev": "/nwffacim/acim/2005/032705/",
+      "fid": "040305/"
     },
     {
-      "url": "041005/",
+      "url": "/nwffacim/acim/2005/041005/",
       "idx": 11,
       "title": "Apr 10, 2005",
-      "next": "041705/",
-      "prev": "040305/"
+      "next": "/nwffacim/acim/2005/041705/",
+      "prev": "/nwffacim/acim/2005/040305/",
+      "fid": "041005/"
     },
     {
-      "url": "041705/",
+      "url": "/nwffacim/acim/2005/041705/",
       "idx": 12,
       "title": "Apr 17, 2005",
-      "next": "042405/",
-      "prev": "041005/"
+      "next": "/nwffacim/acim/2005/042405/",
+      "prev": "/nwffacim/acim/2005/041005/",
+      "fid": "041705/"
     },
     {
-      "url": "042405/",
+      "url": "/nwffacim/acim/2005/042405/",
       "idx": 13,
       "title": "Apr 24, 2005",
-      "next": "050105/",
-      "prev": "041705/"
+      "next": "/nwffacim/acim/2005/050105/",
+      "prev": "/nwffacim/acim/2005/041705/",
+      "fid": "042405/"
     },
     {
-      "url": "050105/",
+      "url": "/nwffacim/acim/2005/050105/",
       "idx": 14,
       "title": "May 1, 2005",
-      "next": "050805/",
-      "prev": "042405/"
+      "next": "/nwffacim/acim/2005/050805/",
+      "prev": "/nwffacim/acim/2005/042405/",
+      "fid": "050105/"
     },
     {
-      "url": "050805/",
+      "url": "/nwffacim/acim/2005/050805/",
       "idx": 15,
       "title": "May 8, 2005",
-      "next": "052205/",
-      "prev": "050105/"
+      "next": "/nwffacim/acim/2005/052205/",
+      "prev": "/nwffacim/acim/2005/050105/",
+      "fid": "050805/"
     },
     {
-      "url": "052205/",
+      "url": "/nwffacim/acim/2005/052205/",
       "idx": 16,
       "title": "May 22, 2005",
-      "next": "060505/",
-      "prev": "050805/"
+      "next": "/nwffacim/acim/2005/060505/",
+      "prev": "/nwffacim/acim/2005/050805/",
+      "fid": "052205/"
     },
     {
-      "url": "060505/",
+      "url": "/nwffacim/acim/2005/060505/",
       "idx": 17,
       "title": "Jun 5, 2005",
-      "next": "061205/",
-      "prev": "052205/"
+      "next": "/nwffacim/acim/2005/061205/",
+      "prev": "/nwffacim/acim/2005/052205/",
+      "fid": "060505/"
     },
     {
-      "url": "061205/",
+      "url": "/nwffacim/acim/2005/061205/",
       "idx": 18,
       "title": "Jun 12, 2005",
-      "next": "061905/",
-      "prev": "060505/"
+      "next": "/nwffacim/acim/2005/061905/",
+      "prev": "/nwffacim/acim/2005/060505/",
+      "fid": "061205/"
     },
     {
-      "url": "061905/",
+      "url": "/nwffacim/acim/2005/061905/",
       "idx": 19,
       "title": "Jun 19, 2005",
-      "next": "070305/",
-      "prev": "061205/"
+      "next": "/nwffacim/acim/2005/070305/",
+      "prev": "/nwffacim/acim/2005/061205/",
+      "fid": "061905/"
     },
     {
-      "url": "070305/",
+      "url": "/nwffacim/acim/2005/070305/",
       "idx": 20,
       "title": "Jul 3, 2005",
-      "next": "071005/",
-      "prev": "061905/"
+      "next": "/nwffacim/acim/2005/071005/",
+      "prev": "/nwffacim/acim/2005/061905/",
+      "fid": "070305/"
     },
     {
-      "url": "071005/",
+      "url": "/nwffacim/acim/2005/071005/",
       "idx": 21,
       "title": "Jul 10, 2005",
-      "next": "071705/",
-      "prev": "070305/"
+      "next": "/nwffacim/acim/2005/071705/",
+      "prev": "/nwffacim/acim/2005/070305/",
+      "fid": "071005/"
     },
     {
-      "url": "071705/",
+      "url": "/nwffacim/acim/2005/071705/",
       "idx": 22,
       "title": "Jul 17, 2005",
-      "next": "072405/",
-      "prev": "071005/"
+      "next": "/nwffacim/acim/2005/072405/",
+      "prev": "/nwffacim/acim/2005/071005/",
+      "fid": "071705/"
     },
     {
-      "url": "072405/",
+      "url": "/nwffacim/acim/2005/072405/",
       "idx": 23,
       "title": "Jul 24, 2005",
-      "next": "080705/",
-      "prev": "071705/"
+      "next": "/nwffacim/acim/2005/080705/",
+      "prev": "/nwffacim/acim/2005/071705/",
+      "fid": "072405/"
     },
     {
-      "url": "080705/",
+      "url": "/nwffacim/acim/2005/080705/",
       "idx": 24,
       "title": "Aug 7, 2005",
-      "next": "081405/",
-      "prev": "072405/"
+      "next": "/nwffacim/acim/2005/081405/",
+      "prev": "/nwffacim/acim/2005/072405/",
+      "fid": "080705/"
     },
     {
-      "url": "081405/",
+      "url": "/nwffacim/acim/2005/081405/",
       "idx": 25,
       "title": "Aug 14, 2005",
-      "next": "082105/",
-      "prev": "080705/"
+      "next": "/nwffacim/acim/2005/082105/",
+      "prev": "/nwffacim/acim/2005/080705/",
+      "fid": "081405/"
     },
     {
-      "url": "082105/",
+      "url": "/nwffacim/acim/2005/082105/",
       "idx": 26,
       "title": "Aug 21, 2005",
-      "next": "082805/",
-      "prev": "081405/"
+      "next": "/nwffacim/acim/2005/082805/",
+      "prev": "/nwffacim/acim/2005/081405/",
+      "fid": "082105/"
     },
     {
-      "url": "082805/",
+      "url": "/nwffacim/acim/2005/082805/",
       "idx": 27,
       "title": "Aug 28, 2005",
-      "next": "090405/",
-      "prev": "082105/"
+      "next": "/nwffacim/acim/2005/090405/",
+      "prev": "/nwffacim/acim/2005/082105/",
+      "fid": "082805/"
     },
     {
-      "url": "090405/",
+      "url": "/nwffacim/acim/2005/090405/",
       "idx": 28,
       "title": "Sep 4, 2005",
-      "next": "091105/",
-      "prev": "082805/"
+      "next": "/nwffacim/acim/2005/091105/",
+      "prev": "/nwffacim/acim/2005/082805/",
+      "fid": "090405/"
     },
     {
-      "url": "091105/",
+      "url": "/nwffacim/acim/2005/091105/",
       "idx": 29,
       "title": "Sep 11, 2005",
-      "next": "091805/",
-      "prev": "090405/"
+      "next": "/nwffacim/acim/2005/091805/",
+      "prev": "/nwffacim/acim/2005/090405/",
+      "fid": "091105/"
     },
     {
-      "url": "091805/",
+      "url": "/nwffacim/acim/2005/091805/",
       "idx": 30,
       "title": "Sep 18, 2005",
-      "next": "100205/",
-      "prev": "091105/"
+      "next": "/nwffacim/acim/2005/100205/",
+      "prev": "/nwffacim/acim/2005/091105/",
+      "fid": "091805/"
     },
     {
-      "url": "100205/",
+      "url": "/nwffacim/acim/2005/100205/",
       "idx": 31,
       "title": "Oct 2, 2005",
-      "next": "100905/",
-      "prev": "091805/"
+      "next": "/nwffacim/acim/2005/100905/",
+      "prev": "/nwffacim/acim/2005/091805/",
+      "fid": "100205/"
     },
     {
-      "url": "100905/",
+      "url": "/nwffacim/acim/2005/100905/",
       "idx": 32,
       "title": "Oct 9, 2005",
-      "next": "101605/",
-      "prev": "100205/"
+      "next": "/nwffacim/acim/2005/101605/",
+      "prev": "/nwffacim/acim/2005/100205/",
+      "fid": "100905/"
     },
     {
-      "url": "101605/",
+      "url": "/nwffacim/acim/2005/101605/",
       "idx": 33,
       "title": "Oct 16, 2005",
-      "next": "102305/",
-      "prev": "100905/"
+      "next": "/nwffacim/acim/2005/102305/",
+      "prev": "/nwffacim/acim/2005/100905/",
+      "fid": "101605/"
     },
     {
-      "url": "102305/",
+      "url": "/nwffacim/acim/2005/102305/",
       "idx": 34,
       "title": "Oct 23, 2005",
-      "next": "110605/",
-      "prev": "101605/"
+      "next": "/nwffacim/acim/2005/110605/",
+      "prev": "/nwffacim/acim/2005/101605/",
+      "fid": "102305/"
     },
     {
-      "url": "110605/",
+      "url": "/nwffacim/acim/2005/110605/",
       "idx": 35,
       "title": "Nov 6, 2005",
-      "next": "111305/",
-      "prev": "102305/"
+      "next": "/nwffacim/acim/2005/111305/",
+      "prev": "/nwffacim/acim/2005/102305/",
+      "fid": "110605/"
     },
     {
-      "url": "111305/",
+      "url": "/nwffacim/acim/2005/111305/",
       "idx": 36,
       "title": "Nov 13, 2005",
-      "next": "112005/",
-      "prev": "110605/"
+      "next": "/nwffacim/acim/2005/112005/",
+      "prev": "/nwffacim/acim/2005/110605/",
+      "fid": "111305/"
     },
     {
-      "url": "112005/",
+      "url": "/nwffacim/acim/2005/112005/",
       "idx": 37,
       "title": "Nov 20, 2005",
-      "next": "120405/",
-      "prev": "111305/"
+      "next": "/nwffacim/acim/2005/120405/",
+      "prev": "/nwffacim/acim/2005/111305/",
+      "fid": "112005/"
     },
     {
-      "url": "120405/",
+      "url": "/nwffacim/acim/2005/120405/",
       "idx": 38,
       "title": "Dec 4, 2005",
-      "next": "121105/",
-      "prev": "112005/"
+      "next": "/nwffacim/acim/2005/121105/",
+      "prev": "/nwffacim/acim/2005/112005/",
+      "fid": "120405/"
     },
     {
-      "url": "121105/",
+      "url": "/nwffacim/acim/2005/121105/",
       "idx": 39,
       "title": "Dec 11, 2005",
-      "next": "121805/",
-      "prev": "120405/"
+      "next": "/nwffacim/acim/2005/121805/",
+      "prev": "/nwffacim/acim/2005/120405/",
+      "fid": "121105/"
     },
     {
-      "url": "121805/",
+      "url": "/nwffacim/acim/2005/121805/",
       "idx": 40,
       "title": "Dec 18, 2005",
-      "next": "2005/",
-      "prev": "121105/"
+      "next": "/nwffacim/intro/2005/",
+      "prev": "/nwffacim/acim/2005/121105/",
+      "fid": "121805/"
     }
   ]
 }

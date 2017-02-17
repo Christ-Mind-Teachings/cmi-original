@@ -1,5 +1,7 @@
 {% comment %}
   Sidebar contents from data files based on page.bid
+
+  {% assign link = base | append: i.url %}
 {% endcomment %}
 {% include nav/resolve.html %}
 
@@ -7,7 +9,7 @@
 {% if data %}
   {% assign base = data.base %}
   {% for i in data.page %}
-    {% assign link = base | append: i.url %}
+    {% assign link = i.url %}
     {% assign extra = "" %}
     {% assign title = i.title %}
     {% if forloop.first %}

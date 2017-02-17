@@ -1,40 +1,46 @@
 {
   "base": "/wom/early/",
+  "intro": "/wom/intro/",
   "page": [
     {
+      "url": "/wom/intro/early/",
       "title": "About",
-      "url": "early/",
       "idx": 0,
-      "next": "ble/",
-      "prev": "ign/"
+      "next": "/wom/early/ble/",
+      "prev": "/wom/early/ign/",
+      "fid": "early/"
     },
     {
+      "url": "/wom/early/ble/",
       "title": "The Blessing of Forgiveness",
-      "url": "ble/",
       "idx": 1,
-      "next": "c2s/",
-      "prev": "early/"
+      "next": "/wom/early/c2s/",
+      "prev": "/wom/intro/early/",
+      "fid": "ble/"
     },
     {
+      "url": "/wom/early/c2s/",
       "title": "Choose to See",
-      "url": "c2s/",
       "idx": 2,
-      "next": "hoe/",
-      "prev": "ble/"
+      "next": "/wom/early/hoe/",
+      "prev": "/wom/early/ble/",
+      "fid": "c2s/"
     },
     {
+      "url": "/wom/early/hoe/",
       "title": "Heaven on Earth",
-      "url": "hoe/",
       "idx": 3,
-      "next": "ign/",
-      "prev": "c2s/"
+      "next": "/wom/early/ign/",
+      "prev": "/wom/early/c2s/",
+      "fid": "hoe/"
     },
     {
+      "url": "/wom/early/ign/",
       "title": "Ignorance is Bliss",
-      "url": "ign/",
       "idx": 4,
-      "next": "early/",
-      "prev": "hoe/"
+      "next": "/wom/intro/early/",
+      "prev": "/wom/early/hoe/",
+      "fid": "ign/"
     }
   ]
 }

@@ -3,8 +3,10 @@
     "audio": "http://www.celestialrealm.com/"
   },
   "year": 2004,
+  "base": "/nwffacim/acim/2004",
+  "intro": "/nwffacim/intro/",
   "pages": [
-    "2004",
+    "*2004",
     {
       "fid":     "011104",
       "desc": "",

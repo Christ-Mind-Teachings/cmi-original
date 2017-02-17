@@ -2,9 +2,11 @@
   "id": "yaa",
   "outfile": "yaa.json",
   "base": "/nwffacim/yaa/",
+  "intro": "/nwffacim/intro/",
   "pages": [
+    "*yaa",
     "titlepage",
-    "ack",
+    "acknowledgments",
     "foreword",
     "020782",
     "020882",

@@ -1,7 +1,9 @@
 {
   "year": 2005,
+  "base": "/nwffacim/acim/2005",
+  "intro": "/nwffacim/intro/",
   "pages": [
-    "2005",
+    "*2005",
     "010205",
     "011605",
     "012305",

@@ -91,7 +91,6 @@ function copyObj(page, item) {
 
   if (_.isObject(item)) {
     page = _.extend(page, item);
-    page = _.omit(page, "fid");
     fid = item.fid;
   }
 
@@ -104,27 +103,43 @@ function copyObj(page, item) {
 }
 
 //common between all types
-function next_prev(page, arr) {
+function next_prev(page, arr, info) {
   var idx = page.idx;
+  var next, prev;
 
   if (arr.length > 1) {
     //we're at the last element
     if (idx === arr.length - 1) {
-      page.next = util.format("%s/", getItem(arr[0]));
-      page.prev = util.format("%s/", getItem(arr[idx-1]));
+      next = getItem(arr[0]);
+      prev = getItem(arr[idx-1]);
     }
     else if (idx === 0) {
-      page.next = util.format("%s/", getItem(arr[idx+1]));
-      page.prev = util.format("%s/", getItem(arr[arr.length - 1]));
+      next = getItem(arr[idx+1]);
+      prev = getItem(arr[arr.length - 1]);
     }
     else {
-      page.next = util.format("%s/", getItem(arr[idx+1]));
-      page.prev = util.format("%s/", getItem(arr[idx-1]));
+      next = getItem(arr[idx+1]);
+      prev = getItem(arr[idx-1]);
     }
   }
   else {
-    page.next = util.format("%s/", getItem(arr[0]));
-    page.prev = util.format("%s/", getItem(arr[0]));
+    next = getItem(arr[0]);
+    prev = getItem(arr[0]);
+  }
+
+  //intro page
+  if (next.charAt(0) === "*") {
+    page.next = util.format("%s%s/", info.intro, next.substr(1));
+  }
+  else {
+    page.next = util.format("%s%s/", info.base, next);
+  }
+
+  if (prev.charAt(0) === "*") {
+    page.prev = util.format("%s%s/", info.intro, prev.substr(1));
+  }
+  else {
+    page.prev = util.format("%s%s/", info.base, prev);
   }
 }
 
@@ -133,17 +148,32 @@ function acimc(item, idx, arr) {
   var page = {};
   var fid = copyObj(page, item);
 
-  if (fid === "acim") {
+  var introPage = false;
+  if (fid.charAt(0) === "*") {
+      introPage = true;
+  }
+
+  if (fid === "*acim") {
     page.title = "About ACIM Study Group ";
-    page.url = util.format("%s/", fid);
+    page.url = util.format("%s%s/", this.intro, fid.substr(1));
   }
   else {
-    page.title = "About Year " + fid;
-    page.url = util.format("%s/%s/", fid, fid);
+    page.title = "About Year " + introPage?fid.substr(1):fid;
+    page.url = util.format("%s%s/", introPage?this.intro:this.base, introPage?fid.substr(1):fid);
   }
   page.idx = idx;
 
-  next_prev(page, arr);
+  next_prev(page, arr, {base: this.base, intro: this.intro});
+
+  if (introPage) {
+    page.fid = fid.substr(1);
+  }
+  else {
+    page.fid = fid;
+  }
+
+  //append '/' to simplify workig with Jekyll Liquid
+  page.fid = page.fid + '/';
 
   return page;
 }
@@ -152,17 +182,38 @@ function acimc(item, idx, arr) {
 function acim(item, idx, arr) {
   var page = {};
   var fid = copyObj(page, item);
-
   var d = moment(fid, "MMDDYY");
 
-  page.url = util.format("%s/", fid);
+  var introPage = false;
+  if (fid.charAt(0) === "*") {
+    introPage = true;
+    page.intro = true;
+  }
+  else {
+    page.intro = false;
+  }
+
+  page.url = util.format("%s%s/", introPage?this.intro:this.base, introPage?fid.substr(1):fid);
   page.idx = idx;
   page.title = d.format("MMM D, YYYY");
 
   if (page.title === "Invalid date") {
     page.title = "About";
+    if (this.year) {
+      page.title = "About " + this.year + " Transcripts";
+    }
   }
-  next_prev(page, arr);
+  next_prev(page, arr, {base: this.base, intro: this.intro});
+
+  if (fid.charAt(0) === "*") {
+    page.fid = fid.substr(1);
+  }
+  else {
+    page.fid = fid;
+  }
+
+  //append '/' to simplify workig with Jekyll Liquid
+  page.fid = page.fid + '/';
 
   return page;
 }
@@ -173,8 +224,16 @@ function yaa(item, idx, arr) {
   var fid = copyObj(page, item);
   var d;
 
+  var introPage = false;
+  if (fid.charAt(0) === "*") {
+      introPage = true;
+  }
+
   // item is not a date
-  if (fid[0].search(/\d/) === -1) {
+  if (introPage) {
+    page.title = "Introduction";
+  }
+  else if (fid[0].search(/\d/) === -1) {
     page.title = fid.charAt(0).toUpperCase() + fid.substr(1);
   }
   // item is a date but last char is not
@@ -188,9 +247,26 @@ function yaa(item, idx, arr) {
     page.title = d.format("MMM D, YYYY");
   }
 
-  page.url = util.format("%s/", fid);
+  if (introPage) {
+    page.url = util.format("%s%s/", this.intro, fid.substr(1));
+  }
+  else {
+    page.url = util.format("%s%s/", this.base, fid);
+  }
+
+  if (fid.charAt(0) === "*") {
+    page.fid = fid.substr(1);
+  }
+  else {
+    page.fid = fid;
+  }
+
+  //append '/' to simplify workig with Jekyll Liquid
+  page.fid = page.fid + '/';
+
   page.idx = idx;
-  next_prev(page, arr);
+
+  next_prev(page, arr, {base: this.base, intro: this.intro});
 
   return page;
 }
@@ -199,13 +275,27 @@ function yaa(item, idx, arr) {
 function grad(_item, idx, arr) {
   var page = {};
   var fid = copyObj(page, _item);
+  var item;
   var d;
 
+  var introPage = false;
+  if (fid.charAt(0) === "*") {
+      introPage = true;
+  }
+
   //remove the 'g'
-  var item = fid.substr(1);
+  if (introPage) {
+    item = fid.substr(2);
+  }
+  else {
+    item = fid.substr(1);
+  }
 
   // filter non-date values
   switch(item) {
+    case "rad":
+      page.title = "Introduction";
+      break;
     case "000001":
       page.title = "Title Page";
       break;
@@ -223,9 +313,25 @@ function grad(_item, idx, arr) {
 
   //restore item to argument value
   item = fid;
-  page.url = util.format("%s/", item);
+  if (introPage) {
+    page.url = util.format("%s%s/", this.intro, item.substr(1));
+  }
+  else {
+    page.url = util.format("%s%s/", this.base, item);
+  }
   page.idx = idx;
-  next_prev(page, arr);
+
+  next_prev(page, arr, {base: this.base, intro: this.intro});
+
+  if (item.charAt(0) === "*") {
+    page.fid = item.substr(1);
+  }
+  else {
+    page.fid = item;
+  }
+
+  //append '/' to simplify workig with Jekyll Liquid
+  page.fid = page.fid + '/';
 
   return page;
 }
@@ -236,18 +342,35 @@ function wom(item, idx, arr) {
   var fid = copyObj(page, item);
   var lesson = ["None", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"];
 
+  var introPage = false;
+  if (fid.charAt(0) === "*") {
+      introPage = true;
+  }
+
   //Assign title
-  if (fid.charAt(0) === "w") {
+  if ((!introPage && fid.charAt(0) === "w") || (introPage && fid.charAt(1) === "w")) {
     page.title = "About";
   }
   else {
     page.title = "Lesson " + lesson[Number.parseInt(fid.substr(1), 10)];
   }
 
-  page.url = util.format("%s/", fid);
+  if (introPage) {
+    page.url = util.format("%s%s/", this.intro, fid.substr(1));
+  }
+  else {
+    page.url = util.format("%s%s/", this.base, fid);
+  }
   page.idx = idx;
 
-  next_prev(page, arr);
+  next_prev(page, arr, {base: this.base, intro: this.intro});
+
+  if (page.fid.charAt(0) === "*") {
+    page.fid = page.fid.substr(1);
+  }
+
+  //append '/' to simplify workig with Jekyll Liquid
+  page.fid = page.fid + '/';
 
   return page;
 }
@@ -256,13 +379,27 @@ function wom(item, idx, arr) {
 function early(item, idx, arr) {
   var page = {};
 
-  page.title = item.title;
+  if (item.fid.charAt(0) === "*") {
+    page.url = util.format("%s%s/", this.intro, item.fid.substr(1));
+  }
+  else {
+    page.url = util.format("%s%s/", this.base, item.fid);
+  }
 
-  page.url = util.format("%s/", item.fid);
+  page.title = item.title;
   page.idx = idx;
 
-  next_prev(page, arr);
+  next_prev(page, arr, {base: this.base, intro: this.intro});
 
+  if (item.fid.charAt(0) === "*") {
+    page.fid = item.fid.substr(1);
+  }
+  else {
+    page.fid = item.fid;
+  }
+
+  //append '/' to simplify workig with Jekyll Liquid
+  page.fid = page.fid + '/';
   return page;
 }
 
@@ -301,33 +438,39 @@ switch (id) {
   //acim contents by year
   case "acimc":
     yml.base = data.base;
-    yml.page = _.map(data.pages, acimc);
+    yml.intro = data.intro;
+    yml.page = _.map(data.pages, acimc, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   //acim contents for a given year
   case "acim":
     yml.base = "/nwffacim/acim/" + data.year + "/";
-    yml.page = _.map(data.pages, acim);
+    yml.intro = data.intro;
+    yml.page = _.map(data.pages, acim, {year: data.year, base: yml.base, intro: yml.intro});
     outfile = data.year + ".json";
     break;
   case "yaa":
     yml.base = data.base;
-    yml.page = _.map(data.pages, yaa);
+    yml.intro = data.intro;
+    yml.page = _.map(data.pages, yaa, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   case "grad":
     yml.base = data.base;
-    yml.page = _.map(data.pages, grad);
+    yml.intro = data.intro;
+    yml.page = _.map(data.pages, grad, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   case "wom":
     yml.base = data.base;
-    yml.page = _.map(data.pages, wom);
+    yml.intro = data.intro;
+    yml.page = _.map(data.pages, wom, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   case "early":
     yml.base = data.base;
-    yml.page = _.map(data.pages, early);
+    yml.intro = data.intro;
+    yml.page = _.map(data.pages, early, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   default:

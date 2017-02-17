@@ -3,621 +3,623 @@
     "audio": "http://www.celestialrealm.com/"
   },
   "base": "/nwffacim/acim/2003/",
+  "intro": "/nwffacim/intro/",
   "page": [
     {
-      "url": "2003/",
+      "url": "/nwffacim/intro/2003/",
       "idx": 0,
       "title": "About",
-      "next": "010203/",
-      "prev": "122103/"
+      "next": "/nwffacim/acim/2003/010203/",
+      "prev": "/nwffacim/acim/2003/122103/",
+      "fid": "2003/"
     },
     {
       "res": {
         "audio": "uploads/2003-01-02_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "010203",
+      "fid": "010203/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "010203/",
+      "url": "/nwffacim/acim/2003/010203/",
       "idx": 1,
       "title": "Jan 2, 2003",
-      "next": "010903/",
-      "prev": "2003/"
+      "next": "/nwffacim/acim/2003/010903/",
+      "prev": "/nwffacim/intro/2003/"
     },
     {
       "res": {
         "audio": "uploads/2003-01-09_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "010903",
+      "fid": "010903/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "010903/",
+      "url": "/nwffacim/acim/2003/010903/",
       "idx": 2,
       "title": "Jan 9, 2003",
-      "next": "011603/",
-      "prev": "010203/"
+      "next": "/nwffacim/acim/2003/011603/",
+      "prev": "/nwffacim/acim/2003/010203/"
     },
     {
       "res": {
         "audio": "uploads/2003-01-16_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "011603",
+      "fid": "011603/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "011603/",
+      "url": "/nwffacim/acim/2003/011603/",
       "idx": 3,
       "title": "Jan 16, 2003",
-      "next": "012303/",
-      "prev": "010903/"
+      "next": "/nwffacim/acim/2003/012303/",
+      "prev": "/nwffacim/acim/2003/010903/"
     },
     {
-      "fid": "012303",
+      "fid": "012303/",
       "desc": "Discussion",
       "complete": false,
-      "url": "012303/",
+      "url": "/nwffacim/acim/2003/012303/",
       "idx": 4,
       "title": "Jan 23, 2003",
-      "next": "020603/",
-      "prev": "011603/"
+      "next": "/nwffacim/acim/2003/020603/",
+      "prev": "/nwffacim/acim/2003/011603/"
     },
     {
       "res": {
         "audio": "uploads/2003-02-06_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "020603",
+      "fid": "020603/",
       "complete": true,
       "desc": "T2.VII Cause and Effect",
-      "url": "020603/",
+      "url": "/nwffacim/acim/2003/020603/",
       "idx": 5,
       "title": "Feb 6, 2003",
-      "next": "021303/",
-      "prev": "012303/"
+      "next": "/nwffacim/acim/2003/021303/",
+      "prev": "/nwffacim/acim/2003/012303/"
     },
     {
       "res": {
         "audio": "uploads/2003-02-13_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "021303",
+      "fid": "021303/",
       "ref": "Discussion",
       "complete": false,
-      "url": "021303/",
+      "url": "/nwffacim/acim/2003/021303/",
       "idx": 6,
       "title": "Feb 13, 2003",
-      "next": "022003/",
-      "prev": "020603/"
+      "next": "/nwffacim/acim/2003/022003/",
+      "prev": "/nwffacim/acim/2003/020603/"
     },
     {
       "res": {
         "audio": "uploads/2003-02-20_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "022003",
+      "fid": "022003/",
       "complete": true,
       "desc": "T2.VII Cause and Effect",
-      "url": "022003/",
+      "url": "/nwffacim/acim/2003/022003/",
       "idx": 7,
       "title": "Feb 20, 2003",
-      "next": "022703/",
-      "prev": "021303/"
+      "next": "/nwffacim/acim/2003/022703/",
+      "prev": "/nwffacim/acim/2003/021303/"
     },
     {
       "res": {
         "audio": "uploads/2003-02-27_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "022703",
+      "fid": "022703/",
       "complete": true,
       "desc": "T2.VII Cause and Effect",
-      "url": "022703/",
+      "url": "/nwffacim/acim/2003/022703/",
       "idx": 8,
       "title": "Feb 27, 2003",
-      "next": "030603/",
-      "prev": "022003/"
+      "next": "/nwffacim/acim/2003/030603/",
+      "prev": "/nwffacim/acim/2003/022003/"
     },
     {
       "res": {
         "audio": "uploads/2003-03-06_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "030603",
+      "fid": "030603/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "030603/",
+      "url": "/nwffacim/acim/2003/030603/",
       "idx": 9,
       "title": "Mar 6, 2003",
-      "next": "031303/",
-      "prev": "022703/"
+      "next": "/nwffacim/acim/2003/031303/",
+      "prev": "/nwffacim/acim/2003/022703/"
     },
     {
       "res": {
         "audio": "uploads/2003-03-13_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "031303",
+      "fid": "031303/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "031303/",
+      "url": "/nwffacim/acim/2003/031303/",
       "idx": 10,
       "title": "Mar 13, 2003",
-      "next": "032003/",
-      "prev": "030603/"
+      "next": "/nwffacim/acim/2003/032003/",
+      "prev": "/nwffacim/acim/2003/030603/"
     },
     {
       "res": {
         "audio": "uploads/2003-03-20_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "032003",
+      "fid": "032003/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "032003/",
+      "url": "/nwffacim/acim/2003/032003/",
       "idx": 11,
       "title": "Mar 20, 2003",
-      "next": "032703/",
-      "prev": "031303/"
+      "next": "/nwffacim/acim/2003/032703/",
+      "prev": "/nwffacim/acim/2003/031303/"
     },
     {
       "res": {
         "audio": "uploads/2003-03-27_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "032703",
+      "fid": "032703/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "032703/",
+      "url": "/nwffacim/acim/2003/032703/",
       "idx": 12,
       "title": "Mar 27, 2003",
-      "next": "040303/",
-      "prev": "032003/"
+      "next": "/nwffacim/acim/2003/040303/",
+      "prev": "/nwffacim/acim/2003/032003/"
     },
     {
       "res": {
         "audio": "uploads/2003-04-03_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "040303",
+      "fid": "040303/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "040303/",
+      "url": "/nwffacim/acim/2003/040303/",
       "idx": 13,
       "title": "Apr 3, 2003",
-      "next": "041003/",
-      "prev": "032703/"
+      "next": "/nwffacim/acim/2003/041003/",
+      "prev": "/nwffacim/acim/2003/032703/"
     },
     {
       "res": {
         "audio": "uploads/2003-04-10_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "041003",
+      "fid": "041003/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "041003/",
+      "url": "/nwffacim/acim/2003/041003/",
       "idx": 14,
       "title": "Apr 10, 2003",
-      "next": "042403/",
-      "prev": "040303/"
+      "next": "/nwffacim/acim/2003/042403/",
+      "prev": "/nwffacim/acim/2003/040303/"
     },
     {
       "res": {
         "audio": "uploads/2003-04-24_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "042403",
+      "fid": "042403/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "042403/",
+      "url": "/nwffacim/acim/2003/042403/",
       "idx": 15,
       "title": "Apr 24, 2003",
-      "next": "050103/",
-      "prev": "041003/"
+      "next": "/nwffacim/acim/2003/050103/",
+      "prev": "/nwffacim/acim/2003/041003/"
     },
     {
       "res": {
         "audio": "uploads/2003-05-01_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "050103",
+      "fid": "050103/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "050103/",
+      "url": "/nwffacim/acim/2003/050103/",
       "idx": 16,
       "title": "May 1, 2003",
-      "next": "051103/",
-      "prev": "042403/"
+      "next": "/nwffacim/acim/2003/051103/",
+      "prev": "/nwffacim/acim/2003/042403/"
     },
     {
       "res": {
         "audio": "uploads/2003-05-11_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "051103",
+      "fid": "051103/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "051103/",
+      "url": "/nwffacim/acim/2003/051103/",
       "idx": 17,
       "title": "May 11, 2003",
-      "next": "051803/",
-      "prev": "050103/"
+      "next": "/nwffacim/acim/2003/051803/",
+      "prev": "/nwffacim/acim/2003/050103/"
     },
     {
       "res": {
         "audio": "uploads/2003-05-18_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "051803",
+      "fid": "051803/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "051803/",
+      "url": "/nwffacim/acim/2003/051803/",
       "idx": 18,
       "title": "May 18, 2003",
-      "next": "052503/",
-      "prev": "051103/"
+      "next": "/nwffacim/acim/2003/052503/",
+      "prev": "/nwffacim/acim/2003/051103/"
     },
     {
       "res": {
         "audio": "uploads/2003-05-25_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "052503",
+      "fid": "052503/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "052503/",
+      "url": "/nwffacim/acim/2003/052503/",
       "idx": 19,
       "title": "May 25, 2003",
-      "next": "060103/",
-      "prev": "051803/"
+      "next": "/nwffacim/acim/2003/060103/",
+      "prev": "/nwffacim/acim/2003/051803/"
     },
     {
       "res": {
         "audio": "uploads/2003-06-01_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "060103",
+      "fid": "060103/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "060103/",
+      "url": "/nwffacim/acim/2003/060103/",
       "idx": 20,
       "title": "Jun 1, 2003",
-      "next": "060803/",
-      "prev": "052503/"
+      "next": "/nwffacim/acim/2003/060803/",
+      "prev": "/nwffacim/acim/2003/052503/"
     },
     {
       "res": {
         "audio": "uploads/2003-06-08_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "060803",
+      "fid": "060803/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "060803/",
+      "url": "/nwffacim/acim/2003/060803/",
       "idx": 21,
       "title": "Jun 8, 2003",
-      "next": "061503/",
-      "prev": "060103/"
+      "next": "/nwffacim/acim/2003/061503/",
+      "prev": "/nwffacim/acim/2003/060103/"
     },
     {
       "res": {
         "audio": "uploads/2003-06-15_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles.mp3"
       },
-      "fid": "061503",
+      "fid": "061503/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "061503/",
+      "url": "/nwffacim/acim/2003/061503/",
       "idx": 22,
       "title": "Jun 15, 2003",
-      "next": "062203/",
-      "prev": "060803/"
+      "next": "/nwffacim/acim/2003/062203/",
+      "prev": "/nwffacim/acim/2003/060803/"
     },
     {
       "res": {
         "audio": "uploads/2003-06-22_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma.mp3"
       },
-      "fid": "062203",
+      "fid": "062203/",
       "desc": "Needs formatting",
       "complete": false,
-      "url": "062203/",
+      "url": "/nwffacim/acim/2003/062203/",
       "idx": 23,
       "title": "Jun 22, 2003",
-      "next": "062903/",
-      "prev": "061503/"
+      "next": "/nwffacim/acim/2003/062903/",
+      "prev": "/nwffacim/acim/2003/061503/"
     },
     {
       "res": {
         "audio": "uploads/2003-06-29_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma.mp3"
       },
-      "fid": "062903",
+      "fid": "062903/",
       "complete": false,
       "desc": "T4.In Introduction",
-      "url": "062903/",
+      "url": "/nwffacim/acim/2003/062903/",
       "idx": 24,
       "title": "Jun 29, 2003",
-      "next": "070603/",
-      "prev": "062203/"
+      "next": "/nwffacim/acim/2003/070603/",
+      "prev": "/nwffacim/acim/2003/062203/"
     },
     {
       "res": {
         "audio": "uploads/2003-07-06_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma.mp3"
       },
-      "fid": "070603",
+      "fid": "070603/",
       "complete": false,
       "desc": "T4.1 Right Teaching and Right Learning",
-      "url": "070603/",
+      "url": "/nwffacim/acim/2003/070603/",
       "idx": 25,
       "title": "Jul 6, 2003",
-      "next": "071303/",
-      "prev": "062903/"
+      "next": "/nwffacim/acim/2003/071303/",
+      "prev": "/nwffacim/acim/2003/062903/"
     },
     {
       "res": {
         "audio": "uploads/2003-07-13_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma.mp3"
       },
-      "fid": "071303",
+      "fid": "071303/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "071303/",
+      "url": "/nwffacim/acim/2003/071303/",
       "idx": 26,
       "title": "Jul 13, 2003",
-      "next": "072003/",
-      "prev": "070603/"
+      "next": "/nwffacim/acim/2003/072003/",
+      "prev": "/nwffacim/acim/2003/070603/"
     },
     {
       "res": {
         "audio": "uploads/2003-07-20_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma.mp3"
       },
-      "fid": "072003",
+      "fid": "072003/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "072003/",
+      "url": "/nwffacim/acim/2003/072003/",
       "idx": 27,
       "title": "Jul 20, 2003",
-      "next": "072703/",
-      "prev": "071303/"
+      "next": "/nwffacim/acim/2003/072703/",
+      "prev": "/nwffacim/acim/2003/071303/"
     },
     {
       "res": {
         "audio": "uploads/2003-07-27_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "072703",
+      "fid": "072703/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "072703/",
+      "url": "/nwffacim/acim/2003/072703/",
       "idx": 28,
       "title": "Jul 27, 2003",
-      "next": "080303/",
-      "prev": "072003/"
+      "next": "/nwffacim/acim/2003/080303/",
+      "prev": "/nwffacim/acim/2003/072003/"
     },
     {
       "res": {
         "audio": "uploads/2003-08-03_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "080303",
+      "fid": "080303/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "080303/",
+      "url": "/nwffacim/acim/2003/080303/",
       "idx": 29,
       "title": "Aug 3, 2003",
-      "next": "081003/",
-      "prev": "072703/"
+      "next": "/nwffacim/acim/2003/081003/",
+      "prev": "/nwffacim/acim/2003/072703/"
     },
     {
       "res": {
         "audio": "uploads/2003-08-10_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "081003",
+      "fid": "081003/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "081003/",
+      "url": "/nwffacim/acim/2003/081003/",
       "idx": 30,
       "title": "Aug 10, 2003",
-      "next": "081703/",
-      "prev": "080303/"
+      "next": "/nwffacim/acim/2003/081703/",
+      "prev": "/nwffacim/acim/2003/080303/"
     },
     {
       "res": {
         "audio": "uploads/2003-08-17_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "081703",
+      "fid": "081703/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "081703/",
+      "url": "/nwffacim/acim/2003/081703/",
       "idx": 31,
       "title": "Aug 17, 2003",
-      "next": "082403/",
-      "prev": "081003/"
+      "next": "/nwffacim/acim/2003/082403/",
+      "prev": "/nwffacim/acim/2003/081003/"
     },
     {
       "res": {
         "audio": "uploads/2003-08-24_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "082403",
+      "fid": "082403/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "082403/",
+      "url": "/nwffacim/acim/2003/082403/",
       "idx": 32,
       "title": "Aug 24, 2003",
-      "next": "083103/",
-      "prev": "081703/"
+      "next": "/nwffacim/acim/2003/083103/",
+      "prev": "/nwffacim/acim/2003/081703/"
     },
     {
       "res": {
         "audio": "uploads/2003-08-31_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "083103",
+      "fid": "083103/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "083103/",
+      "url": "/nwffacim/acim/2003/083103/",
       "idx": 33,
       "title": "Aug 31, 2003",
-      "next": "090703/",
-      "prev": "082403/"
+      "next": "/nwffacim/acim/2003/090703/",
+      "prev": "/nwffacim/acim/2003/082403/"
     },
     {
       "res": {
         "audio": "uploads/2003-09-07_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "090703",
+      "fid": "090703/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "090703/",
+      "url": "/nwffacim/acim/2003/090703/",
       "idx": 34,
       "title": "Sep 7, 2003",
-      "next": "091403/",
-      "prev": "083103/"
+      "next": "/nwffacim/acim/2003/091403/",
+      "prev": "/nwffacim/acim/2003/083103/"
     },
     {
       "res": {
         "audio": "uploads/2003-09-14_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "091403",
+      "fid": "091403/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "091403/",
+      "url": "/nwffacim/acim/2003/091403/",
       "idx": 35,
       "title": "Sep 14, 2003",
-      "next": "092103/",
-      "prev": "090703/"
+      "next": "/nwffacim/acim/2003/092103/",
+      "prev": "/nwffacim/acim/2003/090703/"
     },
     {
       "res": {
         "audio": "uploads/2003-09-21_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "092103",
+      "fid": "092103/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "092103/",
+      "url": "/nwffacim/acim/2003/092103/",
       "idx": 36,
       "title": "Sep 21, 2003",
-      "next": "092803/",
-      "prev": "091403/"
+      "next": "/nwffacim/acim/2003/092803/",
+      "prev": "/nwffacim/acim/2003/091403/"
     },
     {
       "res": {
         "audio": "uploads/2003-09-28_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "092803",
+      "fid": "092803/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "092803/",
+      "url": "/nwffacim/acim/2003/092803/",
       "idx": 37,
       "title": "Sep 28, 2003",
-      "next": "101203/",
-      "prev": "092103/"
+      "next": "/nwffacim/acim/2003/101203/",
+      "prev": "/nwffacim/acim/2003/092103/"
     },
     {
       "res": {
         "audio": "uploads/2003-10-12_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "101203",
+      "fid": "101203/",
       "complete": false,
       "desc": "Discussion",
-      "url": "101203/",
+      "url": "/nwffacim/acim/2003/101203/",
       "idx": 38,
       "title": "Oct 12, 2003",
-      "next": "101903/",
-      "prev": "092803/"
+      "next": "/nwffacim/acim/2003/101903/",
+      "prev": "/nwffacim/acim/2003/092803/"
     },
     {
       "res": {
         "audio": "uploads/2003-10-19_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "101903",
+      "fid": "101903/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "101903/",
+      "url": "/nwffacim/acim/2003/101903/",
       "idx": 39,
       "title": "Oct 19, 2003",
-      "next": "102603/",
-      "prev": "101203/"
+      "next": "/nwffacim/acim/2003/102603/",
+      "prev": "/nwffacim/acim/2003/101203/"
     },
     {
       "res": {
         "audio": "uploads/2003-10-26_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "102603",
+      "fid": "102603/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "102603/",
+      "url": "/nwffacim/acim/2003/102603/",
       "idx": 40,
       "title": "Oct 26, 2003",
-      "next": "110203/",
-      "prev": "101903/"
+      "next": "/nwffacim/acim/2003/110203/",
+      "prev": "/nwffacim/acim/2003/101903/"
     },
     {
       "res": {
         "audio": "uploads/2003-11-02_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "110203",
+      "fid": "110203/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "110203/",
+      "url": "/nwffacim/acim/2003/110203/",
       "idx": 41,
       "title": "Nov 2, 2003",
-      "next": "110903/",
-      "prev": "102603/"
+      "next": "/nwffacim/acim/2003/110903/",
+      "prev": "/nwffacim/acim/2003/102603/"
     },
     {
       "res": {
         "audio": "uploads/2003-11-09_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma_wma.mp3"
       },
-      "fid": "110903",
+      "fid": "110903/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "110903/",
+      "url": "/nwffacim/acim/2003/110903/",
       "idx": 42,
       "title": "Nov 9, 2003",
-      "next": "111603/",
-      "prev": "110203/"
+      "next": "/nwffacim/acim/2003/111603/",
+      "prev": "/nwffacim/acim/2003/110203/"
     },
     {
       "res": {
         "audio": "uploads/2003-11-16_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma_.mp3"
       },
-      "fid": "111603",
+      "fid": "111603/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "111603/",
+      "url": "/nwffacim/acim/2003/111603/",
       "idx": 43,
       "title": "Nov 16, 2003",
-      "next": "112303/",
-      "prev": "110903/"
+      "next": "/nwffacim/acim/2003/112303/",
+      "prev": "/nwffacim/acim/2003/110903/"
     },
     {
       "res": {
         "audio": "uploads/2003-11-23_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma__wma.mp3"
       },
-      "fid": "112303",
+      "fid": "112303/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "112303/",
+      "url": "/nwffacim/acim/2003/112303/",
       "idx": 44,
       "title": "Nov 23, 2003",
-      "next": "120703/",
-      "prev": "111603/"
+      "next": "/nwffacim/acim/2003/120703/",
+      "prev": "/nwffacim/acim/2003/111603/"
     },
     {
       "res": {
         "audio": "uploads/2003-12-07_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma__wma_wma.mp3"
       },
-      "fid": "120703",
+      "fid": "120703/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "120703/",
+      "url": "/nwffacim/acim/2003/120703/",
       "idx": 45,
       "title": "Dec 7, 2003",
-      "next": "121403/",
-      "prev": "112303/"
+      "next": "/nwffacim/acim/2003/121403/",
+      "prev": "/nwffacim/acim/2003/112303/"
     },
     {
       "res": {
         "audio": "uploads/2003-12-14_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma__wma_wma_wma.mp3"
       },
-      "fid": "121403",
+      "fid": "121403/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "121403/",
+      "url": "/nwffacim/acim/2003/121403/",
       "idx": 46,
       "title": "Dec 14, 2003",
-      "next": "122103/",
-      "prev": "120703/"
+      "next": "/nwffacim/acim/2003/122103/",
+      "prev": "/nwffacim/acim/2003/120703/"
     },
     {
       "res": {
         "audio": "uploads/2003-12-21_ACIM_Christ_Jesus_Raj_Study_Group_A_Course_In_Miracles_wma__wma_wma_wma_wma.mp3"
       },
-      "fid": "122103",
+      "fid": "122103/",
       "complete": false,
       "desc": "Needs formatting",
-      "url": "122103/",
+      "url": "/nwffacim/acim/2003/122103/",
       "idx": 47,
       "title": "Dec 21, 2003",
-      "next": "2003/",
-      "prev": "121403/"
+      "next": "/nwffacim/intro/2003/",
+      "prev": "/nwffacim/acim/2003/121403/"
     }
   ]
 }

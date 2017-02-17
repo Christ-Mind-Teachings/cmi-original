@@ -3,7 +3,10 @@ layout: custom
 source: Way of Mastery
 book: The Early Years
 title: Introduction
-surl: /wom/
+nav: nav/np-data.html
+home: "#"
+contents: nav/contents.html
+bid: "early"
 ---
 
 <div class="custom-side-image">

@@ -1,10 +1,10 @@
 volumes:
 - title: The Way of Mastery
   id: wom
-  url: /wom/
+  url: /wom/intro/wom/
   img: /public/img/wom
 - title: The Northwest Foundation for ACIM
   id: nwffacim
-  url: /nwffacim/
+  url: /nwffacim/intro/nwffacim/
   img: /public/img/nwffacim
 
