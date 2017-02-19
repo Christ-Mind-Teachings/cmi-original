@@ -1,0 +1,51 @@
+---
+layout: custom
+source: Way of Mastery
+book: Questions and Answers
+title: Introduction
+nav: nav/np-data.html
+contents: nav/contents.html
+home: "#"
+bid: "questions"
+tabs: true
+---
+
+  <div class="custom-side-image">
+    {% include ui/side-image.html %}
+  </div>
+
+  <div class="question-tabs">
+    <ul class="accordion-tabs">
+      <li class="tab-header-and-content">
+        <a href="javascript:void(0)" class="is-active tab-link">The Early
+        Years</a>
+        <div class="tab-content">
+          {% include ui/description-list.html class="cmi-questions"
+          data=site.data.wom.qearly source="questions" %}
+        </div>
+      </li>
+      <li class="tab-header-and-content">
+        <a href="javascript:void(0)" class="tab-link">Way of the Heart</a>
+        <div class="tab-content">
+          {% include ui/description-list.html class="cmi-questions"
+          data=site.data.wom.qwoh source="questions" %}
+        </div>
+      </li>
+      <li class="tab-header-and-content">
+        <a href="javascript:void(0)" class="tab-link">Way of Transformation</a>
+        <div class="tab-content">
+          {% include ui/description-list.html class="cmi-questions"
+          data=site.data.wom.qwot source="questions" %}
+        </div>
+      </li>
+      <li class="tab-header-and-content">
+        <a href="javascript:void(0)" class="tab-link">Way of Knowing</a>
+        <div class="tab-content">
+          {% include ui/description-list.html class="cmi-questions"
+          data=site.data.wom.qwok source="questions" %}
+        </div>
+      </li>
+    </ul>
+  </div>
+
+

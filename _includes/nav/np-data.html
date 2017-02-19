@@ -51,7 +51,11 @@ Generate next/previous page links from _data files based on page.bid
     transcript-format-complete, when false, prevents the capture of audio
     timing data 
   {% endcomment %}
-  {% assign transcript-format-complete = page-data.complete | default: false %}
+  {% if page.complete == true %}
+    {% assign transcript-format-complete = true %}
+  {% else %}
+    {% assign transcript-format-complete = page-data.complete | default: false %}
+  {% endif %}
 
   {% comment %}
   <!--

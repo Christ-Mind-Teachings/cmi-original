@@ -48,7 +48,7 @@ defaults:
       bid: woh
       book: Way of the Heart
       nav: nav/np-data.html
-      home: "#"
+      home: /wom/intro/woh/
       contents: nav/contents.html
 
 # Way of Transformation
@@ -59,7 +59,7 @@ defaults:
       bid: wot
       book: Way of Transformation
       nav: nav/np-data.html
-      home: "#"
+      home: /wom/intro/wot/
       contents: nav/contents.html
 
 # Way of Knowing
@@ -70,7 +70,7 @@ defaults:
       bid: wok
       book: Way of Knowing
       nav: nav/np-data.html
-      home: "#"
+      home: /wom/intro/wok/
       contents: nav/contents.html
 
 # Early years
@@ -79,9 +79,22 @@ defaults:
       type: wom
     values:
       bid: early
+      complete: true
       book: The Early Years
       nav: nav/np-data.html
-      home: "#"
+      home: /wom/intro/early/
+      contents: nav/contents.html
+
+# WOM Q&A
+  - scope:
+      path: "_wom/questions"
+      type: wom
+    values:
+      bid: questions
+      complete: true
+      book: Questions and Answers
+      nav: nav/np-data.html
+      home: /wom/intro/questions/
       contents: nav/contents.html
 
 # Paul Tuttle and Raj - Northwest Foundation for ACIM
@@ -256,28 +269,30 @@ version:             0.0.6
 
 # Exclusions from the final site
 exclude: [
-    _wom/woh,
-    _wom/wot,
-    _wom/wok,
-    _nwffacim/grad,
-    _nwffacim/yaa,
-    _nwffacim/acim,
-    _nwffacim/acim/2002,
-    _nwffacim/acim/2003,
-    _nwffacim/acim/2004,
-    _nwffacim/acim/2005,
-    _nwffacim/acim/2006,
-    _nwffacim/acim/2007,
-    _nwffacim/acim/2008,
-    _nwffacim/acim/2009,
-    _nwffacim/acim/2010,
-    _nwffacim/acim/2011,
-    _nwffacim/acim/2012,
-    _nwffacim/acim/2013,
-    _nwffacim/acim/2014,
-    _nwffacim/acim/2015,
-    _nwffacim/acim/2016,
-    _nwffacim/acim/2017,
+   _wom/early,
+  # _wom/questions,
+  #  _wom/woh,
+  #  _wom/wot,
+  #  _wom/wok,
+  #  _nwffacim/grad,
+  #  _nwffacim/yaa,
+  #  _nwffacim/acim,
+  #  _nwffacim/acim/2002,
+  #  _nwffacim/acim/2003,
+  #  _nwffacim/acim/2004,
+  #  _nwffacim/acim/2005,
+  #  _nwffacim/acim/2006,
+  #  _nwffacim/acim/2007,
+  #  _nwffacim/acim/2008,
+  #  _nwffacim/acim/2009,
+  #  _nwffacim/acim/2010,
+  #  _nwffacim/acim/2011,
+  #  _nwffacim/acim/2012,
+  #  _nwffacim/acim/2013,
+  #  _nwffacim/acim/2014,
+  #  _nwffacim/acim/2015,
+  #  _nwffacim/acim/2016,
+  #  _nwffacim/acim/2017,
   src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
 

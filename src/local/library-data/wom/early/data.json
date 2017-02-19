@@ -1,4 +1,7 @@
 {
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/wom/audio/early/"
+  },
   "id": "early",
   "base": "/wom/early/",
   "intro": "/wom/intro/",
@@ -10,18 +13,30 @@
     },
     {
       "fid": "ble",
+      "res": {
+        "audio": "BLE.mp3"
+      },
       "title": "The Blessing of Forgiveness"
     },
     {
       "fid": "c2s",
+      "res": {
+        "audio": "C2S.mp3"
+      },
       "title": "Choose to See"
     },
     {
       "fid": "hoe",
+      "res": {
+        "audio": "HOE.mp3"
+      },
       "title": "Heaven on Earth"
     },
     {
       "fid": "ign",
+      "res": {
+        "audio": "IGN.mp3"
+      },
       "title": "Ignorance is Bliss"
     }
   ]

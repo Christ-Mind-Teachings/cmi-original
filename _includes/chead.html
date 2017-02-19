@@ -60,12 +60,12 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml"/>
 
-  {% comment %}
-  page.nav = nextprev or npdata supports next/prev links using FA icons
-  {% endcomment %}
-  {% if page.nav %}
-  <!-- Font Awesome -->
-  <script src="https://use.fontawesome.com/6c994f43a5.js"></script>
-  {% endif %}
+  {% include script/load-fa.html %}
+  {% include script/load-audio.html %}
+  {% include script/load-hypothesis.html %}
+  {% include script/load-tabs.html %}
+
+  <!-- do this last -->
+  {% include script/load-cmi.html %}
 
 </head>

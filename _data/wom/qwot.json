@@ -1,0 +1,113 @@
+{
+  "id": "wot",
+  "base": "/wom/questions/",
+  "title": "The Way of Transformation",
+  "titles": [
+    {
+      "title": "Lesson One",
+      "questions": [
+        {
+          "fid": "t01q1/",
+          "title": "Other Masters",
+          "question": "Who are the other masters occasionally mentioned?"
+        },
+        {
+          "fid": "t01q2/",
+          "title": "Judgment and Discernment",
+          "question": "What is the difference between judging and discerning?  And what
+            guidelines can we observe to better practice discernment?"
+        }
+     ]
+    },
+    {
+      "title": "Lesson Six",
+      "questions": [
+        {
+          "fid": "t06q1/",
+          "title": "Vulnerability and Invulnerability",
+          "question": "How is vulnerability the sure path to invulnerability?"
+        },
+        {
+          "fid": "t06q2/",
+          "title": "Message of the Cross",
+          "question": "Then this is a metaphor&mdash;vulnerability. Did you learn that on
+            the cross? Was that the message of the cross? Vulnerability and
+            invincibility?"
+        }
+      ]
+    },
+    {
+      "title": "Lesson Seven",
+      "questions": [
+        {
+          "fid": "t07q1/",
+          "title": "Enlightenment",
+          "question": "Jeshua states that He has never enlightened anyone. Yet the
+            Sufi and Hindu traditions, including a number of gurus, state that they
+            do most of the work for one person. They say that once someone
+            surrenders to them, through their own God Consciousness, they can bring
+            that being to Oneness. There are also traditions which state that one
+            must look into the eyes of a true guru to become enlightened. Let’s face
+            it, it does sound quicker and easier. Is this a different state of
+            awareness? Was this tradition meant for a different era?"
+        }
+      ]
+    },
+    {
+      "title": "Lesson Nine",
+      "questions": [
+        {
+          "fid": "t09q1/",
+          "title": "Guidance",
+          "question": "How do you know if you are truly being guided?"
+        },
+        {
+          "fid": "t09q2/",
+          "title": "All Events are Neutral",
+          "question": "Jeshua, you have mentioned that all events are neutral —
+            several times. Could you please take that and go deeper with that and
+            explain it for us?"
+        },
+        {
+          "fid": "t09q3/",
+          "title": "Christ Consciousness",
+          "question": "Please explain more about the paradox of living as one Christ
+            Consciousness and yet also living in an individuated body and ego."
+        },
+        {
+          "fid": "t09q4/",
+          "title": "Ascending and Descending Currents",
+          "question": "Can you talk about what the perception of the New Age movement
+            is regarding ‘up and out,’ riding the ascending current and ignoring
+            what we call the ‘shadow side,’ and how to balance the&hellip;not to be
+            in denial of the shadow? Can you just discuss that&mdash;riding the
+            ascending and descending currents (in less than ten minutes)?"
+        }
+      ]
+    },
+    {
+      "title": "Lesson Eleven",
+      "questions": [
+        {
+          "fid": "t11q1/",
+          "title": "Unique Purpose",
+          "question": "Each soul has the same purpose, that is, to wake up fully from
+            separation from God. Yet, within the dream, in space and time, based on
+            soul experiences and predilections, do we have our own unique purpose?"
+        },
+        {
+          "fid": "t11q2/",
+          "title": "The Lineage",
+          "question": "Could you please elaborate on the *Lineage*, and how one comes
+            to be in your lineage, and speak of soul groups?"
+        },
+        {
+          "fid": "t11q3/",
+          "title": "Specialness, Holiness and Sexuality",
+          "question": "Can you speak about *specialness* and *holiness* in regard to
+            expressing sexuality?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/wom/audio/questions/"
+  },
+  "base": "/wom/questions/",
+  "intro": "/wom/intro/",
+  "page": [
+    {
+      "fid": "questions/",
+      "title": "About",
+      "url": "/wom/intro/questions/",
+      "idx": 0,
+      "next": "/wom/questions/bleq1/",
+      "prev": "/wom/questions/t11q3/"
+    },
+    {
+      "fid": "bleq1/",
+      "title": "Profound Time of Year",
+      "res": {
+        "audio": "BLEQ1.mp3"
+      },
+      "url": "/wom/questions/bleq1/",
+      "idx": 1,
+      "next": "/wom/questions/bleq2/",
+      "prev": "/wom/intro/questions/"
+    },
+    {
+      "fid": "bleq2/",
+      "title": "Living in Community",
+      "res": {
+        "audio": "BLEQ2.mp3"
+      },
+      "url": "/wom/questions/bleq2/",
+      "idx": 2,
+      "next": "/wom/questions/bleq3/",
+      "prev": "/wom/questions/bleq1/"
+    },
+    {
+      "fid": "bleq3/",
+      "title": "Co-creating Christ",
+      "res": {
+        "audio": "BLEQ3.mp3"
+      },
+      "url": "/wom/questions/bleq3/",
+      "idx": 3,
+      "next": "/wom/questions/bleq4/",
+      "prev": "/wom/questions/bleq2/"
+    },
+    {
+      "fid": "bleq4/",
+      "title": "12/12",
+      "res": {
+        "audio": "BLEQ4.mp3"
+      },
+      "url": "/wom/questions/bleq4/",
+      "idx": 4,
+      "next": "/wom/questions/c2sq1/",
+      "prev": "/wom/questions/bleq3/"
+    },
+    {
+      "fid": "c2sq1/",
+      "title": "Symbolism of Crucifixion",
+      "res": {
+        "audio": "C2SQ1.mp3"
+      },
+      "url": "/wom/questions/c2sq1/",
+      "idx": 5,
+      "next": "/wom/questions/c2sq2/",
+      "prev": "/wom/questions/bleq4/"
+    },
+    {
+      "fid": "c2sq2/",
+      "title": "Surrender to the Holy Spirit",
+      "res": {
+        "audio": "C2SQ2.mp3"
+      },
+      "url": "/wom/questions/c2sq2/",
+      "idx": 6,
+      "next": "/wom/questions/c2sq3/",
+      "prev": "/wom/questions/c2sq1/"
+    },
+    {
+      "fid": "c2sq3/",
+      "title": "Bringing Heaven to Earth",
+      "res": {
+        "audio": "C2SQ3.mp3"
+      },
+      "url": "/wom/questions/c2sq3/",
+      "idx": 7,
+      "next": "/wom/questions/c2sq4/",
+      "prev": "/wom/questions/c2sq2/"
+    },
+    {
+      "fid": "c2sq4/",
+      "title": "Difference between Jeshua and Christ",
+      "res": {
+        "audio": "C2SQ4.mp3"
+      },
+      "url": "/wom/questions/c2sq4/",
+      "idx": 8,
+      "next": "/wom/questions/c2sq5/",
+      "prev": "/wom/questions/c2sq3/"
+    },
+    {
+      "fid": "c2sq5/",
+      "title": "Non-physical Reality",
+      "res": {
+        "audio": "C2SQ5.mp3"
+      },
+      "url": "/wom/questions/c2sq5/",
+      "idx": 9,
+      "next": "/wom/questions/h01q1/",
+      "prev": "/wom/questions/c2sq4/"
+    },
+    {
+      "fid": "h01q1/",
+      "title": "Jeshua's Motivation",
+      "res": {
+        "audio": "Q01.01.mp3"
+      },
+      "url": "/wom/questions/h01q1/",
+      "idx": 10,
+      "next": "/wom/questions/h01q2/",
+      "prev": "/wom/questions/c2sq5/"
+    },
+    {
+      "fid": "h01q2/",
+      "title": "Sexuality",
+      "res": {
+        "audio": "Q01.02.mp3"
+      },
+      "url": "/wom/questions/h01q2/",
+      "idx": 11,
+      "next": "/wom/questions/h01q3/",
+      "prev": "/wom/questions/h01q1/"
+    },
+    {
+      "fid": "h01q3/",
+      "title": "Physical Healing",
+      "res": {
+        "audio": "Q01.03.mp3"
+      },
+      "url": "/wom/questions/h01q3/",
+      "idx": 12,
+      "next": "/wom/questions/h02q1/",
+      "prev": "/wom/questions/h01q2/"
+    },
+    {
+      "fid": "h02q1/",
+      "title": "40 Days and Nights",
+      "res": {
+        "audio": "Q02.01.mp3"
+      },
+      "url": "/wom/questions/h02q1/",
+      "idx": 13,
+      "next": "/wom/questions/h02q2/",
+      "prev": "/wom/questions/h01q3/"
+    },
+    {
+      "fid": "h02q2/",
+      "title": "Mary",
+      "res": {
+        "audio": "Q02.02.mp3"
+      },
+      "url": "/wom/questions/h02q2/",
+      "idx": 14,
+      "next": "/wom/questions/h06q1/",
+      "prev": "/wom/questions/h02q1/"
+    },
+    {
+      "fid": "h06q1/",
+      "title": "ACIM",
+      "res": {
+        "audio": "Q06.01.mp3"
+      },
+      "url": "/wom/questions/h06q1/",
+      "idx": 15,
+      "next": "/wom/questions/h06q2/",
+      "prev": "/wom/questions/h02q2/"
+    },
+    {
+      "fid": "h06q2/",
+      "problem": "we don't have this audio",
+      "title": "The Dark Side",
+      "url": "/wom/questions/h06q2/",
+      "idx": 16,
+      "next": "/wom/questions/h06q3/",
+      "prev": "/wom/questions/h06q1/"
+    },
+    {
+      "title": "Ego Habits",
+      "fid": "h06q3/",
+      "res": {
+        "audio": "Q06.02.mp3"
+      },
+      "url": "/wom/questions/h06q3/",
+      "idx": 17,
+      "next": "/wom/questions/h07q1/",
+      "prev": "/wom/questions/h06q2/"
+    },
+    {
+      "fid": "h07q1/",
+      "title": "Being a Servant of God",
+      "res": {
+        "audio": "Q07.01.mp3"
+      },
+      "url": "/wom/questions/h07q1/",
+      "idx": 18,
+      "next": "/wom/questions/h07q2/",
+      "prev": "/wom/questions/h06q3/"
+    },
+    {
+      "fid": "h07q2/",
+      "title": "Twin Flame & Soul Mate",
+      "res": {
+        "audio": "Q07.02.mp3"
+      },
+      "url": "/wom/questions/h07q2/",
+      "idx": 19,
+      "next": "/wom/questions/h07q3/",
+      "prev": "/wom/questions/h07q1/"
+    },
+    {
+      "fid": "h07q3/",
+      "title": "Unconscious Blocks",
+      "res": {
+        "audio": "Q07.03.mp3"
+      },
+      "url": "/wom/questions/h07q3/",
+      "idx": 20,
+      "next": "/wom/questions/h07q4/",
+      "prev": "/wom/questions/h07q2/"
+    },
+    {
+      "fid": "h07q4/",
+      "title": "Discipline",
+      "res": {
+        "audio": "Q07.04.mp3"
+      },
+      "url": "/wom/questions/h07q4/",
+      "idx": 21,
+      "next": "/wom/questions/h07q5/",
+      "prev": "/wom/questions/h07q3/"
+    },
+    {
+      "fid": "h07q5/",
+      "title": "Christian Pentecostal and New Age",
+      "res": {
+        "audio": "Q07.05.mp3"
+      },
+      "url": "/wom/questions/h07q5/",
+      "idx": 22,
+      "next": "/wom/questions/h08q1/",
+      "prev": "/wom/questions/h07q4/"
+    },
+    {
+      "fid": "h08q1/",
+      "title": "Holy Spirit and Oversoul",
+      "res": {
+        "audio": "Q08.01.mp3"
+      },
+      "url": "/wom/questions/h08q1/",
+      "idx": 23,
+      "next": "/wom/questions/h08q2/",
+      "prev": "/wom/questions/h07q5/"
+    },
+    {
+      "fid": "h08q2/",
+      "title": "Healing",
+      "res": {
+        "audio": "Q08.02.mp3"
+      },
+      "url": "/wom/questions/h08q2/",
+      "idx": 24,
+      "next": "/wom/questions/h09q1/",
+      "prev": "/wom/questions/h08q1/"
+    },
+    {
+      "problem": "don't have audio",
+      "title": "Self-forgiveness",
+      "fid": "h09q1/",
+      "url": "/wom/questions/h09q1/",
+      "idx": 25,
+      "next": "/wom/questions/h10q1/",
+      "prev": "/wom/questions/h08q2/"
+    },
+    {
+      "fid": "h10q1/",
+      "title": "Astrology",
+      "res": {
+        "audio": "Q10.01.mp3"
+      },
+      "url": "/wom/questions/h10q1/",
+      "idx": 26,
+      "next": "/wom/questions/h10q2/",
+      "prev": "/wom/questions/h09q1/"
+    },
+    {
+      "fid": "h10q2/",
+      "title": "Symbology of the Cross",
+      "res": {
+        "audio": "Q10.02.mp3"
+      },
+      "url": "/wom/questions/h10q2/",
+      "idx": 27,
+      "next": "/wom/questions/h10q3/",
+      "prev": "/wom/questions/h10q1/"
+    },
+    {
+      "fid": "h10q3/",
+      "title": "Initiations",
+      "res": {
+        "audio": "Q10.03.mp3"
+      },
+      "url": "/wom/questions/h10q3/",
+      "idx": 28,
+      "next": "/wom/questions/h11q1/",
+      "prev": "/wom/questions/h10q2/"
+    },
+    {
+      "fid": "h11q1/",
+      "title": "Responsibility to the Poor",
+      "res": {
+        "audio": "Q11.01.mp3"
+      },
+      "url": "/wom/questions/h11q1/",
+      "idx": 29,
+      "next": "/wom/questions/h11q2/",
+      "prev": "/wom/questions/h10q3/"
+    },
+    {
+      "fid": "h11q2/",
+      "title": "Helping the Poor",
+      "res": {
+        "audio": "Q11.02.mp3"
+      },
+      "url": "/wom/questions/h11q2/",
+      "idx": 30,
+      "next": "/wom/questions/h11q3/",
+      "prev": "/wom/questions/h11q1/"
+    },
+    {
+      "fid": "h11q3/",
+      "title": "Teaching Children",
+      "res": {
+        "audio": "Q11.03.mp3"
+      },
+      "url": "/wom/questions/h11q3/",
+      "idx": 31,
+      "next": "/wom/questions/h12q1/",
+      "prev": "/wom/questions/h11q2/"
+    },
+    {
+      "fid": "h12q1/",
+      "title": "Why hast Thou Forsaken Me",
+      "res": {
+        "audio": "Q12.01.mp3"
+      },
+      "url": "/wom/questions/h12q1/",
+      "idx": 32,
+      "next": "/wom/questions/h12q2/",
+      "prev": "/wom/questions/h11q3/"
+    },
+    {
+      "fid": "h12q2/",
+      "title": "Mary Magdalene",
+      "res": {
+        "audio": "Q12.02.mp3"
+      },
+      "url": "/wom/questions/h12q2/",
+      "idx": 33,
+      "next": "/wom/questions/h12q3/",
+      "prev": "/wom/questions/h12q1/"
+    },
+    {
+      "fid": "h12q3/",
+      "title": "St. Germain",
+      "res": {
+        "audio": "Q12.03.mp3"
+      },
+      "url": "/wom/questions/h12q3/",
+      "idx": 34,
+      "next": "/wom/questions/hoeq1/",
+      "prev": "/wom/questions/h12q2/"
+    },
+    {
+      "fid": "hoeq1/",
+      "title": "Unclear Questions",
+      "res": {
+        "audio": "HOEQ1.mp3"
+      },
+      "url": "/wom/questions/hoeq1/",
+      "idx": 35,
+      "next": "/wom/questions/hoeq2/",
+      "prev": "/wom/questions/h12q3/"
+    },
+    {
+      "fid": "hoeq2/",
+      "title": "Developing Clairty",
+      "res": {
+        "audio": "HOEQ2.mp3"
+      },
+      "url": "/wom/questions/hoeq2/",
+      "idx": 36,
+      "next": "/wom/questions/hoeq3/",
+      "prev": "/wom/questions/hoeq1/"
+    },
+    {
+      "fid": "hoeq3/",
+      "title": "Living as Christ",
+      "res": {
+        "audio": "HOEQ3.mp3"
+      },
+      "url": "/wom/questions/hoeq3/",
+      "idx": 37,
+      "next": "/wom/questions/hoeq4/",
+      "prev": "/wom/questions/hoeq2/"
+    },
+    {
+      "fid": "hoeq4/",
+      "title": "Shanti Christo Membership",
+      "res": {
+        "audio": "HOEQ5.mp3"
+      },
+      "url": "/wom/questions/hoeq4/",
+      "idx": 38,
+      "next": "/wom/questions/k02q1/",
+      "prev": "/wom/questions/hoeq3/"
+    },
+    {
+      "fid": "k02q1/",
+      "title": "Definition of Knowing",
+      "res": {
+        "audio": "Q26.01.mp3"
+      },
+      "url": "/wom/questions/k02q1/",
+      "idx": 39,
+      "next": "/wom/questions/k02q2/",
+      "prev": "/wom/questions/hoeq4/"
+    },
+    {
+      "fid": "k02q2/",
+      "title": "Glee Clubs and Attack",
+      "res": {
+        "audio": "Q26.02.mp3"
+      },
+      "url": "/wom/questions/k02q2/",
+      "idx": 40,
+      "next": "/wom/questions/k03q1/",
+      "prev": "/wom/questions/k02q1/"
+    },
+    {
+      "fid": "k03q1/",
+      "title": "Love of Self and Others",
+      "res": {
+        "audio": "Q27.01.mp3"
+      },
+      "url": "/wom/questions/k03q1/",
+      "idx": 41,
+      "next": "/wom/questions/k03q2/",
+      "prev": "/wom/questions/k02q2/"
+    },
+    {
+      "fid": "k03q2/",
+      "title": "Guidance of the Holy Spirit",
+      "res": {
+        "audio": "Q27.02.mp3"
+      },
+      "url": "/wom/questions/k03q2/",
+      "idx": 42,
+      "next": "/wom/questions/k04q1/",
+      "prev": "/wom/questions/k03q1/"
+    },
+    {
+      "fid": "k04q1/",
+      "title": "Great Rays of Light",
+      "res": {
+        "audio": "Q28.01.mp3"
+      },
+      "url": "/wom/questions/k04q1/",
+      "idx": 43,
+      "next": "/wom/questions/k04q2/",
+      "prev": "/wom/questions/k03q2/"
+    },
+    {
+      "fid": "k04q2/",
+      "title": "Differences",
+      "res": {
+        "audio": "Q28.02.mp3"
+      },
+      "url": "/wom/questions/k04q2/",
+      "idx": 44,
+      "next": "/wom/questions/k06q1/",
+      "prev": "/wom/questions/k04q1/"
+    },
+    {
+      "fid": "k06q1/",
+      "title": "Joy and Pleasure",
+      "res": {
+        "audio": "Q30.01.mp3"
+      },
+      "url": "/wom/questions/k06q1/",
+      "idx": 45,
+      "next": "/wom/questions/k06q2/",
+      "prev": "/wom/questions/k04q2/"
+    },
+    {
+      "fid": "k06q2/",
+      "title": "Shanti Christo",
+      "res": {
+        "audio": "Q30.02.mp3"
+      },
+      "url": "/wom/questions/k06q2/",
+      "idx": 46,
+      "next": "/wom/questions/k10q1/",
+      "prev": "/wom/questions/k06q1/"
+    },
+    {
+      "fid": "k10q1/",
+      "title": "Bible Codes",
+      "res": {
+        "audio": "Q34.01.mp3"
+      },
+      "url": "/wom/questions/k10q1/",
+      "idx": 47,
+      "next": "/wom/questions/k10q2/",
+      "prev": "/wom/questions/k06q2/"
+    },
+    {
+      "fid": "k10q2/",
+      "title": "Free Will of Children",
+      "res": {
+        "audio": "Q34.02.mp3"
+      },
+      "url": "/wom/questions/k10q2/",
+      "idx": 48,
+      "next": "/wom/questions/t01q1/",
+      "prev": "/wom/questions/k10q1/"
+    },
+    {
+      "fid": "t01q1/",
+      "title": "Other Masters",
+      "res": {
+        "audio": "Q13.01.mp3"
+      },
+      "url": "/wom/questions/t01q1/",
+      "idx": 49,
+      "next": "/wom/questions/t01q2/",
+      "prev": "/wom/questions/k10q2/"
+    },
+    {
+      "fid": "t01q2/",
+      "title": "Judgment and Discernment",
+      "res": {
+        "audio": "Q13.02.mp3"
+      },
+      "url": "/wom/questions/t01q2/",
+      "idx": 50,
+      "next": "/wom/questions/t06q1/",
+      "prev": "/wom/questions/t01q1/"
+    },
+    {
+      "fid": "t06q1/",
+      "title": "Vulnerability and Invulnerability",
+      "res": {
+        "audio": "Q18.01.mp3"
+      },
+      "url": "/wom/questions/t06q1/",
+      "idx": 51,
+      "next": "/wom/questions/t06q2/",
+      "prev": "/wom/questions/t01q2/"
+    },
+    {
+      "fid": "t06q2/",
+      "title": "Message of the Cross",
+      "res": {
+        "audio": "Q18.02.mp3"
+      },
+      "url": "/wom/questions/t06q2/",
+      "idx": 52,
+      "next": "/wom/questions/t07q1/",
+      "prev": "/wom/questions/t06q1/"
+    },
+    {
+      "fid": "t07q1/",
+      "title": "Enlightenment",
+      "res": {
+        "audio": "Q19.01.mp3"
+      },
+      "url": "/wom/questions/t07q1/",
+      "idx": 53,
+      "next": "/wom/questions/t09q1/",
+      "prev": "/wom/questions/t06q2/"
+    },
+    {
+      "fid": "t09q1/",
+      "title": "Guidance",
+      "res": {
+        "audio": "Q21.01.mp3"
+      },
+      "url": "/wom/questions/t09q1/",
+      "idx": 54,
+      "next": "/wom/questions/t09q2/",
+      "prev": "/wom/questions/t07q1/"
+    },
+    {
+      "fid": "t09q2/",
+      "title": "All Events are Neutral",
+      "res": {
+        "audio": "Q21.02.mp3"
+      },
+      "url": "/wom/questions/t09q2/",
+      "idx": 55,
+      "next": "/wom/questions/t09q3/",
+      "prev": "/wom/questions/t09q1/"
+    },
+    {
+      "fid": "t09q3/",
+      "title": "Christ Consciousness",
+      "res": {
+        "audio": "Q21.03.mp3"
+      },
+      "url": "/wom/questions/t09q3/",
+      "idx": 56,
+      "next": "/wom/questions/t09q4/",
+      "prev": "/wom/questions/t09q2/"
+    },
+    {
+      "fid": "t09q4/",
+      "title": "Ascending and Descending Currents",
+      "res": {
+        "audio": "Q21.04.mp3"
+      },
+      "url": "/wom/questions/t09q4/",
+      "idx": 57,
+      "next": "/wom/questions/t11q1/",
+      "prev": "/wom/questions/t09q3/"
+    },
+    {
+      "fid": "t11q1/",
+      "title": "Unique Purpose",
+      "res": {
+        "audio": "Q23.01.mp3"
+      },
+      "url": "/wom/questions/t11q1/",
+      "idx": 58,
+      "next": "/wom/questions/t11q2/",
+      "prev": "/wom/questions/t09q4/"
+    },
+    {
+      "fid": "t11q2/",
+      "title": "The Lineage",
+      "res": {
+        "audio": "Q23.02.mp3"
+      },
+      "url": "/wom/questions/t11q2/",
+      "idx": 59,
+      "next": "/wom/questions/t11q3/",
+      "prev": "/wom/questions/t11q1/"
+    },
+    {
+      "fid": "t11q3/",
+      "title": "Specialness, Holiness and Sexuality",
+      "res": {
+        "audio": "Q23.03.mp3"
+      },
+      "url": "/wom/questions/t11q3/",
+      "idx": 60,
+      "next": "/wom/intro/questions/",
+      "prev": "/wom/questions/t11q2/"
+    }
+  ]
+}

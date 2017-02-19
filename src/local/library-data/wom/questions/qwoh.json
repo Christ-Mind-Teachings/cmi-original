@@ -1,0 +1,236 @@
+{
+  "id": "woh",
+  "base": "/wom/questions/",
+  "title": "The Way of the Heart",
+  "titles": [
+    {
+      "title": "Lesson One",
+      "questions": [
+        {
+          "fid": "h01q1/",
+          "title": "Jeshua's Motivation",
+          "question": "What motivates you? How does an enlightened person move
+              throughout his or her day? Apparently you have moved into a state of
+              Oneness with Source, yet you still have a distinct, unique personality.
+              You are still a Self, yet you are also One with God. Can you describe
+              what this state is like for us?"
+        },
+        {
+          "fid": "h01q2/",
+          "title": "Sexuality",
+          "question": "Would you please comment on the role of sexuality and sexual
+              expression for those of us committed to a path of spiritual evolution?"
+       },
+        {
+          "fid": "h01q3/",
+          "title": "Physical Healing",
+          "question": "I understand healing as Jeshua speaks of it in <em>A Course in
+              Miracles</em>, yet what needs to occur for bodily symptoms to no longer be in
+              one’s experience?"
+       }
+      ]
+    },
+    {
+      "title": "Lesson Two",
+      "questions": [
+        {
+          "fid": "h02q1/",
+          "title": "40 Days and Nights",
+          "question": "What did you experience when you went to the desert for forty
+            days and forty nights? And what was the purpose of doing a fast?"
+       },
+        {
+          "fid": "h02q2/",
+          "title": "Mary",
+          "question": "Please comment on Mary and the messages that are being
+            published recently as coming from her."
+       }
+      ]
+    },
+    {
+      "title": "Lesson Six",
+      "questions": [
+        {
+          "fid": "h06q1/",
+          "title": "ACIM",
+          "question": "How can I integrate the breath work and techniques that I am
+              learning this week with your Lessons in the <em>Course in Miracles</em>?"
+        },
+        {
+          "fid": "h06q2/",
+          "title": "The Dark Side",
+          "question": "Can you speak about the need, or lack of need, to work
+              directly with the dark side, both on the physical and astral plane?"
+        },
+        {
+          "fid": "h06q3/",
+          "title": "Ego Habits",
+          "question": "How can I tell the difference between old ego habits of
+              feeling and feelings which need to be felt to completion?"
+       }
+      ]
+    },
+    {
+      "title": "Lesson Seven",
+      "questions": [
+        {
+          "fid": "h07q1/",
+          "title": "Being a Servant of God",
+          "question": "If God wants only me to be happy and doesn’t require any
+              specific action of me, what does it mean to be the servant of God? Is
+              there a divine plan for action God would have us follow, or are the
+              actions given us based wholly upon our momentary self-perceptions? Do we
+              have to do things here in a particular way?"
+        },
+        {
+          "fid": "h07q2/",
+          "title": "Twin Flame & Soul Mate",
+          "question": "What is the difference between a twin flame and soul mate?
+              Please describe the importance of bringing two whole people to a
+              relationship and maintaining uniqueness while creating synergy."
+        },
+        {
+          "fid": "h07q3/",
+          "title": "Unconscious Blocks",
+          "question": "How can we bring to light unconscious blocks that keep us from
+              manifesting our heart’s desire?"
+        },
+        {
+          "fid": "h07q4/",
+          "title": "Discipline",
+          "question": "What is the interplay between playing out strong attachments,
+              habits, compulsions, addictions, in order to let them go with gentleness
+              and understanding, or using discipline and self control to end these
+              attachments?"
+        },
+        {
+          "fid": "h07q5/",
+          "title": "Christian Pentecostal and New Age",
+          "question": "There are two religious movements dear to me that I’ve seen
+              growing over the past twenty years. These are the Christian Pentecostal
+              and the New Age. How have you been an influence in their growth and
+              development, and how do you feel about them now? If you had the
+              opportunity to address these groups, what message would you desire to
+              communicate to them?"
+        }
+      ]
+    },
+    {
+      "title": "Lesson Eight",
+      "questions": [
+        {
+          "fid": "h08q1/",
+          "title": "Holy Spirit and Oversoul",
+          "question": "During a period of higher consciousness, I was aware of a
+              presence that encompassed individuals. It was plain to me that it
+              performed a function of guiding the person into appropriate experiences.
+              I’m not clear if this is what you call The Holy Spirit. It seemed to be
+              like an Oversoul of the person. Would you please clarify this presence
+              and the Holy Spirit?"
+        },
+        {
+          "fid": "h08q2/",
+          "title": "Healing",
+         "question": "What is the difference between that which needs to be healed
+            and just being the perfect being we are?"
+        }
+      ]
+    },
+    {
+      "title": "Lesson Nine",
+      "questions": [
+        {
+          "fid": "h09q1/",
+          "title": "Self-forgiveness",
+          "question": "Is it necessary, Jeshua, to go to the other aspects of
+              ourselves and ask forgiveness for errors that we feel we have made?"
+        }
+      ]
+    },
+    {
+      "title": "Lesson Ten",
+      "questions": [
+        {
+          "fid": "h10q1/",
+          "title": "Astrology",
+          "question": "Can you elaborate on the importance of our natal charts and
+              the different influences and energies that transits in astrology bring?"
+        },
+        {
+          "fid": "h10q2/",
+          "title": "Symbology of the Cross",
+          "question": "I recently saw a friend’s heart with my inner eye. And the
+              symbol was a beautiful Cross of Light. I would like you to elaborate on
+              the symbology of the cross."
+        },
+        {
+          "fid": "h10q3/",
+          "title": "Initiations",
+          "question": "Can you talk about initiations, and passing through them, and,
+              then, having similar energies represent themselves again at a different
+              level of the spiral?"
+        }
+      ]
+    },
+    {
+      "title": "Lesson Eleven",
+      "questions": [
+        {
+          "fid": "h11q1/",
+          "title": "Responsibility to the Poor",
+          "question": "I would like to hear Jeshua address the following issue
+          brought to my attention by one who does not embrace our path or beliefs.
+          This person quotes, 'The message from Jeshua tends to privatize
+          spirituality and right action. One could easily forget or rationalize
+          away one’s responsibility to the poor and oppressed.'"
+        },
+        {
+          "fid": "h11q2/",
+          "title": "Helping the Poor",
+          "question": "I understand that the path of the poor and oppressed is their
+              path. However, when and how will they understand, comprehend, that they
+              are not victims? And how can they, too, participate in embracing
+              ascension? Do we have a responsibility to bring the message, help them
+              spiritually and physically to throw off the bonds? I feel a need to
+              share the Love. How is this to be done?"
+        },
+        {
+          "fid": "h11q3/",
+          "title": "Teaching Children",
+          "question": "Jeshua, how does one teach a young child peace and Love when
+              they’re acting out their fear and anger?"
+        }
+      ]
+    },
+    {
+      "title": "Lesson Twelve",
+      "questions": [
+        {
+          "fid": "h12q1/",
+          "title": "Why hast Thou Forsaken Me",
+          "question": "On the day of your crucifixion, it was told that you spoke the
+              words, 'Father, why hast Thou forsaken me?'"
+        },
+        {
+          "fid": "h12q2/",
+          "title": "Mary Magdalene",
+          "question": "There seem to be many, many women who tap into memories and
+            experiences of being Mary Magdalene. Can you talk about that, or the
+            fragmentation of that one soul?"
+        },
+        {
+          "fid": "h12q3/",
+          "title": "St. Germain",
+          "question": "You had mentioned you’re coming through 2,003, or so, other
+              people. And there have been several people out there claiming to have
+              channeled St. Germain. And we have been told by Jonah that nobody does
+              channel St. Germain. They only receive thought forms. So the question
+              is: Are there people out there who are authentically channeling our
+              mutual friend, St. Germain?"
+        }
+      ]
+    }
+  ]
+}
+
+

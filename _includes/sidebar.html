@@ -27,37 +27,5 @@
         <a class="sidebar-nav-item" href="{{ node.url }}">{{ node.title }}</a>
       {% endif %}
     {% endfor %}
-
-    {% comment %}
-    {% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.publish %}
-          {% if node.layout == "page" or node.layout == "custom" %}
-            {% if page.url == node.url %}
-              <a class="sidebar-nav-item active" href="#">{{ node.title }}</a>
-            {% else %}
-              <a class="sidebar-nav-item" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
-            {% endif %}
-          {% endif %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    {% endcomment %}
-
-    <!-- The code below is used for manually entered links  -->
-
-    {% comment %}
-    <a class="sidebar-nav-item" href="https://cemmento.org/{{ site.url }}{{ site.baseurl }}{{page.url}}/">Annotate me</a>
-
-    <a class="sidebar-nav-item" href="https://github.com/elotroalex/ed" target="_blank">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
-    {% endcomment %}
   </nav>
-
-  {% comment %}
-  <div class="sidebar-item">
-    <p>Distributed with an MIT license.</p>
-  </div>
-  {% endcomment %}
 </div>

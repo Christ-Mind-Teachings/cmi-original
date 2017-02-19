@@ -1,0 +1,17 @@
+{
+  "id": "wot",
+  "base": "/wom/questions/",
+  "title": "The Way of Transformation",
+  "titles": [
+    {
+      "title": "Lesson One",
+      "questions": [
+        {
+          "fid": "h01q1/",
+          "title": "Jeshua's Motivation",
+          "question": ""
+        }
+      ]
+    }
+  ]
+}

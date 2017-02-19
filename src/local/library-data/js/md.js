@@ -328,8 +328,38 @@ function wom(item, idx, arr) {
 }
 
 // wom (early years)  procedure for json file conversion
+function questions(item, idx, arr) {
+  var page = {};
+  var fid = copyObj(page, item);
+
+  if (item.fid.charAt(0) === "*") {
+    page.url = util.format("%s%s/", this.intro, item.fid.substr(1));
+  }
+  else {
+    page.url = util.format("%s%s/", this.base, item.fid);
+  }
+
+  page.title = item.title;
+  page.idx = idx;
+
+  next_prev(page, arr, {base: this.base, intro: this.intro});
+
+  if (item.fid.charAt(0) === "*") {
+    page.fid = item.fid.substr(1);
+  }
+  else {
+    page.fid = item.fid;
+  }
+
+  //append '/' to simplify workig with Jekyll Liquid
+  page.fid = page.fid + '/';
+  return page;
+}
+
+// wom (early years)  procedure for json file conversion
 function early(item, idx, arr) {
   var page = {};
+  var fid = copyObj(page, item);
 
   if (item.fid.charAt(0) === "*") {
     page.url = util.format("%s%s/", this.intro, item.fid.substr(1));
@@ -376,6 +406,7 @@ try {
 catch(e) {
   console.log("error opening %s", inputFile);
   console.log("** exiting");
+  console.log(e);
   process.exit(1);
 }
 
@@ -452,8 +483,15 @@ switch (id) {
     yml.page = _.map(data.pages, early, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
+  case "questions":
+    source = "wom";
+    yml.base = data.base;
+    yml.intro = data.intro;
+    yml.page = _.map(data.pages, questions, {base: yml.base, intro: yml.intro});
+    outfile = data.outfile;
+    break;
   default:
-    console.log("Unknown identifier, use either 'acim', 'yaa', 'grad', 'early', or 'wom' [for woh, wot, wok]");
+    console.log("Unknown identifier, use either 'acim', 'yaa', 'grad', 'early', 'questions', or 'wom' [for woh, wot, wok]");
     process.exit(1);
 }
 

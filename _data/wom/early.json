@@ -1,46 +1,61 @@
 {
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/wom/audio/early/"
+  },
   "base": "/wom/early/",
   "intro": "/wom/intro/",
   "page": [
     {
-      "url": "/wom/intro/early/",
+      "fid": "early/",
       "title": "About",
+      "url": "/wom/intro/early/",
       "idx": 0,
       "next": "/wom/early/ble/",
-      "prev": "/wom/early/ign/",
-      "fid": "early/"
+      "prev": "/wom/early/ign/"
     },
     {
-      "url": "/wom/early/ble/",
+      "fid": "ble/",
+      "res": {
+        "audio": "BLE.mp3"
+      },
       "title": "The Blessing of Forgiveness",
+      "url": "/wom/early/ble/",
       "idx": 1,
       "next": "/wom/early/c2s/",
-      "prev": "/wom/intro/early/",
-      "fid": "ble/"
+      "prev": "/wom/intro/early/"
     },
     {
-      "url": "/wom/early/c2s/",
+      "fid": "c2s/",
+      "res": {
+        "audio": "C2S.mp3"
+      },
       "title": "Choose to See",
+      "url": "/wom/early/c2s/",
       "idx": 2,
       "next": "/wom/early/hoe/",
-      "prev": "/wom/early/ble/",
-      "fid": "c2s/"
+      "prev": "/wom/early/ble/"
     },
     {
-      "url": "/wom/early/hoe/",
+      "fid": "hoe/",
+      "res": {
+        "audio": "HOE.mp3"
+      },
       "title": "Heaven on Earth",
+      "url": "/wom/early/hoe/",
       "idx": 3,
       "next": "/wom/early/ign/",
-      "prev": "/wom/early/c2s/",
-      "fid": "hoe/"
+      "prev": "/wom/early/c2s/"
     },
     {
-      "url": "/wom/early/ign/",
+      "fid": "ign/",
+      "res": {
+        "audio": "IGN.mp3"
+      },
       "title": "Ignorance is Bliss",
+      "url": "/wom/early/ign/",
       "idx": 4,
       "next": "/wom/intro/early/",
-      "prev": "/wom/early/hoe/",
-      "fid": "ign/"
+      "prev": "/wom/early/hoe/"
     }
   ]
 }

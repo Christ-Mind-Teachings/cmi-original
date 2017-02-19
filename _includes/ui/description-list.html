@@ -1,31 +1,24 @@
 {% comment %}
   ui/description-list
+  -------------------
   include.base: {{include.base}}
   include.skip: {{include.skip}}
+  include.source: {{include.source}}
+  include.class: {{include.class}}
 {% endcomment %}
-
-{% assign skip = include.skip | default: -1 %}
-{% assign base = include.base | default: "" %}
-
-<section>
-
-{% for book in include.data %}
-  {% if skip != book.idx %}
-    {% assign complete = book.complete | default: false %}
-    {% if complete == false %}
-      {% assign class = "<i class='fa fa-fw fa-exclamation'></i>" %}
-    {% endif %}
-
-    <header>
-      <a href="{{book.url}}">
-        {{class}}&nbsp;{{book.title}}
-      </a>
-    </header>
-    <section>
-      <p>{{book.desc | default: "No description yet"}}</p>
-    </section>
-  {% endif %}
-{% endfor %}
-
-</section>
+{% case include.source %}
+  {% when "acim" %}
+    {% include uii/dl/nwffacim-studygroup-contents.html
+    skip=include.skip base=include.base data=include.data %}
+  {% when "questions" %}
+    {% include uii/dl/wom-questions-contents.html
+    class=include.class data=include.data %}
+  {% else %}
+    <!--
+      description-list.html
+      ---------------------
+      unknown or missing include.source
+      include.source: {{include.source}}
+    -->
+{% endcase %}
 

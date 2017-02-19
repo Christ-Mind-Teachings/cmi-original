@@ -1,6 +1,18 @@
 {
   "page": [
     {
+      "id": "questions",
+      "topic": "Way of Mastery",
+      "heading": "Questions and Answers",
+      "image": "underwater",
+      "content": "<p>
+        Questions asked and the answers given in all the recorded
+        <em>Way of Mastery</em> sessions are here. Questions come
+        from, <em>The Early Years</em>, <em>The Way of the Heart</em>,
+        <em>The Way of Transformation</em>, and <em>The Way of Knowing</em>
+        </p>"
+    },
+    {
       "id": "yaa",
       "topic": "Northwest Foundation for <em>ACIM</em>",
       "heading": "You <em>Are</em> the Answer: A Journey of Awakening",

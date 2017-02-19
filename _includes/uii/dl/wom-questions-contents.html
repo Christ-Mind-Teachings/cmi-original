@@ -1,0 +1,27 @@
+
+<!--
+  uii/dl/wom-questions-contents.html
+  ----------------------------------
+  include.base: {{include.data.base}}
+  include.class: {{include.class}}
+-->
+
+<section class="{{include.class}}">
+
+{% for title in include.data.titles %}
+  <hr>
+  <h3>{{include.data.title}}: {{title.title}}</h3>
+  {% for ques in title.questions %}
+    <header>
+      <a href="{{include.data.base | append: ques.fid}}">
+        {{ques.title}}
+      </a>
+    </header>
+    <section>
+      <p>{{ques.question}}</p>
+    </section>
+  {% endfor %}
+{% endfor %}
+
+</section>
+

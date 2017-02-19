@@ -1,0 +1,431 @@
+{
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/wom/audio/questions/"
+  },
+  "base": "/wom/questions/",
+  "intro": "/wom/intro/",
+  "outfile": "questions.json",
+  "id": "questions",
+  "pages": [
+    {
+      "fid": "*questions",
+      "title": "About"
+    },
+    {
+      "fid": "bleq1",
+      "title": "Profound Time of Year",
+      "res": {
+        "audio": "BLEQ1.mp3"
+      }
+    },
+    {
+      "fid": "bleq2",
+      "title": "Living in Community",
+      "res": {
+        "audio": "BLEQ2.mp3"
+      }
+    },
+    {
+      "fid": "bleq3",
+      "title": "Co-creating Christ",
+      "res": {
+        "audio": "BLEQ3.mp3"
+      }
+    },
+    {
+      "fid": "bleq4",
+      "title": "12/12",
+      "res": {
+        "audio": "BLEQ4.mp3"
+      }
+    },
+    {
+      "fid": "c2sq1",
+      "title": "Symbolism of Crucifixion",
+      "res": {
+        "audio": "C2SQ1.mp3"
+      }
+    },
+    {
+      "fid": "c2sq2",
+      "title": "Surrender to the Holy Spirit",
+      "res": {
+        "audio": "C2SQ2.mp3"
+      }
+    },
+    {
+      "fid": "c2sq3",
+      "title": "Bringing Heaven to Earth",
+      "res": {
+        "audio": "C2SQ3.mp3"
+      }
+    },
+    {
+      "fid": "c2sq4",
+      "title": "Difference between Jeshua and Christ",
+      "res": {
+        "audio": "C2SQ4.mp3"
+      }
+    },
+    {
+      "fid": "c2sq5",
+      "title": "Non-physical Reality",
+      "res": {
+        "audio": "C2SQ5.mp3"
+      }
+    },
+    {
+      "fid": "h01q1",
+      "title": "Jeshua's Motivation",
+      "res": {
+        "audio": "Q01.01.mp3"
+      }
+    },
+    {
+      "fid": "h01q2",
+      "title": "Sexuality",
+      "res": {
+        "audio": "Q01.02.mp3"
+      }
+    },
+    {
+      "fid": "h01q3",
+      "title": "Physical Healing",
+      "res": {
+        "audio": "Q01.03.mp3"
+      }
+    },
+    {
+      "fid": "h02q1",
+      "title": "40 Days and Nights",
+      "res": {
+        "audio": "Q02.01.mp3"
+      }
+    },
+    {
+      "fid": "h02q2",
+      "title": "Mary",
+      "res": {
+        "audio": "Q02.02.mp3"
+      }
+    },
+    {
+      "fid": "h06q1",
+      "title": "ACIM",
+      "res": {
+        "audio": "Q06.01.mp3"
+      }
+    },
+    {
+      "fid": "h06q2",
+      "problem": "we don't have this audio",
+      "title": "The Dark Side"
+    },
+    {
+      "title": "Ego Habits",
+      "fid": "h06q3",
+      "res": {
+        "audio": "Q06.02.mp3"
+      }
+    },
+    {
+      "fid": "h07q1",
+      "title": "Being a Servant of God",
+      "res": {
+        "audio": "Q07.01.mp3"
+      }
+    },
+    {
+      "fid": "h07q2",
+      "title": "Twin Flame & Soul Mate",
+      "res": {
+        "audio": "Q07.02.mp3"
+      }
+    },
+    {
+      "fid": "h07q3",
+      "title": "Unconscious Blocks",
+      "res": {
+        "audio": "Q07.03.mp3"
+      }
+    },
+    {
+      "fid": "h07q4",
+      "title": "Discipline",
+      "res": {
+        "audio": "Q07.04.mp3"
+      }
+    },
+    {
+      "fid": "h07q5",
+      "title": "Christian Pentecostal and New Age",
+      "res": {
+        "audio": "Q07.05.mp3"
+      }
+    },
+    {
+      "fid": "h08q1",
+      "title": "Holy Spirit and Oversoul",
+      "res": {
+        "audio": "Q08.01.mp3"
+      }
+    },
+    {
+      "fid": "h08q2",
+      "title": "Healing",
+      "res": {
+        "audio": "Q08.02.mp3"
+      }
+    },
+    {
+      "problem": "don't have audio",
+      "title": "Self-forgiveness",
+      "fid": "h09q1"
+    },
+    {
+      "fid": "h10q1",
+      "title": "Astrology",
+      "res": {
+        "audio": "Q10.01.mp3"
+      }
+    },
+    {
+      "fid": "h10q2",
+      "title": "Symbology of the Cross",
+      "res": {
+        "audio": "Q10.02.mp3"
+      }
+    },
+    {
+      "fid": "h10q3",
+      "title": "Initiations",
+      "res": {
+        "audio": "Q10.03.mp3"
+      }
+    },
+    {
+      "fid": "h11q1",
+      "title": "Responsibility to the Poor",
+      "res": {
+        "audio": "Q11.01.mp3"
+      }
+    },
+    {
+      "fid": "h11q2",
+      "title": "Helping the Poor",
+      "res": {
+        "audio": "Q11.02.mp3"
+      }
+    },
+    {
+      "fid": "h11q3",
+      "title": "Teaching Children",
+      "res": {
+        "audio": "Q11.03.mp3"
+      }
+    },
+    {
+      "fid": "h12q1",
+      "title": "Why hast Thou Forsaken Me",
+      "res": {
+        "audio": "Q12.01.mp3"
+      }
+    },
+    {
+      "fid": "h12q2",
+      "title": "Mary Magdalene",
+      "res": {
+        "audio": "Q12.02.mp3"
+      }
+    },
+    {
+      "fid": "h12q3",
+      "title": "St. Germain",
+      "res": {
+        "audio": "Q12.03.mp3"
+      }
+    },
+    {
+      "fid": "hoeq1",
+      "title": "Unclear Questions",
+      "res": {
+        "audio": "HOEQ1.mp3"
+      }
+    },
+    {
+      "fid": "hoeq2",
+      "title": "Developing Clairty",
+      "res": {
+        "audio": "HOEQ2.mp3"
+      }
+    },
+    {
+      "fid": "hoeq3",
+      "title": "Living as Christ",
+      "res": {
+        "audio": "HOEQ3.mp3"
+      }
+    },
+    {
+      "fid": "hoeq4",
+      "title": "Shanti Christo Membership",
+      "res": {
+        "audio": "HOEQ5.mp3"
+      }
+    },
+    {
+      "fid": "k02q1",
+      "title": "Definition of Knowing",
+      "res": {
+        "audio": "Q26.01.mp3"
+      }
+    },
+    {
+      "fid": "k02q2",
+      "title": "Glee Clubs and Attack",
+      "res": {
+        "audio": "Q26.02.mp3"
+      }
+    },
+    {
+      "fid": "k03q1",
+      "title": "Love of Self and Others",
+      "res": {
+        "audio": "Q27.01.mp3"
+      }
+    },
+    {
+      "fid": "k03q2",
+      "title": "Guidance of the Holy Spirit",
+      "res": {
+        "audio": "Q27.02.mp3"
+      }
+    },
+    {
+      "fid": "k04q1",
+      "title": "Great Rays of Light",
+      "res": {
+        "audio": "Q28.01.mp3"
+      }
+    },
+    {
+      "fid": "k04q2",
+      "title": "Differences",
+      "res": {
+        "audio": "Q28.02.mp3"
+      }
+    },
+    {
+      "fid": "k06q1",
+      "title": "Joy and Pleasure",
+      "res": {
+        "audio": "Q30.01.mp3"
+      }
+    },
+    {
+      "fid": "k06q2",
+      "title": "Shanti Christo",
+      "res": {
+        "audio": "Q30.02.mp3"
+      }
+    },
+    {
+      "fid": "k10q1",
+      "title": "Bible Codes",
+      "res": {
+        "audio": "Q34.01.mp3"
+      }
+    },
+    {
+      "fid": "k10q2",
+      "title": "Free Will of Children",
+      "res": {
+        "audio": "Q34.02.mp3"
+      }
+    },
+    {
+      "fid": "t01q1",
+      "title": "Other Masters",
+      "res": {
+        "audio": "Q13.01.mp3"
+      }
+    },
+    {
+      "fid": "t01q2",
+      "title": "Judgment and Discernment",
+      "res": {
+        "audio": "Q13.02.mp3"
+      }
+    },
+    {
+      "fid": "t06q1",
+      "title": "Vulnerability and Invulnerability",
+      "res": {
+        "audio": "Q18.01.mp3"
+      }
+    },
+    {
+      "fid": "t06q2",
+      "title": "Message of the Cross",
+      "res": {
+        "audio": "Q18.02.mp3"
+      }
+    },
+    {
+      "fid": "t07q1",
+      "title": "Enlightenment",
+      "res": {
+        "audio": "Q19.01.mp3"
+      }
+    },
+    {
+      "fid": "t09q1",
+      "title": "Guidance",
+      "res": {
+        "audio": "Q21.01.mp3"
+      }
+    },
+    {
+      "fid": "t09q2",
+      "title": "All Events are Neutral",
+      "res": {
+        "audio": "Q21.02.mp3"
+      }
+    },
+    {
+      "fid": "t09q3",
+      "title": "Christ Consciousness",
+      "res": {
+        "audio": "Q21.03.mp3"
+      }
+    },
+    {
+      "fid": "t09q4",
+      "title": "Ascending and Descending Currents",
+      "res": {
+        "audio": "Q21.04.mp3"
+      }
+    },
+    {
+      "fid": "t11q1",
+      "title": "Unique Purpose",
+      "res": {
+        "audio": "Q23.01.mp3"
+      }
+    },
+    {
+      "fid": "t11q2",
+      "title": "The Lineage",
+      "res": {
+        "audio": "Q23.02.mp3"
+      }
+    },
+    {
+      "fid": "t11q3",
+      "title": "Specialness, Holiness and Sexuality",
+      "res": {
+        "audio": "Q23.03.mp3"
+      }
+    }
+  ]
+}

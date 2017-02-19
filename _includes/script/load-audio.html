@@ -34,6 +34,7 @@
     {% assign p = data.page | where: "fid", key %}
     {% assign page-data = p[0] %}
 
+    {% comment %}
     <!--
       load-audio info
       page.bid: {{page.bid}}
@@ -48,6 +49,7 @@
       ** NO page-data found for page **
       {% endif %}
     -->
+    {% endcomment %}
 
     {% if page-data.res.audio %}
       {% include script/load-jquery.html %}
