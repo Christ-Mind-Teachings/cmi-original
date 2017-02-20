@@ -1,6 +1,8 @@
 ---
 title: "Choose to See"
 received: "Oct 1994"
+fbing:
+- "wom/ble.jpg"
 toc:
 - Question One
 - Question Two

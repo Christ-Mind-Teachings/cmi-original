@@ -1,6 +1,8 @@
 ---
 title: "The Blessing of Forgiveness"
 received: Unknown
+fbimg:
+- "wom/ble.jpg"
 toc:
 - Question One
 - Question Two
