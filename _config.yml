@@ -266,10 +266,11 @@ kramdown:
 
 # Custom vars
 version:             0.0.6
+fb-appId:     448658485318107
 
 # Exclusions from the final site
 exclude: [
-   _wom/early,
+  # _wom/early,
   # _wom/questions,
   #  _wom/woh,
   #  _wom/wot,
