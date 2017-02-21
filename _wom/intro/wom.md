@@ -4,6 +4,7 @@ title: Way of Mastery
 source: Way of Mastery
 surl: /wom/intro/wom/
 sidebar: sidebar.html
+intro: "wom"
 xfooter-id: wom
 ---
 

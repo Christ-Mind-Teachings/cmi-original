@@ -1,3 +1,7 @@
+//These files have been converted to mp3 and stored in Dropbox and transferred
+//to s3 with MultiCloud
+// - see https://cloudconvert.com/converter/files
+// - see https://www.multcloud.com/home
 https://static.secure.website/wscfus/8306833/2264563/2005-01-16.wma
 https://static.secure.website/wscfus/8306833/2264937/2005-01-23.wma
 https://static.secure.website/wscfus/8306833/2264952/2005-01-30.wma
@@ -10,6 +14,7 @@ https://static.secure.website/wscfus/8306833/2266099/2005-04-10.wma
 https://static.secure.website/wscfus/8306833/2266115/2005-04-17.wma
 https://static.secure.website/wscfus/8306833/2266329/2005-04-24.wma
 https://static.secure.website/wscfus/8306833/2266330/2005-05-01.wma
+--- audio above converted Feb 20
 https://static.secure.website/wscfus/8306833/2266392/2005-05-08.wma
 https://static.secure.website/wscfus/8306833/2266394/2005-05-22.wma
 https://static.secure.website/wscfus/8306833/2266396/2005-06-05.wma
@@ -33,3 +38,4 @@ https://static.secure.website/wscfus/8306833/2323233/2005-12-04.wma
 https://static.secure.website/wscfus/8306833/2323236/2005-12-11.wma
 https://static.secure.website/wscfus/8306833/2323237/2005-12-18.wma
 https://static.secure.website/wscfus/8306833/2265026/2005-03-06.wma
+--- audio above converted Feb 21

@@ -1,12 +1,14 @@
 ---
 layout: custom
 source: Way of Mastery
+surl: /wom/intro/wom/
 book: The Early Years
+burl: /wom/intro/early/
 title: About The Early Years
 nav: nav/np-data.html
-home: "#"
 contents: nav/contents.html
 bid: "early"
+intro: "wom:early"
 fbimg:
 - "wom/earlyyears-cover.jpg"
 - "wom/ign.jpg"

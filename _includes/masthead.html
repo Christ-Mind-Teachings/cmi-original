@@ -1,29 +1,100 @@
+{% comment %}
+  {% include cmi/intro.html %}
+  intro pages have intro ids because there's no good place
+  to put default front matter
+{% endcomment %}
+{% if intro-id-present %}
+  {% assign page-level = intro-level | plus: 1 %}
+  {% assign source = source-data.source %}
+  {% assign surl = source-data.surl %}
+  {% assign book = book-data.book %}
+  {% assign burl = book-data.burl %}
+  {% assign unit = unit-data.unit %}
+  {% assign uurl = unit-data.uurl %}
+{% else %}
+  {% assign page-level = 1 %}
+  {% if page.source %}
+    {% assign source = page.source %}
+    {% assign surl = page.surl %}
+    {% assign page-level = page-level | plus: 1 %}
+  {% endif %}
+  {% if page.book %}
+    {% assign book = page.book %}
+    {% assign burl = page.burl %}
+    {% assign page-level = page-level | plus: 1 %}
+    {% if page.unit %}
+    {% else %}
+      {% if page.burl != page.url %}
+        {% assign page-level = page-level | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+  {% if page.unit %}
+    {% assign unit = page.unit %}
+    {% assign uurl = page.uurl %}
+    {% assign page-level = page-level | plus: 1 %}
+    {% if page.uurl != page.url %}
+      {% assign page-level = page-level | plus: 1 %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+{% comment %}
+{% endcomment %}
+<!--
+  masthead.html
+  -------------
+  page level: {{page-level}}
+  source: {{source}}
+  surl: {{surl}}
+  book: {{book}}
+  burl: {{burl}}
+  unit: {{unit}}
+  uurl: {{uurl}}
+  url: {{page.url}}
+-->
+
 <div class="masthead">
   <div class="container">
     <h3 class="masthead-title">
-      <a href="/" title="Home">{{ site.title }}</a>
-      {% if page.source and page.book %}
-        <br><small>
-          <a href="{{page.surl}}">{{ page.source }}</a>
-          {% if page.home == "#" %}
-            <span>:</span>
-            {{ page.book }}
-          {% else %}
-            <span>/</span>
-            <a href="{{page.home}}">{{ page.book }}</a>
-          {% endif %}
-        </small>
-      {% elsif page.source %}
-        <br><small>
-        {% if page.surl == page.url %}
-          {{ page.source }}
+      <a href='/' title='Home'>{{ site.title }}</a>
+      {% case page-level %}
+        {% when 1 %}
+          <br/><small>{{ site.tagline }}</small>
+        {% when 2 %}
+          <br><small>{{source}}</small>
+        {% when 3 %}
+          <br/>
+          <small>
+            <a href="{{surl}}">{{ source }}</a>
+            <span>:&nbsp;</span> {{ book }}
+          </small>
+        {% when 4 %}
+          <br/>
+          <small>
+            <a href="{{surl}}">{{ source }}</a>
+            <span>&nbsp;&gt;&nbsp;</span><a href="{{burl}}">{{ book }}</a>
+          </small>
+        {% when 5 %}
+          <br/>
+          <small>
+            <a href="{{surl}}">{{ source }}</a>
+            <span>&nbsp;&gt;&nbsp;</span><a href="{{burl}}">{{ book }}</a>
+            <span>&nbsp;&gt;&nbsp;</span><a href="{{uurl}}">{{ unit }}</a>
+          </small>
         {% else %}
-          <a href="{{page.surl}}">{{ page.source }}</a>
-        {% endif %}
-        </small>
-      {% else %}
-        <br><small>{{ site.tagline }}</small>
-      {% endif %}
+          <br/>
+          <small>
+            <ul>
+              <li>Unknown page level</li>
+              <li>page.surl: {{surl}}</li>
+              <li>page.source: {{source}}</li>
+              <li>page.burl: {{burl}}</li>
+              <li>page.book: {{book}}</li>
+              <li>page.unit: {{unit}}</li>
+            </ul>
+          </small>
+      {% endcase %}
     </h3>
   </div>
 </div>

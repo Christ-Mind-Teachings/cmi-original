@@ -1,13 +1,14 @@
 ---
 layout: custom
-source: Way of Mastery
-book: Way of the Heart
 title: Introduction
-bid: woh
+source: Way of Mastery
+surl: /wom/intro/wom/
+book: Way of the Heart
+burl: /wom/intro/woh/
 nav: nav/np-data.html
 contents: nav/contents.html
-home: "#"
-surl: /wom/intro/wom/
+bid: "woh"
+intro: "wom:woh"
 ---
 
 <div class="custom-side-image">

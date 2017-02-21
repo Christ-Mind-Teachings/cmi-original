@@ -1,0 +1,139 @@
+{
+  "fid": "root",
+  "source": [
+    {
+      "sid": "nwffacim",
+      "source": "Northwest Foundation for <em>ACIM</em>",
+      "surl": "/nwffacim/intro/nwffacim/",
+      "books": [
+        {
+          "bid": "yaa",
+          "book": "You Are the Answer",
+          "burl": "/nwffacim/intro/yaa/",
+          "units": []
+        },
+        {
+          "bid": "grad",
+          "book": "Graduation",
+          "burl": "/nwffacim/intro/grad/",
+          "units": []
+        },
+        {
+          "bid": "acim",
+          "book": "ACIM Study Group",
+          "burl": "/nwffacim/intro/acim/",
+          "units": [
+            {
+              "uid": "2002",
+              "unit": "2002 Contents",
+              "uurl": "/nwffacim/intro/2002/"
+            },
+            {
+              "uid": "2003",
+              "unit": "2003 Contents",
+              "uurl": "/nwffacim/intro/2003/"
+            },
+            {
+              "uid": "2004",
+              "unit": "2004 Contents",
+              "uurl": "/nwffacim/intro/2004/"
+            },
+            {
+              "uid": "2005",
+              "unit": "2005 Contents",
+              "uurl": "/nwffacim/intro/2005/"
+            },
+            {
+              "uid": "2006",
+              "unit": "2006 Contents",
+              "uurl": "/nwffacim/intro/2006/"
+            },
+            {
+              "uid": "2007",
+              "unit": "2007 Contents",
+              "uurl": "/nwffacim/intro/2007/"
+            },
+            {
+              "uid": "2008",
+              "unit": "2008 Contents",
+              "uurl": "/nwffacim/intro/2008/"
+            },
+            {
+              "uid": "2009",
+              "unit": "2009 Contents",
+              "uurl": "/nwffacim/intro/2009/"
+            },
+            {
+              "uid": "2010",
+              "unit": "2010 Contents",
+              "uurl": "/nwffacim/intro/2010/"
+            },
+            {
+              "uid": "2011",
+              "unit": "2011 Contents",
+              "uurl": "/nwffacim/intro/2011/"
+            },
+            {
+              "uid": "2012",
+              "unit": "2012 Contents",
+              "uurl": "/nwffacim/intro/2012/"
+            },
+            {
+              "uid": "2013",
+              "unit": "2013 Contents",
+              "uurl": "/nwffacim/intro/2013/"
+            },
+            {
+              "uid": "2014",
+              "unit": "2014 Contents",
+              "uurl": "/nwffacim/intro/2014/"
+            },
+            {
+              "uid": "2015",
+              "unit": "2015 Contents",
+              "uurl": "/nwffacim/intro/2015/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sid": "wom",
+      "source": "Way of Mastery",
+      "surl": "/wom/intro/wom/",
+      "books": [
+        {
+          "bid": "early",
+          "book": "The Early Years",
+          "burl": "/wom/intro/early/",
+          "units": []
+        },
+        {
+          "bid": "questions",
+          "book": "Questions",
+          "burl": "/wom/intro/questions/",
+          "units": []
+        },
+        {
+          "bid": "woh",
+          "book": "Way of the Heart",
+          "burl": "/wom/intro/woh/",
+          "units": []
+        },
+        {
+          "bid": "wot",
+          "book": "Way of Transformation",
+          "burl": "/wom/intro/wot/",
+          "units": []
+        },
+        {
+          "bid": "wok",
+          "book": "Way of Knowing",
+          "burl": "/wom/intro/wok/",
+          "units": []
+        }
+      ]
+    }
+  ]
+}
+

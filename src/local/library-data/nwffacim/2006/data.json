@@ -1,42 +1,184 @@
 {
+  "domain": {
+    "audio": "https://static.secure.website/wscfus/8306833/"
+  },
   "year": 2006,
   "base": "/nwffacim/acim/2006",
   "intro": "/nwffacim/intro/",
   "pages": [
     "*2006",
-    "010806",
-    "011506",
-    "012206",
-    "012906",
-    "021206",
-    "022606",
-    "030406",
-    "031106",
-    "031906",
-    "040106",
-    "041506",
-    "042906",
-    "050606",
-    "052006",
-    "052706",
-    "060306",
-    "061006",
-    "061806",
-    "062406",
-    "070106",
-    "071506",
-    "073006",
-    "080506",
-    "081206",
-    "082006",
-    "090206",
-    "090906",
-    "092306",
-    "100706",
-    "101406",
-    "102106",
-    "102806",
-    "111106",
-    "111806"
+    {
+      "fid": "010806",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "011506",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "012206",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "012906",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "021206",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "022606",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "030406",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "031106",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "031906",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "040106",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "041506",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "042906",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "050606",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "052006",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "052706",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "060306",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "061006",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "061806",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "062406",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "070106",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "071506",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "073006",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "080506",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "081206",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "082006",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "090206",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "090906",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "092306",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "100706",
+      "res": {
+        "audio": "2480760/2006-10-07.mp3"
+      },
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "101406",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "102106",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "102806",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "111106",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "111806",
+      "desc": "",
+      "complete": false
+    }
   ]
 }

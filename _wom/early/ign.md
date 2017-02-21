@@ -1,6 +1,6 @@
 ---
 title: "Ignorance is Bliss"
-fbing:
+fbimg:
 - "wom/ign.jpg"
 received: "Sep 1994"
 ---

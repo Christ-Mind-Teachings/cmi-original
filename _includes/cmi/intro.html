@@ -1,0 +1,37 @@
+{% assign data = site.data.cmi.intro %}
+{% assign intro-id-present = false %}
+
+{% if page.intro %}
+  {% assign intro-id-present = true %}
+  {% assign ids = page.intro | split: ":" %}
+  {% assign sid = ids[0] %}
+  {% assign bid = ids[1] %}
+  {% assign uid = ids[2] %}
+  {% assign intro-level = ids.size %}
+
+  {% assign result = data.source | where: "sid", sid %}
+  {% assign source-data = result[0] %}
+  {% assign result = source-data.books | where: "bid", bid %}
+  {% assign book-data = result[0] %}
+  {% assign result = book-data.units | where: "uid", uid %}
+  {% assign unit-data = result[0] %}
+
+  {% comment %}
+  {% endcomment %}
+  <!--
+    intro.html
+    ----------
+    page.intro: {{page.intro}}
+    ids.size: {{ids.size}}
+    sid: {{sid}}
+    bid: {{bid}}
+    uid: {{uid}}
+
+    source-data.source: {{source-data.source}}
+    book-data.book: {{book-data.book}}
+    unit-data.unit: {{unit-data.unit}}
+
+    intro-level: {{intro-level}}
+  -->
+{% endif %}
+

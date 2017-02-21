@@ -1,48 +1,226 @@
 {
+  "domain": {
+    "audio": "https://static.secure.website/wscfus/8306833/"
+  },
   "year": 2005,
   "base": "/nwffacim/acim/2005",
   "intro": "/nwffacim/intro/",
   "pages": [
     "*2005",
-    "010205",
-    "011605",
-    "012305",
-    "013005",
-    "021305",
-    "022005",
-    "030605",
-    "031305",
-    "032705",
-    "040305",
-    "041005",
-    "041705",
-    "042405",
-    "050105",
-    "050805",
-    "052205",
-    "060505",
-    "061205",
-    "061905",
-    "070305",
-    "071005",
-    "071705",
-    "072405",
-    "080705",
-    "081405",
-    "082105",
-    "082805",
-    "090405",
-    "091105",
-    "091805",
-    "100205",
-    "100905",
-    "101605",
-    "102305",
-    "110605",
-    "111305",
-    "112005",
-    "120405",
-    "121105",
-    "121805"
+    {
+      "fid": "010205",
+      "desc": "",
+      "res": {
+        "audio": "2264547/2005-01-02.mp3"
+      },
+      "complete": false
+    },
+    {
+      "fid": "011605",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "012305",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "013005",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "021305",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "022005",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "030605",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "031305",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "032705",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "040305",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "041005",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "041705",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "042405",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "050105",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "050805",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "052205",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "060505",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "061205",
+      "res": {
+        "audio": "2323076/2005-06-12.mp3"
+      },
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "061905",
+      "desc": "",
+      "res": {
+        "audio": "2323080/2005-06-19.mp3"
+      },
+      "complete": false
+    },
+    {
+      "fid": "070305",
+      "desc": "",
+      "res": {
+        "audio": "2323103/2005-07-03.mp3"
+      },
+      "complete": false
+    },
+    {
+      "fid": "071005",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "071705",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "072405",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "080705",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "081405",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "082105",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "082805",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "090405",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "091105",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "091805",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "100205",
+      "desc": "",
+      "res": {
+        "audio": "2323132/2005-10-02.mp3"
+      },
+      "complete": false
+    },
+    {
+      "fid": "100905",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "101605",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "102305",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "110605",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "111305",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "112005",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "120405",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "121105",
+      "desc": "",
+      "complete": false
+    },
+    {
+      "fid": "121805",
+      "desc": "",
+      "complete": false
+    }
   ]
 }

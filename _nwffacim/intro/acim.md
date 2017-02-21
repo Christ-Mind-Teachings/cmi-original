@@ -1,13 +1,14 @@
 ---
 layout: custom
 title: ACIM Study Group
-book: Study Group Contents
 source: Northwest Foundation for ACIM
 surl: /nwffacim/intro/nwffacim/
+book: Study Group Contents
+burl: /nwffacim/intro/acim/
 class: nwffacim
 contents: nav/contents.html
-home: "#"
 bid: "acimc"
+intro: "nwffacim:acim"
 ---
 
 <div markdown="1" class="container content">

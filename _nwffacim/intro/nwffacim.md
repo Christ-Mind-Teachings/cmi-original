@@ -4,6 +4,7 @@ title: Northwest Foundation for ACIM
 source: Northwest Foundation for ACIM
 surl: /nwffacim/intro/nwffacim/
 sidebar: sidebar.html
+intro: "nwffacim"
 ---
 
 <div markdown="1" class="container content">

@@ -1,5 +1,7 @@
 ---
 title: "The Blessing of Forgiveness<small> - Question Two</small>"
+fbimg:
+- "wom/ble.jpg"
 ---
 
 ### Question

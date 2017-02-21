@@ -1,12 +1,14 @@
 ---
 layout: custom
-source: Way of Mastery
-book: Way of Knowing
 title: Introduction
+source: Way of Mastery
+surl: /wom/intro/wom/
+book: Way of Knowing
+burl: /wom/intro/wok/
 nav: nav/np-data.html
 contents: nav/contents.html
 bid: "wok"
-home: "#"
+intro: "wom:wok"
 ---
 
 <div class="custom-side-image">

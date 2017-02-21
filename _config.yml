@@ -47,8 +47,8 @@ defaults:
     values:
       bid: woh
       book: Way of the Heart
+      burl: /wom/intro/woh/
       nav: nav/np-data.html
-      home: /wom/intro/woh/
       contents: nav/contents.html
 
 # Way of Transformation
@@ -58,8 +58,8 @@ defaults:
     values:
       bid: wot
       book: Way of Transformation
+      burl: /wom/intro/wot/
       nav: nav/np-data.html
-      home: /wom/intro/wot/
       contents: nav/contents.html
 
 # Way of Knowing
@@ -69,8 +69,8 @@ defaults:
     values:
       bid: wok
       book: Way of Knowing
+      burl: /wom/intro/wok/
       nav: nav/np-data.html
-      home: /wom/intro/wok/
       contents: nav/contents.html
 
 # Early years
@@ -81,8 +81,8 @@ defaults:
       bid: early
       complete: true
       book: The Early Years
+      burl: /wom/intro/early/
       nav: nav/np-data.html
-      home: /wom/intro/early/
       contents: nav/contents.html
 
 # WOM Q&A
@@ -92,9 +92,9 @@ defaults:
     values:
       bid: questions
       complete: true
-      book: Questions and Answers
+      book: Questions
+      burl: /wom/intro/questions/
       nav: nav/np-data.html
-      home: /wom/intro/questions/
       contents: nav/contents.html
 
 # Paul Tuttle and Raj - Northwest Foundation for ACIM
@@ -114,7 +114,7 @@ defaults:
     values:
       bid: acimc
       book: ACIM Study Group
-      home: /nwffacim/intro/acim/
+      burl: /nwffacim/intro/acim/
       nav: nav/np-data.html
       contents: nav/contents.html
 
@@ -124,6 +124,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2002
+      unit: 2002 Contents
+      uurl: /nwffacim/intro/2002/
 
 # 2003
   - scope:
@@ -131,6 +133,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2003
+      unit: 2003 Contents
+      uurl: /nwffacim/intro/2003/
 
 # 2004
   - scope:
@@ -138,6 +142,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2004
+      unit: 2004 Contents
+      uurl: /nwffacim/intro/2004/
 
 # 2005
   - scope:
@@ -145,6 +151,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2005
+      unit: 2005 Contents
+      uurl: /nwffacim/intro/2005/
 
 # 2006
   - scope:
@@ -152,6 +160,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2006
+      unit: 2006 Contents
+      uurl: /nwffacim/intro/2006/
 
 # 2007
   - scope:
@@ -159,6 +169,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2007
+      unit: 2007 Contents
+      uurl: /nwffacim/intro/2007/
 
 # 2008
   - scope:
@@ -166,6 +178,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2008
+      unit: 2008 Contents
+      uurl: /nwffacim/intro/2008/
 
 # 2009
   - scope:
@@ -173,6 +187,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2009
+      unit: 2009 Contents
+      uurl: /nwffacim/intro/2009/
 
 # 2010
   - scope:
@@ -180,6 +196,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2010
+      unit: 2010 Contents
+      uurl: /nwffacim/intro/2010/
 
 # 2011
   - scope:
@@ -187,6 +205,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2011
+      unit: 2011 Contents
+      uurl: /nwffacim/intro/2011/
 
 # 2012
   - scope:
@@ -194,6 +214,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2012
+      unit: 2012 Contents
+      uurl: /nwffacim/intro/2012/
 
 # 2013
   - scope:
@@ -201,6 +223,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2013
+      unit: 2013 Contents
+      uurl: /nwffacim/intro/2013/
 
 # 2014
   - scope:
@@ -208,6 +232,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2014
+      unit: 2014 Contents
+      uurl: /nwffacim/intro/2014/
 
 # 2015
   - scope:
@@ -215,6 +241,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2015
+      unit: 2015 Contents
+      uurl: /nwffacim/intro/2015/
 
 # 2016
   - scope:
@@ -222,6 +250,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2016
+      unit: 2016 Contents
+      uurl: /nwffacim/intro/2016/
 
 # 2017
   - scope:
@@ -229,6 +259,8 @@ defaults:
       type: nwffacim
     values:
       bid: 2017
+      unit: 2017 Contents
+      uurl: /nwffacim/intro/2017/
 
 # You Are the Answer ebook
   - scope:
@@ -237,7 +269,7 @@ defaults:
     values:
       bid: yaa
       book: You Are the Answer
-      home: "#"
+      burl: /nwffacim/intro/yaa/
       contents: nav/contents.html
       nav: nav/np-data.html
 
@@ -248,7 +280,7 @@ defaults:
     values:
       bid: grad
       book: Graduation
-      home: "#"
+      burl: /nwffacim/intro/grad/
       nav: nav/np-data.html
       contents: nav/contents.html
 
@@ -273,27 +305,26 @@ exclude: [
   # _wom/early,
   # _wom/questions,
   #  _wom/woh,
-    _wom/wot,
-    _wom/wok,
-    _nwffacim/grad,
-    _nwffacim/yaa,
-    _nwffacim/acim,
-    _nwffacim/acim/2002,
-    _nwffacim/acim/2003,
-    _nwffacim/acim/2004,
-    _nwffacim/acim/2005,
-    _nwffacim/acim/2006,
-    _nwffacim/acim/2007,
-    _nwffacim/acim/2008,
-    _nwffacim/acim/2009,
-    _nwffacim/acim/2010,
-    _nwffacim/acim/2011,
-    _nwffacim/acim/2012,
-    _nwffacim/acim/2013,
-    _nwffacim/acim/2014,
-    _nwffacim/acim/2015,
-    _nwffacim/acim/2016,
-    _nwffacim/acim/2017,
+  #  _wom/wot,
+  #  _wom/wok,
+  #  _nwffacim/grad,
+  #  _nwffacim/yaa,
+  #  _nwffacim/acim/2002,
+  #  _nwffacim/acim/2003,
+  #  _nwffacim/acim/2004,
+  #  _nwffacim/acim/2005,
+  #  _nwffacim/acim/2006,
+  #  _nwffacim/acim/2007,
+  #  _nwffacim/acim/2008,
+  #  _nwffacim/acim/2009,
+  #  _nwffacim/acim/2010,
+  #  _nwffacim/acim/2011,
+  #  _nwffacim/acim/2012,
+  #  _nwffacim/acim/2013,
+  #  _nwffacim/acim/2014,
+  #  _nwffacim/acim/2015,
+  #  _nwffacim/acim/2016,
+  #  _nwffacim/acim/2017,
   src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
 

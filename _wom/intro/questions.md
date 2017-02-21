@@ -1,12 +1,14 @@
 ---
 layout: custom
-source: Way of Mastery
-book: Questions and Answers
 title: Introduction
+source: Way of Mastery
+surl: /wom/intro/wom/
+book: Questions
+burl: /wom/intro/questions/
 nav: nav/np-data.html
 contents: nav/contents.html
-home: "#"
 bid: "questions"
+intro: "wom:questions"
 tabs: true
 ---
 

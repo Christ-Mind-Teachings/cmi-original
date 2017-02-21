@@ -1,7 +1,7 @@
 ---
 title: "Heaven on Earth"
 received: "Aug 30, 1994"
-fbing:
+fbimg:
 - "wom/hoe.jpg"
 toc:
   -   Question One
