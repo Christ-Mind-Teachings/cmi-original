@@ -1,8 +1,10 @@
 ---
 title: "The Blessing of Forgiveness"
 received: Unknown
-fbimg:
-- "wom/ble.jpg"
+fb:
+  desc: "The offering of true forgiveness is a gift given to oneself."
+  image:
+  - "wom/ble.jpg"
 toc:
 - Question One
 - Question Two

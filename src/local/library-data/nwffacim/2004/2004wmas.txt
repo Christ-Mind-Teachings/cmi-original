@@ -1,5 +1,7 @@
 //These files have been converted to mp3 and stored in Dropbox
 // - see https://cloudconvert.com/converter/files
+//and transferred to s3 
+// - see https://www.multcloud.com/index.jsp?rl=en-US#home
 https://static.secure.website/wscfus/8306833/2322930/2004-06-20-studygroup.wma
 https://static.secure.website/wscfus/8306833/2322949/2004-06-27-studygroup.wma
 https://static.secure.website/wscfus/8306833/2322978/2004-07-11-studygroup.wma

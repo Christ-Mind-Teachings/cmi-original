@@ -6,6 +6,7 @@ var _ = require("underscore");
 var modal = require("./modal");
 var hilight = require("./hilight");
 var capture = require("../ds/capture");
+var aus = require("../util/are-you-sure");
 
 var jPlayer;
 var currentPlayTime = 0;
@@ -87,6 +88,11 @@ function markParagraph(o) {
   }
 
   captureRequested = false;
+
+  //keep track if captured timing data needs to be submitted and 
+  //warn user if they attempt to leave the page without having 
+  //submitted the data
+  aus.dataEvent(capture.length() - 1);
 }
 
 //add option to sidebar to capture audio play time
@@ -108,6 +114,9 @@ function enableSidebarTimeCapture() {
     toggleMarkers();
   });
 
+  //init unsubmitted data warning
+  aus.init();
+
   $('.time-lister').on('click', function(e) {
     var data;
     e.preventDefault();
@@ -117,6 +126,7 @@ function enableSidebarTimeCapture() {
     }
     else {
       data = JSON.stringify(capture.getData());
+      data = "var cmi_audio_timing_data = " + data + ";";
     }
 
     $('#audio-data-form').attr('action', capture.getBase());
@@ -144,6 +154,9 @@ function enableSidebarTimeCapture() {
       .done(function() {
         alert("Thank you!");
         $(".modal-close").trigger("click");
+
+        //signal data submitted
+        aus.dataEvent(0);
       })
       .fail(function(e) {
         $('.submit-message').html("Drat! Your submit failed.");
@@ -210,6 +223,7 @@ function createListener() {
       if (!audio_playing) {
         //notify user action won't happen until audio plays
         //and only the last action is honored
+        alert("action pending until audio playback begins");
       }
     });
   });

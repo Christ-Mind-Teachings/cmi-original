@@ -1,7 +1,7 @@
 {% assign cmi-image = "https://www.christmind.info/public/open-graph-logo.png" %}
 {% if page.layout == "narrative" %}
   {% assign type = "article" %}
-  {% assign description = page.title %}
+  {% assign description = page.fb.desc %}
 {% else %}
   {% assign type = "website" %}
   {% assign description = site.description %}
@@ -15,7 +15,7 @@
 <meta property="og:type" content="{{type}}" />
 <meta property="og:description" content="{{description}}">
 
-{% for img in page.fbimg %}
+{% for img in page.fb.image %}
   <meta property="og:image" content="https://www.christmind.info/public/img/{{img}}"/>
 {% endfor %}
 

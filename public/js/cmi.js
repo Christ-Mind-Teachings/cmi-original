@@ -5183,7 +5183,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-},{"./h/wrap":30,"./ui/audio":31,"./util/url":35,"scroll-into-view":24}],28:[function(require,module,exports){
+},{"./h/wrap":30,"./ui/audio":31,"./util/url":36,"scroll-into-view":24}],28:[function(require,module,exports){
 "use strict";
 
 var _ = require("underscore");
@@ -5630,6 +5630,7 @@ var _ = require("underscore");
 var modal = require("./modal");
 var hilight = require("./hilight");
 var capture = require("../ds/capture");
+var aus = require("../util/are-you-sure");
 
 var jPlayer;
 var currentPlayTime = 0;
@@ -5711,6 +5712,11 @@ function markParagraph(o) {
   }
 
   captureRequested = false;
+
+  //keep track if captured timing data needs to be submitted and 
+  //warn user if they attempt to leave the page without having 
+  //submitted the data
+  aus.dataEvent(capture.length() - 1);
 }
 
 //add option to sidebar to capture audio play time
@@ -5732,6 +5738,9 @@ function enableSidebarTimeCapture() {
     toggleMarkers();
   });
 
+  //init unsubmitted data warning
+  aus.init();
+
   $('.time-lister').on('click', function(e) {
     var data;
     e.preventDefault();
@@ -5741,6 +5750,7 @@ function enableSidebarTimeCapture() {
     }
     else {
       data = JSON.stringify(capture.getData());
+      data = "var cmi_audio_timing_data = " + data + ";";
     }
 
     $('#audio-data-form').attr('action', capture.getBase());
@@ -5768,6 +5778,9 @@ function enableSidebarTimeCapture() {
       .done(function() {
         alert("Thank you!");
         $(".modal-close").trigger("click");
+
+        //signal data submitted
+        aus.dataEvent(0);
       })
       .fail(function(e) {
         $('.submit-message').html("Drat! Your submit failed.");
@@ -5834,6 +5847,7 @@ function createListener() {
       if (!audio_playing) {
         //notify user action won't happen until audio plays
         //and only the last action is honored
+        alert("action pending until audio playback begins");
       }
     });
   });
@@ -5979,7 +5993,7 @@ module.exports = {
 
 };
 
-},{"../ds/capture":28,"./hilight":33,"./modal":34,"underscore":25}],33:[function(require,module,exports){
+},{"../ds/capture":28,"../util/are-you-sure":35,"./hilight":33,"./modal":34,"underscore":25}],33:[function(require,module,exports){
 /*
  * NOTE:
  *
@@ -6146,6 +6160,37 @@ module.exports = {
 
 
 },{}],35:[function(require,module,exports){
+"use strict";
+
+var isDirty = false;
+var message = "Please submit your timing data before leaving the page! To do so, " +
+  "open the side bar menu and click on the 'send icon' next to the 'capture' option."
+
+module.exports = {
+
+  init: function() {
+    window.onload = function() {
+        window.addEventListener("beforeunload", function (e) {
+            if (!isDirty) {
+              return undefined;
+            }
+
+            (e || window.event).returnValue = message; //Gecko + IE
+            return message; //Gecko + Webkit, Safari, Chrome etc.
+        });
+    };
+  },
+
+  //we alert the user only if data has been collected and not submitted
+  dataEvent: function(size) {
+    isDirty = false;
+    if (size > 0) {
+      isDirty = true;
+    }
+  }
+};
+
+},{}],36:[function(require,module,exports){
 /*
  * Url utilities
  */

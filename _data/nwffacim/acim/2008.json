@@ -1,278 +1,474 @@
 {
+  "domain": {
+    "audio": "https://static.secure.website/wscfus/8306833/"
+  },
   "base": "/nwffacim/acim/2008/",
   "intro": "/nwffacim/intro/",
   "page": [
     {
+      "intro": true,
       "url": "/nwffacim/intro/2008/",
       "idx": 0,
-      "title": "About",
+      "title": "About 2008 Transcripts",
       "next": "/nwffacim/acim/2008/012008/",
       "prev": "/nwffacim/acim/2008/112308/",
       "fid": "2008/"
     },
     {
+      "fid": "012008/",
+      "desc": "",
+      "res": {
+        "audio": "2483940/2008-01-20.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/012008/",
       "idx": 1,
       "title": "Jan 20, 2008",
       "next": "/nwffacim/acim/2008/012708/",
-      "prev": "/nwffacim/intro/2008/",
-      "fid": "012008/"
+      "prev": "/nwffacim/intro/2008/"
     },
     {
+      "fid": "012708/",
+      "desc": "",
+      "res": {
+        "audio": "2540850/2008-01-27.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/012708/",
       "idx": 2,
       "title": "Jan 27, 2008",
       "next": "/nwffacim/acim/2008/021008/",
-      "prev": "/nwffacim/acim/2008/012008/",
-      "fid": "012708/"
+      "prev": "/nwffacim/acim/2008/012008/"
     },
     {
+      "fid": "021008/",
+      "desc": "",
+      "res": {
+        "audio": "2540907/2008-02-10.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/021008/",
       "idx": 3,
       "title": "Feb 10, 2008",
       "next": "/nwffacim/acim/2008/021708/",
-      "prev": "/nwffacim/acim/2008/012708/",
-      "fid": "021008/"
+      "prev": "/nwffacim/acim/2008/012708/"
     },
     {
+      "fid": "021708/",
+      "desc": "",
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/021708/",
       "idx": 4,
       "title": "Feb 17, 2008",
       "next": "/nwffacim/acim/2008/022408/",
-      "prev": "/nwffacim/acim/2008/021008/",
-      "fid": "021708/"
+      "prev": "/nwffacim/acim/2008/021008/"
     },
     {
+      "fid": "022408/",
+      "desc": "",
+      "res": {
+        "audio": "2541342/2008-02-24.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/022408/",
       "idx": 5,
       "title": "Feb 24, 2008",
       "next": "/nwffacim/acim/2008/030208/",
-      "prev": "/nwffacim/acim/2008/021708/",
-      "fid": "022408/"
+      "prev": "/nwffacim/acim/2008/021708/"
     },
     {
+      "fid": "030208/",
+      "desc": "",
+      "res": {
+        "audio": "2541343/2008-03-02.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/030208/",
       "idx": 6,
       "title": "Mar 2, 2008",
       "next": "/nwffacim/acim/2008/030908/",
-      "prev": "/nwffacim/acim/2008/022408/",
-      "fid": "030208/"
+      "prev": "/nwffacim/acim/2008/022408/"
     },
     {
+      "fid": "030908/",
+      "desc": "",
+      "res": {
+        "audio": "2541344/2008-03-09.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/030908/",
       "idx": 7,
       "title": "Mar 9, 2008",
       "next": "/nwffacim/acim/2008/032508/",
-      "prev": "/nwffacim/acim/2008/030208/",
-      "fid": "030908/"
+      "prev": "/nwffacim/acim/2008/030208/"
     },
     {
+      "fid": "032508/",
+      "desc": "",
+      "res": {
+        "audio": "2541345/2008-03-25.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/032508/",
       "idx": 8,
       "title": "Mar 25, 2008",
       "next": "/nwffacim/acim/2008/033008/",
-      "prev": "/nwffacim/acim/2008/030908/",
-      "fid": "032508/"
+      "prev": "/nwffacim/acim/2008/030908/"
     },
     {
+      "fid": "033008/",
+      "desc": "",
+      "res": {
+        "audio": "2541346/2008-03-30.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/033008/",
       "idx": 9,
       "title": "Mar 30, 2008",
       "next": "/nwffacim/acim/2008/040608/",
-      "prev": "/nwffacim/acim/2008/032508/",
-      "fid": "033008/"
+      "prev": "/nwffacim/acim/2008/032508/"
     },
     {
+      "fid": "040608/",
+      "desc": "",
+      "res": {
+        "audio": "2541648/2008-04-06.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/040608/",
       "idx": 10,
       "title": "Apr 6, 2008",
       "next": "/nwffacim/acim/2008/041308/",
-      "prev": "/nwffacim/acim/2008/033008/",
-      "fid": "040608/"
+      "prev": "/nwffacim/acim/2008/033008/"
     },
     {
+      "fid": "041308/",
+      "desc": "",
+      "res": {
+        "audio": "2541719/2008-04-13.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/041308/",
       "idx": 11,
       "title": "Apr 13, 2008",
       "next": "/nwffacim/acim/2008/042008/",
-      "prev": "/nwffacim/acim/2008/040608/",
-      "fid": "041308/"
+      "prev": "/nwffacim/acim/2008/040608/"
     },
     {
+      "fid": "042008/",
+      "desc": "",
+      "res": {
+        "audio": "2541670/2008-04-20.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/042008/",
       "idx": 12,
       "title": "Apr 20, 2008",
       "next": "/nwffacim/acim/2008/050408/",
-      "prev": "/nwffacim/acim/2008/041308/",
-      "fid": "042008/"
+      "prev": "/nwffacim/acim/2008/041308/"
     },
     {
+      "fid": "050408/",
+      "desc": "",
+      "res": {
+        "audio": "2541671/2008-05-04.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/050408/",
       "idx": 13,
       "title": "May 4, 2008",
       "next": "/nwffacim/acim/2008/051808/",
-      "prev": "/nwffacim/acim/2008/042008/",
-      "fid": "050408/"
+      "prev": "/nwffacim/acim/2008/042008/"
     },
     {
+      "fid": "051808/",
+      "desc": "",
+      "res": {
+        "audio": "2541672/2008-05-18.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/051808/",
       "idx": 14,
       "title": "May 18, 2008",
       "next": "/nwffacim/acim/2008/052508/",
-      "prev": "/nwffacim/acim/2008/050408/",
-      "fid": "051808/"
+      "prev": "/nwffacim/acim/2008/050408/"
     },
     {
+      "fid": "052508/",
+      "desc": "",
+      "res": {
+        "audio": "2541673/2008-05-25.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/052508/",
       "idx": 15,
       "title": "May 25, 2008",
       "next": "/nwffacim/acim/2008/060108/",
-      "prev": "/nwffacim/acim/2008/051808/",
-      "fid": "052508/"
+      "prev": "/nwffacim/acim/2008/051808/"
     },
     {
+      "fid": "060108/",
+      "desc": "",
+      "res": {
+        "audio": "2542018/2008-06-01.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/060108/",
       "idx": 16,
       "title": "Jun 1, 2008",
       "next": "/nwffacim/acim/2008/060808/",
-      "prev": "/nwffacim/acim/2008/052508/",
-      "fid": "060108/"
+      "prev": "/nwffacim/acim/2008/052508/"
     },
     {
+      "fid": "060808/",
+      "desc": "",
+      "res": {
+        "audio": "2542021/2008-06-08.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/060808/",
       "idx": 17,
       "title": "Jun 8, 2008",
       "next": "/nwffacim/acim/2008/061508/",
-      "prev": "/nwffacim/acim/2008/060108/",
-      "fid": "060808/"
+      "prev": "/nwffacim/acim/2008/060108/"
     },
     {
+      "fid": "061508/",
+      "desc": "",
+      "res": {
+        "audio": "2542050/2008-06-15.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/061508/",
       "idx": 18,
       "title": "Jun 15, 2008",
       "next": "/nwffacim/acim/2008/062208/",
-      "prev": "/nwffacim/acim/2008/060808/",
-      "fid": "061508/"
+      "prev": "/nwffacim/acim/2008/060808/"
     },
     {
+      "fid": "062208/",
+      "desc": "",
+      "res": {
+        "audio": "2542051/2008-06-22.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/062208/",
       "idx": 19,
       "title": "Jun 22, 2008",
       "next": "/nwffacim/acim/2008/070608/",
-      "prev": "/nwffacim/acim/2008/061508/",
-      "fid": "062208/"
+      "prev": "/nwffacim/acim/2008/061508/"
     },
     {
+      "fid": "070608/",
+      "desc": "",
+      "res": {
+        "audio": "2542372/2008-07-06.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/070608/",
       "idx": 20,
       "title": "Jul 6, 2008",
       "next": "/nwffacim/acim/2008/071308/",
-      "prev": "/nwffacim/acim/2008/062208/",
-      "fid": "070608/"
+      "prev": "/nwffacim/acim/2008/062208/"
     },
     {
+      "fid": "071308/",
+      "desc": "",
+      "res": {
+        "audio": "2542380/2008-07-13.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/071308/",
       "idx": 21,
       "title": "Jul 13, 2008",
       "next": "/nwffacim/acim/2008/072708/",
-      "prev": "/nwffacim/acim/2008/070608/",
-      "fid": "071308/"
+      "prev": "/nwffacim/acim/2008/070608/"
     },
     {
+      "fid": "072708/",
+      "desc": "",
+      "res": {
+        "audio": "2542384/2008-07-27.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/072708/",
       "idx": 22,
       "title": "Jul 27, 2008",
       "next": "/nwffacim/acim/2008/081708/",
-      "prev": "/nwffacim/acim/2008/071308/",
-      "fid": "072708/"
+      "prev": "/nwffacim/acim/2008/071308/"
     },
     {
+      "fid": "081708/",
+      "desc": "",
+      "res": {
+        "audio": "2542386/2008-08-17.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/081708/",
       "idx": 23,
       "title": "Aug 17, 2008",
       "next": "/nwffacim/acim/2008/083108/",
-      "prev": "/nwffacim/acim/2008/072708/",
-      "fid": "081708/"
+      "prev": "/nwffacim/acim/2008/072708/"
     },
     {
+      "fid": "083108/",
+      "desc": "",
+      "res": {
+        "audio": "2544546/2008-08-31.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/083108/",
       "idx": 24,
       "title": "Aug 31, 2008",
       "next": "/nwffacim/acim/2008/090708/",
-      "prev": "/nwffacim/acim/2008/081708/",
-      "fid": "083108/"
+      "prev": "/nwffacim/acim/2008/081708/"
     },
     {
+      "fid": "090708/",
+      "desc": "",
+      "res": {
+        "audio": "2544638/2008-09-07.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/090708/",
       "idx": 25,
       "title": "Sep 7, 2008",
       "next": "/nwffacim/acim/2008/091408/",
-      "prev": "/nwffacim/acim/2008/083108/",
-      "fid": "090708/"
+      "prev": "/nwffacim/acim/2008/083108/"
     },
     {
+      "fid": "091408/",
+      "desc": "",
+      "res": {
+        "audio": "2544633/2008-09-14.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/091408/",
       "idx": 26,
       "title": "Sep 14, 2008",
       "next": "/nwffacim/acim/2008/092108/",
-      "prev": "/nwffacim/acim/2008/090708/",
-      "fid": "091408/"
+      "prev": "/nwffacim/acim/2008/090708/"
     },
     {
+      "fid": "092108/",
+      "desc": "",
+      "res": {
+        "audio": "2544636/2008-09-21.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/092108/",
       "idx": 27,
       "title": "Sep 21, 2008",
       "next": "/nwffacim/acim/2008/100508/",
-      "prev": "/nwffacim/acim/2008/091408/",
-      "fid": "092108/"
+      "prev": "/nwffacim/acim/2008/091408/"
     },
     {
+      "fid": "100508/",
+      "desc": "",
+      "res": {
+        "audio": "2544717/2008-10-05.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/100508/",
       "idx": 28,
       "title": "Oct 5, 2008",
       "next": "/nwffacim/acim/2008/101908/",
-      "prev": "/nwffacim/acim/2008/092108/",
-      "fid": "100508/"
+      "prev": "/nwffacim/acim/2008/092108/"
     },
     {
+      "fid": "101908/",
+      "desc": "",
+      "res": {
+        "audio": "2544719/2008-10-19.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/101908/",
       "idx": 29,
       "title": "Oct 19, 2008",
       "next": "/nwffacim/acim/2008/102608/",
-      "prev": "/nwffacim/acim/2008/100508/",
-      "fid": "101908/"
+      "prev": "/nwffacim/acim/2008/100508/"
     },
     {
+      "fid": "102608/",
+      "desc": "",
+      "res": {
+        "audio": "2544720/2008-10-26.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/102608/",
       "idx": 30,
       "title": "Oct 26, 2008",
       "next": "/nwffacim/acim/2008/110208/",
-      "prev": "/nwffacim/acim/2008/101908/",
-      "fid": "102608/"
+      "prev": "/nwffacim/acim/2008/101908/"
     },
     {
+      "fid": "110208/",
+      "desc": "",
+      "res": {
+        "audio": "2544722/2008-11-02.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/110208/",
       "idx": 31,
       "title": "Nov 2, 2008",
       "next": "/nwffacim/acim/2008/110908/",
-      "prev": "/nwffacim/acim/2008/102608/",
-      "fid": "110208/"
+      "prev": "/nwffacim/acim/2008/102608/"
     },
     {
+      "fid": "110908/",
+      "desc": "",
+      "res": {
+        "audio": "2544725/2008-11-09.mp3"
+      },
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/110908/",
       "idx": 32,
       "title": "Nov 9, 2008",
       "next": "/nwffacim/acim/2008/112308/",
-      "prev": "/nwffacim/acim/2008/110208/",
-      "fid": "110908/"
+      "prev": "/nwffacim/acim/2008/110208/"
     },
     {
+      "fid": "112308/",
+      "desc": "",
+      "complete": false,
+      "intro": false,
       "url": "/nwffacim/acim/2008/112308/",
       "idx": 33,
       "title": "Nov 23, 2008",
       "next": "/nwffacim/intro/2008/",
-      "prev": "/nwffacim/acim/2008/110908/",
-      "fid": "112308/"
+      "prev": "/nwffacim/acim/2008/110908/"
     }
   ]
 }

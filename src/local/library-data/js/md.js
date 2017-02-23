@@ -387,7 +387,8 @@ function early(item, idx, arr) {
 
 //------------ Start Here ----------------
 
-var baseSaveLocation = "/Users/rmercer/Projects/cmi/site/src/local/library-data/data";
+//var baseSaveLocation = "/Users/rmercer/Projects/cmi/site/src/local/library-data/data";
+var baseSaveLocation = "/Users/rmercer/Projects/cmi/site/_data";
 var source;
 
 var inputFile;

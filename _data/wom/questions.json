@@ -138,7 +138,8 @@
       "fid": "h01q3/",
       "title": "Physical Healing",
       "res": {
-        "audio": "Q01.03.mp3"
+        "audio": "Q01.03.mp3",
+        "timing": "l01q3.js"
       },
       "url": "/wom/questions/h01q3/",
       "idx": 12,
@@ -651,7 +652,8 @@
       "fid": "t11q2/",
       "title": "The Lineage",
       "res": {
-        "audio": "Q23.02.mp3"
+        "audio": "Q23.02.mp3",
+        "timing": "t11q2.js"
       },
       "url": "/wom/questions/t11q2/",
       "idx": 59,
@@ -662,7 +664,8 @@
       "fid": "t11q3/",
       "title": "Specialness, Holiness and Sexuality",
       "res": {
-        "audio": "Q23.03.mp3"
+        "audio": "Q23.03.mp3",
+        "timing": "t11q3.js"
       },
       "url": "/wom/questions/t11q3/",
       "idx": 60,
