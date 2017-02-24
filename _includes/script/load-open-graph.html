@@ -1,13 +1,14 @@
 {% assign cmi-image = "https://www.christmind.info/public/open-graph-logo.png" %}
 {% if page.layout == "narrative" %}
   {% assign type = "article" %}
-  {% assign description = page.fb.desc %}
+  {% assign description = page.fb.desc | default: page.title %}
 {% else %}
   {% assign type = "website" %}
   {% assign description = site.description %}
 {% endif %}
 
 <!-- facebook -->
+<meta property="og:site_name" content="Christ Mind Info"/>
 <meta property="og:title" content="{{page.title}}"/>
 <meta property="fb:admins" content="rick.mercer.us"/>
 <meta property="fb:app_id" content="{{site.fb-appId}}"/>

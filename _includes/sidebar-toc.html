@@ -16,8 +16,11 @@
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == "/" %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
     <a class="sidebar-nav-item" href="{{ page.surl }}" >{{ page.source }}</a>
-    {% if page.home != "#" %}
-      <a class="sidebar-nav-item" href="{{ page.home }}" >{{ page.book }}</a>
+    {% if page.burl != page.url %}
+      <a class="sidebar-nav-item" href="{{ page.burl }}" >{{ page.book }}</a>
+      {% if page.uurl != page.url %}
+        <a class="sidebar-nav-item" href="{{ page.uurl }}" >{{ page.unit }}</a>
+      {% endif %}
     {% endif %}
     <div class="capture pmarker-wrapper">
       <a class="pmarker-toggle sidebar-nav-item" href="#">
@@ -38,13 +41,14 @@
     {% for node in page.toc %}
       <a class="sidebar-nav-item sidebar-nav-item-toc" href="#{{ node | slugify }}">{{ node }}</a>
     {% endfor %}
+    {% comment %}
     <!--
       sidebar-toc
-      page.contents: {{page.contents}}
+      page.bid: {{page.bid}}
+      page.contents: {{page.contents | default: "nav/contents.html" }}
     -->
-    {% if page.contents %}
-      {% include {{page.contents}} %}
-    {% endif %}
+    {% endcomment %}
+    {% include {{page.contents | default: "nav/contents.html" }} %}
 
   </nav>
 

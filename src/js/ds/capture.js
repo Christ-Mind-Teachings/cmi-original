@@ -3,7 +3,7 @@
 var _ = require("underscore");
 
 var options = {};
-var data = {time: [{id: "p0", seconds: 0}]};
+var data = {};
 
 module.exports = {
 
@@ -12,7 +12,7 @@ module.exports = {
 
     data.base = o.base;
     data.title = o.title;
-    data.time = [{id: "p0", seconds: 0}];
+    data.time = [];
   },
   add: function(o) {
     data.time.push(o);

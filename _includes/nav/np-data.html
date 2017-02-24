@@ -14,22 +14,6 @@ Generate next/previous page links from _data files based on page.bid
   bid: {{page.bid}}
   include.resource: {{include.resource}}
 -->
-{% assign parent = data.parent %}
-
-{% assign href-prev = {{base}}{{page-data.prev}} %}
-{% assign href-next = {{base}}{{page-data.next}} %}
-
-{% assign prev-test = page-data.pref | remove_first: "/" %}
-{% assign next-test = page-data.pref | remove_first: "/" %}
-
-{% if page-data.prev != prev-test %}
-  {% assign href-prev = {{parent}}{{page-data.prev}} %}
-{% endif %}
-
-{% if page-data.net != next-test %}
-  {% assign href-next = {{parent}}{{page-data.next}} %}
-{% endif %}
-
 {% endcomment %}
 
 {% assign include-resource = include.resource | default: false %}
@@ -49,12 +33,12 @@ Generate next/previous page links from _data files based on page.bid
 
   {% comment %}
     transcript-format-complete, when false, prevents the capture of audio
-    timing data 
+    timing data.
   {% endcomment %}
-  {% if page.complete == true %}
-    {% assign transcript-format-complete = true %}
+  {% if page-data.complete.format %}
+    {% assign transcript-format-complete = page-data.complete.format | default: 0 %}
   {% else %}
-    {% assign transcript-format-complete = page-data.complete | default: false %}
+    {% assign transcript-format-complete = page-data.complete | default: 0 %}
   {% endif %}
 
   {% comment %}

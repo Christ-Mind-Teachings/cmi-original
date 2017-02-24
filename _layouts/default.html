@@ -3,7 +3,6 @@
 
   {% include head.html %}
 
-  <!-- apply page specific styles, class: {{page.class}} -->
   <body {% if page.class %}class="{{page.class}}"{% endif %}>
 
     <!-- This if statement decides which sidebar to use -->
@@ -15,7 +14,6 @@
       {% include sidebar.html %}
     {% endif %}
 
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       {% include masthead.html %}
 
@@ -70,7 +68,7 @@
     <script>
       window.fbAsyncInit = function() {
         FB.init({
-          appId      : '589495744558280',
+          appId      : '{{site.fb-appId}}',
           xfbml      : true,
           version    : 'v2.6'
         });

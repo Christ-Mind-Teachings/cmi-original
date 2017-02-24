@@ -52,6 +52,20 @@ function stateException(message) {
   this.name = "stateException";
 }
 
+//when we know audio times, they can be automatically
+//captured calling autoCapture()
+//- this is true for p0 which we default to time: 0 but it
+//  may actually start later in the recording. We can use this
+//  info to jump to the p0 time so user doesn't have to listen
+//  to dead space
+//
+//We may be able to use this to load incomplete audio times and pick
+//up where it left off
+function autoCapture(o) {
+  captureRequested = true;
+  markParagraph(o);
+}
+
 //called only when captureRequested == true
 function markParagraph(o) {
   var pi = $('#' + o.id).children('i');
@@ -301,10 +315,12 @@ function toggleMarkers() {
   else if (typeof ids !== "undefined") {
     console.log("paragraph id's already defined, adding marker");
     $('.transcript p').each(function(idx) {
-      if (idx > 0) {
-        $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
-      }
+      $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
     });
+
+    //automatically record a time of 0 for paragraph 0. This allows user to change
+    //the p0 time when it doesn't start at 0.
+    autoCapture({id: "p0", time: 0});
 
     $(".transcript").addClass("capture");
     createListener();
@@ -315,12 +331,12 @@ function toggleMarkers() {
     console.log("adding marker to .transcript p");
     $('.transcript p').each(function(idx) {
       $(this).attr('id', 'p' + idx);
-
-      if (idx > 0) {
-        $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
-      }
+      $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
     });
 
+    //automatically record a time of 0 for paragraph 0. This allows user to change
+    //the p0 time when it doesn't start at 0.
+    autoCapture({id: "p0", time: 0});
     $(".transcript").addClass("capture");
     createListener();
   }

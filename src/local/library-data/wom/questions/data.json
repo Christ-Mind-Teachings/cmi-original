@@ -14,6 +14,13 @@
     {
       "fid": "bleq1",
       "title": "Profound Time of Year",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "BLEQ1.mp3"
       }
@@ -21,6 +28,13 @@
     {
       "fid": "bleq2",
       "title": "Living in Community",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "BLEQ2.mp3"
       }
@@ -28,6 +42,13 @@
     {
       "fid": "bleq3",
       "title": "Co-creating Christ",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "BLEQ3.mp3"
       }
@@ -35,6 +56,13 @@
     {
       "fid": "bleq4",
       "title": "12/12",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "BLEQ4.mp3"
       }
@@ -42,6 +70,13 @@
     {
       "fid": "c2sq1",
       "title": "Symbolism of Crucifixion",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "C2SQ1.mp3"
       }
@@ -49,6 +84,13 @@
     {
       "fid": "c2sq2",
       "title": "Surrender to the Holy Spirit",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "C2SQ2.mp3"
       }
@@ -56,6 +98,13 @@
     {
       "fid": "c2sq3",
       "title": "Bringing Heaven to Earth",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "C2SQ3.mp3"
       }
@@ -63,6 +112,13 @@
     {
       "fid": "c2sq4",
       "title": "Difference between Jeshua and Christ",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "C2SQ4.mp3"
       }
@@ -70,6 +126,13 @@
     {
       "fid": "c2sq5",
       "title": "Non-physical Reality",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "C2SQ5.mp3"
       }
@@ -77,6 +140,13 @@
     {
       "fid": "h01q1",
       "title": "Jeshua's Motivation",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q01.01.mp3"
       }
@@ -84,6 +154,13 @@
     {
       "fid": "h01q2",
       "title": "Sexuality",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q01.02.mp3"
       }
@@ -91,6 +168,13 @@
     {
       "fid": "h01q3",
       "title": "Physical Healing",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 1,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q01.03.mp3",
         "timing": "l01q3.js"
@@ -99,6 +183,13 @@
     {
       "fid": "h02q1",
       "title": "40 Days and Nights",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q02.01.mp3"
       }
@@ -106,6 +197,13 @@
     {
       "fid": "h02q2",
       "title": "Mary",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q02.02.mp3"
       }
@@ -113,6 +211,13 @@
     {
       "fid": "h06q1",
       "title": "ACIM",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q06.01.mp3"
       }
@@ -120,11 +225,25 @@
     {
       "fid": "h06q2",
       "problem": "we don't have this audio",
-      "title": "The Dark Side"
+      "title": "The Dark Side",
+      "complete": {
+        "format": 1,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
     },
     {
       "title": "Ego Habits",
       "fid": "h06q3",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q06.02.mp3"
       }
@@ -132,6 +251,13 @@
     {
       "fid": "h07q1",
       "title": "Being a Servant of God",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q07.01.mp3"
       }
@@ -139,6 +265,13 @@
     {
       "fid": "h07q2",
       "title": "Twin Flame & Soul Mate",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q07.02.mp3"
       }
@@ -146,6 +279,13 @@
     {
       "fid": "h07q3",
       "title": "Unconscious Blocks",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q07.03.mp3"
       }
@@ -153,6 +293,13 @@
     {
       "fid": "h07q4",
       "title": "Discipline",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q07.04.mp3"
       }
@@ -160,6 +307,13 @@
     {
       "fid": "h07q5",
       "title": "Christian Pentecostal and New Age",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q07.05.mp3"
       }
@@ -167,6 +321,13 @@
     {
       "fid": "h08q1",
       "title": "Holy Spirit and Oversoul",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q08.01.mp3"
       }
@@ -174,6 +335,13 @@
     {
       "fid": "h08q2",
       "title": "Healing",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q08.02.mp3"
       }
@@ -181,11 +349,25 @@
     {
       "problem": "don't have audio",
       "title": "Self-forgiveness",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "fid": "h09q1"
     },
     {
       "fid": "h10q1",
       "title": "Astrology",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q10.01.mp3"
       }
@@ -193,6 +375,13 @@
     {
       "fid": "h10q2",
       "title": "Symbology of the Cross",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q10.02.mp3"
       }
@@ -200,6 +389,13 @@
     {
       "fid": "h10q3",
       "title": "Initiations",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q10.03.mp3"
       }
@@ -207,6 +403,13 @@
     {
       "fid": "h11q1",
       "title": "Responsibility to the Poor",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q11.01.mp3"
       }
@@ -214,6 +417,13 @@
     {
       "fid": "h11q2",
       "title": "Helping the Poor",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q11.02.mp3"
       }
@@ -221,6 +431,13 @@
     {
       "fid": "h11q3",
       "title": "Teaching Children",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q11.03.mp3"
       }
@@ -228,6 +445,13 @@
     {
       "fid": "h12q1",
       "title": "Why hast Thou Forsaken Me",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q12.01.mp3"
       }
@@ -235,6 +459,13 @@
     {
       "fid": "h12q2",
       "title": "Mary Magdalene",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q12.02.mp3"
       }
@@ -242,6 +473,13 @@
     {
       "fid": "h12q3",
       "title": "St. Germain",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q12.03.mp3"
       }
@@ -249,6 +487,13 @@
     {
       "fid": "hoeq1",
       "title": "Unclear Questions",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "HOEQ1.mp3"
       }
@@ -256,6 +501,13 @@
     {
       "fid": "hoeq2",
       "title": "Developing Clairty",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "HOEQ2.mp3"
       }
@@ -263,12 +515,26 @@
     {
       "fid": "hoeq3",
       "title": "Living as Christ",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "HOEQ3.mp3"
       }
     },
     {
       "fid": "hoeq4",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "title": "Shanti Christo Membership",
       "res": {
         "audio": "HOEQ5.mp3"
@@ -277,6 +543,13 @@
     {
       "fid": "k02q1",
       "title": "Definition of Knowing",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q26.01.mp3"
       }
@@ -284,6 +557,13 @@
     {
       "fid": "k02q2",
       "title": "Glee Clubs and Attack",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q26.02.mp3"
       }
@@ -291,6 +571,13 @@
     {
       "fid": "k03q1",
       "title": "Love of Self and Others",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q27.01.mp3"
       }
@@ -298,6 +585,13 @@
     {
       "fid": "k03q2",
       "title": "Guidance of the Holy Spirit",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q27.02.mp3"
       }
@@ -305,6 +599,13 @@
     {
       "fid": "k04q1",
       "title": "Great Rays of Light",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q28.01.mp3"
       }
@@ -312,6 +613,13 @@
     {
       "fid": "k04q2",
       "title": "Differences",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q28.02.mp3"
       }
@@ -319,6 +627,13 @@
     {
       "fid": "k06q1",
       "title": "Joy and Pleasure",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q30.01.mp3"
       }
@@ -326,6 +641,13 @@
     {
       "fid": "k06q2",
       "title": "Shanti Christo",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q30.02.mp3"
       }
@@ -333,6 +655,13 @@
     {
       "fid": "k10q1",
       "title": "Bible Codes",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q34.01.mp3"
       }
@@ -340,6 +669,13 @@
     {
       "fid": "k10q2",
       "title": "Free Will of Children",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q34.02.mp3"
       }
@@ -347,6 +683,13 @@
     {
       "fid": "t01q1",
       "title": "Other Masters",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q13.01.mp3"
       }
@@ -354,6 +697,13 @@
     {
       "fid": "t01q2",
       "title": "Judgment and Discernment",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q13.02.mp3"
       }
@@ -361,6 +711,13 @@
     {
       "fid": "t06q1",
       "title": "Vulnerability and Invulnerability",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q18.01.mp3"
       }
@@ -368,6 +725,13 @@
     {
       "fid": "t06q2",
       "title": "Message of the Cross",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q18.02.mp3"
       }
@@ -375,6 +739,13 @@
     {
       "fid": "t07q1",
       "title": "Enlightenment",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q19.01.mp3"
       }
@@ -382,6 +753,13 @@
     {
       "fid": "t09q1",
       "title": "Guidance",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q21.01.mp3"
       }
@@ -389,6 +767,13 @@
     {
       "fid": "t09q2",
       "title": "All Events are Neutral",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q21.02.mp3"
       }
@@ -396,6 +781,13 @@
     {
       "fid": "t09q3",
       "title": "Christ Consciousness",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q21.03.mp3"
       }
@@ -403,6 +795,13 @@
     {
       "fid": "t09q4",
       "title": "Ascending and Descending Currents",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q21.04.mp3"
       }
@@ -410,6 +809,13 @@
     {
       "fid": "t11q1",
       "title": "Unique Purpose",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q23.01.mp3"
       }
@@ -417,6 +823,13 @@
     {
       "fid": "t11q2",
       "title": "The Lineage",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 1,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q23.02.mp3",
         "timing": "t11q2.js"
@@ -425,6 +838,13 @@
     {
       "fid": "t11q3",
       "title": "Specialness, Holiness and Sexuality",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 1,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "Q23.03.mp3",
         "timing": "t11q3.js"

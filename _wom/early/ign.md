@@ -1,8 +1,9 @@
 ---
 title: "Ignorance is Bliss"
-fbimg:
-- "wom/ign.jpg"
 received: "Sep 1994"
+fb:
+  image:
+  - "wom/ign.jpg"
 ---
 
 Now, we begin.

@@ -1,7 +1,8 @@
 ---
 title: "The Blessing of Forgiveness<small> - Question Four</small>"
-fbimg:
-- "wom/ble.jpg"
+fb:
+  image:
+  - "wom/ble.jpg"
 ---
 
 **Jeshua**: So, James, you have no question?

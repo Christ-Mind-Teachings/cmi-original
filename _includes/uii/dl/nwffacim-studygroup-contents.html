@@ -6,8 +6,13 @@
 
 {% for book in include.data %}
   {% if skip != book.idx %}
-    {% assign complete = book.complete | default: false %}
-    {% if complete == false %}
+    {% assign class = "" %}
+    {% if book.complete.format %}
+      {% assign complete = book.complete.format | default: 0 %}
+    {% else %}
+      {% assign complete = book.complete | default: 0 %}
+    {% endif %}
+    {% if complete == false or complete == 0 %}
       {% assign class = "<i class='fa fa-fw fa-exclamation'></i>" %}
     {% endif %}
 
