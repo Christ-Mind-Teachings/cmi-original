@@ -55,12 +55,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "BLEQ3.mp3"
+        "audio": "BLEQ3.mp3",
+        "timing": "bleq3.js"
       },
       "url": "/wom/questions/bleq3/",
       "idx": 3,

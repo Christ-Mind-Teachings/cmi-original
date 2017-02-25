@@ -6,7 +6,7 @@ var _ = require("underscore");
 var modal = require("./modal");
 var hilight = require("./hilight");
 var capture = require("../ds/capture");
-var aus = require("../util/are-you-sure");
+var ays = require("../util/are-you-sure");
 
 var jPlayer;
 var currentPlayTime = 0;
@@ -58,9 +58,6 @@ function stateException(message) {
 //  may actually start later in the recording. We can use this
 //  info to jump to the p0 time so user doesn't have to listen
 //  to dead space
-//
-//We may be able to use this to load incomplete audio times and pick
-//up where it left off
 function autoCapture(o) {
   captureRequested = true;
   markParagraph(o);
@@ -106,7 +103,7 @@ function markParagraph(o) {
   //keep track if captured timing data needs to be submitted and 
   //warn user if they attempt to leave the page without having 
   //submitted the data
-  aus.dataEvent(capture.length() - 1);
+  ays.dataEvent(capture.length() - 1);
 }
 
 //add option to sidebar to capture audio play time
@@ -129,7 +126,7 @@ function enableSidebarTimeCapture() {
   });
 
   //init unsubmitted data warning
-  aus.init();
+  ays.init();
 
   $('.time-lister').on('click', function(e) {
     var data;
@@ -170,7 +167,7 @@ function enableSidebarTimeCapture() {
         $(".modal-close").trigger("click");
 
         //signal data submitted
-        aus.dataEvent(0);
+        ays.dataEvent(0);
       })
       .fail(function(e) {
         $('.submit-message').html("Drat! Your submit failed.");
@@ -207,7 +204,7 @@ function enableSidebarTimeCapture() {
       $('html, body').animate({ scrollTop: 0 }, 'fast');
 
       //start player
-      jPlayer.jPlayer("play");
+      jPlayer.jPlayer("play", capture.getData().time[0].seconds);
     }
     else {
       //stop the tester
@@ -320,7 +317,7 @@ function toggleMarkers() {
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
     //the p0 time when it doesn't start at 0.
-    autoCapture({id: "p0", time: 0});
+    autoCapture({id: "p0", seconds: 0});
 
     $(".transcript").addClass("capture");
     createListener();
@@ -336,7 +333,7 @@ function toggleMarkers() {
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
     //the p0 time when it doesn't start at 0.
-    autoCapture({id: "p0", time: 0});
+    autoCapture({id: "p0", seconds: 0});
     $(".transcript").addClass("capture");
     createListener();
   }

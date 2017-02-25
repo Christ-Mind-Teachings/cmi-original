@@ -55,6 +55,7 @@ module.exports = {
 
   //highlight supported when timing data available
   initialize: function(css_class) {
+    var rc = {};
 
     if (typeof window.cmi_audio_timing_data !== "undefined") {
       console.log("timing data available");
@@ -62,6 +63,7 @@ module.exports = {
       //do this so we can assign test data when
       //cmi_audio_timing_data is not present
       timing_data = cmi_audio_timing_data;
+      rc.startTime = timing_data.time[0].seconds;
 
       //indicate timing data available
       enabled = true;
@@ -77,7 +79,8 @@ module.exports = {
       hilightClass = css_class;
     }
 
-    return enabled;
+    rc.enabled = enabled;
+    return rc;
   },
 
   //enable hilight for test data collected by the user

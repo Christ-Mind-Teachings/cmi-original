@@ -3,6 +3,10 @@ var capture = require("./capture");
 
 var jPlayer;
 
+//start time for audio playback, can be modified by
+//time[0] of timing data - returned from hilite.init()
+var audioStartTime = 0;
+
 //initialize jQuery plugin 'jPlayer'
 function initialize(config) {
   var url, type, media, options;
@@ -30,20 +34,30 @@ function initialize(config) {
   //player config options
   options = {
     ready: function() {
-      var hilight_supported = false;
+      var hinfo;
       $(this).jPlayer("setMedia", media);
 
       //hilight supported when paragraph timing data is loaded
-      hilight_supported = hilight.initialize(config.hilightClass);
+      // - returns object indicating whether enabled and audio start time
+      hinfo = hilight.initialize(config.hilightClass);
 
       //if we don't have timing data enable support to get it
-      if (!hilight_supported) {
+      if (!hinfo.enabled) {
         capture.enableSidebarTimeCapture();
+      }
+      else {
+        audioStartTime = hinfo.startTime;
       }
     },
     timeupdate: function(e) {
-      hilight.update_time(e.jPlayer.status.currentTime);
-      capture.currentTime(e.jPlayer.status.currentTime);
+      if (e.jPlayer.status.currentTime < audioStartTime) {
+        console.log("adjust play time from %s to %s", e.jPlayer.status.currentTime, audioStartTime);
+        jPlayer.jPlayer("pause", audioStartTime);
+      }
+      else {
+        hilight.update_time(e.jPlayer.status.currentTime);
+        capture.currentTime(e.jPlayer.status.currentTime);
+      }
     },
     play: function(e) {
       console.log("setting player-fixed");
@@ -95,8 +109,6 @@ function initialize(config) {
 
   //init player
   jPlayer.jPlayer(options);
-
-  //keyboard bindings to capture audio paragraph timings
   capture.initialize(jPlayer);
 
   return "player initialized";

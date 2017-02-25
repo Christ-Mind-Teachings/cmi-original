@@ -5513,6 +5513,10 @@ var capture = require("./capture");
 
 var jPlayer;
 
+//start time for audio playback, can be modified by
+//time[0] of timing data - returned from hilite.init()
+var audioStartTime = 0;
+
 //initialize jQuery plugin 'jPlayer'
 function initialize(config) {
   var url, type, media, options;
@@ -5540,20 +5544,30 @@ function initialize(config) {
   //player config options
   options = {
     ready: function() {
-      var hilight_supported = false;
+      var hinfo;
       $(this).jPlayer("setMedia", media);
 
       //hilight supported when paragraph timing data is loaded
-      hilight_supported = hilight.initialize(config.hilightClass);
+      // - returns object indicating whether enabled and audio start time
+      hinfo = hilight.initialize(config.hilightClass);
 
       //if we don't have timing data enable support to get it
-      if (!hilight_supported) {
+      if (!hinfo.enabled) {
         capture.enableSidebarTimeCapture();
+      }
+      else {
+        audioStartTime = hinfo.startTime;
       }
     },
     timeupdate: function(e) {
-      hilight.update_time(e.jPlayer.status.currentTime);
-      capture.currentTime(e.jPlayer.status.currentTime);
+      if (e.jPlayer.status.currentTime < audioStartTime) {
+        console.log("adjust play time from %s to %s", e.jPlayer.status.currentTime, audioStartTime);
+        jPlayer.jPlayer("pause", audioStartTime);
+      }
+      else {
+        hilight.update_time(e.jPlayer.status.currentTime);
+        capture.currentTime(e.jPlayer.status.currentTime);
+      }
     },
     play: function(e) {
       console.log("setting player-fixed");
@@ -5605,8 +5619,6 @@ function initialize(config) {
 
   //init player
   jPlayer.jPlayer(options);
-
-  //keyboard bindings to capture audio paragraph timings
   capture.initialize(jPlayer);
 
   return "player initialized";
@@ -5630,7 +5642,7 @@ var _ = require("underscore");
 var modal = require("./modal");
 var hilight = require("./hilight");
 var capture = require("../ds/capture");
-var aus = require("../util/are-you-sure");
+var ays = require("../util/are-you-sure");
 
 var jPlayer;
 var currentPlayTime = 0;
@@ -5730,7 +5742,7 @@ function markParagraph(o) {
   //keep track if captured timing data needs to be submitted and 
   //warn user if they attempt to leave the page without having 
   //submitted the data
-  aus.dataEvent(capture.length() - 1);
+  ays.dataEvent(capture.length() - 1);
 }
 
 //add option to sidebar to capture audio play time
@@ -5753,7 +5765,7 @@ function enableSidebarTimeCapture() {
   });
 
   //init unsubmitted data warning
-  aus.init();
+  ays.init();
 
   $('.time-lister').on('click', function(e) {
     var data;
@@ -5794,7 +5806,7 @@ function enableSidebarTimeCapture() {
         $(".modal-close").trigger("click");
 
         //signal data submitted
-        aus.dataEvent(0);
+        ays.dataEvent(0);
       })
       .fail(function(e) {
         $('.submit-message').html("Drat! Your submit failed.");
@@ -5831,7 +5843,7 @@ function enableSidebarTimeCapture() {
       $('html, body').animate({ scrollTop: 0 }, 'fast');
 
       //start player
-      jPlayer.jPlayer("play");
+      jPlayer.jPlayer("play", capture.getData().time[0].seconds);
     }
     else {
       //stop the tester
@@ -5944,7 +5956,7 @@ function toggleMarkers() {
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
     //the p0 time when it doesn't start at 0.
-    autoCapture({id: "p0", time: 0});
+    autoCapture({id: "p0", seconds: 0});
 
     $(".transcript").addClass("capture");
     createListener();
@@ -5960,7 +5972,7 @@ function toggleMarkers() {
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
     //the p0 time when it doesn't start at 0.
-    autoCapture({id: "p0", time: 0});
+    autoCapture({id: "p0", seconds: 0});
     $(".transcript").addClass("capture");
     createListener();
   }
@@ -6067,6 +6079,7 @@ module.exports = {
 
   //highlight supported when timing data available
   initialize: function(css_class) {
+    var rc = {};
 
     if (typeof window.cmi_audio_timing_data !== "undefined") {
       console.log("timing data available");
@@ -6074,6 +6087,7 @@ module.exports = {
       //do this so we can assign test data when
       //cmi_audio_timing_data is not present
       timing_data = cmi_audio_timing_data;
+      rc.startTime = timing_data.time[0].seconds;
 
       //indicate timing data available
       enabled = true;
@@ -6089,7 +6103,8 @@ module.exports = {
       hilightClass = css_class;
     }
 
-    return enabled;
+    rc.enabled = enabled;
+    return rc;
   },
 
   //enable hilight for test data collected by the user
