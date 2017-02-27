@@ -76,11 +76,19 @@ Generate next/previous page links from _data files based on page.bid
     {% if page-data.res.audio %}
       {% assign page-contains-audio = true %}
       {% assign count = count | plus: 1 %}
+
       {% if page-data.res.audio-domain %}
         {% assign audio-href = page-data.res.audio-domain | append: page-data.res.audio %}
       {% else %}
         {% assign audio-href = data.domain.audio | append: page-data.res.audio %}
       {% endif %}
+
+      {% if page-data.res.audio-player %}
+        {% assign page-audio-player = page-data.res.audio-player %}
+      {% else %}
+        {% assign page-audio-player = data.domain.audio-player | default: "ui/mediaElements.html" %}
+      {% endif %}
+
       {% assign data-audio-title = page-data.title %}
       {% if resource.size == 0 %}
         {% assign resource = resource | append: "audio=" | append: audio-href %}

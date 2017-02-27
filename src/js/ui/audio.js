@@ -50,13 +50,27 @@ function initialize(config) {
       }
     },
     timeupdate: function(e) {
-      if (e.jPlayer.status.currentTime < audioStartTime) {
-        console.log("adjust play time from %s to %s", e.jPlayer.status.currentTime, audioStartTime);
+      var status = e.jPlayer.status;
+      console.log("rs:%s, wfl:%s, wfp:%s, paused:%s, ct:%s, rem:%s, dur:%s", 
+                  status.readyState,
+                  status.waitForLoad,
+                  status.waitForPlay,
+                  status.paused,
+                  status.currentTime,
+                  status.remaining,
+                  status.duration
+                 );
+      if (status.readyState !== 4) {
+        return;
+      }
+      //console.log('jPlayer event obj: ', e.jPlayer);
+      if (status.currentTime < audioStartTime) {
+        console.log("adjust play time from %s to %s", status.currentTime, audioStartTime);
         jPlayer.jPlayer("pause", audioStartTime);
       }
       else {
-        hilight.update_time(e.jPlayer.status.currentTime);
-        capture.currentTime(e.jPlayer.status.currentTime);
+        hilight.update_time(status.currentTime);
+        capture.currentTime(status.currentTime);
       }
     },
     play: function(e) {

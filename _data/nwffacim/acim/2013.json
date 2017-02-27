@@ -1,230 +1,558 @@
 {
+  "domain": {
+    "audio": "https://static.secure.website/wscfus/8306833/"
+  },
   "base": "/nwffacim/acim/2013/",
   "intro": "/nwffacim/intro/",
   "page": [
     {
+      "intro": true,
       "url": "/nwffacim/intro/2013/",
       "idx": 0,
-      "title": "About",
+      "title": "About 2013 Transcripts",
       "next": "/nwffacim/acim/2013/042713/",
       "prev": "/nwffacim/acim/2013/123013/",
       "fid": "2013/"
     },
     {
+      "fid": "042713/",
+      "desc": "",
+      "res": {
+        "audio": "2612023/2013-04-27-christ-jesus-raj-teaching.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/042713/",
       "idx": 1,
       "title": "Apr 27, 2013",
       "next": "/nwffacim/acim/2013/050413/",
-      "prev": "/nwffacim/intro/2013/",
-      "fid": "042713/"
+      "prev": "/nwffacim/intro/2013/"
     },
     {
+      "fid": "050413/",
+      "desc": "",
+      "res": {
+        "audio": "2612059/2013-5-4-christ-jesus-raj-teaching.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/050413/",
       "idx": 2,
       "title": "May 4, 2013",
       "next": "/nwffacim/acim/2013/051113/",
-      "prev": "/nwffacim/acim/2013/042713/",
-      "fid": "050413/"
+      "prev": "/nwffacim/acim/2013/042713/"
     },
     {
+      "fid": "051113/",
+      "desc": "",
+      "res": {
+        "audio": "2612131/2013-05-11-christ-jesus-raj-teaching.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/051113/",
       "idx": 3,
       "title": "May 11, 2013",
       "next": "/nwffacim/acim/2013/052013/",
-      "prev": "/nwffacim/acim/2013/050413/",
-      "fid": "051113/"
+      "prev": "/nwffacim/acim/2013/050413/"
     },
     {
+      "fid": "052013/",
+      "desc": "",
+      "res": {
+        "audio": "2612133/2013-05-20-christjesusrajteachingacim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/052013/",
       "idx": 4,
       "title": "May 20, 2013",
       "next": "/nwffacim/acim/2013/052813/",
-      "prev": "/nwffacim/acim/2013/051113/",
-      "fid": "052013/"
+      "prev": "/nwffacim/acim/2013/051113/"
     },
     {
+      "fid": "052813/",
+      "desc": "",
+      "res": {
+        "audio": "2612468/2013-05-28-christ-jesus-raj-teachingacim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/052813/",
       "idx": 5,
       "title": "May 28, 2013",
       "next": "/nwffacim/acim/2013/060213/",
-      "prev": "/nwffacim/acim/2013/052013/",
-      "fid": "052813/"
+      "prev": "/nwffacim/acim/2013/052013/"
     },
     {
+      "fid": "060213/",
+      "desc": "",
+      "res": {
+        "audio": "2612470/2013-06-02-christ-jesus-raj-teachingacim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/060213/",
       "idx": 6,
       "title": "Jun 2, 2013",
       "next": "/nwffacim/acim/2013/060913/",
-      "prev": "/nwffacim/acim/2013/052813/",
-      "fid": "060213/"
+      "prev": "/nwffacim/acim/2013/052813/"
     },
     {
+      "fid": "060913/",
+      "desc": "",
+      "res": {
+        "audio": "2612471/2013-06-09-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/060913/",
       "idx": 7,
       "title": "Jun 9, 2013",
       "next": "/nwffacim/acim/2013/062513/",
-      "prev": "/nwffacim/acim/2013/060213/",
-      "fid": "060913/"
+      "prev": "/nwffacim/acim/2013/060213/"
     },
     {
+      "fid": "062513/",
+      "desc": "",
+      "res": {
+        "audio": "2612473/2013-06-25-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/062513/",
       "idx": 8,
       "title": "Jun 25, 2013",
       "next": "/nwffacim/acim/2013/063013/",
-      "prev": "/nwffacim/acim/2013/060913/",
-      "fid": "062513/"
+      "prev": "/nwffacim/acim/2013/060913/"
     },
     {
+      "fid": "063013/",
+      "desc": "",
+      "res": {
+        "audio": "2612475/2013-06-30-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/063013/",
       "idx": 9,
       "title": "Jun 30, 2013",
       "next": "/nwffacim/acim/2013/070713/",
-      "prev": "/nwffacim/acim/2013/062513/",
-      "fid": "063013/"
+      "prev": "/nwffacim/acim/2013/062513/"
     },
     {
+      "fid": "070713/",
+      "desc": "",
+      "res": {
+        "audio": "2613090/2013-07-07-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/070713/",
       "idx": 10,
       "title": "Jul 7, 2013",
       "next": "/nwffacim/acim/2013/071413/",
-      "prev": "/nwffacim/acim/2013/063013/",
-      "fid": "070713/"
+      "prev": "/nwffacim/acim/2013/063013/"
     },
     {
+      "fid": "071413/",
+      "desc": "",
+      "res": {
+        "audio": "2613093/2013-07-15-christ-jesus-raj-treaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/071413/",
       "idx": 11,
       "title": "Jul 14, 2013",
       "next": "/nwffacim/acim/2013/072113/",
-      "prev": "/nwffacim/acim/2013/070713/",
-      "fid": "071413/"
+      "prev": "/nwffacim/acim/2013/070713/"
     },
     {
+      "fid": "072113/",
+      "desc": "",
+      "res": {
+        "audio": "2613095/2013-07-21-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/072113/",
       "idx": 12,
       "title": "Jul 21, 2013",
       "next": "/nwffacim/acim/2013/080413/",
-      "prev": "/nwffacim/acim/2013/071413/",
-      "fid": "072113/"
+      "prev": "/nwffacim/acim/2013/071413/"
     },
     {
+      "fid": "080413/",
+      "desc": "",
+      "res": {
+        "audio": "2613098/2013-08-04-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/080413/",
       "idx": 13,
       "title": "Aug 4, 2013",
       "next": "/nwffacim/acim/2013/081113/",
-      "prev": "/nwffacim/acim/2013/072113/",
-      "fid": "080413/"
+      "prev": "/nwffacim/acim/2013/072113/"
     },
     {
+      "fid": "081113/",
+      "desc": "",
+      "res": {
+        "audio": "2613101/2013-08-11-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/081113/",
       "idx": 14,
       "title": "Aug 11, 2013",
       "next": "/nwffacim/acim/2013/082513/",
-      "prev": "/nwffacim/acim/2013/080413/",
-      "fid": "081113/"
+      "prev": "/nwffacim/acim/2013/080413/"
     },
     {
+      "fid": "082513/",
+      "desc": "",
+      "res": {
+        "audio": "2613102/2013-08-25-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/082513/",
       "idx": 15,
       "title": "Aug 25, 2013",
       "next": "/nwffacim/acim/2013/090113/",
-      "prev": "/nwffacim/acim/2013/081113/",
-      "fid": "082513/"
+      "prev": "/nwffacim/acim/2013/081113/"
     },
     {
+      "fid": "090113/",
+      "desc": "",
+      "res": {
+        "audio": "2613155/2013-09-01-christjesusrajteachingacim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/090113/",
       "idx": 16,
       "title": "Sep 1, 2013",
       "next": "/nwffacim/acim/2013/090813/",
-      "prev": "/nwffacim/acim/2013/082513/",
-      "fid": "090113/"
+      "prev": "/nwffacim/acim/2013/082513/"
     },
     {
+      "fid": "090813/",
+      "desc": "",
+      "res": {
+        "audio": "2613156/2013-09-08-christjesusrajteachingacim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/090813/",
       "idx": 17,
       "title": "Sep 8, 2013",
       "next": "/nwffacim/acim/2013/091513/",
-      "prev": "/nwffacim/acim/2013/090113/",
-      "fid": "090813/"
+      "prev": "/nwffacim/acim/2013/090113/"
     },
     {
+      "fid": "091513/",
+      "desc": "",
+      "res": {
+        "audio": "2613157/2013-09-15-christjesusrajteachingacim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/091513/",
       "idx": 18,
       "title": "Sep 15, 2013",
       "next": "/nwffacim/acim/2013/092313/",
-      "prev": "/nwffacim/acim/2013/090813/",
-      "fid": "091513/"
+      "prev": "/nwffacim/acim/2013/090813/"
     },
     {
+      "fid": "092313/",
+      "desc": "",
+      "res": {
+        "audio": "2613159/2013-09-23-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/092313/",
       "idx": 19,
       "title": "Sep 23, 2013",
       "next": "/nwffacim/acim/2013/100613/",
-      "prev": "/nwffacim/acim/2013/091513/",
-      "fid": "092313/"
+      "prev": "/nwffacim/acim/2013/091513/"
     },
     {
+      "fid": "100613/",
+      "desc": "",
+      "res": {
+        "audio": "2624450/2013-10-06-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/100613/",
       "idx": 20,
       "title": "Oct 6, 2013",
       "next": "/nwffacim/acim/2013/101513/",
-      "prev": "/nwffacim/acim/2013/092313/",
-      "fid": "100613/"
+      "prev": "/nwffacim/acim/2013/092313/"
     },
     {
+      "fid": "101513/",
+      "desc": "",
+      "res": {
+        "audio": "2624452/2013-10-15-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/101513/",
       "idx": 21,
       "title": "Oct 15, 2013",
       "next": "/nwffacim/acim/2013/102013/",
-      "prev": "/nwffacim/acim/2013/100613/",
-      "fid": "101513/"
+      "prev": "/nwffacim/acim/2013/100613/"
     },
     {
+      "fid": "102013/",
+      "desc": "",
+      "res": {
+        "audio": "2624453/2013-10-20-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/102013/",
       "idx": 22,
       "title": "Oct 20, 2013",
       "next": "/nwffacim/acim/2013/102713/",
-      "prev": "/nwffacim/acim/2013/101513/",
-      "fid": "102013/"
+      "prev": "/nwffacim/acim/2013/101513/"
     },
     {
+      "fid": "102713/",
+      "desc": "",
+      "res": {
+        "audio": "2624455/2013-10-27-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/102713/",
       "idx": 23,
       "title": "Oct 27, 2013",
       "next": "/nwffacim/acim/2013/110313/",
-      "prev": "/nwffacim/acim/2013/102013/",
-      "fid": "102713/"
+      "prev": "/nwffacim/acim/2013/102013/"
     },
     {
+      "fid": "110313/",
+      "desc": "",
+      "res": {
+        "audio": "2624456/2013-11-03-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/110313/",
       "idx": 24,
       "title": "Nov 3, 2013",
       "next": "/nwffacim/acim/2013/112413/",
-      "prev": "/nwffacim/acim/2013/102713/",
-      "fid": "110313/"
+      "prev": "/nwffacim/acim/2013/102713/"
     },
     {
+      "fid": "112413/",
+      "desc": "",
+      "res": {
+        "audio": "2624458/2013-11-24-christ-jesus-raj-teaching-acim.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/112413/",
       "idx": 25,
       "title": "Nov 24, 2013",
       "next": "/nwffacim/acim/2013/122213/",
-      "prev": "/nwffacim/acim/2013/110313/",
-      "fid": "112413/"
+      "prev": "/nwffacim/acim/2013/110313/"
     },
     {
+      "fid": "122213/",
+      "desc": "",
+      "res": {
+        "audio": "2624459/2013-12-22-christ-jesus-raj-teaching.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/122213/",
       "idx": 26,
       "title": "Dec 22, 2013",
       "next": "/nwffacim/acim/2013/123013/",
-      "prev": "/nwffacim/acim/2013/112413/",
-      "fid": "122213/"
+      "prev": "/nwffacim/acim/2013/112413/"
     },
     {
+      "fid": "123013/",
+      "desc": "",
+      "res": {
+        "audio": "2624460/2013-12-30-christ-jesus-raj-teaching.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2013/123013/",
       "idx": 27,
       "title": "Dec 30, 2013",
       "next": "/nwffacim/intro/2013/",
-      "prev": "/nwffacim/acim/2013/122213/",
-      "fid": "123013/"
+      "prev": "/nwffacim/acim/2013/122213/"
     }
   ]
 }

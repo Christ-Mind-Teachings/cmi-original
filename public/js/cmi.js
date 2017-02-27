@@ -5132,7 +5132,8 @@ module.exports = wrapRangeText
 var url = require("./util/url");
 var wrap = require("./h/wrap");
 var scroll = require("scroll-into-view");
-var audio = require("./ui/audio");
+var audio = require("./ui/mediaElements");
+//var audio = require("./ui/audio");
 
 var unwrap;
 
@@ -5172,18 +5173,18 @@ document.addEventListener("DOMContentLoaded", function() {
   showRequestedAnnotation();
 
   //init the audio player
-  console.log(audio.initialize({
+  audio.initialize({
     playerId: "#jquery_jplayer_audio_1",
     skinWrapper: "#jp_container_audio_1",
     audioToggle: ".audio-toggle",
     hidePlayer: ".hide-player",
     hilightClass: "hilite"
-  }));
+  });
 
 });
 
 
-},{"./h/wrap":30,"./ui/audio":31,"./util/url":36,"scroll-into-view":24}],28:[function(require,module,exports){
+},{"./h/wrap":30,"./ui/mediaElements":33,"./util/url":36,"scroll-into-view":24}],28:[function(require,module,exports){
 "use strict";
 
 var _ = require("underscore");
@@ -5508,132 +5509,6 @@ module.exports = {
 
 
 },{"./api":29,"dom-anchor-text-quote":6,"underscore":25,"wrap-range-text":26}],31:[function(require,module,exports){
-var hilight = require("./hilight");
-var capture = require("./capture");
-
-var jPlayer;
-
-//start time for audio playback, can be modified by
-//time[0] of timing data - returned from hilite.init()
-var audioStartTime = 0;
-
-//initialize jQuery plugin 'jPlayer'
-function initialize(config) {
-  var url, type, media, options;
-
-  //check if jQuery installed - if not the audio player (jPlayer) should
-  //not be on the page.
-  if (typeof jQuery == "undefined") {
-    return "jQuery not installed";
-  }
-
-  //get the jPlayer node
-  jPlayer = $(config.playerId);
-
-  //exit if no jPlayer HTML is on the page
-  if (jPlayer.length == 0) {
-    return "no jPlayer HTML on page";
-  }
-
-  // setup 'display player' toggle
-  $(config.audioToggle).on('click', function(e) {
-    e.preventDefault();
-    $(config.hidePlayer).toggle();
-  });
-
-  //player config options
-  options = {
-    ready: function() {
-      var hinfo;
-      $(this).jPlayer("setMedia", media);
-
-      //hilight supported when paragraph timing data is loaded
-      // - returns object indicating whether enabled and audio start time
-      hinfo = hilight.initialize(config.hilightClass);
-
-      //if we don't have timing data enable support to get it
-      if (!hinfo.enabled) {
-        capture.enableSidebarTimeCapture();
-      }
-      else {
-        audioStartTime = hinfo.startTime;
-      }
-    },
-    timeupdate: function(e) {
-      if (e.jPlayer.status.currentTime < audioStartTime) {
-        console.log("adjust play time from %s to %s", e.jPlayer.status.currentTime, audioStartTime);
-        jPlayer.jPlayer("pause", audioStartTime);
-      }
-      else {
-        hilight.update_time(e.jPlayer.status.currentTime);
-        capture.currentTime(e.jPlayer.status.currentTime);
-      }
-    },
-    play: function(e) {
-      console.log("setting player-fixed");
-      $('#jp_container_audio_1').addClass('player-fixed');
-      hilight.play(e.jPlayer.status.currentTime);
-      capture.play(e.jPlayer.status.currentTime);
-    },
-    pause: function(e) {
-      hilight.pause(e.jPlayer.status.currentTime);
-      capture.pause(e.jPlayer.status.currentTime);
-    },
-    seeked: function(e) {
-      hilight.seeked(e.jPlayer.status.currentTime);
-      if (e.jPlayer.status.currentTime === 0.0) {
-        console.log("removing player-fixed");
-        $('#jp_container_audio_1').removeClass('player-fixed');
-      }
-    },
-    ended: function(e) {
-      console.log("removing player-fixed");
-      $('#jp_container_audio_1').removeClass('player-fixed');
-      hilight.ended(e.jPlayer.status.currentTime);
-      capture.ended(e.jPlayer.status.currentTime);
-    },
-    cssSelectorAncestor: config.skinWrapper,
-    swfPath: "/public/js/lib/jPlayer",
-    solution: "html,flash",
-    useStateClassSkin: true,
-    autoBlur: false,
-    smoothPlayBar: true,
-    keyEnabled: false,
-    remainingDuration: true,
-    toggleDuration: true
-  };
-
-  media = {title: $(config.audioToggle).attr("data-audio-title")};
-  url = $(config.audioToggle).attr("href");
-  type = url.substr(-3);
-
-  switch(type) {
-    case "mp3":
-      media["mp3"] = url;
-      options.supplied = "mp3";
-      break;
-    default:
-      return "unknown audio type";
-      break;
-  }
-
-  //init player
-  jPlayer.jPlayer(options);
-  capture.initialize(jPlayer);
-
-  return "player initialized";
-}
-
-module.exports = {
-
-  initialize: function(config) {
-    return initialize(config);
-  }
-
-};
-
-
-},{"./capture":32,"./hilight":33}],32:[function(require,module,exports){
 
 "use strict";
 
@@ -5653,6 +5528,7 @@ var captureId = "";
 
 var increaseSpeed = true;
 
+/*
 var timeTest = (function() {
   var enabled = false;
 
@@ -5677,6 +5553,7 @@ var timeTest = (function() {
     }
   };
 })();
+*/
 
 function deleteException(message) {
   this.message = message;
@@ -5694,9 +5571,6 @@ function stateException(message) {
 //  may actually start later in the recording. We can use this
 //  info to jump to the p0 time so user doesn't have to listen
 //  to dead space
-//
-//We may be able to use this to load incomplete audio times and pick
-//up where it left off
 function autoCapture(o) {
   captureRequested = true;
   markParagraph(o);
@@ -5715,7 +5589,7 @@ function markParagraph(o) {
   if (pi.hasClass("fa-bullseye")) {
     pi.removeClass("fa-bullseye").addClass("fa-check");
     capture.add(o);
-    timeTest.enable();
+    //timeTest.enable();
     console.log("%s captured at %s", o.id, o.seconds);
   }
   //user clicked a captured paragraph, mark for delete
@@ -5729,7 +5603,7 @@ function markParagraph(o) {
     else {
       console.log("%s deleted at %s", o.id, o.seconds);
       if (captureLength < 2) {
-        timeTest.disable();
+        //timeTest.disable();
       }
     }
   }
@@ -5758,9 +5632,17 @@ function enableSidebarTimeCapture() {
 
   //toggle display of paragraph markers used
   //to record audio playback time
-  console.log('setting up .pmarker-toggle listener');
+  //console.log('setting up .pmarker-toggle listener');
   $('.pmarker-toggle').on('click', function(e) {
+    var ct = $('.pmarker-toggle');
     e.preventDefault();
+    if (ct.children('i').hasClass('fa-toggle-off')) {
+      ct.html('<i class="fa fa-toggle-on"></i>&nbsp;Time Capture On');
+    }
+    else {
+      ct.html('<i class="fa fa-toggle-off"></i>&nbsp;Time Capture Off');
+    }
+
     toggleMarkers();
   });
 
@@ -5813,9 +5695,11 @@ function enableSidebarTimeCapture() {
       });
   });
 
+/*
   //time-tester menu option listener
   $('.time-tester').on('click', function(e) {
     e.preventDefault();
+    return;
 
     if ($(this).children('i').hasClass('fa-play')) {
       //run the tester
@@ -5858,6 +5742,7 @@ function enableSidebarTimeCapture() {
       $('html, body').animate({ scrollTop: 0 }, 'fast');
     }
   });
+*/
 
 }
 
@@ -6021,7 +5906,7 @@ module.exports = {
 
 };
 
-},{"../ds/capture":28,"../util/are-you-sure":35,"./hilight":33,"./modal":34,"underscore":25}],33:[function(require,module,exports){
+},{"../ds/capture":28,"../util/are-you-sure":35,"./hilight":32,"./modal":34,"underscore":25}],32:[function(require,module,exports){
 /*
  * NOTE:
  *
@@ -6035,7 +5920,10 @@ var _ = require("underscore");
 
 //default class to highlight transcript paragraphs during audio playback
 var hilightClass = "hilite";
+var player;
 var enabled = false;
+var seeking = false;
+var seekSnap = false;
 
 //real or test data
 var timing_data;
@@ -6043,6 +5931,51 @@ var timing_data;
 //paragraph timing pointers
 var locptr = -1;
 var prevptr = -1;
+
+function processSeek(time) {
+
+  console.log("seek requested to: ", time);
+
+  //we don't know if seeked time is earlier or later than
+  //the current time so we look through the timing array
+  locptr = _.findIndex(timing_data.time, function(t) {
+    return t.seconds >= time;
+  });
+
+
+  if (locptr == -1) {
+    locptr++
+    console.log("adjusted index: %s", locptr);
+  }
+
+  console.log("[ptr:%s] seeking to %s which begins at %s", 
+    locptr, timing_data.time[locptr].id, timing_data.time[locptr].seconds);
+
+  //check if we've found a beginning of the paragraph
+  // - if so, don't need to snap
+  if (time === timing_data.time[locptr].seconds) {
+    showNscroll(locptr);
+    seeking = false;
+  }
+  else {
+    //snap play to start time of paragraph
+    console.log("snapping from requested %s to %s",
+                time, timing_data.time[locptr].seconds);
+    seekSnap = true;
+    player.setCurrentTime(timing_data.time[locptr].seconds);
+  }
+}
+
+function processSeekSnap(time) {
+
+  console.log("snap complete: snap time: %s, ptime: %s", time, timing_data.time[locptr].seconds);
+  showNscroll(locptr);
+
+  console.log("-------------------------");
+
+  seekSnap = false;
+  seeking = false;
+}
 
 function showNscroll(idx) {
   var tinfo = timing_data.time[idx];
@@ -6066,13 +5999,31 @@ function getTime(idx) {
   return timing_data.time[idx].seconds;
 }
 
+function getTimeInfo(idx) {
+  if (idx < 0 || idx >= timing_data.time.length ) {
+    return {id: "xx", seconds: 0}
+  }
+
+  return timing_data.time[idx];
+}
+
 //audio is playing: play time at arg: current
 function processCurrentTime(current) {
   if (locptr == -1 || current > getTime(locptr + 1)) {
-    console.log("hilight event at: %s", current);
+    debugPlayPosition("hilight event", current);
     locptr++;
     showNscroll(locptr);
   }
+}
+
+function debugPlayPosition(msg, time) {
+  var now = time || "?.?";
+  var prev = getTimeInfo(locptr - 1),
+      current = getTimeInfo(locptr),
+      next = getTimeInfo(locptr + 1);
+
+  console.log("%s [%s:%s]: p:%s/%s, c:%s/%s, n:%s/%s", msg, time, locptr, prev.id, prev.seconds, current.id, current.seconds, next.id, next.seconds);
+
 }
 
 module.exports = {
@@ -6080,13 +6031,29 @@ module.exports = {
   //highlight supported when timing data available
   initialize: function(css_class) {
     var rc = {};
+    var diff;
 
     if (typeof window.cmi_audio_timing_data !== "undefined") {
       console.log("timing data available");
 
-      //do this so we can assign test data when
-      //cmi_audio_timing_data is not present
       timing_data = cmi_audio_timing_data;
+
+      //adjust start time if necessary
+      // - this is needed because the start time at capture
+      //   differs from the start time during non capture playback.
+      // sheesh!
+      if (timing_data.adjustedStartTime) {
+        diff = timing_data.adjustedStartTime - timing_data.time[0].seconds;
+        //console.log("adjusting start time by %s seconds", diff);
+        timing_data.time = _.map(cmi_audio_timing_data.time, function(o) {
+          var recordedTime = o.seconds;
+
+          o.seconds += this.timeDiff;
+          //console.log("%s adjusted to %s", recordedTime, o.seconds);
+          return o;
+        }, {timeDiff: diff});
+      }
+
       rc.startTime = timing_data.time[0].seconds;
 
       //indicate timing data available
@@ -6107,6 +6074,11 @@ module.exports = {
     return rc;
   },
 
+  setAudioPlayer: function(p) {
+    //we need this to adjust seeking
+    player = p;
+  },
+
   //enable hilight for test data collected by the user
   // - called by module capture.js
   capture_test: {
@@ -6118,8 +6090,9 @@ module.exports = {
       enabled = false;
     }
   },
+  //don't process time event when seeking
   update_time: function(time) {
-    if (!enabled) {
+    if (!enabled || seeking) {
       return;
     }
     processCurrentTime(time);
@@ -6130,22 +6103,30 @@ module.exports = {
   pause: function(time) {
     console.log("pause pressed at %s", time);
   },
-  seeked: function(time) {
-    console.log("seeked event at %s", time);
+  seeking: function(time) {
+    if (!enabled) {
+      return;
+    }
+    //console.log("%s seeking", time);
 
+    //disable hilight event handling
+    seeking = true;
+  },
+  seeked: function(time) {
     if (!enabled) {
       return;
     }
 
-    //we don't know if seeked time is earlier or later than
-    //the current time so we look through the timing array
-    locptr = _.findIndex(timing_data.time, function(t) {
-      return time > t.seconds;
-    });
-
-    if (locptr != -1) {
-      console.log("locptr now at time %s", timing_data.time[locptr].seconds);
+    //seek is a two step process
+    //1. user initiated, seeks to arbitrary time
+    //2. snap: adjust to start of paragraph seeked to
+    if (!seekSnap) {
+      processSeek(time);
     }
+    else {
+      processSeekSnap(time);
+    }
+
   },
   ended: function(time) {
     console.log("play ended at: %s", time);
@@ -6162,7 +6143,152 @@ module.exports = {
 };
 
 
-},{"scroll-into-view":24,"underscore":25}],34:[function(require,module,exports){
+},{"scroll-into-view":24,"underscore":25}],33:[function(require,module,exports){
+"use strict";
+
+var hilight = require("./hilight");
+var capture = require("./capture");
+
+var player;
+var playing = false;
+var audioStartTime = 0;
+
+function createPlayerDisplayToggle(config) {
+  // setup 'display player' toggle
+  $(config.audioToggle).on('click', function(e) {
+    e.preventDefault();
+    $(config.hidePlayer).toggle();
+  });
+  console.log("player display toggle defined");
+}
+
+function initPlayer(config) {
+  var initialized = false;
+  var audioUrl;
+  var audioElement = $('audio.mejs-player');
+  var features;
+
+  if (audioElement.length !== 0) {
+    //setup toggle for player display
+    createPlayerDisplayToggle(config);
+
+    //configure player
+    audioUrl = $(config.audioToggle).attr("href");
+    audioElement.attr("src", audioUrl);
+
+    //disable 'seek' type controls when timing data present because
+    //seeking messes up hilighting
+    if (typeof window.cmi_audio_timing_data !== "undefined") {
+      features = ["playpause", "stop", "current", "speed"];
+    }
+    else {
+      features = ["playpause", "stop", "current", "skipback", "jumpforward", "speed"];
+    }
+
+    $('#cmi-audio-player').mediaelementplayer({
+      pluginPath: "/public/js/lib/mediaelement/build/",
+      skipBackInterval: 15,
+      jumpForwardInterval: 15,
+      features: features,
+      success: function(mediaElement, originalNode) {
+
+        //hilight supported when paragraph timing data is loaded
+        // - returns object indicating whether enabled and audio start time
+        var hinfo = hilight.initialize(config.hilightClass);
+
+        //if we don't have timing data enable support to get it
+        if (!hinfo.enabled) {
+          capture.enableSidebarTimeCapture();
+        }
+        else {
+          audioStartTime = hinfo.startTime;
+        }
+      }
+    });
+
+    var playerId = $('#cmi-audio-player').closest('.mejs__container').attr('id');
+    player = mejs.players[playerId];
+    hilight.setAudioPlayer(player);
+
+    //get play time updates from player
+    player.media.addEventListener('timeupdate', function(e) {
+      var time = this.getCurrentTime();
+      if (!playing) {
+        return;
+      }
+
+      if (time < audioStartTime) {
+        console.log("adjusting play time: ct: %s/%s", time, audioStartTime);
+        this.setCurrentTime(audioStartTime);
+      }
+      else {
+        //console.log('playing: %s, current time %s', playing, time);
+        hilight.update_time(time);
+        capture.currentTime(time);
+      }
+    });
+
+    //get notified when player is playing
+    player.media.addEventListener('playing', function(e) {
+      playing = true;
+      $('.audio-player-wrapper').addClass('player-fixed');
+      capture.play(this.getCurrentTime);
+    });
+
+    //get notified when player is paused
+    player.media.addEventListener('paused', function(e) {
+      //this doesn't get called
+      console.log('type: %s, player paused', e.type);
+    });
+
+    //get notified when media play has ended
+    player.media.addEventListener('ended', function(e) {
+      playing = false;
+      $('.audio-player-wrapper').removeClass('player-fixed');
+      capture.ended(this.getCurrentTime);
+    });
+
+    //get notified when seek start
+    player.media.addEventListener('seeking', function(e) {
+      var time = this.getCurrentTime();
+      hilight.seeking(time);
+    });
+
+    //get notified when seek ended
+    player.media.addEventListener('seeked', function(e) {
+      var time = this.getCurrentTime();
+      hilight.seeked(time);
+    });
+
+    //set event listener for click on player stop button
+    $('.mejs__stop-button').on('click', function(e) {
+      $('.audio-player-wrapper').removeClass('player-fixed');
+    });
+
+    capture.initialize(player);
+    initialized = true;
+  }
+
+  return initialized;
+}
+
+function init(config) {
+  if (typeof jQuery == "undefined") {
+    console.log("jQuery not installed");
+    return false;
+  }
+
+  return initPlayer(config);
+}
+
+module.exports = {
+  initialize: function(config) {
+    return init(config);
+  }
+
+};
+
+},{"./capture":31,"./hilight":32}],34:[function(require,module,exports){
 "use strict";
 
 module.exports = {

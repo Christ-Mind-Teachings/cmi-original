@@ -1,5 +1,6 @@
 {
   "domain": {
+    "audio-player": "ui/mediaElements.html",
     "audio": "https://static.secure.website/wscfus/8306833/"
   },
   "base": "/nwffacim/acim/2011/",
@@ -140,14 +141,14 @@
       "fid": "021911/",
       "desc": "T17.I Bringing Fantasy to Truth",
       "res": {
-        "audio": "2011-02-23e.mp3",
+        "audio": "2011-02-23.mp3",
         "timing": "021911.js",
         "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
       },
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },

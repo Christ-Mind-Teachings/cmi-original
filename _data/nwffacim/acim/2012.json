@@ -1,246 +1,615 @@
 {
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2012/"
+  },
   "base": "/nwffacim/acim/2012/",
   "intro": "/nwffacim/intro/",
   "page": [
     {
+      "intro": true,
       "url": "/nwffacim/intro/2012/",
       "idx": 0,
-      "title": "About",
+      "title": "About 2012 Transcripts",
       "next": "/nwffacim/acim/2012/010712/",
       "prev": "/nwffacim/acim/2012/111212/",
       "fid": "2012/"
     },
     {
+      "fid": "010712/",
+      "desc": "",
+      "res": {
+        "audio": "2012-01-07.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/010712/",
       "idx": 1,
       "title": "Jan 7, 2012",
       "next": "/nwffacim/acim/2012/012212/",
-      "prev": "/nwffacim/intro/2012/",
-      "fid": "010712/"
+      "prev": "/nwffacim/intro/2012/"
     },
     {
+      "fid": "012212/",
+      "desc": "",
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/012212/",
       "idx": 2,
       "title": "Jan 22, 2012",
       "next": "/nwffacim/acim/2012/020512/",
-      "prev": "/nwffacim/acim/2012/010712/",
-      "fid": "012212/"
+      "prev": "/nwffacim/acim/2012/010712/"
     },
     {
+      "fid": "020512/",
+      "desc": "",
+      "res": {
+        "audio": "2638293/2012-02-05-raj-study-group-converted.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/020512/",
       "idx": 3,
       "title": "Feb 5, 2012",
       "next": "/nwffacim/acim/2012/021212/",
-      "prev": "/nwffacim/acim/2012/012212/",
-      "fid": "020512/"
+      "prev": "/nwffacim/acim/2012/012212/"
     },
     {
+      "fid": "021212/",
+      "desc": "",
+      "res": {
+        "audio": "2012-02-12.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/021212/",
       "idx": 4,
       "title": "Feb 12, 2012",
       "next": "/nwffacim/acim/2012/021812/",
-      "prev": "/nwffacim/acim/2012/020512/",
-      "fid": "021212/"
+      "prev": "/nwffacim/acim/2012/020512/"
     },
     {
+      "fid": "021812/",
+      "desc": "",
+      "res": {
+        "audio": "2638755/2012-02-18-raj-christ-jesus-teaches-acim-through-paul-a-study-group.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/021812/",
       "idx": 5,
       "title": "Feb 18, 2012",
       "next": "/nwffacim/acim/2012/032412/",
-      "prev": "/nwffacim/acim/2012/021212/",
-      "fid": "021812/"
+      "prev": "/nwffacim/acim/2012/021212/"
     },
     {
+      "fid": "032412/",
+      "desc": "",
+      "res": {
+        "audio": "2012-03-24a.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/032412/",
       "idx": 6,
       "title": "Mar 24, 2012",
       "next": "/nwffacim/acim/2012/033112/",
-      "prev": "/nwffacim/acim/2012/021812/",
-      "fid": "032412/"
+      "prev": "/nwffacim/acim/2012/021812/"
     },
     {
+      "fid": "033112/",
+      "desc": "",
+      "res": {
+        "audio": "2012-03-31.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/033112/",
       "idx": 7,
       "title": "Mar 31, 2012",
       "next": "/nwffacim/acim/2012/040812/",
-      "prev": "/nwffacim/acim/2012/032412/",
-      "fid": "033112/"
+      "prev": "/nwffacim/acim/2012/032412/"
     },
     {
+      "fid": "040812/",
+      "desc": "",
+      "res": {
+        "audio": "2012-04-08.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/040812/",
       "idx": 8,
       "title": "Apr 8, 2012",
       "next": "/nwffacim/acim/2012/041512/",
-      "prev": "/nwffacim/acim/2012/033112/",
-      "fid": "040812/"
+      "prev": "/nwffacim/acim/2012/033112/"
     },
     {
+      "fid": "041512/",
+      "desc": "",
+      "res": {
+        "audio": "2641923/2012-04-15-english.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/041512/",
       "idx": 9,
       "title": "Apr 15, 2012",
       "next": "/nwffacim/acim/2012/042212/",
-      "prev": "/nwffacim/acim/2012/040812/",
-      "fid": "041512/"
+      "prev": "/nwffacim/acim/2012/040812/"
     },
     {
+      "fid": "042212/",
+      "desc": "",
+      "res": {
+        "audio": "2012-04-22.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/042212/",
       "idx": 10,
       "title": "Apr 22, 2012",
       "next": "/nwffacim/acim/2012/042912/",
-      "prev": "/nwffacim/acim/2012/041512/",
-      "fid": "042212/"
+      "prev": "/nwffacim/acim/2012/041512/"
     },
     {
+      "fid": "042912/",
+      "desc": "",
+      "res": {
+        "audio": "2012-04-29.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/042912/",
       "idx": 11,
       "title": "Apr 29, 2012",
       "next": "/nwffacim/acim/2012/051212/",
-      "prev": "/nwffacim/acim/2012/042212/",
-      "fid": "042912/"
+      "prev": "/nwffacim/acim/2012/042212/"
     },
     {
+      "fid": "051212/",
+      "desc": "",
+      "res": {
+        "audio": "2012-05-12.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/051212/",
       "idx": 12,
       "title": "May 12, 2012",
       "next": "/nwffacim/acim/2012/052012/",
-      "prev": "/nwffacim/acim/2012/042912/",
-      "fid": "051212/"
+      "prev": "/nwffacim/acim/2012/042912/"
     },
     {
+      "fid": "052012/",
+      "desc": "",
+      "res": {
+        "audio": "2012-05-20.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/052012/",
       "idx": 13,
       "title": "May 20, 2012",
       "next": "/nwffacim/acim/2012/060312/",
-      "prev": "/nwffacim/acim/2012/051212/",
-      "fid": "052012/"
+      "prev": "/nwffacim/acim/2012/051212/"
     },
     {
+      "fid": "060312/",
+      "desc": "",
+      "res": {
+        "audio": "2012-06-03.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/060312/",
       "idx": 14,
       "title": "Jun 3, 2012",
       "next": "/nwffacim/acim/2012/061712/",
-      "prev": "/nwffacim/acim/2012/052012/",
-      "fid": "060312/"
+      "prev": "/nwffacim/acim/2012/052012/"
     },
     {
+      "fid": "061712/",
+      "desc": "",
+      "res": {
+        "audio": "2012-06-17.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/061712/",
       "idx": 15,
       "title": "Jun 17, 2012",
       "next": "/nwffacim/acim/2012/072212/",
-      "prev": "/nwffacim/acim/2012/060312/",
-      "fid": "061712/"
+      "prev": "/nwffacim/acim/2012/060312/"
     },
     {
+      "fid": "072212/",
+      "desc": "",
+      "res": {
+        "audio": "2012-07-22.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/072212/",
       "idx": 16,
       "title": "Jul 22, 2012",
       "next": "/nwffacim/acim/2012/072912/",
-      "prev": "/nwffacim/acim/2012/061712/",
-      "fid": "072212/"
+      "prev": "/nwffacim/acim/2012/061712/"
     },
     {
+      "fid": "072912/",
+      "desc": "",
+      "res": {
+        "audio": "2012-07-29.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/072912/",
       "idx": 17,
       "title": "Jul 29, 2012",
-      "next": "/nwffacim/acim/2012/081112/",
-      "prev": "/nwffacim/acim/2012/072212/",
-      "fid": "072912/"
+      "next": "/nwffacim/acim/2012/080412/",
+      "prev": "/nwffacim/acim/2012/072212/"
     },
     {
-      "url": "/nwffacim/acim/2012/081112/",
+      "fid": "080412/",
+      "desc": "",
+      "res": {
+        "audio": "2012-08-04.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/acim/2012/080412/",
       "idx": 18,
+      "title": "Aug 4, 2012",
+      "next": "/nwffacim/acim/2012/081112/",
+      "prev": "/nwffacim/acim/2012/072912/"
+    },
+    {
+      "fid": "081112/",
+      "desc": "",
+      "res": {
+        "audio": "2012-08-11.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/acim/2012/081112/",
+      "idx": 19,
       "title": "Aug 11, 2012",
       "next": "/nwffacim/acim/2012/081812/",
-      "prev": "/nwffacim/acim/2012/072912/",
-      "fid": "081112/"
+      "prev": "/nwffacim/acim/2012/080412/"
     },
     {
+      "fid": "081812/",
+      "desc": "",
+      "res": {
+        "audio": "2012-08-18.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/081812/",
-      "idx": 19,
+      "idx": 20,
       "title": "Aug 18, 2012",
       "next": "/nwffacim/acim/2012/082712/",
-      "prev": "/nwffacim/acim/2012/081112/",
-      "fid": "081812/"
+      "prev": "/nwffacim/acim/2012/081112/"
     },
     {
+      "fid": "082712/",
+      "desc": "",
+      "res": {
+        "audio": "2012-08-27.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/082712/",
-      "idx": 20,
+      "idx": 21,
       "title": "Aug 27, 2012",
       "next": "/nwffacim/acim/2012/090812/",
-      "prev": "/nwffacim/acim/2012/081812/",
-      "fid": "082712/"
+      "prev": "/nwffacim/acim/2012/081812/"
     },
     {
+      "fid": "090812/",
+      "desc": "",
+      "res": {
+        "audio": "2645738/2012-09-08-raj-christ-jesus-study-group.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/090812/",
-      "idx": 21,
+      "idx": 22,
       "title": "Sep 8, 2012",
       "next": "/nwffacim/acim/2012/091612/",
-      "prev": "/nwffacim/acim/2012/082712/",
-      "fid": "090812/"
+      "prev": "/nwffacim/acim/2012/082712/"
     },
     {
+      "fid": "091612/",
+      "desc": "",
+      "res": {
+        "audio": "2012-09-16.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/091612/",
-      "idx": 22,
+      "idx": 23,
       "title": "Sep 16, 2012",
       "next": "/nwffacim/acim/2012/092312/",
-      "prev": "/nwffacim/acim/2012/090812/",
-      "fid": "091612/"
+      "prev": "/nwffacim/acim/2012/090812/"
     },
     {
+      "fid": "092312/",
+      "desc": "",
+      "res": {
+        "audio": "2012-09-23.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/092312/",
-      "idx": 23,
+      "idx": 24,
       "title": "Sep 23, 2012",
       "next": "/nwffacim/acim/2012/093012/",
-      "prev": "/nwffacim/acim/2012/091612/",
-      "fid": "092312/"
+      "prev": "/nwffacim/acim/2012/091612/"
     },
     {
+      "fid": "093012/",
+      "desc": "",
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/093012/",
-      "idx": 24,
+      "idx": 25,
       "title": "Sep 30, 2012",
       "next": "/nwffacim/acim/2012/100812/",
-      "prev": "/nwffacim/acim/2012/092312/",
-      "fid": "093012/"
+      "prev": "/nwffacim/acim/2012/092312/"
     },
     {
+      "fid": "100812/",
+      "desc": "",
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/100812/",
-      "idx": 25,
+      "idx": 26,
       "title": "Oct 8, 2012",
       "next": "/nwffacim/acim/2012/101412/",
-      "prev": "/nwffacim/acim/2012/093012/",
-      "fid": "100812/"
+      "prev": "/nwffacim/acim/2012/093012/"
     },
     {
+      "fid": "101412/",
+      "desc": "",
+      "res": {
+        "audio": "2012-10-14.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/101412/",
-      "idx": 26,
+      "idx": 27,
       "title": "Oct 14, 2012",
       "next": "/nwffacim/acim/2012/102112/",
-      "prev": "/nwffacim/acim/2012/100812/",
-      "fid": "101412/"
+      "prev": "/nwffacim/acim/2012/100812/"
     },
     {
+      "fid": "102112/",
+      "desc": "",
+      "res": {
+        "audio": "2012-10-21.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/102112/",
-      "idx": 27,
+      "idx": 28,
       "title": "Oct 21, 2012",
       "next": "/nwffacim/acim/2012/110512/",
-      "prev": "/nwffacim/acim/2012/101412/",
-      "fid": "102112/"
+      "prev": "/nwffacim/acim/2012/101412/"
     },
     {
+      "fid": "110512/",
+      "desc": "",
+      "res": {
+        "audio": "2646671/2012-11-05.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/110512/",
-      "idx": 28,
+      "idx": 29,
       "title": "Nov 5, 2012",
       "next": "/nwffacim/acim/2012/111212/",
-      "prev": "/nwffacim/acim/2012/102112/",
-      "fid": "110512/"
+      "prev": "/nwffacim/acim/2012/102112/"
     },
     {
+      "fid": "111212/",
+      "desc": "",
+      "res": {
+        "audio": "2646675/2012-11-12.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2012/111212/",
-      "idx": 29,
+      "idx": 30,
       "title": "Nov 12, 2012",
       "next": "/nwffacim/intro/2012/",
-      "prev": "/nwffacim/acim/2012/110512/",
-      "fid": "111212/"
+      "prev": "/nwffacim/acim/2012/110512/"
     }
   ]
 }

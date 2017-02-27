@@ -1,37 +1,428 @@
 {
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2012/"
+  },
   "year": 2012,
   "base": "/nwffacim/acim/2012",
   "intro": "/nwffacim/intro/",
   "pages": [
     "*2012",
-    "010712",
-    "012212",
-    "020512",
-    "021212",
-    "021812",
-    "032412",
-    "033112",
-    "040812",
-    "041512",
-    "042212",
-    "042912",
-    "051212",
-    "052012",
-    "060312",
-    "061712",
-    "072212",
-    "072912",
-    "081112",
-    "081812",
-    "082712",
-    "090812",
-    "091612",
-    "092312",
-    "093012",
-    "100812",
-    "101412",
-    "102112",
-    "110512",
-    "111212"
+    {
+      "fid": "010712",
+      "desc": "",
+      "res": {
+        "audio": "2012-01-07.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "012212",
+      "desc": "",
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "020512",
+      "desc": "",
+      "res": {
+        "audio": "2638293/2012-02-05-raj-study-group-converted.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "021212",
+      "desc": "",
+      "res": {
+        "audio": "2012-02-12.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "021812",
+      "desc": "",
+      "res": {
+        "audio": "2638755/2012-02-18-raj-christ-jesus-teaches-acim-through-paul-a-study-group.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "032412",
+      "desc": "",
+      "res": {
+        "audio": "2012-03-24a.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "033112",
+      "desc": "",
+      "res": {
+        "audio": "2012-03-31.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "040812",
+      "desc": "",
+      "res": {
+        "audio": "2012-04-08.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "041512",
+      "desc": "",
+      "res": {
+        "audio": "2641923/2012-04-15-english.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "042212",
+      "desc": "",
+      "res": {
+        "audio": "2012-04-22.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "042912",
+      "desc": "",
+      "res": {
+        "audio": "2012-04-29.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "051212",
+      "desc": "",
+      "res": {
+        "audio": "2012-05-12.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "052012",
+      "desc": "",
+      "res": {
+        "audio": "2012-05-20.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "060312",
+      "desc": "",
+      "res": {
+        "audio": "2012-06-03.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "061712",
+      "desc": "",
+      "res": {
+        "audio": "2012-06-17.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "072212",
+      "desc": "",
+      "res": {
+        "audio": "2012-07-22.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "072912",
+      "desc": "",
+      "res": {
+        "audio": "2012-07-29.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "080412",
+      "desc": "",
+      "res": {
+        "audio": "2012-08-04.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "081112",
+      "desc": "",
+      "res": {
+        "audio": "2012-08-11.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "081812",
+      "desc": "",
+      "res": {
+        "audio": "2012-08-18.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "082712",
+      "desc": "",
+      "res": {
+        "audio": "2012-08-27.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "090812",
+      "desc": "",
+      "res": {
+        "audio": "2645738/2012-09-08-raj-christ-jesus-study-group.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "091612",
+      "desc": "",
+      "res": {
+        "audio": "2012-09-16.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "092312",
+      "desc": "",
+      "res": {
+        "audio": "2012-09-23.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "093012",
+      "desc": "",
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "100812",
+      "desc": "",
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "101412",
+      "desc": "",
+      "res": {
+        "audio": "2012-10-14.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "102112",
+      "desc": "",
+      "res": {
+        "audio": "2012-10-21.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "110512",
+      "desc": "",
+      "res": {
+        "audio": "2646671/2012-11-05.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    },
+    {
+      "fid": "111212",
+      "desc": "",
+      "res": {
+        "audio": "2646675/2012-11-12.mp3",
+        "audio-domain": "https://static.secure.website/wscfus/8306833/"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      }
+    }
   ]
 }

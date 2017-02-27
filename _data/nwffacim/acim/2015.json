@@ -1,150 +1,352 @@
 {
+  "domain": {
+    "audio": "http://www.celestialrealm.com/uploads/"
+  },
   "base": "/nwffacim/acim/2015/",
   "intro": "/nwffacim/intro/",
   "page": [
     {
+      "intro": true,
       "url": "/nwffacim/intro/2015/",
       "idx": 0,
-      "title": "About",
+      "title": "About 2015 Transcripts",
       "next": "/nwffacim/acim/2015/041815/",
       "prev": "/nwffacim/acim/2015/110115/",
       "fid": "2015/"
     },
     {
+      "fid": "041815/",
+      "desc": "",
+      "res": {
+        "audio": "2015-04-18_mp3.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/041815/",
       "idx": 1,
       "title": "Apr 18, 2015",
       "next": "/nwffacim/acim/2015/042515/",
-      "prev": "/nwffacim/intro/2015/",
-      "fid": "041815/"
+      "prev": "/nwffacim/intro/2015/"
     },
     {
+      "fid": "042515/",
+      "desc": "",
+      "res": {
+        "audio": "2015-04-25.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/042515/",
       "idx": 2,
       "title": "Apr 25, 2015",
       "next": "/nwffacim/acim/2015/050315/",
-      "prev": "/nwffacim/acim/2015/041815/",
-      "fid": "042515/"
+      "prev": "/nwffacim/acim/2015/041815/"
     },
     {
+      "fid": "050315/",
+      "desc": "",
+      "res": {
+        "audio": "2015-05-03.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/050315/",
       "idx": 3,
       "title": "May 3, 2015",
       "next": "/nwffacim/acim/2015/050915/",
-      "prev": "/nwffacim/acim/2015/042515/",
-      "fid": "050315/"
+      "prev": "/nwffacim/acim/2015/042515/"
     },
     {
+      "fid": "050915/",
+      "desc": "",
+      "res": {
+        "audio": "2015-05-09.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/050915/",
       "idx": 4,
       "title": "May 9, 2015",
       "next": "/nwffacim/acim/2015/051715/",
-      "prev": "/nwffacim/acim/2015/050315/",
-      "fid": "050915/"
+      "prev": "/nwffacim/acim/2015/050315/"
     },
     {
+      "fid": "051715/",
+      "desc": "",
+      "res": {
+        "audio": "2015-05-17.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/051715/",
       "idx": 5,
       "title": "May 17, 2015",
       "next": "/nwffacim/acim/2015/060715/",
-      "prev": "/nwffacim/acim/2015/050915/",
-      "fid": "051715/"
+      "prev": "/nwffacim/acim/2015/050915/"
     },
     {
+      "fid": "060715/",
+      "desc": "",
+      "res": {
+        "audio": "2015-06-07L.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/060715/",
       "idx": 6,
       "title": "Jun 7, 2015",
       "next": "/nwffacim/acim/2015/061415/",
-      "prev": "/nwffacim/acim/2015/051715/",
-      "fid": "060715/"
+      "prev": "/nwffacim/acim/2015/051715/"
     },
     {
+      "fid": "061415/",
+      "desc": "",
+      "res": {
+        "audio": "2015-06-14.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/061415/",
       "idx": 7,
       "title": "Jun 14, 2015",
       "next": "/nwffacim/acim/2015/062115/",
-      "prev": "/nwffacim/acim/2015/060715/",
-      "fid": "061415/"
+      "prev": "/nwffacim/acim/2015/060715/"
     },
     {
+      "fid": "062115/",
+      "desc": "",
+      "res": {
+        "audio": "2015-06-21.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/062115/",
       "idx": 8,
       "title": "Jun 21, 2015",
       "next": "/nwffacim/acim/2015/062815/",
-      "prev": "/nwffacim/acim/2015/061415/",
-      "fid": "062115/"
+      "prev": "/nwffacim/acim/2015/061415/"
     },
     {
+      "fid": "062815/",
+      "desc": "",
+      "res": {
+        "audio": "2015-06-28.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/062815/",
       "idx": 9,
       "title": "Jun 28, 2015",
       "next": "/nwffacim/acim/2015/070515/",
-      "prev": "/nwffacim/acim/2015/062115/",
-      "fid": "062815/"
+      "prev": "/nwffacim/acim/2015/062115/"
     },
     {
+      "fid": "070515/",
+      "desc": "",
+      "res": {
+        "audio": "2015-07-05.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/070515/",
       "idx": 10,
       "title": "Jul 5, 2015",
       "next": "/nwffacim/acim/2015/071315/",
-      "prev": "/nwffacim/acim/2015/062815/",
-      "fid": "070515/"
+      "prev": "/nwffacim/acim/2015/062815/"
     },
     {
+      "fid": "071315/",
+      "desc": "",
+      "res": {
+        "audio": "2015-07-13.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/071315/",
       "idx": 11,
       "title": "Jul 13, 2015",
       "next": "/nwffacim/acim/2015/072115/",
-      "prev": "/nwffacim/acim/2015/070515/",
-      "fid": "071315/"
+      "prev": "/nwffacim/acim/2015/070515/"
     },
     {
+      "fid": "072115/",
+      "desc": "",
+      "res": {
+        "audio": "2015-07-21.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/072115/",
       "idx": 12,
       "title": "Jul 21, 2015",
       "next": "/nwffacim/acim/2015/080115/",
-      "prev": "/nwffacim/acim/2015/071315/",
-      "fid": "072115/"
+      "prev": "/nwffacim/acim/2015/071315/"
     },
     {
+      "fid": "080115/",
+      "desc": "",
+      "res": {
+        "audio": "2015-08-01.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/080115/",
       "idx": 13,
       "title": "Aug 1, 2015",
       "next": "/nwffacim/acim/2015/082315/",
-      "prev": "/nwffacim/acim/2015/072115/",
-      "fid": "080115/"
+      "prev": "/nwffacim/acim/2015/072115/"
     },
     {
+      "fid": "082315/",
+      "desc": "",
+      "res": {
+        "audio": "2015-08-23.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/082315/",
       "idx": 14,
       "title": "Aug 23, 2015",
       "next": "/nwffacim/acim/2015/091315/",
-      "prev": "/nwffacim/acim/2015/080115/",
-      "fid": "082315/"
+      "prev": "/nwffacim/acim/2015/080115/"
     },
     {
+      "fid": "091315/",
+      "desc": "",
+      "res": {
+        "audio": "2015-09-13.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/091315/",
       "idx": 15,
       "title": "Sep 13, 2015",
       "next": "/nwffacim/acim/2015/102115/",
-      "prev": "/nwffacim/acim/2015/082315/",
-      "fid": "091315/"
+      "prev": "/nwffacim/acim/2015/082315/"
     },
     {
+      "fid": "102115/",
+      "desc": "",
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/102115/",
       "idx": 16,
       "title": "Oct 21, 2015",
       "next": "/nwffacim/acim/2015/110115/",
-      "prev": "/nwffacim/acim/2015/091315/",
-      "fid": "102115/"
+      "prev": "/nwffacim/acim/2015/091315/"
     },
     {
+      "fid": "110115/",
+      "desc": "",
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
       "url": "/nwffacim/acim/2015/110115/",
       "idx": 17,
       "title": "Nov 1, 2015",
       "next": "/nwffacim/intro/2015/",
-      "prev": "/nwffacim/acim/2015/102115/",
-      "fid": "110115/"
+      "prev": "/nwffacim/acim/2015/102115/"
     }
   ]
 }

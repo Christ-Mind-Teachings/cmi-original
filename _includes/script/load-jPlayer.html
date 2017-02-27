@@ -1,0 +1,59 @@
+{% comment %}
+  Conditionally load jplayer and dependencies
+{% endcomment %}
+
+{% if page.bid %}
+  {% include nav/resolve.html %}
+  {% comment %}
+  <!--
+    load-audio info
+    page.bid: {{page.bid}}
+    {% if data %}
+    ** A data file was found for page **
+    {% else %}
+    ** NO data file found for page **
+    {% endif %}
+  -->
+  {% endcomment %}
+  {% if data %}
+    {% assign base = data.base %}
+    {% assign intro = data.intro | default: "not found" %}
+    {% assign key = page.url | remove_first: base %}
+    {% if key == page.url %}
+      {% assign key = page.url | remove_first: intro %}
+    {% endif %}
+    {% assign p = data.page | where: "fid", key %}
+    {% assign page-data = p[0] %}
+
+    {% comment %}
+    <!--
+      load-audio info
+      page.bid: {{page.bid}}
+
+      base: {{base}}
+      intro: {{intro}}
+      page.url: {{page.url}}
+      key: {{key}}
+      {% if page-data %}
+      ** page-data was found for the page **
+      {% else %}
+      ** NO page-data found for page **
+      {% endif %}
+    -->
+    {% endcomment %}
+
+    {% if page-data.res.audio %}
+      {% include script/load-jquery.html %}
+
+      <link href="/public/css/lib/jPlayer/skin/blue.monday/css/jplayer.blue.monday.css" rel="stylesheet" />
+      <script src="/public/js/lib/jPlayer/jquery.jplayer.js"></script>
+
+      {% comment %}load timing data if it exists{% endcomment %}
+      {% if page-data.res.timing %}
+        <script src="/public/js/audio{{base}}{{page-data.res.timing}}"></script>
+      {% endif %}
+      {% assign load-cmi = true %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
