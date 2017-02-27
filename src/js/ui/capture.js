@@ -17,6 +17,7 @@ var captureId = "";
 
 var increaseSpeed = true;
 
+/*
 var timeTest = (function() {
   var enabled = false;
 
@@ -41,6 +42,7 @@ var timeTest = (function() {
     }
   };
 })();
+*/
 
 function deleteException(message) {
   this.message = message;
@@ -76,7 +78,7 @@ function markParagraph(o) {
   if (pi.hasClass("fa-bullseye")) {
     pi.removeClass("fa-bullseye").addClass("fa-check");
     capture.add(o);
-    timeTest.enable();
+    //timeTest.enable();
     console.log("%s captured at %s", o.id, o.seconds);
   }
   //user clicked a captured paragraph, mark for delete
@@ -90,7 +92,7 @@ function markParagraph(o) {
     else {
       console.log("%s deleted at %s", o.id, o.seconds);
       if (captureLength < 2) {
-        timeTest.disable();
+        //timeTest.disable();
       }
     }
   }
@@ -119,9 +121,17 @@ function enableSidebarTimeCapture() {
 
   //toggle display of paragraph markers used
   //to record audio playback time
-  console.log('setting up .pmarker-toggle listener');
+  //console.log('setting up .pmarker-toggle listener');
   $('.pmarker-toggle').on('click', function(e) {
+    var ct = $('.pmarker-toggle');
     e.preventDefault();
+    if (ct.children('i').hasClass('fa-toggle-off')) {
+      ct.html('<i class="fa fa-toggle-on"></i>&nbsp;Time Capture On');
+    }
+    else {
+      ct.html('<i class="fa fa-toggle-off"></i>&nbsp;Time Capture Off');
+    }
+
     toggleMarkers();
   });
 
@@ -174,9 +184,11 @@ function enableSidebarTimeCapture() {
       });
   });
 
+/*
   //time-tester menu option listener
   $('.time-tester').on('click', function(e) {
     e.preventDefault();
+    return;
 
     if ($(this).children('i').hasClass('fa-play')) {
       //run the tester
@@ -219,6 +231,7 @@ function enableSidebarTimeCapture() {
       $('html, body').animate({ scrollTop: 0 }, 'fast');
     }
   });
+*/
 
 }
 

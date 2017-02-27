@@ -1,7 +1,9 @@
 https://static.secure.website/wscfus/8306833/2638241/2012-01-07-english.wma
 https://static.secure.website/wscfus/8306833/2638312/2012-03-24-english.wma
 https://static.secure.website/wscfus/8306833/2638295/2012-02-12-english.wma
+--- From here and above, conversion parameters specified incorrectly - bummer!!
 --- Feb 24
+--- From here and below, conversion parameters specified correctly
 https://static.secure.website/wscfus/8306833/2638312/2012-03-24-english.wma
 https://static.secure.website/wscfus/8306833/2639393/2012-03-31-english.wma
 https://static.secure.website/wscfus/8306833/2639397/2012-04-08-english.wma
@@ -19,7 +21,7 @@ https://static.secure.website/wscfus/8306833/2643543/2012-08-18-raj-christ-jesus
 https://static.secure.website/wscfus/8306833/2643542/2012-08-27-english-1.wma
 https://static.secure.website/wscfus/8306833/2645749/2012-09-16-english.wma
 https://static.secure.website/wscfus/8306833/2645756/2012-09-23-english-1.wma
-https://static.secure.website/wscfus/8306833/2645762/2012-09-30-english-1.wma
-https://static.secure.website/wscfus/8306833/2646651/2012-10-08raj-christ-jesus-teaches-acim-through-paul-a-study-group-rajcast-english.wma
+error!! https://static.secure.website/wscfus/8306833/2645762/2012-09-30-english-1.wma https://static.secure.website/wscfus/8306833/2646651/2012-10-08raj-christ-jesus-teaches-acim-through-paul-a-study-group-rajcast-english.wma
 https://static.secure.website/wscfus/8306833/2646655/2012-10-14-english-1.wma
 https://static.secure.website/wscfus/8306833/2646657/2012-10-21-english-1.wma
+--- Feb 26

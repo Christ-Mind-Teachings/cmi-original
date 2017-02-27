@@ -12,7 +12,7 @@ layout: default
     {% include {{page.nav}} resource=true %}
 
     {% if page-contains-audio == true %}
-      {% include ui/audio-player.html %}
+      {% include {{ page-audio-player }} %}
     {% endif %}
   {% endif %}
 

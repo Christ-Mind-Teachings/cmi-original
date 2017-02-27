@@ -7,7 +7,8 @@
 var url = require("./util/url");
 var wrap = require("./h/wrap");
 var scroll = require("scroll-into-view");
-var audio = require("./ui/audio");
+var audio = require("./ui/mediaElements");
+//var audio = require("./ui/audio");
 
 var unwrap;
 
@@ -47,13 +48,13 @@ document.addEventListener("DOMContentLoaded", function() {
   showRequestedAnnotation();
 
   //init the audio player
-  console.log(audio.initialize({
+  audio.initialize({
     playerId: "#jquery_jplayer_audio_1",
     skinWrapper: "#jp_container_audio_1",
     audioToggle: ".audio-toggle",
     hidePlayer: ".hide-player",
     hilightClass: "hilite"
-  }));
+  });
 
 });
 

@@ -28,6 +28,7 @@
     "dom-anchor-text-quote": "^4.0.1",
     "jsonfile": "^2.4.0",
     "keyboardjs": "^2.3.3",
+    "mediaelement": "^3.1.3",
     "moment": "^2.17.1",
     "scroll-into-view": "^1.7.1",
     "sjcl": "^1.0.6",
