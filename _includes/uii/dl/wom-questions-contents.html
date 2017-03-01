@@ -1,10 +1,11 @@
-
+{% comment %}
 <!--
   uii/dl/wom-questions-contents.html
   ----------------------------------
   include.base: {{include.data.base}}
   include.class: {{include.class}}
 -->
+{% endcomment %}
 
 <section class="{{include.class}}">
 
@@ -12,8 +13,42 @@
   <hr>
   <h3>{{include.data.title}}: {{title.title}}</h3>
   {% for ques in title.questions %}
+    {% assign pf = include.ref.page | where: "fid", ques.fid %}
+    {% assign ref = pf[0] %}
+    {% include uii/state/transcript-state.html page=ref %}
+    {% comment %}
+    {% assign format = "" %}
+    {% assign timing = "" %}
+    {% assign audio = "" %}
+    <!--
+      fid: {{ques.fid}}
+      pf: {{pf}}
+      ref: {{ref}}
+      complete: {{ref.complete}}
+    -->
+    {% if ref.complete %}
+      {% if ref.complete.format == 0 %}
+        {% assign format = "fa-eye-slash" %}
+      {% endif %}
+      {% if ref.complete.timing == 1 %}
+        {% assign timing = "fa-clock-o" %}
+      {% endif %}
+      {% if ref.complete.audio == 0 %}
+        {% assign audio = "fa-microphone-slash" %}
+      {% endif %}
+    {% endif %}
+    {% endcomment %}
     <header>
       <a href="{{include.data.base | append: ques.fid}}">
+        {% if format != "" %}
+          <i class="fa fa-fw {{format}}"></i>
+        {% endif %}
+        {% if timing != "" %}
+          <i class="fa fa-fw {{timing}}"></i>
+        {% endif %}
+        {% if audio != "" %}
+          <i class="fa fa-fw {{audio}}"></i>
+        {% endif %}
         {{ques.title}}
       </a>
     </header>

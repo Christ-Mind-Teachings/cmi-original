@@ -33,10 +33,10 @@ function processSeek(time) {
     return t.seconds >= time;
   });
 
-
   if (locptr == -1) {
     locptr++
     console.log("adjusted index: %s", locptr);
+    console.log("seek time: %s > %s (last ptime)", time, timing_data.time[timing_data.time.length - 1].seconds);
   }
 
   console.log("[ptr:%s] seeking to %s which begins at %s", 
@@ -122,29 +122,11 @@ module.exports = {
   //highlight supported when timing data available
   initialize: function(css_class) {
     var rc = {};
-    var diff;
 
     if (typeof window.cmi_audio_timing_data !== "undefined") {
       console.log("timing data available");
 
       timing_data = cmi_audio_timing_data;
-
-      //adjust start time if necessary
-      // - this is needed because the start time at capture
-      //   differs from the start time during non capture playback.
-      // sheesh!
-      if (timing_data.adjustedStartTime) {
-        diff = timing_data.adjustedStartTime - timing_data.time[0].seconds;
-        //console.log("adjusting start time by %s seconds", diff);
-        timing_data.time = _.map(cmi_audio_timing_data.time, function(o) {
-          var recordedTime = o.seconds;
-
-          o.seconds += this.timeDiff;
-          //console.log("%s adjusted to %s", recordedTime, o.seconds);
-          return o;
-        }, {timeDiff: diff});
-      }
-
       rc.startTime = timing_data.time[0].seconds;
 
       //indicate timing data available
@@ -170,17 +152,6 @@ module.exports = {
     player = p;
   },
 
-  //enable hilight for test data collected by the user
-  // - called by module capture.js
-  capture_test: {
-    begin: function(test_data) {
-      enabled = true;
-      timing_data = test_data;
-    },
-    end: function() {
-      enabled = false;
-    }
-  },
   //don't process time event when seeking
   update_time: function(time) {
     if (!enabled || seeking) {

@@ -9,7 +9,6 @@ nav: nav/np-data.html
 contents: nav/contents.html
 bid: "grad"
 load-fa: true
-intro: "nwffacim:grad"
 ---
 
 <div class="custom-side-image">

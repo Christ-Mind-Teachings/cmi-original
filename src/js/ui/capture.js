@@ -17,33 +17,6 @@ var captureId = "";
 
 var increaseSpeed = true;
 
-/*
-var timeTest = (function() {
-  var enabled = false;
-
-  return {
-    enable: function() {
-      if (enabled) {
-        return;
-      }
-      //show time test menu option
-      console.log("state enabled");
-      $(".time-tester-wrapper").css("display", "block");
-      enabled = true;
-    },
-    disable: function() {
-      if (!enabled) {
-        return;
-      }
-      //hide time test menu option
-      console.log("state disabled");
-      $(".time-tester-wrapper").css("display", "none");
-      enabled = false;
-    }
-  };
-})();
-*/
-
 function deleteException(message) {
   this.message = message;
   this.name = "deleteException";
@@ -111,6 +84,7 @@ function markParagraph(o) {
 //add option to sidebar to capture audio play time
 function enableSidebarTimeCapture() {
 
+  //transcript_format_complete is defined globally
   if (!transcript_format_complete) {
     console.log("Formatting for this transcript is incomplete, capture disabled");
     return;
@@ -183,56 +157,6 @@ function enableSidebarTimeCapture() {
         $('.submit-message').html("Drat! Your submit failed.");
       });
   });
-
-/*
-  //time-tester menu option listener
-  $('.time-tester').on('click', function(e) {
-    e.preventDefault();
-    return;
-
-    if ($(this).children('i').hasClass('fa-play')) {
-      //run the tester
-      $(this).children('i').removeClass('fa-play').addClass('fa-stop');
-
-      //if capture on turn it off
-      var style = $('#p2 > i').attr('style');
-      if (typeof style == "undefined" || style.length == 0) {
-        toggleMarkers();
-      }
-
-      //setup test
-      console.log("capture test starting");
-      hilight.capture_test.begin(capture.getData());
-
-      //stop the player
-      jPlayer.jPlayer("stop");
-
-      //set playback rate to 1
-      jPlayer.jPlayer("option", "playbackRate", 1);
-      $('.audio-faster').html(" 0");
-      increaseSpeed = true; //reset speed direction
-
-      //scroll to top of page
-      $('html, body').animate({ scrollTop: 0 }, 'fast');
-
-      //start player
-      jPlayer.jPlayer("play", capture.getData().time[0].seconds);
-    }
-    else {
-      //stop the tester
-      $(this).children('i').removeClass('fa-stop').addClass('fa-play');
-      console.log("capture test ending");
-      hilight.capture_test.end();
-
-      //stop the player
-      jPlayer.jPlayer("stop");
-
-      //scroll to top of page
-      $('html, body').animate({ scrollTop: 0 }, 'fast');
-    }
-  });
-*/
-
 }
 
 //create listeners for each paragraph and

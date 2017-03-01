@@ -1,300 +1,299 @@
 var cmi_audio_timing_data = {
     "base": "/nwffacim/acim/2011/021911/",
     "title": "Feb 19, 2011",
-    "adjustedStartTime": 330,
     "time": [{
         "id": "p0",
-        "seconds": 309.861623
+        "seconds": 0
     }, {
         "id": "p1",
-        "seconds": 320.609938
+        "seconds": 11.705439
     }, {
         "id": "p2",
-        "seconds": 356.115527
+        "seconds": 46.961949
     }, {
         "id": "p3",
-        "seconds": 404.867817
+        "seconds": 96.200127
     }, {
         "id": "p4",
-        "seconds": 443.610229
+        "seconds": 134.445603
     }, {
         "id": "p5",
-        "seconds": 486.614843
+        "seconds": 177.212069
     }, {
         "id": "p6",
-        "seconds": 534.114362
+        "seconds": 224.960859
     }, {
         "id": "p7",
-        "seconds": 594.113818
+        "seconds": 285.19845
     }, {
         "id": "p8",
-        "seconds": 629.61784
+        "seconds": 320.453255
     }, {
         "id": "p9",
-        "seconds": 664.115846
+        "seconds": 355.461209
     }, {
         "id": "p10",
-        "seconds": 687.616097
+        "seconds": 378.700671
     }, {
         "id": "p11",
-        "seconds": 725.112923
+        "seconds": 415.947101
     }, {
         "id": "p12",
-        "seconds": 749.618589
+        "seconds": 440.453492
     }, {
         "id": "p13",
-        "seconds": 796.867404
+        "seconds": 487.454024
     }, {
         "id": "p14",
-        "seconds": 853.62059
+        "seconds": 544.954183
     }, {
         "id": "p15",
-        "seconds": 897.611969
+        "seconds": 588.448017
     }, {
         "id": "p16",
-        "seconds": 936.613231
+        "seconds": 627.460114
     }, {
         "id": "p17",
-        "seconds": 1008.618538
+        "seconds": 699.462965
     }, {
         "id": "p18",
-        "seconds": 1079.864309
+        "seconds": 770.947984
     }, {
         "id": "p19",
-        "seconds": 1109.113098
+        "seconds": 800.45682
     }, {
         "id": "p20",
-        "seconds": 1125.869175
+        "seconds": 817.201175
     }, {
         "id": "p21",
-        "seconds": 1129.365182
+        "seconds": 820.212317
     }, {
         "id": "p22",
-        "seconds": 1170.119967
+        "seconds": 861.191688
     }, {
         "id": "p23",
-        "seconds": 1206.370336
+        "seconds": 897.194717
     }, {
         "id": "p24",
-        "seconds": 1224.360776
+        "seconds": 915.457221
     }, {
         "id": "p25",
-        "seconds": 1256.618235
+        "seconds": 947.454434
     }, {
         "id": "p26",
-        "seconds": 1285.61669
+        "seconds": 976.461471
     }, {
         "id": "p27",
-        "seconds": 1325.862659
+        "seconds": 1016.947079
     }, {
         "id": "p28",
-        "seconds": 1391.113788
+        "seconds": 1081.961118
     }, {
         "id": "p29",
-        "seconds": 1438.61026
+        "seconds": 1129.707402
     }, {
         "id": "p30",
-        "seconds": 1497.863098
+        "seconds": 1188.450883
     }, {
         "id": "p31",
-        "seconds": 1528.368725
+        "seconds": 1219.202915
     }, {
         "id": "p32",
-        "seconds": 1539.1174
+        "seconds": 1224.51586
     }, {
         "id": "p33",
-        "seconds": 1541.369797
+        "seconds": 1226.505677
     }, {
         "id": "p34",
-        "seconds": 1546.370441
+        "seconds": 1229.516332
     }, {
         "id": "p35",
-        "seconds": 1549.120043
+        "seconds": 1232.00473
     }, {
         "id": "p36",
-        "seconds": 1558.362639
+        "seconds": 1243.770234
     }, {
         "id": "p37",
-        "seconds": 1561.609793
+        "seconds": 1246.510479
     }, {
         "id": "p38",
-        "seconds": 1587.112653
+        "seconds": 1272.758741
     }, {
         "id": "p39",
-        "seconds": 1610.364627
+        "seconds": 1295.500906
     }, {
         "id": "p40",
-        "seconds": 1639.860756
+        "seconds": 1325.010188
     }, {
         "id": "p41",
-        "seconds": 1676.869668
+        "seconds": 1362.2574
     }, {
         "id": "p42",
-        "seconds": 1713.121684
+        "seconds": 1398.508506
     }, {
         "id": "p43",
-        "seconds": 1717.612364
+        "seconds": 1403.011875
     }, {
         "id": "p44",
-        "seconds": 1725.61176
+        "seconds": 1410.500644
     }, {
         "id": "p45",
-        "seconds": 1728.600878
+        "seconds": 1413.511198
     }, {
         "id": "p46",
-        "seconds": 1733.103633
+        "seconds": 1414.732758
     }, {
         "id": "p47",
-        "seconds": 1735.357036
+        "seconds": 1419.236995
     }, {
         "id": "p48",
-        "seconds": 1739.099814
+        "seconds": 1423.740413
     }, {
         "id": "p49",
-        "seconds": 1763.597345
+        "seconds": 1448.223546
     }, {
         "id": "p50",
-        "seconds": 1772.354598
+        "seconds": 1456.980855
     }, {
         "id": "p51",
-        "seconds": 1773.847204
+        "seconds": 1457.976606
     }, {
         "id": "p52",
-        "seconds": 1777.604443
+        "seconds": 1461.982458
     }, {
         "id": "p53",
-        "seconds": 1820.350368
+        "seconds": 1504.72888
     }, {
         "id": "p54",
-        "seconds": 1845.852573
+        "seconds": 1530.230098
     }, {
         "id": "p55",
-        "seconds": 1888.847949
+        "seconds": 1573.474242
     }, {
         "id": "p56",
-        "seconds": 1913.853107
+        "seconds": 1597.982287
     }, {
         "id": "p57",
-        "seconds": 1982.846779
+        "seconds": 1666.977008
     }, {
         "id": "p58",
-        "seconds": 2007.105773
+        "seconds": 1691.235189
     }, {
         "id": "p59",
-        "seconds": 2026.849508
+        "seconds": 1711.239022
     }, {
         "id": "p60",
-        "seconds": 2043.357106
+        "seconds": 1727.736514
     }, {
         "id": "p61",
-        "seconds": 2066.348067
+        "seconds": 1750.477327
     }, {
         "id": "p62",
-        "seconds": 2117.603659
+        "seconds": 1802.229917
     }, {
         "id": "p63",
-        "seconds": 2193.103659
+        "seconds": 1877.493255
     }, {
         "id": "p64",
-        "seconds": 2215.85759
+        "seconds": 1899.986796
     }, {
         "id": "p65",
-        "seconds": 2284.604413
+        "seconds": 1968.733741
     }, {
         "id": "p66",
-        "seconds": 2297.354217
+        "seconds": 1981.493343
     }, {
         "id": "p67",
-        "seconds": 2343.607254
+        "seconds": 2028.224654
     }, {
         "id": "p68",
-        "seconds": 2345.349737
+        "seconds": 2029.990077
     }, {
         "id": "p69",
-        "seconds": 2349.355943
+        "seconds": 2033.474376
     }, {
         "id": "p70",
-        "seconds": 2354.357019
+        "seconds": 2038.225195
     }, {
         "id": "p71",
-        "seconds": 2360.105205
+        "seconds": 2044.494084
     }, {
         "id": "p72",
-        "seconds": 2427.357939
+        "seconds": 2111.475485
     }, {
         "id": "p73",
-        "seconds": 2473.599708
+        "seconds": 2157.978494
     }, {
         "id": "p74",
-        "seconds": 2484.099287
+        "seconds": 2168.72747
     }, {
         "id": "p75",
-        "seconds": 2510.608386
+        "seconds": 2194.726409
     }, {
         "id": "p76",
-        "seconds": 2513.856617
+        "seconds": 2197.985871
     }, {
         "id": "p77",
-        "seconds": 2532.605361
+        "seconds": 2216.993858
     }, {
         "id": "p78",
-        "seconds": 2582.602431
+        "seconds": 2266.981098
     }, {
         "id": "p79",
-        "seconds": 2614.102671
+        "seconds": 2298.727817
     }, {
         "id": "p80",
-        "seconds": 2621.604686
+        "seconds": 2305.743794
     }, {
         "id": "p81",
-        "seconds": 2641.857023
+        "seconds": 2326.243435
     }, {
         "id": "p82",
-        "seconds": 2659.09915
+        "seconds": 2343.738684
     }, {
         "id": "p83",
-        "seconds": 2662.359359
+        "seconds": 2346.227544
     }, {
         "id": "p84",
-        "seconds": 2667.098346
+        "seconds": 2351.227956
     }, {
         "id": "p85",
-        "seconds": 2734.103509
+        "seconds": 2418.231656
     }, {
         "id": "p86",
-        "seconds": 2748.34814
+        "seconds": 2432.737839
     }, {
         "id": "p87",
-        "seconds": 2768.351167
+        "seconds": 2452.492022
     }, {
         "id": "p88",
-        "seconds": 2774.098864
+        "seconds": 2458.489671
     }, {
         "id": "p89",
-        "seconds": 2784.349504
+        "seconds": 2468.740181
     }, {
         "id": "p90",
-        "seconds": 2789.601052
+        "seconds": 2473.989908
     }, {
         "id": "p91",
-        "seconds": 2810.600214
+        "seconds": 2494.741167
     }, {
         "id": "p92",
-        "seconds": 2816.358658
+        "seconds": 2500.737163
     }, {
         "id": "p93",
-        "seconds": 2838.354064
+        "seconds": 2522.731511
     }, {
         "id": "p94",
-        "seconds": 2898.603693
+        "seconds": 2577.688822
     }, {
         "id": "p95",
-        "seconds": 2908.606281
+        "seconds": 2587.6898
     }, {
         "id": "p96",
-        "seconds": 2975.100835
+        "seconds": 2654.197478
     }, {
         "id": "p97",
-        "seconds": 3017.60799
+        "seconds": 2696.444174
     }]
 };

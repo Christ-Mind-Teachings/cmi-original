@@ -1,0 +1,32 @@
+{% comment %}
+{% endcomment %}
+<!--
+  uii/state/transcript-state.html
+  -------------------------------
+  include.page: {{include.page}}
+-->
+
+{% assign format = "" %}
+{% assign timing = "" %}
+{% assign audio = "" %}
+{% if include.page %}
+  {% if include.page.complete == 0 or include.page.complete == false %}
+    {% assign format = "fa-exclamation" %}
+  {% else %}
+    {% if include.page.complete.format == 0 %}
+      {% assign format = "fa-eye-slash" %}
+    {% endif %}
+
+    {% if include.page.complete.timing == 1 %}
+      {% assign timing = "fa-clock-o" %}
+    {% endif %}
+
+    {% if include.page.complete.audio == 0 %}
+      {% assign audio = "fa-microphone-slash" %}
+    {% endif %}
+  {% endif %}
+{% else %}
+  {% assign format = "fa-question" %}
+{% endif %}
+
+

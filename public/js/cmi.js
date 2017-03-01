@@ -5528,33 +5528,6 @@ var captureId = "";
 
 var increaseSpeed = true;
 
-/*
-var timeTest = (function() {
-  var enabled = false;
-
-  return {
-    enable: function() {
-      if (enabled) {
-        return;
-      }
-      //show time test menu option
-      console.log("state enabled");
-      $(".time-tester-wrapper").css("display", "block");
-      enabled = true;
-    },
-    disable: function() {
-      if (!enabled) {
-        return;
-      }
-      //hide time test menu option
-      console.log("state disabled");
-      $(".time-tester-wrapper").css("display", "none");
-      enabled = false;
-    }
-  };
-})();
-*/
-
 function deleteException(message) {
   this.message = message;
   this.name = "deleteException";
@@ -5622,6 +5595,7 @@ function markParagraph(o) {
 //add option to sidebar to capture audio play time
 function enableSidebarTimeCapture() {
 
+  //transcript_format_complete is defined globally
   if (!transcript_format_complete) {
     console.log("Formatting for this transcript is incomplete, capture disabled");
     return;
@@ -5694,56 +5668,6 @@ function enableSidebarTimeCapture() {
         $('.submit-message').html("Drat! Your submit failed.");
       });
   });
-
-/*
-  //time-tester menu option listener
-  $('.time-tester').on('click', function(e) {
-    e.preventDefault();
-    return;
-
-    if ($(this).children('i').hasClass('fa-play')) {
-      //run the tester
-      $(this).children('i').removeClass('fa-play').addClass('fa-stop');
-
-      //if capture on turn it off
-      var style = $('#p2 > i').attr('style');
-      if (typeof style == "undefined" || style.length == 0) {
-        toggleMarkers();
-      }
-
-      //setup test
-      console.log("capture test starting");
-      hilight.capture_test.begin(capture.getData());
-
-      //stop the player
-      jPlayer.jPlayer("stop");
-
-      //set playback rate to 1
-      jPlayer.jPlayer("option", "playbackRate", 1);
-      $('.audio-faster').html(" 0");
-      increaseSpeed = true; //reset speed direction
-
-      //scroll to top of page
-      $('html, body').animate({ scrollTop: 0 }, 'fast');
-
-      //start player
-      jPlayer.jPlayer("play", capture.getData().time[0].seconds);
-    }
-    else {
-      //stop the tester
-      $(this).children('i').removeClass('fa-stop').addClass('fa-play');
-      console.log("capture test ending");
-      hilight.capture_test.end();
-
-      //stop the player
-      jPlayer.jPlayer("stop");
-
-      //scroll to top of page
-      $('html, body').animate({ scrollTop: 0 }, 'fast');
-    }
-  });
-*/
-
 }
 
 //create listeners for each paragraph and
@@ -5942,10 +5866,10 @@ function processSeek(time) {
     return t.seconds >= time;
   });
 
-
   if (locptr == -1) {
     locptr++
     console.log("adjusted index: %s", locptr);
+    console.log("seek time: %s > %s (last ptime)", time, timing_data.time[timing_data.time.length - 1].seconds);
   }
 
   console.log("[ptr:%s] seeking to %s which begins at %s", 
@@ -6031,29 +5955,11 @@ module.exports = {
   //highlight supported when timing data available
   initialize: function(css_class) {
     var rc = {};
-    var diff;
 
     if (typeof window.cmi_audio_timing_data !== "undefined") {
       console.log("timing data available");
 
       timing_data = cmi_audio_timing_data;
-
-      //adjust start time if necessary
-      // - this is needed because the start time at capture
-      //   differs from the start time during non capture playback.
-      // sheesh!
-      if (timing_data.adjustedStartTime) {
-        diff = timing_data.adjustedStartTime - timing_data.time[0].seconds;
-        //console.log("adjusting start time by %s seconds", diff);
-        timing_data.time = _.map(cmi_audio_timing_data.time, function(o) {
-          var recordedTime = o.seconds;
-
-          o.seconds += this.timeDiff;
-          //console.log("%s adjusted to %s", recordedTime, o.seconds);
-          return o;
-        }, {timeDiff: diff});
-      }
-
       rc.startTime = timing_data.time[0].seconds;
 
       //indicate timing data available
@@ -6079,17 +5985,6 @@ module.exports = {
     player = p;
   },
 
-  //enable hilight for test data collected by the user
-  // - called by module capture.js
-  capture_test: {
-    begin: function(test_data) {
-      enabled = true;
-      timing_data = test_data;
-    },
-    end: function() {
-      enabled = false;
-    }
-  },
   //don't process time event when seeking
   update_time: function(time) {
     if (!enabled || seeking) {
@@ -6176,11 +6071,15 @@ function initPlayer(config) {
     audioUrl = $(config.audioToggle).attr("href");
     audioElement.attr("src", audioUrl);
 
-    //disable 'seek' type controls when timing data present because
-    //seeking messes up hilighting
+    //player controls when we have timing data
     if (typeof window.cmi_audio_timing_data !== "undefined") {
-      features = ["playpause", "stop", "current", "speed"];
+      features = ["playpause", "stop", "progress", "current"];
     }
+    //if we don't allow time capture
+    else if (!transcript_format_complete) {
+      features = ["playpause", "stop", "progress", "current"];
+    }
+    //when user may capture time
     else {
       features = ["playpause", "stop", "current", "skipback", "jumpforward", "speed"];
     }

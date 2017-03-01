@@ -9,7 +9,6 @@ contents: nav/contents.html
 nav: nav/np-data.html
 bid: "yaa"
 load-fa: true
-intro: "nwffacim:yaa"
 ---
 
 <div class="custom-side-image">

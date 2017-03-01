@@ -17,12 +17,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "BLEQ1.mp3"
+        "audio": "BLEQ1.mp3",
+        "timing": "bleq1.js"
       }
     },
     {
@@ -31,12 +32,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "BLEQ2.mp3"
+        "audio": "BLEQ2.mp3",
+        "timing": "bleq2.js"
       }
     },
     {
@@ -65,7 +67,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "BLEQ4.mp3"
+        "audio": "BLEQ4.mp3",
+        "timing": "bleq4.js"
       }
     },
     {
@@ -74,7 +77,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },

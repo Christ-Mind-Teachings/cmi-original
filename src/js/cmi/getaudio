@@ -1,0 +1,144 @@
+#!/usr/bin/env node
+
+var json = require("jsonfile");
+var _ = require("underscore");
+var s3 = require("./aws/s3");
+var request = require("request");
+var fs = require("fs");
+
+var dataDir = "/Users/rmercer/Projects/cmi/site/_data/";
+var data;
+var domain;
+var inputFile;
+var ifile;
+var fid;
+var cmd;
+var outfile;
+var audioFile;
+
+function syntax() {
+  console.log("getaudio <cmd> <jsonfile> <fid>");
+  console.log("where: <cmd> is 'ls [fid]', 'get <fid>', 'put <fid> <file>'");
+  console.log("where: <jsonfile> given as relative to cmis/_data");
+  console.log("                  extension '.json' optional");
+  console.log("where: <fid> given as 'mmddyy'");
+  process.exit(1);
+}
+
+if (process.argv.length > 3) {
+  cmd = process.argv[2];
+  ifile = process.argv[3];
+}
+else {
+  syntax();
+}
+
+if (process.argv.length > 4) {
+  fid = process.argv[4];
+}
+
+if (process.argv.length > 5) {
+  audioFile = process.argv[5];
+}
+
+if (!ifile.endsWith(".json")) {
+  ifile = ifile + ".json";
+}
+
+inputFile = dataDir + ifile;
+
+try {
+  //console.log("reading %s", inputFile);
+  data = json.readFileSync(inputFile);
+}
+catch(e) {
+  console.log("error opening %s", inputFile);
+  console.log("** exiting");
+  //console.log(e);
+  process.exit(1);
+}
+
+if (!(data.domain && data.domain.audio)) {
+  console.log("json file missing 'domain:' attribute - appears no audio configured");
+  process.exit(1);
+}
+
+domain = data.domain.audio;
+
+if (typeof fid !== "undefined") {
+  //in the json file, fid has "/" appended
+  var page = _.find(data.page, function(page) {
+    return page.fid == this.fid + "/";
+  },{fid: fid});
+
+  if (typeof page == "undefined") {
+    console.log("page for fid: %s was not found", fid);
+    process.exit(1);
+  }
+
+  if (!data.domain.audio) {
+    console.log("json file has no audio domain defined", fid);
+    console.log("domain: ", data.domain);
+    process.exit(1);
+  }
+
+  if (!(page.res && page.res.audio)) {
+    console.log("page has no audio resource defined", fid);
+    process.exit(1);
+  }
+
+  //page.res.audio-domain overrides domain.audio
+  if (page.res["audio-domain"]) {
+    domain = page.res["audio-domain"];
+  }
+
+  if (cmd == "ls") {
+    console.log("%s: %s", fid, domain + page.res.audio);
+  }
+  else if (cmd == "get") {
+    if (domain.indexOf("amazonaws") !== -1) {
+      console.log("Downloading from s3 to %s", page.res.audio);
+      s3.download(domain, page.res.audio);
+    }
+    else {
+      let index = page.res.audio.lastIndexOf("/");
+      if (index == -1) {
+        outfile = page.res.audio;
+      }
+      else {
+        outfile = page.res.audio.substr(index + 1);
+      }
+      console.log("Downloading %s to %s", domain + page.res.audio, outfile);
+      request(domain + page.res.audio).pipe(fs.createWriteStream(outfile));
+    }
+  }
+  else if (cmd == "put") {
+    if (domain.indexOf("amazonaws") !== -1) {
+      console.log("Uploading to %s from %s", page.res.audio, audioFile);
+      s3.upload(domain, page.res.audio, audioFile);
+    }
+    else {
+      console.log("Files can be uploaded to AWS S3 only, edit config file and try again");
+    }
+  }
+}
+else {
+  //list fid: audioFile for all pages in json file
+  _.each(data.page, function(page) {
+    var audioUrl;
+    var domain = this.domain;
+    if (page.res && page.res.audio) {
+      if (page.res["audio-domain"]) {
+        domain = page.res["audio-domain"];
+      }
+      audioUrl = domain + page.res.audio;
+    }
+    else {
+      audioUrl = "No audio";
+    }
+    console.log("%s: %s", page.fid.substr(0, page.fid.length - 1), audioUrl);
+  }, {domain: domain});
+}
+
+
+

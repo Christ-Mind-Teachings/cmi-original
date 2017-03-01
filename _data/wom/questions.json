@@ -19,12 +19,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "BLEQ1.mp3"
+        "audio": "BLEQ1.mp3",
+        "timing": "bleq1.js"
       },
       "url": "/wom/questions/bleq1/",
       "idx": 1,
@@ -37,12 +38,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "BLEQ2.mp3"
+        "audio": "BLEQ2.mp3",
+        "timing": "bleq2.js"
       },
       "url": "/wom/questions/bleq2/",
       "idx": 2,
@@ -79,7 +81,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "BLEQ4.mp3"
+        "audio": "BLEQ4.mp3",
+        "timing": "bleq4.js"
       },
       "url": "/wom/questions/bleq4/",
       "idx": 4,
@@ -92,7 +95,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },

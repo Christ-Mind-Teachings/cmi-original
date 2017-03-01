@@ -30,11 +30,15 @@ function initPlayer(config) {
     audioUrl = $(config.audioToggle).attr("href");
     audioElement.attr("src", audioUrl);
 
-    //disable 'seek' type controls when timing data present because
-    //seeking messes up hilighting
+    //player controls when we have timing data
     if (typeof window.cmi_audio_timing_data !== "undefined") {
-      features = ["playpause", "stop", "current", "speed"];
+      features = ["playpause", "stop", "progress", "current"];
     }
+    //if we don't allow time capture
+    else if (!transcript_format_complete) {
+      features = ["playpause", "stop", "progress", "current"];
+    }
+    //when user may capture time
     else {
       features = ["playpause", "stop", "current", "skipback", "jumpforward", "speed"];
     }

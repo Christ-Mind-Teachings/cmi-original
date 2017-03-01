@@ -8,13 +8,15 @@ burl: /wom/intro/wot/
 nav: nav/np-data.html
 contents: nav/contents.html
 bid: "wot"
-intro: "wom:wot"
 ---
 
 <div class="custom-side-image">
   {% include ui/side-image.html id=page.bid %}
 </div>
 
-{% include ui/bullets.html id=page.bid %}
+{% include ui/bullets.html
+  skip=0
+  page=site.data.wom.wot.page
+%}
 
 

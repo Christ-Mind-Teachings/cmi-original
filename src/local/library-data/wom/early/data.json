@@ -9,10 +9,24 @@
   "pages": [
     {
       "fid": "*early",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "title": "About"
     },
     {
       "fid": "ble",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "BLE.mp3"
       },
@@ -20,6 +34,13 @@
     },
     {
       "fid": "c2s",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "C2S.mp3"
       },
@@ -27,6 +48,13 @@
     },
     {
       "fid": "hoe",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "HOE.mp3"
       },
@@ -34,6 +62,13 @@
     },
     {
       "fid": "ign",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "IGN.mp3"
       },

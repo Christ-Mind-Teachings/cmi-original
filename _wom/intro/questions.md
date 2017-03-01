@@ -8,8 +8,8 @@ burl: /wom/intro/questions/
 nav: nav/np-data.html
 contents: nav/contents.html
 bid: "questions"
-intro: "wom:questions"
 tabs: true
+fa: true
 ---
 
   <div class="custom-side-image">
@@ -23,28 +23,28 @@ tabs: true
         Years</a>
         <div class="tab-content">
           {% include ui/description-list.html class="cmi-questions"
-          data=site.data.wom.qearly source="questions" %}
+          ref=site.data.wom.questions data=site.data.wom.qearly source="questions" %}
         </div>
       </li>
       <li class="tab-header-and-content">
         <a href="javascript:void(0)" class="tab-link">Way of the Heart</a>
         <div class="tab-content">
           {% include ui/description-list.html class="cmi-questions"
-          data=site.data.wom.qwoh source="questions" %}
+          ref=site.data.wom.questions data=site.data.wom.qwoh source="questions" %}
         </div>
       </li>
       <li class="tab-header-and-content">
         <a href="javascript:void(0)" class="tab-link">Way of Transformation</a>
         <div class="tab-content">
           {% include ui/description-list.html class="cmi-questions"
-          data=site.data.wom.qwot source="questions" %}
+          ref=site.data.wom.questions data=site.data.wom.qwot source="questions" %}
         </div>
       </li>
       <li class="tab-header-and-content">
         <a href="javascript:void(0)" class="tab-link">Way of Knowing</a>
         <div class="tab-content">
           {% include ui/description-list.html class="cmi-questions"
-          data=site.data.wom.qwok source="questions" %}
+          ref=site.data.wom.questions data=site.data.wom.qwok source="questions" %}
         </div>
       </li>
     </ul>

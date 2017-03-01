@@ -6,6 +6,8 @@
 
 {% for book in include.data %}
   {% if skip != book.idx %}
+    {% include uii/state/transcript-state.html page=book %}
+    {% comment %}
     {% assign class = "" %}
     {% if book.complete.format %}
       {% assign complete = book.complete.format | default: 0 %}
@@ -15,10 +17,20 @@
     {% if complete == false or complete == 0 %}
       {% assign class = "<i class='fa fa-fw fa-exclamation'></i>" %}
     {% endif %}
+    {% endcomment %}
 
     <header>
       <a href="{{book.url}}">
-        {{class}}&nbsp;{{book.title}}
+        {% if format != "" %}
+          <i class="fa fa-fw {{format}}"></i>
+        {% endif %}
+        {% if timing != "" %}
+          <i class="fa fa-fw {{timing}}"></i>
+        {% endif %}
+        {% if audio != "" %}
+          <i class="fa fa-fw {{audio}}"></i>
+        {% endif %}
+        &nbsp;{{book.title}}
       </a>
     </header>
     <section>

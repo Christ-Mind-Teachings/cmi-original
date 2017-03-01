@@ -15,7 +15,13 @@
     },
     {
       "fid": "l01/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L01.mp3"
       },
@@ -27,7 +33,13 @@
     },
     {
       "fid": "l02/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L02.mp3",
         "timing": "l02.js"
@@ -40,7 +52,13 @@
     },
     {
       "fid": "l03/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L03.mp3"
       },
@@ -52,7 +70,13 @@
     },
     {
       "fid": "l04/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L04.mp3"
       },
@@ -64,7 +88,13 @@
     },
     {
       "fid": "l05/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L05.mp3"
       },
@@ -76,7 +106,13 @@
     },
     {
       "fid": "l06/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L06.mp3"
       },
@@ -88,7 +124,13 @@
     },
     {
       "fid": "l07/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L07.mp3"
       },
@@ -100,7 +142,13 @@
     },
     {
       "fid": "l08/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L08.mp3"
       },
@@ -112,7 +160,13 @@
     },
     {
       "fid": "l09/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L09.mp3"
       },
@@ -124,7 +178,13 @@
     },
     {
       "fid": "l10/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L10.mp3"
       },
@@ -136,7 +196,13 @@
     },
     {
       "fid": "l11/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L11.mp3"
       },
@@ -148,7 +214,13 @@
     },
     {
       "fid": "l12/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L12.mp3"
       },

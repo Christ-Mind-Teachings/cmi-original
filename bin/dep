@@ -1,0 +1,15 @@
+#!/bin/bash
+
+workingDir=`pwd`
+scriptDir=`dirname $0`
+scriptName=`basename $0`
+
+#echo "workingDir: $workingDir"
+#echo "scriptDir: $scriptDir"
+#echo "scriptName: $scriptName"
+
+for i in $@; do
+  echo "cp $i to $workingDir"
+  cp $workingDir/$i $scriptDir
+done
+

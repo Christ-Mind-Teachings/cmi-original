@@ -12,77 +12,143 @@
     },
     {
       "fid": "l01",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L25.mp3"
       }
     },
     {
       "fid": "l02",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L26.mp3"
       }
     },
     {
       "fid": "l03",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L27.mp3"
       }
     },
     {
       "fid": "l04",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L28.mp3"
       }
     },
     {
       "fid": "l05",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L29.mp3"
       }
     },
     {
       "fid": "l06",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L30.mp3"
       }
     },
     {
       "fid": "l07",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L31.mp3"
       }
     },
     {
       "fid": "l08",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L32.mp3"
       }
     },
     {
       "fid": "l09",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L33.mp3"
       }
     },
     {
       "fid": "l10",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L34.mp3"
       }
     },
     {
       "fid": "l11",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "L35.mp3"
       }

@@ -3,29 +3,64 @@ bullet-icon images
 <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
 {% endcomment %}
 
-{% assign iArr = site.data.ui.bullets.page | where: "id", page.bid %}
-{% assign info = iArr[0] %}
-
 {% comment %}
 page.bid: {{page.bid}}
 info: {{info}}
 {% endcomment %}
 
-<ul class="bullets">
-  {% for bullet in info.item %}
-  <li class="bullet">
-    <div class="bullet-icon bullet-icon-{{bullet.icon}}">
-    </div>
-    <div class="bullet-content">
-      {% comment %}
-      <h2>{{bullet.title}}</h2>
-      {% endcomment %}
-      <h2><a title="Read {{bullet.title}}" href="{{bullet.link}}">{{bullet.title}}</a></h2>
-      {% if bullet.desc %}
-        <p> {{ bullet.desc }} </p>
-      {% endif %}
-    </div>
-  </li>
+{% if include.page %}
+  {% assign icon = 1 %}
+  <ul class="bullets">
+  {% for bullet in include.page %}
+    {% include uii/state/transcript-state.html page=bullet %}
+    {% if bullet.idx != include.skip %}
+      <li class="bullet">
+        <div class="bullet-icon bullet-icon-{{icon | modulo: 4}}">
+        </div>
+        <div class="bullet-content">
+          <h2>
+            <a title="Read {{bullet.title}}" href="{{bullet.url}}">
+              {% if format != "" %}
+                <i class="fa fa-fw {{format}}"></i>
+              {% endif %}
+              {% if timing != "" %}
+                <i class="fa fa-fw {{timing}}"></i>
+              {% endif %}
+              {% if audio != "" %}
+                <i class="fa fa-fw {{audio}}"></i>
+              {% endif %}
+              {{bullet.title}}
+            </a>
+          </h2>
+          {% if bullet.desc %}
+            <p> {{ bullet.desc }} </p>
+          {% endif %}
+        </div>
+      </li>
+    {% endif %}
+  {% assign icon = icon | plus: 1 %}
   {% endfor %}
-</ul>
+{% else %}
 
+  {% assign iArr = site.data.ui.bullets.page | where: "id", page.bid %}
+  {% assign info = iArr[0] %}
+
+  <ul class="bullets">
+    {% for bullet in info.item %}
+    <li class="bullet">
+      <div class="bullet-icon bullet-icon-{{bullet.icon}}">
+      </div>
+      <div class="bullet-content">
+        {% comment %}
+        <h2>{{bullet.title}}</h2>
+        {% endcomment %}
+        <h2><a title="Read {{bullet.title}}" href="{{bullet.link}}">{{bullet.title}}</a></h2>
+        {% if bullet.desc %}
+          <p> {{ bullet.desc }} </p>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+{% endif %}

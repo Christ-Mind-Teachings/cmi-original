@@ -21,5 +21,9 @@ fb:
   {% include ui/side-image.html %}
 </div>
 
-{% include ui/bullets.html %}
+{% include ui/bullets.html
+  skip=0
+  page=site.data.wom.early.page
+  base=site.data.wom.early.base
+%}
 

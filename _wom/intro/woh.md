@@ -8,12 +8,14 @@ burl: /wom/intro/woh/
 nav: nav/np-data.html
 contents: nav/contents.html
 bid: "woh"
-intro: "wom:woh"
 ---
 
 <div class="custom-side-image">
   {% include ui/side-image.html %}
 </div>
 
-{% include ui/bullets.html %}
+{% include ui/bullets.html
+  skip=0
+  page=site.data.wom.woh.page
+%}
 

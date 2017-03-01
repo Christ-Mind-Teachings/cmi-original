@@ -8,7 +8,6 @@ burl: /nwffacim/intro/acim/
 class: nwffacim
 contents: nav/contents.html
 bid: "acimc"
-intro: "nwffacim:acim"
 ---
 
 <div markdown="1" class="container content">
