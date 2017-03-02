@@ -97,6 +97,7 @@ if (typeof fid !== "undefined") {
   }
   else if (cmd == "get") {
     if (domain.indexOf("amazonaws") !== -1) {
+      s3.init();
       console.log("Downloading from s3 to %s", page.res.audio);
       s3.download(domain, page.res.audio);
     }
@@ -114,6 +115,7 @@ if (typeof fid !== "undefined") {
   }
   else if (cmd == "put") {
     if (domain.indexOf("amazonaws") !== -1) {
+      s3.init();
       console.log("Uploading to %s from %s", page.res.audio, audioFile);
       s3.upload(domain, page.res.audio, audioFile);
     }

@@ -77,7 +77,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 1,
+        "timing": 0,
         "index": 0,
         "fb": 0
       },
@@ -91,12 +91,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "C2SQ2.mp3"
+        "audio": "C2SQ2.mp3",
+        "timing": "c2sq2.js"
       }
     },
     {
@@ -105,12 +106,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "C2SQ3.mp3"
+        "audio": "C2SQ3.mp3",
+        "timing": "c2sq3.js"
       }
     },
     {
@@ -119,12 +121,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "C2SQ4.mp3"
+        "audio": "C2SQ4.mp3",
+        "timing": "c2sq4.js"
       }
     },
     {
@@ -133,12 +136,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "C2SQ5.mp3"
+        "audio": "C2SQ5.mp3",
+        "timing": "c2sq5.js"
       }
     },
     {
@@ -147,12 +151,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "Q01.01.mp3"
+        "audio": "Q01.01.mp3",
+        "timing": "h01q1.js"
       }
     },
     {

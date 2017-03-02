@@ -1,16 +1,6 @@
 var s3 = require('s3');
 
-var client = s3.createClient({
-  maxAsyncS3: 20,
-  s3RetryCount: 3,
-  s3RetryDelay: 1000,
-  multipartUploadThreshold: 20971520,
-  multipartUploadSize: 15728640,
-  s3Options: {
-    accessKeyId: "AKIAITBRJU5LLP5XNUZQ",
-    secretAccessKey: "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",
-  }
-});
+var client;
 
 function downloadFile(params) {
   var downloader = client.downloadFile(params);
@@ -41,6 +31,16 @@ function uploadFile(params) {
 }
 
 module.exports = {
+
+  init: function() {
+    client = s3.createClient({
+      maxAsyncS3: 20,
+      s3RetryCount: 3,
+      s3RetryDelay: 1000,
+      multipartUploadThreshold: 20971520,
+      multipartUploadSize: 15728640
+    });
+  },
 
   download: function(domain, audiofile) {
     var bucket_path = domain.substr("https://s3.amazonaws.com/".length);
