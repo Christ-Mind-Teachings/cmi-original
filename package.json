@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/rmercer33/christmind.info#readme",
   "devDependencies": {
+    "dynamodb-local": "0.0.14",
     "eslint-grunt": "^1.0.0",
     "grunt": "^1.0.1",
     "grunt-aws-s3": "^0.14.5",
@@ -31,6 +32,7 @@
     "aws-sdk": "^2.22.0",
     "axios": "^0.15.3",
     "clipboard": "^1.6.0",
+    "commander": "^2.9.0",
     "dom-anchor-text-quote": "^4.0.1",
     "jsonfile": "^2.4.0",
     "keyboardjs": "^2.3.3",

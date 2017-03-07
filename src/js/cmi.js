@@ -44,6 +44,11 @@ function showRequestedAnnotation() {
 document.addEventListener("DOMContentLoaded", function() {
   var audio_message;
 
+  //assign id's to all paragraphs in div.transcript
+  $('.transcript p').each(function(idx) {
+    $(this).attr('id', 'p' + idx);
+  });
+
   //display hypothes.is annotation if url contains: id=<annotation id>
   showRequestedAnnotation();
 

@@ -259,12 +259,13 @@ function toggleMarkers() {
     $(".transcript").addClass("capture");
     createListener();
   }
+  /*
   else {
     //define id's for each paragraph in the narrative div
     // - these id's are referenced by the timing data
     console.log("adding marker to .transcript p");
     $('.transcript p').each(function(idx) {
-      $(this).attr('id', 'p' + idx);
+      //$(this).attr('id', 'p' + idx);
       $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
     });
 
@@ -274,6 +275,7 @@ function toggleMarkers() {
     $(".transcript").addClass("capture");
     createListener();
   }
+  */
 }
 
 module.exports = {

@@ -1,0 +1,76 @@
+#!/usr/bin/env node
+
+var AWS = require("aws-sdk");
+var fs = require('fs');
+var program = require("commander");
+
+program
+  .version('0.0.1')
+  .usage('[options] <file ...>')
+  .option('-t, --table <table>', 'Table Name')
+  .option('-v, --verify [verify]', 'Verify input files but don\'t load')
+  .parse(process.argv);
+
+if (!program.table) {
+  console.log("you need to specify the table to load with -t <table>");
+  process.exit(1);
+}
+
+if (!program.directory && program.args.length == 0) {
+  console.log("No input files specified");
+  process.exit(1);
+}
+
+AWS.config.update({
+  region: "us-east-1",
+  endpoint: "https://dynamodb.us-east-1.amazonaws.com"
+  //endpoint: "http://localhost:8000"
+});
+
+var docClient = new AWS.DynamoDB.DocumentClient();
+
+program.args.forEach(function(fn) {
+  if (fn.indexOf(".json") === -1) {
+    fn = fn + ".json";
+  }
+  load(program.table, fn, program.verify?true:false);
+});
+
+function load(table, fileName, verify) {
+  if (verify) {
+    console.log("Verifying: %s", fileName);
+  }
+  else {
+    console.log("Loading table: %s from %s", table, fileName);
+  }
+
+  var lesson = JSON.parse(fs.readFileSync(fileName, 'utf8'));
+  console.log("file has %s paragraphs to load", lesson.paragraph.length);
+
+  if (verify) {
+    return;
+  }
+
+  lesson.paragraph.forEach(function(p) {
+      var params = {
+          TableName: table,
+          Item: {
+              "book":  p.book,
+              "key": p.unit + p.pid,
+              "unit": p.unit,
+              "pid":  p.pid,
+              "text": p.text
+          }
+      };
+
+      docClient.put(params, function(err, data) {
+         if (err) {
+             console.error("Unable to add paragraph: %s.", p.unit + p.pid);
+             console.error("Error JSON:", JSON.stringify(err, null, 2));
+         } else {
+             console.log("PutItem succeeded: ", p.unit + p.pid);
+         }
+      });
+  });
+}
+

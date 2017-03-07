@@ -1,27 +1,5 @@
 #!/usr/bin/env node
 
-var example = {
-  id: "wom",
-  base: "/wom/woh/",
-  outfile: "output.filename",
-  domain: {
-    rtf: "rtf.domain.com",
-    pdf: "pdf.domain.com",
-    etc: "etc"
-  },
-  pages: [
-    "file1",
-    {
-      fid: "file2",
-      desc: "desc",
-      "...": "etc"
-    },
-    "file3",
-    "...",
-    "in sequential order"
-  ]
-};
-
 var json = require("jsonfile");
 var util = require("util");
 var moment = require("moment");
@@ -429,7 +407,6 @@ if (id === "acim" && !data.year) {
 
 if (id != "acim" && (!data.outfile || !data.base || !data.pages || !data.outfile )) {
   console.log("data.json syntax error: ");
-  console.log("-- example format: ", example);
   process.exit(1);
 }
 

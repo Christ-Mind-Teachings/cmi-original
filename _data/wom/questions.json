@@ -76,7 +76,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
@@ -95,12 +95,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "C2SQ1.mp3"
+        "audio": "C2SQ1.mp3",
+        "timing": "c2sq1.js"
       },
       "url": "/wom/questions/c2sq1/",
       "idx": 5,
@@ -637,12 +638,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "HOEQ1.mp3"
+        "audio": "HOEQ1.mp3",
+        "timing": "hoeq1.js"
       },
       "url": "/wom/questions/hoeq1/",
       "idx": 35,

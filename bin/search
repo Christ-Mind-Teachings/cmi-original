@@ -1,0 +1,74 @@
+#!/usr/bin/env node
+
+"use strict";
+
+var ab = require("./appbase/appbase");
+var json = require("jsonfile");
+var program = require("commander");
+
+var inputFile;
+var operation;
+
+program
+  .version('0.0.1')
+  .usage("--delete | --index <file.json>")
+  .option('-d, --delete', 'Delete index')
+  .option('-i, --index', 'Index')
+  .parse(process.argv);
+
+//console.log("-d: %s", program.delete);
+//console.log("-i: %s", program.index);
+//console.log("args: %j", program.args);
+
+if (program.delete && program.index) {
+  console.log("use either --delete or --index, not both");
+  process.exit(1);
+}
+
+if (!program.delete && !program.index) {
+  console.log("specify --delete or --index");
+  process.exit(1);
+}
+
+if (program.args.length === 0) {
+  console.log("You need to pass a json file.");
+  process.exit(1);
+}
+
+inputFile = program.args[0];
+operation = program.delete?"delete":"index";
+
+console.log("inputFile: %s", inputFile);
+console.log("operation: %s", operation);
+
+//input data
+try {
+  var data = json.readFileSync(inputFile);
+}
+catch(e) {
+  console.log("error opening %s", inputFile);
+  console.log(e.message);
+  process.exit(1);
+}
+
+console.log("app: %s, user: %s, pwd: %s", process.env.appbaseApp, process.env.appbaseUser, process.env.appbasePwd);
+console.log("source: %s, book: %s, unit: %s", data.source, data.book, data.unit);
+
+ab.init(process.env.appbaseApp, process.env.appbaseUser, process.env.appbasePwd);
+
+if (operation === "index") {
+  ab.bulk_put(data.source, data.paragraph);
+  //for(var i=0; i < data.paragraph.length; i++) {
+    //ab.put(data.paragraph[i]);
+  //}
+}
+else if (operation === "delete") {
+  for(var i=0; i < data.paragraph.length; i++) {
+    ab.remove(data.paragraph[i]);
+  }
+}
+else {
+  console.log("unknown operation: %s", operation);
+  process.exit(1);
+}
+

@@ -1,0 +1,71 @@
+#!/bin/bash
+
+workingDir=`pwd`
+scriptDir=`dirname $0`
+scriptName=`basename $0`
+
+womDir="/Users/rmercer/Projects/cmi/site/_wom/"
+womAwk="wom.awk"
+nwffacimDir="/Users/rmercer/Projects/cmi/site/_nwffacim/"
+nwffacimAwk="nwffacimAwk"
+unitDir=""
+
+function syntax {
+  echo "prep -s <source> -b <book> [-y <year>] file"
+  echo " ex: prep -s nwffacim -b acim -y 2011 021911"
+  exit 1
+}
+
+while getopts s:b:y: args; do
+    case $args in
+        s) source=$OPTARG;;
+        b) book=$OPTARG;;
+        y) year=$OPTARG;;
+        *) syntax;;
+    esac
+done
+
+shift $(($OPTIND -1))
+
+if [[ -z $1 ]]; then
+  syntax
+fi
+
+unit=$1
+
+case $source in
+  wom)
+    unitDir=$womDir
+    awkFile=$womAwk
+    ;;
+  nwffacim)
+    unitDir=$nwffacimDir
+    awkFile=$nwffacimAwk
+    ;;
+  *) syntax;;
+esac
+
+unitDirName="${unitDir}/${book}"
+
+if [ "$year" != "" ]; then
+  unitDirName="${unitDirName}/${year}"
+fi
+
+unitFileName=${unitDirName}/${unit}.md
+
+echo "Reading $unitFileName"
+
+(gawk -f ${scriptDir}/${awkFile} -v source=$source -v book=$book -v unit=$unit ${unitFileName} > $unit.json)
+
+rc="$?"
+
+if [ "$rc" == "0" ]; then
+  echo "./$unit.json created."
+else
+  echo "conversion to json failed"
+fi
+
+
+
+
+
