@@ -1,3 +1,4 @@
+/* eslint no-alert: "off" */
 
 "use strict";
 
@@ -11,18 +12,18 @@ var ays = require("../util/are-you-sure");
 var jPlayer;
 var currentPlayTime = 0;
 
-var audio_playing = false;
+var audioPlaying = false;
 var captureRequested = false;
 var captureId = "";
 
 var increaseSpeed = true;
 
-function deleteException(message) {
+function DeleteException(message) {
   this.message = message;
   this.name = "deleteException";
 }
 
-function stateException(message) {
+function StateException(message) {
   this.message = message;
   this.name = "stateException";
 }
@@ -31,7 +32,7 @@ function stateException(message) {
 //captured calling autoCapture()
 //- this is true for p0 which we default to time: 0 but it
 //  may actually start later in the recording. We can use this
-//  info to jump to the p0 time so user doesn't have to listen
+//  info to jump to the p0 time so user doesn"t have to listen
 //  to dead space
 function autoCapture(o) {
   captureRequested = true;
@@ -40,7 +41,7 @@ function autoCapture(o) {
 
 //called only when captureRequested == true
 function markParagraph(o) {
-  var pi = $('#' + o.id).children('i');
+  var pi = $("#" + o.id).children("i");
   var captureLength;
 
   if (!captureRequested) {
@@ -59,8 +60,8 @@ function markParagraph(o) {
     pi.removeClass("fa-check").addClass("fa-bullseye");
 
     captureLength = capture.remove(o);
-    if (captureLength == -1) {
-      throw new deleteException("can't find id to delete in capture array");
+    if (captureLength === -1) {
+      throw new DeleteException("can't find id to delete in capture array");
     }
     else {
       console.log("%s deleted at %s", o.id, o.seconds);
@@ -70,7 +71,7 @@ function markParagraph(o) {
     }
   }
   else {
-    throw new stateException("unknown paragraph state for: %s", o.id);
+    throw new StateException("unknown paragraph state for: %s", o.id);
   }
 
   captureRequested = false;
@@ -85,25 +86,25 @@ function markParagraph(o) {
 function enableSidebarTimeCapture() {
 
   //transcript_format_complete is defined globally
-  if (!transcript_format_complete) {
+  if (!transcriptFormatComplete) {
     console.log("Formatting for this transcript is incomplete, capture disabled");
     return;
   }
 
   //show sidebar menu option
-  $('.pmarker-wrapper').css("display", "block");
+  $(".pmarker-wrapper").css("display", "block");
 
   //toggle display of paragraph markers used
   //to record audio playback time
-  //console.log('setting up .pmarker-toggle listener');
-  $('.pmarker-toggle').on('click', function(e) {
-    var ct = $('.pmarker-toggle');
+  //console.log("setting up .pmarker-toggle listener");
+  $(".pmarker-toggle").on("click", function(e) {
+    var ct = $(".pmarker-toggle");
     e.preventDefault();
-    if (ct.children('i').hasClass('fa-toggle-off')) {
-      ct.html('<i class="fa fa-toggle-on"></i>&nbsp;Time Capture On');
+    if (ct.children("i").hasClass("fa-toggle-off")) {
+      ct.html("<i class='fa fa-toggle-on'></i>&nbsp;Time Capture On");
     }
     else {
-      ct.html('<i class="fa fa-toggle-off"></i>&nbsp;Time Capture Off');
+      ct.html("<i class='fa fa-toggle-off'></i>&nbsp;Time Capture Off");
     }
 
     toggleMarkers();
@@ -112,7 +113,7 @@ function enableSidebarTimeCapture() {
   //init unsubmitted data warning
   ays.init();
 
-  $('.time-lister').on('click', function(e) {
+  $(".time-lister").on("click", function(e) {
     var data;
     e.preventDefault();
 
@@ -121,13 +122,13 @@ function enableSidebarTimeCapture() {
     }
     else {
       data = JSON.stringify(capture.getData());
-      data = "var cmi_audio_timing_data = " + data + ";";
+      data = "var cmiAudioTimingData = " + data + ";";
     }
 
-    $('#audio-data-form').attr('action', capture.getBase());
-    $('#captured-audio-data').html(data);
-    $('.submit-message').html("");
-    $('#modal-1').trigger('click');
+    $("#audio-data-form").attr("action", capture.getBase());
+    $("#captured-audio-data").html(data);
+    $(".submit-message").html("");
+    $("#modal-1").trigger("click");
   });
 
   //initialize modal window
@@ -139,7 +140,7 @@ function enableSidebarTimeCapture() {
 
     //if no data yet captured, cancel submit
     if (capture.length() < 2) {
-      $('.submit-message').html("No data captured yet!");
+      $(".submit-message").html("No data captured yet!");
       return;
     }
 
@@ -154,7 +155,7 @@ function enableSidebarTimeCapture() {
         ays.dataEvent(0);
       })
       .fail(function(e) {
-        $('.submit-message').html("Drat! Your submit failed.");
+        $(".submit-message").html("Drat! Your submit failed.");
       });
   });
 }
@@ -162,14 +163,14 @@ function enableSidebarTimeCapture() {
 //create listeners for each paragraph and
 //show rewind and speed player controls
 function createListener() {
-  $('.transcript p i.fa').each(function(idx) {
-    $(this).on('click', function(e) {
+  $(".transcript p i.fa").each(function(idx) {
+    $(this).on("click", function(e) {
       e.preventDefault();
       captureRequested = true;
       captureId = e.target.parentElement.id;
 
-      if (!audio_playing) {
-        //notify user action won't happen until audio plays
+      if (!audioPlaying) {
+        //notify user action won"t happen until audio plays
         //and only the last action is honored
         alert("action pending until audio playback begins");
       }
@@ -178,23 +179,23 @@ function createListener() {
 
   //enable rewind and faster buttons on audio player
   //console.log("showing cmi audio controls");
-  $('.cmi-audio-controls').removeClass('hide-cmi-controls');
+  $(".cmi-audio-controls").removeClass("hide-cmi-controls");
 
   //set rewind control
-  $('.audio-rewind').on('click', function(e) {
+  $(".audio-rewind").on("click", function(e) {
     e.preventDefault();
     var skipAmt = 8;
     var newTime = currentPlayTime - skipAmt;
     if (newTime <= 0) {
       newTime = 0;
     }
-    console.log('rewinding playback to %s from %s', newTime, currentPlayTime);
+    console.log("rewinding playback to %s from %s", newTime, currentPlayTime);
     jPlayer.jPlayer("play", newTime);
 
   });
 
   //set playbackRate control
-  $('.audio-faster').on('click', function(e) {
+  $(".audio-faster").on("click", function(e) {
     var currentRate = jPlayer.jPlayer("option", "playbackRate");
     var newRate, displayRate;
     e.preventDefault();
@@ -231,14 +232,14 @@ function createListener() {
 }
 
 function toggleMarkers() {
-  var ids = $('.transcript p').attr('id');
-  var fa = $('.transcript p i.fa');
+  var ids = $(".transcript p").attr("id");
+  var fa = $(".transcript p i.fa");
 
   //create markers is not on page
   //- do markers exist?
-  if (fa.length != 0) {
+  if (fa.length !== 0) {
     //yes - toggle display
-    $('.transcript p i.fa').toggle();
+    $(".transcript p i.fa").toggle();
     if ($(".transcript").hasClass("capture")) {
       $(".transcript").removeClass("capture");
     }
@@ -248,12 +249,12 @@ function toggleMarkers() {
   }
   else if (typeof ids !== "undefined") {
     console.log("paragraph id's already defined, adding marker");
-    $('.transcript p').each(function(idx) {
+    $(".transcript p").each(function(idx) {
       $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
     });
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
-    //the p0 time when it doesn't start at 0.
+    //the p0 time when it doesn"t start at 0.
     autoCapture({id: "p0", seconds: 0});
 
     $(".transcript").addClass("capture");
@@ -261,16 +262,16 @@ function toggleMarkers() {
   }
   /*
   else {
-    //define id's for each paragraph in the narrative div
-    // - these id's are referenced by the timing data
+    //define id"s for each paragraph in the narrative div
+    // - these id"s are referenced by the timing data
     console.log("adding marker to .transcript p");
-    $('.transcript p').each(function(idx) {
-      //$(this).attr('id', 'p' + idx);
-      $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
+    $(".transcript p").each(function(idx) {
+      //$(this).attr("id", "p" + idx);
+      $(this).prepend("<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>");
     });
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
-    //the p0 time when it doesn't start at 0.
+    //the p0 time when it doesn"t start at 0.
     autoCapture({id: "p0", seconds: 0});
     $(".transcript").addClass("capture");
     createListener();
@@ -283,7 +284,7 @@ module.exports = {
   initialize: function(player) {
     var captureOptions = {
       base: window.location.pathname,
-      title: $('.post-title').text()
+      title: $(".post-title").text()
     };
 
     jPlayer = player;
@@ -291,15 +292,15 @@ module.exports = {
   },
 
   play: function(t) {
-    audio_playing = true;
+    audioPlaying = true;
   },
 
   pause: function(t) {
-    audio_playing = false;
+    audioPlaying = false;
   },
 
   ended: function(t) {
-    audio_playing = false;
+    audioPlaying = false;
   },
 
   //the audio player calls this every 250ms with the

@@ -51,12 +51,23 @@ function load(table, fileName, verify) {
     return;
   }
 
+  /*
+  Item: {
+      "book":  p.book,
+      "key": p.unit + p.pid,
+      "unit": p.unit,
+      "pid":  p.pid,
+      "text": p.text
+  }
+ */
+
   lesson.paragraph.forEach(function(p) {
       var params = {
           TableName: table,
           Item: {
-              "book":  p.book,
-              "key": p.unit + p.pid,
+              "bid": p.bid,
+              "book": p.book,
+              "key": (p.uid * 1000) + p.pid,
               "unit": p.unit,
               "pid":  p.pid,
               "text": p.text
@@ -68,7 +79,7 @@ function load(table, fileName, verify) {
              console.error("Unable to add paragraph: %s.", p.unit + p.pid);
              console.error("Error JSON:", JSON.stringify(err, null, 2));
          } else {
-             console.log("PutItem succeeded: ", p.unit + p.pid);
+             console.log("PutItem succeeded: %s:%s:%s", p.book, p.unit, (p.uid * 1000) + p.pid);
          }
       });
   });

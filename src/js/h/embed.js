@@ -7,10 +7,10 @@ function load() {
     var firstScriptTag = document.getElementsByTagName("script")[0];
 
     // set the source of the script to your script
-    scriptTag.src = 'https://hypothes.is/embed.js';
+    scriptTag.src = "https://hypothes.is/embed.js";
 
     // append the script to the DOM
-    firstScriptTag.parentNode.insertBefore(scriptTag, firstScriptTag); 
+    firstScriptTag.parentNode.insertBefore(scriptTag, firstScriptTag);
   }
   else {
     console.log("hypothes.is already loaded");

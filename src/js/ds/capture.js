@@ -22,7 +22,7 @@ module.exports = {
   remove: function(o) {
     var pos = _.findLastIndex(data.time, {id: o.id});
 
-    if (pos == -1) {
+    if (pos === -1) {
       return -1;
     }
     else {

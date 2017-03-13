@@ -14,14 +14,17 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == "/" %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+    <a class="sidebar-nav-item first-item{% if page.url == "/" %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+    <a class="sidebar-nav-item" href="/search/">Search</a>
     <a class="sidebar-nav-item" href="{{ page.surl }}" >{{ page.source }}</a>
     {% if page.burl != page.url %}
       <a class="sidebar-nav-item" href="{{ page.burl }}" >{{ page.book }}</a>
-      {% if page.uurl != page.url %}
+      {% if page.uurl != page.url and page.unit %}
         <a class="sidebar-nav-item" href="{{ page.uurl }}" >{{ page.unit }}</a>
       {% endif %}
     {% endif %}
+    <a class="sidebar-nav-item first-item" href="#" data-proofer-ignore>Top of Page</a>
+    <a class="sidebar-nav-item search-navigator" href="javascript:void(0);">Search Navigator</a>
     <div class="capture pmarker-wrapper">
       <a class="pmarker-toggle sidebar-nav-item" href="#">
         <i class="fa fa-toggle-off"></i>
@@ -31,24 +34,10 @@
         <i class="fa fa-send-o"></i>
       </a>
     </div>
-    <!--
-    <div class="time-tester-wrapper">
-      <a class="time-tester sidebar-nav-item" href="#">
-        <i class="fa fa-play"></i>
-        &nbsp;Test Captured Time
-      </a>
-    </div>
-    -->
-    <a class="sidebar-nav-item" href="#" data-proofer-ignore>Top of Page</a>
     {% for node in page.toc %}
       <a class="sidebar-nav-item sidebar-nav-item-toc" href="#{{ node | slugify }}">{{ node }}</a>
     {% endfor %}
     {% comment %}
-    <!--
-      sidebar-toc
-      page.bid: {{page.bid}}
-      page.contents: {{page.contents | default: "nav/contents.html" }}
-    -->
     {% endcomment %}
     {% include {{page.contents | default: "nav/contents.html" }} %}
 

@@ -8,7 +8,7 @@ var url = require("./util/url");
 var wrap = require("./h/wrap");
 var scroll = require("scroll-into-view");
 var audio = require("./ui/mediaElements");
-//var audio = require("./ui/audio");
+var search = require("./search/search");
 
 var unwrap;
 
@@ -17,7 +17,7 @@ function removeHighlight() {
 }
 
 /*
- * check if url parm 'id' is present and attempt to highlight the
+ * check if url parm "id" is present and attempt to highlight the
  * annotation with that id on the page.
  */
 function showRequestedAnnotation() {
@@ -42,15 +42,18 @@ function showRequestedAnnotation() {
 
 //initialize javascript on page when loaded
 document.addEventListener("DOMContentLoaded", function() {
-  var audio_message;
+  var audioMessage;
+  var transcriptParagraphs;
 
   //assign id's to all paragraphs in div.transcript
-  $('.transcript p').each(function(idx) {
-    $(this).attr('id', 'p' + idx);
+  transcriptParagraphs = $(".transcript p");
+  transcriptParagraphs.each(function(idx) {
+    $(this).attr("id", "p" + idx);
   });
 
   //display hypothes.is annotation if url contains: id=<annotation id>
   showRequestedAnnotation();
+  search.initialize();
 
   //init the audio player
   audio.initialize({

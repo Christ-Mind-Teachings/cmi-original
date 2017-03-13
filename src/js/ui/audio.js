@@ -7,13 +7,13 @@ var jPlayer;
 //time[0] of timing data - returned from hilite.init()
 var audioStartTime = 0;
 
-//initialize jQuery plugin 'jPlayer'
+//initialize jQuery plugin "jPlayer"
 function initialize(config) {
   var url, type, media, options;
 
   //check if jQuery installed - if not the audio player (jPlayer) should
   //not be on the page.
-  if (typeof jQuery == "undefined") {
+  if (typeof jQuery === "undefined") {
     return "jQuery not installed";
   }
 
@@ -21,12 +21,12 @@ function initialize(config) {
   jPlayer = $(config.playerId);
 
   //exit if no jPlayer HTML is on the page
-  if (jPlayer.length == 0) {
+  if (jPlayer.length === 0) {
     return "no jPlayer HTML on page";
   }
 
-  // setup 'display player' toggle
-  $(config.audioToggle).on('click', function(e) {
+  // setup "display player" toggle
+  $(config.audioToggle).on("click", function(e) {
     e.preventDefault();
     $(config.hidePlayer).toggle();
   });
@@ -41,7 +41,7 @@ function initialize(config) {
       // - returns object indicating whether enabled and audio start time
       hinfo = hilight.initialize(config.hilightClass);
 
-      //if we don't have timing data enable support to get it
+      //if we don"t have timing data enable support to get it
       if (!hinfo.enabled) {
         capture.enableSidebarTimeCapture();
       }
@@ -63,7 +63,7 @@ function initialize(config) {
       if (status.readyState !== 4) {
         return;
       }
-      //console.log('jPlayer event obj: ', e.jPlayer);
+      //console.log("jPlayer event obj: ", e.jPlayer);
       if (status.currentTime < audioStartTime) {
         console.log("adjust play time from %s to %s", status.currentTime, audioStartTime);
         jPlayer.jPlayer("pause", audioStartTime);
@@ -75,7 +75,7 @@ function initialize(config) {
     },
     play: function(e) {
       console.log("setting player-fixed");
-      $('#jp_container_audio_1').addClass('player-fixed');
+      $("#jp_container_audio_1").addClass("player-fixed");
       hilight.play(e.jPlayer.status.currentTime);
       capture.play(e.jPlayer.status.currentTime);
     },
@@ -87,12 +87,12 @@ function initialize(config) {
       hilight.seeked(e.jPlayer.status.currentTime);
       if (e.jPlayer.status.currentTime === 0.0) {
         console.log("removing player-fixed");
-        $('#jp_container_audio_1').removeClass('player-fixed');
+        $("#jp_container_audio_1").removeClass("player-fixed");
       }
     },
     ended: function(e) {
       console.log("removing player-fixed");
-      $('#jp_container_audio_1').removeClass('player-fixed');
+      $("#jp_container_audio_1").removeClass("player-fixed");
       hilight.ended(e.jPlayer.status.currentTime);
       capture.ended(e.jPlayer.status.currentTime);
     },
@@ -113,12 +113,11 @@ function initialize(config) {
 
   switch(type) {
     case "mp3":
-      media["mp3"] = url;
+      media.mp3 = url;
       options.supplied = "mp3";
       break;
     default:
       return "unknown audio type";
-      break;
   }
 
   //init player

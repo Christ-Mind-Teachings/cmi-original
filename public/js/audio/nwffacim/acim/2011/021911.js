@@ -1,4 +1,4 @@
-var cmi_audio_timing_data = {
+var cmiAudioTimingData = {
     "base": "/nwffacim/acim/2011/021911/",
     "title": "Feb 19, 2011",
     "time": [{

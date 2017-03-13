@@ -1,4 +1,4 @@
-var cmi_audio_timing_data = {
+var cmiAudioTimingData = {
     "base": "/wom/questions/h01q1/",
     "title": "Way of the Heart: Lesson One - Question One",
     "time": [{

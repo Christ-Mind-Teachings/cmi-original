@@ -2533,6 +2533,11 @@ function toTextPosition(root, selector) {
 
   // Create a fold function that will reduce slices to positional extents.
   var foldSlices = function foldSlices(acc, slice) {
+    if (!acc) {
+      // A search for an earlier slice of the pattern failed to match.
+      return null;
+    }
+
     var result = dmp.match_main(root.textContent, slice, acc.loc);
     if (result === -1) {
       return null;
@@ -2552,13 +2557,9 @@ function toTextPosition(root, selector) {
   // Expect the slices to be close to one another.
   // This distance is deliberately generous for now.
   dmp.Match_Distance = 64;
-  var acc = { start: start, end: end, loc: loc };
-
-  for (var i in slices) {
-    acc = foldSlices(acc, slices[i]);
-    if (acc === null) {
-      return null;
-    }
+  var acc = slices.reduce(foldSlices, { start: start, end: end, loc: loc });
+  if (!acc) {
+    return null;
   }
 
   return { start: acc.start, end: acc.end };
@@ -3273,12 +3274,12 @@ function getTargetScrollLocation(target, parent, align){
         topScalar = topAlign;
 
     if(parent === window){
-        x = targetPosition.left + window.scrollX - window.innerWidth * leftScalar + Math.min(targetPosition.width, window.innerWidth) * leftScalar;
-        y = targetPosition.top + window.scrollY - window.innerHeight * topScalar + Math.min(targetPosition.height, window.innerHeight) * topScalar;
+        x = targetPosition.left + window.pageXOffset - window.innerWidth * leftScalar + Math.min(targetPosition.width, window.innerWidth) * leftScalar;
+        y = targetPosition.top + window.pageYOffset - window.innerHeight * topScalar + Math.min(targetPosition.height, window.innerHeight) * topScalar;
         x = Math.max(Math.min(x, document.body.scrollWidth - window.innerWidth * leftScalar), 0);
         y = Math.max(Math.min(y, document.body.scrollHeight- window.innerHeight * topScalar), 0);
-        differenceX = x - window.scrollX;
-        differenceY = y - window.scrollY;
+        differenceX = x - window.pageXOffset;
+        differenceY = y - window.pageYOffset;
     }else{
         parentPosition = parent.getBoundingClientRect();
         var offsetTop = targetPosition.top - (parentPosition.top - parent.scrollTop);
@@ -3319,22 +3320,21 @@ function animate(parent){
             return scrollSettings.end(COMPLETE);
         }
 
-        var valueX = timeValue,
-            valueY = timeValue;
+        var easeValue = 1 - scrollSettings.ease(timeValue);
 
         setElementScroll(parent,
-            location.x - location.differenceX * Math.pow(1 - valueX, valueX / 2),
-            location.y - location.differenceY * Math.pow(1 - valueY, valueY / 2)
+            location.x - location.differenceX * easeValue,
+            location.y - location.differenceY * easeValue
         );
 
         animate(parent);
     });
 }
-
 function transitionScrollTo(target, parent, settings, callback){
     var idle = !parent._scrollSettings,
         lastSettings = parent._scrollSettings,
-        now = Date.now();
+        now = Date.now(),
+        endHandler;
 
     if(lastSettings){
         lastSettings.end(CANCELED);
@@ -3343,7 +3343,7 @@ function transitionScrollTo(target, parent, settings, callback){
     function end(endType){
         parent._scrollSettings = null;
         callback(endType);
-        parent.removeEventListener('touchstart', end);
+        parent.removeEventListener('touchstart', endHandler);
     }
 
     parent._scrollSettings = {
@@ -3354,7 +3354,9 @@ function transitionScrollTo(target, parent, settings, callback){
         align: settings.align,
         end: end
     };
-    parent.addEventListener('touchstart', end.bind(null, CANCELED));
+
+    endHandler = end.bind(null, CANCELED);
+    parent.addEventListener('touchstart', endHandler);
 
     if(idle){
         animate(parent);
@@ -3376,7 +3378,7 @@ module.exports = function(target, settings, callback){
     }
 
     settings.time = isNaN(settings.time) ? 1000 : settings.time;
-    settings.ease = settings.ease || function(v){return v;};
+    settings.ease = settings.ease || function(v){return 1 - Math.pow(1 - v, v / 2);};
 
     var parent = target.parentElement,
         parents = 0;
@@ -3390,13 +3392,23 @@ module.exports = function(target, settings, callback){
 
     while(parent){
         if(
-            settings.validTarget ? settings.validTarget(parent, parents) : true &&
+            // If there is a validTarget function, check it.
+            (settings.validTarget ? settings.validTarget(parent, parents) : true) &&
+
+            // Else if window
             parent === window ||
+
+            // Else...
             (
-                parent.scrollHeight !== parent.clientHeight ||
-                parent.scrollWidth !== parent.clientWidth
-            ) &&
-            getComputedStyle(parent).overflow !== 'hidden'
+                /// check if scrollable
+                (
+                    parent.scrollHeight !== parent.clientHeight ||
+                    parent.scrollWidth !== parent.clientWidth
+                ) &&
+
+                // And not hidden.
+                getComputedStyle(parent).overflow !== 'hidden'
+            )
         ){
             parents++;
             transitionScrollTo(target, parent, settings, done);
@@ -3413,7 +3425,1239 @@ module.exports = function(target, settings, callback){
         }
     }
 };
+
 },{"raf":23}],25:[function(require,module,exports){
+var engine = require('../src/store-engine')
+
+var storages = require('../storages/all')
+var plugins = [require('../plugins/json2')]
+
+module.exports = engine.createStore(storages, plugins)
+
+},{"../plugins/json2":26,"../src/store-engine":28,"../storages/all":30}],26:[function(require,module,exports){
+module.exports = json2Plugin
+
+function json2Plugin() {
+	require('./lib/json2')
+	return {}
+}
+
+},{"./lib/json2":27}],27:[function(require,module,exports){
+//  json2.js
+//  2016-10-28
+//  Public Domain.
+//  NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
+//  See http://www.JSON.org/js.html
+//  This code should be minified before deployment.
+//  See http://javascript.crockford.com/jsmin.html
+
+//  USE YOUR OWN COPY. IT IS EXTREMELY UNWISE TO LOAD CODE FROM SERVERS YOU DO
+//  NOT CONTROL.
+
+//  This file creates a global JSON object containing two methods: stringify
+//  and parse. This file provides the ES5 JSON capability to ES3 systems.
+//  If a project might run on IE8 or earlier, then this file should be included.
+//  This file does nothing on ES5 systems.
+
+//      JSON.stringify(value, replacer, space)
+//          value       any JavaScript value, usually an object or array.
+//          replacer    an optional parameter that determines how object
+//                      values are stringified for objects. It can be a
+//                      function or an array of strings.
+//          space       an optional parameter that specifies the indentation
+//                      of nested structures. If it is omitted, the text will
+//                      be packed without extra whitespace. If it is a number,
+//                      it will specify the number of spaces to indent at each
+//                      level. If it is a string (such as "\t" or "&nbsp;"),
+//                      it contains the characters used to indent at each level.
+//          This method produces a JSON text from a JavaScript value.
+//          When an object value is found, if the object contains a toJSON
+//          method, its toJSON method will be called and the result will be
+//          stringified. A toJSON method does not serialize: it returns the
+//          value represented by the name/value pair that should be serialized,
+//          or undefined if nothing should be serialized. The toJSON method
+//          will be passed the key associated with the value, and this will be
+//          bound to the value.
+
+//          For example, this would serialize Dates as ISO strings.
+
+//              Date.prototype.toJSON = function (key) {
+//                  function f(n) {
+//                      // Format integers to have at least two digits.
+//                      return (n < 10)
+//                          ? "0" + n
+//                          : n;
+//                  }
+//                  return this.getUTCFullYear()   + "-" +
+//                       f(this.getUTCMonth() + 1) + "-" +
+//                       f(this.getUTCDate())      + "T" +
+//                       f(this.getUTCHours())     + ":" +
+//                       f(this.getUTCMinutes())   + ":" +
+//                       f(this.getUTCSeconds())   + "Z";
+//              };
+
+//          You can provide an optional replacer method. It will be passed the
+//          key and value of each member, with this bound to the containing
+//          object. The value that is returned from your method will be
+//          serialized. If your method returns undefined, then the member will
+//          be excluded from the serialization.
+
+//          If the replacer parameter is an array of strings, then it will be
+//          used to select the members to be serialized. It filters the results
+//          such that only members with keys listed in the replacer array are
+//          stringified.
+
+//          Values that do not have JSON representations, such as undefined or
+//          functions, will not be serialized. Such values in objects will be
+//          dropped; in arrays they will be replaced with null. You can use
+//          a replacer function to replace those with JSON values.
+
+//          JSON.stringify(undefined) returns undefined.
+
+//          The optional space parameter produces a stringification of the
+//          value that is filled with line breaks and indentation to make it
+//          easier to read.
+
+//          If the space parameter is a non-empty string, then that string will
+//          be used for indentation. If the space parameter is a number, then
+//          the indentation will be that many spaces.
+
+//          Example:
+
+//          text = JSON.stringify(["e", {pluribus: "unum"}]);
+//          // text is '["e",{"pluribus":"unum"}]'
+
+//          text = JSON.stringify(["e", {pluribus: "unum"}], null, "\t");
+//          // text is '[\n\t"e",\n\t{\n\t\t"pluribus": "unum"\n\t}\n]'
+
+//          text = JSON.stringify([new Date()], function (key, value) {
+//              return this[key] instanceof Date
+//                  ? "Date(" + this[key] + ")"
+//                  : value;
+//          });
+//          // text is '["Date(---current time---)"]'
+
+//      JSON.parse(text, reviver)
+//          This method parses a JSON text to produce an object or array.
+//          It can throw a SyntaxError exception.
+
+//          The optional reviver parameter is a function that can filter and
+//          transform the results. It receives each of the keys and values,
+//          and its return value is used instead of the original value.
+//          If it returns what it received, then the structure is not modified.
+//          If it returns undefined then the member is deleted.
+
+//          Example:
+
+//          // Parse the text. Values that look like ISO date strings will
+//          // be converted to Date objects.
+
+//          myData = JSON.parse(text, function (key, value) {
+//              var a;
+//              if (typeof value === "string") {
+//                  a =
+//   /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
+//                  if (a) {
+//                      return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4],
+//                          +a[5], +a[6]));
+//                  }
+//              }
+//              return value;
+//          });
+
+//          myData = JSON.parse('["Date(09/09/2001)"]', function (key, value) {
+//              var d;
+//              if (typeof value === "string" &&
+//                      value.slice(0, 5) === "Date(" &&
+//                      value.slice(-1) === ")") {
+//                  d = new Date(value.slice(5, -1));
+//                  if (d) {
+//                      return d;
+//                  }
+//              }
+//              return value;
+//          });
+
+//  This is a reference implementation. You are free to copy, modify, or
+//  redistribute.
+
+/*jslint
+    eval, for, this
+*/
+
+/*property
+    JSON, apply, call, charCodeAt, getUTCDate, getUTCFullYear, getUTCHours,
+    getUTCMinutes, getUTCMonth, getUTCSeconds, hasOwnProperty, join,
+    lastIndex, length, parse, prototype, push, replace, slice, stringify,
+    test, toJSON, toString, valueOf
+*/
+
+
+// Create a JSON object only if one does not already exist. We create the
+// methods in a closure to avoid creating global variables.
+
+if (typeof JSON !== "object") {
+    JSON = {};
+}
+
+(function () {
+    "use strict";
+
+    var rx_one = /^[\],:{}\s]*$/;
+    var rx_two = /\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g;
+    var rx_three = /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g;
+    var rx_four = /(?:^|:|,)(?:\s*\[)+/g;
+    var rx_escapable = /[\\"\u0000-\u001f\u007f-\u009f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
+    var rx_dangerous = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
+
+    function f(n) {
+        // Format integers to have at least two digits.
+        return n < 10
+            ? "0" + n
+            : n;
+    }
+
+    function this_value() {
+        return this.valueOf();
+    }
+
+    if (typeof Date.prototype.toJSON !== "function") {
+
+        Date.prototype.toJSON = function () {
+
+            return isFinite(this.valueOf())
+                ? this.getUTCFullYear() + "-" +
+                        f(this.getUTCMonth() + 1) + "-" +
+                        f(this.getUTCDate()) + "T" +
+                        f(this.getUTCHours()) + ":" +
+                        f(this.getUTCMinutes()) + ":" +
+                        f(this.getUTCSeconds()) + "Z"
+                : null;
+        };
+
+        Boolean.prototype.toJSON = this_value;
+        Number.prototype.toJSON = this_value;
+        String.prototype.toJSON = this_value;
+    }
+
+    var gap;
+    var indent;
+    var meta;
+    var rep;
+
+
+    function quote(string) {
+
+// If the string contains no control characters, no quote characters, and no
+// backslash characters, then we can safely slap some quotes around it.
+// Otherwise we must also replace the offending characters with safe escape
+// sequences.
+
+        rx_escapable.lastIndex = 0;
+        return rx_escapable.test(string)
+            ? "\"" + string.replace(rx_escapable, function (a) {
+                var c = meta[a];
+                return typeof c === "string"
+                    ? c
+                    : "\\u" + ("0000" + a.charCodeAt(0).toString(16)).slice(-4);
+            }) + "\""
+            : "\"" + string + "\"";
+    }
+
+
+    function str(key, holder) {
+
+// Produce a string from holder[key].
+
+        var i;          // The loop counter.
+        var k;          // The member key.
+        var v;          // The member value.
+        var length;
+        var mind = gap;
+        var partial;
+        var value = holder[key];
+
+// If the value has a toJSON method, call it to obtain a replacement value.
+
+        if (value && typeof value === "object" &&
+                typeof value.toJSON === "function") {
+            value = value.toJSON(key);
+        }
+
+// If we were called with a replacer function, then call the replacer to
+// obtain a replacement value.
+
+        if (typeof rep === "function") {
+            value = rep.call(holder, key, value);
+        }
+
+// What happens next depends on the value's type.
+
+        switch (typeof value) {
+        case "string":
+            return quote(value);
+
+        case "number":
+
+// JSON numbers must be finite. Encode non-finite numbers as null.
+
+            return isFinite(value)
+                ? String(value)
+                : "null";
+
+        case "boolean":
+        case "null":
+
+// If the value is a boolean or null, convert it to a string. Note:
+// typeof null does not produce "null". The case is included here in
+// the remote chance that this gets fixed someday.
+
+            return String(value);
+
+// If the type is "object", we might be dealing with an object or an array or
+// null.
+
+        case "object":
+
+// Due to a specification blunder in ECMAScript, typeof null is "object",
+// so watch out for that case.
+
+            if (!value) {
+                return "null";
+            }
+
+// Make an array to hold the partial results of stringifying this object value.
+
+            gap += indent;
+            partial = [];
+
+// Is the value an array?
+
+            if (Object.prototype.toString.apply(value) === "[object Array]") {
+
+// The value is an array. Stringify every element. Use null as a placeholder
+// for non-JSON values.
+
+                length = value.length;
+                for (i = 0; i < length; i += 1) {
+                    partial[i] = str(i, value) || "null";
+                }
+
+// Join all of the elements together, separated with commas, and wrap them in
+// brackets.
+
+                v = partial.length === 0
+                    ? "[]"
+                    : gap
+                        ? "[\n" + gap + partial.join(",\n" + gap) + "\n" + mind + "]"
+                        : "[" + partial.join(",") + "]";
+                gap = mind;
+                return v;
+            }
+
+// If the replacer is an array, use it to select the members to be stringified.
+
+            if (rep && typeof rep === "object") {
+                length = rep.length;
+                for (i = 0; i < length; i += 1) {
+                    if (typeof rep[i] === "string") {
+                        k = rep[i];
+                        v = str(k, value);
+                        if (v) {
+                            partial.push(quote(k) + (
+                                gap
+                                    ? ": "
+                                    : ":"
+                            ) + v);
+                        }
+                    }
+                }
+            } else {
+
+// Otherwise, iterate through all of the keys in the object.
+
+                for (k in value) {
+                    if (Object.prototype.hasOwnProperty.call(value, k)) {
+                        v = str(k, value);
+                        if (v) {
+                            partial.push(quote(k) + (
+                                gap
+                                    ? ": "
+                                    : ":"
+                            ) + v);
+                        }
+                    }
+                }
+            }
+
+// Join all of the member texts together, separated with commas,
+// and wrap them in braces.
+
+            v = partial.length === 0
+                ? "{}"
+                : gap
+                    ? "{\n" + gap + partial.join(",\n" + gap) + "\n" + mind + "}"
+                    : "{" + partial.join(",") + "}";
+            gap = mind;
+            return v;
+        }
+    }
+
+// If the JSON object does not yet have a stringify method, give it one.
+
+    if (typeof JSON.stringify !== "function") {
+        meta = {    // table of character substitutions
+            "\b": "\\b",
+            "\t": "\\t",
+            "\n": "\\n",
+            "\f": "\\f",
+            "\r": "\\r",
+            "\"": "\\\"",
+            "\\": "\\\\"
+        };
+        JSON.stringify = function (value, replacer, space) {
+
+// The stringify method takes a value and an optional replacer, and an optional
+// space parameter, and returns a JSON text. The replacer can be a function
+// that can replace values, or an array of strings that will select the keys.
+// A default replacer method can be provided. Use of the space parameter can
+// produce text that is more easily readable.
+
+            var i;
+            gap = "";
+            indent = "";
+
+// If the space parameter is a number, make an indent string containing that
+// many spaces.
+
+            if (typeof space === "number") {
+                for (i = 0; i < space; i += 1) {
+                    indent += " ";
+                }
+
+// If the space parameter is a string, it will be used as the indent string.
+
+            } else if (typeof space === "string") {
+                indent = space;
+            }
+
+// If there is a replacer, it must be a function or an array.
+// Otherwise, throw an error.
+
+            rep = replacer;
+            if (replacer && typeof replacer !== "function" &&
+                    (typeof replacer !== "object" ||
+                    typeof replacer.length !== "number")) {
+                throw new Error("JSON.stringify");
+            }
+
+// Make a fake root object containing our value under the key of "".
+// Return the result of stringifying the value.
+
+            return str("", {"": value});
+        };
+    }
+
+
+// If the JSON object does not yet have a parse method, give it one.
+
+    if (typeof JSON.parse !== "function") {
+        JSON.parse = function (text, reviver) {
+
+// The parse method takes a text and an optional reviver function, and returns
+// a JavaScript value if the text is a valid JSON text.
+
+            var j;
+
+            function walk(holder, key) {
+
+// The walk method is used to recursively walk the resulting structure so
+// that modifications can be made.
+
+                var k;
+                var v;
+                var value = holder[key];
+                if (value && typeof value === "object") {
+                    for (k in value) {
+                        if (Object.prototype.hasOwnProperty.call(value, k)) {
+                            v = walk(value, k);
+                            if (v !== undefined) {
+                                value[k] = v;
+                            } else {
+                                delete value[k];
+                            }
+                        }
+                    }
+                }
+                return reviver.call(holder, key, value);
+            }
+
+
+// Parsing happens in four stages. In the first stage, we replace certain
+// Unicode characters with escape sequences. JavaScript handles many characters
+// incorrectly, either silently deleting them, or treating them as line endings.
+
+            text = String(text);
+            rx_dangerous.lastIndex = 0;
+            if (rx_dangerous.test(text)) {
+                text = text.replace(rx_dangerous, function (a) {
+                    return "\\u" +
+                            ("0000" + a.charCodeAt(0).toString(16)).slice(-4);
+                });
+            }
+
+// In the second stage, we run the text against regular expressions that look
+// for non-JSON patterns. We are especially concerned with "()" and "new"
+// because they can cause invocation, and "=" because it can cause mutation.
+// But just to be safe, we want to reject all unexpected forms.
+
+// We split the second stage into 4 regexp operations in order to work around
+// crippling inefficiencies in IE's and Safari's regexp engines. First we
+// replace the JSON backslash pairs with "@" (a non-JSON character). Second, we
+// replace all simple value tokens with "]" characters. Third, we delete all
+// open brackets that follow a colon or comma or that begin the text. Finally,
+// we look to see that the remaining characters are only whitespace or "]" or
+// "," or ":" or "{" or "}". If that is so, then the text is safe for eval.
+
+            if (
+                rx_one.test(
+                    text
+                        .replace(rx_two, "@")
+                        .replace(rx_three, "]")
+                        .replace(rx_four, "")
+                )
+            ) {
+
+// In the third stage we use the eval function to compile the text into a
+// JavaScript structure. The "{" operator is subject to a syntactic ambiguity
+// in JavaScript: it can begin a block or an object literal. We wrap the text
+// in parens to eliminate the ambiguity.
+
+                j = eval("(" + text + ")");
+
+// In the optional fourth stage, we recursively walk the new structure, passing
+// each name/value pair to a reviver function for possible transformation.
+
+                return (typeof reviver === "function")
+                    ? walk({"": j}, "")
+                    : j;
+            }
+
+// If the text is not JSON parseable, then a SyntaxError is thrown.
+
+            throw new SyntaxError("JSON.parse");
+        };
+    }
+}());
+},{}],28:[function(require,module,exports){
+var util = require('./util')
+var slice = util.slice
+var pluck = util.pluck
+var each = util.each
+var create = util.create
+var isList = util.isList
+var isFunction = util.isFunction
+var isObject = util.isObject
+
+module.exports = {
+	createStore: createStore,
+}
+
+var storeAPI = {
+	version: '2.0.4',
+	enabled: false,
+	storage: null,
+
+	// addStorage adds another storage to this store. The store
+	// will use the first storage it receives that is enabled, so
+	// call addStorage in the order of preferred storage.
+	addStorage: function(storage) {
+		if (this.enabled) { return }
+		if (this._testStorage(storage)) {
+			this._storage.resolved = storage
+			this.enabled = true
+			this.storage = storage.name
+		}
+	},
+
+	// addPlugin will add a plugin to this store.
+	addPlugin: function(plugin) {
+		var self = this
+
+		// If the plugin is an array, then add all plugins in the array.
+		// This allows for a plugin to depend on other plugins.
+		if (isList(plugin)) {
+			each(plugin, function(plugin) {
+				self.addPlugin(plugin)
+			})
+			return
+		}
+
+		// Keep track of all plugins we've seen so far, so that we
+		// don't add any of them twice.
+		var seenPlugin = pluck(this._seenPlugins, function(seenPlugin) { return (plugin === seenPlugin) })
+		if (seenPlugin) {
+			return
+		}
+		this._seenPlugins.push(plugin)
+
+		// Check that the plugin is properly formed
+		if (!isFunction(plugin)) {
+			throw new Error('Plugins must be function values that return objects')
+		}
+
+		var pluginProperties = plugin.call(this)
+		if (!isObject(pluginProperties)) {
+			throw new Error('Plugins must return an object of function properties')
+		}
+
+		// Add the plugin function properties to this store instance.
+		each(pluginProperties, function(pluginFnProp, propName) {
+			if (!isFunction(pluginFnProp)) {
+				throw new Error('Bad plugin property: '+propName+' from plugin '+plugin.name+'. Plugins should only return functions.')
+			}
+			self._assignPluginFnProp(pluginFnProp, propName)
+		})
+	},
+
+	// get returns the value of the given key. If that value
+	// is undefined, it returns optionalDefaultValue instead.
+	get: function(key, optionalDefaultValue) {
+		var data = this._storage().read(this._namespacePrefix + key)
+		return this._deserialize(data, optionalDefaultValue)
+	},
+
+	// set will store the given value at key and returns value.
+	// Calling set with value === undefined is equivalent to calling remove.
+	set: function(key, value) {
+		if (value === undefined) {
+			return this.remove(key)
+		}
+		this._storage().write(this._namespacePrefix + key, this._serialize(value))
+		return value
+	},
+
+	// remove deletes the key and value stored at the given key.
+	remove: function(key) {
+		this._storage().remove(this._namespacePrefix + key)
+	},
+
+	// each will call the given callback once for each key-value pair
+	// in this store.
+	each: function(callback) {
+		var self = this
+		this._storage().each(function(val, namespacedKey) {
+			callback(self._deserialize(val), namespacedKey.replace(self._namespaceRegexp, ''))
+		})
+	},
+
+	// clearAll will remove all the stored key-value pairs in this store.
+	clearAll: function() {
+		this._storage().clearAll()
+	},
+
+	// additional functionality that can't live in plugins
+	// ---------------------------------------------------
+
+	// hasNamespace returns true if this store instance has the given namespace.
+	hasNamespace: function(namespace) {
+		return (this._namespacePrefix == '__storejs_'+namespace+'_')
+	},
+
+	// namespace clones the current store and assigns it the given namespace
+	namespace: function(namespace) {
+		if (!this._legalNamespace.test(namespace)) {
+			throw new Error('store.js namespaces can only have alhpanumerics + underscores and dashes')
+		}
+		// create a prefix that is very unlikely to collide with un-namespaced keys
+		var namespacePrefix = '__storejs_'+namespace+'_'
+		return create(this, {
+			_namespacePrefix: namespacePrefix,
+			_namespaceRegexp: namespacePrefix ? new RegExp('^'+namespacePrefix) : null
+		})
+	},
+
+	// createStore creates a store.js instance with the first
+	// functioning storage in the list of storage candidates,
+	// and applies the the given mixins to the instance.
+	createStore: function(storages, plugins) {
+		return createStore(storages, plugins)
+	},
+}
+
+function createStore(storages, plugins) {
+	var _privateStoreProps = {
+		_seenPlugins: [],
+		_namespacePrefix: '',
+		_namespaceRegexp: null,
+		_legalNamespace: /^[a-zA-Z0-9_\-]+$/, // alpha-numeric + underscore and dash
+
+		_storage: function() {
+			if (!this.enabled) {
+				throw new Error("store.js: No supported storage has been added! "+
+					"Add one (e.g store.addStorage(require('store/storages/cookieStorage')) "+
+					"or use a build with more built-in storages (e.g "+
+					"https://github.com/marcuswestin/store.js/tree/master/dist/store.legacy.min.js)")
+			}
+			return this._storage.resolved
+		},
+
+		_testStorage: function(storage) {
+			try {
+				var testStr = '__storejs__test__'
+				storage.write(testStr, testStr)
+				var ok = (storage.read(testStr) === testStr)
+				storage.remove(testStr)
+				return ok
+			} catch(e) {
+				return false
+			}
+		},
+
+		_assignPluginFnProp: function(pluginFnProp, propName) {
+			var oldFn = this[propName]
+			this[propName] = function pluginFn() {
+				var args = slice(arguments, 0)
+				var self = this
+
+				// super_fn calls the old function which was overwritten by
+				// this mixin.
+				function super_fn() {
+					if (!oldFn) { return }
+					each(arguments, function(arg, i) {
+						args[i] = arg
+					})
+					return oldFn.apply(self, args)
+				}
+
+				// Give mixing function access to super_fn by prefixing all mixin function
+				// arguments with super_fn.
+				var newFnArgs = [super_fn].concat(args)
+
+				return pluginFnProp.apply(self, newFnArgs)
+			}
+		},
+
+		_serialize: function(obj) {
+			return JSON.stringify(obj)
+		},
+
+		_deserialize: function(strVal, defaultVal) {
+			if (!strVal) { return defaultVal }
+			// It is possible that a raw string value has been previously stored
+			// in a storage without using store.js, meaning it will be a raw
+			// string value instead of a JSON serialized string. By defaulting
+			// to the raw string value in case of a JSON parse error, we allow
+			// for past stored values to be forwards-compatible with store.js
+			var val = ''
+			try { val = JSON.parse(strVal) }
+			catch(e) { val = strVal }
+
+			return (val !== undefined ? val : defaultVal)
+		},
+	}
+
+	var store = create(_privateStoreProps, storeAPI)
+	each(storages, function(storage) {
+		store.addStorage(storage)
+	})
+	each(plugins, function(plugin) {
+		store.addPlugin(plugin)
+	})
+	return store
+}
+
+},{"./util":29}],29:[function(require,module,exports){
+(function (global){
+var assign = make_assign()
+var create = make_create()
+var trim = make_trim()
+var Global = (typeof window !== 'undefined' ? window : global)
+
+module.exports = {
+	assign: assign,
+	create: create,
+	trim: trim,
+	bind: bind,
+	slice: slice,
+	each: each,
+	map: map,
+	pluck: pluck,
+	isList: isList,
+	isFunction: isFunction,
+	isObject: isObject,
+	Global: Global,
+}
+
+function make_assign() {
+	if (Object.assign) {
+		return Object.assign
+	} else {
+		return function shimAssign(obj, props1, props2, etc) {
+			for (var i = 1; i < arguments.length; i++) {
+				each(Object(arguments[i]), function(val, key) {
+					obj[key] = val
+				})
+			}			
+			return obj
+		}
+	}
+}
+
+function make_create() {
+	if (Object.create) {
+		return function create(obj, assignProps1, assignProps2, etc) {
+			var assignArgsList = slice(arguments, 1)
+			return assign.apply(this, [Object.create(obj)].concat(assignArgsList))
+		}
+	} else {
+		function F() {} // eslint-disable-line no-inner-declarations
+		return function create(obj, assignProps1, assignProps2, etc) {
+			var assignArgsList = slice(arguments, 1)
+			F.prototype = obj
+			return assign.apply(this, [new F()].concat(assignArgsList))
+		}
+	}
+}
+
+function make_trim() {
+	if (String.prototype.trim) {
+		return function trim(str) {
+			return String.prototype.trim.call(str)
+		}
+	} else {
+		return function trim(str) {
+			return str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '')
+		}
+	}
+}
+
+function bind(obj, fn) {
+	return function() {
+		return fn.apply(obj, Array.prototype.slice.call(arguments, 0))
+	}
+}
+
+function slice(arr, index) {
+	return Array.prototype.slice.call(arr, index || 0)
+}
+
+function each(obj, fn) {
+	pluck(obj, function(key, val) {
+		fn(key, val)
+		return false
+	})
+}
+
+function map(obj, fn) {
+	var res = (isList(obj) ? [] : {})
+	pluck(obj, function(v, k) {
+		res[k] = fn(v, k)
+		return false
+	})
+	return res
+}
+
+function pluck(obj, fn) {
+	if (isList(obj)) {
+		for (var i=0; i<obj.length; i++) {
+			if (fn(obj[i], i)) {
+				return obj[i]
+			}
+		}
+	} else {
+		for (var key in obj) {
+			if (obj.hasOwnProperty(key)) {
+				if (fn(obj[key], key)) {
+					return obj[key]
+				}
+			}
+		}
+	}
+}
+
+function isList(val) {
+	return (val != null && typeof val != 'function' && typeof val.length == 'number')
+}
+
+function isFunction(val) {
+	return val && {}.toString.call(val) === '[object Function]'
+}
+
+function isObject(val) {
+	return val && {}.toString.call(val) === '[object Object]'
+}
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],30:[function(require,module,exports){
+module.exports = {
+	// Listed in order of usage preference
+	'localStorage': require('./localStorage'),
+	'oldFF-globalStorage': require('./oldFF-globalStorage'),
+	'oldIE-userDataStorage': require('./oldIE-userDataStorage'),
+	'cookieStorage': require('./cookieStorage'),
+	'sessionStorage': require('./sessionStorage'),
+	'memoryStorage': require('./memoryStorage'),
+}
+
+},{"./cookieStorage":31,"./localStorage":32,"./memoryStorage":33,"./oldFF-globalStorage":34,"./oldIE-userDataStorage":35,"./sessionStorage":36}],31:[function(require,module,exports){
+// cookieStorage is useful Safari private browser mode, where localStorage
+// doesn't work but cookies do. This implementation is adopted from
+// https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage
+
+var util = require('../src/util')
+var Global = util.Global
+var trim = util.trim
+
+module.exports = {
+	name: 'cookieStorage',
+	read: read,
+	write: write,
+	each: each,
+	remove: remove,
+	clearAll: clearAll,
+}
+
+var doc = Global.document
+
+function read(key) {
+	if (!key || !_has(key)) { return null }
+	var regexpStr = "(?:^|.*;\\s*)" +
+		escape(key).replace(/[\-\.\+\*]/g, "\\$&") +
+		"\\s*\\=\\s*((?:[^;](?!;))*[^;]?).*"
+	return unescape(doc.cookie.replace(new RegExp(regexpStr), "$1"))
+}
+
+function each(callback) {
+	var cookies = doc.cookie.split(/; ?/g)
+	for (var i = cookies.length - 1; i >= 0; i--) {
+		if (!trim(cookies[i])) {
+			continue
+		}
+		var kvp = cookies[i].split('=')
+		var key = unescape(kvp[0])
+		var val = unescape(kvp[1])
+		callback(val, key)
+	}
+}
+
+function write(key, data) {
+	if(!key) { return }
+	doc.cookie = escape(key) + "=" + escape(data) + "; expires=Tue, 19 Jan 2038 03:14:07 GMT; path=/"
+}
+
+function remove(key) {
+	if (!key || !_has(key)) {
+		return
+	}
+	doc.cookie = escape(key) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/"
+}
+
+function clearAll() {
+	each(function(_, key) {
+		remove(key)
+	})
+}
+
+function _has(key) {
+	return (new RegExp("(?:^|;\\s*)" + escape(key).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(doc.cookie)
+}
+
+},{"../src/util":29}],32:[function(require,module,exports){
+var util = require('../src/util')
+var Global = util.Global
+
+module.exports = {
+	name: 'localStorage',
+	read: read,
+	write: write,
+	each: each,
+	remove: remove,
+	clearAll: clearAll,
+}
+
+function localStorage() {
+	return Global.localStorage
+}
+
+function read(key) {
+	return localStorage().getItem(key)
+}
+
+function write(key, data) {
+	return localStorage().setItem(key, data)
+}
+
+function each(fn) {
+	for (var i = localStorage().length - 1; i >= 0; i--) {
+		var key = localStorage().key(i)
+		fn(read(key), key)
+	}
+}
+
+function remove(key) {
+	return localStorage().removeItem(key)
+}
+
+function clearAll() {
+	return localStorage().clear()
+}
+
+},{"../src/util":29}],33:[function(require,module,exports){
+// memoryStorage is a useful last fallback to ensure that the store
+// is functions (meaning store.get(), store.set(), etc will all function).
+// However, stored values will not persist when the browser navigates to
+// a new page or reloads the current page.
+
+module.exports = {
+	name: 'memoryStorage',
+	read: read,
+	write: write,
+	each: each,
+	remove: remove,
+	clearAll: clearAll,
+}
+
+var memoryStorage = {}
+
+function read(key) {
+	return memoryStorage[key]
+}
+
+function write(key, data) {
+	memoryStorage[key] = data
+}
+
+function each(callback) {
+	for (var key in memoryStorage) {
+		if (memoryStorage.hasOwnProperty(key)) {
+			callback(memoryStorage[key], key)
+		}
+	}
+}
+
+function remove(key) {
+	delete memoryStorage[key]
+}
+
+function clearAll(key) {
+	memoryStorage = {}
+}
+
+},{}],34:[function(require,module,exports){
+// oldFF-globalStorage provides storage for Firefox
+// versions 6 and 7, where no localStorage, etc
+// is available.
+
+var util = require('../src/util')
+var Global = util.Global
+
+module.exports = {
+	name: 'oldFF-globalStorage',
+	read: read,
+	write: write,
+	each: each,
+	remove: remove,
+	clearAll: clearAll,
+}
+
+var globalStorage = Global.globalStorage
+
+function read(key) {
+	return globalStorage[key]
+}
+
+function write(key, data) {
+	globalStorage[key] = data
+}
+
+function each(fn) {
+	for (var i = globalStorage.length - 1; i >= 0; i--) {
+		var key = globalStorage.key(i)
+		fn(globalStorage[key], key)
+	}
+}
+
+function remove(key) {
+	return globalStorage.removeItem(key)
+}
+
+function clearAll() {
+	each(function(key, _) {
+		delete globalStorage[key]
+	})
+}
+
+},{"../src/util":29}],35:[function(require,module,exports){
+// oldIE-userDataStorage provides storage for Internet Explorer
+// versions 6 and 7, where no localStorage, sessionStorage, etc
+// is available.
+
+var util = require('../src/util')
+var Global = util.Global
+
+module.exports = {
+	name: 'oldIE-userDataStorage',
+	write: write,
+	read: read,
+	each: each,
+	remove: remove,
+	clearAll: clearAll,
+}
+
+var storageName = 'storejs'
+var doc = Global.document
+var _withStorageEl = _makeIEStorageElFunction()
+var disable = (Global.navigator ? Global.navigator.userAgent : '').match(/ (MSIE 8|MSIE 9|MSIE 10)\./) // MSIE 9.x, MSIE 10.x
+
+function write(unfixedKey, data) {
+	if (disable) { return }
+	var fixedKey = fixKey(unfixedKey)
+	_withStorageEl(function(storageEl) {
+		storageEl.setAttribute(fixedKey, data)
+		storageEl.save(storageName)
+	})
+}
+
+function read(unfixedKey) {
+	if (disable) { return }
+	var fixedKey = fixKey(unfixedKey)
+	var res = null
+	_withStorageEl(function(storageEl) {
+		res = storageEl.getAttribute(fixedKey)
+	})
+	return res
+}
+
+function each(callback) {
+	_withStorageEl(function(storageEl) {
+		var attributes = storageEl.XMLDocument.documentElement.attributes
+		for (var i=attributes.length-1; i>=0; i--) {
+			var attr = attributes[i]
+			callback(storageEl.getAttribute(attr.name), attr.name)
+		}
+	})
+}
+
+function remove(unfixedKey) {
+	var fixedKey = fixKey(unfixedKey)
+	_withStorageEl(function(storageEl) {
+		storageEl.removeAttribute(fixedKey)
+		storageEl.save(storageName)
+	})
+}
+
+function clearAll() {
+	_withStorageEl(function(storageEl) {
+		var attributes = storageEl.XMLDocument.documentElement.attributes
+		storageEl.load(storageName)
+		for (var i=attributes.length-1; i>=0; i--) {
+			storageEl.removeAttribute(attributes[i].name)
+		}
+		storageEl.save(storageName)
+	})
+}
+
+// Helpers
+//////////
+
+// In IE7, keys cannot start with a digit or contain certain chars.
+// See https://github.com/marcuswestin/store.js/issues/40
+// See https://github.com/marcuswestin/store.js/issues/83
+var forbiddenCharsRegex = new RegExp("[!\"#$%&'()*+,/\\\\:;<=>?@[\\]^`{|}~]", "g")
+function fixKey(key) {
+	return key.replace(/^\d/, '___$&').replace(forbiddenCharsRegex, '___')
+}
+
+function _makeIEStorageElFunction() {
+	if (!doc || !doc.documentElement || !doc.documentElement.addBehavior) {
+		return null
+	}
+	var scriptTag = 'script',
+		storageOwner,
+		storageContainer,
+		storageEl
+
+	// Since #userData storage applies only to specific paths, we need to
+	// somehow link our data to a specific path.  We choose /favicon.ico
+	// as a pretty safe option, since all browsers already make a request to
+	// this URL anyway and being a 404 will not hurt us here.  We wrap an
+	// iframe pointing to the favicon in an ActiveXObject(htmlfile) object
+	// (see: http://msdn.microsoft.com/en-us/library/aa752574(v=VS.85).aspx)
+	// since the iframe access rules appear to allow direct access and
+	// manipulation of the document element, even for a 404 page.  This
+	// document can be used instead of the current document (which would
+	// have been limited to the current path) to perform #userData storage.
+	try {
+		/* global ActiveXObject */
+		storageContainer = new ActiveXObject('htmlfile')
+		storageContainer.open()
+		storageContainer.write('<'+scriptTag+'>document.w=window</'+scriptTag+'><iframe src="/favicon.ico"></iframe>')
+		storageContainer.close()
+		storageOwner = storageContainer.w.frames[0].document
+		storageEl = storageOwner.createElement('div')
+	} catch(e) {
+		// somehow ActiveXObject instantiation failed (perhaps some special
+		// security settings or otherwse), fall back to per-path storage
+		storageEl = doc.createElement('div')
+		storageOwner = doc.body
+	}
+
+	return function(storeFunction) {
+		var args = [].slice.call(arguments, 0)
+		args.unshift(storageEl)
+		// See http://msdn.microsoft.com/en-us/library/ms531081(v=VS.85).aspx
+		// and http://msdn.microsoft.com/en-us/library/ms531424(v=VS.85).aspx
+		storageOwner.appendChild(storageEl)
+		storageEl.addBehavior('#default#userData')
+		storageEl.load(storageName)
+		storeFunction.apply(this, args)
+		storageOwner.removeChild(storageEl)
+		return
+	}
+}
+
+},{"../src/util":29}],36:[function(require,module,exports){
+var util = require('../src/util')
+var Global = util.Global
+
+module.exports = {
+	name: 'sessionStorage',
+	read: read,
+	write: write,
+	each: each,
+	remove: remove,
+	clearAll: clearAll,
+}
+
+function sessionStorage() {
+	return Global.sessionStorage
+}
+
+function read(key) {
+	return sessionStorage().getItem(key)
+}
+
+function write(key, data) {
+	return sessionStorage().setItem(key, data)
+}
+
+function each(fn) {
+	for (var i = sessionStorage().length - 1; i >= 0; i--) {
+		var key = sessionStorage().key(i)
+		fn(read(key), key)
+	}
+}
+
+function remove(key) {
+	return sessionStorage().removeItem(key)
+}
+
+function clearAll() {
+	return sessionStorage().clear()
+}
+
+},{"../src/util":29}],37:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -4963,7 +6207,7 @@ module.exports = function(target, settings, callback){
   }
 }.call(this));
 
-},{}],26:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 
 // return all text nodes that are contained within `el`
 function getTextNodes(el) {
@@ -5122,7 +6366,7 @@ function wrapRangeText(wrapperEl, range) {
 
 module.exports = wrapRangeText
 
-},{}],27:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 /*
   Groups: test=3Pj4aGiy
 */
@@ -5133,7 +6377,7 @@ var url = require("./util/url");
 var wrap = require("./h/wrap");
 var scroll = require("scroll-into-view");
 var audio = require("./ui/mediaElements");
-//var audio = require("./ui/audio");
+var search = require("./search/search");
 
 var unwrap;
 
@@ -5142,7 +6386,7 @@ function removeHighlight() {
 }
 
 /*
- * check if url parm 'id' is present and attempt to highlight the
+ * check if url parm "id" is present and attempt to highlight the
  * annotation with that id on the page.
  */
 function showRequestedAnnotation() {
@@ -5167,15 +6411,18 @@ function showRequestedAnnotation() {
 
 //initialize javascript on page when loaded
 document.addEventListener("DOMContentLoaded", function() {
-  var audio_message;
+  var audioMessage;
+  var transcriptParagraphs;
 
   //assign id's to all paragraphs in div.transcript
-  $('.transcript p').each(function(idx) {
-    $(this).attr('id', 'p' + idx);
+  transcriptParagraphs = $(".transcript p");
+  transcriptParagraphs.each(function(idx) {
+    $(this).attr("id", "p" + idx);
   });
 
   //display hypothes.is annotation if url contains: id=<annotation id>
   showRequestedAnnotation();
+  search.initialize();
 
   //init the audio player
   audio.initialize({
@@ -5189,7 +6436,51 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-},{"./h/wrap":30,"./ui/mediaElements":33,"./util/url":36,"scroll-into-view":24}],28:[function(require,module,exports){
+},{"./h/wrap":43,"./search/search":44,"./ui/mediaElements":47,"./util/url":50,"scroll-into-view":24}],40:[function(require,module,exports){
+"use strict";
+
+function getWomBookTitle(book) {
+  var title = "???" ;
+  switch(book) {
+    case "woh":
+      title = "Way of the Heart";
+      break;
+    case "wot":
+      title = "Way of Transformation";
+      break;
+    case "wok":
+      title = "Way of Knowing";
+      break;
+  }
+  return title;
+}
+
+module.exports = {
+  wom: {
+    title: "Way of Mastery",
+    books: ["woh", "wot", "wok"]
+  },
+  nwffacim: {
+    title: "Northwest Foundation for ACIM",
+    books: ["yaa", "grad", "acim"]
+  },
+
+  getTitle: function(source, book, unit) {
+    var title;
+    var lesson;
+    if (source === "wom") {
+      title = getWomBookTitle(book);
+      lesson = unit.substr(1);
+      title = title + " - Lesson " + Number.parseInt(lesson, 10);
+    }
+    else {
+      title = "not implemented";
+    }
+    return title;
+  }
+};
+
+},{}],41:[function(require,module,exports){
 "use strict";
 
 var _ = require("underscore");
@@ -5214,7 +6505,7 @@ module.exports = {
   remove: function(o) {
     var pos = _.findLastIndex(data.time, {id: o.id});
 
-    if (pos == -1) {
+    if (pos === -1) {
       return -1;
     }
     else {
@@ -5235,7 +6526,7 @@ module.exports = {
 };
 
 
-},{"underscore":25}],29:[function(require,module,exports){
+},{"underscore":37}],42:[function(require,module,exports){
 /*
  * Query hypothes.is API
  *
@@ -5297,7 +6588,7 @@ module.exports = {
 };
 
 
-},{}],30:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 
 "use strict";
 
@@ -5513,7 +6804,302 @@ module.exports = {
 };
 
 
-},{"./api":29,"dom-anchor-text-quote":6,"underscore":25,"wrap-range-text":26}],31:[function(require,module,exports){
+},{"./api":42,"dom-anchor-text-quote":6,"underscore":37,"wrap-range-text":38}],44:[function(require,module,exports){
+"use strict";
+
+var store = require("store");
+var url = require("../util/url");
+var config = require("../config/cmi");
+var _ = require("underscore");
+
+var searchResults;
+var currentMatchIndex = 0;
+var matchArray = [];
+
+function setSearchDocument(data) {
+  $(".search-header > .search-document").
+    html("<p>" + config.getTitle(data.source,
+                 matchArray[currentMatchIndex].book,
+                 matchArray[currentMatchIndex].unit) + "</p>");
+}
+
+function setSearchTitle(query) {
+  $(".search-header > .search-info").html("<p>Search <em>"+query+"</em> ("
+     +(currentMatchIndex + 1)+" of "+ matchArray.length + ")</p>");
+}
+
+function getPageInfo(data, thisBook, thisUnit) {
+  var i;
+  var urlInfo = {};
+  var idx = _.findIndex(data.all, function(item) {
+    return item.book === this.book && item.unit === this.unit;
+  }, {book: thisBook, unit: thisUnit});
+
+  //this should never happen
+  if (idx === -1) {
+    return urlInfo;
+  }
+
+  //console.log("findIndex for %s, %s: found idx: %s, ", thisBook, thisUnit, idx, data.all[idx]);
+
+  //find next
+  for (i=idx; i < data.all.length; i++) {
+    //console.log("looking for next: i: %s, book: %s, unit: %s", i, data.all[i].book, data.all[i].unit);
+    if (data.all[i].unit !== thisUnit || data.all[i].book !== thisBook) {
+      urlInfo.next = data.all[i].base + "?s=show" + data.all[i].location;
+      break;
+    }
+  }
+
+  //find prev
+  for (i=idx; i >= 0; i--) {
+    if (data.all[i].unit !== thisUnit || data.all[i].book !== thisBook) {
+      urlInfo.prev = data.all[i].base + "?s=show" + data.all[i].location;
+      break;
+    }
+  }
+
+  //console.log("urlInfo: ", urlInfo);
+  return urlInfo;
+}
+
+// get array for all search hits on the page
+function getHitArray(data, book, unit) {
+  var nextBook;
+  var prevBook;
+  var pageHits = [];
+  var bookHits = [];
+
+  var i;
+
+  switch(book) {
+    case "woh":
+      nextBook = "wot";
+      prevBook = "wok";
+      bookHits = data.woh;
+      break;
+    case "wot":
+      nextBook = "wok";
+      prevBook = "woh";
+      bookHits = data.wot;
+      break;
+    case "wok":
+      nextBook = "woh";
+      prevBook = "wot";
+      bookHits = data.wok;
+      break;
+    default:
+      break;
+  }
+
+  for(i = 0; i < bookHits.length; i++) {
+    if (bookHits[i].unit === unit) {
+      pageHits.push(bookHits[i]);
+    }
+  }
+
+  return {matches: pageHits};
+}
+
+//hilight terms on page for current search
+function markSearchHits(searchHits, searchData, state) {
+  var mark;
+  var i;
+
+  //Note: this regex wont find a string within a string - only finds
+  //matches that begin and end on word boundaries
+  var regex = new RegExp("(?:^|\\b)(" + searchData.query + ")(?:$|\\b)", "gim");
+  for (i = 0; i < searchHits.length; i++) {
+    var id = searchHits[i].location.substr(1);
+    var el = document.getElementById(id);
+    var content = el.innerHTML;
+
+    //remove newline chars in content - they can prevent the
+    //query string from being highlighted
+    content = content.replace(/[\r\n]/gm," ");
+    if (state === "show") {
+      el.innerHTML = content.replace(regex, "<mark class='show-mark'>$1</mark>");
+    }
+    else {
+      el.innerHTML = content.replace(regex, "<mark class='hide-mark'>$1</mark>");
+    }
+
+    //test if query was highlighted
+    if (el.innerHTML === content) {
+      console.log("Regex did not match: \"%s\" for %s", searchData.query, id);
+    }
+  }
+}
+
+//show hilight terms on page for current search
+function showSearchHits() {
+  var i;
+
+  $("mark").each(function(idx, el) {
+    $(el).removeClass("hide-mark").addClass("show-mark");
+  });
+}
+
+//hide hilight terms on page for current search
+function hideSearchHits() {
+  var i;
+
+  $("mark").each(function(idx, el) {
+    $(el).removeClass("show-mark").addClass("hide-mark");
+  });
+}
+
+function initializeNavigator(data) {
+  var path = location.pathname.split("/");
+  var hash = location.hash;
+  var thisBook = path[2];
+  var thisUnit = path[3];
+  var matchIndex;
+
+  //get array of search matches on the page
+  var hitInfo = getHitArray(data, thisBook, thisUnit);
+
+  //no hits for this page
+  if (hitInfo.matches.length === 0) {
+    return hitInfo;
+  }
+  hitInfo.showPlayer = true;
+
+  //set global matchArray
+  matchArray = hitInfo.matches;
+
+  //find the index in hitInfo.matches for location.hash - that's
+  //the "current" match
+  if (hash) {
+    matchIndex = _.findIndex(hitInfo.matches, function(val) {
+      return val.location === this.hash;
+    }, {hash: hash});
+
+    if (matchIndex > -1) {
+      currentMatchIndex = matchIndex;
+    }
+    else {
+      console.log("Error: could not find location.hash in search result array");
+    }
+  }
+
+  //one hit - change arrow to 'splat' so user can easily navigate to 
+  //search hit
+  if (hitInfo.matches.length === 1) {
+    $(".search-prev-match").addClass("hide-player");
+
+    $(".search-next-match > i").removeClass("fa-arrow-down").addClass("fa-asterisk");
+  }
+  else {
+    //add event handlers for matches on page
+    $(".search-prev-match").on("click", function(e) {
+      e.preventDefault();
+      currentMatchIndex = currentMatchIndex - 1;
+      if (currentMatchIndex < 0) {
+        currentMatchIndex = matchArray.length - 1;
+      }
+      location.href = matchArray[currentMatchIndex].location;
+      setSearchTitle(searchResults.query);
+    });
+  }
+
+  $(".search-next-match").on("click", function(e) {
+    e.preventDefault();
+    currentMatchIndex = currentMatchIndex + 1;
+    if (currentMatchIndex > matchArray.length - 1) {
+      currentMatchIndex = 0;
+    }
+    location.href = matchArray[currentMatchIndex].location;
+    setSearchTitle(searchResults.query);
+  });
+
+  //get next/prev page urls
+  var pageUrl = getPageInfo(data, thisBook, thisUnit);
+
+  if (pageUrl.next) {
+    $(".search-next-page").attr("href", pageUrl.next);
+  }
+  else {
+    $(".search-next-page").addClass("hide-player");
+  }
+
+  if (pageUrl.prev) {
+    $(".search-prev-page").attr("href", pageUrl.prev);
+  }
+  else {
+    $(".search-prev-page").addClass("hide-player");
+  }
+
+  //create navigator 'close' event handler
+  $(".search-dialog-close").on("click", function(e) {
+    e.preventDefault();
+    console.log("search-dialog-close clicked");
+    hideSearchHits();
+    $(".search-results-wrapper").addClass("hide-player");
+  });
+
+  return hitInfo;
+}
+
+module.exports = {
+  initialize: function() {
+    var searchMatchInfo;
+    var s;
+
+    //if there are no search results hide 'search navigator' sidebar option
+    searchResults = store.get("search");
+
+    //if no search data don't show the 'Search Navigator' sidebar option
+    if (!searchResults) {
+      $(".search-navigator").addClass("hide-player");
+      return;
+    }
+
+    //init navigator - continue initialization if array.length > 0
+    console.log("initializeNavigator");
+    searchMatchInfo = initializeNavigator(searchResults);
+    if (searchMatchInfo.matches.length > 0) {
+      s = url.getQueryString("s");
+
+      //if url contains ?s=show then mark search terms on page and
+      //show the navigator
+      if (s) {
+        markSearchHits(searchMatchInfo.matches, searchResults, "show");
+
+        //don't show navigator if search has only one match, there is
+        //no where to navigate to
+        if (searchMatchInfo.showPlayer) {
+          $(".search-results-wrapper").removeClass("hide-player");
+        }
+      }
+      else {
+        markSearchHits(searchMatchInfo.matches, searchResults, "hide");
+      }
+
+      //setup navigator show/hide event listener
+      setSearchTitle(searchResults.query);
+      setSearchDocument(searchResults);
+      $(".search-navigator").on("click", function(e) {
+        e.preventDefault();
+        console.log("search-navigator clicked");
+        if ($(".search-results-wrapper").hasClass("hide-player")) {
+          $(".search-results-wrapper").removeClass("hide-player");
+          showSearchHits();
+        }
+        else {
+          $(".search-results-wrapper").addClass("hide-player");
+          hideSearchHits();
+        }
+      });
+    }
+    else {
+      $(".search-navigator").addClass("hide-player");
+    }
+  }
+};
+
+},{"../config/cmi":40,"../util/url":50,"store":25,"underscore":37}],45:[function(require,module,exports){
+/* eslint no-alert: "off" */
 
 "use strict";
 
@@ -5527,18 +7113,18 @@ var ays = require("../util/are-you-sure");
 var jPlayer;
 var currentPlayTime = 0;
 
-var audio_playing = false;
+var audioPlaying = false;
 var captureRequested = false;
 var captureId = "";
 
 var increaseSpeed = true;
 
-function deleteException(message) {
+function DeleteException(message) {
   this.message = message;
   this.name = "deleteException";
 }
 
-function stateException(message) {
+function StateException(message) {
   this.message = message;
   this.name = "stateException";
 }
@@ -5547,7 +7133,7 @@ function stateException(message) {
 //captured calling autoCapture()
 //- this is true for p0 which we default to time: 0 but it
 //  may actually start later in the recording. We can use this
-//  info to jump to the p0 time so user doesn't have to listen
+//  info to jump to the p0 time so user doesn"t have to listen
 //  to dead space
 function autoCapture(o) {
   captureRequested = true;
@@ -5556,7 +7142,7 @@ function autoCapture(o) {
 
 //called only when captureRequested == true
 function markParagraph(o) {
-  var pi = $('#' + o.id).children('i');
+  var pi = $("#" + o.id).children("i");
   var captureLength;
 
   if (!captureRequested) {
@@ -5575,8 +7161,8 @@ function markParagraph(o) {
     pi.removeClass("fa-check").addClass("fa-bullseye");
 
     captureLength = capture.remove(o);
-    if (captureLength == -1) {
-      throw new deleteException("can't find id to delete in capture array");
+    if (captureLength === -1) {
+      throw new DeleteException("can't find id to delete in capture array");
     }
     else {
       console.log("%s deleted at %s", o.id, o.seconds);
@@ -5586,7 +7172,7 @@ function markParagraph(o) {
     }
   }
   else {
-    throw new stateException("unknown paragraph state for: %s", o.id);
+    throw new StateException("unknown paragraph state for: %s", o.id);
   }
 
   captureRequested = false;
@@ -5601,25 +7187,25 @@ function markParagraph(o) {
 function enableSidebarTimeCapture() {
 
   //transcript_format_complete is defined globally
-  if (!transcript_format_complete) {
+  if (!transcriptFormatComplete) {
     console.log("Formatting for this transcript is incomplete, capture disabled");
     return;
   }
 
   //show sidebar menu option
-  $('.pmarker-wrapper').css("display", "block");
+  $(".pmarker-wrapper").css("display", "block");
 
   //toggle display of paragraph markers used
   //to record audio playback time
-  //console.log('setting up .pmarker-toggle listener');
-  $('.pmarker-toggle').on('click', function(e) {
-    var ct = $('.pmarker-toggle');
+  //console.log("setting up .pmarker-toggle listener");
+  $(".pmarker-toggle").on("click", function(e) {
+    var ct = $(".pmarker-toggle");
     e.preventDefault();
-    if (ct.children('i').hasClass('fa-toggle-off')) {
-      ct.html('<i class="fa fa-toggle-on"></i>&nbsp;Time Capture On');
+    if (ct.children("i").hasClass("fa-toggle-off")) {
+      ct.html("<i class='fa fa-toggle-on'></i>&nbsp;Time Capture On");
     }
     else {
-      ct.html('<i class="fa fa-toggle-off"></i>&nbsp;Time Capture Off');
+      ct.html("<i class='fa fa-toggle-off'></i>&nbsp;Time Capture Off");
     }
 
     toggleMarkers();
@@ -5628,7 +7214,7 @@ function enableSidebarTimeCapture() {
   //init unsubmitted data warning
   ays.init();
 
-  $('.time-lister').on('click', function(e) {
+  $(".time-lister").on("click", function(e) {
     var data;
     e.preventDefault();
 
@@ -5637,13 +7223,13 @@ function enableSidebarTimeCapture() {
     }
     else {
       data = JSON.stringify(capture.getData());
-      data = "var cmi_audio_timing_data = " + data + ";";
+      data = "var cmiAudioTimingData = " + data + ";";
     }
 
-    $('#audio-data-form').attr('action', capture.getBase());
-    $('#captured-audio-data').html(data);
-    $('.submit-message').html("");
-    $('#modal-1').trigger('click');
+    $("#audio-data-form").attr("action", capture.getBase());
+    $("#captured-audio-data").html(data);
+    $(".submit-message").html("");
+    $("#modal-1").trigger("click");
   });
 
   //initialize modal window
@@ -5655,7 +7241,7 @@ function enableSidebarTimeCapture() {
 
     //if no data yet captured, cancel submit
     if (capture.length() < 2) {
-      $('.submit-message').html("No data captured yet!");
+      $(".submit-message").html("No data captured yet!");
       return;
     }
 
@@ -5670,7 +7256,7 @@ function enableSidebarTimeCapture() {
         ays.dataEvent(0);
       })
       .fail(function(e) {
-        $('.submit-message').html("Drat! Your submit failed.");
+        $(".submit-message").html("Drat! Your submit failed.");
       });
   });
 }
@@ -5678,14 +7264,14 @@ function enableSidebarTimeCapture() {
 //create listeners for each paragraph and
 //show rewind and speed player controls
 function createListener() {
-  $('.transcript p i.fa').each(function(idx) {
-    $(this).on('click', function(e) {
+  $(".transcript p i.fa").each(function(idx) {
+    $(this).on("click", function(e) {
       e.preventDefault();
       captureRequested = true;
       captureId = e.target.parentElement.id;
 
-      if (!audio_playing) {
-        //notify user action won't happen until audio plays
+      if (!audioPlaying) {
+        //notify user action won"t happen until audio plays
         //and only the last action is honored
         alert("action pending until audio playback begins");
       }
@@ -5694,23 +7280,23 @@ function createListener() {
 
   //enable rewind and faster buttons on audio player
   //console.log("showing cmi audio controls");
-  $('.cmi-audio-controls').removeClass('hide-cmi-controls');
+  $(".cmi-audio-controls").removeClass("hide-cmi-controls");
 
   //set rewind control
-  $('.audio-rewind').on('click', function(e) {
+  $(".audio-rewind").on("click", function(e) {
     e.preventDefault();
     var skipAmt = 8;
     var newTime = currentPlayTime - skipAmt;
     if (newTime <= 0) {
       newTime = 0;
     }
-    console.log('rewinding playback to %s from %s', newTime, currentPlayTime);
+    console.log("rewinding playback to %s from %s", newTime, currentPlayTime);
     jPlayer.jPlayer("play", newTime);
 
   });
 
   //set playbackRate control
-  $('.audio-faster').on('click', function(e) {
+  $(".audio-faster").on("click", function(e) {
     var currentRate = jPlayer.jPlayer("option", "playbackRate");
     var newRate, displayRate;
     e.preventDefault();
@@ -5747,14 +7333,14 @@ function createListener() {
 }
 
 function toggleMarkers() {
-  var ids = $('.transcript p').attr('id');
-  var fa = $('.transcript p i.fa');
+  var ids = $(".transcript p").attr("id");
+  var fa = $(".transcript p i.fa");
 
   //create markers is not on page
   //- do markers exist?
-  if (fa.length != 0) {
+  if (fa.length !== 0) {
     //yes - toggle display
-    $('.transcript p i.fa').toggle();
+    $(".transcript p i.fa").toggle();
     if ($(".transcript").hasClass("capture")) {
       $(".transcript").removeClass("capture");
     }
@@ -5764,12 +7350,12 @@ function toggleMarkers() {
   }
   else if (typeof ids !== "undefined") {
     console.log("paragraph id's already defined, adding marker");
-    $('.transcript p').each(function(idx) {
+    $(".transcript p").each(function(idx) {
       $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
     });
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
-    //the p0 time when it doesn't start at 0.
+    //the p0 time when it doesn"t start at 0.
     autoCapture({id: "p0", seconds: 0});
 
     $(".transcript").addClass("capture");
@@ -5777,16 +7363,16 @@ function toggleMarkers() {
   }
   /*
   else {
-    //define id's for each paragraph in the narrative div
-    // - these id's are referenced by the timing data
+    //define id"s for each paragraph in the narrative div
+    // - these id"s are referenced by the timing data
     console.log("adding marker to .transcript p");
-    $('.transcript p').each(function(idx) {
-      //$(this).attr('id', 'p' + idx);
-      $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
+    $(".transcript p").each(function(idx) {
+      //$(this).attr("id", "p" + idx);
+      $(this).prepend("<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>");
     });
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
-    //the p0 time when it doesn't start at 0.
+    //the p0 time when it doesn"t start at 0.
     autoCapture({id: "p0", seconds: 0});
     $(".transcript").addClass("capture");
     createListener();
@@ -5799,7 +7385,7 @@ module.exports = {
   initialize: function(player) {
     var captureOptions = {
       base: window.location.pathname,
-      title: $('.post-title').text()
+      title: $(".post-title").text()
     };
 
     jPlayer = player;
@@ -5807,15 +7393,15 @@ module.exports = {
   },
 
   play: function(t) {
-    audio_playing = true;
+    audioPlaying = true;
   },
 
   pause: function(t) {
-    audio_playing = false;
+    audioPlaying = false;
   },
 
   ended: function(t) {
-    audio_playing = false;
+    audioPlaying = false;
   },
 
   //the audio player calls this every 250ms with the
@@ -5837,11 +7423,11 @@ module.exports = {
 
 };
 
-},{"../ds/capture":28,"../util/are-you-sure":35,"./hilight":32,"./modal":34,"underscore":25}],32:[function(require,module,exports){
+},{"../ds/capture":41,"../util/are-you-sure":49,"./hilight":46,"./modal":48,"underscore":37}],46:[function(require,module,exports){
 /*
  * NOTE:
  *
- * Declared globally: cmi_audio_timing_data
+ * Declared globally: cmi_audio_timingData
  */
 
 "use strict";
@@ -5857,7 +7443,7 @@ var seeking = false;
 var seekSnap = false;
 
 //real or test data
-var timing_data;
+var timingData;
 
 //paragraph timing pointers
 var locptr = -1;
@@ -5867,39 +7453,39 @@ function processSeek(time) {
 
   console.log("seek requested to: ", time);
 
-  //we don't know if seeked time is earlier or later than
+  //we don"t know if seeked time is earlier or later than
   //the current time so we look through the timing array
-  locptr = _.findIndex(timing_data.time, function(t) {
+  locptr = _.findIndex(timingData.time, function(t) {
     return t.seconds >= time;
   });
 
-  if (locptr == -1) {
-    locptr++
+  if (locptr === -1) {
+    locptr++;
     console.log("adjusted index: %s", locptr);
-    console.log("seek time: %s > %s (last ptime)", time, timing_data.time[timing_data.time.length - 1].seconds);
+    console.log("seek time: %s > %s (last ptime)", time, timingData.time[timingData.time.length - 1].seconds);
   }
 
   console.log("[ptr:%s] seeking to %s which begins at %s", 
-    locptr, timing_data.time[locptr].id, timing_data.time[locptr].seconds);
+    locptr, timingData.time[locptr].id, timingData.time[locptr].seconds);
 
-  //check if we've found a beginning of the paragraph
-  // - if so, don't need to snap
-  if (time === timing_data.time[locptr].seconds) {
+  //check if we"ve found a beginning of the paragraph
+  // - if so, don"t need to snap
+  if (time === timingData.time[locptr].seconds) {
     showNscroll(locptr);
     seeking = false;
   }
   else {
     //snap play to start time of paragraph
     console.log("snapping from requested %s to %s",
-                time, timing_data.time[locptr].seconds);
+                time, timingData.time[locptr].seconds);
     seekSnap = true;
-    player.setCurrentTime(timing_data.time[locptr].seconds);
+    player.setCurrentTime(timingData.time[locptr].seconds);
   }
 }
 
 function processSeekSnap(time) {
 
-  console.log("snap complete: snap time: %s, ptime: %s", time, timing_data.time[locptr].seconds);
+  console.log("snap complete: snap time: %s, ptime: %s", time, timingData.time[locptr].seconds);
   showNscroll(locptr);
 
   console.log("-------------------------");
@@ -5909,10 +7495,10 @@ function processSeekSnap(time) {
 }
 
 function showNscroll(idx) {
-  var tinfo = timing_data.time[idx];
+  var tinfo = timingData.time[idx];
 
   if (prevptr > -1) {
-    $("#" + timing_data.time[prevptr].id).removeClass(hilightClass);
+    $("#" + timingData.time[prevptr].id).removeClass(hilightClass);
   }
 
   $("#" + tinfo.id).addClass(hilightClass);
@@ -5923,24 +7509,24 @@ function showNscroll(idx) {
 }
 
 function getTime(idx) {
-  if (idx < 0 || idx >= timing_data.time.length ) {
+  if (idx < 0 || idx >= timingData.time.length ) {
     return 60 * 60 *24; //return a big number
   }
 
-  return timing_data.time[idx].seconds;
+  return timingData.time[idx].seconds;
 }
 
 function getTimeInfo(idx) {
-  if (idx < 0 || idx >= timing_data.time.length ) {
-    return {id: "xx", seconds: 0}
+  if (idx < 0 || idx >= timingData.time.length ) {
+    return {id: "xx", seconds: 0};
   }
 
-  return timing_data.time[idx];
+  return timingData.time[idx];
 }
 
 //audio is playing: play time at arg: current
 function processCurrentTime(current) {
-  if (locptr == -1 || current > getTime(locptr + 1)) {
+  if (locptr === -1 || current > getTime(locptr + 1)) {
     debugPlayPosition("hilight event", current);
     locptr++;
     showNscroll(locptr);
@@ -5960,27 +7546,27 @@ function debugPlayPosition(msg, time) {
 module.exports = {
 
   //highlight supported when timing data available
-  initialize: function(css_class) {
+  initialize: function(cssClass) {
     var rc = {};
 
-    if (typeof window.cmi_audio_timing_data !== "undefined") {
+    if (typeof window.cmiAudioTimingData !== "undefined") {
       console.log("timing data available");
 
-      timing_data = cmi_audio_timing_data;
-      rc.startTime = timing_data.time[0].seconds;
+      timingData = cmiAudioTimingData;
+      rc.startTime = timingData.time[0].seconds;
 
       //indicate timing data available
       enabled = true;
 
-      //define id's for each paragraph in the narrative div
-      // - these id's are referenced by the timing data
-      $('.narrative p').each(function(idx) {
-        $(this).attr('id', 'p' + idx);
+      //define id"s for each paragraph in the narrative div
+      // - these id"s are referenced by the timing data
+      $(".narrative p").each(function(idx) {
+        $(this).attr("id", "p" + idx);
       });
     }
 
-    if (typeof css_class !== "undefined") {
-      hilightClass = css_class;
+    if (typeof cssClass !== "undefined") {
+      hilightClass = cssClass;
     }
 
     rc.enabled = enabled;
@@ -5992,8 +7578,8 @@ module.exports = {
     player = p;
   },
 
-  //don't process time event when seeking
-  update_time: function(time) {
+  //don"t process time event when seeking
+  updateTime: function(time) {
     if (!enabled || seeking) {
       return;
     }
@@ -6045,7 +7631,7 @@ module.exports = {
 };
 
 
-},{"scroll-into-view":24,"underscore":25}],33:[function(require,module,exports){
+},{"scroll-into-view":24,"underscore":37}],47:[function(require,module,exports){
 "use strict";
 
 var hilight = require("./hilight");
@@ -6056,18 +7642,23 @@ var playing = false;
 var audioStartTime = 0;
 
 function createPlayerDisplayToggle(config) {
-  // setup 'display player' toggle
-  $(config.audioToggle).on('click', function(e) {
+  // setup "display player" toggle
+  $(config.audioToggle).on("click", function(e) {
     e.preventDefault();
-    $(config.hidePlayer).toggle();
+    //$(config.hidePlayer).toggle();
+    if ($(".audio-player-wrapper").hasClass("hide-player")) {
+      $(".audio-player-wrapper").removeClass("hide-player");
+    }
+    else {
+      $(".audio-player-wrapper").addClass("hide-player");
+    }
   });
-  console.log("player display toggle defined");
 }
 
 function initPlayer(config) {
   var initialized = false;
   var audioUrl;
-  var audioElement = $('audio.mejs-player');
+  var audioElement = $("audio.mejs-player");
   var features;
 
   if (audioElement.length !== 0) {
@@ -6082,8 +7673,8 @@ function initPlayer(config) {
     if (typeof window.cmi_audio_timing_data !== "undefined") {
       features = ["playpause", "stop", "progress", "current"];
     }
-    //if we don't allow time capture
-    else if (!transcript_format_complete) {
+    //if we don"t allow time capture
+    else if (!transcriptFormatComplete) {
       features = ["playpause", "stop", "progress", "current"];
     }
     //when user may capture time
@@ -6091,7 +7682,7 @@ function initPlayer(config) {
       features = ["playpause", "stop", "current", "skipback", "jumpforward", "speed"];
     }
 
-    $('#cmi-audio-player').mediaelementplayer({
+    $("#cmi-audio-player").mediaelementplayer({
       pluginPath: "/public/js/lib/mediaelement/build/",
       skipBackInterval: 15,
       jumpForwardInterval: 15,
@@ -6102,7 +7693,7 @@ function initPlayer(config) {
         // - returns object indicating whether enabled and audio start time
         var hinfo = hilight.initialize(config.hilightClass);
 
-        //if we don't have timing data enable support to get it
+        //if we don"t have timing data enable support to get it
         if (!hinfo.enabled) {
           capture.enableSidebarTimeCapture();
         }
@@ -6112,12 +7703,12 @@ function initPlayer(config) {
       }
     });
 
-    var playerId = $('#cmi-audio-player').closest('.mejs__container').attr('id');
+    var playerId = $("#cmi-audio-player").closest(".mejs__container").attr("id");
     player = mejs.players[playerId];
     hilight.setAudioPlayer(player);
 
     //get play time updates from player
-    player.media.addEventListener('timeupdate', function(e) {
+    player.media.addEventListener("timeupdate", function(e) {
       var time = this.getCurrentTime();
       if (!playing) {
         return;
@@ -6128,47 +7719,47 @@ function initPlayer(config) {
         this.setCurrentTime(audioStartTime);
       }
       else {
-        //console.log('playing: %s, current time %s', playing, time);
-        hilight.update_time(time);
+        //console.log("playing: %s, current time %s", playing, time);
+        hilight.updateTime(time);
         capture.currentTime(time);
       }
     });
 
     //get notified when player is playing
-    player.media.addEventListener('playing', function(e) {
+    player.media.addEventListener("playing", function(e) {
       playing = true;
-      $('.audio-player-wrapper').addClass('player-fixed');
+      $(".audio-player-wrapper").addClass("player-fixed");
       capture.play(this.getCurrentTime);
     });
 
     //get notified when player is paused
-    player.media.addEventListener('paused', function(e) {
-      //this doesn't get called
-      console.log('type: %s, player paused', e.type);
+    player.media.addEventListener("paused", function(e) {
+      //this doesn"t get called
+      console.log("type: %s, player paused", e.type);
     });
 
     //get notified when media play has ended
-    player.media.addEventListener('ended', function(e) {
+    player.media.addEventListener("ended", function(e) {
       playing = false;
-      $('.audio-player-wrapper').removeClass('player-fixed');
+      $(".audio-player-wrapper").removeClass("player-fixed");
       capture.ended(this.getCurrentTime);
     });
 
     //get notified when seek start
-    player.media.addEventListener('seeking', function(e) {
+    player.media.addEventListener("seeking", function(e) {
       var time = this.getCurrentTime();
       hilight.seeking(time);
     });
 
     //get notified when seek ended
-    player.media.addEventListener('seeked', function(e) {
+    player.media.addEventListener("seeked", function(e) {
       var time = this.getCurrentTime();
       hilight.seeked(time);
     });
 
     //set event listener for click on player stop button
-    $('.mejs__stop-button').on('click', function(e) {
-      $('.audio-player-wrapper').removeClass('player-fixed');
+    $(".mejs__stop-button").on("click", function(e) {
+      $(".audio-player-wrapper").removeClass("player-fixed");
     });
 
     capture.initialize(player);
@@ -6179,7 +7770,7 @@ function initPlayer(config) {
 }
 
 function init(config) {
-  if (typeof jQuery == "undefined") {
+  if (typeof jQuery === "undefined") {
     console.log("jQuery not installed");
     return false;
   }
@@ -6194,7 +7785,7 @@ module.exports = {
 
 };
 
-},{"./capture":31,"./hilight":32}],34:[function(require,module,exports){
+},{"./capture":45,"./hilight":46}],48:[function(require,module,exports){
 "use strict";
 
 module.exports = {
@@ -6205,7 +7796,8 @@ module.exports = {
     $(trigger).on("change", function() {
       if ($(this).is(":checked")) {
         $("body").addClass("modal-open");
-      } else {
+      }
+      else {
         $("body").removeClass("modal-open");
       }
     });
@@ -6222,25 +7814,25 @@ module.exports = {
 };
 
 
-},{}],35:[function(require,module,exports){
+},{}],49:[function(require,module,exports){
 "use strict";
 
 var isDirty = false;
 var message = "Please submit your timing data before leaving the page! To do so, " +
-  "open the side bar menu and click on the 'send icon' next to the 'capture' option."
+  "open the side bar menu and click on the 'send icon' next to the 'capture' option.";
 
 module.exports = {
 
   init: function() {
     window.onload = function() {
-        window.addEventListener("beforeunload", function (e) {
-            if (!isDirty) {
-              return undefined;
-            }
+      window.addEventListener("beforeunload", function (e) {
+        if (!isDirty) {
+          return undefined;
+        }
 
-            (e || window.event).returnValue = message; //Gecko + IE
-            return message; //Gecko + Webkit, Safari, Chrome etc.
-        });
+        (e || window.event).returnValue = message; //Gecko + IE
+        return message; //Gecko + Webkit, Safari, Chrome etc.
+      });
     };
   },
 
@@ -6253,7 +7845,7 @@ module.exports = {
   }
 };
 
-},{}],36:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 /*
  * Url utilities
  */
@@ -6302,4 +7894,4 @@ module.exports = {
 
 };
 
-},{}]},{},[27]);
+},{}]},{},[39]);

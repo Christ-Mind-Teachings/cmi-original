@@ -8,7 +8,8 @@ module.exports = {
     $(trigger).on("change", function() {
       if ($(this).is(":checked")) {
         $("body").addClass("modal-open");
-      } else {
+      }
+      else {
         $("body").removeClass("modal-open");
       }
     });

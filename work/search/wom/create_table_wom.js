@@ -8,6 +8,7 @@ AWS.config.update({
 
 var dynamodb = new AWS.DynamoDB();
 
+/*
 var params = {
     TableName : "wom",
     KeySchema: [
@@ -17,6 +18,23 @@ var params = {
     AttributeDefinitions: [
         { AttributeName: "book", AttributeType: "S" },
         { AttributeName: "key", AttributeType: "S" }
+    ],
+    ProvisionedThroughput: {
+        ReadCapacityUnits: 10,
+        WriteCapacityUnits: 10
+    }
+};
+*/
+
+var params = {
+    TableName : "wom",
+    KeySchema: [
+        { AttributeName: "bid", KeyType: "HASH"},  //Partition key
+        { AttributeName: "key", KeyType: "RANGE" }  //Sort key
+    ],
+    AttributeDefinitions: [
+        { AttributeName: "bid", AttributeType: "N" },
+        { AttributeName: "key", AttributeType: "N" }
     ],
     ProvisionedThroughput: {
         ReadCapacityUnits: 10,

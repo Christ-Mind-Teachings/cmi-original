@@ -1,4 +1,4 @@
-var cmi_audio_timing_data = {
+var cmiAudioTimingData = {
     "time": [
         {
             "id": "p0",

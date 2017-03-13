@@ -24,6 +24,7 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
     {% if page.layout == "narrative" %}
+      {% include ui/search-results-nav.html %}
       {% include ui/modal.html %}
     {% endif %}
 

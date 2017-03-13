@@ -1,4 +1,4 @@
-var cmi_audio_timing_data = {
+var cmiAudioTimingData = {
     "base": "/wom/questions/bleq2/",
     "title": "The Blessing of Forgiveness - Question Two",
     "time": [{

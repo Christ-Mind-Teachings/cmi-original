@@ -1,4 +1,4 @@
-var cmi_audio_timing_data = {
+var cmiAudioTimingData = {
     "base": "/wom/questions/hoeq1/",
     "title": "Heaven on Earth - Question One",
     "time": [{

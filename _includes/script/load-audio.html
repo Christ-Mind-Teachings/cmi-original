@@ -1,12 +1,12 @@
 {% assign player = include.player | default: "mediaElements" %}
 
 {% comment %}
-{% endcomment %}
 <!--
   script/load-audio.html
   ----------------------
   include.player: {{include.player}}
 -->
+{% endcomment %}
 
 {% if player == "jPlayer" %}
   {% include script/load-jPlayer.html %}

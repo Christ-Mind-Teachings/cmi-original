@@ -65,7 +65,3 @@ else
   echo "conversion to json failed"
 fi
 
-
-
-
-

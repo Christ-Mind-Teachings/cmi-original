@@ -1,4 +1,4 @@
-var cmi_audio_timing_data = {
+var cmiAudioTimingData = {
     "base": "/wom/questions/c2sq5/",
     "title": "Choose to See - Question Five",
     "time": [{

@@ -209,12 +209,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "Q01.02.mp3"
+        "audio": "Q01.02.mp3",
+        "timing": "ho1q2.js"
       },
       "url": "/wom/questions/h01q2/",
       "idx": 11,
@@ -584,12 +585,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "Q12.01.mp3"
+        "audio": "Q12.01.mp3",
+        "timing": "h12q1.js"
       },
       "url": "/wom/questions/h12q1/",
       "idx": 32,
@@ -657,12 +659,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "HOEQ2.mp3"
+        "audio": "HOEQ2.mp3",
+        "timing": "hoeq2.js"
       },
       "url": "/wom/questions/hoeq2/",
       "idx": 36,
@@ -675,12 +678,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "HOEQ3.mp3"
+        "audio": "HOEQ3.mp3",
+        "timing": "hoeq3.js"
       },
       "url": "/wom/questions/hoeq3/",
       "idx": 37,
@@ -692,13 +696,14 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "title": "Shanti Christo Membership",
       "res": {
-        "audio": "HOEQ5.mp3"
+        "audio": "HOEQ5.mp3",
+        "timing": "hoeq4.js"
       },
       "url": "/wom/questions/hoeq4/",
       "idx": 38,

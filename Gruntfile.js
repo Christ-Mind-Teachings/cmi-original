@@ -11,6 +11,11 @@ module.exports = function(grunt) {
         files: {
           'public/js/cmi.js': ['src/js/cmi.js']
         }
+      },
+      search: {
+        files: {
+          'public/js/search.js': ['src/js/search.js']
+        }
       }
     },
     aws_s3: {

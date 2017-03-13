@@ -1,7 +1,7 @@
 /*
  * NOTE:
  *
- * Declared globally: cmi_audio_timing_data
+ * Declared globally: cmi_audio_timingData
  */
 
 "use strict";
@@ -17,7 +17,7 @@ var seeking = false;
 var seekSnap = false;
 
 //real or test data
-var timing_data;
+var timingData;
 
 //paragraph timing pointers
 var locptr = -1;
@@ -27,39 +27,39 @@ function processSeek(time) {
 
   console.log("seek requested to: ", time);
 
-  //we don't know if seeked time is earlier or later than
+  //we don"t know if seeked time is earlier or later than
   //the current time so we look through the timing array
-  locptr = _.findIndex(timing_data.time, function(t) {
+  locptr = _.findIndex(timingData.time, function(t) {
     return t.seconds >= time;
   });
 
-  if (locptr == -1) {
-    locptr++
+  if (locptr === -1) {
+    locptr++;
     console.log("adjusted index: %s", locptr);
-    console.log("seek time: %s > %s (last ptime)", time, timing_data.time[timing_data.time.length - 1].seconds);
+    console.log("seek time: %s > %s (last ptime)", time, timingData.time[timingData.time.length - 1].seconds);
   }
 
   console.log("[ptr:%s] seeking to %s which begins at %s", 
-    locptr, timing_data.time[locptr].id, timing_data.time[locptr].seconds);
+    locptr, timingData.time[locptr].id, timingData.time[locptr].seconds);
 
-  //check if we've found a beginning of the paragraph
-  // - if so, don't need to snap
-  if (time === timing_data.time[locptr].seconds) {
+  //check if we"ve found a beginning of the paragraph
+  // - if so, don"t need to snap
+  if (time === timingData.time[locptr].seconds) {
     showNscroll(locptr);
     seeking = false;
   }
   else {
     //snap play to start time of paragraph
     console.log("snapping from requested %s to %s",
-                time, timing_data.time[locptr].seconds);
+                time, timingData.time[locptr].seconds);
     seekSnap = true;
-    player.setCurrentTime(timing_data.time[locptr].seconds);
+    player.setCurrentTime(timingData.time[locptr].seconds);
   }
 }
 
 function processSeekSnap(time) {
 
-  console.log("snap complete: snap time: %s, ptime: %s", time, timing_data.time[locptr].seconds);
+  console.log("snap complete: snap time: %s, ptime: %s", time, timingData.time[locptr].seconds);
   showNscroll(locptr);
 
   console.log("-------------------------");
@@ -69,10 +69,10 @@ function processSeekSnap(time) {
 }
 
 function showNscroll(idx) {
-  var tinfo = timing_data.time[idx];
+  var tinfo = timingData.time[idx];
 
   if (prevptr > -1) {
-    $("#" + timing_data.time[prevptr].id).removeClass(hilightClass);
+    $("#" + timingData.time[prevptr].id).removeClass(hilightClass);
   }
 
   $("#" + tinfo.id).addClass(hilightClass);
@@ -83,24 +83,24 @@ function showNscroll(idx) {
 }
 
 function getTime(idx) {
-  if (idx < 0 || idx >= timing_data.time.length ) {
+  if (idx < 0 || idx >= timingData.time.length ) {
     return 60 * 60 *24; //return a big number
   }
 
-  return timing_data.time[idx].seconds;
+  return timingData.time[idx].seconds;
 }
 
 function getTimeInfo(idx) {
-  if (idx < 0 || idx >= timing_data.time.length ) {
-    return {id: "xx", seconds: 0}
+  if (idx < 0 || idx >= timingData.time.length ) {
+    return {id: "xx", seconds: 0};
   }
 
-  return timing_data.time[idx];
+  return timingData.time[idx];
 }
 
 //audio is playing: play time at arg: current
 function processCurrentTime(current) {
-  if (locptr == -1 || current > getTime(locptr + 1)) {
+  if (locptr === -1 || current > getTime(locptr + 1)) {
     debugPlayPosition("hilight event", current);
     locptr++;
     showNscroll(locptr);
@@ -120,27 +120,27 @@ function debugPlayPosition(msg, time) {
 module.exports = {
 
   //highlight supported when timing data available
-  initialize: function(css_class) {
+  initialize: function(cssClass) {
     var rc = {};
 
-    if (typeof window.cmi_audio_timing_data !== "undefined") {
+    if (typeof window.cmiAudioTimingData !== "undefined") {
       console.log("timing data available");
 
-      timing_data = cmi_audio_timing_data;
-      rc.startTime = timing_data.time[0].seconds;
+      timingData = cmiAudioTimingData;
+      rc.startTime = timingData.time[0].seconds;
 
       //indicate timing data available
       enabled = true;
 
-      //define id's for each paragraph in the narrative div
-      // - these id's are referenced by the timing data
-      $('.narrative p').each(function(idx) {
-        $(this).attr('id', 'p' + idx);
+      //define id"s for each paragraph in the narrative div
+      // - these id"s are referenced by the timing data
+      $(".narrative p").each(function(idx) {
+        $(this).attr("id", "p" + idx);
       });
     }
 
-    if (typeof css_class !== "undefined") {
-      hilightClass = css_class;
+    if (typeof cssClass !== "undefined") {
+      hilightClass = cssClass;
     }
 
     rc.enabled = enabled;
@@ -152,8 +152,8 @@ module.exports = {
     player = p;
   },
 
-  //don't process time event when seeking
-  update_time: function(time) {
+  //don"t process time event when seeking
+  updateTime: function(time) {
     if (!enabled || seeking) {
       return;
     }

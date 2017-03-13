@@ -2,20 +2,20 @@
 
 var isDirty = false;
 var message = "Please submit your timing data before leaving the page! To do so, " +
-  "open the side bar menu and click on the 'send icon' next to the 'capture' option."
+  "open the side bar menu and click on the 'send icon' next to the 'capture' option.";
 
 module.exports = {
 
   init: function() {
     window.onload = function() {
-        window.addEventListener("beforeunload", function (e) {
-            if (!isDirty) {
-              return undefined;
-            }
+      window.addEventListener("beforeunload", function (e) {
+        if (!isDirty) {
+          return undefined;
+        }
 
-            (e || window.event).returnValue = message; //Gecko + IE
-            return message; //Gecko + Webkit, Safari, Chrome etc.
-        });
+        (e || window.event).returnValue = message; //Gecko + IE
+        return message; //Gecko + Webkit, Safari, Chrome etc.
+      });
     };
   },
 

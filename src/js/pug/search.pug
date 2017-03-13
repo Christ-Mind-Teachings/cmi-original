@@ -1,0 +1,24 @@
+-
+  function getUnitName(unit) {
+    var id = unit.substr(1);
+    var number = Number.parseInt(id);
+    return "Lesson " + number;
+  }
+
+mixin hitList(book, hits)
+  h3= book
+  ul.fa-ul
+    each val in hits
+      - var url = val.base + "?s=show" + val.location;
+      - var unit = getUnitName(val.unit);
+      li: i.fa.fa-search
+        a(href=url) &nbsp; #{unit}
+        p !{val.context}
+
+if woh
+  +hitList("Way of the Heart", woh)
+if wot
+  +hitList("Way of Transformation", wot)
+if wok
+  +hitList("Way of Knowning", wok)
+

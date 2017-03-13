@@ -1,4 +1,4 @@
-var cmi_audio_timing_data = { title: 'Way of the Heart - Lesson Two',
+var cmiAudioTimingData = { title: 'Way of the Heart - Lesson Two',
   time: 
    [ { id: 'p0', seconds: 0 },
      { id: 'p1', seconds: 7.736 },
