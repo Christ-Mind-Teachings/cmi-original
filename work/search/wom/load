@@ -3,10 +3,17 @@
 var AWS = require("aws-sdk");
 var fs = require('fs');
 var program = require("commander");
+var local = "http://localhost:8000";
+var remote = "https://dynamodb.us-east-1.amazonaws.com";
+
+var awsConfig = {
+  region: "us-east-1"
+};
 
 program
   .version('0.0.1')
   .usage('[options] <file ...>')
+  .option('-e, --endpoint <dblocation>', "Db location, either local or remote")
   .option('-t, --table <table>', 'Table Name')
   .option('-v, --verify [verify]', 'Verify input files but don\'t load')
   .parse(process.argv);
@@ -21,11 +28,19 @@ if (!program.directory && program.args.length == 0) {
   process.exit(1);
 }
 
-AWS.config.update({
-  region: "us-east-1",
-  endpoint: "https://dynamodb.us-east-1.amazonaws.com"
-  //endpoint: "http://localhost:8000"
-});
+if (!program.endpoint) {
+  console.log("specify endpoint of either 'local' or 'remote'");
+  process.exit(1);
+}
+
+if (program.endpoint === "remote") {
+  awsConfig.endpoint = remote;
+}
+else {
+  awsConfig.endpoint = local;
+}
+
+AWS.config.update(awsConfig);
 
 var docClient = new AWS.DynamoDB.DocumentClient();
 

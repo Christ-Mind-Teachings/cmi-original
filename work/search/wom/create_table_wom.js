@@ -1,10 +1,31 @@
 var AWS = require("aws-sdk");
+var program = require("commander");
 
-AWS.config.update({
-  region: "us-east-1",
-  endpoint: "https://dynamodb.us-east-1.amazonaws.com"
-  //endpoint: "http://localhost:8000"
-});
+var local = "http://localhost:8000";
+var remote = "https://dynamodb.us-east-1.amazonaws.com";
+
+var awsConfig = {
+  region: "us-east-1"
+};
+
+program
+  .version('0.0.1')
+  .option('-e, --endpoint <dblocation>', "Db location, either local or remote")
+  .parse(process.argv);
+
+if (!program.endpoint) {
+  console.log("specify endpoint of either '-e local' or '-e remote'");
+  process.exit(1);
+}
+
+if (program.endpoint === "remote") {
+  awsConfig.endpoint = remote;
+}
+else {
+  awsConfig.endpoint = local;
+}
+
+AWS.config.update(awsConfig);
 
 var dynamodb = new AWS.DynamoDB();
 
@@ -24,6 +45,7 @@ var params = {
         WriteCapacityUnits: 10
     }
 };
+*/
 
 var params = {
     TableName : "wom",
@@ -40,8 +62,8 @@ var params = {
         WriteCapacityUnits: 10
     }
 };
-*/
 
+/*
 var params = {
     TableName : "wom",
     KeySchema: [
@@ -55,6 +77,7 @@ var params = {
         WriteCapacityUnits: 10
     }
 };
+*/
 
 dynamodb.createTable(params, function(err, data) {
     if (err) {

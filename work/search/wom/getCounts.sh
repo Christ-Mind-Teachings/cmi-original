@@ -11,8 +11,5 @@ else
   db="local"
 fi
 
-# ./prep_all.sh
+node getCount.js -e ${db} | sort -n -k 4,6 | tee wom_${db}_count.txt
 
-for i in woh wot wok; do
-cat ${i}.txt | xargs ./load -t wom -e $db > ${i}.log
-done
