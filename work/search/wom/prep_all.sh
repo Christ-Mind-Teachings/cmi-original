@@ -3,6 +3,6 @@
 # load all wom into dynamodb
 for i in woh wot wok; do
   cd $i
-  ./prep.sh
+  ./prep.sh > ../${i}prep.log
   cd ..
 done

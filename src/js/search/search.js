@@ -101,7 +101,8 @@ function markSearchHits(searchHits, searchData, state) {
 
   //Note: this regex wont find a string within a string - only finds
   //matches that begin and end on word boundaries
-  var regex = new RegExp("(?:^|\\b)(" + searchData.query + ")(?:$|\\b)", "gim");
+  //var regex = new RegExp("(?:^|\\b)(" + searchData.query + ")(?:$|\\b)", "gim");
+  var regex = new RegExp("(?:^|\\b)(" + searchData.query + ")(?:$|\\b|)", "gim");
   for (i = 0; i < searchHits.length; i++) {
     var id = searchHits[i].location.substr(1);
     var el = document.getElementById(id);

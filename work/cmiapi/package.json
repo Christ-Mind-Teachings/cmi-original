@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "claudia create --name cmi2-api --region us-east-1 --api-module index --policies policies",
-    "deploy": "claudia update"
+    "deploy": "claudia update",
+    "predeploy": "eslint -c ./config/eslint.json ./index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "claudia": "^2.9.0"
+    "claudia": "^2.9.0",
+    "eslint": "^3.17.1"
   },
   "dependencies": {
     "aws-sdk": "^2.22.0",

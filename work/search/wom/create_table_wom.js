@@ -24,7 +24,6 @@ var params = {
         WriteCapacityUnits: 10
     }
 };
-*/
 
 var params = {
     TableName : "wom",
@@ -34,6 +33,21 @@ var params = {
     ],
     AttributeDefinitions: [
         { AttributeName: "bid", AttributeType: "N" },
+        { AttributeName: "key", AttributeType: "N" }
+    ],
+    ProvisionedThroughput: {
+        ReadCapacityUnits: 10,
+        WriteCapacityUnits: 10
+    }
+};
+*/
+
+var params = {
+    TableName : "wom",
+    KeySchema: [
+        { AttributeName: "key", KeyType: "HASH" }  //Sort key
+    ],
+    AttributeDefinitions: [
         { AttributeName: "key", AttributeType: "N" }
     ],
     ProvisionedThroughput: {

@@ -117,6 +117,8 @@ $1 ~ /##/ {
     gsub(/^ */, "", text)
     # collapse two spaces into one
     gsub(/  */," ",text)
+    # remove underscores - text bracketed by __xxx__ are bolded by markdown
+    gsub(/__/,"",text)
     printf "    \"text\": \"%s\"\n  }\n", tolower(text)
     l = -1
     text = ""
