@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build:cmi": "browserify ./src/js/cmi.js -o ./public/js/cmi.js",
-    "prebuild:cmi": "eslint -c ./config/eslint.json ./src/js/config/** ./src/js/ds/** ./src/js/h/** ./src/js/ui/** ./src/js/util/** ./src/js/search/** ./src/js/cmi.js",
+    "lint": "eslint -c ./config/eslint.json --ignore-path ./config/eslintignore ./src/js/**",
+    "prebuild:cmi": "npm run lint",
     "build:search": "browserify ./src/js/search.js -o ./public/js/search.js",
-    "prebuild:search": "eslint -c ./config/eslint.json ./src/js/search/** ./src/js/search.js"
+    "prebuild:search": "npm run lint"
   },
   "repository": {
     "type": "git",

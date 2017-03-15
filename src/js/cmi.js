@@ -8,6 +8,7 @@ var url = require("./util/url");
 var wrap = require("./h/wrap");
 var scroll = require("scroll-into-view");
 var audio = require("./ui/mediaElements");
+var bookmark = require("./ui/bookmark");
 var search = require("./search/search");
 
 var unwrap;
@@ -63,6 +64,8 @@ document.addEventListener("DOMContentLoaded", function() {
     hidePlayer: ".hide-player",
     hilightClass: "hilite"
   });
+
+  bookmark.initialize();
 
 });
 

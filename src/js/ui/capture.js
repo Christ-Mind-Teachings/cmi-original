@@ -163,7 +163,8 @@ function enableSidebarTimeCapture() {
 //create listeners for each paragraph and
 //show rewind and speed player controls
 function createListener() {
-  $(".transcript p i.fa").each(function(idx) {
+  //$(".transcript p i.fa").each(function(idx) {
+  $(".transcript p i.timing").each(function(idx) {
     $(this).on("click", function(e) {
       e.preventDefault();
       captureRequested = true;
@@ -233,13 +234,15 @@ function createListener() {
 
 function toggleMarkers() {
   var ids = $(".transcript p").attr("id");
-  var fa = $(".transcript p i.fa");
+  var fa = $(".transcript p i.timing");
+  //var fa = $(".transcript p i.fa");
 
   //create markers is not on page
   //- do markers exist?
   if (fa.length !== 0) {
     //yes - toggle display
-    $(".transcript p i.fa").toggle();
+    //$(".transcript p i.fa").toggle();
+    $(".transcript p i.timing").toggle();
     if ($(".transcript").hasClass("capture")) {
       $(".transcript").removeClass("capture");
     }
@@ -250,7 +253,7 @@ function toggleMarkers() {
   else if (typeof ids !== "undefined") {
     console.log("paragraph id's already defined, adding marker");
     $(".transcript p").each(function(idx) {
-      $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
+      $(this).prepend("<i class='timing fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
     });
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
@@ -260,23 +263,6 @@ function toggleMarkers() {
     $(".transcript").addClass("capture");
     createListener();
   }
-  /*
-  else {
-    //define id"s for each paragraph in the narrative div
-    // - these id"s are referenced by the timing data
-    console.log("adding marker to .transcript p");
-    $(".transcript p").each(function(idx) {
-      //$(this).attr("id", "p" + idx);
-      $(this).prepend("<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>");
-    });
-
-    //automatically record a time of 0 for paragraph 0. This allows user to change
-    //the p0 time when it doesn"t start at 0.
-    autoCapture({id: "p0", seconds: 0});
-    $(".transcript").addClass("capture");
-    createListener();
-  }
-  */
 }
 
 module.exports = {

@@ -6377,6 +6377,7 @@ var url = require("./util/url");
 var wrap = require("./h/wrap");
 var scroll = require("scroll-into-view");
 var audio = require("./ui/mediaElements");
+var bookmark = require("./ui/bookmark");
 var search = require("./search/search");
 
 var unwrap;
@@ -6433,10 +6434,12 @@ document.addEventListener("DOMContentLoaded", function() {
     hilightClass: "hilite"
   });
 
+  bookmark.initialize();
+
 });
 
 
-},{"./h/wrap":43,"./search/search":44,"./ui/mediaElements":47,"./util/url":50,"scroll-into-view":24}],40:[function(require,module,exports){
+},{"./h/wrap":43,"./search/search":44,"./ui/bookmark":45,"./ui/mediaElements":48,"./util/url":51,"scroll-into-view":24}],40:[function(require,module,exports){
 "use strict";
 
 function getWomBookTitle(book) {
@@ -7099,7 +7102,163 @@ module.exports = {
   }
 };
 
-},{"../config/cmi":40,"../util/url":50,"store":25,"underscore":37}],45:[function(require,module,exports){
+},{"../config/cmi":40,"../util/url":51,"store":25,"underscore":37}],45:[function(require,module,exports){
+"use strict";
+
+var store = require("store");
+var _ = require("underscore");
+
+//the sidebar 'Bookmark' option - toggles display of
+//paragraph bookmarks
+function addBookmarkToggleListener() {
+  $(".bookmark").on("click", function(e) {
+    e.preventDefault();
+    $(".transcript p i.bkmark").each(function(idx) {
+      if ($(this).hasClass("bkmark-hide")) {
+        $(this).removeClass("bkmark-hide");
+      }
+      else {
+        //don't hide set bookmarks
+        if ($(this).hasClass("fa-bookmark-o")) {
+          $(this).addClass("bkmark-hide");
+        }
+      }
+    });
+  });
+}
+
+function addBookMarkers() {
+  $(".transcript p").each(function(idx) {
+    $(this).prepend("<i class='bkmark bkmark-hide fa fa-pull-left fa-bookmark-o'></i>");
+  });
+}
+
+function showBookmarks() {
+  var bookmarks = store.get("bookmarks");
+  var page;
+  var id;
+  var i;
+
+  if (!bookmarks) {
+    return;
+  }
+
+  page = _.findIndex(bookmarks.location, function(val) {
+    return val.page === this.pathname;
+  }, {pathname: location.pathname});
+
+  if (page === -1) {
+    return;
+  }
+
+  for(i = 0; i < bookmarks.location[page].mark.length; i++) {
+    id = bookmarks.location[page].mark[i];
+    $("#"+id+" i.bkmark").removeClass("fa-bookmark-o").addClass("fa-bookmark").removeClass("bkmark-hide");
+  }
+
+}
+
+function storeBookmark(id) {
+  console.log("storeBookmark: %s", id);
+  var bookmarks = store.get("bookmarks");
+  var page = 0;
+
+  if (!bookmarks) {
+    console.log("Adding first bookmark");
+    bookmarks = { location: [{
+        page: location.pathname,
+        mark: [id]
+      }]
+    };
+  }
+  else {
+    page = _.findIndex(bookmarks.location, function(val) {
+      return val.page === this.pathname;
+    }, {pathname: location.pathname});
+
+    //bookmark for new page
+    if (page === -1) {
+      bookmarks.location.push({page: location.pathname, mark: [id]});
+      page = bookmarks.location.length - 1;
+    }
+    else {
+      bookmarks.location[page].mark.push(id);
+    }
+  }
+
+  store.set("bookmarks", bookmarks);
+  console.log("Page has %s bookmarks", bookmarks.location[page].mark.length);
+  //console.log(bookmarks);
+}
+
+function removeBookmark(id) {
+  console.log("removeBookmark: %s", id);
+  var bookmarks = store.get("bookmarks");
+  var page = 0;
+  var mark;
+
+  if (!bookmarks) {
+    console.log("No bookmarks to remove");
+  }
+  else {
+    page = _.findIndex(bookmarks.location, function(val) {
+      return val.page === this.pathname;
+    }, {pathname: location.pathname});
+
+    if (page === -1) {
+      console.log("page has no bookmarks to remove");
+      return;
+    }
+    else {
+      mark = _.findIndex(bookmarks.location[page].mark, function(val) {
+        return val === this.id;
+      }, {id: id});
+
+      if (mark === -1) {
+        console.log("bookmark %s not set on page");
+        return;
+      }
+      else {
+        bookmarks.location[page].mark.splice(mark, 1);
+      }
+    }
+  }
+
+  store.set("bookmarks", bookmarks);
+  console.log("Page has %s bookmarks", bookmarks.location[page].mark.length);
+  //console.log(bookmarks);
+}
+function addBookmarkListener() {
+  $(".transcript p i.bkmark").each(function(idx) {
+    $(this).on("click", function(e) {
+      var id;
+      e.preventDefault();
+      if ($(this).hasClass("fa-bookmark-o")) {
+        $(this).removeClass("fa-bookmark-o").addClass("fa-bookmark");
+        id = $(this).parent().attr("id");
+        storeBookmark(id);
+      }
+      else {
+        $(this).removeClass("fa-bookmark").addClass("fa-bookmark-o");
+        id = $(this).parent().attr("id");
+        removeBookmark(id);
+      }
+    });
+  });
+}
+
+module.exports = {
+  initialize: function() {
+    //store.clearAll();
+    addBookMarkers();
+    showBookmarks();
+    addBookmarkListener();
+    addBookmarkToggleListener();
+  }
+};
+
+
+},{"store":25,"underscore":37}],46:[function(require,module,exports){
 /* eslint no-alert: "off" */
 
 "use strict";
@@ -7265,7 +7424,8 @@ function enableSidebarTimeCapture() {
 //create listeners for each paragraph and
 //show rewind and speed player controls
 function createListener() {
-  $(".transcript p i.fa").each(function(idx) {
+  //$(".transcript p i.fa").each(function(idx) {
+  $(".transcript p i.timing").each(function(idx) {
     $(this).on("click", function(e) {
       e.preventDefault();
       captureRequested = true;
@@ -7335,13 +7495,15 @@ function createListener() {
 
 function toggleMarkers() {
   var ids = $(".transcript p").attr("id");
-  var fa = $(".transcript p i.fa");
+  var fa = $(".transcript p i.timing");
+  //var fa = $(".transcript p i.fa");
 
   //create markers is not on page
   //- do markers exist?
   if (fa.length !== 0) {
     //yes - toggle display
-    $(".transcript p i.fa").toggle();
+    //$(".transcript p i.fa").toggle();
+    $(".transcript p i.timing").toggle();
     if ($(".transcript").hasClass("capture")) {
       $(".transcript").removeClass("capture");
     }
@@ -7352,7 +7514,7 @@ function toggleMarkers() {
   else if (typeof ids !== "undefined") {
     console.log("paragraph id's already defined, adding marker");
     $(".transcript p").each(function(idx) {
-      $(this).prepend("<i class='fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
+      $(this).prepend("<i class='timing fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
     });
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
@@ -7362,23 +7524,6 @@ function toggleMarkers() {
     $(".transcript").addClass("capture");
     createListener();
   }
-  /*
-  else {
-    //define id"s for each paragraph in the narrative div
-    // - these id"s are referenced by the timing data
-    console.log("adding marker to .transcript p");
-    $(".transcript p").each(function(idx) {
-      //$(this).attr("id", "p" + idx);
-      $(this).prepend("<i class="fa fa-2x fa-border fa-pull-left fa-bullseye"></i>");
-    });
-
-    //automatically record a time of 0 for paragraph 0. This allows user to change
-    //the p0 time when it doesn"t start at 0.
-    autoCapture({id: "p0", seconds: 0});
-    $(".transcript").addClass("capture");
-    createListener();
-  }
-  */
 }
 
 module.exports = {
@@ -7424,7 +7569,7 @@ module.exports = {
 
 };
 
-},{"../ds/capture":41,"../util/are-you-sure":49,"./hilight":46,"./modal":48,"underscore":37}],46:[function(require,module,exports){
+},{"../ds/capture":41,"../util/are-you-sure":50,"./hilight":47,"./modal":49,"underscore":37}],47:[function(require,module,exports){
 /*
  * NOTE:
  *
@@ -7632,7 +7777,7 @@ module.exports = {
 };
 
 
-},{"scroll-into-view":24,"underscore":37}],47:[function(require,module,exports){
+},{"scroll-into-view":24,"underscore":37}],48:[function(require,module,exports){
 "use strict";
 
 var hilight = require("./hilight");
@@ -7786,7 +7931,7 @@ module.exports = {
 
 };
 
-},{"./capture":45,"./hilight":46}],48:[function(require,module,exports){
+},{"./capture":46,"./hilight":47}],49:[function(require,module,exports){
 "use strict";
 
 module.exports = {
@@ -7815,7 +7960,7 @@ module.exports = {
 };
 
 
-},{}],49:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 "use strict";
 
 var isDirty = false;
@@ -7846,7 +7991,7 @@ module.exports = {
   }
 };
 
-},{}],50:[function(require,module,exports){
+},{}],51:[function(require,module,exports){
 /*
  * Url utilities
  */
