@@ -4,6 +4,7 @@ var axios = require("axios");
 var store = require("store");
 var runtime = require("pug-runtime");
 var config = require("../config/cmi");
+var templates = require("../pug/templates");
 
 var searchApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";
 var requestApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";
@@ -32,7 +33,8 @@ function showSearchResults(data) {
   console.log("showSearchResults(): ", data);
 
   // searchResults is a function created by pug
-  var html = searchResults(data);
+  //var html = searchResults(data);
+  var html = templates.search(data);
   var resultsDiv = document.getElementById("search-results");
   resultsDiv.innerHTML = html;
 }

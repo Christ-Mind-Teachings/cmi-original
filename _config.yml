@@ -25,8 +25,12 @@ encoding: utf-8
 collections:
   wom:
     output: true
+    title: Way of Mastery
+    url: /wom/intro/wom/
   nwffacim:
     output: true
+    title: Northwest Foundation for ACIM
+    url: /nwffacim/intro/nwffacim/
 
 defaults:
 
@@ -302,9 +306,9 @@ fb-appId:     448658485318107
 
 # Exclusions from the final site
 exclude: [
-  #   _wom/woh,
-  #   _wom/wot,
-  #   _wom/wok,
+  #    _wom/woh,
+  #    _wom/wot,
+  #    _wom/wok,
   #    _wom/early,
   #    _wom/questions,
   #    _nwffacim/grad,

@@ -8,7 +8,9 @@
     "lint": "eslint -c ./config/eslint.json --ignore-path ./config/eslintignore ./src/js/**",
     "prebuild:cmi": "npm run lint",
     "build:search": "browserify ./src/js/search.js -o ./public/js/search.js",
-    "prebuild:search": "npm run lint"
+    "prebuild:search": "npm run lint",
+    "pug": "puglatizer -d src/js/pug -o src/js/pug/templates.js",
+    "postpug": "js-beautify -r -s 2 -f src/js/pug/templates.js"
   },
   "repository": {
     "type": "git",

@@ -181,7 +181,7 @@ module.exports = function xhrAdapter(config) {
 };
 
 }).call(this,require('_process'))
-},{"../core/createError":9,"./../core/settle":12,"./../helpers/btoa":16,"./../helpers/buildURL":17,"./../helpers/cookies":19,"./../helpers/isURLSameOrigin":21,"./../helpers/parseHeaders":23,"./../utils":25,"_process":27}],3:[function(require,module,exports){
+},{"../core/createError":9,"./../core/settle":12,"./../helpers/btoa":16,"./../helpers/buildURL":17,"./../helpers/cookies":19,"./../helpers/isURLSameOrigin":21,"./../helpers/parseHeaders":23,"./../utils":25,"_process":28}],3:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -730,7 +730,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 module.exports = defaults;
 
 }).call(this,require('_process'))
-},{"./adapters/http":2,"./adapters/xhr":2,"./helpers/normalizeHeaderName":22,"./utils":25,"_process":27}],15:[function(require,module,exports){
+},{"./adapters/http":2,"./adapters/xhr":2,"./helpers/normalizeHeaderName":22,"./utils":25,"_process":28}],15:[function(require,module,exports){
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -1392,6 +1392,8 @@ module.exports = {
 },{"./helpers/bind":15}],26:[function(require,module,exports){
 
 },{}],27:[function(require,module,exports){
+arguments[4][26][0].apply(exports,arguments)
+},{"dup":26}],28:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -1573,7 +1575,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 'use strict';
 
 var pug_has_own_property = Object.prototype.hasOwnProperty;
@@ -1829,7 +1831,7 @@ function pug_rethrow(err, filename, lineno, str){
   throw err;
 };
 
-},{"fs":26}],29:[function(require,module,exports){
+},{"fs":26}],30:[function(require,module,exports){
 var engine = require('../src/store-engine')
 
 var storages = require('../storages/all')
@@ -1837,7 +1839,7 @@ var plugins = [require('../plugins/json2')]
 
 module.exports = engine.createStore(storages, plugins)
 
-},{"../plugins/json2":30,"../src/store-engine":32,"../storages/all":34}],30:[function(require,module,exports){
+},{"../plugins/json2":31,"../src/store-engine":33,"../storages/all":35}],31:[function(require,module,exports){
 module.exports = json2Plugin
 
 function json2Plugin() {
@@ -1845,7 +1847,7 @@ function json2Plugin() {
 	return {}
 }
 
-},{"./lib/json2":31}],31:[function(require,module,exports){
+},{"./lib/json2":32}],32:[function(require,module,exports){
 //  json2.js
 //  2016-10-28
 //  Public Domain.
@@ -2352,7 +2354,7 @@ if (typeof JSON !== "object") {
         };
     }
 }());
-},{}],32:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 var util = require('./util')
 var slice = util.slice
 var pluck = util.pluck
@@ -2570,7 +2572,7 @@ function createStore(storages, plugins) {
 	return store
 }
 
-},{"./util":33}],33:[function(require,module,exports){
+},{"./util":34}],34:[function(require,module,exports){
 (function (global){
 var assign = make_assign()
 var create = make_create()
@@ -2692,7 +2694,7 @@ function isObject(val) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],34:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 module.exports = {
 	// Listed in order of usage preference
 	'localStorage': require('./localStorage'),
@@ -2703,7 +2705,7 @@ module.exports = {
 	'memoryStorage': require('./memoryStorage'),
 }
 
-},{"./cookieStorage":35,"./localStorage":36,"./memoryStorage":37,"./oldFF-globalStorage":38,"./oldIE-userDataStorage":39,"./sessionStorage":40}],35:[function(require,module,exports){
+},{"./cookieStorage":36,"./localStorage":37,"./memoryStorage":38,"./oldFF-globalStorage":39,"./oldIE-userDataStorage":40,"./sessionStorage":41}],36:[function(require,module,exports){
 // cookieStorage is useful Safari private browser mode, where localStorage
 // doesn't work but cookies do. This implementation is adopted from
 // https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage
@@ -2766,7 +2768,7 @@ function _has(key) {
 	return (new RegExp("(?:^|;\\s*)" + escape(key).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(doc.cookie)
 }
 
-},{"../src/util":33}],36:[function(require,module,exports){
+},{"../src/util":34}],37:[function(require,module,exports){
 var util = require('../src/util')
 var Global = util.Global
 
@@ -2806,7 +2808,7 @@ function clearAll() {
 	return localStorage().clear()
 }
 
-},{"../src/util":33}],37:[function(require,module,exports){
+},{"../src/util":34}],38:[function(require,module,exports){
 // memoryStorage is a useful last fallback to ensure that the store
 // is functions (meaning store.get(), store.set(), etc will all function).
 // However, stored values will not persist when the browser navigates to
@@ -2847,7 +2849,7 @@ function clearAll(key) {
 	memoryStorage = {}
 }
 
-},{}],38:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 // oldFF-globalStorage provides storage for Firefox
 // versions 6 and 7, where no localStorage, etc
 // is available.
@@ -2891,7 +2893,7 @@ function clearAll() {
 	})
 }
 
-},{"../src/util":33}],39:[function(require,module,exports){
+},{"../src/util":34}],40:[function(require,module,exports){
 // oldIE-userDataStorage provides storage for Internet Explorer
 // versions 6 and 7, where no localStorage, sessionStorage, etc
 // is available.
@@ -3020,7 +3022,7 @@ function _makeIEStorageElFunction() {
 	}
 }
 
-},{"../src/util":33}],40:[function(require,module,exports){
+},{"../src/util":34}],41:[function(require,module,exports){
 var util = require('../src/util')
 var Global = util.Global
 
@@ -3060,7 +3062,25 @@ function clearAll() {
 	return sessionStorage().clear()
 }
 
-},{"../src/util":33}],41:[function(require,module,exports){
+},{"../src/util":34}],42:[function(require,module,exports){
+"use strict";
+
+function getWomBookTitle(book) {
+  var title = "???" ;
+  switch(book) {
+    case "woh":
+      title = "Way of the Heart";
+      break;
+    case "wot":
+      title = "Way of Transformation";
+      break;
+    case "wok":
+      title = "Way of Knowing";
+      break;
+  }
+  return title;
+}
+
 module.exports = {
   wom: {
     title: "Way of Mastery",
@@ -3069,10 +3089,63 @@ module.exports = {
   nwffacim: {
     title: "Northwest Foundation for ACIM",
     books: ["yaa", "grad", "acim"]
+  },
+
+  getTitle: function(source, book, unit) {
+    var title;
+    var lesson;
+    if (source === "wom") {
+      title = getWomBookTitle(book);
+      lesson = unit.substr(1);
+      title = title + " - Lesson " + Number.parseInt(lesson, 10);
+    }
+    else {
+      title = "not implemented";
+    }
+    return title;
   }
 };
 
-},{}],42:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
+;(function(root,factory){
+    if (typeof define === 'function' && define.amd) {
+        define([], factory);
+    } else if (typeof exports === 'object') {
+        module.exports = factory();
+    } else {
+        if (typeof root === 'undefined' || root !== Object(root)) {
+            throw new Error('puglatizer: window does not exist or is not an object');
+        }
+        root.puglatizer = factory();
+    }
+}(this, function () {
+    function pug_classes_object(val) { var classString = '', padding = ''; for (var key in val) { if (key && val[key] && pug_has_own_property.call(val, key)) { var classString = classString + padding + key; var padding = ' '; } } return classString; }    function pug_classes_array(val, escaping) { var classString = '', className, padding = '', escapeEnabled = Array.isArray(escaping); for (var i = 0; i < val.length; i++) { var className = pug_classes(val[i]); if (!className) continue; escapeEnabled && escaping[i] && (className = pug_escape(className)); var classString = classString + padding + className; var padding = ' '; } return classString; }    function pug_merge(r,e){if(1===arguments.length){for(var t=r[0],a=1;a<r.length;a++)t=pug_merge(t,r[a]);return t}for(var g in e)if("class"===g){var n=r[g]||[];r[g]=(Array.isArray(n)?n:[n]).concat(e[g]||[])}else if("style"===g){var n=pug_style(r[g]),s=pug_style(e[g]);r[g]=n+s}else r[g]=e[g];return r}
+    function pug_classes(s,r){return Array.isArray(s)?pug_classes_array(s,r):s&&"object"==typeof s?pug_classes_object(s):s||""}
+    function pug_style(r){if(!r)return"";if("object"==typeof r){var t="";for(var e in r)pug_has_own_property.call(r,e)&&(t=t+e+":"+r[e]+";");return t}return r+="",";"!==r[r.length-1]?r+";":r}
+    function pug_attr(t,e,n,f){return e!==!1&&null!=e&&(e||"class"!==t&&"style"!==t)?e===!0?" "+(f?t:t+'="'+t+'"'):("function"==typeof e.toJSON&&(e=e.toJSON()),"string"==typeof e||(e=JSON.stringify(e),n||-1===e.indexOf('"'))?(n&&(e=pug_escape(e))," "+t+'="'+e+'"'):" "+t+"='"+e.replace(/'/g,"&#39;")+"'"):""}
+    function pug_attrs(t,r){var a="";for(var s in t)if(pug_has_own_property.call(t,s)){var u=t[s];if("class"===s){u=pug_classes(u),a=pug_attr(s,u,!1,r)+a;continue}"style"===s&&(u=pug_style(u)),a+=pug_attr(s,u,!1,r)}return a}
+    function pug_escape(e){var a=""+e,t=(/["&<>]/).exec(a);if(!t)return e;var r,c,n,s="";for(r=t.index,c=0;r<a.length;r++){switch(a.charCodeAt(r)){case 34:n="&quot;";break;case 38:n="&amp;";break;case 60:n="&lt;";break;case 62:n="&gt;";break;default:continue}c!==r&&(s+=a.substring(c,r)),c=r+1,s+=n}return c!==r?s+a.substring(c,r):s}
+    function pug_rethrow(n,e,r,t){if(!(n instanceof Error))throw n;if(!("undefined"==typeof window&&e||t))throw n.message+=" on line "+r,n;try{t=t||require("fs").readFileSync(e,"utf8")}catch(i){pug_rethrow(n,null,r)}var a=3,o=t.split("\n"),h=Math.max(r-a,0),s=Math.min(o.length,r+a),a=o.slice(h,s).map(function(n,e){var t=e+h+1;return(t==r?"  > ":"    ")+t+"| "+n}).join("\n");throw n.path=e,n.message=(e||"Pug")+":"+r+"\n"+a+"\n\n"+n.message,n}
+    var pug = {
+    	merge:function pug_merge(r,e){if(1===arguments.length){for(var t=r[0],a=1;a<r.length;a++)t=pug_merge(t,r[a]);return t}for(var g in e)if("class"===g){var n=r[g]||[];r[g]=(Array.isArray(n)?n:[n]).concat(e[g]||[])}else if("style"===g){var n=pug_style(r[g]),s=pug_style(e[g]);r[g]=n+s}else r[g]=e[g];return r},
+    	classes:function pug_classes(s,r){return Array.isArray(s)?pug_classes_array(s,r):s&&"object"==typeof s?pug_classes_object(s):s||""},
+    	style:function pug_style(r){if(!r)return"";if("object"==typeof r){var t="";for(var e in r)pug_has_own_property.call(r,e)&&(t=t+e+":"+r[e]+";");return t}return r+="",";"!==r[r.length-1]?r+";":r},
+    	attr:function pug_attr(t,e,n,f){return e!==!1&&null!=e&&(e||"class"!==t&&"style"!==t)?e===!0?" "+(f?t:t+'="'+t+'"'):("function"==typeof e.toJSON&&(e=e.toJSON()),"string"==typeof e||(e=JSON.stringify(e),n||-1===e.indexOf('"'))?(n&&(e=pug_escape(e))," "+t+'="'+e+'"'):" "+t+"='"+e.replace(/'/g,"&#39;")+"'"):""},
+    	attrs:function pug_attrs(t,r){var a="";for(var s in t)if(pug_has_own_property.call(t,s)){var u=t[s];if("class"===s){u=pug_classes(u),a=pug_attr(s,u,!1,r)+a;continue}"style"===s&&(u=pug_style(u)),a+=pug_attr(s,u,!1,r)}return a},
+    	escape:function pug_escape(e){var a=""+e,t=(/["&<>]/).exec(a);if(!t)return e;var r,c,n,s="";for(r=t.index,c=0;r<a.length;r++){switch(a.charCodeAt(r)){case 34:n="&quot;";break;case 38:n="&amp;";break;case 60:n="&lt;";break;case 62:n="&gt;";break;default:continue}c!==r&&(s+=a.substring(c,r)),c=r+1,s+=n}return c!==r?s+a.substring(c,r):s},
+    	rethrow:function pug_rethrow(n,e,r,t){if(!(n instanceof Error))throw n;if(!("undefined"==typeof window&&e||t))throw n.message+=" on line "+r,n;try{t=t||require("fs").readFileSync(e,"utf8")}catch(i){pug_rethrow(n,null,r)}var a=3,o=t.split("\n"),h=Math.max(r-a,0),s=Math.min(o.length,r+a),a=o.slice(h,s).map(function(n,e){var t=e+h+1;return(t==r?"  > ":"    ")+t+"| "+n}).join("\n");throw n.path=e,n.message=(e||"Pug")+":"+r+"\n"+a+"\n\n"+n.message,n}
+    }
+
+    var puglatizer = {}
+    puglatizer["bookmark"] = function template(e){var r,a,n,o="";try{var l=e||{};(function(e,a){n=1,n=8,n=18,o+="<ul>",n=19,function(){var e=a;if("number"==typeof e.length)for(var l=0,u=e.length;u>l;l++){var i=e[l];n=20,o+="<li>",n=20,o=o+pug.escape(null==(r=i.page)?"":r)+"</li>"}else{var u=0;for(var l in e){u++;var i=e[l];n=20,o+="<li>",n=20,o=o+pug.escape(null==(r=i.page)?"":r)+"</li>"}}}.call(this),o+="</ul>"}).call(this,"Number"in l?l.Number:"undefined"!=typeof Number?Number:void 0,"bookmarks"in l?l.bookmarks:"undefined"!=typeof bookmarks?bookmarks:void 0)}catch(u){pug.rethrow(u,a,n)}return o};
+
+    puglatizer["search"] = function template(t){var a,i,n,e="",o={};try{var r=t||{};(function(t,i,r,s){function u(a){var i=a.substr(1),n=t.parseInt(i);return"Lesson "+n}n=1,n=8,o.hitList=a=function(t,i){this&&this.block,this&&this.attributes||{};n=9,e+="<h3>",n=9,e=e+pug.escape(null==(a=t)?"":a)+"</h3>",n=10,e+='<ul class="fa-ul">',n=11,function(){var t=i;if("number"==typeof t.length)for(var o=0,r=t.length;r>o;o++){var s=t[o];n=12;var l=s.base+"?s=show"+s.location;n=13;var f=u(s.unit);n=14,e+="<li>",n=14,e+='<i class="fa fa-search">',n=15,e=e+"<a"+pug.attr("href",l,!0,!1)+">",n=15,e+="&nbsp; ",n=15,e=e+pug.escape(null==(a=f)?"":a)+"</a>",n=16,e+="<p>",n=16,e=e+(null==(a=s.context)?"":a)+"</p></i></li>"}else{var r=0;for(var o in t){r++;var s=t[o];n=12;var l=s.base+"?s=show"+s.location;n=13;var f=u(s.unit);n=14,e+="<li>",n=14,e+='<i class="fa fa-search">',n=15,e=e+"<a"+pug.attr("href",l,!0,!1)+">",n=15,e+="&nbsp; ",n=15,e=e+pug.escape(null==(a=f)?"":a)+"</a>",n=16,e+="<p>",n=16,e=e+(null==(a=s.context)?"":a)+"</p></i></li>"}}}.call(this),e+="</ul>"},n=18,i&&(n=19,o.hitList("Way of the Heart",i)),n=20,s&&(n=21,o.hitList("Way of Transformation",s)),n=22,r&&(n=23,o.hitList("Way of Knowning",r))}).call(this,"Number"in r?r.Number:"undefined"!=typeof Number?Number:void 0,"woh"in r?r.woh:"undefined"!=typeof woh?woh:void 0,"wok"in r?r.wok:"undefined"!=typeof wok?wok:void 0,"wot"in r?r.wot:"undefined"!=typeof wot?wot:void 0)}catch(s){pug.rethrow(s,i,n)}return e};
+
+
+    return puglatizer;
+}));
+
+},{"fs":27}],44:[function(require,module,exports){
 "use strict";
 
 var search = require("./search/site_search");
@@ -3087,13 +3160,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-},{"./search/site_search":43,"store":29}],43:[function(require,module,exports){
+},{"./search/site_search":45,"store":30}],45:[function(require,module,exports){
 "use strict";
 
 var axios = require("axios");
 var store = require("store");
 var runtime = require("pug-runtime");
 var config = require("../config/cmi");
+var templates = require("../pug/templates");
 
 var searchApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";
 var requestApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";
@@ -3122,7 +3196,8 @@ function showSearchResults(data) {
   console.log("showSearchResults(): ", data);
 
   // searchResults is a function created by pug
-  var html = searchResults(data);
+  //var html = searchResults(data);
+  var html = templates.search(data);
   var resultsDiv = document.getElementById("search-results");
   resultsDiv.innerHTML = html;
 }
@@ -3190,4 +3265,4 @@ module.exports = {
   }
 };
 
-},{"../config/cmi":41,"axios":1,"pug-runtime":28,"store":29}]},{},[42]);
+},{"../config/cmi":42,"../pug/templates":43,"axios":1,"pug-runtime":29,"store":30}]},{},[44]);
