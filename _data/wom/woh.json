@@ -4,6 +4,8 @@
   },
   "base": "/wom/woh/",
   "intro": "/wom/intro/",
+  "title": "Way of the Heart",
+  "bid": "woh",
   "page": [
     {
       "fid": "woh/",

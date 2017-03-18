@@ -4,6 +4,8 @@
   },
   "base": "/wom/questions/",
   "intro": "/wom/intro/",
+  "title": "Questions",
+  "bid": "questions",
   "page": [
     {
       "fid": "questions/",

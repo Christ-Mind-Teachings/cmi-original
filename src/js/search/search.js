@@ -2,7 +2,7 @@
 
 var store = require("store");
 var url = require("../util/url");
-var config = require("../config/cmi");
+var config = require("../config/config");
 var _ = require("underscore");
 
 var searchResults;
@@ -85,9 +85,11 @@ function getHitArray(data, book, unit) {
       break;
   }
 
-  for(i = 0; i < bookHits.length; i++) {
-    if (bookHits[i].unit === unit) {
-      pageHits.push(bookHits[i]);
+  if (bookHits) {
+    for(i = 0; i < bookHits.length; i++) {
+      if (bookHits[i].unit === unit) {
+        pageHits.push(bookHits[i]);
+      }
     }
   }
 

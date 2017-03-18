@@ -1,6 +1,8 @@
 {
   "base": "/nwffacim/grad/",
   "intro": "/nwffacim/intro/",
+  "title": "Graduation",
+  "bid": "grad",
   "page": [
     {
       "title": "Introduction",

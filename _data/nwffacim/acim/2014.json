@@ -1,8 +1,8 @@
 {
   "domain": {
-    "audio": "uploads/"
+    "audio": "http://www.celestialrealm.com/uploads/"
   },
-  "base": "/nwffacim/acim/2014/",
+  "base": "/nwffacim/2014/",
   "intro": "/nwffacim/intro/",
   "page": [
     {
@@ -10,8 +10,8 @@
       "url": "/nwffacim/intro/2014/",
       "idx": 0,
       "title": "About 2014 Transcripts",
-      "next": "/nwffacim/acim/2014/010614/",
-      "prev": "/nwffacim/acim/2014/091514/",
+      "next": "/nwffacim/2014/010614/",
+      "prev": "/nwffacim/2014/091514/",
       "fid": "2014/"
     },
     {
@@ -28,10 +28,10 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/010614/",
+      "url": "/nwffacim/2014/010614/",
       "idx": 1,
       "title": "Jan 6, 2014",
-      "next": "/nwffacim/acim/2014/011414/",
+      "next": "/nwffacim/2014/011414/",
       "prev": "/nwffacim/intro/2014/"
     },
     {
@@ -48,11 +48,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/011414/",
+      "url": "/nwffacim/2014/011414/",
       "idx": 2,
       "title": "Jan 14, 2014",
-      "next": "/nwffacim/acim/2014/012814/",
-      "prev": "/nwffacim/acim/2014/010614/"
+      "next": "/nwffacim/2014/012814/",
+      "prev": "/nwffacim/2014/010614/"
     },
     {
       "fid": "012814/",
@@ -68,11 +68,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/012814/",
+      "url": "/nwffacim/2014/012814/",
       "idx": 3,
       "title": "Jan 28, 2014",
-      "next": "/nwffacim/acim/2014/020914/",
-      "prev": "/nwffacim/acim/2014/011414/"
+      "next": "/nwffacim/2014/020914/",
+      "prev": "/nwffacim/2014/011414/"
     },
     {
       "fid": "020914/",
@@ -88,11 +88,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/020914/",
+      "url": "/nwffacim/2014/020914/",
       "idx": 4,
       "title": "Feb 9, 2014",
-      "next": "/nwffacim/acim/2014/022414/",
-      "prev": "/nwffacim/acim/2014/012814/"
+      "next": "/nwffacim/2014/022414/",
+      "prev": "/nwffacim/2014/012814/"
     },
     {
       "fid": "022414/",
@@ -108,11 +108,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/022414/",
+      "url": "/nwffacim/2014/022414/",
       "idx": 5,
       "title": "Feb 24, 2014",
-      "next": "/nwffacim/acim/2014/030914/",
-      "prev": "/nwffacim/acim/2014/020914/"
+      "next": "/nwffacim/2014/030914/",
+      "prev": "/nwffacim/2014/020914/"
     },
     {
       "fid": "030914/",
@@ -128,11 +128,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/030914/",
+      "url": "/nwffacim/2014/030914/",
       "idx": 6,
       "title": "Mar 9, 2014",
-      "next": "/nwffacim/acim/2014/041314/",
-      "prev": "/nwffacim/acim/2014/022414/"
+      "next": "/nwffacim/2014/041314/",
+      "prev": "/nwffacim/2014/022414/"
     },
     {
       "fid": "041314/",
@@ -148,11 +148,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/041314/",
+      "url": "/nwffacim/2014/041314/",
       "idx": 7,
       "title": "Apr 13, 2014",
-      "next": "/nwffacim/acim/2014/061614/",
-      "prev": "/nwffacim/acim/2014/030914/"
+      "next": "/nwffacim/2014/061614/",
+      "prev": "/nwffacim/2014/030914/"
     },
     {
       "fid": "061614/",
@@ -168,11 +168,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/061614/",
+      "url": "/nwffacim/2014/061614/",
       "idx": 8,
       "title": "Jun 16, 2014",
-      "next": "/nwffacim/acim/2014/062914/",
-      "prev": "/nwffacim/acim/2014/041314/"
+      "next": "/nwffacim/2014/062914/",
+      "prev": "/nwffacim/2014/041314/"
     },
     {
       "fid": "062914/",
@@ -188,11 +188,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/062914/",
+      "url": "/nwffacim/2014/062914/",
       "idx": 9,
       "title": "Jun 29, 2014",
-      "next": "/nwffacim/acim/2014/091514/",
-      "prev": "/nwffacim/acim/2014/061614/"
+      "next": "/nwffacim/2014/091514/",
+      "prev": "/nwffacim/2014/061614/"
     },
     {
       "fid": "091514/",
@@ -208,11 +208,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2014/091514/",
+      "url": "/nwffacim/2014/091514/",
       "idx": 10,
       "title": "Sep 15, 2014",
       "next": "/nwffacim/intro/2014/",
-      "prev": "/nwffacim/acim/2014/062914/"
+      "prev": "/nwffacim/2014/062914/"
     }
   ]
 }

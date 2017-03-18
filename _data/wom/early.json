@@ -4,6 +4,8 @@
   },
   "base": "/wom/early/",
   "intro": "/wom/intro/",
+  "title": "The Early Years",
+  "bid": "early",
   "page": [
     {
       "fid": "early/",

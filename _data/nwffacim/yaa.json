@@ -1,6 +1,8 @@
 {
   "base": "/nwffacim/yaa/",
   "intro": "/nwffacim/intro/",
+  "title": "You Are the Answer",
+  "bid": "yaa",
   "page": [
     {
       "title": "Introduction",

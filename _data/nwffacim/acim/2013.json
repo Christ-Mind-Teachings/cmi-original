@@ -2,7 +2,7 @@
   "domain": {
     "audio": "https://static.secure.website/wscfus/8306833/"
   },
-  "base": "/nwffacim/acim/2013/",
+  "base": "/nwffacim/2013/",
   "intro": "/nwffacim/intro/",
   "page": [
     {
@@ -10,8 +10,8 @@
       "url": "/nwffacim/intro/2013/",
       "idx": 0,
       "title": "About 2013 Transcripts",
-      "next": "/nwffacim/acim/2013/042713/",
-      "prev": "/nwffacim/acim/2013/123013/",
+      "next": "/nwffacim/2013/042713/",
+      "prev": "/nwffacim/2013/123013/",
       "fid": "2013/"
     },
     {
@@ -28,10 +28,10 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/042713/",
+      "url": "/nwffacim/2013/042713/",
       "idx": 1,
       "title": "Apr 27, 2013",
-      "next": "/nwffacim/acim/2013/050413/",
+      "next": "/nwffacim/2013/050413/",
       "prev": "/nwffacim/intro/2013/"
     },
     {
@@ -48,11 +48,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/050413/",
+      "url": "/nwffacim/2013/050413/",
       "idx": 2,
       "title": "May 4, 2013",
-      "next": "/nwffacim/acim/2013/051113/",
-      "prev": "/nwffacim/acim/2013/042713/"
+      "next": "/nwffacim/2013/051113/",
+      "prev": "/nwffacim/2013/042713/"
     },
     {
       "fid": "051113/",
@@ -68,11 +68,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/051113/",
+      "url": "/nwffacim/2013/051113/",
       "idx": 3,
       "title": "May 11, 2013",
-      "next": "/nwffacim/acim/2013/052013/",
-      "prev": "/nwffacim/acim/2013/050413/"
+      "next": "/nwffacim/2013/052013/",
+      "prev": "/nwffacim/2013/050413/"
     },
     {
       "fid": "052013/",
@@ -88,11 +88,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/052013/",
+      "url": "/nwffacim/2013/052013/",
       "idx": 4,
       "title": "May 20, 2013",
-      "next": "/nwffacim/acim/2013/052813/",
-      "prev": "/nwffacim/acim/2013/051113/"
+      "next": "/nwffacim/2013/052813/",
+      "prev": "/nwffacim/2013/051113/"
     },
     {
       "fid": "052813/",
@@ -108,11 +108,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/052813/",
+      "url": "/nwffacim/2013/052813/",
       "idx": 5,
       "title": "May 28, 2013",
-      "next": "/nwffacim/acim/2013/060213/",
-      "prev": "/nwffacim/acim/2013/052013/"
+      "next": "/nwffacim/2013/060213/",
+      "prev": "/nwffacim/2013/052013/"
     },
     {
       "fid": "060213/",
@@ -128,11 +128,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/060213/",
+      "url": "/nwffacim/2013/060213/",
       "idx": 6,
       "title": "Jun 2, 2013",
-      "next": "/nwffacim/acim/2013/060913/",
-      "prev": "/nwffacim/acim/2013/052813/"
+      "next": "/nwffacim/2013/060913/",
+      "prev": "/nwffacim/2013/052813/"
     },
     {
       "fid": "060913/",
@@ -148,11 +148,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/060913/",
+      "url": "/nwffacim/2013/060913/",
       "idx": 7,
       "title": "Jun 9, 2013",
-      "next": "/nwffacim/acim/2013/062513/",
-      "prev": "/nwffacim/acim/2013/060213/"
+      "next": "/nwffacim/2013/062513/",
+      "prev": "/nwffacim/2013/060213/"
     },
     {
       "fid": "062513/",
@@ -168,11 +168,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/062513/",
+      "url": "/nwffacim/2013/062513/",
       "idx": 8,
       "title": "Jun 25, 2013",
-      "next": "/nwffacim/acim/2013/063013/",
-      "prev": "/nwffacim/acim/2013/060913/"
+      "next": "/nwffacim/2013/063013/",
+      "prev": "/nwffacim/2013/060913/"
     },
     {
       "fid": "063013/",
@@ -188,11 +188,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/063013/",
+      "url": "/nwffacim/2013/063013/",
       "idx": 9,
       "title": "Jun 30, 2013",
-      "next": "/nwffacim/acim/2013/070713/",
-      "prev": "/nwffacim/acim/2013/062513/"
+      "next": "/nwffacim/2013/070713/",
+      "prev": "/nwffacim/2013/062513/"
     },
     {
       "fid": "070713/",
@@ -208,11 +208,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/070713/",
+      "url": "/nwffacim/2013/070713/",
       "idx": 10,
       "title": "Jul 7, 2013",
-      "next": "/nwffacim/acim/2013/071413/",
-      "prev": "/nwffacim/acim/2013/063013/"
+      "next": "/nwffacim/2013/071413/",
+      "prev": "/nwffacim/2013/063013/"
     },
     {
       "fid": "071413/",
@@ -228,11 +228,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/071413/",
+      "url": "/nwffacim/2013/071413/",
       "idx": 11,
       "title": "Jul 14, 2013",
-      "next": "/nwffacim/acim/2013/072113/",
-      "prev": "/nwffacim/acim/2013/070713/"
+      "next": "/nwffacim/2013/072113/",
+      "prev": "/nwffacim/2013/070713/"
     },
     {
       "fid": "072113/",
@@ -248,11 +248,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/072113/",
+      "url": "/nwffacim/2013/072113/",
       "idx": 12,
       "title": "Jul 21, 2013",
-      "next": "/nwffacim/acim/2013/080413/",
-      "prev": "/nwffacim/acim/2013/071413/"
+      "next": "/nwffacim/2013/080413/",
+      "prev": "/nwffacim/2013/071413/"
     },
     {
       "fid": "080413/",
@@ -268,11 +268,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/080413/",
+      "url": "/nwffacim/2013/080413/",
       "idx": 13,
       "title": "Aug 4, 2013",
-      "next": "/nwffacim/acim/2013/081113/",
-      "prev": "/nwffacim/acim/2013/072113/"
+      "next": "/nwffacim/2013/081113/",
+      "prev": "/nwffacim/2013/072113/"
     },
     {
       "fid": "081113/",
@@ -288,11 +288,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/081113/",
+      "url": "/nwffacim/2013/081113/",
       "idx": 14,
       "title": "Aug 11, 2013",
-      "next": "/nwffacim/acim/2013/082513/",
-      "prev": "/nwffacim/acim/2013/080413/"
+      "next": "/nwffacim/2013/082513/",
+      "prev": "/nwffacim/2013/080413/"
     },
     {
       "fid": "082513/",
@@ -308,11 +308,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/082513/",
+      "url": "/nwffacim/2013/082513/",
       "idx": 15,
       "title": "Aug 25, 2013",
-      "next": "/nwffacim/acim/2013/090113/",
-      "prev": "/nwffacim/acim/2013/081113/"
+      "next": "/nwffacim/2013/090113/",
+      "prev": "/nwffacim/2013/081113/"
     },
     {
       "fid": "090113/",
@@ -328,11 +328,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/090113/",
+      "url": "/nwffacim/2013/090113/",
       "idx": 16,
       "title": "Sep 1, 2013",
-      "next": "/nwffacim/acim/2013/090813/",
-      "prev": "/nwffacim/acim/2013/082513/"
+      "next": "/nwffacim/2013/090813/",
+      "prev": "/nwffacim/2013/082513/"
     },
     {
       "fid": "090813/",
@@ -348,11 +348,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/090813/",
+      "url": "/nwffacim/2013/090813/",
       "idx": 17,
       "title": "Sep 8, 2013",
-      "next": "/nwffacim/acim/2013/091513/",
-      "prev": "/nwffacim/acim/2013/090113/"
+      "next": "/nwffacim/2013/091513/",
+      "prev": "/nwffacim/2013/090113/"
     },
     {
       "fid": "091513/",
@@ -368,11 +368,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/091513/",
+      "url": "/nwffacim/2013/091513/",
       "idx": 18,
       "title": "Sep 15, 2013",
-      "next": "/nwffacim/acim/2013/092313/",
-      "prev": "/nwffacim/acim/2013/090813/"
+      "next": "/nwffacim/2013/092313/",
+      "prev": "/nwffacim/2013/090813/"
     },
     {
       "fid": "092313/",
@@ -388,11 +388,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/092313/",
+      "url": "/nwffacim/2013/092313/",
       "idx": 19,
       "title": "Sep 23, 2013",
-      "next": "/nwffacim/acim/2013/100613/",
-      "prev": "/nwffacim/acim/2013/091513/"
+      "next": "/nwffacim/2013/100613/",
+      "prev": "/nwffacim/2013/091513/"
     },
     {
       "fid": "100613/",
@@ -408,11 +408,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/100613/",
+      "url": "/nwffacim/2013/100613/",
       "idx": 20,
       "title": "Oct 6, 2013",
-      "next": "/nwffacim/acim/2013/101513/",
-      "prev": "/nwffacim/acim/2013/092313/"
+      "next": "/nwffacim/2013/101513/",
+      "prev": "/nwffacim/2013/092313/"
     },
     {
       "fid": "101513/",
@@ -428,11 +428,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/101513/",
+      "url": "/nwffacim/2013/101513/",
       "idx": 21,
       "title": "Oct 15, 2013",
-      "next": "/nwffacim/acim/2013/102013/",
-      "prev": "/nwffacim/acim/2013/100613/"
+      "next": "/nwffacim/2013/102013/",
+      "prev": "/nwffacim/2013/100613/"
     },
     {
       "fid": "102013/",
@@ -448,11 +448,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/102013/",
+      "url": "/nwffacim/2013/102013/",
       "idx": 22,
       "title": "Oct 20, 2013",
-      "next": "/nwffacim/acim/2013/102713/",
-      "prev": "/nwffacim/acim/2013/101513/"
+      "next": "/nwffacim/2013/102713/",
+      "prev": "/nwffacim/2013/101513/"
     },
     {
       "fid": "102713/",
@@ -468,11 +468,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/102713/",
+      "url": "/nwffacim/2013/102713/",
       "idx": 23,
       "title": "Oct 27, 2013",
-      "next": "/nwffacim/acim/2013/110313/",
-      "prev": "/nwffacim/acim/2013/102013/"
+      "next": "/nwffacim/2013/110313/",
+      "prev": "/nwffacim/2013/102013/"
     },
     {
       "fid": "110313/",
@@ -488,11 +488,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/110313/",
+      "url": "/nwffacim/2013/110313/",
       "idx": 24,
       "title": "Nov 3, 2013",
-      "next": "/nwffacim/acim/2013/112413/",
-      "prev": "/nwffacim/acim/2013/102713/"
+      "next": "/nwffacim/2013/112413/",
+      "prev": "/nwffacim/2013/102713/"
     },
     {
       "fid": "112413/",
@@ -508,11 +508,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/112413/",
+      "url": "/nwffacim/2013/112413/",
       "idx": 25,
       "title": "Nov 24, 2013",
-      "next": "/nwffacim/acim/2013/122213/",
-      "prev": "/nwffacim/acim/2013/110313/"
+      "next": "/nwffacim/2013/122213/",
+      "prev": "/nwffacim/2013/110313/"
     },
     {
       "fid": "122213/",
@@ -528,11 +528,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/122213/",
+      "url": "/nwffacim/2013/122213/",
       "idx": 26,
       "title": "Dec 22, 2013",
-      "next": "/nwffacim/acim/2013/123013/",
-      "prev": "/nwffacim/acim/2013/112413/"
+      "next": "/nwffacim/2013/123013/",
+      "prev": "/nwffacim/2013/112413/"
     },
     {
       "fid": "123013/",
@@ -548,11 +548,11 @@
         "fb": 0
       },
       "intro": false,
-      "url": "/nwffacim/acim/2013/123013/",
+      "url": "/nwffacim/2013/123013/",
       "idx": 27,
       "title": "Dec 30, 2013",
       "next": "/nwffacim/intro/2013/",
-      "prev": "/nwffacim/acim/2013/122213/"
+      "prev": "/nwffacim/2013/122213/"
     }
   ]
 }

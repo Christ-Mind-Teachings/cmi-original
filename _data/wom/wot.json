@@ -4,6 +4,8 @@
   },
   "base": "/wom/wot/",
   "intro": "/wom/intro/",
+  "title": "Way of Transformation",
+  "bid": "wot",
   "page": [
     {
       "fid": "wot/",

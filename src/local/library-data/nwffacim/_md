@@ -1,7 +1,0 @@
-#!/bin/bash
-
-for i in `ls`; do
-  if [ -d $i ]; then
-    node ../js/md $i/data.json
-  fi
-done

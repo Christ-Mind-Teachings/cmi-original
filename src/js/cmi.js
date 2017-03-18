@@ -10,6 +10,7 @@ var scroll = require("scroll-into-view");
 var audio = require("./ui/mediaElements");
 var bookmark = require("./ui/bookmark");
 var search = require("./search/search");
+var config = require("./config/config");
 
 var unwrap;
 
@@ -46,26 +47,37 @@ document.addEventListener("DOMContentLoaded", function() {
   var audioMessage;
   var transcriptParagraphs;
 
-  //assign id's to all paragraphs in div.transcript
-  transcriptParagraphs = $(".transcript p");
-  transcriptParagraphs.each(function(idx) {
-    $(this).attr("id", "p" + idx);
+  //initialize application configuration
+  config.initialize(function(err, message) {
+    if (err) {
+      console.log("error in config.initialize: ", err);
+      return;
+    }
+    else {
+      console.log("config from %s", message);
+    }
+
+    //assign id's to all paragraphs in div.transcript
+    transcriptParagraphs = $(".transcript p");
+    transcriptParagraphs.each(function(idx) {
+      $(this).attr("id", "p" + idx);
+    });
+
+    //display hypothes.is annotation if url contains: id=<annotation id>
+    showRequestedAnnotation();
+    search.initialize();
+
+    //init the audio player
+    audio.initialize({
+      playerId: "#jquery_jplayer_audio_1",
+      skinWrapper: "#jp_container_audio_1",
+      audioToggle: ".audio-toggle",
+      hidePlayer: ".hide-player",
+      hilightClass: "hilite"
+    });
+
+    bookmark.initialize();
   });
-
-  //display hypothes.is annotation if url contains: id=<annotation id>
-  showRequestedAnnotation();
-  search.initialize();
-
-  //init the audio player
-  audio.initialize({
-    playerId: "#jquery_jplayer_audio_1",
-    skinWrapper: "#jp_container_audio_1",
-    audioToggle: ".audio-toggle",
-    hidePlayer: ".hide-player",
-    hilightClass: "hilite"
-  });
-
-  bookmark.initialize();
 
 });
 

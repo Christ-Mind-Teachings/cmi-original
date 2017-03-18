@@ -1,27 +1,5 @@
 #!/usr/bin/env node
 
-var example = {
-  id: "wom",
-  base: "/wom/woh/",
-  outfile: "output.filename",
-  domain: {
-    rtf: "rtf.domain.com",
-    pdf: "pdf.domain.com",
-    etc: "etc"
-  },
-  pages: [
-    "file1",
-    {
-      fid: "file2",
-      desc: "desc",
-      "...": "etc"
-    },
-    "file3",
-    "...",
-    "in sequential order"
-  ]
-};
-
 var json = require("jsonfile");
 var util = require("util");
 var moment = require("moment");
@@ -429,7 +407,6 @@ if (id === "acim" && !data.year) {
 
 if (id != "acim" && (!data.outfile || !data.base || !data.pages || !data.outfile )) {
   console.log("data.json syntax error: ");
-  console.log("-- example format: ", example);
   process.exit(1);
 }
 
@@ -452,7 +429,8 @@ switch (id) {
   //acim contents for a given year
   case "acim":
     source = "nwffacim/acim";
-    yml.base = "/nwffacim/acim/" + data.year + "/";
+    //yml.base = "/nwffacim/acim/" + data.year + "/";
+    yml.base = "/nwffacim/" + data.year + "/";
     yml.intro = data.intro;
     yml.page = _.map(data.pages, acim, {year: data.year, base: yml.base, intro: yml.intro});
     outfile = data.year + ".json";
@@ -461,6 +439,8 @@ switch (id) {
     source = "nwffacim";
     yml.base = data.base;
     yml.intro = data.intro;
+    yml.title = data.title;
+    yml.bid = data.bid;
     yml.page = _.map(data.pages, yaa, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
@@ -468,6 +448,8 @@ switch (id) {
     source = "nwffacim";
     yml.base = data.base;
     yml.intro = data.intro;
+    yml.title = data.title;
+    yml.bid = data.bid;
     yml.page = _.map(data.pages, grad, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
@@ -475,6 +457,8 @@ switch (id) {
     source = "wom";
     yml.base = data.base;
     yml.intro = data.intro;
+    yml.title = data.title;
+    yml.bid = data.bid;
     yml.page = _.map(data.pages, wom, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
@@ -482,6 +466,8 @@ switch (id) {
     source = "wom";
     yml.base = data.base;
     yml.intro = data.intro;
+    yml.title = data.title;
+    yml.bid = data.bid;
     yml.page = _.map(data.pages, early, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
@@ -489,6 +475,8 @@ switch (id) {
     source = "wom";
     yml.base = data.base;
     yml.intro = data.intro;
+    yml.title = data.title;
+    yml.bid = data.bid;
     yml.page = _.map(data.pages, questions, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;

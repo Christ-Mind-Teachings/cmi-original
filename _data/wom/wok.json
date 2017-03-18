@@ -4,6 +4,8 @@
   },
   "base": "/wom/wok/",
   "intro": "/wom/intro/",
+  "title": "Way of Knowing",
+  "bid": "wok",
   "page": [
     {
       "fid": "wok/",

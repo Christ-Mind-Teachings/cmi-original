@@ -3,7 +3,7 @@
 var axios = require("axios");
 var store = require("store");
 var runtime = require("pug-runtime");
-var config = require("../config/cmi");
+var config = require("../config/config");
 var templates = require("../pug/templates");
 
 var searchApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";

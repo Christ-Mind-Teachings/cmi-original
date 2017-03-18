@@ -113,7 +113,7 @@ defaults:
 
 # ACIM Study Group - many years of sessions
   - scope:
-      path: "_nwffacim/acim"
+      path: ""
       type: nwffacim
     values:
       bid: acimc
@@ -124,7 +124,7 @@ defaults:
 
 # 2002
   - scope:
-      path: "_nwffacim/acim/2002"
+      path: "_nwffacim/2002"
       type: nwffacim
     values:
       bid: 2002
@@ -133,7 +133,7 @@ defaults:
 
 # 2003
   - scope:
-      path: "_nwffacim/acim/2003"
+      path: "_nwffacim/2003"
       type: nwffacim
     values:
       bid: 2003
@@ -142,7 +142,7 @@ defaults:
 
 # 2004
   - scope:
-      path: "_nwffacim/acim/2004"
+      path: "_nwffacim/2004"
       type: nwffacim
     values:
       bid: 2004
@@ -151,7 +151,7 @@ defaults:
 
 # 2005
   - scope:
-      path: "_nwffacim/acim/2005"
+      path: "_nwffacim/2005"
       type: nwffacim
     values:
       bid: 2005
@@ -160,7 +160,7 @@ defaults:
 
 # 2006
   - scope:
-      path: "_nwffacim/acim/2006"
+      path: "_nwffacim/2006"
       type: nwffacim
     values:
       bid: 2006
@@ -169,7 +169,7 @@ defaults:
 
 # 2007
   - scope:
-      path: "_nwffacim/acim/2007"
+      path: "_nwffacim/2007"
       type: nwffacim
     values:
       bid: 2007
@@ -178,7 +178,7 @@ defaults:
 
 # 2008
   - scope:
-      path: "_nwffacim/acim/2008"
+      path: "_nwffacim/2008"
       type: nwffacim
     values:
       bid: 2008
@@ -187,7 +187,7 @@ defaults:
 
 # 2009
   - scope:
-      path: "_nwffacim/acim/2009"
+      path: "_nwffacim/2009"
       type: nwffacim
     values:
       bid: 2009
@@ -196,7 +196,7 @@ defaults:
 
 # 2010
   - scope:
-      path: "_nwffacim/acim/2010"
+      path: "_nwffacim/2010"
       type: nwffacim
     values:
       bid: 2010
@@ -205,7 +205,7 @@ defaults:
 
 # 2011
   - scope:
-      path: "_nwffacim/acim/2011"
+      path: "_nwffacim/2011"
       type: nwffacim
     values:
       bid: 2011
@@ -214,7 +214,7 @@ defaults:
 
 # 2012
   - scope:
-      path: "_nwffacim/acim/2012"
+      path: "_nwffacim/2012"
       type: nwffacim
     values:
       bid: 2012
@@ -223,7 +223,7 @@ defaults:
 
 # 2013
   - scope:
-      path: "_nwffacim/acim/2013"
+      path: "_nwffacim/2013"
       type: nwffacim
     values:
       bid: 2013
@@ -232,7 +232,7 @@ defaults:
 
 # 2014
   - scope:
-      path: "_nwffacim/acim/2014"
+      path: "_nwffacim/2014"
       type: nwffacim
     values:
       bid: 2014
@@ -241,7 +241,7 @@ defaults:
 
 # 2015
   - scope:
-      path: "_nwffacim/acim/2015"
+      path: "_nwffacim/2015"
       type: nwffacim
     values:
       bid: 2015
@@ -250,7 +250,7 @@ defaults:
 
 # 2016
   - scope:
-      path: "_nwffacim/acim/2016"
+      path: "_nwffacim/2016"
       type: nwffacim
     values:
       bid: 2016
@@ -259,7 +259,7 @@ defaults:
 
 # 2017
   - scope:
-      path: "_nwffacim/acim/2017"
+      path: "_nwffacim/2017"
       type: nwffacim
     values:
       bid: 2017
@@ -306,29 +306,29 @@ fb-appId:     448658485318107
 
 # Exclusions from the final site
 exclude: [
-  #    _wom/woh,
-  #    _wom/wot,
-  #    _wom/wok,
-  #    _wom/early,
-  #    _wom/questions,
-  #    _nwffacim/grad,
-  #    _nwffacim/yaa,
-  #    _nwffacim/acim/2002,
-  #    _nwffacim/acim/2003,
-  #    _nwffacim/acim/2004,
-  #    _nwffacim/acim/2005,
-  #    _nwffacim/acim/2006,
-  #    _nwffacim/acim/2007,
-  #    _nwffacim/acim/2008,
-  #    _nwffacim/acim/2009,
-  #    _nwffacim/acim/2010,
-  #    _nwffacim/acim/2011,
-  #    _nwffacim/acim/2012,
-  #    _nwffacim/acim/2013,
-  #    _nwffacim/acim/2014,
-  #    _nwffacim/acim/2015,
-  #    _nwffacim/acim/2016,
-  #    _nwffacim/acim/2017,
+#     _wom/woh,
+#     _wom/wot,
+#     _wom/wok,
+      _wom/early,
+      _wom/questions,
+      _nwffacim/grad,
+      _nwffacim/yaa,
+      _nwffacim/2002,
+      _nwffacim/2003,
+      _nwffacim/2004,
+      _nwffacim/2005,
+      _nwffacim/2006,
+      _nwffacim/2007,
+      _nwffacim/2008,
+      _nwffacim/2009,
+      _nwffacim/2010,
+      _nwffacim/2011,
+      _nwffacim/2012,
+      _nwffacim/2013,
+      _nwffacim/2014,
+      _nwffacim/2015,
+      _nwffacim/2016,
+      _nwffacim/2017,
   work, bin, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
 
