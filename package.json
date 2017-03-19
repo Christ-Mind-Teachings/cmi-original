@@ -4,11 +4,13 @@
   "description": "Library of Christ Mind teachings",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --cache --fix -c ./config/eslint.json --ignore-path ./config/eslintignore ./src/js/**",
+    "prebuild:cmi": "npm run lint && npm run pug",
     "build:cmi": "browserify ./src/js/cmi.js -o ./public/js/cmi.js",
-    "lint": "eslint -c ./config/eslint.json --ignore-path ./config/eslintignore ./src/js/**",
-    "prebuild:cmi": "npm run lint",
-    "build:search": "browserify ./src/js/search.js -o ./public/js/search.js",
     "prebuild:search": "npm run lint",
+    "build:search": "browserify ./src/js/search.js -o ./public/js/search.js",
+    "prebuild:custom": "npm run lint",
+    "build:custom": "browserify ./src/js/custom.js -o ./public/js/custom.js",
     "pug": "puglatizer -d src/js/pug -o src/js/pug/templates.js",
     "postpug": "js-beautify -r -s 2 -f src/js/pug/templates.js"
   },

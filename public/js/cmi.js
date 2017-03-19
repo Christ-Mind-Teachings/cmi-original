@@ -8529,14 +8529,62 @@ module.exports = {
   }
 
   var puglatizer = {}
-  puglatizer["bookmark"] = function template(n) {
-    var i, a, c, e = "";
+  puglatizer["bookmark"] = function template(a) {
+    var l, i, e, r = "";
     try {
-      c = 1, e += "<!--mixin channelList(src)-->", c = 2, e += "<!--  h3= src.name-->", c = 3, e += "<!--  ul.fa-ul-->", c = 4, e += "<!--    each info in src.info-->", c = 5, e += "<!--      li: i.fa-ul.fa.fa-bookmark-->", c = 6, e += "<!--        a.cmiBookmarkLink(href= info.page)-->", c = 7, e += '<!--          = info.book + ": " + info.unit-->', c = 8, e += "<!---->", c = 9, e += "<!--each src in source-->", c = 10, e += "<!--  +channelList(src)-->", c = 11, e += "<h3>", c = 11, e = e + pug.escape(null == (i = "My name is Rick") ? "" : i) + "</h3>"
-    } catch (r) {
-      pug.rethrow(r, a, c)
+      var o = a || {};
+      (function(a, i) {
+        e = 1, r += "<!--mixin channelList(src)-->", e = 2, r += "<!--  each info in src.info-->", e = 3, r += "<!--    li: i.fa-ul.fa.fa-bookmark-->", e = 4, r += "<!--      a.cmiBookmarkLink(href= info.page)-->", e = 5, r += '<!--        = info.book + ": " + info.unit-->', e = 7, r += '<ul class="fa-ul">', e = 8,
+          function() {
+            var o = a;
+            if ("number" == typeof o.length)
+              for (var t = 0, n = o.length; n > t; t++) {
+                var s = o[t];
+                e = 9, i === s.page ? (e = 10, r += '<li class="bm-list bm-current-page">', e = 10, r = r + pug.escape(null == (l = ">>" + s.title) ? "" : l) + "</li>") : (e = 12, r += '<li class="bm-list">', e = 12, r = r + pug.escape(null == (l = s.title) ? "" : l) + "</li>"), e = 14, r += "<ul>", e = 15,
+                  function() {
+                    var a = s.mark;
+                    if ("number" == typeof a.length)
+                      for (var i = 0, o = a.length; o > i; i++) {
+                        var t = a[i];
+                        e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                      } else {
+                        var o = 0;
+                        for (var i in a) {
+                          o++;
+                          var t = a[i];
+                          e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                        }
+                      }
+                  }.call(this), r += "</ul>"
+              } else {
+                var n = 0;
+                for (var t in o) {
+                  n++;
+                  var s = o[t];
+                  e = 9, i === s.page ? (e = 10, r += '<li class="bm-list bm-current-page">', e = 10, r = r + pug.escape(null == (l = ">>" + s.title) ? "" : l) + "</li>") : (e = 12, r += '<li class="bm-list">', e = 12, r = r + pug.escape(null == (l = s.title) ? "" : l) + "</li>"), e = 14, r += "<ul>", e = 15,
+                    function() {
+                      var a = s.mark;
+                      if ("number" == typeof a.length)
+                        for (var i = 0, o = a.length; o > i; i++) {
+                          var t = a[i];
+                          e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                        } else {
+                          var o = 0;
+                          for (var i in a) {
+                            o++;
+                            var t = a[i];
+                            e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                          }
+                        }
+                    }.call(this), r += "</ul>"
+                }
+              }
+          }.call(this), r += "</ul>"
+      }).call(this, "bookmarks" in o ? o.bookmarks : "undefined" != typeof bookmarks ? bookmarks : void 0, "thisPageUrl" in o ? o.thisPageUrl : "undefined" != typeof thisPageUrl ? thisPageUrl : void 0)
+    } catch (t) {
+      pug.rethrow(t, i, e)
     }
-    return e
+    return r
   };
 
   puglatizer["search"] = function template(t) {
@@ -8835,11 +8883,12 @@ module.exports = {
     //if there are no search results hide 'search navigator' sidebar option
     searchResults = store.get("search");
 
-    //if no search data don't show the 'Search Navigator' sidebar option
+    //if no search data just return
     if (!searchResults) {
-      $(".search-navigator").addClass("hide-player");
       return;
     }
+
+    $(".search-navigator").removeClass("hide-player");
 
     //init navigator - continue initialization if array.length > 0
     console.log("initializeNavigator");
@@ -8885,7 +8934,8 @@ module.exports = {
 };
 
 },{"../config/config":66,"../util/url":78,"store":51,"underscore":63}],72:[function(require,module,exports){
-/* eslint no-unreachable: off */
+/* eslint no-alert: off, no-unreachable: off */
+/* ui/bookmark.js */
 
 "use strict";
 
@@ -8894,6 +8944,11 @@ var templates = require("../pug/templates");
 var config = require("../config/config");
 var _ = require("underscore");
 
+//make this better
+function showMessage(msg) {
+  alert(msg);
+}
+
 function addBookmarkDialogCloseListener() {
   $(".bookmark-close").on("click", function(e) {
     e.preventDefault();
@@ -8901,25 +8956,48 @@ function addBookmarkDialogCloseListener() {
   });
 }
 
-function showBookmarkDialog() {
+function prepareBookmarks(bm) {
   var i;
-  var data = store.get("bookmarks");
-  console.log("showBookmarks(): ", data);
 
-  for (i = 0; i < data.location.length; i++) {
-    data.location[i].title = config.getPageTitle(data.location[i].page);
-    data.location[i].key = config.getKey(data.location[i].page);
+  for (i = 0; i < bm.length; i++) {
+    bm[i].title = config.getPageTitle(bm[i].page);
+    bm[i].key = config.getKey(bm[i].page);
   }
 
-  console.log("bookmarks: ", data);
+  bm.sort(function(a,b) {
+    return a.key - b.key;
+  });
+
+  return bm;
+}
+
+function showBookmarkDialog() {
+  var data;
+
+  //dialog is aleady open - close it
+  if (!$(".bookmark-dialog").hasClass("hide-player")) {
+    $(".bookmark-dialog").addClass("hide-player");
+    return;
+  }
+
+  data = store.get("bookmarks");
+  if (!data) {
+    showMessage("You don't have any bookmarks");
+    return;
+  }
+
+  var bmarks = prepareBookmarks(data.location);
+  //console.log("bmarks: ", bmarks);
 
   // generateBookmarkList is a function created by pug
-  //var html = templates.bookmark({source: bookmarks});
-  //console.log("html: ", html);
+  var html = templates.bookmark({
+    thisPageUrl: location.pathname,
+    bookmarks: bmarks
+  });
 
-  //var list = document.getElementById("bookmark-list");
-  //list.innerHTML = html;
-  //$(".bookmark-dialog").removeClass("hide-player");
+  var list = document.getElementById("bookmark-list");
+  list.innerHTML = html;
+  $(".bookmark-dialog").removeClass("hide-player");
 }
 
 //the sidebar 'Bookmark' option - toggles display of
@@ -8939,7 +9017,9 @@ function addBookmarkToggleListener() {
       }
     });
   });
+}
 
+function addShowBookmarkDialogListener() {
   $(".list-bookmarks").on("click", function(e) {
     e.preventDefault();
     showBookmarkDialog();
@@ -9039,6 +9119,11 @@ function removeBookmark(id) {
       }
       else {
         bookmarks.location[page].mark.splice(mark, 1);
+
+        //if page has no more bookmarks then remove page from bookmarks
+        if (bookmarks.location[page].mark.length === 0) {
+          bookmarks.location.splice(page,1);
+        }
       }
     }
   }
@@ -9068,10 +9153,19 @@ function addBookmarkListener() {
 
 module.exports = {
   initialize: function() {
-    addBookMarkers();
-    showBookmarks();
-    addBookmarkListener();
-    addBookmarkToggleListener();
+    console.log("bookmark init");
+
+    if ($(".transcript").length > 0) {
+      addBookMarkers();
+      showBookmarks();
+      addBookmarkListener();
+      addBookmarkToggleListener();
+    }
+    else {
+      //hide sidebar bookmark option
+      $(".sidebar-nav-item.bookmark").addClass("hide-player");
+    }
+    addShowBookmarkDialogListener();
     addBookmarkDialogCloseListener();
   }
 };

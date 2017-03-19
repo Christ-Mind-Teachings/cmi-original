@@ -47,6 +47,12 @@ section header
       &:hover
         background-color: $accordion-menu-hover
 
+.sidebar-nav-item.hide-player
+  display: none
+
+.hide-player
+  display: none
+
 .items_found p
   margin-top: 10px
 
@@ -61,6 +67,12 @@ section header
 i.bkmark.bkmark-hide.fa
   display: none
 
+.bm-current-page
+  color: red
+
+.fa-ul > li.bm-list
+  display: block
+
 .bookmark-close
   cursor: pointer
 
@@ -69,8 +81,10 @@ i.bkmark.bkmark-hide.fa
   top: 100px
   left: 30%
   width: 40%
-  background-color: lightgoldenrodyellow
+  background-color: white
   border: 1px solid black
+  height: 70%
+  overflow: scroll
 
   & > header
     margin: 20px

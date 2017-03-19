@@ -14,9 +14,9 @@
   </div>
 
   <nav class="sidebar-nav">
+    <a class="sidebar-nav-item list-bookmarks" href="javascript:void(0);">Show Bookmarks</a>
     <a class="sidebar-nav-item first-item{% if page.url == "/" %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
     <a class="sidebar-nav-item" href="/search/">Search</a>
-    <a class="sidebar-nav-item list-bookmarks" href="javascript:void(0);">List Bookmarks</a>
     <a class="sidebar-nav-item" href="{{ page.surl }}" >{{ page.source }}</a>
     {% if page.burl != page.url %}
       <a class="sidebar-nav-item" href="{{ page.burl }}" >{{ page.book }}</a>
@@ -25,13 +25,8 @@
       {% endif %}
     {% endif %}
     <a class="sidebar-nav-item first-item" href="#" data-proofer-ignore>Top of Page</a>
-    <a class="sidebar-nav-item search-navigator" href="javascript:void(0);">Search Navigator</a>
-    <div>
-      <a class="sidebar-nav-item bookmark" href="javascript:void(0);">Bookmark&nbsp;&nbsp;</a>
-      <a class="sidebar-bookmark sidebar-nav-item" href="javascript:void(0);">
-        <i class="fa fa-bookmark"></i>
-      </a>
-    </div>
+    <a class="sidebar-nav-item hide-player search-navigator" href="javascript:void(0);">Search Navigator</a>
+    <a class="sidebar-nav-item bookmark" href="javascript:void(0);">Bookmark Page</a>
     <div class="capture pmarker-wrapper">
       <a class="pmarker-toggle sidebar-nav-item" href="#">
         <i class="fa fa-toggle-off"></i>

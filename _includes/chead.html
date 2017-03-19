@@ -21,15 +21,14 @@
   </title>
 
   <!-- CSS links -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/cmi.css"/>
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/custom.css"/>
 
   <!-- Icons -->
   {% include script/favicon.html %}
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml"/>
-
   {% include script/load-fa.html %}
+  {% include script/load-jquery.html %}
   {% include script/load-audio.html player=page.player %}
   {% include script/load-hypothesis.html %}
   {% include script/load-tabs.html %}

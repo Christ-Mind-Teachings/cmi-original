@@ -1,5 +1,7 @@
 ---
 layout: custom
+load-custom: true
+load-fa: true
 title: Way of Mastery
 source: Way of Mastery
 surl: /wom/intro/wom/

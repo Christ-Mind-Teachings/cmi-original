@@ -1,11 +1,19 @@
 //mixin channelList(src)
-//  h3= src.name
-//  ul.fa-ul
-//    each info in src.info
-//      li: i.fa-ul.fa.fa-bookmark
-//        a.cmiBookmarkLink(href= info.page)
-//          = info.book + ": " + info.unit
-//
-//each src in source
-//  +channelList(src)
-h3= "My name is Rick"
+//  each info in src.info
+//    li: i.fa-ul.fa.fa-bookmark
+//      a.cmiBookmarkLink(href= info.page)
+//        = info.book + ": " + info.unit
+
+ul.fa-ul
+  each mark in bookmarks
+    if thisPageUrl === mark.page
+      li.bm-list.bm-current-page= ">>" + mark.title
+    else
+      li.bm-list= mark.title
+
+    ul
+      each p,index in mark.mark
+        li
+          i.fa-ul.fa.fa-bookmark
+          a(href= mark.page + "#" + p)
+            = "  Bookmark " + (index + 1)

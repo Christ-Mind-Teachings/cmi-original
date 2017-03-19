@@ -181,7 +181,7 @@ module.exports = function xhrAdapter(config) {
 };
 
 }).call(this,require('_process'))
-},{"../core/createError":9,"./../core/settle":12,"./../helpers/btoa":16,"./../helpers/buildURL":17,"./../helpers/cookies":19,"./../helpers/isURLSameOrigin":21,"./../helpers/parseHeaders":23,"./../utils":25,"_process":28}],3:[function(require,module,exports){
+},{"../core/createError":9,"./../core/settle":12,"./../helpers/btoa":16,"./../helpers/buildURL":17,"./../helpers/cookies":19,"./../helpers/isURLSameOrigin":21,"./../helpers/parseHeaders":23,"./../utils":25,"_process":27}],3:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -730,7 +730,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 module.exports = defaults;
 
 }).call(this,require('_process'))
-},{"./adapters/http":2,"./adapters/xhr":2,"./helpers/normalizeHeaderName":22,"./utils":25,"_process":28}],15:[function(require,module,exports){
+},{"./adapters/http":2,"./adapters/xhr":2,"./helpers/normalizeHeaderName":22,"./utils":25,"_process":27}],15:[function(require,module,exports){
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -1392,8 +1392,6 @@ module.exports = {
 },{"./helpers/bind":15}],26:[function(require,module,exports){
 
 },{}],27:[function(require,module,exports){
-arguments[4][26][0].apply(exports,arguments)
-},{"dup":26}],28:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -1575,263 +1573,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],29:[function(require,module,exports){
-'use strict';
-
-var pug_has_own_property = Object.prototype.hasOwnProperty;
-
-/**
- * Merge two attribute objects giving precedence
- * to values in object `b`. Classes are special-cased
- * allowing for arrays and merging/joining appropriately
- * resulting in a string.
- *
- * @param {Object} a
- * @param {Object} b
- * @return {Object} a
- * @api private
- */
-
-exports.merge = pug_merge;
-function pug_merge(a, b) {
-  if (arguments.length === 1) {
-    var attrs = a[0];
-    for (var i = 1; i < a.length; i++) {
-      attrs = pug_merge(attrs, a[i]);
-    }
-    return attrs;
-  }
-
-  for (var key in b) {
-    if (key === 'class') {
-      var valA = a[key] || [];
-      a[key] = (Array.isArray(valA) ? valA : [valA]).concat(b[key] || []);
-    } else if (key === 'style') {
-      var valA = pug_style(a[key]);
-      var valB = pug_style(b[key]);
-      a[key] = valA + valB;
-    } else {
-      a[key] = b[key];
-    }
-  }
-
-  return a;
-};
-
-/**
- * Process array, object, or string as a string of classes delimited by a space.
- *
- * If `val` is an array, all members of it and its subarrays are counted as
- * classes. If `escaping` is an array, then whether or not the item in `val` is
- * escaped depends on the corresponding item in `escaping`. If `escaping` is
- * not an array, no escaping is done.
- *
- * If `val` is an object, all the keys whose value is truthy are counted as
- * classes. No escaping is done.
- *
- * If `val` is a string, it is counted as a class. No escaping is done.
- *
- * @param {(Array.<string>|Object.<string, boolean>|string)} val
- * @param {?Array.<string>} escaping
- * @return {String}
- */
-exports.classes = pug_classes;
-function pug_classes_array(val, escaping) {
-  var classString = '', className, padding = '', escapeEnabled = Array.isArray(escaping);
-  for (var i = 0; i < val.length; i++) {
-    className = pug_classes(val[i]);
-    if (!className) continue;
-    escapeEnabled && escaping[i] && (className = pug_escape(className));
-    classString = classString + padding + className;
-    padding = ' ';
-  }
-  return classString;
-}
-function pug_classes_object(val) {
-  var classString = '', padding = '';
-  for (var key in val) {
-    if (key && val[key] && pug_has_own_property.call(val, key)) {
-      classString = classString + padding + key;
-      padding = ' ';
-    }
-  }
-  return classString;
-}
-function pug_classes(val, escaping) {
-  if (Array.isArray(val)) {
-    return pug_classes_array(val, escaping);
-  } else if (val && typeof val === 'object') {
-    return pug_classes_object(val);
-  } else {
-    return val || '';
-  }
-}
-
-/**
- * Convert object or string to a string of CSS styles delimited by a semicolon.
- *
- * @param {(Object.<string, string>|string)} val
- * @return {String}
- */
-
-exports.style = pug_style;
-function pug_style(val) {
-  if (!val) return '';
-  if (typeof val === 'object') {
-    var out = '';
-    for (var style in val) {
-      /* istanbul ignore else */
-      if (pug_has_own_property.call(val, style)) {
-        out = out + style + ':' + val[style] + ';';
-      }
-    }
-    return out;
-  } else {
-    val += '';
-    if (val[val.length - 1] !== ';') 
-      return val + ';';
-    return val;
-  }
-};
-
-/**
- * Render the given attribute.
- *
- * @param {String} key
- * @param {String} val
- * @param {Boolean} escaped
- * @param {Boolean} terse
- * @return {String}
- */
-exports.attr = pug_attr;
-function pug_attr(key, val, escaped, terse) {
-  if (val === false || val == null || !val && (key === 'class' || key === 'style')) {
-    return '';
-  }
-  if (val === true) {
-    return ' ' + (terse ? key : key + '="' + key + '"');
-  }
-  if (typeof val.toJSON === 'function') {
-    val = val.toJSON();
-  }
-  if (typeof val !== 'string') {
-    val = JSON.stringify(val);
-    if (!escaped && val.indexOf('"') !== -1) {
-      return ' ' + key + '=\'' + val.replace(/'/g, '&#39;') + '\'';
-    }
-  }
-  if (escaped) val = pug_escape(val);
-  return ' ' + key + '="' + val + '"';
-};
-
-/**
- * Render the given attributes object.
- *
- * @param {Object} obj
- * @param {Object} terse whether to use HTML5 terse boolean attributes
- * @return {String}
- */
-exports.attrs = pug_attrs;
-function pug_attrs(obj, terse){
-  var attrs = '';
-
-  for (var key in obj) {
-    if (pug_has_own_property.call(obj, key)) {
-      var val = obj[key];
-
-      if ('class' === key) {
-        val = pug_classes(val);
-        attrs = pug_attr(key, val, false, terse) + attrs;
-        continue;
-      }
-      if ('style' === key) {
-        val = pug_style(val);
-      }
-      attrs += pug_attr(key, val, false, terse);
-    }
-  }
-
-  return attrs;
-};
-
-/**
- * Escape the given string of `html`.
- *
- * @param {String} html
- * @return {String}
- * @api private
- */
-
-var pug_match_html = /["&<>]/;
-exports.escape = pug_escape;
-function pug_escape(_html){
-  var html = '' + _html;
-  var regexResult = pug_match_html.exec(html);
-  if (!regexResult) return _html;
-
-  var result = '';
-  var i, lastIndex, escape;
-  for (i = regexResult.index, lastIndex = 0; i < html.length; i++) {
-    switch (html.charCodeAt(i)) {
-      case 34: escape = '&quot;'; break;
-      case 38: escape = '&amp;'; break;
-      case 60: escape = '&lt;'; break;
-      case 62: escape = '&gt;'; break;
-      default: continue;
-    }
-    if (lastIndex !== i) result += html.substring(lastIndex, i);
-    lastIndex = i + 1;
-    result += escape;
-  }
-  if (lastIndex !== i) return result + html.substring(lastIndex, i);
-  else return result;
-};
-
-/**
- * Re-throw the given `err` in context to the
- * the pug in `filename` at the given `lineno`.
- *
- * @param {Error} err
- * @param {String} filename
- * @param {String} lineno
- * @param {String} str original source
- * @api private
- */
-
-exports.rethrow = pug_rethrow;
-function pug_rethrow(err, filename, lineno, str){
-  if (!(err instanceof Error)) throw err;
-  if ((typeof window != 'undefined' || !filename) && !str) {
-    err.message += ' on line ' + lineno;
-    throw err;
-  }
-  try {
-    str = str || require('fs').readFileSync(filename, 'utf8')
-  } catch (ex) {
-    pug_rethrow(err, null, lineno)
-  }
-  var context = 3
-    , lines = str.split('\n')
-    , start = Math.max(lineno - context, 0)
-    , end = Math.min(lines.length, lineno + context);
-
-  // Error context
-  var context = lines.slice(start, end).map(function(line, i){
-    var curr = i + start + 1;
-    return (curr == lineno ? '  > ' : '    ')
-      + curr
-      + '| '
-      + line;
-  }).join('\n');
-
-  // Alter exception message
-  err.path = filename;
-  err.message = (filename || 'Pug') + ':' + lineno
-    + '\n' + context + '\n\n' + err.message;
-  throw err;
-};
-
-},{"fs":26}],30:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 var engine = require('../src/store-engine')
 
 var storages = require('../storages/all')
@@ -1839,7 +1581,7 @@ var plugins = [require('../plugins/json2')]
 
 module.exports = engine.createStore(storages, plugins)
 
-},{"../plugins/json2":31,"../src/store-engine":33,"../storages/all":35}],31:[function(require,module,exports){
+},{"../plugins/json2":29,"../src/store-engine":31,"../storages/all":33}],29:[function(require,module,exports){
 module.exports = json2Plugin
 
 function json2Plugin() {
@@ -1847,7 +1589,7 @@ function json2Plugin() {
 	return {}
 }
 
-},{"./lib/json2":32}],32:[function(require,module,exports){
+},{"./lib/json2":30}],30:[function(require,module,exports){
 //  json2.js
 //  2016-10-28
 //  Public Domain.
@@ -2354,7 +2096,7 @@ if (typeof JSON !== "object") {
         };
     }
 }());
-},{}],33:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
 var util = require('./util')
 var slice = util.slice
 var pluck = util.pluck
@@ -2572,7 +2314,7 @@ function createStore(storages, plugins) {
 	return store
 }
 
-},{"./util":34}],34:[function(require,module,exports){
+},{"./util":32}],32:[function(require,module,exports){
 (function (global){
 var assign = make_assign()
 var create = make_create()
@@ -2694,7 +2436,7 @@ function isObject(val) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],35:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 module.exports = {
 	// Listed in order of usage preference
 	'localStorage': require('./localStorage'),
@@ -2705,7 +2447,7 @@ module.exports = {
 	'memoryStorage': require('./memoryStorage'),
 }
 
-},{"./cookieStorage":36,"./localStorage":37,"./memoryStorage":38,"./oldFF-globalStorage":39,"./oldIE-userDataStorage":40,"./sessionStorage":41}],36:[function(require,module,exports){
+},{"./cookieStorage":34,"./localStorage":35,"./memoryStorage":36,"./oldFF-globalStorage":37,"./oldIE-userDataStorage":38,"./sessionStorage":39}],34:[function(require,module,exports){
 // cookieStorage is useful Safari private browser mode, where localStorage
 // doesn't work but cookies do. This implementation is adopted from
 // https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage
@@ -2768,7 +2510,7 @@ function _has(key) {
 	return (new RegExp("(?:^|;\\s*)" + escape(key).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(doc.cookie)
 }
 
-},{"../src/util":34}],37:[function(require,module,exports){
+},{"../src/util":32}],35:[function(require,module,exports){
 var util = require('../src/util')
 var Global = util.Global
 
@@ -2808,7 +2550,7 @@ function clearAll() {
 	return localStorage().clear()
 }
 
-},{"../src/util":34}],38:[function(require,module,exports){
+},{"../src/util":32}],36:[function(require,module,exports){
 // memoryStorage is a useful last fallback to ensure that the store
 // is functions (meaning store.get(), store.set(), etc will all function).
 // However, stored values will not persist when the browser navigates to
@@ -2849,7 +2591,7 @@ function clearAll(key) {
 	memoryStorage = {}
 }
 
-},{}],39:[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 // oldFF-globalStorage provides storage for Firefox
 // versions 6 and 7, where no localStorage, etc
 // is available.
@@ -2893,7 +2635,7 @@ function clearAll() {
 	})
 }
 
-},{"../src/util":34}],40:[function(require,module,exports){
+},{"../src/util":32}],38:[function(require,module,exports){
 // oldIE-userDataStorage provides storage for Internet Explorer
 // versions 6 and 7, where no localStorage, sessionStorage, etc
 // is available.
@@ -3022,7 +2764,7 @@ function _makeIEStorageElFunction() {
 	}
 }
 
-},{"../src/util":34}],41:[function(require,module,exports){
+},{"../src/util":32}],39:[function(require,module,exports){
 var util = require('../src/util')
 var Global = util.Global
 
@@ -3062,7 +2804,7 @@ function clearAll() {
 	return sessionStorage().clear()
 }
 
-},{"../src/util":34}],42:[function(require,module,exports){
+},{"../src/util":32}],40:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -4612,7 +4354,7 @@ function clearAll() {
   }
 }.call(this));
 
-},{}],43:[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 /* config/config.js */
 "use strict";
 
@@ -4747,7 +4489,34 @@ module.exports = {
 
 
 
-},{"axios":1,"store":30}],44:[function(require,module,exports){
+},{"axios":1,"store":28}],42:[function(require,module,exports){
+"use strict";
+
+var config = require("./config/config");
+var store = require("store");
+var bookmark = require("./ui/bookmark");
+
+document.addEventListener("DOMContentLoaded", function() {
+  var data = store.get("search");
+
+  //initialize application configuration
+  config.initialize(function(err, message) {
+    if (err) {
+      console.log("error in config.initialize: ", err);
+      return;
+    }
+    else {
+      console.log("config from %s", message);
+    }
+
+    //setup site document search
+    bookmark.initialize();
+  });
+
+});
+
+
+},{"./config/config":41,"./ui/bookmark":44,"store":28}],43:[function(require,module,exports){
 ;
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
@@ -5079,141 +4848,7 @@ module.exports = {
 
   return puglatizer;
 }));
-},{"fs":27}],45:[function(require,module,exports){
-"use strict";
-
-var config = require("./config/config");
-var search = require("./search/site_search");
-var bookmark = require("./ui/bookmark");
-var store = require("store");
-
-document.addEventListener("DOMContentLoaded", function() {
-  var data = store.get("search");
-
-  //initialize application configuration
-  config.initialize(function(err, message) {
-    if (err) {
-      console.log("error in config.initialize: ", err);
-      return;
-    }
-    else {
-      console.log("config from %s", message);
-    }
-
-    //setup site document search
-    search.init(data);
-    bookmark.initialize();
-  });
-
-});
-
-
-},{"./config/config":43,"./search/site_search":46,"./ui/bookmark":47,"store":30}],46:[function(require,module,exports){
-"use strict";
-
-var axios = require("axios");
-var store = require("store");
-var runtime = require("pug-runtime");
-var config = require("../config/config");
-var templates = require("../pug/templates");
-
-var searchApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";
-var requestApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";
-var msgField;
-
-//combine book specific arrays into one to simplify navigation on
-//transcript pages - then store results
-function saveResults(data) {
-  var books = config[data.source].books;
-  var all = [];
-  for (var i = 0; i < books.length; i++) {
-    var book = books[i];
-    if (data[book]) {
-      all = all.concat(data[book]);
-    }
-  }
-
-  //add concatenated array to results and save
-  data.all = all;
-  store.set("search", data);
-
-  console.log("saving results: ", data);
-}
-
-function showSearchResults(data) {
-  console.log("showSearchResults(): ", data);
-
-  // searchResults is a function created by pug
-  //var html = searchResults(data);
-  var html = templates.search(data);
-  var resultsDiv = document.getElementById("search-results");
-  resultsDiv.innerHTML = html;
-}
-
-function displayMessage(message, spinner) {
-  var showSpinner = spinner || false;
-  var p = "<p>";
-
-  if (showSpinner) {
-    p = "<p><i class='fa fa-spinner fa-spin'></i>&nbsp";
-  }
-
-  msgField.innerHTML = p+message+"</p>";
-}
-
-function clearMessage() {
-  msgField.innerHTML = "";
-}
-
-module.exports = {
-  init: function(data) {
-    msgField = document.getElementById("search-message");
-
-    var submit = document.querySelector("form.search-bar");
-    submit.addEventListener("submit", function(e) {
-      e.preventDefault();
-      console.log("submit event handler");
-      var query = document.querySelector("form.search-bar > input");
-
-      if (query.value === "") {
-        console.log("query value is empty");
-        return;
-      }
-
-      console.log("calling API with search: %s", query.value);
-
-      displayMessage("Please wait...", true);
-      axios.post(searchApi, {
-        source:"wom",
-        query:query.value,
-        width: 30
-      })
-      .then(function(response) {
-        displayMessage("Search for <em>" + query.value + "</em> found "
-                + response.data.count + " matches.");
-        query.value = "";
-
-        if (response.data.count > 0) {
-          saveResults(response.data);
-          showSearchResults(response.data);
-        }
-      })
-      .catch(function(error) {
-        console.error(error);
-        displayMessage("Search error: " + error);
-      });
-    });
-
-    //when page loads, display results from last search if present
-    if (data) {
-      displayMessage("Search for <em>" + data.query + "</em> found "
-              + data.count + " matches.");
-      showSearchResults(data);
-    }
-  }
-};
-
-},{"../config/config":43,"../pug/templates":44,"axios":1,"pug-runtime":29,"store":30}],47:[function(require,module,exports){
+},{"fs":26}],44:[function(require,module,exports){
 /* eslint no-alert: off, no-unreachable: off */
 /* ui/bookmark.js */
 
@@ -5451,4 +5086,4 @@ module.exports = {
 };
 
 
-},{"../config/config":43,"../pug/templates":44,"store":30,"underscore":42}]},{},[45]);
+},{"../config/config":41,"../pug/templates":43,"store":28,"underscore":40}]},{},[42]);

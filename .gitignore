@@ -42,3 +42,4 @@ work/aws
 .jekyll-metadata
 Gemfile.lock
 
+.eslintcache

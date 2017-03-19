@@ -223,14 +223,62 @@
   }
 
   var puglatizer = {}
-  puglatizer["bookmark"] = function template(n) {
-    var i, a, c, e = "";
+  puglatizer["bookmark"] = function template(a) {
+    var l, i, e, r = "";
     try {
-      c = 1, e += "<!--mixin channelList(src)-->", c = 2, e += "<!--  h3= src.name-->", c = 3, e += "<!--  ul.fa-ul-->", c = 4, e += "<!--    each info in src.info-->", c = 5, e += "<!--      li: i.fa-ul.fa.fa-bookmark-->", c = 6, e += "<!--        a.cmiBookmarkLink(href= info.page)-->", c = 7, e += '<!--          = info.book + ": " + info.unit-->', c = 8, e += "<!---->", c = 9, e += "<!--each src in source-->", c = 10, e += "<!--  +channelList(src)-->", c = 11, e += "<h3>", c = 11, e = e + pug.escape(null == (i = "My name is Rick") ? "" : i) + "</h3>"
-    } catch (r) {
-      pug.rethrow(r, a, c)
+      var o = a || {};
+      (function(a, i) {
+        e = 1, r += "<!--mixin channelList(src)-->", e = 2, r += "<!--  each info in src.info-->", e = 3, r += "<!--    li: i.fa-ul.fa.fa-bookmark-->", e = 4, r += "<!--      a.cmiBookmarkLink(href= info.page)-->", e = 5, r += '<!--        = info.book + ": " + info.unit-->', e = 7, r += '<ul class="fa-ul">', e = 8,
+          function() {
+            var o = a;
+            if ("number" == typeof o.length)
+              for (var t = 0, n = o.length; n > t; t++) {
+                var s = o[t];
+                e = 9, i === s.page ? (e = 10, r += '<li class="bm-list bm-current-page">', e = 10, r = r + pug.escape(null == (l = ">>" + s.title) ? "" : l) + "</li>") : (e = 12, r += '<li class="bm-list">', e = 12, r = r + pug.escape(null == (l = s.title) ? "" : l) + "</li>"), e = 14, r += "<ul>", e = 15,
+                  function() {
+                    var a = s.mark;
+                    if ("number" == typeof a.length)
+                      for (var i = 0, o = a.length; o > i; i++) {
+                        var t = a[i];
+                        e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                      } else {
+                        var o = 0;
+                        for (var i in a) {
+                          o++;
+                          var t = a[i];
+                          e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                        }
+                      }
+                  }.call(this), r += "</ul>"
+              } else {
+                var n = 0;
+                for (var t in o) {
+                  n++;
+                  var s = o[t];
+                  e = 9, i === s.page ? (e = 10, r += '<li class="bm-list bm-current-page">', e = 10, r = r + pug.escape(null == (l = ">>" + s.title) ? "" : l) + "</li>") : (e = 12, r += '<li class="bm-list">', e = 12, r = r + pug.escape(null == (l = s.title) ? "" : l) + "</li>"), e = 14, r += "<ul>", e = 15,
+                    function() {
+                      var a = s.mark;
+                      if ("number" == typeof a.length)
+                        for (var i = 0, o = a.length; o > i; i++) {
+                          var t = a[i];
+                          e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                        } else {
+                          var o = 0;
+                          for (var i in a) {
+                            o++;
+                            var t = a[i];
+                            e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                          }
+                        }
+                    }.call(this), r += "</ul>"
+                }
+              }
+          }.call(this), r += "</ul>"
+      }).call(this, "bookmarks" in o ? o.bookmarks : "undefined" != typeof bookmarks ? bookmarks : void 0, "thisPageUrl" in o ? o.thisPageUrl : "undefined" != typeof thisPageUrl ? thisPageUrl : void 0)
+    } catch (t) {
+      pug.rethrow(t, i, e)
     }
-    return e
+    return r
   };
 
   puglatizer["search"] = function template(t) {

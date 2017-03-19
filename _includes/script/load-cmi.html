@@ -3,9 +3,9 @@
 
 {% if load-cmi == true %}
   <script src="/public/js/cmi.js"></script>
-{% endif %}
-
-{% if load-search == true %}
+{% elsif load-search == true %}
   <script src="/public/js/search.js"></script>
+{% else %}
+  <script src="/public/js/custom.js"></script>
 {% endif %}
 

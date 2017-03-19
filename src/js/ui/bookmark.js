@@ -1,4 +1,5 @@
-/* eslint no-unreachable: off */
+/* eslint no-alert: off, no-unreachable: off */
+/* ui/bookmark.js */
 
 "use strict";
 
@@ -7,6 +8,11 @@ var templates = require("../pug/templates");
 var config = require("../config/config");
 var _ = require("underscore");
 
+//make this better
+function showMessage(msg) {
+  alert(msg);
+}
+
 function addBookmarkDialogCloseListener() {
   $(".bookmark-close").on("click", function(e) {
     e.preventDefault();
@@ -14,25 +20,48 @@ function addBookmarkDialogCloseListener() {
   });
 }
 
-function showBookmarkDialog() {
+function prepareBookmarks(bm) {
   var i;
-  var data = store.get("bookmarks");
-  console.log("showBookmarks(): ", data);
 
-  for (i = 0; i < data.location.length; i++) {
-    data.location[i].title = config.getPageTitle(data.location[i].page);
-    data.location[i].key = config.getKey(data.location[i].page);
+  for (i = 0; i < bm.length; i++) {
+    bm[i].title = config.getPageTitle(bm[i].page);
+    bm[i].key = config.getKey(bm[i].page);
   }
 
-  console.log("bookmarks: ", data);
+  bm.sort(function(a,b) {
+    return a.key - b.key;
+  });
+
+  return bm;
+}
+
+function showBookmarkDialog() {
+  var data;
+
+  //dialog is aleady open - close it
+  if (!$(".bookmark-dialog").hasClass("hide-player")) {
+    $(".bookmark-dialog").addClass("hide-player");
+    return;
+  }
+
+  data = store.get("bookmarks");
+  if (!data) {
+    showMessage("You don't have any bookmarks");
+    return;
+  }
+
+  var bmarks = prepareBookmarks(data.location);
+  //console.log("bmarks: ", bmarks);
 
   // generateBookmarkList is a function created by pug
-  //var html = templates.bookmark({source: bookmarks});
-  //console.log("html: ", html);
+  var html = templates.bookmark({
+    thisPageUrl: location.pathname,
+    bookmarks: bmarks
+  });
 
-  //var list = document.getElementById("bookmark-list");
-  //list.innerHTML = html;
-  //$(".bookmark-dialog").removeClass("hide-player");
+  var list = document.getElementById("bookmark-list");
+  list.innerHTML = html;
+  $(".bookmark-dialog").removeClass("hide-player");
 }
 
 //the sidebar 'Bookmark' option - toggles display of
@@ -52,7 +81,9 @@ function addBookmarkToggleListener() {
       }
     });
   });
+}
 
+function addShowBookmarkDialogListener() {
   $(".list-bookmarks").on("click", function(e) {
     e.preventDefault();
     showBookmarkDialog();
@@ -152,6 +183,11 @@ function removeBookmark(id) {
       }
       else {
         bookmarks.location[page].mark.splice(mark, 1);
+
+        //if page has no more bookmarks then remove page from bookmarks
+        if (bookmarks.location[page].mark.length === 0) {
+          bookmarks.location.splice(page,1);
+        }
       }
     }
   }
@@ -181,10 +217,19 @@ function addBookmarkListener() {
 
 module.exports = {
   initialize: function() {
-    addBookMarkers();
-    showBookmarks();
-    addBookmarkListener();
-    addBookmarkToggleListener();
+    console.log("bookmark init");
+
+    if ($(".transcript").length > 0) {
+      addBookMarkers();
+      showBookmarks();
+      addBookmarkListener();
+      addBookmarkToggleListener();
+    }
+    else {
+      //hide sidebar bookmark option
+      $(".sidebar-nav-item.bookmark").addClass("hide-player");
+    }
+    addShowBookmarkDialogListener();
     addBookmarkDialogCloseListener();
   }
 };

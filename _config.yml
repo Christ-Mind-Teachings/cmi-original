@@ -307,11 +307,11 @@ fb-appId:     448658485318107
 # Exclusions from the final site
 exclude: [
 #     _wom/woh,
-#     _wom/wot,
-#     _wom/wok,
+      _wom/wot,
+      _wom/wok,
       _wom/early,
       _wom/questions,
-      _nwffacim/grad,
+#     _nwffacim/grad,
       _nwffacim/yaa,
       _nwffacim/2002,
       _nwffacim/2003,

@@ -1,9 +1,8 @@
 "use strict";
 
 var config = require("./config/config");
-var search = require("./search/site_search");
-var bookmark = require("./ui/bookmark");
 var store = require("store");
+var bookmark = require("./ui/bookmark");
 
 document.addEventListener("DOMContentLoaded", function() {
   var data = store.get("search");
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     //setup site document search
-    search.init(data);
     bookmark.initialize();
   });
 

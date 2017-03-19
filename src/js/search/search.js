@@ -245,11 +245,12 @@ module.exports = {
     //if there are no search results hide 'search navigator' sidebar option
     searchResults = store.get("search");
 
-    //if no search data don't show the 'Search Navigator' sidebar option
+    //if no search data just return
     if (!searchResults) {
-      $(".search-navigator").addClass("hide-player");
       return;
     }
+
+    $(".search-navigator").removeClass("hide-player");
 
     //init navigator - continue initialization if array.length > 0
     console.log("initializeNavigator");

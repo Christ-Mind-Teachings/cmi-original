@@ -25,9 +25,9 @@
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
     {% if page.layout == "narrative" %}
       {% include ui/search-results-nav.html %}
-      {% include ui/bookmark.html %}
       {% include ui/modal.html %}
     {% endif %}
+    {% include ui/bookmark.html %}
 
     {% if page.footer-id %}
       {% include footer.html id=page.footer-id %}
