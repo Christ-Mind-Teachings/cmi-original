@@ -4364,9 +4364,10 @@ var configUrl = "/public/js/config/config.json";
 var cmiConfig;
 
 var pageInfo = (function() {
-  var sid = 0;
-  var bid = 0;
-  var uid = 0;
+  var path = "";
+  var sid = -1;
+  var bid = -1;
+  var uid = -1;
   var source;
   var book;
   var unit;
@@ -4374,6 +4375,8 @@ var pageInfo = (function() {
   function getSource(psid) {
     var i;
     if (psid !== sid) {
+      bid = -1;
+      uid = -1;
       for (i = 0; i < cmiConfig.source.length; i++) {
         if (cmiConfig.source[i].sid === psid) {
           sid = psid;
@@ -4387,6 +4390,7 @@ var pageInfo = (function() {
   function getBook(pbid) {
     var i;
     if (pbid !== bid) {
+      uid = -1;
       for (i = 0; i < source.books.length; i++) {
         if (source.books[i].bid === pbid) {
           bid = pbid;
@@ -4404,29 +4408,56 @@ var pageInfo = (function() {
         if (book.units.page[i].uid === puid) {
           uid = puid;
           unit = book.units.page[i];
+          break;
         }
       }
     }
   }
 
   return {
-    init: function(uri) {
-      var parts = uri.split("/");
+    init: function(pathname) {
+      path = pathname;
+      var parts = pathname.split("/");
 
       getSource(parts[1]);
       getBook(parts[2]);
       getUnit(parts[3]);
     },
     initParts: function(sid, bid, uid) {
+      path = ["",sid,bid,uid,""].join("/");
+      console.log("initParts: path=%s", path);
       getSource(sid);
       getBook(bid);
       getUnit(uid);
+    },
+    get: function(pathname) {
+      this.init(pathname);
+      return {
+        pathname: pathname,
+        siteTitle: cmiConfig.title,
+        siteUrl: cmiConfig.url,
+        sourceTitle: source.title,
+        sourceId: source.id,
+        sid: source.sid,
+        bookTitle: book.title,
+        bookId: book.id,
+        bid: book.bid,
+        pageTitle: unit.title,
+        pageUrl: unit.url,
+        pageId: unit.idx,
+        pageKey: (source.id * 100000) + (book.id * 1000) + unit.idx,
+        uid: unit.uid,
+        pageHasAudioTimingData: unit.hasAudioTimingData
+      };
     },
     getTitle: function() {
       return book.title + " - " + unit.title;
     },
     getKey: function() {
       return (source.id * 100000) + (book.id * 1000) + unit.idx;
+    },
+    getAudio: function() {
+      return unit.hasAudioTimingData;
     }
   };
 }());
@@ -4479,9 +4510,18 @@ module.exports = {
     return pageInfo.getKey();
   },
 
+  getAudio: function(uri) {
+    pageInfo.init(uri);
+    return pageInfo.getAudio();
+  },
+
   getTitle: function(sid, bid, uid) {
     pageInfo.initParts(sid, bid, uid);
     return pageInfo.getTitle();
+  },
+
+  getInfo: function(uri) {
+    return pageInfo.get(uri);
   }
 };
 
@@ -4743,59 +4783,59 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var puglatizer = {}
   puglatizer["bookmark"] = function template(a) {
-    var l, i, e, r = "";
+    var e, l, o, r = "";
     try {
-      var o = a || {};
-      (function(a, i) {
-        e = 1, r += "<!--mixin channelList(src)-->", e = 2, r += "<!--  each info in src.info-->", e = 3, r += "<!--    li: i.fa-ul.fa.fa-bookmark-->", e = 4, r += "<!--      a.cmiBookmarkLink(href= info.page)-->", e = 5, r += '<!--        = info.book + ": " + info.unit-->', e = 7, r += '<ul class="fa-ul">', e = 8,
+      var i = a || {};
+      (function(a, l) {
+        o = 1, r += "<!--mixin channelList(src)-->", o = 2, r += "<!--  each info in src.info-->", o = 3, r += "<!--    li: i.fa-ul.fa.fa-bookmark-->", o = 4, r += "<!--      a.cmiBookmarkLink(href= info.page)-->", o = 5, r += '<!--        = info.book + ": " + info.unit-->', o = 7, r += '<ul class="fa-ul">', o = 8,
           function() {
-            var o = a;
-            if ("number" == typeof o.length)
-              for (var t = 0, n = o.length; n > t; t++) {
-                var s = o[t];
-                e = 9, i === s.page ? (e = 10, r += '<li class="bm-list bm-current-page">', e = 10, r = r + pug.escape(null == (l = ">>" + s.title) ? "" : l) + "</li>") : (e = 12, r += '<li class="bm-list">', e = 12, r = r + pug.escape(null == (l = s.title) ? "" : l) + "</li>"), e = 14, r += "<ul>", e = 15,
+            var i = a;
+            if ("number" == typeof i.length)
+              for (var t = 0, u = i.length; u > t; t++) {
+                var s = i[t];
+                o = 9, l === s.page ? (o = 10, r += '<li class="bm-list bm-current-page">', o = 10, r = r + pug.escape(null == (e = ">> " + s.title) ? "" : e) + "</li>") : (o = 12, r += '<li class="bm-list">', o = 12, r = r + pug.escape(null == (e = s.title) ? "" : e) + "</li>"), o = 14, r += "<ul>", o = 15,
                   function() {
                     var a = s.mark;
                     if ("number" == typeof a.length)
-                      for (var i = 0, o = a.length; o > i; i++) {
-                        var t = a[i];
-                        e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                      for (var i = 0, t = a.length; t > i; i++) {
+                        var u = a[i];
+                        o = 16, r += "<li>", o = 17, l === s.page ? (o = 18, r = r + '<a title="Goto Bookmark"' + pug.attr("href", "#" + u, !0, !1) + ">", o = 19, r += '<i class="fa fa-bookmark">', o = 19, r += "&nbsp;</i></a>", o = 20, r += pug.escape(null == (e = "  Bookmark " + (i + 1)) ? "" : e)) : (o = 22, r = r + '<a title="Goto Bookmark"' + pug.attr("href", s.page + "#" + u, !0, !1) + ">", o = 23, r += '<i class="fa fa-bookmark">', o = 23, r += "&nbsp;</i></a>", o = 24, r += pug.escape(null == (e = "  Bookmark " + (i + 1)) ? "" : e)), o = 26, l === s.page && s.audio === !0 && (o = 27, r += pug.escape(null == (e = ", Play audio ") ? "" : e), o = 28, r = r + '<a class="audio-from-here" title="Play audio from here"' + pug.attr("href", u, !0, !1) + ">", o = 29, r += '<i class="fa fa-volume-up"></i></a>'), r += "</li>"
                       } else {
-                        var o = 0;
+                        var t = 0;
                         for (var i in a) {
-                          o++;
-                          var t = a[i];
-                          e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                          t++;
+                          var u = a[i];
+                          o = 16, r += "<li>", o = 17, l === s.page ? (o = 18, r = r + '<a title="Goto Bookmark"' + pug.attr("href", "#" + u, !0, !1) + ">", o = 19, r += '<i class="fa fa-bookmark">', o = 19, r += "&nbsp;</i></a>", o = 20, r += pug.escape(null == (e = "  Bookmark " + (i + 1)) ? "" : e)) : (o = 22, r = r + '<a title="Goto Bookmark"' + pug.attr("href", s.page + "#" + u, !0, !1) + ">", o = 23, r += '<i class="fa fa-bookmark">', o = 23, r += "&nbsp;</i></a>", o = 24, r += pug.escape(null == (e = "  Bookmark " + (i + 1)) ? "" : e)), o = 26, l === s.page && s.audio === !0 && (o = 27, r += pug.escape(null == (e = ", Play audio ") ? "" : e), o = 28, r = r + '<a class="audio-from-here" title="Play audio from here"' + pug.attr("href", u, !0, !1) + ">", o = 29, r += '<i class="fa fa-volume-up"></i></a>'), r += "</li>"
                         }
                       }
                   }.call(this), r += "</ul>"
               } else {
-                var n = 0;
-                for (var t in o) {
-                  n++;
-                  var s = o[t];
-                  e = 9, i === s.page ? (e = 10, r += '<li class="bm-list bm-current-page">', e = 10, r = r + pug.escape(null == (l = ">>" + s.title) ? "" : l) + "</li>") : (e = 12, r += '<li class="bm-list">', e = 12, r = r + pug.escape(null == (l = s.title) ? "" : l) + "</li>"), e = 14, r += "<ul>", e = 15,
+                var u = 0;
+                for (var t in i) {
+                  u++;
+                  var s = i[t];
+                  o = 9, l === s.page ? (o = 10, r += '<li class="bm-list bm-current-page">', o = 10, r = r + pug.escape(null == (e = ">> " + s.title) ? "" : e) + "</li>") : (o = 12, r += '<li class="bm-list">', o = 12, r = r + pug.escape(null == (e = s.title) ? "" : e) + "</li>"), o = 14, r += "<ul>", o = 15,
                     function() {
                       var a = s.mark;
                       if ("number" == typeof a.length)
-                        for (var i = 0, o = a.length; o > i; i++) {
-                          var t = a[i];
-                          e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                        for (var i = 0, t = a.length; t > i; i++) {
+                          var u = a[i];
+                          o = 16, r += "<li>", o = 17, l === s.page ? (o = 18, r = r + '<a title="Goto Bookmark"' + pug.attr("href", "#" + u, !0, !1) + ">", o = 19, r += '<i class="fa fa-bookmark">', o = 19, r += "&nbsp;</i></a>", o = 20, r += pug.escape(null == (e = "  Bookmark " + (i + 1)) ? "" : e)) : (o = 22, r = r + '<a title="Goto Bookmark"' + pug.attr("href", s.page + "#" + u, !0, !1) + ">", o = 23, r += '<i class="fa fa-bookmark">', o = 23, r += "&nbsp;</i></a>", o = 24, r += pug.escape(null == (e = "  Bookmark " + (i + 1)) ? "" : e)), o = 26, l === s.page && s.audio === !0 && (o = 27, r += pug.escape(null == (e = ", Play audio ") ? "" : e), o = 28, r = r + '<a class="audio-from-here" title="Play audio from here"' + pug.attr("href", u, !0, !1) + ">", o = 29, r += '<i class="fa fa-volume-up"></i></a>'), r += "</li>"
                         } else {
-                          var o = 0;
+                          var t = 0;
                           for (var i in a) {
-                            o++;
-                            var t = a[i];
-                            e = 16, r += "<li>", e = 17, r += '<i class="fa-ul fa fa-bookmark"></i>', e = 18, r = r + "<a" + pug.attr("href", s.page + "#" + t, !0, !1) + ">", e = 19, r = r + pug.escape(null == (l = "  Bookmark " + (i + 1)) ? "" : l) + "</a></li>"
+                            t++;
+                            var u = a[i];
+                            o = 16, r += "<li>", o = 17, l === s.page ? (o = 18, r = r + '<a title="Goto Bookmark"' + pug.attr("href", "#" + u, !0, !1) + ">", o = 19, r += '<i class="fa fa-bookmark">', o = 19, r += "&nbsp;</i></a>", o = 20, r += pug.escape(null == (e = "  Bookmark " + (i + 1)) ? "" : e)) : (o = 22, r = r + '<a title="Goto Bookmark"' + pug.attr("href", s.page + "#" + u, !0, !1) + ">", o = 23, r += '<i class="fa fa-bookmark">', o = 23, r += "&nbsp;</i></a>", o = 24, r += pug.escape(null == (e = "  Bookmark " + (i + 1)) ? "" : e)), o = 26, l === s.page && s.audio === !0 && (o = 27, r += pug.escape(null == (e = ", Play audio ") ? "" : e), o = 28, r = r + '<a class="audio-from-here" title="Play audio from here"' + pug.attr("href", u, !0, !1) + ">", o = 29, r += '<i class="fa fa-volume-up"></i></a>'), r += "</li>"
                           }
                         }
                     }.call(this), r += "</ul>"
                 }
               }
           }.call(this), r += "</ul>"
-      }).call(this, "bookmarks" in o ? o.bookmarks : "undefined" != typeof bookmarks ? bookmarks : void 0, "thisPageUrl" in o ? o.thisPageUrl : "undefined" != typeof thisPageUrl ? thisPageUrl : void 0)
+      }).call(this, "bookmarks" in i ? i.bookmarks : "undefined" != typeof bookmarks ? bookmarks : void 0, "thisPageUrl" in i ? i.thisPageUrl : "undefined" != typeof thisPageUrl ? thisPageUrl : void 0)
     } catch (t) {
-      pug.rethrow(t, i, e)
+      pug.rethrow(t, l, o)
     }
     return r
   };
@@ -4858,6 +4898,9 @@ var store = require("store");
 var templates = require("../pug/templates");
 var config = require("../config/config");
 var _ = require("underscore");
+var setStartTime = function(p) {
+  console.error("bookmark.setStartTime(%s) - function not initialized", p);
+};
 
 //make this better
 function showMessage(msg) {
@@ -4868,6 +4911,7 @@ function addBookmarkDialogCloseListener() {
   $(".bookmark-close").on("click", function(e) {
     e.preventDefault();
     $(".bookmark-dialog").addClass("hide-player");
+    $(".audio-from-here").off();
   });
 }
 
@@ -4877,6 +4921,7 @@ function prepareBookmarks(bm) {
   for (i = 0; i < bm.length; i++) {
     bm[i].title = config.getPageTitle(bm[i].page);
     bm[i].key = config.getKey(bm[i].page);
+    bm[i].audio = config.getAudio(bm[i].page);
   }
 
   bm.sort(function(a,b) {
@@ -4888,6 +4933,8 @@ function prepareBookmarks(bm) {
 
 function showBookmarkDialog() {
   var data;
+  var bmarks;
+  var html;
 
   //dialog is aleady open - close it
   if (!$(".bookmark-dialog").hasClass("hide-player")) {
@@ -4901,17 +4948,34 @@ function showBookmarkDialog() {
     return;
   }
 
-  var bmarks = prepareBookmarks(data.location);
+  bmarks = prepareBookmarks(data.location);
   //console.log("bmarks: ", bmarks);
 
   // generateBookmarkList is a function created by pug
-  var html = templates.bookmark({
+  html = templates.bookmark({
     thisPageUrl: location.pathname,
     bookmarks: bmarks
   });
 
   var list = document.getElementById("bookmark-list");
   list.innerHTML = html;
+
+  //set event handler for audio-from-here that
+  //allows playing audio starting from bookmark position
+  // ** handler is removed when the dialog is closed
+  $(".audio-from-here").on("click", function(e) {
+    e.preventDefault();
+    var p = $(this).attr("href");
+    console.log("Play audio-from-here requested for %s", p);
+    if (!setStartTime(p)) {
+      showMessage("Failed to set audio start time to bookmark");
+    }
+    else {
+      //close dialog box
+      $(".bookmark-close").trigger("click");
+    }
+  });
+
   $(".bookmark-dialog").removeClass("hide-player");
 }
 
@@ -5044,7 +5108,6 @@ function removeBookmark(id) {
   }
 
   store.set("bookmarks", bookmarks);
-  console.log("Page has %s bookmarks", bookmarks.location[page].mark.length);
   //console.log(bookmarks);
 }
 function addBookmarkListener() {
@@ -5067,10 +5130,11 @@ function addBookmarkListener() {
 }
 
 module.exports = {
-  initialize: function() {
+  initialize: function(audioStartTimeFunc) {
     console.log("bookmark init");
 
     if ($(".transcript").length > 0) {
+      setStartTime = audioStartTimeFunc;
       addBookMarkers();
       showBookmarks();
       addBookmarkListener();

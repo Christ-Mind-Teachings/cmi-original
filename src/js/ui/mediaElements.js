@@ -6,6 +6,13 @@ var capture = require("./capture");
 var player;
 var playing = false;
 var audioStartTime = 0;
+var initialized = false;
+
+function showPlayer() {
+  if ($(".audio-player-wrapper").hasClass("hide-player")) {
+    $(".audio-player-wrapper").removeClass("hide-player");
+  }
+}
 
 function createPlayerDisplayToggle(config) {
   // setup "display player" toggle
@@ -22,12 +29,11 @@ function createPlayerDisplayToggle(config) {
 }
 
 function initPlayer(config) {
-  var initialized = false;
   var audioUrl;
   var audioElement = $("audio.mejs-player");
   var features;
 
-  if (audioElement.length !== 0) {
+  if (!initialized && audioElement.length !== 0) {
     //setup toggle for player display
     createPlayerDisplayToggle(config);
 
@@ -147,6 +153,30 @@ function init(config) {
 module.exports = {
   initialize: function(config) {
     return init(config);
-  }
+  },
 
+  //this is called to sync the audio start time to a bookmarked paragraph
+  //and begin playing the audio
+  // - the time will never be zero. Zero indicates an error
+  setStartTime: function(p) {
+    var newTime;
+    if (!initialized) {
+      console.error("audio.setStartTime(%s): audio player not initialized", p);
+      return false;
+    }
+    newTime = hilight.getTime(p);
+
+    if (newTime === 0) {
+      console.error("No timing data for paragraph %s, audio playback time not changed", p);
+      return false;
+    }
+
+    audioStartTime = hilight.getTime(p);
+    console.log("Audio start time set to %s for paragraph: %s", audioStartTime, p);
+
+    showPlayer();
+    player.play();
+    return true;
+  }
 };
+

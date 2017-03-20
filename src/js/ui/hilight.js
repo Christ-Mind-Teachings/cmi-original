@@ -1,7 +1,7 @@
 /*
  * NOTE:
  *
- * Declared globally: cmi_audio_timingData
+ * Declared globally: cmiAudioTimingData
  */
 
 "use strict";
@@ -132,11 +132,12 @@ module.exports = {
       //indicate timing data available
       enabled = true;
 
-      //define id"s for each paragraph in the narrative div
-      // - these id"s are referenced by the timing data
-      $(".narrative p").each(function(idx) {
-        $(this).attr("id", "p" + idx);
-      });
+      //define id's for each paragraph in the narrative div
+      // - these id's are referenced by the timing data
+      // Note: ** this is already done by cmi.js
+      //$(".narrative p").each(function(idx) {
+      //  $(this).attr("id", "p" + idx);
+      //});
     }
 
     if (typeof cssClass !== "undefined") {
@@ -200,6 +201,22 @@ module.exports = {
     //reset pointers
     locptr = -1;
     prevptr = -1;
+  },
+
+  //get start time for paragraph p
+  getTime: function(p) {
+    var pTime = 0;
+    var info = _.find(timingData.time, function(item) {
+      return item.id === p;
+    });
+
+    if (info) {
+      pTime = info.seconds;
+    }
+    else {
+      console.error("hilight.getTime(%s) failed to get paragraph start time.", p);
+    }
+    return pTime;
   }
 
 };

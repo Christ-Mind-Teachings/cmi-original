@@ -7,6 +7,9 @@ var store = require("store");
 var templates = require("../pug/templates");
 var config = require("../config/config");
 var _ = require("underscore");
+var setStartTime = function(p) {
+  console.error("bookmark.setStartTime(%s) - function not initialized", p);
+};
 
 //make this better
 function showMessage(msg) {
@@ -17,6 +20,7 @@ function addBookmarkDialogCloseListener() {
   $(".bookmark-close").on("click", function(e) {
     e.preventDefault();
     $(".bookmark-dialog").addClass("hide-player");
+    $(".audio-from-here").off();
   });
 }
 
@@ -26,6 +30,7 @@ function prepareBookmarks(bm) {
   for (i = 0; i < bm.length; i++) {
     bm[i].title = config.getPageTitle(bm[i].page);
     bm[i].key = config.getKey(bm[i].page);
+    bm[i].audio = config.getAudio(bm[i].page);
   }
 
   bm.sort(function(a,b) {
@@ -37,6 +42,8 @@ function prepareBookmarks(bm) {
 
 function showBookmarkDialog() {
   var data;
+  var bmarks;
+  var html;
 
   //dialog is aleady open - close it
   if (!$(".bookmark-dialog").hasClass("hide-player")) {
@@ -50,17 +57,34 @@ function showBookmarkDialog() {
     return;
   }
 
-  var bmarks = prepareBookmarks(data.location);
+  bmarks = prepareBookmarks(data.location);
   //console.log("bmarks: ", bmarks);
 
   // generateBookmarkList is a function created by pug
-  var html = templates.bookmark({
+  html = templates.bookmark({
     thisPageUrl: location.pathname,
     bookmarks: bmarks
   });
 
   var list = document.getElementById("bookmark-list");
   list.innerHTML = html;
+
+  //set event handler for audio-from-here that
+  //allows playing audio starting from bookmark position
+  // ** handler is removed when the dialog is closed
+  $(".audio-from-here").on("click", function(e) {
+    e.preventDefault();
+    var p = $(this).attr("href");
+    console.log("Play audio-from-here requested for %s", p);
+    if (!setStartTime(p)) {
+      showMessage("Failed to set audio start time to bookmark");
+    }
+    else {
+      //close dialog box
+      $(".bookmark-close").trigger("click");
+    }
+  });
+
   $(".bookmark-dialog").removeClass("hide-player");
 }
 
@@ -193,7 +217,6 @@ function removeBookmark(id) {
   }
 
   store.set("bookmarks", bookmarks);
-  console.log("Page has %s bookmarks", bookmarks.location[page].mark.length);
   //console.log(bookmarks);
 }
 function addBookmarkListener() {
@@ -216,10 +239,11 @@ function addBookmarkListener() {
 }
 
 module.exports = {
-  initialize: function() {
+  initialize: function(audioStartTimeFunc) {
     console.log("bookmark init");
 
     if ($(".transcript").length > 0) {
+      setStartTime = audioStartTimeFunc;
       addBookMarkers();
       showBookmarks();
       addBookmarkListener();

@@ -43,3 +43,4 @@ work/aws
 Gemfile.lock
 
 .eslintcache
+src/js/pug/templates.js

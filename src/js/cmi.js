@@ -76,7 +76,8 @@ document.addEventListener("DOMContentLoaded", function() {
       hilightClass: "hilite"
     });
 
-    bookmark.initialize();
+    //init bookmarks feature
+    bookmark.initialize(audio.setStartTime);
   });
 
 });
