@@ -4360,8 +4360,83 @@ function clearAll() {
 
 var axios = require("axios");
 var store = require("store");
+var _ = require("underscore");
 var configUrl = "/public/js/config/config.json";
 var cmiConfig;
+
+//get array of source id (sid) values:
+function getSourceArray() {
+  var srcArray = [];
+  var i;
+
+  for (i = 0; i < cmiConfig.source.length; i++) {
+    srcArray.push(cmiConfig.source[i].sid);
+  }
+  return srcArray;
+}
+
+function getSourceInfo(sid) {
+  var srcObj;
+  var i;
+  for (i = 0; i < cmiConfig.source.length; i++) {
+    if (cmiConfig.source[i].sid === sid) {
+      srcObj = cmiConfig.source[i];
+      break;
+    }
+  }
+  return srcObj;
+}
+
+//generate sort key from source id (id), book id (id), and unit id (idx)
+//srcId is required but others are optional
+function genKey(srcId, bookId, unitId) {
+  var sPart;
+  var bPart;
+  var uPart;
+
+  if (!srcId) {
+    return 0;
+  }
+
+  sPart = srcId * 100000;
+  bPart = bookId ? (bookId * 1000): 0;
+  uPart = unitId ? unitId : 0;
+
+  return sPart + bPart + uPart;
+}
+
+//get ordered array of book ids (bid) by sid
+function getOrderedArrayOfBids(sid) {
+  var i;
+  var arr = [];
+  var idArray;
+  var srcInfo = getSourceInfo(sid);
+
+  if (!srcInfo) {
+    return arr;
+  }
+
+  for (i = 0; i < srcInfo.books.length; i++) {
+    var bid;
+    var id;
+    arr.push({
+      bid: srcInfo.books[i].bid,
+      key: getKey(srcInfo.id, srcInfo.books[i].id)
+    });
+  }
+
+  //it should be sorted... but, sort by key just in case
+  arr.sort(function(a, b) {
+    return a.key - b.key;
+  });
+
+  idArray = _.map(arr, function(item) {
+    return item.bid;
+  });
+
+  console.log(idArray);
+  return idArray;
+}
 
 var pageInfo = (function() {
   var path = "";
@@ -4454,7 +4529,8 @@ var pageInfo = (function() {
       return book.title + " - " + unit.title;
     },
     getKey: function() {
-      return (source.id * 100000) + (book.id * 1000) + unit.idx;
+      //return (source.id * 100000) + (book.id * 1000) + unit.idx;
+      return genKey(source.id, book.id, unit.idx);
     },
     getAudio: function() {
       return unit.hasAudioTimingData;
@@ -4522,14 +4598,33 @@ module.exports = {
 
   getInfo: function(uri) {
     return pageInfo.get(uri);
+  },
+
+  //return array of book bid values sorted by key
+  //limit array to books in argument source if present
+  getBidArray: function(sid) {
+    var srcArray;
+    var arr = [];
+    var i;
+
+    if (sid) {
+      arr = getOrderedArrayOfBids(sid);
+    }
+    else {
+      //get array of sid's
+      srcArray = getSourceArray();
+      for (i = 0; i < srcArray.length; i++) {
+        _.union(arr, getOrderedArrayOfBids(srcArray[i]));
+      }
+    }
+    console.log("array of bids: ", arr);
+    return arr;
   }
 };
 
 
 
-
-
-},{"axios":1,"store":28}],42:[function(require,module,exports){
+},{"axios":1,"store":28,"underscore":40}],42:[function(require,module,exports){
 "use strict";
 
 var config = require("./config/config");

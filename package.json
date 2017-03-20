@@ -7,7 +7,7 @@
     "lint": "eslint --cache --fix -c ./config/eslint.json --ignore-path ./config/eslintignore ./src/js/**",
     "prebuild:cmi": "npm run lint && npm run pug",
     "build:cmi": "browserify ./src/js/cmi.js -o ./public/js/cmi.js",
-    "prebuild:search": "npm run lint",
+    "prebuild:search": "npm run lint && npm run pug",
     "build:search": "browserify ./src/js/search.js -o ./public/js/search.js",
     "prebuild:custom": "npm run lint",
     "build:custom": "browserify ./src/js/custom.js -o ./public/js/custom.js",

@@ -13,7 +13,9 @@ var msgField;
 //combine book specific arrays into one to simplify navigation on
 //transcript pages - then store results
 function saveResults(data) {
-  var books = config[data.source].books;
+  //var books = config[data.source].books;
+  var books = config.getBidArray("wom");
+  //console.log("bidArray: ", books);
   var all = [];
   for (var i = 0; i < books.length; i++) {
     var book = books[i];
@@ -26,7 +28,7 @@ function saveResults(data) {
   data.all = all;
   store.set("search", data);
 
-  console.log("saving results: ", data);
+  //console.log("saving results: ", data);
 }
 
 function showSearchResults(data) {
