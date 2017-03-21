@@ -44,7 +44,11 @@
     {% endcomment %}
 
     {% if page-data.res.audio %}
+      {% comment %}
+      we no longer need this - not removing it yet while I make all the
+      necessary changes
       {% include script/load-jquery.html %}
+      {% endcomment %}
 
       <link href="/public/css/lib/mediaelement/mediaelementplayer.css" rel="stylesheet" />
       <link href="/public/css/lib/mediaelement/speed.css" rel="stylesheet" />

@@ -26,9 +26,10 @@
       {% include footer.html id=page.footer-id %}
     {% endif %}
 
+    {% comment %}
     <script>
 
-    // Toggle sidebar  
+    // Toggle sidebar
       (function(document) {
         var toggle = document.querySelector('.sidebar-toggle');
         var sidebar = document.querySelector('#sidebar');
@@ -45,5 +46,6 @@
         }, false);
       })(document);
     </script>
+    {% endcomment %}
   </body>
 </html>

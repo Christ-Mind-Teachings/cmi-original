@@ -57,6 +57,7 @@ function clearMessage() {
 }
 
 module.exports = {
+  //search/site-search.js
   init: function(data) {
     msgField = document.getElementById("search-message");
 

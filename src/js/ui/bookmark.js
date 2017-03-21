@@ -3,17 +3,19 @@
 
 "use strict";
 
+var notify = require("toastr");
 var store = require("store");
-var templates = require("../pug/templates");
-var config = require("../config/config");
 var _ = require("underscore");
+var config = require("../config/config");
+var templates = require("../pug/templates");
+//var template = require("../pug/bookmark.jade");
 var setStartTime = function(p) {
   console.error("bookmark.setStartTime(%s) - function not initialized", p);
 };
 
 //make this better
 function showMessage(msg) {
-  alert(msg);
+  notify.info(msg);
 }
 
 function addBookmarkDialogCloseListener() {
@@ -61,6 +63,7 @@ function showBookmarkDialog() {
   //console.log("bmarks: ", bmarks);
 
   // generateBookmarkList is a function created by pug
+  //html = template({
   html = templates.bookmark({
     thisPageUrl: location.pathname,
     bookmarks: bmarks
@@ -239,6 +242,7 @@ function addBookmarkListener() {
 }
 
 module.exports = {
+  //bookmark.js
   initialize: function(audioStartTimeFunc) {
     console.log("bookmark init");
 

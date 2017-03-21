@@ -1,8 +1,8 @@
-/* eslint no-alert: "off" */
 
 "use strict";
 
 //var kb = require("keyboardjs");
+var notify = require("toastr");
 var _ = require("underscore");
 var modal = require("./modal");
 var hilight = require("./hilight");
@@ -148,7 +148,7 @@ function enableSidebarTimeCapture() {
     $.post($form.attr("action"), $form.serialize())
       //.then(function() {
       .done(function() {
-        alert("Thank you!");
+        notify.success("Thank you!");
         $(".modal-close").trigger("click");
 
         //signal data submitted
@@ -173,7 +173,7 @@ function createListener() {
       if (!audioPlaying) {
         //notify user action won"t happen until audio plays
         //and only the last action is honored
-        alert("action pending until audio playback begins");
+        notify.info("action pending until audio playback begins");
       }
     });
   });
@@ -266,6 +266,7 @@ function toggleMarkers() {
 }
 
 module.exports = {
+  //ui/capture.js
 
   initialize: function(player) {
     var captureOptions = {

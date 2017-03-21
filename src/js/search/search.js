@@ -238,6 +238,7 @@ function initializeNavigator(data) {
 }
 
 module.exports = {
+  //search/search.js
   initialize: function() {
     var searchMatchInfo;
     var s;

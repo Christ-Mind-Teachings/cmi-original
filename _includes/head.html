@@ -31,14 +31,11 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml"/>
 
-  {% include script/load-fa.html %}
-  {% include script/load-jquery.html %}
-  {% include script/load-audio.html player=page.player %}
+  <script src="https://use.fontawesome.com/6c994f43a5.js"></script>
+  <script src="/public/js/lib/jQuery/jquery.min.js"></script>
+  {% include script/load-media-elements.html %}
   {% include script/load-hypothesis.html %}
-  {% include script/load-tabs.html %}
-
-  <!-- do this last -->
-  {% include script/load-cmi.html %}
+  <script src="/public/js/cmi.js"></script>
 
   <!-- google -->
   {% include script/analytics.html %}

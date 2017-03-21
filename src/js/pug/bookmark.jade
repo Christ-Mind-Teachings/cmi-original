@@ -1,0 +1,23 @@
+ul.fa-ul
+  each mark in bookmarks
+    if thisPageUrl === mark.page
+      li.bm-list.bm-current-page= ">> " + mark.title
+    else
+      li.bm-list= mark.title
+
+    ul
+      each p,index in mark.mark
+        li
+          if thisPageUrl === mark.page
+            a(title="Goto Bookmark", href= "#" + p)
+              i.fa.fa-bookmark &nbsp;
+            = "  Bookmark " + (index + 1)
+          else
+            a(title="Goto Bookmark", href= mark.page + "#" + p)
+              i.fa.fa-bookmark &nbsp;
+            = "  Bookmark " + (index + 1)
+
+          if thisPageUrl === mark.page && mark.audio === true
+              = ", Play audio "
+              a.audio-from-here(title="Play audio from here", href= p)
+                i.fa.fa-volume-up

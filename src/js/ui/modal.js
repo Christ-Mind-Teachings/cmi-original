@@ -1,6 +1,7 @@
 "use strict";
 
 module.exports = {
+  //ui/modal.js
 
   initialize: function(trigger) {
 

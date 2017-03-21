@@ -118,6 +118,7 @@ function debugPlayPosition(msg, time) {
 }
 
 module.exports = {
+  //hilight.js
 
   //highlight supported when timing data available
   initialize: function(cssClass) {

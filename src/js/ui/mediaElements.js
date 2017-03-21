@@ -1,5 +1,6 @@
 "use strict";
 
+var url = require("../util/url");
 var hilight = require("./hilight");
 var capture = require("./capture");
 
@@ -7,6 +8,7 @@ var player;
 var playing = false;
 var audioStartTime = 0;
 var initialized = false;
+var haveTimingData = false;
 
 function showPlayer() {
   if ($(".audio-player-wrapper").hasClass("hide-player")) {
@@ -16,6 +18,7 @@ function showPlayer() {
 
 function createPlayerDisplayToggle(config) {
   // setup "display player" toggle
+
   $(config.audioToggle).on("click", function(e) {
     e.preventDefault();
     //$(config.hidePlayer).toggle();
@@ -70,7 +73,9 @@ function initPlayer(config) {
           capture.enableSidebarTimeCapture();
         }
         else {
+          //we've got timing data
           audioStartTime = hinfo.startTime;
+          haveTimingData = true;
         }
       }
     });
@@ -142,41 +147,51 @@ function initPlayer(config) {
 }
 
 function init(config) {
-  if (typeof jQuery === "undefined") {
-    console.log("jQuery not installed");
-    return false;
-  }
-
   return initPlayer(config);
 }
 
+//this is called to sync the audio start time to a bookmarked paragraph
+//and begin playing the audio
+// - the time will never be zero. Zero indicates an error
+function setStartTime(p) {
+  var newTime;
+  if (!initialized) {
+    console.error("audio.setStartTime(%s): audio player not initialized", p);
+    return false;
+  }
+  newTime = hilight.getTime(p);
+
+  if (newTime === 0) {
+    console.error("No timing data for paragraph %s, audio playback time not changed", p);
+    return false;
+  }
+
+  audioStartTime = hilight.getTime(p);
+  console.log("Audio start time set to %s for paragraph: %s", audioStartTime, p);
+
+  showPlayer();
+  player.play();
+  return true;
+}
+
 module.exports = {
+  //mediaElements.js
   initialize: function(config) {
-    return init(config);
+    init(config);
+
+    if (haveTimingData) {
+      //check if audio requested on page load with ?play=<p#>
+      var play = url.getQueryString("play");
+      if (play) {
+        console.log("play %s requested on url", play);
+        if (!setStartTime(play)) {
+          console.error("Failed to play audio from %s", play);
+        }
+      }
+    }
   },
 
-  //this is called to sync the audio start time to a bookmarked paragraph
-  //and begin playing the audio
-  // - the time will never be zero. Zero indicates an error
-  setStartTime: function(p) {
-    var newTime;
-    if (!initialized) {
-      console.error("audio.setStartTime(%s): audio player not initialized", p);
-      return false;
-    }
-    newTime = hilight.getTime(p);
+  setStartTime: setStartTime
 
-    if (newTime === 0) {
-      console.error("No timing data for paragraph %s, audio playback time not changed", p);
-      return false;
-    }
-
-    audioStartTime = hilight.getTime(p);
-    console.log("Audio start time set to %s for paragraph: %s", audioStartTime, p);
-
-    showPlayer();
-    player.play();
-    return true;
-  }
 };
 

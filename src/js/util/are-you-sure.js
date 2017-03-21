@@ -5,6 +5,7 @@ var message = "Please submit your timing data before leaving the page! To do so,
   "open the side bar menu and click on the 'send icon' next to the 'capture' option.";
 
 module.exports = {
+  //utilare-you-sure.js
 
   init: function() {
     window.onload = function() {
