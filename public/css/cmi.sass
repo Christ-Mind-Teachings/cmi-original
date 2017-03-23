@@ -68,7 +68,10 @@ i.bkmark.bkmark-hide.fa
   display: none
 
 .bm-current-page
-  color: red
+  color: white
+  background-color: darkslategrey
+  border-radius: 8px
+  text-align: center
 
 .fa-ul > li.bm-list
   display: block
@@ -79,8 +82,8 @@ i.bkmark.bkmark-hide.fa
 .bookmark-dialog
   position: fixed
   top: 100px
-  left: 10%
-  width: 80%
+  left: 30%
+  width: 40%
   background-color: white
   border: 1px solid black
   height: 70%
@@ -93,6 +96,16 @@ i.bkmark.bkmark-hide.fa
     margin: 30px
     ul
       list-style: none
+
+@media (max-width: 768px)
+  .bookmark-dialog
+    left: 20%
+    width: 60%
+
+@media (max-width: 480px)
+  .bookmark-dialog
+    left: 10%
+    width: 80%
 
 .shadow
   box-shadow: 5px 5px 4px 0 #6f6f6d

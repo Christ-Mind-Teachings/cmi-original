@@ -1,0 +1,30 @@
+---
+---
+{% include singlepage/css/base.css %}
+{% include singlepage/css/skeleton.css %}
+{% include singlepage/css/main.css %}
+
+.landing .container blockquote p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.landing .container blockquote p:before {
+  content: "\"";
+  font-size: 1.5em;
+}
+
+.landing-bq-color-yellow > p {
+  color: yellow;
+}
+
+.landing-bq-color-blue > p {
+  color: #7BB4ED;
+}
+
+.landing .container .landing-h3 {
+  text-align: left;
+}
+
+
+

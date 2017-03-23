@@ -1,11 +1,13 @@
 # Built with Jekyll 3.2.0
 
 # Setup
-title:               'Teachings of Christ Mind'
-tagline:             'A Guide For Living from the Mind of Christ'
-description:         'A Library of Christ Mind Teachings.'
-url:                 'https://www.christmind.info'
-baseurl:             ''
+title:        'Teachings of Christ Mind'
+tagline:      'A Guide For Living from the Mind of Christ'
+description:  'A Library of Christ Mind Teachings.'
+url:          'https://www.christmind.info'
+baseurl:      ''
+keywords:     'Christ Mind, ACIM, Way of Mastery, Raj, Jesus, Christ, Love'
+home:         "/library/"
 
 # About/contact
 author:
@@ -14,7 +16,6 @@ author:
   email:             rmercer33@gmail.com
 
 # Permalinks
-
 permalink: pretty
 permalink: /:title/
 
@@ -304,32 +305,48 @@ kramdown:
 version:             0.0.6
 fb-appId:     448658485318107
 
+# ----------- SINGLE PAGE TEMPLATE SUPPORT - USED FOR LANDING PAGE
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#49a7e9'
+  green:     '#9bcf2f'
+  purple:    '#c869bf'
+  orange:    '#fab125'
+  turquoise: '#0fbfcf'
+
 # Exclusions from the final site
 exclude: [
-#      _wom/woh,
-#      _wom/wot,
-#      _wom/wok,
-#      _wom/early,
-#      _wom/questions,
-#      _nwffacim/grad,
-#      _nwffacim/yaa,
-#      _nwffacim/2002,
-#      _nwffacim/2003,
-#      _nwffacim/2004,
-#      _nwffacim/2005,
-#      _nwffacim/2006,
-#      _nwffacim/2007,
-#      _nwffacim/2008,
-#      _nwffacim/2009,
-#      _nwffacim/2010,
-#      _nwffacim/2011,
-#      _nwffacim/2012,
-#      _nwffacim/2013,
-#      _nwffacim/2014,
-#      _nwffacim/2015,
-#      _nwffacim/2016,
-#      _nwffacim/2017,
+  #        _wom/woh,
+  #        _wom/wot,
+  #        _wom/wok,
+  #        _wom/early,
+  #        _wom/questions,
+  #        _nwffacim/grad,
+  #        _nwffacim/yaa,
+  #        _nwffacim/2002,
+  #        _nwffacim/2003,
+  #        _nwffacim/2004,
+  #        _nwffacim/2005,
+  #        _nwffacim/2006,
+  #        _nwffacim/2007,
+  #        _nwffacim/2008,
+  #        _nwffacim/2009,
+  #        _nwffacim/2010,
+  #        _nwffacim/2011,
+  #        _nwffacim/2012,
+  #        _nwffacim/2013,
+  #        _nwffacim/2014,
+  #        _nwffacim/2015,
   work, bin, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
+
+xkeep_files: [
+  wom,
+  nwffacim/grad,
+  nwffacim/yaa
+]
+
 
 

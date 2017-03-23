@@ -13,6 +13,9 @@
     },
     {
       "id": "home",
+      "logo": "/public/img/favicon/apple-icon-180x180.png",
+      "logo2": "/public/img/favicon/ms-icon-310x310.png",
+      "logo-url": "/",
       "about-url": "#",
       "contact-url": "#",
       "facebook-url": "#",

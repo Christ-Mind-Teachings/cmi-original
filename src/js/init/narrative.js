@@ -62,5 +62,12 @@ module.exports = {
 
     //init bookmarks feature
     bookmark.initialize(audio.setStartTime);
+
+    //not sure why I have to do this, previously the page would scroll
+    //to the hash id when loaded but it doesn't do that anymore. Could be
+    //because the hash id is created after the page is loaded.
+    if (location.hash) {
+      location.href = location.hash;
+    }
   }
 };

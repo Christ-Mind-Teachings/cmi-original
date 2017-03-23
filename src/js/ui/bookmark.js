@@ -54,7 +54,7 @@ function showBookmarkDialog() {
   }
 
   data = store.get("bookmarks");
-  if (!data) {
+  if (!data || data.location.length === 0) {
     showMessage("You don't have any bookmarks");
     return;
   }

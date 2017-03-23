@@ -15,10 +15,10 @@
 
   <nav class="sidebar-nav">
     <a class="last-item sidebar-nav-item list-bookmarks" href="javascript:void(0);">Show Bookmarks</a>
-    {% if page.url == "/" %}
+    {% if page.url == "{{site.home}}" %}
       <a class="sidebar-nav-item active" href="#">Home</a>
     {% else %}
-      <a class="sidebar-nav-item" href="{{ site.baseurl }}/">Home</a>
+      <a class="sidebar-nav-item" href="{{ site.home }}">Home</a>
     {% endif %}
 
     {% for node in site.data.cmi.library.pages %}

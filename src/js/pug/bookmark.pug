@@ -1,13 +1,7 @@
-//mixin channelList(src)
-//  each info in src.info
-//    li: i.fa-ul.fa.fa-bookmark
-//      a.cmiBookmarkLink(href= info.page)
-//        = info.book + ": " + info.unit
-
 ul.fa-ul
   each mark in bookmarks
     if thisPageUrl === mark.page
-      li.bm-list.bm-current-page= ">> " + mark.title
+      li.bm-list.bm-current-page= mark.title
     else
       li.bm-list= mark.title
 
