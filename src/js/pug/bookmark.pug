@@ -18,6 +18,10 @@ ul.fa-ul
             = "  Bookmark " + (index + 1)
 
           if thisPageUrl === mark.page && mark.audio === true
-              = ", Play audio "
-              a.audio-from-here(title="Play audio from here", href= p)
+              = ": Play audio at bookmark "
+              a.audio-from-here(title="Play Audio from Here", href= p)
+                i.fa.fa-volume-up
+          else if mark.audio === true
+              = ": Play audio at bookmark "
+              a(title="Play Audio from Here", href= mark.page + "?play=" + p)
                 i.fa.fa-volume-up

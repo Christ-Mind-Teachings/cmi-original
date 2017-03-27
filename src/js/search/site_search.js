@@ -1,5 +1,6 @@
 "use strict";
 
+var url = require("../util/url");
 var axios = require("axios");
 var store = require("store");
 var runtime = require("pug-runtime");
@@ -60,8 +61,8 @@ module.exports = {
   //search/site-search.js
   init: function(data) {
     msgField = document.getElementById("search-message");
-
     var submit = document.querySelector("form.search-bar");
+
     submit.addEventListener("submit", function(e) {
       e.preventDefault();
       console.log("submit event handler");
@@ -95,6 +96,15 @@ module.exports = {
         displayMessage("Search error: " + error);
       });
     });
+
+    var q = url.getQueryString("q");
+    var query;
+
+    //check if query specified as a url parameter
+    if (q) {
+      query = document.querySelector("form.search-bar > input");
+      query.value = decodeURI(q);
+    }
 
     //when page loads, display results from last search if present
     if (data) {

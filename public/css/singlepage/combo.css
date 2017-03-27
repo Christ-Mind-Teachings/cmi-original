@@ -7,9 +7,11 @@
 .landing .container blockquote p {
   font-size: 24px;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
-.landing .container blockquote p:before {
+.landing .container blockquote p::before,
+.landing .container blockquote p::after {
   content: "\"";
   font-size: 1.5em;
 }
@@ -18,12 +20,36 @@
   color: yellow;
 }
 
+.landing-bq-color-purple > p {
+  color: purple;
+}
+
 .landing-bq-color-blue > p {
   color: #7BB4ED;
 }
 
 .landing .container .landing-h3 {
   text-align: left;
+}
+
+.landing .section.enter {
+  background: no-repeat center/80% url(/public/img/bkgrnd/library.jpg);
+}
+
+#footer .container > ul {
+  display: inline-block;
+  list-style: none;
+  margin-top: 10px;
+}
+
+#footer li {
+  float: left;
+  margin-top: 30px;
+  margin-right: 5px;
+}
+
+#footer li::before {
+  content: " / ";
 }
 
 

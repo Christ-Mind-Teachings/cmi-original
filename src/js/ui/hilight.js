@@ -44,7 +44,9 @@ function processSeek(time) {
 
   //check if we"ve found a beginning of the paragraph
   // - if so, don"t need to snap
-  if (time === timingData.time[locptr].seconds) {
+  console.log("snap time diff=%s", Math.abs(time - timingData.time[locptr].seconds));
+  //if (time === timingData.time[locptr].seconds) {
+  if (Math.abs(time - timingData.time[locptr].seconds) < 1) {
     showNscroll(locptr);
     seeking = false;
   }

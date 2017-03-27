@@ -86,13 +86,19 @@ $(document).ready(function (){
   $(".container a").each(function(){
     if ($(this).attr("href").charAt(0) == '#'){
       $(this).on('click', function(event) {
-      event.preventDefault();
+        event.preventDefault();
         var target = $(event.target).closest("a");
         var targetHight =  $(target.attr("href")).offset().top
         $('html,body').animate({scrollTop: targetHight - 170}, 800, "easeInOutExpo");
       });
     }
   });
+
+  //get the page to scroll to a section - not doing that automatically on Chrome
+  if (location.hash !== "") {
+    console.log("trigger click on %s", location.hash);
+    $("[href='"+location.hash+"']").trigger("click");
+  }
 
 });
 

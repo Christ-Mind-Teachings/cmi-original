@@ -14,10 +14,9 @@ xfooter-id: wom
 
 # The Way of Mastery
 
-The core teaching of *The Way of Mastery* was given by [ Jeshua
-](/wom/jeshua/) through [ Jayem ](/wom/jayem/) over a three year period
-of monthly sessions. Transcripts of each session are available here
-organized by year.
+The core teaching of *The Way of Mastery* was given by Jeshua through
+Jayem over a three year period of monthly sessions. Transcripts of each
+session are available here organized by year.
 
 - [ Year One: *The Way of the Heart* ](/wom/intro/woh/)
 - [ Year Two: *The Way of Transformation* ](/wom/intro/wot/)
@@ -30,7 +29,7 @@ given before the core teachings of The Way of Mastery.
 throughout all the Way of Mastery material are compiled and available
 here.
 
-Learn more about the [ *Way of Mastery* here.](/wom/detail/)
+Learn more about the [ *Way of Mastery* here.](https://wayofmastery.com)
 
 </div>
 

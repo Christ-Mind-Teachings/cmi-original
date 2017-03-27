@@ -58,34 +58,38 @@ function getPageInfo(data, thisBook, thisUnit) {
 
 // get array for all search hits on the page
 function getHitArray(data, book, unit) {
-  var nextBook;
-  var prevBook;
+  //var nextBook;
+  //var prevBook;
   var pageHits = [];
   var bookHits = [];
 
   var i;
 
+  bookHits = data[book];
+
+  /*
   switch(book) {
     case "woh":
-      nextBook = "wot";
-      prevBook = "wok";
+      //nextBook = "wot";
+      //prevBook = "wok";
       bookHits = data.woh;
       break;
     case "wot":
-      nextBook = "wok";
-      prevBook = "woh";
+      //nextBook = "wok";
+      //prevBook = "woh";
       bookHits = data.wot;
       break;
     case "wok":
-      nextBook = "woh";
-      prevBook = "wot";
+      //nextBook = "woh";
+      //prevBook = "wot";
       bookHits = data.wok;
       break;
     default:
       break;
   }
+  */
 
-  if (bookHits) {
+   if (bookHits) {
     for(i = 0; i < bookHits.length; i++) {
       if (bookHits[i].unit === unit) {
         pageHits.push(bookHits[i]);

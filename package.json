@@ -49,6 +49,7 @@
     "brfs": "^1.4.3",
     "browserify": "^14.1.0",
     "browserify-shim": "^3.8.13",
+    "colorable": "^1.0.5",
     "dynamodb-local": "0.0.14",
     "eslint": "^3.17.1",
     "jquery": "^3.2.1",
@@ -70,6 +71,7 @@
     "store": "^2.0.4",
     "toastr": "^2.1.2",
     "underscore": "^1.8.3",
+    "webclip": "^0.1.1",
     "wrap-range-text": "^1.0.1"
   }
 }

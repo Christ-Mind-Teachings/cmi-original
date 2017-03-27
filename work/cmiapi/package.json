@@ -11,11 +11,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "claudia": "^2.9.0",
+    "claudia": "^2.10.0",
     "eslint": "^3.17.1"
   },
   "dependencies": {
-    "aws-sdk": "^2.22.0",
-    "claudia-api-builder": "^2.4.0"
+    "aws-sdk": "^2.32.0",
+    "claudia-api-builder": "^2.4.1",
+    "mailgun.js": "^2.0.1"
   }
 }

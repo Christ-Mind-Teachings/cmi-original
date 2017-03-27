@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
     else if ($("#main > .cmi-search").length) {
       require("./init/search").initialize();
     }
+    else if (location.pathname === "/about/") {
+      require("./init/about").initialize();
+    }
     else {
       require("./init/common").initialize();
     }

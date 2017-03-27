@@ -5,6 +5,7 @@ var bookmark = require("../ui/bookmark");
 var search = require("../search/search");
 var url = require("../util/url");
 var wrap = require("../h/wrap");
+var share = require("../ui/share");
 var scroll = require("scroll-into-view");
 
 var unwrap;
@@ -62,6 +63,9 @@ module.exports = {
 
     //init bookmarks feature
     bookmark.initialize(audio.setStartTime);
+
+    //init share feature
+    share.initialize();
 
     //not sure why I have to do this, previously the page would scroll
     //to the hash id when loaded but it doesn't do that anymore. Could be

@@ -91,8 +91,10 @@ function initPlayer(config) {
         return;
       }
 
-      if (time < audioStartTime) {
-        console.log("adjusting play time: ct: %s/%s", time, audioStartTime);
+      //if (time < audioStartTime) {
+      if (time < audioStartTime && (Math.abs(time - audioStartTime) > 1)) {
+        console.log("adjusting play time: ct: %s/%s, diff: %s",
+            time, audioStartTime, Math.abs(time - audioStartTime));
         this.setCurrentTime(audioStartTime);
       }
       else {
@@ -152,7 +154,8 @@ function init(config) {
 
 //this is called to sync the audio start time to a bookmarked paragraph
 //and begin playing the audio
-// - the time will never be zero. Zero indicates an error
+// - the time will never be zero, unless, possibly, argument is p0.
+//   Zero indicates an error
 function setStartTime(p) {
   var newTime;
   if (!initialized) {
@@ -161,12 +164,13 @@ function setStartTime(p) {
   }
   newTime = hilight.getTime(p);
 
-  if (newTime === 0) {
+  if (newTime === 0 && p !== "p0") {
     console.error("No timing data for paragraph %s, audio playback time not changed", p);
     return false;
   }
 
-  audioStartTime = hilight.getTime(p);
+  //audioStartTime = hilight.getTime(p);
+  audioStartTime = newTime;
   console.log("Audio start time set to %s for paragraph: %s", audioStartTime, p);
 
   showPlayer();
