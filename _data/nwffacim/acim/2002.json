@@ -17,7 +17,13 @@
     {
       "fid": "061202/",
       "desc": "T31.II Walking with Christ",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-6-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       },
@@ -30,7 +36,13 @@
     },
     {
       "fid": "073102/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "desc": "T31.VIII Choose Once Again",
       "res": {
         "audio": "uploads/2002-07-31_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
@@ -44,7 +56,13 @@
     },
     {
       "fid": "080702/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "desc": "T1.In Introduction",
       "res": {
         "audio": "uploads/2002-08-07_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
@@ -58,7 +76,13 @@
     },
     {
       "fid": "081402/",
-      "complete": true,
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "desc": "*No transcript available for this session*",
       "intro": false,
       "url": "/nwffacim/2002/081402/",
@@ -69,7 +93,13 @@
     },
     {
       "fid": "082802/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "desc": "T1.I Principles of Miracles, Principle 33",
       "res": {
         "audio": "uploads/2002-08-28_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
@@ -83,7 +113,13 @@
     },
     {
       "fid": "090402/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "desc": "T1.I Principles of Miracles, Principle 42",
       "res": {
         "audio": "uploads/2002-09-04_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
@@ -97,7 +133,13 @@
     },
     {
       "fid": "091102/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "desc": "T1.I Principles of Miracles, Principle 47",
       "res": {
         "audio": "uploads/2002-09-11_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
@@ -111,7 +153,13 @@
     },
     {
       "fid": "091802/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "desc": "T1.II Revelation, Time and Miracles",
       "res": {
         "audio": "uploads/2002-09-18_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
@@ -125,7 +173,13 @@
     },
     {
       "fid": "092502/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "desc": "T1.III Atonement and Miracles",
       "res": {
         "audio": "uploads/2002-09-25_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
@@ -139,7 +193,13 @@
     },
     {
       "fid": "100202/",
-      "complete": true,
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "desc": "T1.IV The Escape from Darkness",
       "res": {
         "audio": "uploads/2002-10-02_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
@@ -153,8 +213,14 @@
     },
     {
       "fid": "101002/",
-      "desc": "T2.II Healing as Release from Fear",
-      "complete": true,
+      "desc": "T1.V Wholeness and Spirit",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-10-10_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       },
@@ -167,8 +233,14 @@
     },
     {
       "fid": "101702/",
-      "desc": "Needs formating",
-      "complete": false,
+      "desc": "T1.VI The Illusion of Needs",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-10-17_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       },
@@ -181,8 +253,14 @@
     },
     {
       "fid": "102402/",
-      "desc": "Needs formating",
-      "complete": false,
+      "desc": "T1.VII Distortions of Miracle Impulses",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-10-24_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       },
@@ -195,8 +273,14 @@
     },
     {
       "fid": "103102/",
-      "desc": "Needs formating",
-      "complete": false,
+      "desc": "T2.I The Origins of Separation",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-10-31_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       },
@@ -210,7 +294,13 @@
     {
       "fid": "110702/",
       "desc": "Needs formating",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-11-07_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       },
@@ -224,7 +314,13 @@
     {
       "fid": "112102/",
       "desc": "Discussion",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-11-21_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       },
@@ -238,7 +334,13 @@
     {
       "fid": "120502/",
       "desc": "Needs formating",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-12-05_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       },
@@ -252,7 +354,13 @@
     {
       "fid": "121202/",
       "desc": "Needs formating",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-12-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
       },
@@ -266,7 +374,13 @@
     {
       "fid": "121902/",
       "desc": "T2.II Healing as Release from Fear",
-      "complete": true,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "timing": 0,
+        "index": 0,
+        "fb": 0
+      },
       "res": {
         "audio": "uploads/2002-12-19_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles_wma.mp3"
       },
