@@ -1,0 +1,104 @@
+#!/usr/bin/env node
+
+var AWS = require("aws-sdk");
+var fs = require('fs');
+var program = require("commander");
+var local = "http://localhost:8000";
+var remote = "https://dynamodb.us-east-1.amazonaws.com";
+
+var awsConfig = {
+  region: "us-east-1"
+};
+
+program
+  .version('0.0.1')
+  .usage('[options] <file ...>')
+  .option('-e, --endpoint <dblocation>', "Db location, either local or remote")
+  .option('-t, --table <table>', 'Table Name')
+  .option('-v, --verify [verify]', 'Verify input files but don\'t load')
+  .parse(process.argv);
+
+if (!program.table) {
+  console.log("you need to specify the table to load with -t <table>");
+  process.exit(1);
+}
+
+if (!program.directory && program.args.length == 0) {
+  console.log("No input files specified");
+  process.exit(1);
+}
+
+if (!program.endpoint) {
+  console.log("specify endpoint of either 'local' or 'remote'");
+  process.exit(1);
+}
+
+if (program.endpoint === "remote") {
+  awsConfig.endpoint = remote;
+}
+else {
+  awsConfig.endpoint = local;
+}
+
+AWS.config.update(awsConfig);
+var docClient = new AWS.DynamoDB.DocumentClient();
+
+program.args.forEach(function(fn) {
+  if (fn.indexOf(".json") === -1) {
+    fn = fn + ".json";
+  }
+  load(program.table, fn, program.verify?true:false);
+});
+
+function load(table, fileName, verify) {
+  var discarded = 0;
+
+  if (verify) {
+    console.log("Verifying: %s", fileName);
+  }
+  else {
+    console.log("Loading table: %s from %s", table, fileName);
+  }
+
+  var lesson = JSON.parse(fs.readFileSync(fileName, 'utf8'));
+  console.log("file has %s paragraphs to load", lesson.paragraph.length);
+
+  if (verify) {
+    return;
+  }
+
+  lesson.paragraph.forEach(function(p) {
+    var discard = p.discard ? p.discard : 0;
+    var params = {
+        TableName: table,
+        Item: {
+            "bid": p.bid,
+            "book": p.book,
+            "key": (p.bid * 10000000) + (p.uid * 1000) + p.pid,
+            "unit": p.unit,
+            "pid":  p.pid,
+            "text": p.text
+        }
+    };
+
+    //we discard one line paragraphs for acim transcripts because most
+    //of them are conversational; Continue, Yes, Indeed, You are correct, etc
+    if (discard === 1 && p.bid > 2) {
+      discarded++;
+      return;
+    }
+
+    docClient.put(params, function(err, data) {
+      //var key = (p.bid * 100000) + (p.uid * 1000) + p.pid;
+      var key = (p.bid * 10000000) + (p.uid * 1000) + p.pid;
+       if (err) {
+           console.error("Unable to add paragraph: %s:%s (%s).", p.book, p.unit, key);
+           console.error("Error JSON:", JSON.stringify(err, null, 2));
+       } else {
+           console.log("PutItem succeeded: %s:%s (%s)", p.book, p.unit, key);
+       }
+    });
+  });
+  console.log("file has %s discarded paragraphs", discarded);
+}
+

@@ -9,16 +9,24 @@ var searchResults;
 var currentMatchIndex = 0;
 var matchArray = [];
 
+//display document info on search navigator
 function setSearchDocument(data) {
-  $(".search-header > .search-document").
-    html("<p>" + config.getTitle(data.source,
-                 matchArray[currentMatchIndex].book,
-                 matchArray[currentMatchIndex].unit) + "</p>");
+  $(".search-header > .search-document").html(
+    "<p>" +
+      config.getTitle(data.source,
+      matchArray[currentMatchIndex].book,
+      matchArray[currentMatchIndex].unit) +
+    "</p>"
+  );
 }
 
+//display search result info on search navigator
 function setSearchTitle(query) {
-  $(".search-header > .search-info").html("<p>Search <em>"+query+"</em> ("
-     +(currentMatchIndex + 1)+" of "+ matchArray.length + ")</p>");
+  $(".search-header > .search-info").html(
+    "<p>Search <em>" + query + "</em> (" +
+    (currentMatchIndex + 1) + " of " +
+    matchArray.length + ")</p>"
+  );
 }
 
 function getPageInfo(data, thisBook, thisUnit) {
@@ -30,12 +38,13 @@ function getPageInfo(data, thisBook, thisUnit) {
 
   //this should never happen
   if (idx === -1) {
+    console.error("getPageInfo() error: Can't find search hit for this page in search results.");
     return urlInfo;
   }
 
   //console.log("findIndex for %s, %s: found idx: %s, ", thisBook, thisUnit, idx, data.all[idx]);
 
-  //find next
+  //find next page with search results
   for (i=idx; i < data.all.length; i++) {
     //console.log("looking for next: i: %s, book: %s, unit: %s", i, data.all[i].book, data.all[i].unit);
     if (data.all[i].unit !== thisUnit || data.all[i].book !== thisBook) {
@@ -44,7 +53,7 @@ function getPageInfo(data, thisBook, thisUnit) {
     }
   }
 
-  //find prev
+  //find prev page with search results
   for (i=idx; i >= 0; i--) {
     if (data.all[i].unit !== thisUnit || data.all[i].book !== thisBook) {
       urlInfo.prev = data.all[i].base + "?s=show" + data.all[i].location;
@@ -58,8 +67,6 @@ function getPageInfo(data, thisBook, thisUnit) {
 
 // get array for all search hits on the page
 function getHitArray(data, book, unit) {
-  //var nextBook;
-  //var prevBook;
   var pageHits = [];
   var bookHits = [];
 
@@ -67,29 +74,7 @@ function getHitArray(data, book, unit) {
 
   bookHits = data[book];
 
-  /*
-  switch(book) {
-    case "woh":
-      //nextBook = "wot";
-      //prevBook = "wok";
-      bookHits = data.woh;
-      break;
-    case "wot":
-      //nextBook = "wok";
-      //prevBook = "woh";
-      bookHits = data.wot;
-      break;
-    case "wok":
-      //nextBook = "woh";
-      //prevBook = "wot";
-      bookHits = data.wok;
-      break;
-    default:
-      break;
-  }
-  */
-
-   if (bookHits) {
+  if (bookHits) {
     for(i = 0; i < bookHits.length; i++) {
       if (bookHits[i].unit === unit) {
         pageHits.push(bookHits[i]);
@@ -156,8 +141,21 @@ function initializeNavigator(data) {
   var thisUnit = path[3];
   var matchIndex;
 
+  //for nwffacim study group books, the array of search hits is prefixed
+  //with an 'a'. If we are processing an study group page we adjust the array name
+  //accordingly
+  var bookArrayName = thisBook;
+
+  //the search result array for acim books starts with an 'a' but
+  //the api returns an array identified by year, ie 2002, 2003, so
+  //we add an to the 'book' portion of the uri to get the data from
+  //the search result set
+  if (/^\d/.test(thisBook)) {
+    bookArrayName = "a" + thisBook;
+  }
+
   //get array of search matches on the page
-  var hitInfo = getHitArray(data, thisBook, thisUnit);
+  var hitInfo = getHitArray(data, bookArrayName, thisUnit);
 
   //no hits for this page
   if (hitInfo.matches.length === 0) {
@@ -179,7 +177,7 @@ function initializeNavigator(data) {
       currentMatchIndex = matchIndex;
     }
     else {
-      console.log("Error: could not find location.hash in search result array");
+      console.error("Error: could not find location.hash in search result array");
     }
   }
 
@@ -201,17 +199,17 @@ function initializeNavigator(data) {
       location.href = matchArray[currentMatchIndex].location;
       setSearchTitle(searchResults.query);
     });
-  }
 
-  $(".search-next-match").on("click", function(e) {
-    e.preventDefault();
-    currentMatchIndex = currentMatchIndex + 1;
-    if (currentMatchIndex > matchArray.length - 1) {
-      currentMatchIndex = 0;
-    }
-    location.href = matchArray[currentMatchIndex].location;
-    setSearchTitle(searchResults.query);
-  });
+    $(".search-next-match").on("click", function(e) {
+      e.preventDefault();
+      currentMatchIndex = currentMatchIndex + 1;
+      if (currentMatchIndex > matchArray.length - 1) {
+        currentMatchIndex = 0;
+      }
+      location.href = matchArray[currentMatchIndex].location;
+      setSearchTitle(searchResults.query);
+    });
+  }
 
   //get next/prev page urls
   var pageUrl = getPageInfo(data, thisBook, thisUnit);

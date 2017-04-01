@@ -14,12 +14,16 @@ var msgField;
 //combine book specific arrays into one to simplify navigation on
 //transcript pages - then store results
 function saveResults(data) {
-  //var books = config[data.source].books;
-  var books = config.getBidArray("wom");
-  //console.log("bidArray: ", books);
+  var books = config.getBidArray(data.source);
+  console.log("bidArray: ", books);
   var all = [];
   for (var i = 0; i < books.length; i++) {
     var book = books[i];
+
+    //if an array starts with a digit put an 'a' in front of it
+    if (/^\d/.test(book)) {
+      book = "a" + book;
+    }
     if (data[book]) {
       all = all.concat(data[book]);
     }
@@ -34,10 +38,18 @@ function saveResults(data) {
 
 function showSearchResults(data) {
   console.log("showSearchResults(): ", data);
+  var html;
 
   // searchResults is a function created by pug
   //var html = searchResults(data);
-  var html = templates.search(data);
+  if (data.source === "wom") {
+    console.log("applying wom template");
+    html = templates.search(data);
+  }
+  else if (data.source === "nwffacim") {
+    console.log("applying nwffacim template");
+    html = templates.nwffacim(data);
+  }
   var resultsDiv = document.getElementById("search-results");
   resultsDiv.innerHTML = html;
 }
@@ -66,7 +78,8 @@ module.exports = {
     submit.addEventListener("submit", function(e) {
       e.preventDefault();
       console.log("submit event handler");
-      var query = document.querySelector("form.search-bar > input");
+      var query = document.querySelector(".requested-search-string");
+      var source = $(".search-options").val();
 
       if (query.value === "") {
         console.log("query value is empty");
@@ -74,16 +87,18 @@ module.exports = {
       }
 
       console.log("calling API with search: %s", query.value);
+      console.log("searching %s", source);
 
       displayMessage("Please wait...", true);
       axios.post(searchApi, {
-        source:"wom",
+        source: source,
         query:query.value,
         width: 30
       })
       .then(function(response) {
-        displayMessage("Search for <em>" + query.value + "</em> found "
-                + response.data.count + " matches.");
+        displayMessage("Search of " + source.toUpperCase() + " for <em>"
+               + query.value + "</em> found "
+               + response.data.count + " matches.");
         query.value = "";
 
         if (response.data.count > 0) {
@@ -97,19 +112,35 @@ module.exports = {
       });
     });
 
+    var source = url.getQueryString("s");
+
+    //check if source specified as a url parameter and set search
+    //source accordingly
+    if (source) {
+      $("#option-select-" + source).prop("selected", true);
+    }
+
     var q = url.getQueryString("q");
     var query;
 
     //check if query specified as a url parameter
     if (q) {
-      query = document.querySelector("form.search-bar > input");
+      query = document.querySelector(".requested-search-string");
       query.value = decodeURI(q);
+
+      $("#option-select-" + source).prop("selected", true);
     }
+
+    //init select2
+    $(".search-options").select2({
+      theme: "classic"
+    });
 
     //when page loads, display results from last search if present
     if (data) {
-      displayMessage("Search for <em>" + data.query + "</em> found "
-              + data.count + " matches.");
+      displayMessage("Search of " + data.source.toUpperCase() + " for <em>"
+          + data.query + "</em> found "
+          + data.count + " matches.");
       showSearchResults(data);
     }
   }

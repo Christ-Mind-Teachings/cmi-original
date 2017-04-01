@@ -1,0 +1,70 @@
+-
+  //date is: mmddyy
+  function formatDate(unit) {
+    var month = ["","Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var mm = Number.parseInt(unit.substr(0,2), 10);
+    var yy = Number.parseInt(unit.substr(4,2), 10);
+    var dd = Number.parseInt(unit.substr(2,2), 10);
+    var year = ((yy > 50) ? "19": "20") + unit.substr(4,2);
+    var unitName = month[mm] + " " + dd + ", " + year;
+    return unitName;
+  }
+  function getGradUnitName(unit) {
+    if (unit === "g000002") {
+      return "Authors Note";
+    }
+    else if (unit === "g000003") {
+      return "Foreword";
+    }
+    else {
+      return formatDate(unit.substr(1));
+    }
+  }
+  function getYaaUnitName(unit) {
+    if (unit == "acknowledgements") {
+      return "Acknowledgements";
+    }
+    else if (unit == "foreword") {
+      return "Foreword";
+    }
+    else if (unit == "afterword") {
+      return "Afterword";
+    }
+    else {
+      return formatDate(unit);
+    }
+  }
+  function getACIMUnitName(unit) {
+    return formatDate(unit);
+  }
+  function getUnitName(bid, unit) {
+    if (bid === "grad") {
+      return getGradUnitName(unit);
+    }
+    else if (bid === "yaa") {
+      return getYaaUnitName(unit);
+    }
+    else {
+      return getACIMUnitName(unit);
+    }
+  }
+
+mixin hitList(book, bid, hits)
+  - var length = hits.length;
+  h3= book + " (" + length + ")"
+  ul.fa-ul
+    each val in hits
+      - var url = val.base + "?s=show" + val.location;
+      - var unitName = getUnitName(bid, val.unit);
+      li: i.fa.fa-search
+        a(href=url) &nbsp; #{unitName}
+        p !{val.context}
+
+if yaa
+  +hitList("You Are the Answer", "yaa", yaa)
+if grad
+  +hitList("Graduation", "grad", grad)
+if a2002
+  +hitList("ACIM Study Group - 2002", "acim", a2002)
+

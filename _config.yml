@@ -43,6 +43,7 @@ defaults:
       layout: narrative
       source: Way of Mastery
       surl: /wom/intro/wom/
+      sid: wom
       class: wom
 
 # Way of the Heart
@@ -110,6 +111,7 @@ defaults:
       layout: narrative
       source: Northwest Foundation for ACIM
       surl: /nwffacim/intro/nwffacim/
+      sid: nwffacim
       class: nwffacim
 
 # ACIM Study Group - many years of sessions
@@ -318,31 +320,31 @@ colors:
 
 # Exclusions from the final site
 exclude: [
-  #    _wom/woh,
-  #    _wom/wot,
-  #    _wom/wok,
-  #    _wom/early,
-  #    _wom/questions,
-  #    _nwffacim/grad,
-  #    _nwffacim/yaa,
-  #    _nwffacim/2002,
-  #    _nwffacim/2003,
-  #    _nwffacim/2004,
-  #    _nwffacim/2005,
-  #    _nwffacim/2006,
-  #    _nwffacim/2007,
-  #    _nwffacim/2008,
-  #    _nwffacim/2009,
-  #    _nwffacim/2010,
-  #    _nwffacim/2011,
-  #    _nwffacim/2012,
-  #    _nwffacim/2013,
-  #    _nwffacim/2014,
-  #    _nwffacim/2015,
+#      _wom/woh,
+      _wom/wot,
+      _wom/wok,
+      _wom/early,
+      _wom/questions,
+      _nwffacim/grad,
+      _nwffacim/yaa,
+#      _nwffacim/2002,
+      _nwffacim/2003,
+      _nwffacim/2004,
+      _nwffacim/2005,
+      _nwffacim/2006,
+      _nwffacim/2007,
+      _nwffacim/2008,
+      _nwffacim/2009,
+      _nwffacim/2010,
+      _nwffacim/2011,
+      _nwffacim/2012,
+      _nwffacim/2013,
+      _nwffacim/2014,
+      _nwffacim/2015,
   work, bin, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
 
-xxkeep_files: [
+keep_files: [
   wom,
   nwffacim
 ]

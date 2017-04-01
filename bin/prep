@@ -4,23 +4,24 @@ workingDir=`pwd`
 scriptDir=`dirname $0`
 scriptName=`basename $0`
 
-womDir="/Users/rmercer/Projects/cmi/site/_wom/"
+womDir="/Users/rmercer/Projects/cmi/site/_wom"
 womAwk="wom.awk"
-nwffacimDir="/Users/rmercer/Projects/cmi/site/_nwffacim/"
-nwffacimAwk="nwffacimAwk"
+nwffacimDir="/Users/rmercer/Projects/cmi/site/_nwffacim"
+nwffacimAwk="nwffacim.awk"
 unitDir=""
+debug=0
 
 function syntax {
-  echo "prep -s <source> -b <book> [-y <year>] file"
-  echo " ex: prep -s nwffacim -b acim -y 2011 021911"
+  echo "prep -s <source> -b <book> file"
+  echo " ex: prep -s nwffacim -b 2011 021911"
   exit 1
 }
 
-while getopts s:b:y: args; do
+while getopts ds:b:y: args; do
     case $args in
         s) source=$OPTARG;;
         b) book=$OPTARG;;
-        y) year=$OPTARG;;
+        d) debug=1;;
         *) syntax;;
     esac
 done
@@ -46,26 +47,25 @@ case $source in
 esac
 
 unitDirName="${unitDir}/${book}"
-
-if [ "$year" != "" ]; then
-  unitDirName="${unitDirName}/${year}"
-fi
-
 unitFileName=${unitDirName}/${unit}.md
 
 echo "Reading $unitFileName"
 
-(gawk -f ${scriptDir}/${awkFile} -v source=$source -v book=$book -v unit=$unit ${unitFileName} > $unit.json)
+if [ $debug == 1 ]; then
+  (gawk -f ${scriptDir}/${awkFile} -v debug=1 -v source=$source -v book=$book -v unit=$unit ${unitFileName} > $unit.json.debug)
+else
+  (gawk -f ${scriptDir}/${awkFile} -v debug=0 -v source=$source -v book=$book -v unit=$unit ${unitFileName} > $unit.json)
+fi
 
 rc="$?"
 
 if [ "$rc" == "0" ]; then
-  echo "./$unit.json created."
+  if [ $debug == 1 ]; then
+    echo "./$unit.json.debug created."
+  else
+    echo "./$unit.json created."
+  fi
 else
   echo "conversion to json failed"
 fi
-
-
-
-
 

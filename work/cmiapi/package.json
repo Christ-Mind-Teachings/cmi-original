@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "claudia create --name cmi2-api --region us-east-1 --api-module index --policies policies",
-    "deploy": "claudia update",
+    "deploy": "claudia --no-optional-dependencies update",
     "predeploy": "eslint -c ./config/eslint.json ./index.js"
   },
   "author": "",
@@ -15,8 +15,10 @@
     "eslint": "^3.17.1"
   },
   "dependencies": {
-    "aws-sdk": "^2.32.0",
     "claudia-api-builder": "^2.4.1",
     "mailgun.js": "^2.0.1"
+  },
+  "optionalDependencies": {
+    "aws-sdk": "^2.35.0"
   }
 }

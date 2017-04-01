@@ -293,9 +293,9 @@
     },
     {
       "fid": "110702/",
-      "desc": "Needs formating",
+      "desc": "T2.II The Atonement as Defense",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "timing": 0,
         "index": 0,
@@ -315,7 +315,7 @@
       "fid": "112102/",
       "desc": "Discussion",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "timing": 0,
         "index": 0,
@@ -333,9 +333,9 @@
     },
     {
       "fid": "120502/",
-      "desc": "Needs formating",
+      "desc": "T2.III The Alter of God",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "timing": 0,
         "index": 0,
@@ -353,9 +353,9 @@
     },
     {
       "fid": "121202/",
-      "desc": "Needs formating",
+      "desc": "T2.IV Healing as Release from Fear",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "timing": 0,
         "index": 0,
@@ -373,9 +373,9 @@
     },
     {
       "fid": "121902/",
-      "desc": "T2.II Healing as Release from Fear",
+      "desc": "T2.V The Function of the Miracle Worker",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "timing": 0,
         "index": 0,

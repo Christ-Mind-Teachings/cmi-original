@@ -6,7 +6,98 @@ var api = new ApiBuilder();
 var dynamoDb = new AWS.DynamoDB.DocumentClient();
 
 module.exports = api;
-var tables = ["wom"];
+var tables = ["wom", "nwffacim"];
+
+function sortResults(result) {
+  var key;
+
+  console.log("sort search results");
+  for (key in result) {
+    if (Array.isArray(result[key])) {
+      console.log("sorting %s", key);
+      result[key].sort(function(a,b) {
+        return a.key - b.key;
+      });
+    }
+  }
+}
+
+function nwffacimProcessing(result, book, info) {
+  switch(book) {
+    case "yaa":
+      if (!result.yaa) {
+        result.yaa = [];
+      }
+      result.yaa.push(info);
+      break;
+    case "grad":
+      if (!result.grad) {
+        result.grad = [];
+      }
+      result.grad.push(info);
+      break;
+    case "2002":
+      if (!result.a2002) {
+        result.a2002 = [];
+      }
+      result.a2002.push(info);
+      break;
+    default:
+      if (!result.unknown) {
+        result.unknown = [];
+      }
+      result.unknown.push(info);
+      break;
+  }
+}
+
+function womProcessing(result, book, info) {
+  switch(book) {
+    case "woh":
+      if (!result.woh) {
+        result.woh = [];
+      }
+      result.woh.push(info);
+      break;
+    case "wot":
+      if (!result.wot) {
+        result.wot = [];
+      }
+      result.wot.push(info);
+      break;
+    case "wok":
+      if (!result.wok) {
+        result.wok = [];
+      }
+      result.wok.push(info);
+      break;
+    case "early":
+      if (!result.early) {
+        result.early = [];
+      }
+      result.early.push(info);
+      break;
+    default:
+      if (!result.unknown) {
+        result.unknown = [];
+      }
+      result.unknown.push(info);
+      break;
+  }
+}
+
+function performSourceProcessing(result, source, book, info) {
+  switch(source) {
+    case "nwffacim":
+      nwffacimProcessing(result, book, info);
+      break;
+    case "wom":
+      womProcessing(result, book, info);
+      break;
+    default:
+      break;
+  }
+}
 
 //lower case and remove all punctuation
 function prepareQueryString(query) {
@@ -15,10 +106,16 @@ function prepareQueryString(query) {
   return result.replace(/[^\w\s]/, "");
 }
 
+/*
+ * filter result set
+ *
+ * Default filter: all matches must start at word boundary, filter all the rest
+ */
 function filter(request, query, text) {
   var pos;
   var result = false;
 
+  //don't filter result set if 'filter' passed to request
   if (request.filter) {
     result = false;
   }
@@ -32,6 +129,7 @@ function filter(request, query, text) {
     }
     else if (pos > 0) {
       if (/\w/.test(text.charAt(pos-1))) {
+        console.log("filtered paragraph(%s): ", pos, text);
         result = true;
       }
     }
@@ -44,6 +142,10 @@ function filter(request, query, text) {
  * args: qt: query string transformed to remove punctuation and upper case chars
  *       query: original query string
  *       text: text containing the query
+ *       width: width of context to return
+ *         - length is: <width>query<width>
+ *
+ *  Return query hit in context of surrounding text
  */
 function getContext(qt, query, text, width) {
   "use strict";
@@ -222,65 +324,12 @@ api.post("/search", function (request) {
       info.base = "/" + source + "/" + item.book + "/" + item.unit + "/";
       info.context = getContext(queryTransformed, query, item.text, width);
 
-      //organize results by book to simplify access by client
-      switch(item.book) {
-        case "woh":
-          if (!result.woh) {
-            result.woh = [];
-          }
-          result.woh.push(info);
-          break;
-        case "wot":
-          if (!result.wot) {
-            result.wot = [];
-          }
-          result.wot.push(info);
-          break;
-        case "wok":
-          if (!result.wok) {
-            result.wok = [];
-          }
-          result.wok.push(info);
-          break;
-        default:
-          if (!result.unknown) {
-            result.unknown = [];
-          }
-          result.unknown.push(info);
-          break;
-      }
+      performSourceProcessing(result, source, item.book, info);
+
     }
 
     result.count = filteredCount;
-    /*
-    console.log("total hits: %s", result.count);
-    if (result.woh) {
-      console.log("total from woh: ", result.woh.length);
-    }
-    if (result.wot) {
-      console.log("total from wot: ", result.wot.length);
-    }
-    if (result.wok) {
-      console.log("total from wok: ", result.wok.length);
-    }
-   */
-
-    //sort result arrays
-    if (result.woh) {
-      result.woh.sort(function(a,b) {
-        return a.key - b.key;
-      });
-    }
-    if (result.wot) {
-      result.wot.sort(function(a,b) {
-        return a.key - b.key;
-      });
-    }
-    if (result.wok) {
-      result.wok.sort(function(a,b) {
-        return a.key - b.key;
-      });
-    }
+    sortResults(result);
 
     if (typeof response.LastEvaluatedKey !== "undefined") {
       result.startKey = response.LastEvaluatedKey;
@@ -290,7 +339,7 @@ api.post("/search", function (request) {
 
   }, function(err) {
     console.log("dynamoDb error", err);
-    result.message = "Database error",
+    result.message = "Database error";
     result.error = err;
     return result;
   });

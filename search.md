@@ -10,8 +10,6 @@ load-search: true
 Find what you're looking for by searching through some or all of the CMI
 Library contents.
 
-Note: Currently search is supported for Way of Mastery only.
-
 <div id="search-message"></div>
 <div class="search-wrapper">
   {% include ui/input-search.html %}

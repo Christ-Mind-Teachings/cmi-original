@@ -20,12 +20,13 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
+        "timing": 1,
         "index": 0,
         "fb": 0
       },
       "res": {
-        "audio": "L01.mp3"
+        "audio": "L01.mp3",
+        "timing": "l01.js"
       },
       "title": "Lesson One",
       "url": "/wom/woh/l01/",

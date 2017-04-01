@@ -48,9 +48,18 @@
   margin-right: 5px;
 }
 
-#footer li::before {
-  content: " / ";
+#footer li::after {
+  content: " | ";
 }
+
+#footer li:last-child:after {
+  content: "";
+}
+
+#footer li > a {
+  text-decoration: none;
+}
+
 
 
 

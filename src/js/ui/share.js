@@ -10,6 +10,7 @@ module.exports = {
 
   initialize: function() {
     var clip;
+    var parts = location.pathname.split("/");
     var transcript = document.querySelector(".transcript");
 
     //setup sharing feature
@@ -22,7 +23,7 @@ module.exports = {
         description: "Search this site",
         icon: "search",
         action: function(value) {
-          location.href = "/search/?q=" + value;
+          location.href = "/search/?q=" + value + "&s=" + parts[1];
         }
       };
 

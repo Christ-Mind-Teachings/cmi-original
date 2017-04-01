@@ -20694,7 +20694,7 @@ function genKey(srcId, bookId, unitId) {
     return 0;
   }
 
-  sPart = srcId * 100000;
+  sPart = srcId * 10000000;
   bPart = bookId ? (bookId * 1000): 0;
   uPart = unitId ? unitId : 0;
 
@@ -21438,7 +21438,11 @@ module.exports = {
     var puglatizer = {}
     puglatizer["bookmark"] = function template(a){var e,l,o,r="";try{var i=a||{};(function(a,l){o=1,r+='<ul class="fa-ul">',o=2,function(){var i=a;if("number"==typeof i.length)for(var t=0,u=i.length;u>t;t++){var p=i[t];o=3,l===p.page?(o=4,r+='<li class="bm-list bm-current-page">',o=4,r=r+pug.escape(null==(e=p.title)?"":e)+"</li>"):(o=6,r+='<li class="bm-list">',o=6,r=r+pug.escape(null==(e=p.title)?"":e)+"</li>"),o=8,r+="<ul>",o=9,function(){var a=p.mark;if("number"==typeof a.length)for(var i=0,t=a.length;t>i;i++){var u=a[i];o=10,r+="<li>",o=11,l===p.page?(o=12,r=r+'<a title="Goto Bookmark"'+pug.attr("href","#"+u,!0,!1)+">",o=13,r+='<i class="fa fa-bookmark">',o=13,r+="&nbsp;</i></a>",o=14,r+=pug.escape(null==(e="  Bookmark "+(i+1))?"":e)):(o=16,r=r+'<a title="Goto Bookmark"'+pug.attr("href",p.page+"#"+u,!0,!1)+">",o=17,r+='<i class="fa fa-bookmark">',o=17,r+="&nbsp;</i></a>",o=18,r+=pug.escape(null==(e="  Bookmark "+(i+1))?"":e)),o=20,l===p.page&&p.audio===!0?(o=21,r+=pug.escape(null==(e=": Play audio at bookmark ")?"":e),o=22,r=r+'<a class="audio-from-here" title="Play Audio from Here"'+pug.attr("href",u,!0,!1)+">",o=23,r+='<i class="fa fa-volume-up"></i></a>'):p.audio===!0&&(o=25,r+=pug.escape(null==(e=": Play audio at bookmark ")?"":e),o=26,r=r+'<a title="Play Audio from Here"'+pug.attr("href",p.page+"?play="+u,!0,!1)+">",o=27,r+='<i class="fa fa-volume-up"></i></a>'),r+="</li>"}else{var t=0;for(var i in a){t++;var u=a[i];o=10,r+="<li>",o=11,l===p.page?(o=12,r=r+'<a title="Goto Bookmark"'+pug.attr("href","#"+u,!0,!1)+">",o=13,r+='<i class="fa fa-bookmark">',o=13,r+="&nbsp;</i></a>",o=14,r+=pug.escape(null==(e="  Bookmark "+(i+1))?"":e)):(o=16,r=r+'<a title="Goto Bookmark"'+pug.attr("href",p.page+"#"+u,!0,!1)+">",o=17,r+='<i class="fa fa-bookmark">',o=17,r+="&nbsp;</i></a>",o=18,r+=pug.escape(null==(e="  Bookmark "+(i+1))?"":e)),o=20,l===p.page&&p.audio===!0?(o=21,r+=pug.escape(null==(e=": Play audio at bookmark ")?"":e),o=22,r=r+'<a class="audio-from-here" title="Play Audio from Here"'+pug.attr("href",u,!0,!1)+">",o=23,r+='<i class="fa fa-volume-up"></i></a>'):p.audio===!0&&(o=25,r+=pug.escape(null==(e=": Play audio at bookmark ")?"":e),o=26,r=r+'<a title="Play Audio from Here"'+pug.attr("href",p.page+"?play="+u,!0,!1)+">",o=27,r+='<i class="fa fa-volume-up"></i></a>'),r+="</li>"}}}.call(this),r+="</ul>"}else{var u=0;for(var t in i){u++;var p=i[t];o=3,l===p.page?(o=4,r+='<li class="bm-list bm-current-page">',o=4,r=r+pug.escape(null==(e=p.title)?"":e)+"</li>"):(o=6,r+='<li class="bm-list">',o=6,r=r+pug.escape(null==(e=p.title)?"":e)+"</li>"),o=8,r+="<ul>",o=9,function(){var a=p.mark;if("number"==typeof a.length)for(var i=0,t=a.length;t>i;i++){var u=a[i];o=10,r+="<li>",o=11,l===p.page?(o=12,r=r+'<a title="Goto Bookmark"'+pug.attr("href","#"+u,!0,!1)+">",o=13,r+='<i class="fa fa-bookmark">',o=13,r+="&nbsp;</i></a>",o=14,r+=pug.escape(null==(e="  Bookmark "+(i+1))?"":e)):(o=16,r=r+'<a title="Goto Bookmark"'+pug.attr("href",p.page+"#"+u,!0,!1)+">",o=17,r+='<i class="fa fa-bookmark">',o=17,r+="&nbsp;</i></a>",o=18,r+=pug.escape(null==(e="  Bookmark "+(i+1))?"":e)),o=20,l===p.page&&p.audio===!0?(o=21,r+=pug.escape(null==(e=": Play audio at bookmark ")?"":e),o=22,r=r+'<a class="audio-from-here" title="Play Audio from Here"'+pug.attr("href",u,!0,!1)+">",o=23,r+='<i class="fa fa-volume-up"></i></a>'):p.audio===!0&&(o=25,r+=pug.escape(null==(e=": Play audio at bookmark ")?"":e),o=26,r=r+'<a title="Play Audio from Here"'+pug.attr("href",p.page+"?play="+u,!0,!1)+">",o=27,r+='<i class="fa fa-volume-up"></i></a>'),r+="</li>"}else{var t=0;for(var i in a){t++;var u=a[i];o=10,r+="<li>",o=11,l===p.page?(o=12,r=r+'<a title="Goto Bookmark"'+pug.attr("href","#"+u,!0,!1)+">",o=13,r+='<i class="fa fa-bookmark">',o=13,r+="&nbsp;</i></a>",o=14,r+=pug.escape(null==(e="  Bookmark "+(i+1))?"":e)):(o=16,r=r+'<a title="Goto Bookmark"'+pug.attr("href",p.page+"#"+u,!0,!1)+">",o=17,r+='<i class="fa fa-bookmark">',o=17,r+="&nbsp;</i></a>",o=18,r+=pug.escape(null==(e="  Bookmark "+(i+1))?"":e)),o=20,l===p.page&&p.audio===!0?(o=21,r+=pug.escape(null==(e=": Play audio at bookmark ")?"":e),o=22,r=r+'<a class="audio-from-here" title="Play Audio from Here"'+pug.attr("href",u,!0,!1)+">",o=23,r+='<i class="fa fa-volume-up"></i></a>'):p.audio===!0&&(o=25,r+=pug.escape(null==(e=": Play audio at bookmark ")?"":e),o=26,r=r+'<a title="Play Audio from Here"'+pug.attr("href",p.page+"?play="+u,!0,!1)+">",o=27,r+='<i class="fa fa-volume-up"></i></a>'),r+="</li>"}}}.call(this),r+="</ul>"}}}.call(this),r+="</ul>"}).call(this,"bookmarks"in i?i.bookmarks:"undefined"!=typeof bookmarks?bookmarks:void 0,"thisPageUrl"in i?i.thisPageUrl:"undefined"!=typeof thisPageUrl?thisPageUrl:void 0)}catch(t){pug.rethrow(t,l,o)}return r};
 
-    puglatizer["search"] = function template(t){var a,i,n,e="",o={};try{var r=t||{};(function(t,i,r,s){function u(a){var i=a.substr(1),n=t.parseInt(i);return"Lesson "+n}n=1,n=8,o.hitList=a=function(t,i){this&&this.block,this&&this.attributes||{};n=9,e+="<h3>",n=9,e=e+pug.escape(null==(a=t)?"":a)+"</h3>",n=10,e+='<ul class="fa-ul">',n=11,function(){var t=i;if("number"==typeof t.length)for(var o=0,r=t.length;r>o;o++){var s=t[o];n=12;var l=s.base+"?s=show"+s.location;n=13;var f=u(s.unit);n=14,e+="<li>",n=14,e+='<i class="fa fa-search">',n=15,e=e+"<a"+pug.attr("href",l,!0,!1)+">",n=15,e+="&nbsp; ",n=15,e=e+pug.escape(null==(a=f)?"":a)+"</a>",n=16,e+="<p>",n=16,e=e+(null==(a=s.context)?"":a)+"</p></i></li>"}else{var r=0;for(var o in t){r++;var s=t[o];n=12;var l=s.base+"?s=show"+s.location;n=13;var f=u(s.unit);n=14,e+="<li>",n=14,e+='<i class="fa fa-search">',n=15,e=e+"<a"+pug.attr("href",l,!0,!1)+">",n=15,e+="&nbsp; ",n=15,e=e+pug.escape(null==(a=f)?"":a)+"</a>",n=16,e+="<p>",n=16,e=e+(null==(a=s.context)?"":a)+"</p></i></li>"}}}.call(this),e+="</ul>"},n=18,i&&(n=19,o.hitList("Way of the Heart",i)),n=20,s&&(n=21,o.hitList("Way of Transformation",s)),n=22,r&&(n=23,o.hitList("Way of Knowning",r))}).call(this,"Number"in r?r.Number:"undefined"!=typeof Number?Number:void 0,"woh"in r?r.woh:"undefined"!=typeof woh?woh:void 0,"wok"in r?r.wok:"undefined"!=typeof wok?wok:void 0,"wot"in r?r.wot:"undefined"!=typeof wot?wot:void 0)}catch(s){pug.rethrow(s,i,n)}return e};
+    puglatizer["nwffacim"] = function template(a){var t,r,e,n="",u={};try{var i=a||{};(function(a,r,i,s){function o(t){var r=["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],e=a.parseInt(t.substr(0,2),10),n=a.parseInt(t.substr(4,2),10),u=a.parseInt(t.substr(2,2),10),i=(n>50?"19":"20")+t.substr(4,2),s=r[e]+" "+u+", "+i;return s}function l(a){return"g000002"===a?"Authors Note":"g000003"===a?"Foreword":o(a.substr(1))}function c(a){return"acknowledgements"==a?"Acknowledgements":"foreword"==a?"Foreword":"afterword"==a?"Afterword":o(a)}function f(a){return o(a)}function d(a,t){return"grad"===a?l(t):"yaa"===a?c(t):f(t)}e=1,e=53,u.hitList=t=function(a,r,u){this&&this.block,this&&this.attributes||{};e=54;var i=u.length;e=55,n+="<h3>",e=55,n=n+pug.escape(null==(t=a+" ("+i+")")?"":t)+"</h3>",e=56,n+='<ul class="fa-ul">',e=57,function(){var a=u;if("number"==typeof a.length)for(var i=0,s=a.length;s>i;i++){var o=a[i];e=58;var l=o.base+"?s=show"+o.location;e=59;var c=d(r,o.unit);e=60,n+="<li>",e=60,n+='<i class="fa fa-search">',e=61,n=n+"<a"+pug.attr("href",l,!0,!1)+">",e=61,n+="&nbsp; ",e=61,n=n+pug.escape(null==(t=c)?"":t)+"</a>",e=62,n+="<p>",e=62,n=n+(null==(t=o.context)?"":t)+"</p></i></li>"}else{var s=0;for(var i in a){s++;var o=a[i];e=58;var l=o.base+"?s=show"+o.location;e=59;var c=d(r,o.unit);e=60,n+="<li>",e=60,n+='<i class="fa fa-search">',e=61,n=n+"<a"+pug.attr("href",l,!0,!1)+">",e=61,n+="&nbsp; ",e=61,n=n+pug.escape(null==(t=c)?"":t)+"</a>",e=62,n+="<p>",e=62,n=n+(null==(t=o.context)?"":t)+"</p></i></li>"}}}.call(this),n+="</ul>"},e=64,s&&(e=65,u.hitList("You Are the Answer","yaa",s)),e=66,i&&(e=67,u.hitList("Graduation","grad",i)),e=68,r&&(e=69,u.hitList("ACIM Study Group - 2002","acim",r))}).call(this,"Number"in i?i.Number:"undefined"!=typeof Number?Number:void 0,"a2002"in i?i.a2002:"undefined"!=typeof a2002?a2002:void 0,"grad"in i?i.grad:"undefined"!=typeof grad?grad:void 0,"yaa"in i?i.yaa:"undefined"!=typeof yaa?yaa:void 0)}catch(s){pug.rethrow(s,r,e)}return n};
+
+    puglatizer["search"] = function template(t){var e,a,i,n="",o={};try{var r=t||{};(function(t,a,r,s,l){function u(e){var a,i,n;return"early"===e?i="Ooops...":(a=e.substr(1),n=t.parseInt(a),i="Lesson "+n),i}i=1,i=18,o.hitList=e=function(t,a){this&&this.block,this&&this.attributes||{};i=19,n+="<h3>",i=19,n=n+pug.escape(null==(e=t)?"":e)+"</h3>",i=20,n+='<ul class="fa-ul">',i=21,function(){var t=a;if("number"==typeof t.length)for(var o=0,r=t.length;r>o;o++){var s=t[o];i=22;var l=s.base+"?s=show"+s.location;i=23;var f=u(s.unit);i=24,n+="<li>",i=24,n+='<i class="fa fa-search">',i=25,n=n+"<a"+pug.attr("href",l,!0,!1)+">",i=25,n+="&nbsp; ",i=25,n=n+pug.escape(null==(e=f)?"":e)+"</a>",i=26,n+="<p>",i=26,n=n+(null==(e=s.context)?"":e)+"</p></i></li>"}else{var r=0;for(var o in t){r++;var s=t[o];i=22;var l=s.base+"?s=show"+s.location;i=23;var f=u(s.unit);i=24,n+="<li>",i=24,n+='<i class="fa fa-search">',i=25,n=n+"<a"+pug.attr("href",l,!0,!1)+">",i=25,n+="&nbsp; ",i=25,n=n+pug.escape(null==(e=f)?"":e)+"</a>",i=26,n+="<p>",i=26,n=n+(null==(e=s.context)?"":e)+"</p></i></li>"}}}.call(this),n+="</ul>"},i=28,r&&(i=29,o.hitList("Way of the Heart",r)),i=30,l&&(i=31,o.hitList("Way of Transformation",l)),i=32,s&&(i=33,o.hitList("Way of Knowning",s)),i=34,a&&(i=35,o.hitList("The Early Years",a))}).call(this,"Number"in r?r.Number:"undefined"!=typeof Number?Number:void 0,"early"in r?r.early:"undefined"!=typeof early?early:void 0,"woh"in r?r.woh:"undefined"!=typeof woh?woh:void 0,"wok"in r?r.wok:"undefined"!=typeof wok?wok:void 0,"wot"in r?r.wot:"undefined"!=typeof wot?wot:void 0)}catch(s){pug.rethrow(s,a,i)}return n};
+
+    puglatizer["wom"] = function template(t){var e,a,i,n="",o={};try{var r=t||{};(function(t,a,r,s,l){function u(e){var a,i,n;return"early"===e?i="Ooops...":(a=e.substr(1),n=t.parseInt(a),i="Lesson "+n),i}i=1,i=18,o.hitList=e=function(t,a){this&&this.block,this&&this.attributes||{};i=19,n+="<h3>",i=19,n=n+pug.escape(null==(e=t)?"":e)+"</h3>",i=20,n+='<ul class="fa-ul">',i=21,function(){var t=a;if("number"==typeof t.length)for(var o=0,r=t.length;r>o;o++){var s=t[o];i=22;var l=s.base+"?s=show"+s.location;i=23;var f=u(s.unit);i=24,n+="<li>",i=24,n+='<i class="fa fa-search">',i=25,n=n+"<a"+pug.attr("href",l,!0,!1)+">",i=25,n+="&nbsp; ",i=25,n=n+pug.escape(null==(e=f)?"":e)+"</a>",i=26,n+="<p>",i=26,n=n+(null==(e=s.context)?"":e)+"</p></i></li>"}else{var r=0;for(var o in t){r++;var s=t[o];i=22;var l=s.base+"?s=show"+s.location;i=23;var f=u(s.unit);i=24,n+="<li>",i=24,n+='<i class="fa fa-search">',i=25,n=n+"<a"+pug.attr("href",l,!0,!1)+">",i=25,n+="&nbsp; ",i=25,n=n+pug.escape(null==(e=f)?"":e)+"</a>",i=26,n+="<p>",i=26,n=n+(null==(e=s.context)?"":e)+"</p></i></li>"}}}.call(this),n+="</ul>"},i=28,r&&(i=29,o.hitList("Way of the Heart",r)),i=30,l&&(i=31,o.hitList("Way of Transformation",l)),i=32,s&&(i=33,o.hitList("Way of Knowning",s)),i=34,a&&(i=35,o.hitList("The Early Years",a))}).call(this,"Number"in r?r.Number:"undefined"!=typeof Number?Number:void 0,"early"in r?r.early:"undefined"!=typeof early?early:void 0,"woh"in r?r.woh:"undefined"!=typeof woh?woh:void 0,"wok"in r?r.wok:"undefined"!=typeof wok?wok:void 0,"wot"in r?r.wot:"undefined"!=typeof wot?wot:void 0)}catch(s){pug.rethrow(s,a,i)}return n};
 
 
     return puglatizer;
@@ -21485,16 +21489,24 @@ var searchResults;
 var currentMatchIndex = 0;
 var matchArray = [];
 
+//display document info on search navigator
 function setSearchDocument(data) {
-  $(".search-header > .search-document").
-    html("<p>" + config.getTitle(data.source,
-                 matchArray[currentMatchIndex].book,
-                 matchArray[currentMatchIndex].unit) + "</p>");
+  $(".search-header > .search-document").html(
+    "<p>" +
+      config.getTitle(data.source,
+      matchArray[currentMatchIndex].book,
+      matchArray[currentMatchIndex].unit) +
+    "</p>"
+  );
 }
 
+//display search result info on search navigator
 function setSearchTitle(query) {
-  $(".search-header > .search-info").html("<p>Search <em>"+query+"</em> ("
-     +(currentMatchIndex + 1)+" of "+ matchArray.length + ")</p>");
+  $(".search-header > .search-info").html(
+    "<p>Search <em>" + query + "</em> (" +
+    (currentMatchIndex + 1) + " of " +
+    matchArray.length + ")</p>"
+  );
 }
 
 function getPageInfo(data, thisBook, thisUnit) {
@@ -21506,12 +21518,13 @@ function getPageInfo(data, thisBook, thisUnit) {
 
   //this should never happen
   if (idx === -1) {
+    console.error("getPageInfo() error: Can't find search hit for this page in search results.");
     return urlInfo;
   }
 
   //console.log("findIndex for %s, %s: found idx: %s, ", thisBook, thisUnit, idx, data.all[idx]);
 
-  //find next
+  //find next page with search results
   for (i=idx; i < data.all.length; i++) {
     //console.log("looking for next: i: %s, book: %s, unit: %s", i, data.all[i].book, data.all[i].unit);
     if (data.all[i].unit !== thisUnit || data.all[i].book !== thisBook) {
@@ -21520,7 +21533,7 @@ function getPageInfo(data, thisBook, thisUnit) {
     }
   }
 
-  //find prev
+  //find prev page with search results
   for (i=idx; i >= 0; i--) {
     if (data.all[i].unit !== thisUnit || data.all[i].book !== thisBook) {
       urlInfo.prev = data.all[i].base + "?s=show" + data.all[i].location;
@@ -21534,8 +21547,6 @@ function getPageInfo(data, thisBook, thisUnit) {
 
 // get array for all search hits on the page
 function getHitArray(data, book, unit) {
-  //var nextBook;
-  //var prevBook;
   var pageHits = [];
   var bookHits = [];
 
@@ -21543,29 +21554,7 @@ function getHitArray(data, book, unit) {
 
   bookHits = data[book];
 
-  /*
-  switch(book) {
-    case "woh":
-      //nextBook = "wot";
-      //prevBook = "wok";
-      bookHits = data.woh;
-      break;
-    case "wot":
-      //nextBook = "wok";
-      //prevBook = "woh";
-      bookHits = data.wot;
-      break;
-    case "wok":
-      //nextBook = "woh";
-      //prevBook = "wot";
-      bookHits = data.wok;
-      break;
-    default:
-      break;
-  }
-  */
-
-   if (bookHits) {
+  if (bookHits) {
     for(i = 0; i < bookHits.length; i++) {
       if (bookHits[i].unit === unit) {
         pageHits.push(bookHits[i]);
@@ -21632,8 +21621,21 @@ function initializeNavigator(data) {
   var thisUnit = path[3];
   var matchIndex;
 
+  //for nwffacim study group books, the array of search hits is prefixed
+  //with an 'a'. If we are processing an study group page we adjust the array name
+  //accordingly
+  var bookArrayName = thisBook;
+
+  //the search result array for acim books starts with an 'a' but
+  //the api returns an array identified by year, ie 2002, 2003, so
+  //we add an to the 'book' portion of the uri to get the data from
+  //the search result set
+  if (/^\d/.test(thisBook)) {
+    bookArrayName = "a" + thisBook;
+  }
+
   //get array of search matches on the page
-  var hitInfo = getHitArray(data, thisBook, thisUnit);
+  var hitInfo = getHitArray(data, bookArrayName, thisUnit);
 
   //no hits for this page
   if (hitInfo.matches.length === 0) {
@@ -21655,7 +21657,7 @@ function initializeNavigator(data) {
       currentMatchIndex = matchIndex;
     }
     else {
-      console.log("Error: could not find location.hash in search result array");
+      console.error("Error: could not find location.hash in search result array");
     }
   }
 
@@ -21677,17 +21679,17 @@ function initializeNavigator(data) {
       location.href = matchArray[currentMatchIndex].location;
       setSearchTitle(searchResults.query);
     });
-  }
 
-  $(".search-next-match").on("click", function(e) {
-    e.preventDefault();
-    currentMatchIndex = currentMatchIndex + 1;
-    if (currentMatchIndex > matchArray.length - 1) {
-      currentMatchIndex = 0;
-    }
-    location.href = matchArray[currentMatchIndex].location;
-    setSearchTitle(searchResults.query);
-  });
+    $(".search-next-match").on("click", function(e) {
+      e.preventDefault();
+      currentMatchIndex = currentMatchIndex + 1;
+      if (currentMatchIndex > matchArray.length - 1) {
+        currentMatchIndex = 0;
+      }
+      location.href = matchArray[currentMatchIndex].location;
+      setSearchTitle(searchResults.query);
+    });
+  }
 
   //get next/prev page urls
   var pageUrl = getPageInfo(data, thisBook, thisUnit);
@@ -21793,12 +21795,16 @@ var msgField;
 //combine book specific arrays into one to simplify navigation on
 //transcript pages - then store results
 function saveResults(data) {
-  //var books = config[data.source].books;
-  var books = config.getBidArray("wom");
-  //console.log("bidArray: ", books);
+  var books = config.getBidArray(data.source);
+  console.log("bidArray: ", books);
   var all = [];
   for (var i = 0; i < books.length; i++) {
     var book = books[i];
+
+    //if an array starts with a digit put an 'a' in front of it
+    if (/^\d/.test(book)) {
+      book = "a" + book;
+    }
     if (data[book]) {
       all = all.concat(data[book]);
     }
@@ -21813,10 +21819,18 @@ function saveResults(data) {
 
 function showSearchResults(data) {
   console.log("showSearchResults(): ", data);
+  var html;
 
   // searchResults is a function created by pug
   //var html = searchResults(data);
-  var html = templates.search(data);
+  if (data.source === "wom") {
+    console.log("applying wom template");
+    html = templates.search(data);
+  }
+  else if (data.source === "nwffacim") {
+    console.log("applying nwffacim template");
+    html = templates.nwffacim(data);
+  }
   var resultsDiv = document.getElementById("search-results");
   resultsDiv.innerHTML = html;
 }
@@ -21845,7 +21859,8 @@ module.exports = {
     submit.addEventListener("submit", function(e) {
       e.preventDefault();
       console.log("submit event handler");
-      var query = document.querySelector("form.search-bar > input");
+      var query = document.querySelector(".requested-search-string");
+      var source = $(".search-options").val();
 
       if (query.value === "") {
         console.log("query value is empty");
@@ -21853,16 +21868,18 @@ module.exports = {
       }
 
       console.log("calling API with search: %s", query.value);
+      console.log("searching %s", source);
 
       displayMessage("Please wait...", true);
       axios.post(searchApi, {
-        source:"wom",
+        source: source,
         query:query.value,
         width: 30
       })
       .then(function(response) {
-        displayMessage("Search for <em>" + query.value + "</em> found "
-                + response.data.count + " matches.");
+        displayMessage("Search of " + source.toUpperCase() + " for <em>"
+               + query.value + "</em> found "
+               + response.data.count + " matches.");
         query.value = "";
 
         if (response.data.count > 0) {
@@ -21876,19 +21893,35 @@ module.exports = {
       });
     });
 
+    var source = url.getQueryString("s");
+
+    //check if source specified as a url parameter and set search
+    //source accordingly
+    if (source) {
+      $("#option-select-" + source).prop("selected", true);
+    }
+
     var q = url.getQueryString("q");
     var query;
 
     //check if query specified as a url parameter
     if (q) {
-      query = document.querySelector("form.search-bar > input");
+      query = document.querySelector(".requested-search-string");
       query.value = decodeURI(q);
+
+      $("#option-select-" + source).prop("selected", true);
     }
+
+    //init select2
+    $(".search-options").select2({
+      theme: "classic"
+    });
 
     //when page loads, display results from last search if present
     if (data) {
-      displayMessage("Search for <em>" + data.query + "</em> found "
-              + data.count + " matches.");
+      displayMessage("Search of " + data.source.toUpperCase() + " for <em>"
+          + data.query + "</em> found "
+          + data.count + " matches.");
       showSearchResults(data);
     }
   }
@@ -22946,6 +22979,7 @@ module.exports = {
 
   initialize: function() {
     var clip;
+    var parts = location.pathname.split("/");
     var transcript = document.querySelector(".transcript");
 
     //setup sharing feature
@@ -22958,7 +22992,7 @@ module.exports = {
         description: "Search this site",
         icon: "search",
         action: function(value) {
-          location.href = "/search/?q=" + value;
+          location.href = "/search/?q=" + value + "&s=" + parts[1];
         }
       };
 
