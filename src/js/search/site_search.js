@@ -11,11 +11,26 @@ var searchApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/s
 var requestApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";
 var msgField;
 
+function doSearch(queryInfo) {
+  return axios.post(searchApi, queryInfo);
+}
+
+function processSearchResults(queryInfo, response) {
+  displayMessage("Search of " + queryInfo.source.toUpperCase() + " for <em>"
+     + queryInfo.query + "</em> found "
+     + response.count + " matches.");
+
+  if (response.count > 0) {
+    saveResults(response);
+    showSearchResults(response);
+  }
+}
+
 //combine book specific arrays into one to simplify navigation on
 //transcript pages - then store results
 function saveResults(data) {
   var books = config.getBidArray(data.source);
-  console.log("bidArray: ", books);
+  //console.log("bidArray: ", books);
   var all = [];
   for (var i = 0; i < books.length; i++) {
     var book = books[i];
@@ -37,7 +52,7 @@ function saveResults(data) {
 }
 
 function showSearchResults(data) {
-  console.log("showSearchResults(): ", data);
+  //console.log("showSearchResults(): ", data);
   var html;
 
   // searchResults is a function created by pug
@@ -77,38 +92,40 @@ module.exports = {
 
     submit.addEventListener("submit", function(e) {
       e.preventDefault();
-      console.log("submit event handler");
+      //console.log("submit event handler");
       var query = document.querySelector(".requested-search-string");
       var source = $(".search-options").val();
 
       if (query.value === "") {
-        console.log("query value is empty");
+        //console.log("query value is empty");
         return;
       }
 
-      console.log("calling API with search: %s", query.value);
-      console.log("searching %s", source);
+      //console.log("calling API with search: %s", query.value);
+      //console.log("searching %s", source);
+
+      var queryInfo = {
+        source: source,
+        query: query.value,
+        width: 30
+      };
 
       displayMessage("Please wait...", true);
-      axios.post(searchApi, {
-        source: source,
-        query:query.value,
-        width: 30
-      })
-      .then(function(response) {
-        displayMessage("Search of " + source.toUpperCase() + " for <em>"
-               + query.value + "</em> found "
-               + response.data.count + " matches.");
-        query.value = "";
+      doSearch(queryInfo).then(function(response) {
+        //console.log("query count: %s", response.data.count);
 
-        if (response.data.count > 0) {
-          saveResults(response.data);
-          showSearchResults(response.data);
+        //make second api call only if the first one returned no data
+        if (response.data.startKey && response.data.count === 0) {
+          queryInfo.startKey = response.data.startKey;
+          doSearch(queryInfo).then(function(response) {
+            processSearchResults(queryInfo, response.data);
+            query.value = "";
+          });
         }
-      })
-      .catch(function(error) {
-        console.error(error);
-        displayMessage("Search error: " + error);
+        else {
+          processSearchResults(queryInfo, response.data);
+          query.value = "";
+        }
       });
     });
 
@@ -142,6 +159,9 @@ module.exports = {
           + data.query + "</em> found "
           + data.count + " matches.");
       showSearchResults(data);
+    }
+    else {
+      displayMessage("Welcome...");
     }
   }
 };
