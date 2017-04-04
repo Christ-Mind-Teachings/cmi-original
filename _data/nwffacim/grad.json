@@ -13,228 +13,368 @@
       "fid": "grad/"
     },
     {
+      "fid": "g000002/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Author's Note",
       "url": "/nwffacim/grad/g000002/",
       "idx": 1,
       "next": "/nwffacim/grad/g000003/",
-      "prev": "/nwffacim/intro/grad/",
-      "fid": "g000002/"
+      "prev": "/nwffacim/intro/grad/"
     },
     {
+      "fid": "g000003/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Foreword",
       "url": "/nwffacim/grad/g000003/",
       "idx": 2,
       "next": "/nwffacim/grad/g010491/",
-      "prev": "/nwffacim/grad/g000002/",
-      "fid": "g000003/"
+      "prev": "/nwffacim/grad/g000002/"
     },
     {
+      "fid": "g010491/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Jan 4, 1991",
       "url": "/nwffacim/grad/g010491/",
       "idx": 3,
       "next": "/nwffacim/grad/g010591/",
-      "prev": "/nwffacim/grad/g000003/",
-      "fid": "g010491/"
+      "prev": "/nwffacim/grad/g000003/"
     },
     {
+      "fid": "g010591/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Jan 5, 1991",
       "url": "/nwffacim/grad/g010591/",
       "idx": 4,
       "next": "/nwffacim/grad/g011491/",
-      "prev": "/nwffacim/grad/g010491/",
-      "fid": "g010591/"
+      "prev": "/nwffacim/grad/g010491/"
     },
     {
+      "fid": "g011491/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Jan 14, 1991",
       "url": "/nwffacim/grad/g011491/",
       "idx": 5,
       "next": "/nwffacim/grad/g011591/",
-      "prev": "/nwffacim/grad/g010591/",
-      "fid": "g011491/"
+      "prev": "/nwffacim/grad/g010591/"
     },
     {
+      "fid": "g011591/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Jan 15, 1991",
       "url": "/nwffacim/grad/g011591/",
       "idx": 6,
       "next": "/nwffacim/grad/g011691/",
-      "prev": "/nwffacim/grad/g011491/",
-      "fid": "g011591/"
+      "prev": "/nwffacim/grad/g011491/"
     },
     {
+      "fid": "g011691/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Jan 16, 1991",
       "url": "/nwffacim/grad/g011691/",
       "idx": 7,
       "next": "/nwffacim/grad/g011891/",
-      "prev": "/nwffacim/grad/g011591/",
-      "fid": "g011691/"
+      "prev": "/nwffacim/grad/g011591/"
     },
     {
+      "fid": "g011891/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Jan 18, 1991",
       "url": "/nwffacim/grad/g011891/",
       "idx": 8,
       "next": "/nwffacim/grad/g012091/",
-      "prev": "/nwffacim/grad/g011691/",
-      "fid": "g011891/"
+      "prev": "/nwffacim/grad/g011691/"
     },
     {
+      "fid": "g012091/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Jan 20, 1991",
       "url": "/nwffacim/grad/g012091/",
       "idx": 9,
       "next": "/nwffacim/grad/g012591/",
-      "prev": "/nwffacim/grad/g011891/",
-      "fid": "g012091/"
+      "prev": "/nwffacim/grad/g011891/"
     },
     {
+      "fid": "g012591/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Jan 25, 1991",
       "url": "/nwffacim/grad/g012591/",
       "idx": 10,
       "next": "/nwffacim/grad/g012791/",
-      "prev": "/nwffacim/grad/g012091/",
-      "fid": "g012591/"
+      "prev": "/nwffacim/grad/g012091/"
     },
     {
+      "fid": "g012791/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Jan 27, 1991",
       "url": "/nwffacim/grad/g012791/",
       "idx": 11,
       "next": "/nwffacim/grad/g020291/",
-      "prev": "/nwffacim/grad/g012591/",
-      "fid": "g012791/"
+      "prev": "/nwffacim/grad/g012591/"
     },
     {
+      "fid": "g020291/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Feb 2, 1991",
       "url": "/nwffacim/grad/g020291/",
       "idx": 12,
       "next": "/nwffacim/grad/g020591/",
-      "prev": "/nwffacim/grad/g012791/",
-      "fid": "g020291/"
+      "prev": "/nwffacim/grad/g012791/"
     },
     {
+      "fid": "g020591/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Feb 5, 1991",
       "url": "/nwffacim/grad/g020591/",
       "idx": 13,
       "next": "/nwffacim/grad/g020691/",
-      "prev": "/nwffacim/grad/g020291/",
-      "fid": "g020591/"
+      "prev": "/nwffacim/grad/g020291/"
     },
     {
+      "fid": "g020691/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Feb 6, 1991",
       "url": "/nwffacim/grad/g020691/",
       "idx": 14,
       "next": "/nwffacim/grad/g021291/",
-      "prev": "/nwffacim/grad/g020591/",
-      "fid": "g020691/"
+      "prev": "/nwffacim/grad/g020591/"
     },
     {
+      "fid": "g021291/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Feb 12, 1991",
       "url": "/nwffacim/grad/g021291/",
       "idx": 15,
       "next": "/nwffacim/grad/g021391/",
-      "prev": "/nwffacim/grad/g020691/",
-      "fid": "g021291/"
+      "prev": "/nwffacim/grad/g020691/"
     },
     {
+      "fid": "g021391/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Feb 13, 1991",
       "url": "/nwffacim/grad/g021391/",
       "idx": 16,
       "next": "/nwffacim/grad/g021491/",
-      "prev": "/nwffacim/grad/g021291/",
-      "fid": "g021391/"
+      "prev": "/nwffacim/grad/g021291/"
     },
     {
+      "fid": "g021491/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Feb 14, 1991",
       "url": "/nwffacim/grad/g021491/",
       "idx": 17,
       "next": "/nwffacim/grad/g022091/",
-      "prev": "/nwffacim/grad/g021391/",
-      "fid": "g021491/"
+      "prev": "/nwffacim/grad/g021391/"
     },
     {
+      "fid": "g022091/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Feb 20, 1991",
       "url": "/nwffacim/grad/g022091/",
       "idx": 18,
       "next": "/nwffacim/grad/g022591/",
-      "prev": "/nwffacim/grad/g021491/",
-      "fid": "g022091/"
+      "prev": "/nwffacim/grad/g021491/"
     },
     {
+      "fid": "g022591/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Feb 25, 1991",
       "url": "/nwffacim/grad/g022591/",
       "idx": 19,
       "next": "/nwffacim/grad/g030291/",
-      "prev": "/nwffacim/grad/g022091/",
-      "fid": "g022591/"
+      "prev": "/nwffacim/grad/g022091/"
     },
     {
+      "fid": "g030291/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Mar 2, 1991",
       "url": "/nwffacim/grad/g030291/",
       "idx": 20,
       "next": "/nwffacim/grad/g030891/",
-      "prev": "/nwffacim/grad/g022591/",
-      "fid": "g030291/"
+      "prev": "/nwffacim/grad/g022591/"
     },
     {
+      "fid": "g030891/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Mar 8, 1991",
       "url": "/nwffacim/grad/g030891/",
       "idx": 21,
       "next": "/nwffacim/grad/g031491/",
-      "prev": "/nwffacim/grad/g030291/",
-      "fid": "g030891/"
+      "prev": "/nwffacim/grad/g030291/"
     },
     {
+      "fid": "g031491/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Mar 14, 1991",
       "url": "/nwffacim/grad/g031491/",
       "idx": 22,
       "next": "/nwffacim/grad/g031991/",
-      "prev": "/nwffacim/grad/g030891/",
-      "fid": "g031491/"
+      "prev": "/nwffacim/grad/g030891/"
     },
     {
+      "fid": "g031991/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Mar 19, 1991",
       "url": "/nwffacim/grad/g031991/",
       "idx": 23,
       "next": "/nwffacim/grad/g032091/",
-      "prev": "/nwffacim/grad/g031491/",
-      "fid": "g031991/"
+      "prev": "/nwffacim/grad/g031491/"
     },
     {
+      "fid": "g032091/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Mar 20, 1991",
       "url": "/nwffacim/grad/g032091/",
       "idx": 24,
       "next": "/nwffacim/grad/g032191/",
-      "prev": "/nwffacim/grad/g031991/",
-      "fid": "g032091/"
+      "prev": "/nwffacim/grad/g031991/"
     },
     {
+      "fid": "g032191/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Mar 21, 1991",
       "url": "/nwffacim/grad/g032191/",
       "idx": 25,
       "next": "/nwffacim/grad/g032291/",
-      "prev": "/nwffacim/grad/g032091/",
-      "fid": "g032191/"
+      "prev": "/nwffacim/grad/g032091/"
     },
     {
+      "fid": "g032291/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Mar 22, 1991",
       "url": "/nwffacim/grad/g032291/",
       "idx": 26,
       "next": "/nwffacim/grad/g032591/",
-      "prev": "/nwffacim/grad/g032191/",
-      "fid": "g032291/"
+      "prev": "/nwffacim/grad/g032191/"
     },
     {
+      "fid": "g032591/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Mar 25, 1991",
       "url": "/nwffacim/grad/g032591/",
       "idx": 27,
       "next": "/nwffacim/grad/g032991/",
-      "prev": "/nwffacim/grad/g032291/",
-      "fid": "g032591/"
+      "prev": "/nwffacim/grad/g032291/"
     },
     {
+      "fid": "g032991/",
+      "complete": {
+        "format": 1,
+        "index": 1,
+        "fb": 0
+      },
       "title": "Mar 29, 1991",
       "url": "/nwffacim/grad/g032991/",
       "idx": 28,
       "next": "/nwffacim/intro/grad/",
-      "prev": "/nwffacim/grad/g032591/",
-      "fid": "g032991/"
+      "prev": "/nwffacim/grad/g032591/"
     }
   ]
 }

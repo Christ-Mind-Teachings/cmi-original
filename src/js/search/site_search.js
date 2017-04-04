@@ -7,8 +7,7 @@ var runtime = require("pug-runtime");
 var config = require("../config/config");
 var templates = require("../pug/templates");
 
-var searchApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";
-var requestApi = "https://1fm3r0drnl.execute-api.us-east-1.amazonaws.com/latest/search";
+var searchApi = config.getApiEndpoint();
 var msgField;
 
 function doSearch(queryInfo) {

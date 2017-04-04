@@ -17,7 +17,12 @@
     {
       "fid": "011104/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/011104/",
       "idx": 1,
@@ -32,7 +37,12 @@
       },
       "fid": "011804/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/011804/",
       "idx": 2,
@@ -47,7 +57,12 @@
       },
       "fid": "012504/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/012504/",
       "idx": 3,
@@ -62,7 +77,12 @@
       },
       "fid": "020104/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/020104/",
       "idx": 4,
@@ -77,7 +97,12 @@
       },
       "fid": "020804/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/020804/",
       "idx": 5,
@@ -92,7 +117,12 @@
       },
       "fid": "021504/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/021504/",
       "idx": 6,
@@ -107,7 +137,12 @@
       },
       "fid": "022204/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/022204/",
       "idx": 7,
@@ -122,7 +157,12 @@
       },
       "fid": "030704/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/030704/",
       "idx": 8,
@@ -137,7 +177,12 @@
       },
       "fid": "031404/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/031404/",
       "idx": 9,
@@ -152,7 +197,12 @@
       },
       "fid": "032804/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/032804/",
       "idx": 10,
@@ -167,7 +217,12 @@
       },
       "fid": "040404/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/040404/",
       "idx": 11,
@@ -182,7 +237,12 @@
       },
       "fid": "041104/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/041104/",
       "idx": 12,
@@ -197,7 +257,12 @@
       },
       "fid": "041804/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/041804/",
       "idx": 13,
@@ -212,7 +277,12 @@
       },
       "fid": "042504/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/042504/",
       "idx": 14,
@@ -227,7 +297,12 @@
       },
       "fid": "050204/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/050204/",
       "idx": 15,
@@ -242,7 +317,12 @@
       },
       "fid": "050904/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/050904/",
       "idx": 16,
@@ -253,7 +333,12 @@
     {
       "fid": "051604/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/051604/",
       "idx": 17,
@@ -268,7 +353,12 @@
       },
       "fid": "052304/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/052304/",
       "idx": 18,
@@ -283,7 +373,12 @@
       },
       "fid": "053004/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/053004/",
       "idx": 19,
@@ -298,7 +393,12 @@
       },
       "fid": "061304/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/061304/",
       "idx": 20,
@@ -312,7 +412,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-06-20.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/062004/",
       "idx": 21,
@@ -326,7 +431,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-06-27.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/062704/",
       "idx": 22,
@@ -340,7 +450,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-07-11.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/071104/",
       "idx": 23,
@@ -355,7 +470,12 @@
       },
       "fid": "071804/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 0,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/071804/",
       "idx": 24,
@@ -369,7 +489,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-07-25.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/072504/",
       "idx": 25,
@@ -384,7 +509,12 @@
       },
       "fid": "080104/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/080104/",
       "idx": 26,
@@ -399,7 +529,12 @@
       },
       "fid": "080804/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/080804/",
       "idx": 27,
@@ -413,7 +548,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-08-15.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/081504/",
       "idx": 28,
@@ -428,7 +568,12 @@
       },
       "fid": "082204/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/082204/",
       "idx": 29,
@@ -443,7 +588,12 @@
       },
       "fid": "091204/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/091204/",
       "idx": 30,
@@ -458,7 +608,12 @@
       },
       "fid": "091904/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/091904/",
       "idx": 31,
@@ -472,7 +627,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-09-26.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/092604/",
       "idx": 32,
@@ -487,7 +647,12 @@
       },
       "fid": "100304/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/100304/",
       "idx": 33,
@@ -502,7 +667,12 @@
       },
       "fid": "101004/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/101004/",
       "idx": 34,
@@ -516,7 +686,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-10-17.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/101704/",
       "idx": 35,
@@ -531,7 +706,12 @@
       },
       "fid": "102404/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/102404/",
       "idx": 36,
@@ -545,7 +725,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-11-21.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/112104/",
       "idx": 37,
@@ -559,7 +744,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-11-28.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/112804/",
       "idx": 38,
@@ -573,7 +763,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-12-05.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/120504/",
       "idx": 39,
@@ -587,7 +782,12 @@
       "res": {
         "audio": "nwffacim/audio/2004/2004-12-12.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/121204/",
       "idx": 40,
@@ -602,7 +802,12 @@
       },
       "fid": "121904/",
       "desc": "",
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2004/121904/",
       "idx": 41,

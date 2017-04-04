@@ -20,7 +20,12 @@
       "res": {
         "audio": "2662782/2010-01-02.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/010210/",
       "idx": 1,
@@ -34,7 +39,12 @@
       "res": {
         "audio": "2662811/2010-01-16.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/011610/",
       "idx": 2,
@@ -48,7 +58,12 @@
       "res": {
         "audio": "2662818/2010-01-30.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/013010/",
       "idx": 3,
@@ -62,7 +77,12 @@
       "res": {
         "audio": "2662827/2010-02-06.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/020610/",
       "idx": 4,
@@ -76,7 +96,12 @@
       "res": {
         "audio": "2662842/2010-02-13.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/021310/",
       "idx": 5,
@@ -90,7 +115,12 @@
       "res": {
         "audio": "2662850/2010-03-06.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/030610/",
       "idx": 6,
@@ -104,7 +134,12 @@
       "res": {
         "audio": "2662929/2010-03-20.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/032010/",
       "idx": 7,
@@ -118,7 +153,12 @@
       "res": {
         "audio": "2662942/2010-03-27.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/032710/",
       "idx": 8,
@@ -132,7 +172,12 @@
       "res": {
         "audio": "2662951/2010-04-03.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/040310/",
       "idx": 9,
@@ -146,7 +191,12 @@
       "res": {
         "audio": "2662958/2010-04-10.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/041010/",
       "idx": 10,
@@ -160,7 +210,12 @@
       "res": {
         "audio": "2663032/2010-05-01.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/050110/",
       "idx": 11,
@@ -174,7 +229,12 @@
       "res": {
         "audio": "2663037/2010-05-15.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/051510/",
       "idx": 12,
@@ -188,7 +248,12 @@
       "res": {
         "audio": "2663040/2010-05-29.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/052910/",
       "idx": 13,
@@ -202,7 +267,12 @@
       "res": {
         "audio": "2663041/2010-06-05.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/060510/",
       "idx": 14,
@@ -216,7 +286,12 @@
       "res": {
         "audio": "2663070/2010-06-12.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/061210/",
       "idx": 15,
@@ -230,7 +305,12 @@
       "res": {
         "audio": "2663072/2010-06-19.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/061910/",
       "idx": 16,
@@ -244,7 +324,12 @@
       "res": {
         "audio": "2663073/2010-07-03.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/070310/",
       "idx": 17,
@@ -258,7 +343,12 @@
       "res": {
         "audio": "2663077/2010-07-10.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/071010/",
       "idx": 18,
@@ -272,7 +362,12 @@
       "res": {
         "audio": "2663079/2010-07-17.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/071710/",
       "idx": 19,
@@ -286,7 +381,12 @@
       "res": {
         "audio": "2663081/2010-07-24.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/072410/",
       "idx": 20,
@@ -300,7 +400,12 @@
       "res": {
         "audio": "2663187/2010-08-07.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/080710/",
       "idx": 21,
@@ -314,7 +419,12 @@
       "res": {
         "audio": "2663212/2010-08-28.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/082810/",
       "idx": 22,
@@ -328,7 +438,12 @@
       "res": {
         "audio": "2663213/2010-09-04.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/090410/",
       "idx": 23,
@@ -342,7 +457,12 @@
       "res": {
         "audio": "2663214/2010-09-11.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/091110/",
       "idx": 24,
@@ -356,7 +476,12 @@
       "res": {
         "audio": "2663215/2010-09-25.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/092510/",
       "idx": 25,
@@ -370,7 +495,12 @@
       "res": {
         "audio": "2663243/2010-10-02.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/100210/",
       "idx": 26,
@@ -384,7 +514,12 @@
       "res": {
         "audio": "2663256/2010-10-09.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/100910/",
       "idx": 27,
@@ -398,7 +533,12 @@
       "res": {
         "audio": "2663285/2010-10-16.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/101610/",
       "idx": 28,
@@ -412,7 +552,12 @@
       "res": {
         "audio": "2663320/2010-10-23.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/102310/",
       "idx": 29,
@@ -427,7 +572,12 @@
         "audio": "2010-11-06.mp3",
         "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2010/"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/110610/",
       "idx": 30,
@@ -441,7 +591,12 @@
       "res": {
         "audio": "2663543/2010-11-13.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/111310/",
       "idx": 31,
@@ -455,7 +610,12 @@
       "res": {
         "audio": "2663568/2010-11-20.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/112010/",
       "idx": 32,
@@ -469,7 +629,12 @@
       "res": {
         "audio": "2663581/2010-11-27.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/112710/",
       "idx": 33,
@@ -483,7 +648,12 @@
       "res": {
         "audio": "2663593/2010-12-04.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/120410/",
       "idx": 34,
@@ -497,7 +667,12 @@
       "res": {
         "audio": "2663594/2010-12-18.mp3"
       },
-      "complete": false,
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
       "intro": false,
       "url": "/nwffacim/2010/121810/",
       "idx": 35,

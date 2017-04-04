@@ -20,14 +20,14 @@ info: {{info}}
         <div class="bullet-content">
           <h2>
             <a title="Read {{bullet.title}}" href="{{bullet.url}}">
-              {% if format != "" %}
-                <i class="fa fa-fw {{format}}"></i>
-              {% endif %}
-              {% if timing != "" %}
-                <i class="fa fa-fw {{timing}}"></i>
-              {% endif %}
               {% if audio != "" %}
                 <i class="fa fa-fw {{audio}}"></i>
+              {% endif %}
+              {% if index != "" %}
+                <i class="fa fa-fw {{audio}}"></i>
+              {% endif %}
+              {% if format != "" %}
+                <i class="fa fa-fw {{format}}"></i>
               {% endif %}
               {{bullet.title}}
             </a>

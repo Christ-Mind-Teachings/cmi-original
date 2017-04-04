@@ -15,7 +15,8 @@ load-fa: true
   {% include ui/side-image.html %}
 </div>
 
-{% comment %}
-<img class="img-responsive center" src="/public/img/nwffacim/yaa/cover.jpg">
-{% endcomment %}
+{% include ui/bullets.html
+  skip=0
+  page=site.data.nwffacim.yaa.page
+%}
 

@@ -19,9 +19,8 @@
       "fid": "l01/",
       "complete": {
         "format": 1,
-        "audio": 1,
-        "timing": 1,
-        "index": 0,
+        "audio": 2,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -39,13 +38,11 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L02.mp3",
-        "timing": "l02.js"
+        "audio": "L02.mp3"
       },
       "title": "Lesson Two",
       "url": "/wom/woh/l02/",
@@ -58,8 +55,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -76,8 +72,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -94,8 +89,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -112,8 +106,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -130,8 +123,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -148,8 +140,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -166,8 +157,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -184,8 +174,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -202,8 +191,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -220,8 +208,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "timing": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {

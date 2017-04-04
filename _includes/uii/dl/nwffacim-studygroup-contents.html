@@ -21,14 +21,14 @@
 
     <header>
       <a href="{{book.url}}">
-        {% if format != "" %}
-          <i class="fa fa-fw {{format}}"></i>
-        {% endif %}
-        {% if timing != "" %}
-          <i class="fa fa-fw {{timing}}"></i>
+        {% if index != "" %}
+          <i class="fa fa-fw {{index}}"></i>
         {% endif %}
         {% if audio != "" %}
           <i class="fa fa-fw {{audio}}"></i>
+        {% endif %}
+        {% if format != "" %}
+          <i class="fa fa-fw {{format}}"></i>
         {% endif %}
         &nbsp;{{book.title}}
       </a>

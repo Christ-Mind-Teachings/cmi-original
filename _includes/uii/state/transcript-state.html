@@ -1,32 +1,36 @@
 {% comment %}
-{% endcomment %}
 <!--
   uii/state/transcript-state.html
   -------------------------------
   include.page: {{include.page}}
 -->
+{% endcomment %}
 
 {% assign format = "" %}
-{% assign timing = "" %}
 {% assign audio = "" %}
+{% assign index = "" %}
 {% if include.page %}
-  {% if include.page.complete == 0 or include.page.complete == false %}
-    {% assign format = "fa-exclamation" %}
-  {% else %}
-    {% if include.page.complete.format == 0 %}
-      {% assign format = "fa-eye-slash" %}
-    {% endif %}
-
-    {% if include.page.complete.timing == 1 %}
-      {% assign timing = "fa-clock-o" %}
-    {% endif %}
-
-    {% if include.page.complete.audio == 0 %}
-      {% assign audio = "fa-microphone-slash" %}
-    {% endif %}
+  {% if include.page.complete.format == 0 %}
+    {% assign format = "fa-eye-slash" %}
   {% endif %}
-{% else %}
-  {% assign format = "fa-question" %}
+  {% if include.page.complete.index == 1 %}
+    {% assign format = "fa-search" %}
+  {% endif %}
+
+  {% comment %}
+    Audio state:
+      0: audio expected but not available
+      1: audio present
+      2: audio timing data available
+  {% endcomment %}
+  {% case include.page.complete.audio %}
+    {% when 0 %}
+      {% assign audio = "fa-microphone-slash" %}
+    {% when 1 %}
+      {% assign audio = "fa-volume-up" %}
+    {% when 2 %}
+      {% assign audio = "fa-clock-o" %}
+  {% endcase %}
 {% endif %}
 
 

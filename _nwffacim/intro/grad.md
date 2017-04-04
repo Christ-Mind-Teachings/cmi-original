@@ -15,3 +15,8 @@ load-fa: true
   {% include ui/side-image.html %}
 </div>
 
+{% include ui/bullets.html
+  skip=0
+  page=site.data.nwffacim.grad.page
+%}
+
