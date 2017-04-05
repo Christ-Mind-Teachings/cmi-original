@@ -19,12 +19,13 @@
       "fid": "l01/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L13.mp3"
+        "audio": "L13.mp3",
+        "timing": "l13.js"
       },
       "title": "Lesson One",
       "url": "/wom/wot/l01/",

@@ -8,12 +8,10 @@ var store = require("store");
 var _ = require("underscore");
 var config = require("../config/config");
 var templates = require("../pug/templates");
-//var template = require("../pug/bookmark.jade");
 var setStartTime = function(p) {
   console.error("bookmark.setStartTime(%s) - function not initialized", p);
 };
 
-//make this better
 function showMessage(msg) {
   notify.info(msg);
 }

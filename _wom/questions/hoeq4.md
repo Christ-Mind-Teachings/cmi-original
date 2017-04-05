@@ -1,5 +1,5 @@
 ---
-title: "Heaven on Earth<small> - Question Four</small>"
+title: "Heaven on Earth - <small><a href='/wom/early/hoe/#question-four'>Question Four</a></small>"
 ---
 
 ### Question
@@ -45,9 +45,7 @@ selected those disciples? Why are there more women than men? I
 didn&rsquo;t choose them. They chose themselves. The same is true now.
 Does that help you in that regard?
 
-<div markdown="1" class="well person">
 Uh-huh, yes.
-</div> 
 
 Now. You have an interesting phenomenon in your culture where there are
 many clubs that are created. Men have clubs and exclude women. Women
@@ -66,9 +64,7 @@ they have created. And if they are seeing exclusivity, they need to
 begin to ask the clear question: what am I excluding from myself? How am
 I shutting up energies of exclusion? Does that make sense to you?
 
-<div markdown="1" class="well person">
 Yes.
-</div> 
 
 So are there any more questions? [Pause]
 

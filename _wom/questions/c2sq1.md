@@ -1,5 +1,5 @@
 ---
-title: "Choose to See<small> - Question One</small>"
+title: "Choose to See - <small><a href='/wom/early/c2s/#question-one'>Question One</a></small>"
 ---
 
 ### Question
@@ -22,7 +22,7 @@ as a man, like any other man, as a human being like any other human
 being, I walked my path to remembrance of my union with God.  I learned
 along that path that ultimately I could give nothing to anyone without
 first receiving it for myself. I became what you might call Divinely
-selfish­ :  that is, I utilized the body, the mind, the emotions and
+selfish: that is, I utilized the body, the mind, the emotions and
 every experience and every opportunity to teach myself to choose only
 with the Holy Spirit. And the Holy Spirit taught me that death is
 unreal — period.

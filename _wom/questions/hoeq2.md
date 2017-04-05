@@ -1,5 +1,5 @@
 ---
-title: "Heaven on Earth<small> - Question Two</small>"
+title: "Heaven on Earth - <small><a href='/wom/early/hoe/#question-two'>Question Two</a></small>"
 ---
 
 ### Question
@@ -89,9 +89,7 @@ moving your muscles? How are you lifting that weight? What does it feel
 like within you? For you know that if you distract yourself, you might
 hurt yourself. Is that not true?
 
-<div markdown="1" class="well person">
 Uh-huh.
-</div> 
 
 Each time you choose to let yourself be distracted by what others are
 doing, by dissipating your attention away from the note you want to
@@ -139,23 +137,17 @@ back to asking yourself that question:
 
 Any such thought like that will do, as long as it&rsquo;s highly unlimited.
 
-<div markdown="1" class="well person">
 Okay.
-</div> 
 
 Does that help you in that regard?
 
-<div markdown="1" class="well person">
 Uh-huh, very much.
-</div> 
 
 So then we&rsquo;ll be seeing if you decide to play the flute well.
 Beloved friend, you might as well, you&rsquo;ve already explored the
 vagaries of the clarinet and the oboe and the trombone.
 
-<div markdown="1" class="well person">
 Don&rsquo;t forget the drums!
-</div> 
 
 And the drums.
 

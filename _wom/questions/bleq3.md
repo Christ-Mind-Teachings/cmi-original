@@ -1,5 +1,5 @@
 ---
-title: "The Blessing of Forgiveness<small> - Question Three</small>"
+title: "The Blessing of Forgiveness - <small><a href='/wom/early/ble/#question-three'>Question Three</small>"
 fb:
   image:
   - "wom/ble.jpg"
@@ -17,9 +17,7 @@ somewhat tonight?
 
 Yes. Get &ndash; on &ndash; with &ndash; it.
 
-<div markdown="1" class="well person">
 Think you could make that any clearer?
-</div> 
 
 No.
 
@@ -31,9 +29,7 @@ being, and never, never again allow yourself to deny that you are the
 One, the One Creation of God. And unto you nothing is impossible. Does
 that help clarify?
 
-<div markdown="1" class="well person">
-[Laughing] You’re wonderful!
-</div>
+You’re wonderful!
 
 I am only yourself. Hmm.
 

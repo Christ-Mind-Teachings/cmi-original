@@ -1,5 +1,5 @@
 ---
-title: "Heaven on Earth<small> - Question Three</small>"
+title: "Heaven on Earth - <small><a href='/wom/early/hoe/#question-three'>Question Three</a></small>"
 ---
 
 ### Question
@@ -36,14 +36,10 @@ you have asked. For each question must be answered. And the answer is
 always the experience of the fulfillment of the question. Continue,
 then, to ask that question.
 
-<div markdown="1" class="well person">
-
 There&rsquo;s one that goes with it for me, and that is, if being the
 Christ vibration in 3-D is as sublime as you just described, then being
 co-creating Christ in 3-D must be a blast. And I wonder if that&rsquo;s
 ever happened in the 3-D history that we&rsquo;ve known of before?
-
-</div> 
 
 The answer is no. It has never occurred upon this plane. There have been
 many grand civilizations, but each, no matter how far removed and even
@@ -58,9 +54,7 @@ of a world in which all body minds manifest the fullness of the Christed
 consciousness. Second coming, indeed. No, it has never occurred, but it
 will.
 
-<div markdown="1" class="well person">
 So that&rsquo;s one of the real opportunities we have in Shanti Christo.
-</div> 
 
 It is not just one of the opportunities, it is the only opportunity.
 Everything serves that, or can serve it. Everything grows out of whether
@@ -69,16 +63,12 @@ committed to receiving, which means to become, the answer. For my two
 cents, if I had cents, I would say there could be no grander adventure
 than the field of time. Does that help you in regard to the question?
 
-<div markdown="1" class="well person">
 Yes, thanks.
-</div> 
 
 Oh. Then the answer is already being received.
 
-<div markdown="1" class="well person">
 What an adventure. I feel like I&rsquo;m waking up in the conversation
 we&rsquo;re having.
-</div> 
 
 Ah. Wonder of wonders. Hmm.
 

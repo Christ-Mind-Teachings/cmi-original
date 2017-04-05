@@ -1,5 +1,5 @@
 ---
-title: "Heaven on Earth<small> - Question One</small>"
+title: "Heaven on Earth - <small><a href='/wom/early/hoe/#question-one'>Question One</a></small>"
 ---
 
 ### Question
@@ -37,73 +37,77 @@ You almost had it.
 How can I discern Love&rsquo;s questions from fear&rsquo;s questions?
 </div> 
 
-It is actually very simple. Love&rsquo;s questions literally create within the physical body a
-sense of joy. It may be subtle. A sense of excitement, a sense of wonder, a sense of
-well-being, a sense of expansion. You can learn to discern the quality of this feeling
-in the cellular structure of the body itself. Fear&rsquo;s questions create exactly the opposite:
-a loss of aliveness, a sense of foreboding, a contraction, a coldness, a darkness. A very
-good practice, then, for you as well as for many (and luckily your question can serve
-more than just yourself)&hellip;
+It is actually very simple. Love&rsquo;s questions literally create
+within the physical body a sense of joy. It may be subtle. A sense of
+excitement, a sense of wonder, a sense of well-being, a sense of
+expansion. You can learn to discern the quality of this feeling in the
+cellular structure of the body itself. Fear&rsquo;s questions create
+exactly the opposite: a loss of aliveness, a sense of foreboding, a
+contraction, a coldness, a darkness. A very good practice, then, for you
+as well as for many (and luckily your question can serve more than just
+yourself)&hellip;
 
-As you sit in your meditation and allow questions to come, as you begin to become
-disciplined in your awareness that you&rsquo;re watching what&rsquo;s going on in the mind from
-moment to moment, when questions come up in your mind, pause and look at it,
-and ask yourself,
+As you sit in your meditation and allow questions to come, as you begin
+to become disciplined in your awareness that you&rsquo;re watching
+what&rsquo;s going on in the mind from moment to moment, when questions
+come up in your mind, pause and look at it, and ask yourself,
 
 > Is this a question from Love or from fear?
 
 And then ask yourself,
 
-> What do I notice in my beingness that is associated with the arising of the question? Is it a
-> feeling of fun and wonder, a bit of an excitement, a sense of expansion? Or is it a contraction,
-> a coldness, a foreboding, a dissonance instead of a resonance?
+> What do I notice in my beingness that is associated with the arising
+> of the question? Is it a feeling of fun and wonder, a bit of an
+> excitement, a sense of expansion? Or is it a contraction, a coldness,
+> a foreboding, a dissonance instead of a resonance?
 
 Does that make sense for you?
 
-<div markdown="1" class="well person">
 Yes, it does.
-</div> 
 
-It would be very good for you to practice with that. For you see, everything is a matter
-of vibration. Thought is a frequency of energy. God&rsquo;s thoughts are the highest form of
-energy&mdash;Love unimpeded, meeting no obstacles. Love is a state in which fear cannot
-be present.
+It would be very good for you to practice with that. For you see,
+everything is a matter of vibration. Thought is a frequency of energy.
+God&rsquo;s thoughts are the highest form of energy&mdash;Love
+unimpeded, meeting no obstacles. Love is a state in which fear cannot be
+present.
 
-Therefore, look well and learn now to feel the quality of energy that you are abiding
-in, as different questions arise in your mind. You will come to see very, very clearly
-that the qualities of energy revolving around and emanating from questions being
-birthed through and in the vibration of Love are completely and totally different from
-the feeling and vibratory quality of the questions arising in and around the energy of
-fear. In fact, they are as far from one another as the East from the West, and have
-literally no similarities. One specific quality that comes from questions of Love is a
-feeling of relaxation, so there is not a sense of urgency and impatience. Hmm. Just a
-thought to think about, to wonder about.
+Therefore, look well and learn now to feel the quality of energy that
+you are abiding in, as different questions arise in your mind. You will
+come to see very, very clearly that the qualities of energy revolving
+around and emanating from questions being birthed through and in the
+vibration of Love are completely and totally different from the feeling
+and vibratory quality of the questions arising in and around the energy
+of fear. In fact, they are as far from one another as the East from the
+West, and have literally no similarities. One specific quality that
+comes from questions of Love is a feeling of relaxation, so there is not
+a sense of urgency and impatience. Hmm. Just a thought to think about,
+to wonder about.
 
-Beloved friend, because you have chosen to take the time to allow the clear
-formulation of the question, now that &lsquo;unseen something&rsquo; can begin to direct a much
-clearer answer to you. And the clarity of the answer is what moves you from who you
-are toward what you wish to be. And, of course, what you&rsquo;re wishing to be is who
+Beloved friend, because you have chosen to take the time to allow the
+clear formulation of the question, now that &lsquo;unseen
+something&rsquo; can begin to direct a much clearer answer to you. And
+the clarity of the answer is what moves you from who you are toward what
+you wish to be. And, of course, what you&rsquo;re wishing to be is who
 you really are.
 
-<div markdown="1" class="well person">
 Yes
-</div> 
 
 Indeed.
 
-<div markdown="1" class="well person">
 Thank you, Jeshua.
-</div> 
 
-Do you know why this work occurs? Because I was willing to ask a clear question
-of myself when I was a man who walked upon this plane and saw the incredible
-limitations of physical form, and dared to think new thoughts. How could I possibly
-find a way to communicate with all minds in all dimensions of creation? What
-would I have to become? How would I need to change in order to experience
-unlimited communication? The answer was the process of crucifixion, resurrection,
-ascension, Christed Consciousness. So the answer taught me, because it became my
-experience&mdash;all based on the desire of finding an answer to a clearly asked question.
+Do you know why this work occurs? Because I was willing to ask a clear
+question of myself when I was a man who walked upon this plane and saw
+the incredible limitations of physical form, and dared to think new
+thoughts. How could I possibly find a way to communicate with all minds
+in all dimensions of creation? What would I have to become? How would I
+need to change in order to experience unlimited communication? The
+answer was the process of crucifixion, resurrection, ascension, Christed
+Consciousness. So the answer taught me, because it became my
+experience&mdash;all based on the desire of finding an answer to a
+clearly asked question.
 
-Where there are no questions, you already have your answer. And how many in your
-world never ask new questions, and then wonder why nothing changes?
+Where there are no questions, you already have your answer. And how many
+in your world never ask new questions, and then wonder why nothing
+changes?
 

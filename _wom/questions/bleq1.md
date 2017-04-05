@@ -1,5 +1,5 @@
 ---
-title: "The Blessing of Forgiveness<small> - Question One</small>"
+title: "The Blessing of Forgiveness - <small><a href='/wom/early/ble/#question-one'>Question One</a></small>"
 fb:
   image:
   - "wom/ble.jpg"
@@ -15,9 +15,7 @@ hearts?
 
 ### Answer
 
-A request for winning lottery numbers would be nice.  
-
-[Laughter]
+A request for winning lottery numbers would be nice.
 
 Beloved friend, you asked a question that must be filled with levity, so therefore I
 answered the question with levity.
@@ -34,23 +32,15 @@ year &ndash; so that every day is the Mass of Christ.
 
 Hm. Got you!
 
-[Laughter]
-
-<div markdown="1" class="well person">
 Always, always! But it makes a lot of room for other people to ask their questions.
-</div> 
 
 A profound sacrifice you have made.
 
-<div markdown="1" class="well person">
 Thank you. I love being your bull’s eye.
-</div> 
 
 So does that answer help with you question?
 
-<div markdown="1" class="well person">
 Yes it does, of course. Thank you.
-</div> 
 
 You see, the tendency of the mind that has become enamored with the thinking of
 the world will carry the egoic pattern of wanting to shift its frequency by making
@@ -63,11 +53,7 @@ the rest of the year to not experience the profound mystery of life.
 
 That’s a very good question. I wonder where it came from?
 
-[Laughter]
-
-<div markdown="1" class="well person">
 The One of us, yes?
-</div> 
 
 Indeed.
 
@@ -75,10 +61,6 @@ So the one of us on this side of the horse race window asked a question, and the
 of us on the other side with the green visor (Hmm… I never did like the crown of
 thorns, I changed it for a green visor) simply raced about and plucked the answer out
 of the Heart that we all share and has given it to ourselves.
-
-[Laughter]
-
-[Inaudible, audience member speaking]
 
 There are two forms of busyness. One is based in fear, the other is based in Love.
 Which energy is fueling your busyness? For the one generates the extension of the

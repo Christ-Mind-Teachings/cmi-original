@@ -101,8 +101,6 @@ the sidebar or return to the Search page.
 
 Searches are saved until replaced by a new search.
 
-Currently, search is supported for *Way of Mastery* only. 
-
 [Head on over to the Search page](/search/) and give it a try.
 
 
