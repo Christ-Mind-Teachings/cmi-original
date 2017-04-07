@@ -16,10 +16,12 @@
       "logo": "/public/img/favicon/apple-icon-180x180.png",
       "logo2": "/public/img/favicon/ms-icon-310x310.png",
       "logo-url": "/",
-      "about-url": "#",
-      "contact-url": "#",
-      "facebook-url": "#",
-      "twitter-url": "#",
+      "content": true,
+      "about-text": "About CMI",
+      "about-url": "/about/",
+      "social": false,
+      "facebook-url": "",
+      "twitter-url": "",
       "netlify": true
     }
   ]

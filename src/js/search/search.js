@@ -4,6 +4,9 @@ var store = require("store");
 var url = require("../util/url");
 var config = require("../config/config");
 var _ = require("underscore");
+var setStartTime = function(p) {
+  console.error("search.setStartTime(%s) - function not initialized", p);
+};
 
 var searchResults;
 var currentMatchIndex = 0;
@@ -211,6 +214,20 @@ function initializeNavigator(data) {
     });
   }
 
+  //listener to play audio at hit location
+  if (hitInfo.matches.length > 0) {
+    if (typeof window.cmiAudioTimingData !== "undefined") {
+      $(".play-this-match").on("click", function(e) {
+        e.preventDefault();
+        console.log("play: ", matchArray[currentMatchIndex].location.substr(1));
+        setStartTime(matchArray[currentMatchIndex].location.substr(1))
+      });
+    }
+    else {
+      $(".play-this-match").addClass("hide-player");
+    }
+  }
+
   //get next/prev page urls
   var pageUrl = getPageInfo(data, thisBook, thisUnit);
 
@@ -241,7 +258,7 @@ function initializeNavigator(data) {
 
 module.exports = {
   //search/search.js
-  initialize: function() {
+  initialize: function(setStartTimeFunc) {
     var searchMatchInfo;
     var s;
 
@@ -274,6 +291,10 @@ module.exports = {
       }
       else {
         markSearchHits(searchMatchInfo.matches, searchResults, "hide");
+      }
+
+      if (setStartTimeFunc) {
+        setStartTime = setStartTimeFunc;
       }
 
       //setup navigator show/hide event listener

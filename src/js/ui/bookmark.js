@@ -220,6 +220,7 @@ function removeBookmark(id) {
   store.set("bookmarks", bookmarks);
   //console.log(bookmarks);
 }
+
 function addBookmarkListener() {
   $(".transcript p i.bkmark").each(function(idx) {
     $(this).on("click", function(e) {

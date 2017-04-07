@@ -443,6 +443,7 @@ that, we can continue.
 [*Question*](/wom/questions/bleq1/): Jeshua, as we enter this very
 profound time of year, is there anything that you would recommend that
 we hold in our hearts?
+{: .omit}
 
 ---
 
@@ -456,6 +457,7 @@ other, our understanding of your teachings, and so on. There seem to be
 many unanswered questions and desires of people who want to come
 together more closely, quickly, and I wondered if you would address
 this?
+{: .omit}
 
 ---
 
@@ -464,6 +466,7 @@ this?
 [*Question*](/wom/questions/bleq3/): Jeshua, I’m reminded of our
 conversation about co&ndash;creating Christs a few months ago, and I
 wonder if you would extend that conversation somewhat tonight?
+{: .omit}
 
 ---
 
@@ -473,6 +476,7 @@ wonder if you would extend that conversation somewhat tonight?
 12/12 stuff. So I’ve already listened to all these other questions, you
 see, and then I decide what’s the point of asking any questions? The
 answer is already given.
+{: .omit}
 
 ---
 

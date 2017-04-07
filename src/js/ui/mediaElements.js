@@ -16,6 +16,54 @@ function showPlayer() {
   }
 }
 
+//this is called only when we have audio timing data
+function initPlayFromHere() {
+  var store = require("store");
+  var playFromHere = store.get("play-from-here");
+  console.log("playFromHere: %s", playFromHere);
+
+  if (!playFromHere) {
+    return;
+  }
+
+  // add markers to each paragraph
+  $(".transcript p").each(function(idx) {
+    //don't add marker to p's with class = omit
+    if (!$(this).hasClass("omit")) {
+      $(this).prepend("<i class='playmark playmark-hide fa fa-pull-left fa-volume-up'></i>");
+    }
+  });
+
+  //show sidebar 'play-from-here' menu option
+  $(".sidebar-nav-item.playmark").removeClass("hide-player");
+
+  //add show/hide play-from-here icons
+  $(".sidebar-nav-item.playmark").on("click", function(e) {
+    e.preventDefault();
+    $(".transcript p i.playmark").each(function(idx) {
+      if (!$(this).hasClass("omit")) {
+        if ($(this).hasClass("playmark-hide")) {
+          $(this).removeClass("playmark-hide");
+        }
+        else {
+          $(this).addClass("playmark-hide");
+        }
+      }
+    });
+  });
+
+  //add play-from-here listener
+  $(".transcript p i.playmark").each(function(idx) {
+    $(this).on("click", function(e) {
+      var id;
+      e.preventDefault();
+      id = $(this).parent().attr("id");
+      console.log("play-from-here: %s", id);
+      setStartTime(id);
+    });
+  });
+}
+
 function createPlayerDisplayToggle(config) {
   // setup "display player" toggle
 
@@ -92,10 +140,12 @@ function initPlayer(config) {
       }
 
       //if (time < audioStartTime) {
-      if (time < audioStartTime && (Math.abs(time - audioStartTime) > 1)) {
+      //if (time < audioStartTime && (Math.abs(time - audioStartTime) > 1)) {
+      if (audioStartTime > 0 && Math.abs(time - audioStartTime) > 1.5) {
         console.log("adjusting play time: ct: %s/%s, diff: %s",
             time, audioStartTime, Math.abs(time - audioStartTime));
         this.setCurrentTime(audioStartTime);
+        audioStartTime = 0;
       }
       else {
         //console.log("playing: %s, current time %s", playing, time);
@@ -154,8 +204,6 @@ function init(config) {
 
 //this is called to sync the audio start time to a bookmarked paragraph
 //and begin playing the audio
-// - the time will never be zero, unless, possibly, argument is p0.
-//   Zero indicates an error
 function setStartTime(p) {
   var newTime;
   if (!initialized) {
@@ -184,6 +232,8 @@ module.exports = {
     init(config);
 
     if (haveTimingData) {
+      initPlayFromHere();
+
       //check if audio requested on page load with ?play=<p#>
       var play = url.getQueryString("play");
       if (play) {

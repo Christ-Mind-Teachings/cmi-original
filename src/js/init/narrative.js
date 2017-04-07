@@ -50,7 +50,6 @@ module.exports = {
 
     //display hypothes.is annotation if url contains: id=<annotation id>
     showRequestedAnnotation();
-    search.initialize();
 
     //init the audio player
     audio.initialize({
@@ -60,6 +59,8 @@ module.exports = {
       hidePlayer: ".hide-player",
       hilightClass: "hilite"
     });
+
+    search.initialize(audio.setStartTime);
 
     //init bookmarks feature
     bookmark.initialize(audio.setStartTime);

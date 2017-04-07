@@ -4,9 +4,9 @@ workingDir=`pwd`
 scriptDir=`dirname $0`
 scriptName=`basename $0`
 
-womDir="/Users/rmercer/Projects/cmi/site/_wom"
+womDir="/Users/rmercer/Projects/cmi/site/www/_wom"
 womAwk="wom.awk"
-nwffacimDir="/Users/rmercer/Projects/cmi/site/_nwffacim"
+nwffacimDir="/Users/rmercer/Projects/cmi/site/www/_nwffacim"
 nwffacimAwk="nwffacim.awk"
 unitDir=""
 debug=0

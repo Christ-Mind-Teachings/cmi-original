@@ -86,8 +86,14 @@ $(document).ready(function (){
   $(".container a").each(function(){
     if ($(this).attr("href").charAt(0) == '#'){
       $(this).on('click', function(event) {
-        event.preventDefault();
         var target = $(event.target).closest("a");
+
+        //this is a footnote link, it should be adusted because the default
+        //scroll puts the link under the menu bar...
+        if (target.hasClass("footnote") || target.hasClass("reversefootnote")) {
+          return;
+        }
+        event.preventDefault();
         var targetHight =  $(target.attr("href")).offset().top
         $('html,body').animate({scrollTop: targetHight - 170}, 800, "easeInOutExpo");
       });

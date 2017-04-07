@@ -504,6 +504,7 @@ as kind of burdensome, but it&rsquo;s the first time I&rsquo;m feeling a
 certain goal that I really like is something that I can approach in the
 spirit of fun. And I don&rsquo;t even really know what my question is,
 but I know that&rsquo;s what I want to talk to you about.
+{: .omit}
 
 ---
 
@@ -514,6 +515,7 @@ greater clarity and discernment around wearing one&rsquo;s own emotional
 body and energy and staying clear with that and not, so to speak, take
 on the cloak or clothes of another&rsquo;s emotional body and wearing
 theirs?
+{: .omit}
 
 ---
 
@@ -521,6 +523,7 @@ theirs?
 
 [*Question*](/wom/questions/hoeq3/): Jeshua, what is like to live the
 Christ vibration in 3-D?
+{: .omit}
 
 ---
 
@@ -533,4 +536,5 @@ question is&mdash;what is the question? For those not able to manifest
 the means to become a member right now, whether the Shanti Christo play
 in that role to open up and extend tapes to those?  What&rsquo;s your
 view on that?
+{: .omit}
 

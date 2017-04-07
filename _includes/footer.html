@@ -19,8 +19,8 @@ info: {{info}}
   </div>
   {% endif %}
   <div class="footer-links">
+    {% if info.content == true %}
     <ul>
-      <li><h3>Content</h3></li>
       {% if info.about-url %}
         <li>
           <a href="{{info.about-url}}">
@@ -36,14 +36,20 @@ info: {{info}}
         <li><a href="{{info.contact-url}}">Contact</a></li>
       {% endif %}
     </ul>
+    {% endif %}
+    {% if info.social == true %}
     <ul>
       <li><h3>Follow Us</h3></li>
-      <li><a href="javascript:void(0)">Facebook</a></li>
-      <li><a href="javascript:void(0)">Twitter</a></li>
+      {% if info.facebook-url %}
+        <li><a href="{{info.facebook-url}}">Facebook</a></li>
+      {% endif %}
+      {% if info.twitter-url %}
+        <li><a href="{{info.twitter-url}}">Twitter</a></li>
+      {% endif %}
     </ul>
+    {% endif %}
     {% if info.netlify == true %}
     <ul>
-      <li><h3>Supported By</h3></li>
       <li>
         <a href="https://www.netlify.com">
           <img target="_blank" src="https://www.netlify.com/img/global/badges/netlify-light.svg">
