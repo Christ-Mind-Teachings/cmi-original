@@ -117,7 +117,9 @@ function addShowBookmarkDialogListener() {
 
 function addBookMarkers() {
   $(".transcript p").each(function(idx) {
-    $(this).prepend("<i class='bkmark bkmark-hide fa fa-pull-left fa-bookmark-o'></i>");
+    if (!$(this).hasClass("omit")) {
+      $(this).prepend("<i class='bkmark bkmark-hide fa fa-pull-left fa-bookmark-o'></i>");
+    }
   });
 }
 

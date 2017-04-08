@@ -366,7 +366,6 @@ function early(item, idx, arr) {
 
 //------------ Start Here ----------------
 
-//var baseSaveLocation = "/Users/rmercer/Projects/cmi/site/src/local/library-data/data";
 var baseSaveLocation = "/Users/rmercer/Projects/cmi/site/www/_data";
 var source;
 
@@ -463,6 +462,7 @@ switch (id) {
     outfile = data.outfile;
     break;
   case "early":
+  case "tjl":
     source = "wom";
     yml.base = data.base;
     yml.intro = data.intro;

@@ -29,6 +29,9 @@ given before the core teachings of The Way of Mastery.
 throughout all the Way of Mastery material are compiled and available
 here.
 
+Read [*The Jeshua Letters*](/wom/intro/tjl/), Jayem's account of the
+beginning of his relationship with Jeshua.
+
 Learn more about the [ *Way of Mastery* here.](https://wayofmastery.com)
 
 </div>

@@ -462,6 +462,7 @@ switch (id) {
     outfile = data.outfile;
     break;
   case "early":
+  case "tjl":
     source = "wom";
     yml.base = data.base;
     yml.intro = data.intro;
