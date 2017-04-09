@@ -14,23 +14,34 @@ xfooter-id: wom
 
 # The Way of Mastery
 
-The core teaching of *The Way of Mastery* was given by Jeshua through
-Jayem over a three year period of monthly sessions. Transcripts of each
-session are available here organized by year.
+The *Way of Mastery* was birthed from the relationship between Jeshua
+(Jesus) and Jayem beginning in 1987. The *Way of Mastery* pathway
+consists of five core texts and living practices. The core texts are available
+here and include:
 
-- [ Year One: *The Way of the Heart* ](/wom/intro/woh/)
-- [ Year Two: *The Way of Transformation* ](/wom/intro/wot/)
-- [ Year Three: *The Way of Knowning* ](/wom/intro/wok/)
+- [*The Jeshua Letters*](/wom/intro/tjl/)
 
-The [ *Early Years* ](/wom/intro/early/) are a collection of messages
-given before the core teachings of The Way of Mastery.
+    Jayem's account of his first meetings with Jeshua and the beautiful
+    introduction to the pathway of awakening revealed in their
+    conversation.
 
-[ *Answers* ](/wom/intro/questions/) to questions asked of Jeshua
-throughout all the Way of Mastery material are compiled and available
-here.
+- [*The Way of the Servant*](/wom/intro/wos/)
 
-Read [*The Jeshua Letters*](/wom/intro/tjl/), Jayem's account of the
-beginning of his relationship with Jeshua.
+    A poetic description of the journey of awakening taken from
+    inception to recognition of self as the servant - one who walks this
+    world awake.
+
+- The core teaching - a compliation of a three year period of monthly messages.
+    - [ Year One: *The Way of the Heart* ](/wom/intro/woh/)
+    - [ Year Two: *The Way of Transformation* ](/wom/intro/wot/)
+    - [ Year Three: *The Way of Knowning* ](/wom/intro/wok/)
+
+Also available is:
+
+- [*The Early Years*](/wom/intro/early/): a collection of messages
+  given before The Way of the Heart.
+- [*Q&A*](/wom/intro/questions/): asked of Jeshua after more formal
+  sessions.
 
 Learn more about the [ *Way of Mastery* here.](https://wayofmastery.com)
 

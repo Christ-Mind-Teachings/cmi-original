@@ -463,6 +463,7 @@ switch (id) {
     break;
   case "early":
   case "tjl":
+  case "wos":
     source = "wom";
     yml.base = data.base;
     yml.intro = data.intro;

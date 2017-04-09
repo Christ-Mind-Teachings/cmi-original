@@ -1,0 +1,133 @@
+{
+  "base": "/wom/wos/",
+  "intro": "/wom/intro/",
+  "title": "Way of the Servant",
+  "bid": "wos",
+  "page": [
+    {
+      "fid": "wos/",
+      "title": "About Way of the Servant",
+      "url": "/wom/intro/wos/",
+      "idx": 0,
+      "next": "/wom/wos/foreword/",
+      "prev": "/wom/wos/prayer/"
+    },
+    {
+      "fid": "foreword/",
+      "title": "Foreword",
+      "complete": {
+        "format": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/wos/foreword/",
+      "idx": 1,
+      "next": "/wom/wos/preface/",
+      "prev": "/wom/intro/wos/"
+    },
+    {
+      "fid": "preface/",
+      "title": "Preface",
+      "complete": {
+        "format": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/wos/preface/",
+      "idx": 2,
+      "next": "/wom/wos/chap01/",
+      "prev": "/wom/wos/foreword/"
+    },
+    {
+      "fid": "chap01/",
+      "title": "Book One",
+      "complete": {
+        "format": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/wos/chap01/",
+      "idx": 3,
+      "next": "/wom/wos/chap02/",
+      "prev": "/wom/wos/preface/"
+    },
+    {
+      "fid": "chap02/",
+      "title": "Book Two",
+      "complete": {
+        "format": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/wos/chap02/",
+      "idx": 4,
+      "next": "/wom/wos/chap03/",
+      "prev": "/wom/wos/chap01/"
+    },
+    {
+      "fid": "chap03/",
+      "title": "Book Three",
+      "complete": {
+        "format": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/wos/chap03/",
+      "idx": 5,
+      "next": "/wom/wos/chap04/",
+      "prev": "/wom/wos/chap02/"
+    },
+    {
+      "fid": "chap04/",
+      "title": "Book Four",
+      "complete": {
+        "format": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/wos/chap04/",
+      "idx": 6,
+      "next": "/wom/wos/afterwords/",
+      "prev": "/wom/wos/chap03/"
+    },
+    {
+      "fid": "afterwords/",
+      "title": "After Words",
+      "complete": {
+        "format": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/wos/afterwords/",
+      "idx": 7,
+      "next": "/wom/wos/epilog/",
+      "prev": "/wom/wos/chap04/"
+    },
+    {
+      "fid": "epilog/",
+      "title": "Epilogue",
+      "complete": {
+        "format": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/wos/epilog/",
+      "idx": 8,
+      "next": "/wom/wos/prayer/",
+      "prev": "/wom/wos/afterwords/"
+    },
+    {
+      "fid": "prayer/",
+      "title": "Prayer of Remembrance",
+      "complete": {
+        "format": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/wos/prayer/",
+      "idx": 9,
+      "next": "/wom/intro/wos/",
+      "prev": "/wom/wos/epilog/"
+    }
+  ]
+}
