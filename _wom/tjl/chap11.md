@@ -394,7 +394,7 @@ everywhere, in every cell. And the streaming water feels so wondrous!
 His voice startles me. It comes from behind me, and I would swear I can
 feel the presence of Him standing behind me. But I don’t turn to look.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Very well, My brother.<br/>
 For this have I waited patiently longer<br/>
 than you currently know.<br/>

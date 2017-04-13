@@ -337,7 +337,7 @@ shared. Some of what he said keeps rising to the surface of my mind from
 time to time, and I remember knowing somehow that it was particularly
 important, though I had no idea why it felt that way. He said:
 
-<p class="indent">My friend, ye have been what would be termed<br/>
+<p markdown="1" class="indent">My friend, ye have been what would be termed<br/>
 as a philosopher many times.<br/>
 Is it not so again?<br/>
 Indeed, ye were -<br/>
@@ -487,7 +487,7 @@ The words startle me, for there is an unmistakable sense of familiarity,
 as when the person you love most in the whole world calls and, when you
 answer the phone, they simply say “hello” and you know who it is.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 I am glad that you have come to this point<br/>
 of being willing to allow<br/>
 this communication to take place.<br/>
@@ -638,7 +638,7 @@ Yet allow your awareness to rest with Me.
 The words are both heard and seen, appearing against an empty backdrop.
 But more than this, I can *feel* them.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 I am the one<br/>
 the world knows<br/>
 as Jesus,<br/>
@@ -753,7 +753,7 @@ disconcerting.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Such Love have I<br/>

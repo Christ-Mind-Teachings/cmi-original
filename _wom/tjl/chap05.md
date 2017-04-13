@@ -19,7 +19,7 @@ through the night.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 <span class="capital">N</span>ow, we begin.
 
 A little while and you shall be where I AM.<br/>
@@ -108,7 +108,7 @@ Amen.
 
 “Hello, Jeshua. I love you.”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 And I you, beloved friend.
 
 Now, we begin.
@@ -225,7 +225,7 @@ Amen.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 So be it.<br/>

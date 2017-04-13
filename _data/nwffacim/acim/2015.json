@@ -1,6 +1,6 @@
 {
   "domain": {
-    "audio": "http://www.celestialrealm.com/uploads/"
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2015/"
   },
   "base": "/nwffacim/2015/",
   "intro": "/nwffacim/intro/",
@@ -16,9 +16,9 @@
     },
     {
       "fid": "041815/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2015-04-18_mp3.mp3"
+        "audio": "2015-04-18_mp3.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -35,9 +35,9 @@
     },
     {
       "fid": "042515/",
-      "desc": "",
+      "desc": "T19.6 Obstacles to Peace; Belief the Body is Valuable&hellip;",
       "res": {
-        "audio": "2015-04-25.mp3"
+        "audio": "2015-04-25.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -56,7 +56,7 @@
       "fid": "050315/",
       "desc": "",
       "res": {
-        "audio": "2015-05-03.mp3"
+        "audio": "2015-05-03.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -73,9 +73,9 @@
     },
     {
       "fid": "050915/",
-      "desc": "",
+      "desc": "T19.7 Pleasure and Pain",
       "res": {
-        "audio": "2015-05-09.mp3"
+        "audio": "2015-05-09.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -92,9 +92,9 @@
     },
     {
       "fid": "051715/",
-      "desc": "",
+      "desc": "T19.8 Obstacles to Peace; The Attraction of Death",
       "res": {
-        "audio": "2015-05-17.mp3"
+        "audio": "2015-05-17.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -111,9 +111,9 @@
     },
     {
       "fid": "060715/",
-      "desc": "",
+      "desc": "T19.8 Obstacles to Peace; The Attraction of Death",
       "res": {
-        "audio": "2015-06-07L.mp3"
+        "audio": "2015-06-07L.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -130,9 +130,9 @@
     },
     {
       "fid": "061415/",
-      "desc": "",
+      "desc": "T19.10 Obstacles to Peace; The Fear of God",
       "res": {
-        "audio": "2015-06-14.mp3"
+        "audio": "2015-06-14.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -149,9 +149,9 @@
     },
     {
       "fid": "062115/",
-      "desc": "",
+      "desc": "T19.10 Obstacles to Peace; The Fear of God",
       "res": {
-        "audio": "2015-06-21.mp3"
+        "audio": "2015-06-21.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -168,9 +168,9 @@
     },
     {
       "fid": "062815/",
-      "desc": "",
+      "desc": "T19.11 The Lifting of the Veil",
       "res": {
-        "audio": "2015-06-28.mp3"
+        "audio": "2015-06-28.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -187,9 +187,9 @@
     },
     {
       "fid": "070515/",
-      "desc": "",
+      "desc": "T20.In The Promise of the Resurrection",
       "res": {
-        "audio": "2015-07-05.mp3"
+        "audio": "2015-07-05.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -206,9 +206,9 @@
     },
     {
       "fid": "071315/",
-      "desc": "",
+      "desc": "T20.2 Thorns and Lilies",
       "res": {
-        "audio": "2015-07-13.mp3"
+        "audio": "2015-07-13.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -225,9 +225,9 @@
     },
     {
       "fid": "072115/",
-      "desc": "",
+      "desc": "T20.2 Thorns and Lilies",
       "res": {
-        "audio": "2015-07-21.mp3"
+        "audio": "2015-07-21.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -244,9 +244,9 @@
     },
     {
       "fid": "080115/",
-      "desc": "",
+      "desc": "T20.2 Thorns and Lilies",
       "res": {
-        "audio": "2015-08-01.mp3"
+        "audio": "2015-08-01.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -263,9 +263,9 @@
     },
     {
       "fid": "082315/",
-      "desc": "",
+      "desc": "T20.3 Sin as an Adjustment",
       "res": {
-        "audio": "2015-08-23.mp3"
+        "audio": "2015-08-23.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -282,9 +282,9 @@
     },
     {
       "fid": "091315/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2015-09-13.mp3"
+        "audio": "2015-09-13.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -296,37 +296,53 @@
       "url": "/nwffacim/2015/091315/",
       "idx": 15,
       "title": "Sep 13, 2015",
-      "next": "/nwffacim/2015/102115/",
+      "next": "/nwffacim/2015/100215/",
       "prev": "/nwffacim/2015/082315/"
+    },
+    {
+      "fid": "100215/",
+      "desc": "Discussion",
+      "complete": {
+        "format": 1,
+        "audio": 0,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2015/100215/",
+      "idx": 16,
+      "title": "Oct 2, 2015",
+      "next": "/nwffacim/2015/102115/",
+      "prev": "/nwffacim/2015/091315/"
     },
     {
       "fid": "102115/",
       "desc": "",
       "complete": {
         "format": 0,
-        "audio": 1,
+        "audio": 0,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2015/102115/",
-      "idx": 16,
+      "idx": 17,
       "title": "Oct 21, 2015",
       "next": "/nwffacim/2015/110115/",
-      "prev": "/nwffacim/2015/091315/"
+      "prev": "/nwffacim/2015/100215/"
     },
     {
       "fid": "110115/",
       "desc": "",
       "complete": {
         "format": 0,
-        "audio": 1,
+        "audio": 0,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2015/110115/",
-      "idx": 17,
+      "idx": 18,
       "title": "Nov 1, 2015",
       "next": "/nwffacim/intro/2015/",
       "prev": "/nwffacim/2015/102115/"

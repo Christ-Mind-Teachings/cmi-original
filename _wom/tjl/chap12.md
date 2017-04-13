@@ -75,7 +75,7 @@ That is when I hear Him. No, first, I feel Him. Strongly.
 
 More strongly than ever.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Hello, My brother.<br/>
 And so we begin to take the next step<br/>
 in an ancient Work shared before.<br/>
@@ -132,7 +132,7 @@ belly, He speaks again:
 
 My mind, my breath, my body’s movement are all slammed into stillness.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 My brother,<br/>
 I have chosen you because you first chose Me,<br/>
 long ago.<br/>
@@ -265,7 +265,7 @@ shortly after my return from Vietnam.
 
 I open the letter.
 
-<div class="quote">
+<div markdown="1" class="quote">
 Dear Marc,
 
 You don’t know me. A friend of yours handed me a manuscript some weeks
@@ -289,7 +289,7 @@ Now, my own tears begin to fall softly. I am alone, but have never felt
 less so. Suddenly, it hits me full force. The sign! I suddenly remember
 His words to me:
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Soon, there comes a clear sign unto you of the Work
 in which you participate, the Work of the Son’s
 atonement. When you clearly choose the active
@@ -324,7 +324,7 @@ more.
 
 All things have been made new.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now,<br/>
 it is finished.<br/>
 Already,<br/>

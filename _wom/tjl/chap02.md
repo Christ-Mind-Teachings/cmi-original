@@ -68,7 +68,7 @@ a lightly clouded sky. It is the most natural of responses to simply
 give thanks. Though my eyes are open, that now familiar feeling begins.
 I see that golden Light, then hear a familiar Voice.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 It is in seeking for,<br/>
@@ -140,7 +140,7 @@ is but a moment’s imagination.<br/>
 All rests on that one thought.
 
 This I give you as<br/>
-theWay of Life:<br/>
+the Way of Life:<br/>
 releasing this thought<br/>
 brings forth into recognition<br/>
 what alone is Real.
@@ -173,7 +173,7 @@ Now, you are home with Me.
 I repeat,<br/>
 for those who will choose to hear<br/>
 what is now given forth:<br/>
-theWay is easy,<br/>
+the Way is easy,<br/>
 and without effort.
 
 For that which comes of effort<br/>
@@ -296,7 +296,7 @@ the neat boxes of logic it worships, forces me to simply shut up. Then,
 it begins again. That sense of warmth that grows from within, the
 vibrational change, and finally, the Voice:
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Abide with Me yet a little while.<br/>
@@ -309,7 +309,7 @@ Are you willing to join with Me now?
 “Yes,” I mutter beneath my breath. I’m sure I’ve already lost what
 little sanity I had, so why not?
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Then take up pad and pen,<br/>
 for I will share with you<br/>
 that which is Life,<br/>
@@ -417,7 +417,7 @@ instructions for you.<br/>
 Follow them,<br/>
 for now is the time upon the earth.<br/>
 Many are nearly ready<br/>
-to hear theWord,<br/>
+to hear the Word,<br/>
 and awaken from illusion.
 
 Go now in peace.<br/>
@@ -451,7 +451,7 @@ For a moment, I am a Zen Buddhist monk, but only for a fleeting moment.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Marc, hear Me well.<br/>
@@ -470,7 +470,7 @@ and close your eyes that would show you<br/>
 but the world of your illusion,<br/>
 and in this rest I will come unto you,<br/>
 and My presence will be as a healing unto you.<br/>
-Rest now. . .
+Rest now&hellip;
 
 </div>
 
@@ -478,7 +478,7 @@ Rest now. . .
 though all of me was melting into light. I have never felt such utter
 peace.)
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 And now the end of sorrow is upon us.<br/>
 I will go out no more from the Father’s holy place.<br/>
 Indeed, I have overcome the world.<br/>
@@ -542,7 +542,7 @@ myself to receiving this communication. Maybe I am going crazy, or maybe
 I’ve already done so, in which case there can be no further harm by
 being ready...
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 First, it is for you to understand<br/>
@@ -570,7 +570,7 @@ What is circumstance, Marc?
 
 “Well, I guess it is a place, an environment of sorts.”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 
 Yes!<br/>
 A place. That is good.<br/>

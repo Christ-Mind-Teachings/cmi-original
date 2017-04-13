@@ -176,7 +176,7 @@ Disgustedly, I throw the covers back and grab my robe. On the way to the
 bathroom I lift my eyes upward, muttering under my breath, “Boy, you
 guys will stop at nothing, will you?”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 You are losing the battle, Marc.<br/>
@@ -400,7 +400,7 @@ For this moment of eternity, gone the Dream.
 
 Tomorrow I will start writing.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now,<br/>
 it is finished.<br/>
 Already,<br/>

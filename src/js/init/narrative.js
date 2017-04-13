@@ -45,7 +45,9 @@ module.exports = {
     //assign id's to all paragraphs in div.transcript
     transcriptParagraphs = $(".transcript p");
     transcriptParagraphs.each(function(idx) {
-      $(this).attr("id", "p" + idx);
+      if (!$(this).hasClass("omit")) {
+        $(this).attr("id", "p" + idx);
+      }
     });
 
     //display hypothes.is annotation if url contains: id=<annotation id>

@@ -134,13 +134,6 @@ module.exports = {
 
       //indicate timing data available
       enabled = true;
-
-      //define id's for each paragraph in the narrative div
-      // - these id's are referenced by the timing data
-      // Note: ** this is already done by cmi.js
-      //$(".narrative p").each(function(idx) {
-      //  $(this).attr("id", "p" + idx);
-      //});
     }
 
     if (typeof cssClass !== "undefined") {

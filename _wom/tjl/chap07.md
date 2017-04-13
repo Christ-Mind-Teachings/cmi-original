@@ -375,7 +375,7 @@ the one called Jesus.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Again,<br/>
@@ -470,7 +470,7 @@ Amen.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Beloved brethren,<br/>
@@ -600,7 +600,7 @@ Amen.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 It is not without much hesitation<br/>

@@ -59,7 +59,7 @@ I think you know what I mean by that.
 
 “Well, if I don’t, I’m sure it will be made clear!”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Yes, it will.<br/>
 Your doubt as to the validity<br/>
 of your experience with Me,<br/>
@@ -77,7 +77,7 @@ The significance of this is paramount.
 
 “Why?”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Simply because it includes denial<br/>
 of your own Sonship.<br/>
 Do you see?<br/>
@@ -114,7 +114,7 @@ and effectively stops whomever is struck.
 “Jeshua, sometimes - even now as I hurry to write down these words - I
 sense a fear about all this. Why?”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 That is a good question, Marc.<br/>
 Why __do__ you fear it?<br/>
 I have hinted at the direction of your answer,<br/>
@@ -137,7 +137,7 @@ that sustains the belief in separation?
 
 “Somehow, that feels quite true.”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 As it must.
 
 Marc,<br/>
@@ -305,7 +305,7 @@ to him that knocketh, it shall be opened.”
 Both pages, every word of every verse, are printed in red. Then, his
 familiar voice:
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Marc, these four verses should be read together;<br/>
@@ -328,7 +328,7 @@ grasped something.
 
 “It’s seeing the other person. It’s, hmmm...” I stumble for words.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 It is judgment, Marc.<br/>
 It is judgment that must first be cast out,<br/>
 for it is your only imperfection.<br/>
@@ -407,7 +407,7 @@ with your eyes closed.
 Reluctantly, I open them, momentarily afraid the connection will be
 lost. It is not.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 What distances have been traveled?<br/>
@@ -580,7 +580,7 @@ Amen.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Marc, I would ask that you again open your Bible,<br/>
@@ -633,7 +633,7 @@ Him.”
 
 </div>
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 It is with great demand for attention<br/>
 that I speak now of this teaching.<br/>
 For those who build their temples<br/>
@@ -737,7 +737,7 @@ Amen.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Here I will speak with you<br/>
@@ -877,7 +877,7 @@ cannot accept this, yet I see clearly this is only because it is
 
 I suddenly feel that shift of energy again:
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Very good, Marc.<br/>
 It can come so easily when you choose<br/>
 the key of __allowing__.<br/>
@@ -932,7 +932,7 @@ this, so&hellip;”
 
 “Okay.”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Beloved brother,<br/>
@@ -944,7 +944,7 @@ that brings such questions?
 
 “Well, yes, I guess it is my resistance.”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Yes, it is __only__ that.<br/>
 And what would you resist?<br/>
 The very Life you have always sought?
@@ -953,7 +953,7 @@ The very Life you have always sought?
 
 “Something in me does draw back. I think I fear it.”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 What I will share with you this evening<br/>
 will bring an end to your resistance<br/>
 if you will but reflect on what is given<br/>
@@ -1011,7 +1011,7 @@ Put it away as a child does an old toy.
 
 “But isn’t that a denial of life?”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Illusions hold no life.<br/>
 Your question expresses your resistance.<br/>
 It expresses your deeply held belief that the world<br/>
@@ -1078,7 +1078,7 @@ there is Separation __from__ all that God is.
 
 “This is too much. Surely I’ve got to be making all of this up.”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Of course you are.<br/>
 The “you” who is the only begotten of the Father<br/>
 is making it all up.<br/>
@@ -1156,7 +1156,7 @@ Amen.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Know that the vision of Me,<br/>

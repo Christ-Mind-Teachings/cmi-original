@@ -1,6 +1,7 @@
 {
   "domain": {
-    "audio": "http://www.celestialrealm.com/uploads/"
+    "original-audio": "http://www.celestialrealm.com/uploads/",
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2014/"
   },
   "base": "/nwffacim/2014/",
   "intro": "/nwffacim/intro/",
@@ -16,9 +17,9 @@
     },
     {
       "fid": "010614/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2014-01-06_ChristJesus__Raj_ACIM_StudyGroup.mp3"
+        "audio": "2014-01-06_ChristJesus__Raj_ACIM_StudyGroup.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -35,9 +36,9 @@
     },
     {
       "fid": "011414/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2014-01-14_ChristJesus__Raj_ACIM_StudyGroup.mp3"
+        "audio": "2014-01-14_ChristJesus__Raj_ACIM_StudyGroup.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -54,9 +55,9 @@
     },
     {
       "fid": "012814/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2014-01-28_ChristJesus__Raj__ACIM_Study_Group.mp3"
+        "audio": "2014-01-28_ChristJesus__Raj__ACIM_Study_Group.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -73,9 +74,9 @@
     },
     {
       "fid": "020914/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2014-02-09_ChristJesus__Raj__ACIM_Study_Group.mp3"
+        "audio": "2014-02-09_ChristJesus__Raj__ACIM_Study_Group.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -92,9 +93,9 @@
     },
     {
       "fid": "022414/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2014-02-24_ChristJesus__Raj__ACIM_Study_Group.mp3"
+        "audio": "2014-02-24_ChristJesus__Raj__ACIM_Study_Group.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -111,9 +112,9 @@
     },
     {
       "fid": "030914/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2014-03-09_ChristJesus__Raj__ACIM_Study_Group.mp3"
+        "audio": "2014-03-09_ChristJesus__Raj__ACIM_Study_Group.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -130,9 +131,9 @@
     },
     {
       "fid": "041314/",
-      "desc": "",
+      "desc": "T15.4 Practicing the Holy Instant",
       "res": {
-        "audio": "2014-04-13_ChristJesus__Raj__ACIM_Study_Group.mp3"
+        "audio": "2014-04-13_ChristJesus__Raj__ACIM_Study_Group.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -149,9 +150,9 @@
     },
     {
       "fid": "061614/",
-      "desc": "",
+      "desc": "Disucssion",
       "res": {
-        "audio": "2014-06-16_ChristJesus__Raj_.mp3"
+        "audio": "2014-06-16_ChristJesus__Raj_.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -168,9 +169,9 @@
     },
     {
       "fid": "062914/",
-      "desc": "",
+      "desc": "Disucssion",
       "res": {
-        "audio": "2014-06-29L.mp3"
+        "audio": "2014-06-29L.1.mp3"
       },
       "complete": {
         "format": 0,
@@ -187,9 +188,9 @@
     },
     {
       "fid": "091514/",
-      "desc": "",
+      "desc": "Disucssion",
       "res": {
-        "audio": "2014-09-15L_Christ_Jesus__Raj__Teaches_ACIM.mp3"
+        "audio": "2014-09-15L_Christ_Jesus__Raj__Teaches_ACIM.1.mp3"
       },
       "complete": {
         "format": 0,

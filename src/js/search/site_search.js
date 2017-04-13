@@ -51,7 +51,7 @@ function saveResults(data) {
 }
 
 function showSearchResults(data) {
-  //console.log("showSearchResults(): ", data);
+  console.log("showSearchResults(): ", data);
   var html;
 
   // searchResults is a function created by pug

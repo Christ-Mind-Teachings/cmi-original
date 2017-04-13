@@ -68,18 +68,24 @@ function getParms(book, lesson) {
     case 3:
       info.book = "wok3";
       break;
+    case 4:
+      info.book = "tjl4";
+      break;
+    case 5:
+      info.book = "wos5";
+      break;
     default:
-      info.book = "???4";
+      info.book = "???6";
       break;
   }
 
   if (lesson) {
-    info.first = (info.bid * 100000) + (lesson * 1000);
-    info.last = (info.bid * 100000) + (lesson * 1000) + 999;
+    info.first = (info.bid * 10000000) + (lesson * 1000);
+    info.last = (info.bid * 10000000) + (lesson * 1000) + 999;
   }
   else {
-    info.first = (info.bid * 100000) + 1000;
-    info.last = (info.bid * 100000) + 12999;
+    info.first = (info.bid * 10000000) + 1000;
+    info.last = (info.bid * 10000000) + 12999;
   }
 
   return info;
@@ -88,7 +94,7 @@ function getParms(book, lesson) {
 var parms;
 var values;
 
-for (var i=1; i < 4; i++) {
+for (var i=1; i < 6; i++) {
   values = {};
   parms = getParms(i);
 
@@ -103,6 +109,9 @@ for (var i=1; i < 4; i++) {
 
   for (var l=1; l < 13; l++) {
     if (i === 3 && l === 12) {
+      continue;
+    }
+    if (i === 5 && l > 4) {
       continue;
     }
     values = {};

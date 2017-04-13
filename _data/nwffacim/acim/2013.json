@@ -1,6 +1,7 @@
 {
   "domain": {
-    "audio": "https://static.secure.website/wscfus/8306833/"
+    "original-audio": "https://static.secure.website/wscfus/8306833/",
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2013/"
   },
   "base": "/nwffacim/2013/",
   "intro": "/nwffacim/intro/",
@@ -16,9 +17,9 @@
     },
     {
       "fid": "042713/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2612023/2013-04-27-christ-jesus-raj-teaching.mp3"
+        "audio": "2013-04-27.mp3"
       },
       "complete": {
         "format": 0,
@@ -35,9 +36,9 @@
     },
     {
       "fid": "050413/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2612059/2013-5-4-christ-jesus-raj-teaching.mp3"
+        "audio": "2013-05-04.mp3"
       },
       "complete": {
         "format": 0,
@@ -54,9 +55,9 @@
     },
     {
       "fid": "051113/",
-      "desc": "",
+      "desc": "T19.8 The Obstacles to Peace, The Second Obstacle",
       "res": {
-        "audio": "2612131/2013-05-11-christ-jesus-raj-teaching.mp3"
+        "audio": "2013-05-11.mp3"
       },
       "complete": {
         "format": 0,
@@ -73,9 +74,9 @@
     },
     {
       "fid": "052013/",
-      "desc": "",
+      "desc": "T19.7 Pleasure and Pain",
       "res": {
-        "audio": "2612133/2013-05-20-christjesusrajteachingacim.mp3"
+        "audio": "2013-05-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -92,9 +93,9 @@
     },
     {
       "fid": "052813/",
-      "desc": "",
+      "desc": "T19.7 Pleasure and Pain",
       "res": {
-        "audio": "2612468/2013-05-28-christ-jesus-raj-teachingacim.mp3"
+        "audio": "2013-05-28.mp3"
       },
       "complete": {
         "format": 0,
@@ -111,9 +112,9 @@
     },
     {
       "fid": "060213/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2612470/2013-06-02-christ-jesus-raj-teachingacim.mp3"
+        "audio": "2013-06-02.mp3"
       },
       "complete": {
         "format": 0,
@@ -130,9 +131,9 @@
     },
     {
       "fid": "060913/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2612471/2013-06-09-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-06-09.mp3"
       },
       "complete": {
         "format": 0,
@@ -149,9 +150,9 @@
     },
     {
       "fid": "062513/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2612473/2013-06-25-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-06-25.mp3"
       },
       "complete": {
         "format": 0,
@@ -168,9 +169,9 @@
     },
     {
       "fid": "063013/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2612475/2013-06-30-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-06-30.mp3"
       },
       "complete": {
         "format": 0,
@@ -187,9 +188,9 @@
     },
     {
       "fid": "070713/",
-      "desc": "",
+      "desc": "T13.8 The Way of Salvation",
       "res": {
-        "audio": "2613090/2013-07-07-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-07-07.mp3"
       },
       "complete": {
         "format": 0,
@@ -206,9 +207,9 @@
     },
     {
       "fid": "071413/",
-      "desc": "",
+      "desc": "T27.5 The Healing Example",
       "res": {
-        "audio": "2613093/2013-07-15-christ-jesus-raj-treaching-acim.mp3"
+        "audio": "2013-07-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -225,9 +226,9 @@
     },
     {
       "fid": "072113/",
-      "desc": "",
+      "desc": "T27.5 The Healing Example",
       "res": {
-        "audio": "2613095/2013-07-21-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-07-21.mp3"
       },
       "complete": {
         "format": 0,
@@ -244,9 +245,9 @@
     },
     {
       "fid": "080413/",
-      "desc": "",
+      "desc": "T27.5 The Healing Example",
       "res": {
-        "audio": "2613098/2013-08-04-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-08-04.mp3"
       },
       "complete": {
         "format": 0,
@@ -263,9 +264,9 @@
     },
     {
       "fid": "081113/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2613101/2013-08-11-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-08-11.mp3"
       },
       "complete": {
         "format": 0,
@@ -282,9 +283,9 @@
     },
     {
       "fid": "082513/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2613102/2013-08-25-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-08-25.mp3"
       },
       "complete": {
         "format": 0,
@@ -301,9 +302,9 @@
     },
     {
       "fid": "090113/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2613155/2013-09-01-christjesusrajteachingacim.mp3"
+        "audio": "2013-09-01.mp3"
       },
       "complete": {
         "format": 0,
@@ -320,9 +321,9 @@
     },
     {
       "fid": "090813/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2613156/2013-09-08-christjesusrajteachingacim.mp3"
+        "audio": "2013-09-08.mp3"
       },
       "complete": {
         "format": 0,
@@ -339,9 +340,9 @@
     },
     {
       "fid": "091513/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2613157/2013-09-15-christjesusrajteachingacim.mp3"
+        "audio": "2013-09-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -358,9 +359,9 @@
     },
     {
       "fid": "092313/",
-      "desc": "",
+      "desc": "T30.1 Rules for Decision",
       "res": {
-        "audio": "2613159/2013-09-23-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-09-23.mp3"
       },
       "complete": {
         "format": 0,
@@ -377,9 +378,9 @@
     },
     {
       "fid": "100613/",
-      "desc": "",
+      "desc": "T30.2 Freedom of Will",
       "res": {
-        "audio": "2624450/2013-10-06-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-10-06.mp3"
       },
       "complete": {
         "format": 0,
@@ -396,9 +397,9 @@
     },
     {
       "fid": "101513/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2624452/2013-10-15-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-10-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -415,9 +416,9 @@
     },
     {
       "fid": "102013/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2624453/2013-10-20-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-10-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -434,9 +435,9 @@
     },
     {
       "fid": "102713/",
-      "desc": "",
+      "desc": "T11.7 The Guide for Miracles",
       "res": {
-        "audio": "2624455/2013-10-27-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-10-27.mp3"
       },
       "complete": {
         "format": 0,
@@ -453,9 +454,9 @@
     },
     {
       "fid": "110313/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2624456/2013-11-03-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-11-03.mp3"
       },
       "complete": {
         "format": 0,
@@ -472,9 +473,9 @@
     },
     {
       "fid": "112413/",
-      "desc": "",
+      "desc": "T15.1 The Uses of Time",
       "res": {
-        "audio": "2624458/2013-11-24-christ-jesus-raj-teaching-acim.mp3"
+        "audio": "2013-11-24.mp3"
       },
       "complete": {
         "format": 0,
@@ -491,9 +492,9 @@
     },
     {
       "fid": "122213/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2624459/2013-12-22-christ-jesus-raj-teaching.mp3"
+        "audio": "2013-12-22.mp3"
       },
       "complete": {
         "format": 0,
@@ -510,9 +511,9 @@
     },
     {
       "fid": "123013/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2624460/2013-12-30-christ-jesus-raj-teaching.mp3"
+        "audio": "2013-12-30.mp3"
       },
       "complete": {
         "format": 0,

@@ -251,9 +251,10 @@ function toggleMarkers() {
     }
   }
   else if (typeof ids !== "undefined") {
-    console.log("paragraph id's already defined, adding marker");
     $(".transcript p").each(function(idx) {
-      $(this).prepend("<i class='timing fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
+      if (!$(this).hasClass("omit")) {
+        $(this).prepend("<i class='timing fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
+      }
     });
 
     //automatically record a time of 0 for paragraph 0. This allows user to change

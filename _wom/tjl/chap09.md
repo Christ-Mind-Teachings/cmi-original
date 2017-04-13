@@ -46,7 +46,7 @@ rightness, and I trust that completely…I think!
 
 Some things He has said recently keep stirring within me:
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Choose then, only to release your useless dream, and<br/>
 be born again into the experience of the Kingdom.<br/>
 This choice gives birth to a process of recognition that<br/>
@@ -136,7 +136,7 @@ apprehension often hidden behind a smile?
 I pull up the file again and find myself drawn to words I know I feel a
 deep resistance to:
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 There is no effort experienced in the Kingdom. There<br/>
 is only a manifestation of the Father’s will through<br/>
 you; a demonstration that touches the sleeping Son<br/>

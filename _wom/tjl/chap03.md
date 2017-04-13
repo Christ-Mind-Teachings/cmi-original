@@ -18,7 +18,7 @@ of the Kingdom
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 <span class="capital">N</span>ow, we begin.
 
 Beloved brother,<br/>
@@ -355,7 +355,7 @@ Amen
 
 “Hello, Jeshua.”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Is it not the comfort<br/>
@@ -676,7 +676,7 @@ transformed into words uttered not to human ears, which all too often
 cannot hear, but to Life, which already knows the truth of what is
 spoken:
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 We are but One. My peace I give unto you.<br/>
 Not as the world gives, give I unto you.
 
@@ -775,7 +775,7 @@ stops. There is a small ad, sandwiched between two I had previously
 circled and called.
 
 <p class="indent">For rent. Large one bedroom.<br/>
-Marine view. Available Dec.1.</p>
+Marine view. Available Dec. 1.</p>
 
 I cannot believe I hadn’t seen it before. It had to have been there.
 
@@ -846,7 +846,7 @@ Okay, okay. I am, begrudgingly, awake anyway.
 “Hmmm,” I think to myself as I sit with pen in hand, “if it’s going to
 be like this I’ll have to remember to leave my glasses out.” Next time.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Think not that you can direct the flow of your life<br/>

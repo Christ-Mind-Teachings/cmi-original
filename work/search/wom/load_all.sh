@@ -13,7 +13,7 @@ fi
 
 # ./prep_all.sh
 
-for i in woh wot wok; do
+for i in woh wot wok tjl wos; do
 cat ${i}.txt | xargs ./load -t wom -e $db > ${i}.log
 done
 

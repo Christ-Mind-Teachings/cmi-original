@@ -6,7 +6,7 @@ var s3 = require("./aws/s3");
 var request = require("request");
 var fs = require("fs");
 
-var dataDir = "/Users/rmercer/Projects/cmi/site/_data/";
+var dataDir = "/Users/rmercer/Projects/cmi/site/www/_data/";
 var data;
 var domain;
 var inputFile;
@@ -17,7 +17,7 @@ var outfile;
 var audioFile;
 
 function syntax() {
-  console.log("getaudio <cmd> <jsonfile> <fid>");
+  console.log("audio <cmd> <jsonfile> <fid>");
   console.log("where: <cmd> is 'ls [fid]', 'get <fid>', 'put <fid> <file>'");
   console.log("where: <jsonfile> given as relative to cmis/_data");
   console.log("                  extension '.json' optional");

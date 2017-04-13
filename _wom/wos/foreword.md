@@ -120,4 +120,5 @@ Thank you for daring to walk your path with such clarity, that we-all of
 us-might walk our own in greater awareness.
 
 *Rev. Kay Hunter*
+{: .omit}
 

@@ -66,7 +66,7 @@ drinking in the soft light of a remarkably clear evening, that familiar
 feeling begins. I am actually looking forward to the connection,
 whatever comes from it.
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Silence.
@@ -140,7 +140,7 @@ Amen.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 So long has it been since<br/>
@@ -222,18 +222,18 @@ Hello, Marc.
 
 “It shows, huh?”
 
-<div markdown="1" class="indent">
-My beloved friend,
-never is truth hidden,
-at any time, nor from anyone.
-Though, of course,
+<div data-index="1" markdown="1" class="indent">
+My beloved friend,<br/>
+never is truth hidden,<br/>
+at any time, nor from anyone.<br/>
+Though, of course,<br/>
 many prefer not to see.
 
 </div>
 
 “That makes me want to ask: why am I tired, from your perspective?”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Fatigue has nothing to do with the body.<br/>
 It has everything to do with the mind.<br/>
 It is merely through the body<br/>
@@ -257,7 +257,7 @@ than an escape from truth to illusion.
 and wholly gave up resisting my heart, calamity would ensue, and the
 world will condemn me.”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 To insist on being part of the world<br/>
 is to accept condemnation already.
 
@@ -266,7 +266,7 @@ is to accept condemnation already.
 “So what do I do? Just blink my eyes, and walk away from
 responsibilities?”
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Of course not.<br/>
 Yet by trusting the voice of the Holy Spirit,<br/>
 and by moving in the direction<br/>
@@ -285,7 +285,7 @@ trust is the issue.
 
 “But how do I know what is *really* the voice of Spirit, and not just more subtle ego stuff?"
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 When you release all thought of what<br/>
 your good is,<br/>
 when you release all thought<br/>
@@ -406,7 +406,7 @@ I do not yet understand. How, then, can I share it?
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 As you rest,<br/>
@@ -620,7 +620,7 @@ without end: “Truth Giver, Truth Giver, Truth Giver...”
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Beloved brethren,<br/>
@@ -733,7 +733,7 @@ Amen.
 </p>
 {: .omit}
 
-<div markdown="1" class="indent">
+<div data-index="1" markdown="1" class="indent">
 Now, we begin.
 
 Again, I come forth to you<br/>

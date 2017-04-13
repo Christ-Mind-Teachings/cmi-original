@@ -7,6 +7,10 @@
     if (unit === "early") {
       name = "Ooops...";
     }
+    else if (unit.startsWith("chap")) {
+      number = Number.parseInt(unit.substr(4, 2), 10);
+      name = "Chapter " + number;
+    }
     else {
       id = unit.substr(1);
       number = Number.parseInt(id);
@@ -31,6 +35,10 @@ if wot
   +hitList("Way of Transformation", wot)
 if wok
   +hitList("Way of Knowning", wok)
+if wos
+  +hitList("Way of the Servant", wos)
+if tjl
+  +hitList("The Jeshua Letters", tjl)
 if early
   +hitList("The Early Years", early)
 

@@ -52,6 +52,7 @@ program.args.forEach(function(fn) {
 });
 
 function load(table, fileName, verify) {
+  var discarded = 0;
   if (verify) {
     console.log("Verifying: %s", fileName);
   }
@@ -67,20 +68,29 @@ function load(table, fileName, verify) {
   }
 
   lesson.paragraph.forEach(function(p) {
-      var params = {
-          TableName: table,
-          Item: {
-              "bid": p.bid,
-              "book": p.book,
-              "key": (p.bid * 100000) + (p.uid * 1000) + p.pid,
-              "unit": p.unit,
-              "pid":  p.pid,
-              "text": p.text
-          }
+    var discard = p.discard ? p.discard : 0;
+    var params = {
+        TableName: table,
+        Item: {
+            "bid": p.bid,
+            "book": p.book,
+            "key": (p.bid * 10000000) + (p.uid * 1000) + p.pid,
+            "unit": p.unit,
+            "pid":  p.pid,
+            "text": p.text
+        }
       };
 
+      //we discard some one line paragraphs for tjl
+      // - like, amen, now we begin
+      if (discard === 1 && p.bid > 3) {
+        discarded++;
+        return;
+      }
+
       docClient.put(params, function(err, data) {
-        var key = (p.bid * 100000) + (p.uid * 1000) + p.pid;
+        //var key = (p.bid * 100000) + (p.uid * 1000) + p.pid;
+        var key = (p.bid * 10000000) + (p.uid * 1000) + p.pid;
          if (err) {
              console.error("Unable to add paragraph: %s:%s (%s).", p.book, p.unit, key);
              console.error("Error JSON:", JSON.stringify(err, null, 2));
@@ -89,5 +99,6 @@ function load(table, fileName, verify) {
          }
       });
   });
+  console.log("file has %s discarded paragraphs", discarded);
 }
 
