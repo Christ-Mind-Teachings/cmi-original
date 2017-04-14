@@ -1,7 +1,6 @@
 {
   "domain": {
-    "audio-player": "ui/mediaElements.html",
-    "audio": "https://static.secure.website/wscfus/8306833/"
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
   },
   "base": "/nwffacim/2011/",
   "intro": "/nwffacim/intro/",
@@ -19,8 +18,7 @@
       "fid": "010111/",
       "desc": "",
       "res": {
-        "audio": "2011-01-01.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-01-01.mp3"
       },
       "complete": {
         "format": 0,
@@ -39,8 +37,7 @@
       "fid": "010811/",
       "desc": "",
       "res": {
-        "audio": "2011-01-08.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-01-08.mp3"
       },
       "complete": {
         "format": 0,
@@ -75,8 +72,7 @@
       "fid": "012211/",
       "desc": "",
       "res": {
-        "audio": "2011-01-22.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-01-22.mp3"
       },
       "complete": {
         "format": 0,
@@ -95,8 +91,7 @@
       "fid": "020511/",
       "desc": "",
       "res": {
-        "audio": "2011-02-05.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-02-05.mp3"
       },
       "complete": {
         "format": 0,
@@ -115,8 +110,7 @@
       "fid": "021611/",
       "desc": "",
       "res": {
-        "audio": "2011-02-16.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-02-16.mp3"
       },
       "complete": {
         "format": 0,
@@ -136,8 +130,7 @@
       "desc": "T17.I Bringing Fantasy to Truth",
       "res": {
         "audio": "2011-02-23.mp3",
-        "timing": "021911.js",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "timing": "021911.js"
       },
       "complete": {
         "format": 1,
@@ -155,6 +148,9 @@
     {
       "fid": "031211/",
       "desc": "",
+      "res": {
+        "audio": "2011-03-12.mp3"
+      },
       "complete": {
         "format": 0,
         "audio": 1,
@@ -172,8 +168,7 @@
       "fid": "032011/",
       "desc": "",
       "res": {
-        "audio": "2011-03-20.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-03-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -192,8 +187,7 @@
       "fid": "032611/",
       "desc": "",
       "res": {
-        "audio": "2011-03-26.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-03-26.mp3"
       },
       "complete": {
         "format": 0,
@@ -218,7 +212,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "2668948/2011-04-03-raj-1-english.mp3"
+        "audio": "2011-04-03.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2011/040311/",
@@ -231,8 +225,7 @@
       "fid": "040911/",
       "desc": "",
       "res": {
-        "audio": "2011-04-09.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-04-09.mp3"
       },
       "complete": {
         "format": 0,
@@ -251,8 +244,7 @@
       "fid": "041611/",
       "desc": "",
       "res": {
-        "audio": "2011-04-16.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-04-16.mp3"
       },
       "complete": {
         "format": 0,
@@ -271,8 +263,7 @@
       "fid": "042311/",
       "desc": "",
       "res": {
-        "audio": "2011-04-23.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-04-23.mp3"
       },
       "complete": {
         "format": 0,
@@ -291,8 +282,7 @@
       "fid": "043011/",
       "desc": "",
       "res": {
-        "audio": "2011-4-30.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-04-30.mp3"
       },
       "complete": {
         "format": 0,
@@ -311,8 +301,7 @@
       "fid": "050711/",
       "desc": "",
       "res": {
-        "audio": "2011-05-07.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-05-07.mp3"
       },
       "complete": {
         "format": 0,
@@ -331,8 +320,7 @@
       "fid": "051411/",
       "desc": "",
       "res": {
-        "audio": "2011-05-14.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-05-14.mp3"
       },
       "complete": {
         "format": 0,
@@ -351,8 +339,7 @@
       "fid": "052211/",
       "desc": "",
       "res": {
-        "audio": "2011-05-22.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-05-22.mp3"
       },
       "complete": {
         "format": 0,
@@ -371,8 +358,7 @@
       "fid": "060411/",
       "desc": "",
       "res": {
-        "audio": "2011-06-04.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-06-04.mp3"
       },
       "complete": {
         "format": 0,
@@ -391,8 +377,7 @@
       "fid": "061211/",
       "desc": "",
       "res": {
-        "audio": "2011-06-12.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-06-12.mp3"
       },
       "complete": {
         "format": 0,
@@ -411,8 +396,7 @@
       "fid": "061811/",
       "desc": "",
       "res": {
-        "audio": "2011-06-18.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-06-18.mp3"
       },
       "complete": {
         "format": 0,
@@ -431,8 +415,7 @@
       "fid": "062611/",
       "desc": "",
       "res": {
-        "audio": "2011-06-26.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-06-26.mp3"
       },
       "complete": {
         "format": 0,
@@ -451,8 +434,7 @@
       "fid": "070911/",
       "desc": "",
       "res": {
-        "audio": "2011-07-09.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-07-09.mp3"
       },
       "complete": {
         "format": 0,
@@ -471,8 +453,7 @@
       "fid": "071611/",
       "desc": "",
       "res": {
-        "audio": "2011-07-16.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-07-16.mp3"
       },
       "complete": {
         "format": 0,
@@ -491,8 +472,7 @@
       "fid": "073011/",
       "desc": "",
       "res": {
-        "audio": "2011-07-30.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-07-30.mp3"
       },
       "complete": {
         "format": 0,
@@ -511,8 +491,7 @@
       "fid": "080611/",
       "desc": "",
       "res": {
-        "audio": "2011-08-06.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-08-06.mp3"
       },
       "complete": {
         "format": 0,
@@ -531,8 +510,7 @@
       "fid": "082011/",
       "desc": "",
       "res": {
-        "audio": "2011-08-20.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-08-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -557,7 +535,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "2669039/2011-08-27-raj-english.mp3"
+        "audio": "2011-08-27.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2011/082711/",
@@ -570,8 +548,7 @@
       "fid": "090311/",
       "desc": "",
       "res": {
-        "audio": "2011-09-03.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-09-03.mp3"
       },
       "complete": {
         "format": 0,
@@ -596,7 +573,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "2669056/2011-09-17-raj-converted.mp3"
+        "audio": "2011-09-17.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2011/091711/",
@@ -609,8 +586,7 @@
       "fid": "092411/",
       "desc": "",
       "res": {
-        "audio": "2011-09-24.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-09-24.mp3"
       },
       "complete": {
         "format": 0,
@@ -629,8 +605,7 @@
       "fid": "100111/",
       "desc": "",
       "res": {
-        "audio": "2011-10-01.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-10-01.mp3"
       },
       "complete": {
         "format": 0,
@@ -649,8 +624,7 @@
       "fid": "101511/",
       "desc": "",
       "res": {
-        "audio": "2011-10-15.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-10-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -675,7 +649,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "2669063/2011-10-23-raj-english.mp3"
+        "audio": "2011-10-23.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2011/102311/",
@@ -688,8 +662,7 @@
       "fid": "110511/",
       "desc": "",
       "res": {
-        "audio": "2011-11-05.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-11-05.mp3"
       },
       "complete": {
         "format": 0,
@@ -708,8 +681,7 @@
       "fid": "111311/",
       "desc": "",
       "res": {
-        "audio": "2011-11-13-2.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-11-13.mp3"
       },
       "complete": {
         "format": 0,
@@ -728,8 +700,7 @@
       "fid": "112611/",
       "desc": "",
       "res": {
-        "audio": "2011-11-26.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-11-26.mp3"
       },
       "complete": {
         "format": 0,
@@ -748,8 +719,7 @@
       "fid": "120411/",
       "desc": "",
       "res": {
-        "audio": "2011-12-04.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-12-04.mp3"
       },
       "complete": {
         "format": 0,
@@ -768,8 +738,7 @@
       "fid": "121111/",
       "desc": "",
       "res": {
-        "audio": "2011-12-11.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-12-11.mp3"
       },
       "complete": {
         "format": 0,
@@ -788,8 +757,7 @@
       "fid": "122011/",
       "desc": "",
       "res": {
-        "audio": "2011-12-20.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2011/"
+        "audio": "2011-12-20.mp3"
       },
       "complete": {
         "format": 0,
