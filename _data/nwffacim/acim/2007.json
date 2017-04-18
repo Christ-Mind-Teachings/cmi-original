@@ -1,6 +1,6 @@
 {
   "domain": {
-    "audio": "https://static.secure.website/wscfus/8306833/"
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2007/"
   },
   "base": "/nwffacim/2007/",
   "intro": "/nwffacim/intro/",
@@ -18,7 +18,7 @@
       "fid": "081807/",
       "desc": "",
       "res": {
-        "audio": "2482594/2007-08-18.mp3"
+        "audio": "2007-08-18.mp3"
       },
       "complete": {
         "format": 0,
@@ -37,7 +37,7 @@
       "fid": "082507/",
       "desc": "",
       "res": {
-        "audio": "2482597/2007-08-25.mp3"
+        "audio": "2007-08-25.mp3"
       },
       "complete": {
         "format": 0,
@@ -56,7 +56,7 @@
       "fid": "090907/",
       "desc": "",
       "res": {
-        "audio": "2482642/2007-09-09.mp3"
+        "audio": "2007-09-09.mp3"
       },
       "complete": {
         "format": 0,
@@ -75,7 +75,7 @@
       "fid": "091607/",
       "desc": "",
       "res": {
-        "audio": "2482628/2007-09-16.mp3"
+        "audio": "2007-09-16.mp3"
       },
       "complete": {
         "format": 0,
@@ -94,7 +94,7 @@
       "fid": "092207/",
       "desc": "",
       "res": {
-        "audio": "2482646/2007-09-22.mp3"
+        "audio": "2007-09-22.mp3"
       },
       "complete": {
         "format": 0,
@@ -113,7 +113,7 @@
       "fid": "100607/",
       "desc": "",
       "res": {
-        "audio": "2482851/2007-10-06.mp3"
+        "audio": "2007-10-06.mp3"
       },
       "complete": {
         "format": 0,
@@ -132,7 +132,7 @@
       "fid": "101407/",
       "desc": "",
       "res": {
-        "audio": "2483094/2007-10-14.mp3"
+        "audio": "2007-10-14.mp3"
       },
       "complete": {
         "format": 0,
@@ -151,7 +151,7 @@
       "fid": "102707/",
       "desc": "",
       "res": {
-        "audio": "2483135/2007-10-27.mp3"
+        "audio": "2007-10-27.mp3"
       },
       "complete": {
         "format": 0,
@@ -170,7 +170,7 @@
       "fid": "110307/",
       "desc": "",
       "res": {
-        "audio": "2483138/2007-11-03.mp3"
+        "audio": "2007-11-03.mp3"
       },
       "complete": {
         "format": 0,
@@ -189,7 +189,7 @@
       "fid": "111007/",
       "desc": "",
       "res": {
-        "audio": "2483148/2007-11-10.mp3"
+        "audio": "2007-11-10.mp3"
       },
       "complete": {
         "format": 0,
@@ -208,7 +208,7 @@
       "fid": "111807/",
       "desc": "",
       "res": {
-        "audio": "2483197/2007-11-18.mp3"
+        "audio": "2007-11-18.mp3"
       },
       "complete": {
         "format": 0,
@@ -227,7 +227,7 @@
       "fid": "120807/",
       "desc": "",
       "res": {
-        "audio": "2483275/2007-12-08.mp3"
+        "audio": "2007-12-08.mp3"
       },
       "complete": {
         "format": 0,
@@ -246,7 +246,7 @@
       "fid": "121607/",
       "desc": "",
       "res": {
-        "audio": "2483342/2007-12-16.mp3"
+        "audio": "2007-12-16.mp3"
       },
       "complete": {
         "format": 0,

@@ -115,11 +115,11 @@
       "image": "goat.jpg"
     },
     {
-      "display": false,
+      "display": true,
       "year": "2016",
       "title": "2016",
       "about-url": "/2016/",
-      "desc": "?? Sessions",
+      "desc": "3 Sessions",
       "image": "monkey.jpg"
     },
     {

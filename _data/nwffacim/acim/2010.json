@@ -1,6 +1,6 @@
 {
   "domain": {
-    "audio": "https://static.secure.website/wscfus/8306833/"
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2010/"
   },
   "base": "/nwffacim/2010/",
   "intro": "/nwffacim/intro/",
@@ -18,7 +18,7 @@
       "fid": "010210/",
       "desc": "",
       "res": {
-        "audio": "2662782/2010-01-02.mp3"
+        "audio": "2010-01-02.mp3"
       },
       "complete": {
         "format": 0,
@@ -37,7 +37,7 @@
       "fid": "011610/",
       "desc": "",
       "res": {
-        "audio": "2662811/2010-01-16.mp3"
+        "audio": "2010-01-16.mp3"
       },
       "complete": {
         "format": 0,
@@ -56,7 +56,7 @@
       "fid": "013010/",
       "desc": "",
       "res": {
-        "audio": "2662818/2010-01-30.mp3"
+        "audio": "2010-01-30.mp3"
       },
       "complete": {
         "format": 0,
@@ -75,7 +75,7 @@
       "fid": "020610/",
       "desc": "",
       "res": {
-        "audio": "2662827/2010-02-06.mp3"
+        "audio": "2010-02-06.mp3"
       },
       "complete": {
         "format": 0,
@@ -94,7 +94,7 @@
       "fid": "021310/",
       "desc": "",
       "res": {
-        "audio": "2662842/2010-02-13.mp3"
+        "audio": "2010-02-13.mp3"
       },
       "complete": {
         "format": 0,
@@ -113,7 +113,7 @@
       "fid": "030610/",
       "desc": "",
       "res": {
-        "audio": "2662850/2010-03-06.mp3"
+        "audio": "2010-03-06.mp3"
       },
       "complete": {
         "format": 0,
@@ -132,7 +132,7 @@
       "fid": "032010/",
       "desc": "",
       "res": {
-        "audio": "2662929/2010-03-20.mp3"
+        "audio": "2010-03-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -151,7 +151,7 @@
       "fid": "032710/",
       "desc": "",
       "res": {
-        "audio": "2662942/2010-03-27.mp3"
+        "audio": "2010-03-27.mp3"
       },
       "complete": {
         "format": 0,
@@ -170,7 +170,7 @@
       "fid": "040310/",
       "desc": "",
       "res": {
-        "audio": "2662951/2010-04-03.mp3"
+        "audio": "2010-04-03.mp3"
       },
       "complete": {
         "format": 0,
@@ -189,7 +189,7 @@
       "fid": "041010/",
       "desc": "",
       "res": {
-        "audio": "2662958/2010-04-10.mp3"
+        "audio": "2010-04-10.mp3"
       },
       "complete": {
         "format": 0,
@@ -208,7 +208,7 @@
       "fid": "050110/",
       "desc": "",
       "res": {
-        "audio": "2663032/2010-05-01.mp3"
+        "audio": "2010-05-01.mp3"
       },
       "complete": {
         "format": 0,
@@ -227,7 +227,7 @@
       "fid": "051510/",
       "desc": "",
       "res": {
-        "audio": "2663037/2010-05-15.mp3"
+        "audio": "2010-05-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -246,7 +246,7 @@
       "fid": "052910/",
       "desc": "",
       "res": {
-        "audio": "2663040/2010-05-29.mp3"
+        "audio": "2010-05-29.mp3"
       },
       "complete": {
         "format": 0,
@@ -265,7 +265,7 @@
       "fid": "060510/",
       "desc": "",
       "res": {
-        "audio": "2663041/2010-06-05.mp3"
+        "audio": "2010-06-05.mp3"
       },
       "complete": {
         "format": 0,
@@ -284,7 +284,7 @@
       "fid": "061210/",
       "desc": "",
       "res": {
-        "audio": "2663070/2010-06-12.mp3"
+        "audio": "2010-06-12.mp3"
       },
       "complete": {
         "format": 0,
@@ -303,7 +303,7 @@
       "fid": "061910/",
       "desc": "",
       "res": {
-        "audio": "2663072/2010-06-19.mp3"
+        "audio": "2010-06-19.mp3"
       },
       "complete": {
         "format": 0,
@@ -322,7 +322,7 @@
       "fid": "070310/",
       "desc": "",
       "res": {
-        "audio": "2663073/2010-07-03.mp3"
+        "audio": "2010-07-03.mp3"
       },
       "complete": {
         "format": 0,
@@ -341,7 +341,7 @@
       "fid": "071010/",
       "desc": "",
       "res": {
-        "audio": "2663077/2010-07-10.mp3"
+        "audio": "2010-07-10.mp3"
       },
       "complete": {
         "format": 0,
@@ -360,7 +360,7 @@
       "fid": "071710/",
       "desc": "",
       "res": {
-        "audio": "2663079/2010-07-17.mp3"
+        "audio": "2010-07-17.mp3"
       },
       "complete": {
         "format": 0,
@@ -379,7 +379,7 @@
       "fid": "072410/",
       "desc": "",
       "res": {
-        "audio": "2663081/2010-07-24.mp3"
+        "audio": "2010-07-24.mp3"
       },
       "complete": {
         "format": 0,
@@ -398,7 +398,7 @@
       "fid": "080710/",
       "desc": "",
       "res": {
-        "audio": "2663187/2010-08-07.mp3"
+        "audio": "2010-08-07.mp3"
       },
       "complete": {
         "format": 0,
@@ -417,7 +417,7 @@
       "fid": "082810/",
       "desc": "",
       "res": {
-        "audio": "2663212/2010-08-28.mp3"
+        "audio": "2010-08-28.mp3"
       },
       "complete": {
         "format": 0,
@@ -436,7 +436,7 @@
       "fid": "090410/",
       "desc": "",
       "res": {
-        "audio": "2663213/2010-09-04.mp3"
+        "audio": "2010-09-04.mp3"
       },
       "complete": {
         "format": 0,
@@ -455,7 +455,7 @@
       "fid": "091110/",
       "desc": "",
       "res": {
-        "audio": "2663214/2010-09-11.mp3"
+        "audio": "2010-09-11.mp3"
       },
       "complete": {
         "format": 0,
@@ -474,7 +474,7 @@
       "fid": "092510/",
       "desc": "",
       "res": {
-        "audio": "2663215/2010-09-25.mp3"
+        "audio": "2010-09-25.mp3"
       },
       "complete": {
         "format": 0,
@@ -493,7 +493,7 @@
       "fid": "100210/",
       "desc": "",
       "res": {
-        "audio": "2663243/2010-10-02.mp3"
+        "audio": "2010-10-02.mp3"
       },
       "complete": {
         "format": 0,
@@ -512,7 +512,7 @@
       "fid": "100910/",
       "desc": "",
       "res": {
-        "audio": "2663256/2010-10-09.mp3"
+        "audio": "2010-10-09.mp3"
       },
       "complete": {
         "format": 0,
@@ -531,7 +531,7 @@
       "fid": "101610/",
       "desc": "",
       "res": {
-        "audio": "2663285/2010-10-16.mp3"
+        "audio": "2010-10-16.mp3"
       },
       "complete": {
         "format": 0,
@@ -550,7 +550,7 @@
       "fid": "102310/",
       "desc": "",
       "res": {
-        "audio": "2663320/2010-10-23.mp3"
+        "audio": "2010-10-23.mp3"
       },
       "complete": {
         "format": 0,
@@ -569,8 +569,7 @@
       "fid": "110610/",
       "desc": "",
       "res": {
-        "audio": "2010-11-06.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2010/"
+        "audio": "2010-11-06.mp3"
       },
       "complete": {
         "format": 0,
@@ -589,7 +588,7 @@
       "fid": "111310/",
       "desc": "",
       "res": {
-        "audio": "2663543/2010-11-13.mp3"
+        "audio": "2010-11-13.mp3"
       },
       "complete": {
         "format": 0,
@@ -608,7 +607,7 @@
       "fid": "112010/",
       "desc": "",
       "res": {
-        "audio": "2663568/2010-11-20.mp3"
+        "audio": "2010-11-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -627,7 +626,7 @@
       "fid": "112710/",
       "desc": "",
       "res": {
-        "audio": "2663581/2010-11-27.mp3"
+        "audio": "2010-11-27.mp3"
       },
       "complete": {
         "format": 0,
@@ -646,7 +645,7 @@
       "fid": "120410/",
       "desc": "",
       "res": {
-        "audio": "2663593/2010-12-04.mp3"
+        "audio": "2010-12-04.mp3"
       },
       "complete": {
         "format": 0,
@@ -665,7 +664,7 @@
       "fid": "121810/",
       "desc": "",
       "res": {
-        "audio": "2663594/2010-12-18.mp3"
+        "audio": "2010-12-18.mp3"
       },
       "complete": {
         "format": 0,

@@ -1,6 +1,6 @@
 {
   "domain": {
-    "audio": "http://www.celestialrealm.com/"
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2002/"
   },
   "base": "/nwffacim/2002/",
   "intro": "/nwffacim/intro/",
@@ -24,7 +24,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-6-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3",
+        "audio": "2002-06-12.mp3",
         "timing": "061202.js"
       },
       "intro": false,
@@ -44,7 +44,7 @@
       },
       "desc": "T31.VIII Choose Once Again",
       "res": {
-        "audio": "uploads/2002-07-31_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-07-31.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/073102/",
@@ -63,7 +63,7 @@
       },
       "desc": "T1.In Introduction",
       "res": {
-        "audio": "uploads/2002-08-07_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-08-07.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/080702/",
@@ -98,7 +98,7 @@
       },
       "desc": "T1.I Principles of Miracles, Principle 33",
       "res": {
-        "audio": "uploads/2002-08-28_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-08-28.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/082802/",
@@ -117,7 +117,7 @@
       },
       "desc": "T1.I Principles of Miracles, Principle 42",
       "res": {
-        "audio": "uploads/2002-09-04_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-09-04.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/090402/",
@@ -136,7 +136,7 @@
       },
       "desc": "T1.I Principles of Miracles, Principle 47",
       "res": {
-        "audio": "uploads/2002-09-11_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-09-11.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/091102/",
@@ -155,7 +155,7 @@
       },
       "desc": "T1.II Revelation, Time and Miracles",
       "res": {
-        "audio": "uploads/2002-09-18_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-09-18.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/091802/",
@@ -174,7 +174,7 @@
       },
       "desc": "T1.III Atonement and Miracles",
       "res": {
-        "audio": "uploads/2002-09-25_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-09-25.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/092502/",
@@ -193,7 +193,7 @@
       },
       "desc": "T1.IV The Escape from Darkness",
       "res": {
-        "audio": "uploads/2002-10-02_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-10-02.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/100202/",
@@ -212,7 +212,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-10-10_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-10-10.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/101002/",
@@ -231,7 +231,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-10-17_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-10-17.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/101702/",
@@ -250,7 +250,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-10-24_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-10-24.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/102402/",
@@ -269,7 +269,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-10-31_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-10-31.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/103102/",
@@ -288,7 +288,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-11-07_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-11-07.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/110702/",
@@ -307,7 +307,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-11-21_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-11-21.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/112102/",
@@ -326,7 +326,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-12-05_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-12-05.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/120502/",
@@ -345,7 +345,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-12-12_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles.mp3"
+        "audio": "2002-12-12.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/121202/",
@@ -364,7 +364,7 @@
         "fb": 0
       },
       "res": {
-        "audio": "uploads/2002-12-19_Raj_Christ_Jesus_ACIM_Study_Group_A_Course_In_Miracles_wma.mp3"
+        "audio": "2002-12-19.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/121902/",

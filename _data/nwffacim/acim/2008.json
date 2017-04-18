@@ -1,6 +1,6 @@
 {
   "domain": {
-    "audio": "https://static.secure.website/wscfus/8306833/"
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2008/"
   },
   "base": "/nwffacim/2008/",
   "intro": "/nwffacim/intro/",
@@ -18,7 +18,7 @@
       "fid": "012008/",
       "desc": "",
       "res": {
-        "audio": "2483940/2008-01-20.mp3"
+        "audio": "2008-01-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -37,7 +37,7 @@
       "fid": "012708/",
       "desc": "",
       "res": {
-        "audio": "2540850/2008-01-27.mp3"
+        "audio": "2008-01-27.mp3"
       },
       "complete": {
         "format": 0,
@@ -56,7 +56,7 @@
       "fid": "021008/",
       "desc": "",
       "res": {
-        "audio": "2540907/2008-02-10.mp3"
+        "audio": "2008-02-10.mp3"
       },
       "complete": {
         "format": 0,
@@ -91,7 +91,7 @@
       "fid": "022408/",
       "desc": "",
       "res": {
-        "audio": "2541342/2008-02-24.mp3"
+        "audio": "2008-02-24.mp3"
       },
       "complete": {
         "format": 0,
@@ -110,7 +110,7 @@
       "fid": "030208/",
       "desc": "",
       "res": {
-        "audio": "2541343/2008-03-02.mp3"
+        "audio": "2008-03-02.mp3"
       },
       "complete": {
         "format": 0,
@@ -129,7 +129,7 @@
       "fid": "030908/",
       "desc": "",
       "res": {
-        "audio": "2541344/2008-03-09.mp3"
+        "audio": "2008-03-09.mp3"
       },
       "complete": {
         "format": 0,
@@ -148,7 +148,7 @@
       "fid": "032508/",
       "desc": "",
       "res": {
-        "audio": "2541345/2008-03-25.mp3"
+        "audio": "2008-03-25.mp3"
       },
       "complete": {
         "format": 0,
@@ -167,7 +167,7 @@
       "fid": "033008/",
       "desc": "",
       "res": {
-        "audio": "2541346/2008-03-30.mp3"
+        "audio": "2008-03-30.mp3"
       },
       "complete": {
         "format": 0,
@@ -186,7 +186,7 @@
       "fid": "040608/",
       "desc": "",
       "res": {
-        "audio": "2541648/2008-04-06.mp3"
+        "audio": "2008-04-06.mp3"
       },
       "complete": {
         "format": 0,
@@ -205,7 +205,7 @@
       "fid": "041308/",
       "desc": "",
       "res": {
-        "audio": "2541719/2008-04-13.mp3"
+        "audio": "2008-04-13.mp3"
       },
       "complete": {
         "format": 0,
@@ -224,7 +224,7 @@
       "fid": "042008/",
       "desc": "",
       "res": {
-        "audio": "2541670/2008-04-20.mp3"
+        "audio": "2008-04-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -243,7 +243,7 @@
       "fid": "050408/",
       "desc": "",
       "res": {
-        "audio": "2541671/2008-05-04.mp3"
+        "audio": "2008-05-04.mp3"
       },
       "complete": {
         "format": 0,
@@ -262,7 +262,7 @@
       "fid": "051808/",
       "desc": "",
       "res": {
-        "audio": "2541672/2008-05-18.mp3"
+        "audio": "2008-05-18.mp3"
       },
       "complete": {
         "format": 0,
@@ -281,7 +281,7 @@
       "fid": "052508/",
       "desc": "",
       "res": {
-        "audio": "2541673/2008-05-25.mp3"
+        "audio": "2008-05-25.mp3"
       },
       "complete": {
         "format": 0,
@@ -300,7 +300,7 @@
       "fid": "060108/",
       "desc": "",
       "res": {
-        "audio": "2542018/2008-06-01.mp3"
+        "audio": "2008-06-01.mp3"
       },
       "complete": {
         "format": 0,
@@ -319,7 +319,7 @@
       "fid": "060808/",
       "desc": "",
       "res": {
-        "audio": "2542021/2008-06-08.mp3"
+        "audio": "2008-06-08.mp3"
       },
       "complete": {
         "format": 0,
@@ -338,7 +338,7 @@
       "fid": "061508/",
       "desc": "",
       "res": {
-        "audio": "2542050/2008-06-15.mp3"
+        "audio": "2008-06-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -357,7 +357,7 @@
       "fid": "062208/",
       "desc": "",
       "res": {
-        "audio": "2542051/2008-06-22.mp3"
+        "audio": "2008-06-22.mp3"
       },
       "complete": {
         "format": 0,
@@ -376,7 +376,7 @@
       "fid": "070608/",
       "desc": "",
       "res": {
-        "audio": "2542372/2008-07-06.mp3"
+        "audio": "2008-07-06.mp3"
       },
       "complete": {
         "format": 0,
@@ -395,7 +395,7 @@
       "fid": "071308/",
       "desc": "",
       "res": {
-        "audio": "2542380/2008-07-13.mp3"
+        "audio": "2008-07-13.mp3"
       },
       "complete": {
         "format": 0,
@@ -414,7 +414,7 @@
       "fid": "072708/",
       "desc": "",
       "res": {
-        "audio": "2542384/2008-07-27.mp3"
+        "audio": "2008-07-27.mp3"
       },
       "complete": {
         "format": 0,
@@ -433,7 +433,7 @@
       "fid": "081708/",
       "desc": "",
       "res": {
-        "audio": "2542386/2008-08-17.mp3"
+        "audio": "2008-08-17.mp3"
       },
       "complete": {
         "format": 0,
@@ -452,7 +452,7 @@
       "fid": "083108/",
       "desc": "",
       "res": {
-        "audio": "2544546/2008-08-31.mp3"
+        "audio": "2008-08-31.mp3"
       },
       "complete": {
         "format": 0,
@@ -471,7 +471,7 @@
       "fid": "090708/",
       "desc": "",
       "res": {
-        "audio": "2544638/2008-09-07.mp3"
+        "audio": "2008-09-07.mp3"
       },
       "complete": {
         "format": 0,
@@ -490,7 +490,7 @@
       "fid": "091408/",
       "desc": "",
       "res": {
-        "audio": "2544633/2008-09-14.mp3"
+        "audio": "2008-09-14.mp3"
       },
       "complete": {
         "format": 0,
@@ -509,7 +509,7 @@
       "fid": "092108/",
       "desc": "",
       "res": {
-        "audio": "2544636/2008-09-21.mp3"
+        "audio": "2008-09-21.mp3"
       },
       "complete": {
         "format": 0,
@@ -528,7 +528,7 @@
       "fid": "100508/",
       "desc": "",
       "res": {
-        "audio": "2544717/2008-10-05.mp3"
+        "audio": "2008-10-05.mp3"
       },
       "complete": {
         "format": 0,
@@ -547,7 +547,7 @@
       "fid": "101908/",
       "desc": "",
       "res": {
-        "audio": "2544719/2008-10-19.mp3"
+        "audio": "2008-10-19.mp3"
       },
       "complete": {
         "format": 0,
@@ -566,7 +566,7 @@
       "fid": "102608/",
       "desc": "",
       "res": {
-        "audio": "2544720/2008-10-26.mp3"
+        "audio": "2008-10-26.mp3"
       },
       "complete": {
         "format": 0,
@@ -585,7 +585,7 @@
       "fid": "110208/",
       "desc": "",
       "res": {
-        "audio": "2544722/2008-11-02.mp3"
+        "audio": "2008-11-02.mp3"
       },
       "complete": {
         "format": 0,
@@ -604,7 +604,7 @@
       "fid": "110908/",
       "desc": "",
       "res": {
-        "audio": "2544725/2008-11-09.mp3"
+        "audio": "2008-11-09.mp3"
       },
       "complete": {
         "format": 0,

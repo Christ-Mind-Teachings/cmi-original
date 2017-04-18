@@ -1,6 +1,6 @@
 {
   "domain": {
-    "audio": "https://static.secure.website/wscfus/8306833/"
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
   },
   "base": "/nwffacim/2006/",
   "intro": "/nwffacim/intro/",
@@ -18,8 +18,7 @@
       "fid": "010806/",
       "desc": "",
       "res": {
-        "audio": "2006-01-08.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-01-08.mp3"
       },
       "complete": {
         "format": 0,
@@ -38,8 +37,7 @@
       "fid": "011506/",
       "desc": "",
       "res": {
-        "audio": "2006-01-15.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-01-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -58,8 +56,7 @@
       "fid": "012206/",
       "desc": "",
       "res": {
-        "audio": "2006-01-22.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-01-22.mp3"
       },
       "complete": {
         "format": 0,
@@ -78,8 +75,7 @@
       "fid": "012906/",
       "desc": "",
       "res": {
-        "audio": "2006-01-29.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-01-29.mp3"
       },
       "complete": {
         "format": 0,
@@ -98,8 +94,7 @@
       "fid": "021206/",
       "desc": "",
       "res": {
-        "audio": "2006-02-12.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-02-12.mp3"
       },
       "complete": {
         "format": 0,
@@ -118,8 +113,7 @@
       "fid": "022606/",
       "desc": "",
       "res": {
-        "audio": "2006-02-26.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-02-26.mp3"
       },
       "complete": {
         "format": 0,
@@ -138,8 +132,7 @@
       "fid": "030406/",
       "desc": "",
       "res": {
-        "audio": "2006-03-04.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-03-04.mp3"
       },
       "complete": {
         "format": 0,
@@ -158,8 +151,7 @@
       "fid": "031106/",
       "desc": "",
       "res": {
-        "audio": "2006-03-11.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-03-11.mp3"
       },
       "complete": {
         "format": 0,
@@ -178,8 +170,7 @@
       "fid": "031906/",
       "desc": "",
       "res": {
-        "audio": "2006-03-19.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-03-19.mp3"
       },
       "complete": {
         "format": 0,
@@ -198,8 +189,7 @@
       "fid": "040106/",
       "desc": "",
       "res": {
-        "audio": "2006-04-01.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-04-01.mp3"
       },
       "complete": {
         "format": 0,
@@ -218,8 +208,7 @@
       "fid": "041506/",
       "desc": "",
       "res": {
-        "audio": "2006-04-15.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-04-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -238,8 +227,7 @@
       "fid": "042906/",
       "desc": "",
       "res": {
-        "audio": "2006-04-29.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-04-29.mp3"
       },
       "complete": {
         "format": 0,
@@ -258,8 +246,7 @@
       "fid": "050606/",
       "desc": "",
       "res": {
-        "audio": "2006-05-06.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-05-06.mp3"
       },
       "complete": {
         "format": 0,
@@ -278,8 +265,7 @@
       "fid": "052006/",
       "desc": "",
       "res": {
-        "audio": "2006-05-20.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-05-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -298,8 +284,7 @@
       "fid": "052706/",
       "desc": "",
       "res": {
-        "audio": "2006-05-27.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-05-27.mp3"
       },
       "complete": {
         "format": 0,
@@ -318,8 +303,7 @@
       "fid": "060306/",
       "desc": "",
       "res": {
-        "audio": "2006-06-03.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-06-03.mp3"
       },
       "complete": {
         "format": 0,
@@ -338,8 +322,7 @@
       "fid": "061006/",
       "desc": "",
       "res": {
-        "audio": "2006-06-10.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-06-10.mp3"
       },
       "complete": {
         "format": 0,
@@ -358,8 +341,7 @@
       "fid": "061806/",
       "desc": "",
       "res": {
-        "audio": "2006-06-18.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-06-18.mp3"
       },
       "complete": {
         "format": 0,
@@ -378,8 +360,7 @@
       "fid": "062406/",
       "desc": "",
       "res": {
-        "audio": "2006-06-24.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-06-24.mp3"
       },
       "complete": {
         "format": 0,
@@ -398,8 +379,7 @@
       "fid": "070106/",
       "desc": "",
       "res": {
-        "audio": "2006-07-01.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-07-01.mp3"
       },
       "complete": {
         "format": 0,
@@ -418,8 +398,7 @@
       "fid": "071506/",
       "desc": "",
       "res": {
-        "audio": "2006-07-15.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-07-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -438,8 +417,7 @@
       "fid": "073006/",
       "desc": "",
       "res": {
-        "audio": "2006-07-30.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-07-30.mp3"
       },
       "complete": {
         "format": 0,
@@ -458,8 +436,7 @@
       "fid": "080506/",
       "desc": "",
       "res": {
-        "audio": "2006-08-05.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-08-05.mp3"
       },
       "complete": {
         "format": 0,
@@ -478,8 +455,7 @@
       "fid": "081206/",
       "desc": "",
       "res": {
-        "audio": "2006-08-12.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-08-12.mp3"
       },
       "complete": {
         "format": 0,
@@ -498,8 +474,7 @@
       "fid": "082006/",
       "desc": "",
       "res": {
-        "audio": "2006-08-20.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-08-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -518,8 +493,7 @@
       "fid": "090206/",
       "desc": "",
       "res": {
-        "audio": "2006-09-02.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-09-02.mp3"
       },
       "complete": {
         "format": 0,
@@ -538,8 +512,7 @@
       "fid": "090906/",
       "desc": "",
       "res": {
-        "audio": "2006-09-09.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-09-09.mp3"
       },
       "complete": {
         "format": 0,
@@ -558,8 +531,7 @@
       "fid": "092306/",
       "desc": "",
       "res": {
-        "audio": "2006-09-23.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-09-23.mp3"
       },
       "complete": {
         "format": 0,
@@ -577,7 +549,7 @@
     {
       "fid": "100706/",
       "res": {
-        "audio": "2480760/2006-10-07.mp3"
+        "audio": "2006-10-07.mp3"
       },
       "desc": "",
       "complete": {
@@ -597,8 +569,7 @@
       "fid": "101406/",
       "desc": "",
       "res": {
-        "audio": "2006-10-14.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-10-14.mp3"
       },
       "complete": {
         "format": 0,
@@ -617,8 +588,7 @@
       "fid": "102106/",
       "desc": "",
       "res": {
-        "audio": "2006-10-21.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-10-21.mp3"
       },
       "complete": {
         "format": 0,
@@ -637,8 +607,7 @@
       "fid": "102806/",
       "desc": "",
       "res": {
-        "audio": "2006-10-28.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-10-28.mp3"
       },
       "complete": {
         "format": 0,
@@ -657,8 +626,7 @@
       "fid": "111106/",
       "desc": "",
       "res": {
-        "audio": "2006-11-11.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-11-11.mp3"
       },
       "complete": {
         "format": 0,
@@ -677,8 +645,7 @@
       "fid": "111806/",
       "desc": "",
       "res": {
-        "audio": "2006-11-18.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-11-18.mp3"
       },
       "complete": {
         "format": 0,
@@ -697,8 +664,7 @@
       "fid": "120206/",
       "desc": "",
       "res": {
-        "audio": "2006-12-02.mp3",
-        "audio-domain": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2006/"
+        "audio": "2006-12-02.mp3"
       },
       "complete": {
         "format": 0,

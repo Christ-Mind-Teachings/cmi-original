@@ -1,0 +1,75 @@
+{
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2016/"
+  },
+  "base": "/nwffacim/2016/",
+  "intro": "/nwffacim/intro/",
+  "page": [
+    {
+      "intro": true,
+      "url": "/nwffacim/intro/2016/",
+      "idx": 0,
+      "title": "About 2016 Transcripts",
+      "next": "/nwffacim/2016/070316/",
+      "prev": "/nwffacim/2016/080216/",
+      "fid": "2016/"
+    },
+    {
+      "fid": "070316/",
+      "desc": "",
+      "res": {
+        "audio": "2016-07-03.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2016/070316/",
+      "idx": 1,
+      "title": "Jul 3, 2016",
+      "next": "/nwffacim/2016/071616/",
+      "prev": "/nwffacim/intro/2016/"
+    },
+    {
+      "fid": "071616/",
+      "desc": "",
+      "res": {
+        "audio": "2016-07-16.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2016/071616/",
+      "idx": 2,
+      "title": "Jul 16, 2016",
+      "next": "/nwffacim/2016/080216/",
+      "prev": "/nwffacim/2016/070316/"
+    },
+    {
+      "fid": "080216/",
+      "desc": "",
+      "res": {
+        "audio": "2016-08-02.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2016/080216/",
+      "idx": 3,
+      "title": "Aug 2, 2016",
+      "next": "/nwffacim/intro/2016/",
+      "prev": "/nwffacim/2016/071616/"
+    }
+  ]
+}

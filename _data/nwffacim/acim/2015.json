@@ -18,7 +18,7 @@
       "fid": "041815/",
       "desc": "Discussion",
       "res": {
-        "audio": "2015-04-18_mp3.1.mp3"
+        "audio": "2015-04-18.mp3"
       },
       "complete": {
         "format": 0,
@@ -37,7 +37,7 @@
       "fid": "042515/",
       "desc": "T19.6 Obstacles to Peace; Belief the Body is Valuable&hellip;",
       "res": {
-        "audio": "2015-04-25.1.mp3"
+        "audio": "2015-04-25.mp3"
       },
       "complete": {
         "format": 0,
@@ -56,7 +56,7 @@
       "fid": "050315/",
       "desc": "",
       "res": {
-        "audio": "2015-05-03.1.mp3"
+        "audio": "2015-05-03.mp3"
       },
       "complete": {
         "format": 0,
@@ -75,7 +75,7 @@
       "fid": "050915/",
       "desc": "T19.7 Pleasure and Pain",
       "res": {
-        "audio": "2015-05-09.1.mp3"
+        "audio": "2015-05-09.mp3"
       },
       "complete": {
         "format": 0,
@@ -94,7 +94,7 @@
       "fid": "051715/",
       "desc": "T19.8 Obstacles to Peace; The Attraction of Death",
       "res": {
-        "audio": "2015-05-17.1.mp3"
+        "audio": "2015-05-17.mp3"
       },
       "complete": {
         "format": 0,
@@ -113,7 +113,7 @@
       "fid": "060715/",
       "desc": "T19.8 Obstacles to Peace; The Attraction of Death",
       "res": {
-        "audio": "2015-06-07L.1.mp3"
+        "audio": "2015-06-07.mp3"
       },
       "complete": {
         "format": 0,
@@ -132,7 +132,7 @@
       "fid": "061415/",
       "desc": "T19.10 Obstacles to Peace; The Fear of God",
       "res": {
-        "audio": "2015-06-14.1.mp3"
+        "audio": "2015-06-14.mp3"
       },
       "complete": {
         "format": 0,
@@ -151,7 +151,7 @@
       "fid": "062115/",
       "desc": "T19.10 Obstacles to Peace; The Fear of God",
       "res": {
-        "audio": "2015-06-21.1.mp3"
+        "audio": "2015-06-21.mp3"
       },
       "complete": {
         "format": 0,
@@ -170,7 +170,7 @@
       "fid": "062815/",
       "desc": "T19.11 The Lifting of the Veil",
       "res": {
-        "audio": "2015-06-28.1.mp3"
+        "audio": "2015-06-28.mp3"
       },
       "complete": {
         "format": 0,
@@ -189,7 +189,7 @@
       "fid": "070515/",
       "desc": "T20.In The Promise of the Resurrection",
       "res": {
-        "audio": "2015-07-05.1.mp3"
+        "audio": "2015-07-05.mp3"
       },
       "complete": {
         "format": 0,
@@ -208,7 +208,7 @@
       "fid": "071315/",
       "desc": "T20.2 Thorns and Lilies",
       "res": {
-        "audio": "2015-07-13.1.mp3"
+        "audio": "2015-07-13.mp3"
       },
       "complete": {
         "format": 0,
@@ -227,7 +227,7 @@
       "fid": "072115/",
       "desc": "T20.2 Thorns and Lilies",
       "res": {
-        "audio": "2015-07-21.1.mp3"
+        "audio": "2015-07-21.mp3"
       },
       "complete": {
         "format": 0,
@@ -246,7 +246,7 @@
       "fid": "080115/",
       "desc": "T20.2 Thorns and Lilies",
       "res": {
-        "audio": "2015-08-01.1.mp3"
+        "audio": "2015-08-01.mp3"
       },
       "complete": {
         "format": 0,
@@ -265,7 +265,7 @@
       "fid": "082315/",
       "desc": "T20.3 Sin as an Adjustment",
       "res": {
-        "audio": "2015-08-23.1.mp3"
+        "audio": "2015-08-23.mp3"
       },
       "complete": {
         "format": 0,
@@ -284,7 +284,7 @@
       "fid": "091315/",
       "desc": "Discussion",
       "res": {
-        "audio": "2015-09-13.1.mp3"
+        "audio": "2015-09-13.mp3"
       },
       "complete": {
         "format": 0,
@@ -302,9 +302,12 @@
     {
       "fid": "100215/",
       "desc": "Discussion",
+      "res": {
+        "audio": "2015-10-02.mp3"
+      },
       "complete": {
         "format": 1,
-        "audio": 0,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },
@@ -318,9 +321,12 @@
     {
       "fid": "102115/",
       "desc": "",
+      "res": {
+        "audio": "2015-10-21.mp3"
+      },
       "complete": {
         "format": 0,
-        "audio": 0,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },
@@ -334,9 +340,12 @@
     {
       "fid": "110115/",
       "desc": "",
+      "res": {
+        "audio": "2015-11-01.mp3"
+      },
       "complete": {
         "format": 0,
-        "audio": 0,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },

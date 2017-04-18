@@ -1,6 +1,6 @@
 {
   "domain": {
-    "audio": "https://s3.amazonaws.com/assets.christmind.info/"
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2004/"
   },
   "base": "/nwffacim/2004/",
   "intro": "/nwffacim/intro/",
@@ -19,7 +19,7 @@
       "desc": "",
       "complete": {
         "format": 0,
-        "audio": 1,
+        "audio": 0,
         "index": 0,
         "fb": 0
       },
@@ -32,8 +32,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-01-18_StudyGroup.mp3"
+        "audio": "2004-01-18.mp3"
       },
       "fid": "011804/",
       "desc": "",
@@ -52,8 +51,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-01-25_StudyGroup.mp3"
+        "audio": "2004-01-25.mp3"
       },
       "fid": "012504/",
       "desc": "",
@@ -72,8 +70,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-02-01_StudyGroup.mp3"
+        "audio": "2004-02-01.mp3"
       },
       "fid": "020104/",
       "desc": "",
@@ -92,8 +89,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-02-08_StudyGroup.mp3"
+        "audio": "2004-02-08.mp3"
       },
       "fid": "020804/",
       "desc": "",
@@ -112,8 +108,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-02-15_StudyGroup.mp3"
+        "audio": "2004-02-15.mp3"
       },
       "fid": "021504/",
       "desc": "",
@@ -132,8 +127,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-02-22_StudyGroup.mp3"
+        "audio": "2004-02-22.mp3"
       },
       "fid": "022204/",
       "desc": "",
@@ -152,8 +146,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-03-07_StudyGroup.mp3"
+        "audio": "2004-03-07.mp3"
       },
       "fid": "030704/",
       "desc": "",
@@ -172,8 +165,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-03-14_StudyGroup.mp3"
+        "audio": "2004-03-14.mp3"
       },
       "fid": "031404/",
       "desc": "",
@@ -192,8 +184,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-03-28_StudyGroup.mp3"
+        "audio": "2004-03-28.mp3"
       },
       "fid": "032804/",
       "desc": "",
@@ -212,8 +203,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-04-04_StudyGroup.mp3"
+        "audio": "2004-04-04.mp3"
       },
       "fid": "040404/",
       "desc": "",
@@ -232,8 +222,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-04-11_StudyGroup.mp3"
+        "audio": "2004-04-11.mp3"
       },
       "fid": "041104/",
       "desc": "",
@@ -252,8 +241,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-04-18_StudyGroup.mp3"
+        "audio": "2004-04-18.mp3"
       },
       "fid": "041804/",
       "desc": "",
@@ -272,8 +260,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-04-25_StudyGroup.mp3"
+        "audio": "2004-04-25.mp3"
       },
       "fid": "042504/",
       "desc": "",
@@ -292,8 +279,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-05-02_StudyGroup.mp3"
+        "audio": "2004-05-02.mp3"
       },
       "fid": "050204/",
       "desc": "",
@@ -312,8 +298,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-05-09_StudyGroup.mp3"
+        "audio": "2004-05-09.mp3"
       },
       "fid": "050904/",
       "desc": "",
@@ -348,8 +333,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-05-23_StudyGroup.mp3"
+        "audio": "2004-05-23.mp3"
       },
       "fid": "052304/",
       "desc": "",
@@ -368,8 +352,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-05-30_StudyGroup.mp3"
+        "audio": "2004-05-30.mp3"
       },
       "fid": "053004/",
       "desc": "",
@@ -388,8 +371,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-06-13_StudyGroup.mp3"
+        "audio": "2004-06-13.mp3"
       },
       "fid": "061304/",
       "desc": "",
@@ -410,7 +392,7 @@
       "fid": "062004/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-06-20.mp3"
+        "audio": "2004-06-20.mp3"
       },
       "complete": {
         "format": 0,
@@ -429,7 +411,7 @@
       "fid": "062704/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-06-27.mp3"
+        "audio": "2004-06-27.mp3"
       },
       "complete": {
         "format": 0,
@@ -448,7 +430,7 @@
       "fid": "071104/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-07-11.mp3"
+        "audio": "2004-07-11.mp3"
       },
       "complete": {
         "format": 0,
@@ -465,8 +447,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-07-18_StudyGroup.mp3"
+        "audio": "2004-07-18.mp3"
       },
       "fid": "071804/",
       "desc": "",
@@ -487,7 +468,7 @@
       "fid": "072504/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-07-25.mp3"
+        "audio": "2004-07-25.mp3"
       },
       "complete": {
         "format": 0,
@@ -504,8 +485,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-08-01_StudyGroup.mp3"
+        "audio": "2004-08-01.mp3"
       },
       "fid": "080104/",
       "desc": "",
@@ -524,8 +504,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-08-08_StudyGroup.mp3"
+        "audio": "2004-08-08.mp3"
       },
       "fid": "080804/",
       "desc": "",
@@ -546,7 +525,7 @@
       "fid": "081504/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-08-15.mp3"
+        "audio": "2004-08-15.mp3"
       },
       "complete": {
         "format": 0,
@@ -563,8 +542,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-08-22_StudyGroup.mp3"
+        "audio": "2004-08-22.mp3"
       },
       "fid": "082204/",
       "desc": "",
@@ -583,8 +561,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-09-12_StudyGroup.mp3"
+        "audio": "2004-09-12.mp3"
       },
       "fid": "091204/",
       "desc": "",
@@ -603,8 +580,7 @@
     },
     {
       "res": {
-        "audio-domain": "https://static.secure.website/",
-        "audio": "wscfus/8306833/2322988/2004-09-19-studygroup.mp3"
+        "audio": "2004-09-19.mp3"
       },
       "fid": "091904/",
       "desc": "",
@@ -625,7 +601,7 @@
       "fid": "092604/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-09-26.mp3"
+        "audio": "2004-09-26.mp3"
       },
       "complete": {
         "format": 0,
@@ -642,8 +618,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-10-03_StudyGroup.mp3"
+        "audio": "2004-10-03.mp3"
       },
       "fid": "100304/",
       "desc": "",
@@ -662,8 +637,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-10-10_StudyGroup.mp3"
+        "audio": "2004-10-10.mp3"
       },
       "fid": "101004/",
       "desc": "",
@@ -684,7 +658,7 @@
       "fid": "101704/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-10-17.mp3"
+        "audio": "2004-10-17.mp3"
       },
       "complete": {
         "format": 0,
@@ -701,8 +675,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-10-24_StudyGroup.mp3"
+        "audio": "2004-10-24.mp3"
       },
       "fid": "102404/",
       "desc": "",
@@ -723,7 +696,7 @@
       "fid": "112104/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-11-21.mp3"
+        "audio": "2004-11-21.mp3"
       },
       "complete": {
         "format": 0,
@@ -742,7 +715,7 @@
       "fid": "112804/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-11-28.mp3"
+        "audio": "2004-11-28.mp3"
       },
       "complete": {
         "format": 0,
@@ -761,7 +734,7 @@
       "fid": "120504/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-12-05.mp3"
+        "audio": "2004-12-05.mp3"
       },
       "complete": {
         "format": 0,
@@ -780,7 +753,7 @@
       "fid": "121204/",
       "desc": "",
       "res": {
-        "audio": "nwffacim/audio/2004/2004-12-12.mp3"
+        "audio": "2004-12-12.mp3"
       },
       "complete": {
         "format": 0,
@@ -797,8 +770,7 @@
     },
     {
       "res": {
-        "audio-domain": "http://www.celestialrealm.com/",
-        "audio": "uploads/2004-12-19_StudyGroup.mp3"
+        "audio": "2004-12-19.mp3"
       },
       "fid": "121904/",
       "desc": "",
