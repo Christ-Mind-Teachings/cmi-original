@@ -8,7 +8,11 @@
 {% endcomment %}
 {% case include.source %}
   {% when "acim" %}
+    {% comment %}
     {% include uii/dl/nwffacim-studygroup-contents.html
+    skip=include.skip base=include.base data=include.data %}
+    {% endcomment %}
+    {% include uii/dl/nwffacim-dl.html
     skip=include.skip base=include.base data=include.data %}
   {% when "questions" %}
     {% include uii/dl/wom-questions-contents.html

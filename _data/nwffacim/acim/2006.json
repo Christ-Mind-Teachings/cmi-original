@@ -586,13 +586,14 @@
     },
     {
       "fid": "102106/",
-      "desc": "",
+      "desc": "T12.5 Finding the Present",
       "res": {
-        "audio": "2006-10-21.mp3"
+        "audio": "2006-10-21.mp3",
+        "timing": "102106.js"
       },
       "complete": {
-        "format": 0,
-        "audio": 1,
+        "format": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -605,13 +606,14 @@
     },
     {
       "fid": "102806/",
-      "desc": "",
+      "desc": "T12.5 Finding the Present",
       "res": {
-        "audio": "2006-10-28.mp3"
+        "audio": "2006-10-28.mp3",
+        "timing": "102806.js"
       },
       "complete": {
-        "format": 0,
-        "audio": 1,
+        "format": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

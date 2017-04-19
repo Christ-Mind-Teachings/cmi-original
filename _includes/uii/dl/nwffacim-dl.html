@@ -1,0 +1,42 @@
+
+{% assign skip = include.skip | default: -1 %}
+{% assign base = include.base | default: "" %}
+
+<dl>
+
+{% for book in include.data %}
+  {% if skip != book.idx %}
+    {% include uii/state/transcript-state.html page=book %}
+    {% comment %}
+    {% assign class = "" %}
+    {% if book.complete.format %}
+      {% assign complete = book.complete.format | default: 0 %}
+    {% else %}
+      {% assign complete = book.complete | default: 0 %}
+    {% endif %}
+    {% if complete == false or complete == 0 %}
+      {% assign class = "<i class='fa fa-fw fa-exclamation'></i>" %}
+    {% endif %}
+    {% endcomment %}
+
+    <dt>
+      <a href="{{book.url}}">
+        {% if index != "" %}
+          <i class="fa fa-fw {{index}}"></i>
+        {% endif %}
+        {% if audio != "" %}
+          <i class="fa fa-fw {{audio}}"></i>
+        {% endif %}
+        {% if format != "" %}
+          <i class="fa fa-fw {{format}}"></i>
+        {% endif %}
+        &nbsp;{{book.title}}
+      </a>
+    </dt>
+    <dd>
+      <p>{{book.desc | default: "No description yet"}}</p>
+    </dd>
+  {% endif %}
+{% endfor %}
+
+</dl>
