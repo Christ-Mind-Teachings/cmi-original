@@ -36,12 +36,13 @@
       "fid": "l02/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L26.mp3"
+        "audio": "L26.mp3",
+        "timing": "l02.js"
       },
       "title": "Lesson Two",
       "url": "/wom/wok/l02/",

@@ -70,6 +70,12 @@ function processSeekSnap(time) {
   seeking = false;
 }
 
+function removeCurrentHilight() {
+  if (prevptr > -1) {
+    $("#" + timingData.time[prevptr].id).removeClass(hilightClass);
+  }
+}
+
 function showNscroll(idx) {
   var tinfo = timingData.time[idx];
 
@@ -193,6 +199,9 @@ module.exports = {
     if (!enabled) {
       return;
     }
+
+    //remove hilight
+    removeCurrentHilight();
 
     //reset pointers
     locptr = -1;

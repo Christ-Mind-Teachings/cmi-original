@@ -19,18 +19,21 @@ function showPlayer() {
 //this is called only when we have audio timing data
 function initPlayFromHere() {
   var store = require("store");
+
+  /*
   var playFromHere = store.get("play-from-here");
   console.log("playFromHere: %s", playFromHere);
 
   if (!playFromHere) {
     return;
   }
+  */
 
   // add markers to each paragraph
   $(".transcript p").each(function(idx) {
     //don't add marker to p's with class = omit
     if (!$(this).hasClass("omit")) {
-      $(this).prepend("<i class='playmark playmark-hide fa fa-pull-left fa-volume-up'></i>");
+      $(this).prepend("<i class='playmark playmark-hide fa fa-pull-left fa-play'></i>");
     }
   });
 
@@ -136,6 +139,7 @@ function initPlayer(config) {
     player.media.addEventListener("timeupdate", function(e) {
       var time = this.getCurrentTime();
       if (!playing) {
+        //console.log("timeupdate: not playing");
         return;
       }
 
@@ -157,6 +161,7 @@ function initPlayer(config) {
     //get notified when player is playing
     player.media.addEventListener("playing", function(e) {
       playing = true;
+      //console.log("playing...");
       $(".audio-player-wrapper").addClass("player-fixed");
       capture.play(this.getCurrentTime);
     });
@@ -172,16 +177,24 @@ function initPlayer(config) {
       playing = false;
       $(".audio-player-wrapper").removeClass("player-fixed");
       capture.ended(this.getCurrentTime);
+
+      hilight.ended(this.getCurrentTime);
     });
 
     //get notified when seek start
     player.media.addEventListener("seeking", function(e) {
+      if (!playing) {
+        return;
+      }
       var time = this.getCurrentTime();
       hilight.seeking(time);
     });
 
     //get notified when seek ended
     player.media.addEventListener("seeked", function(e) {
+      if (!playing) {
+        return;
+      }
       var time = this.getCurrentTime();
       hilight.seeked(time);
     });
@@ -189,6 +202,9 @@ function initPlayer(config) {
     //set event listener for click on player stop button
     $(".mejs__stop-button").on("click", function(e) {
       $(".audio-player-wrapper").removeClass("player-fixed");
+
+      playing = false;
+      hilight.ended(0);
     });
 
     capture.initialize(player);
