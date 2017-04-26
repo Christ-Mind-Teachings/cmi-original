@@ -1,0 +1,78 @@
+#!/usr/bin/env node
+
+var AWS = require("aws-sdk");
+var fs = require('fs');
+var program = require("commander");
+var local = "http://localhost:8000";
+var remote = "https://dynamodb.us-east-1.amazonaws.com";
+
+var awsConfig = {
+  region: "us-east-1"
+};
+
+program
+  .version('0.0.1')
+  .usage('[options] <file ...>')
+  .option('-e, --endpoint <dblocation>', "Db location, either local or remote")
+  .parse(process.argv);
+
+if (!program.directory && program.args.length == 0) {
+  console.log("No input files specified");
+  process.exit(1);
+}
+
+if (!program.endpoint) {
+  console.log("specify endpoint of either 'local' or 'remote'");
+  process.exit(1);
+}
+
+if (program.endpoint === "remote") {
+  awsConfig.endpoint = remote;
+}
+else {
+  awsConfig.endpoint = local;
+}
+
+AWS.config.update(awsConfig);
+
+var docClient = new AWS.DynamoDB.DocumentClient();
+
+program.args.forEach(function(fn) {
+  if (fn.indexOf(".json") === -1) {
+    fn = fn + ".json";
+  }
+  load(fn);
+});
+
+function load(fileName) {
+  console.log("Loading table: %s from %s", "index", fileName);
+
+  var anno = JSON.parse(fs.readFileSync(fileName, 'utf8'));
+  console.log("file has %s annotations to load", anno.anno.length);
+
+  anno.anno.forEach(function(a) {
+    var params = {
+        TableName: "index",
+        Item: {
+          "type": a.type,
+          "aid": a.id,
+          "url": a.url,
+          "source": a.source,
+          "book": a.book,
+          "unit": a.unit,
+          "pid":  a.pid,
+          "target": a.target
+        }
+      };
+
+      docClient.put(params, function(err, data) {
+         if (err) {
+             console.error("Unable to add annotation: %s/%s/%s.", a.source, a.book, a.unit);
+             console.error("Error JSON:", JSON.stringify(err, null, 2));
+         } else {
+             console.log("PutItem succeeded: %s/%s/%s", a.source, a.book, a.unit);
+         }
+      });
+  });
+}
+

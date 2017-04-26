@@ -54,12 +54,12 @@
     },
     {
       "fid": "011709/",
-      "desc": "",
+      "desc": "T15.2 Time and Eternity",
       "res": {
         "audio": "2009-01-17.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0

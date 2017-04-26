@@ -1,9 +1,35 @@
 "use strict";
 
-var notify = require("toastr");
-
 //Not working with require but it is by loading the js by <script>
 //var WebClip = require("webclip");
+
+var notify = require("toastr");
+var Clipboard = require("clipboard");
+var annotation = require("./annotation");
+//var store = require("store");
+var indexApi = require("../api/cmiapi");
+
+var clipboard;
+var clipText = "not initialized";
+
+function initClipboard() {
+  clipboard = new Clipboard(".clipboard-copy", {
+    text: function(trigger) {
+      return clipText;
+    }
+  });
+  clipboard.on("success", function(e) {
+    notify.info("Selection copied to clipboard.");
+  });
+  clipboard.on('error', function(e) {
+    console.error("clipboard error: ", e);
+  });
+}
+
+function copyToClipboard(text) {
+  clipText = text;
+  $(".clipboard-copy").trigger("click");
+}
 
 module.exports = {
   //ui/share.js
@@ -17,6 +43,7 @@ module.exports = {
     if (transcript) {
       console.log("share init");
       clip = new WebClip(transcript);
+      initClipboard();
 
       var search = {
         name: "Search",
@@ -27,26 +54,25 @@ module.exports = {
         }
       };
 
-      var mail = {
-        name: "Mail",
-        description: "Email a friend",
-        icon: "share",
+      var clipboard = {
+        name: "Clipboard",
+        description: "Copy to Clipboard",
+        icon: "clipboard",
         action: function(value, range) {
+          var ann;
           var link;
-          if (range.startContainer.parentNode !== range.endContainer.parentNode) {
-            notify.error("Please restrict selection to one paragraph.");
-          }
-          else {
-            link = location.href + "?q=" + range.startContainer.parentNode.id + ":" +
-              range.startOffset + ":" + range.endOffset;
 
-            console.log("text: %s", value);
-            console.log("url: %s", link);
-          }
+          ann = annotation.getAnnotation(range);
+          indexApi.storeAnnotation(ann).then(function(response) {
+            console.log("indexApi.storeAnnotation(%s): ", response.data.id);
+            //store.set(ann.id, ann);
+          });
+          link = location.origin + location.pathname + "?idx=" +  ann.id;
+          copyToClipboard(value + "\n" + link);
         }
       };
 
-      clip.use([search, mail]);
+      clip.use([search, clipboard]);
     }
   }
 };

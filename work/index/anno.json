@@ -1,0 +1,31 @@
+{
+  "anno": [
+    {
+      "type": "Annotation",
+      "id": "6eabd7c9-54e9-46d3-9dab-039fadbcdd67",
+      "url": "https://www.christmind.info/nwffacim/2006/102106/",
+      "pid": "p2",
+      "source": "nwffacim",
+      "book": "2006",
+      "unit": "102106",
+      "target": {
+        "type": "SpecificResource",
+        "source": "https://www.christmind.info/nwffacim/2006/102106/",
+        "selector": [
+          {
+            "end": 3538,
+            "start": 3368,
+            "type": "TextPositionSelector"
+          },
+          {
+            "exact": "this is a test",
+            "prefix": "once upon a time",
+            "suffix": "in Bali",
+            "type": "TextQuoteSelector"
+          }
+        ]
+      }
+    }
+  ]
+}
+

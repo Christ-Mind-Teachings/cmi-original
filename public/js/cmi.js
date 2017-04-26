@@ -201,7 +201,7 @@ module.exports = function xhrAdapter(config) {
 };
 
 }).call(this,require('_process'))
-},{"../core/createError":10,"./../core/settle":13,"./../helpers/btoa":17,"./../helpers/buildURL":18,"./../helpers/cookies":20,"./../helpers/isURLSameOrigin":22,"./../helpers/parseHeaders":24,"./../utils":26,"_process":51}],4:[function(require,module,exports){
+},{"../core/createError":10,"./../core/settle":13,"./../helpers/btoa":17,"./../helpers/buildURL":18,"./../helpers/cookies":20,"./../helpers/isURLSameOrigin":22,"./../helpers/parseHeaders":24,"./../utils":26,"_process":57}],4:[function(require,module,exports){
 'use strict';
 
 var utils = require('./utils');
@@ -750,7 +750,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 module.exports = defaults;
 
 }).call(this,require('_process'))
-},{"./adapters/http":3,"./adapters/xhr":3,"./helpers/normalizeHeaderName":23,"./utils":26,"_process":51}],16:[function(require,module,exports){
+},{"./adapters/http":3,"./adapters/xhr":3,"./helpers/normalizeHeaderName":23,"./utils":26,"_process":57}],16:[function(require,module,exports){
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -1528,6 +1528,513 @@ function fromByteArray (uint8) {
 },{}],28:[function(require,module,exports){
 
 },{}],29:[function(require,module,exports){
+(function (global, factory) {
+    if (typeof define === "function" && define.amd) {
+        define(['module', 'select'], factory);
+    } else if (typeof exports !== "undefined") {
+        factory(module, require('select'));
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod, global.select);
+        global.clipboardAction = mod.exports;
+    }
+})(this, function (module, _select) {
+    'use strict';
+
+    var _select2 = _interopRequireDefault(_select);
+
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+
+    var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+        return typeof obj;
+    } : function (obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var _createClass = function () {
+        function defineProperties(target, props) {
+            for (var i = 0; i < props.length; i++) {
+                var descriptor = props[i];
+                descriptor.enumerable = descriptor.enumerable || false;
+                descriptor.configurable = true;
+                if ("value" in descriptor) descriptor.writable = true;
+                Object.defineProperty(target, descriptor.key, descriptor);
+            }
+        }
+
+        return function (Constructor, protoProps, staticProps) {
+            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+            if (staticProps) defineProperties(Constructor, staticProps);
+            return Constructor;
+        };
+    }();
+
+    var ClipboardAction = function () {
+        /**
+         * @param {Object} options
+         */
+        function ClipboardAction(options) {
+            _classCallCheck(this, ClipboardAction);
+
+            this.resolveOptions(options);
+            this.initSelection();
+        }
+
+        /**
+         * Defines base properties passed from constructor.
+         * @param {Object} options
+         */
+
+
+        _createClass(ClipboardAction, [{
+            key: 'resolveOptions',
+            value: function resolveOptions() {
+                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+                this.action = options.action;
+                this.emitter = options.emitter;
+                this.target = options.target;
+                this.text = options.text;
+                this.trigger = options.trigger;
+
+                this.selectedText = '';
+            }
+        }, {
+            key: 'initSelection',
+            value: function initSelection() {
+                if (this.text) {
+                    this.selectFake();
+                } else if (this.target) {
+                    this.selectTarget();
+                }
+            }
+        }, {
+            key: 'selectFake',
+            value: function selectFake() {
+                var _this = this;
+
+                var isRTL = document.documentElement.getAttribute('dir') == 'rtl';
+
+                this.removeFake();
+
+                this.fakeHandlerCallback = function () {
+                    return _this.removeFake();
+                };
+                this.fakeHandler = document.body.addEventListener('click', this.fakeHandlerCallback) || true;
+
+                this.fakeElem = document.createElement('textarea');
+                // Prevent zooming on iOS
+                this.fakeElem.style.fontSize = '12pt';
+                // Reset box model
+                this.fakeElem.style.border = '0';
+                this.fakeElem.style.padding = '0';
+                this.fakeElem.style.margin = '0';
+                // Move element out of screen horizontally
+                this.fakeElem.style.position = 'absolute';
+                this.fakeElem.style[isRTL ? 'right' : 'left'] = '-9999px';
+                // Move element to the same position vertically
+                var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+                this.fakeElem.style.top = yPosition + 'px';
+
+                this.fakeElem.setAttribute('readonly', '');
+                this.fakeElem.value = this.text;
+
+                document.body.appendChild(this.fakeElem);
+
+                this.selectedText = (0, _select2.default)(this.fakeElem);
+                this.copyText();
+            }
+        }, {
+            key: 'removeFake',
+            value: function removeFake() {
+                if (this.fakeHandler) {
+                    document.body.removeEventListener('click', this.fakeHandlerCallback);
+                    this.fakeHandler = null;
+                    this.fakeHandlerCallback = null;
+                }
+
+                if (this.fakeElem) {
+                    document.body.removeChild(this.fakeElem);
+                    this.fakeElem = null;
+                }
+            }
+        }, {
+            key: 'selectTarget',
+            value: function selectTarget() {
+                this.selectedText = (0, _select2.default)(this.target);
+                this.copyText();
+            }
+        }, {
+            key: 'copyText',
+            value: function copyText() {
+                var succeeded = void 0;
+
+                try {
+                    succeeded = document.execCommand(this.action);
+                } catch (err) {
+                    succeeded = false;
+                }
+
+                this.handleResult(succeeded);
+            }
+        }, {
+            key: 'handleResult',
+            value: function handleResult(succeeded) {
+                this.emitter.emit(succeeded ? 'success' : 'error', {
+                    action: this.action,
+                    text: this.selectedText,
+                    trigger: this.trigger,
+                    clearSelection: this.clearSelection.bind(this)
+                });
+            }
+        }, {
+            key: 'clearSelection',
+            value: function clearSelection() {
+                if (this.target) {
+                    this.target.blur();
+                }
+
+                window.getSelection().removeAllRanges();
+            }
+        }, {
+            key: 'destroy',
+            value: function destroy() {
+                this.removeFake();
+            }
+        }, {
+            key: 'action',
+            set: function set() {
+                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'copy';
+
+                this._action = action;
+
+                if (this._action !== 'copy' && this._action !== 'cut') {
+                    throw new Error('Invalid "action" value, use either "copy" or "cut"');
+                }
+            },
+            get: function get() {
+                return this._action;
+            }
+        }, {
+            key: 'target',
+            set: function set(target) {
+                if (target !== undefined) {
+                    if (target && (typeof target === 'undefined' ? 'undefined' : _typeof(target)) === 'object' && target.nodeType === 1) {
+                        if (this.action === 'copy' && target.hasAttribute('disabled')) {
+                            throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');
+                        }
+
+                        if (this.action === 'cut' && (target.hasAttribute('readonly') || target.hasAttribute('disabled'))) {
+                            throw new Error('Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes');
+                        }
+
+                        this._target = target;
+                    } else {
+                        throw new Error('Invalid "target" value, use a valid Element');
+                    }
+                }
+            },
+            get: function get() {
+                return this._target;
+            }
+        }]);
+
+        return ClipboardAction;
+    }();
+
+    module.exports = ClipboardAction;
+});
+},{"select":61}],30:[function(require,module,exports){
+(function (global, factory) {
+    if (typeof define === "function" && define.amd) {
+        define(['module', './clipboard-action', 'tiny-emitter', 'good-listener'], factory);
+    } else if (typeof exports !== "undefined") {
+        factory(module, require('./clipboard-action'), require('tiny-emitter'), require('good-listener'));
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod, global.clipboardAction, global.tinyEmitter, global.goodListener);
+        global.clipboard = mod.exports;
+    }
+})(this, function (module, _clipboardAction, _tinyEmitter, _goodListener) {
+    'use strict';
+
+    var _clipboardAction2 = _interopRequireDefault(_clipboardAction);
+
+    var _tinyEmitter2 = _interopRequireDefault(_tinyEmitter);
+
+    var _goodListener2 = _interopRequireDefault(_goodListener);
+
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var _createClass = function () {
+        function defineProperties(target, props) {
+            for (var i = 0; i < props.length; i++) {
+                var descriptor = props[i];
+                descriptor.enumerable = descriptor.enumerable || false;
+                descriptor.configurable = true;
+                if ("value" in descriptor) descriptor.writable = true;
+                Object.defineProperty(target, descriptor.key, descriptor);
+            }
+        }
+
+        return function (Constructor, protoProps, staticProps) {
+            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+            if (staticProps) defineProperties(Constructor, staticProps);
+            return Constructor;
+        };
+    }();
+
+    function _possibleConstructorReturn(self, call) {
+        if (!self) {
+            throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        }
+
+        return call && (typeof call === "object" || typeof call === "function") ? call : self;
+    }
+
+    function _inherits(subClass, superClass) {
+        if (typeof superClass !== "function" && superClass !== null) {
+            throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+        }
+
+        subClass.prototype = Object.create(superClass && superClass.prototype, {
+            constructor: {
+                value: subClass,
+                enumerable: false,
+                writable: true,
+                configurable: true
+            }
+        });
+        if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+    }
+
+    var Clipboard = function (_Emitter) {
+        _inherits(Clipboard, _Emitter);
+
+        /**
+         * @param {String|HTMLElement|HTMLCollection|NodeList} trigger
+         * @param {Object} options
+         */
+        function Clipboard(trigger, options) {
+            _classCallCheck(this, Clipboard);
+
+            var _this = _possibleConstructorReturn(this, (Clipboard.__proto__ || Object.getPrototypeOf(Clipboard)).call(this));
+
+            _this.resolveOptions(options);
+            _this.listenClick(trigger);
+            return _this;
+        }
+
+        /**
+         * Defines if attributes would be resolved using internal setter functions
+         * or custom functions that were passed in the constructor.
+         * @param {Object} options
+         */
+
+
+        _createClass(Clipboard, [{
+            key: 'resolveOptions',
+            value: function resolveOptions() {
+                var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+                this.action = typeof options.action === 'function' ? options.action : this.defaultAction;
+                this.target = typeof options.target === 'function' ? options.target : this.defaultTarget;
+                this.text = typeof options.text === 'function' ? options.text : this.defaultText;
+            }
+        }, {
+            key: 'listenClick',
+            value: function listenClick(trigger) {
+                var _this2 = this;
+
+                this.listener = (0, _goodListener2.default)(trigger, 'click', function (e) {
+                    return _this2.onClick(e);
+                });
+            }
+        }, {
+            key: 'onClick',
+            value: function onClick(e) {
+                var trigger = e.delegateTarget || e.currentTarget;
+
+                if (this.clipboardAction) {
+                    this.clipboardAction = null;
+                }
+
+                this.clipboardAction = new _clipboardAction2.default({
+                    action: this.action(trigger),
+                    target: this.target(trigger),
+                    text: this.text(trigger),
+                    trigger: trigger,
+                    emitter: this
+                });
+            }
+        }, {
+            key: 'defaultAction',
+            value: function defaultAction(trigger) {
+                return getAttributeValue('action', trigger);
+            }
+        }, {
+            key: 'defaultTarget',
+            value: function defaultTarget(trigger) {
+                var selector = getAttributeValue('target', trigger);
+
+                if (selector) {
+                    return document.querySelector(selector);
+                }
+            }
+        }, {
+            key: 'defaultText',
+            value: function defaultText(trigger) {
+                return getAttributeValue('text', trigger);
+            }
+        }, {
+            key: 'destroy',
+            value: function destroy() {
+                this.listener.destroy();
+
+                if (this.clipboardAction) {
+                    this.clipboardAction.destroy();
+                    this.clipboardAction = null;
+                }
+            }
+        }], [{
+            key: 'isSupported',
+            value: function isSupported() {
+                var action = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ['copy', 'cut'];
+
+                var actions = typeof action === 'string' ? [action] : action;
+                var support = !!document.queryCommandSupported;
+
+                actions.forEach(function (action) {
+                    support = support && !!document.queryCommandSupported(action);
+                });
+
+                return support;
+            }
+        }]);
+
+        return Clipboard;
+    }(_tinyEmitter2.default);
+
+    /**
+     * Helper function to retrieve attribute value.
+     * @param {String} suffix
+     * @param {Element} element
+     */
+    function getAttributeValue(suffix, element) {
+        var attribute = 'data-clipboard-' + suffix;
+
+        if (!element.hasAttribute(attribute)) {
+            return;
+        }
+
+        return element.getAttribute(attribute);
+    }
+
+    module.exports = Clipboard;
+});
+},{"./clipboard-action":29,"good-listener":52,"tiny-emitter":74}],31:[function(require,module,exports){
+var DOCUMENT_NODE_TYPE = 9;
+
+/**
+ * A polyfill for Element.matches()
+ */
+if (Element && !Element.prototype.matches) {
+    var proto = Element.prototype;
+
+    proto.matches = proto.matchesSelector ||
+                    proto.mozMatchesSelector ||
+                    proto.msMatchesSelector ||
+                    proto.oMatchesSelector ||
+                    proto.webkitMatchesSelector;
+}
+
+/**
+ * Finds the closest parent that matches a selector.
+ *
+ * @param {Element} element
+ * @param {String} selector
+ * @return {Function}
+ */
+function closest (element, selector) {
+    while (element && element.nodeType !== DOCUMENT_NODE_TYPE) {
+        if (element.matches(selector)) return element;
+        element = element.parentNode;
+    }
+}
+
+module.exports = closest;
+
+},{}],32:[function(require,module,exports){
+var closest = require('./closest');
+
+/**
+ * Delegates event to a selector.
+ *
+ * @param {Element} element
+ * @param {String} selector
+ * @param {String} type
+ * @param {Function} callback
+ * @param {Boolean} useCapture
+ * @return {Object}
+ */
+function delegate(element, selector, type, callback, useCapture) {
+    var listenerFn = listener.apply(this, arguments);
+
+    element.addEventListener(type, listenerFn, useCapture);
+
+    return {
+        destroy: function() {
+            element.removeEventListener(type, listenerFn, useCapture);
+        }
+    }
+}
+
+/**
+ * Finds closest match and invokes callback.
+ *
+ * @param {Element} element
+ * @param {String} selector
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Function}
+ */
+function listener(element, selector, type, callback) {
+    return function(e) {
+        e.delegateTarget = closest(e.target, selector);
+
+        if (e.delegateTarget) {
+            callback.call(element, e);
+        }
+    }
+}
+
+module.exports = delegate;
+
+},{"./closest":31}],33:[function(require,module,exports){
 'use strict'
 
 /**
@@ -3722,10 +4229,10 @@ module.exports['DIFF_DELETE'] = DIFF_DELETE;
 module.exports['DIFF_INSERT'] = DIFF_INSERT;
 module.exports['DIFF_EQUAL'] = DIFF_EQUAL;
 
-},{}],30:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 module.exports = require('./lib')
 
-},{"./lib":31}],31:[function(require,module,exports){
+},{"./lib":35}],35:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3812,7 +4319,7 @@ function toRange(root) {
   return range;
 }
 
-},{"./range-to-string":32,"dom-node-iterator":36,"dom-seek":45}],32:[function(require,module,exports){
+},{"./range-to-string":36,"dom-node-iterator":40,"dom-seek":49}],36:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -3887,10 +4394,10 @@ function rangeToString(range) {
   return text;
 }
 
-},{}],33:[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 module.exports = require('./lib');
 
-},{"./lib":34}],34:[function(require,module,exports){
+},{"./lib":38}],38:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -4074,16 +4581,16 @@ function toTextPosition(root, selector) {
   return { start: acc.start, end: acc.end };
 }
 
-},{"diff-match-patch":29,"dom-anchor-text-position":30}],35:[function(require,module,exports){
+},{"diff-match-patch":33,"dom-anchor-text-position":34}],39:[function(require,module,exports){
 module.exports = require('./lib/implementation')['default'];
 
-},{"./lib/implementation":39}],36:[function(require,module,exports){
+},{"./lib/implementation":43}],40:[function(require,module,exports){
 module.exports = require('./lib')['default'];
 module.exports.getPolyfill = require('./polyfill');
 module.exports.implementation = require('./implementation');
 module.exports.shim = require('./shim');
 
-},{"./implementation":35,"./lib":40,"./polyfill":43,"./shim":44}],37:[function(require,module,exports){
+},{"./implementation":39,"./lib":44,"./polyfill":47,"./shim":48}],41:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -4137,7 +4644,7 @@ var NodeIterator = function () {
   return NodeIterator;
 }();
 
-},{}],38:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -4152,7 +4659,7 @@ function createNodeIterator(root) {
   return doc.createNodeIterator.call(doc, root, whatToShow, filter);
 }
 
-},{}],39:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -4245,7 +4752,7 @@ var NodeIterator = function () {
   return NodeIterator;
 }();
 
-},{}],40:[function(require,module,exports){
+},{}],44:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -4270,7 +4777,7 @@ polyfill.shim = _shim2['default'];
 
 exports['default'] = polyfill;
 
-},{"./implementation":39,"./polyfill":41,"./shim":42}],41:[function(require,module,exports){
+},{"./implementation":43,"./polyfill":45,"./shim":46}],45:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -4301,7 +4808,7 @@ function getPolyfill() {
   }
 } /*global document*/
 
-},{"./adapter":37,"./builtin":38,"./implementation":39}],42:[function(require,module,exports){
+},{"./adapter":41,"./builtin":42,"./implementation":43}],46:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -4325,16 +4832,16 @@ function shim() {
   return polyfill;
 }
 
-},{"./builtin":38,"./polyfill":41}],43:[function(require,module,exports){
+},{"./builtin":42,"./polyfill":45}],47:[function(require,module,exports){
 module.exports = require('./lib/polyfill')['default'];
 
-},{"./lib/polyfill":41}],44:[function(require,module,exports){
+},{"./lib/polyfill":45}],48:[function(require,module,exports){
 module.exports = require('./lib/shim')['default'];
 
-},{"./lib/shim":42}],45:[function(require,module,exports){
+},{"./lib/shim":46}],49:[function(require,module,exports){
 module.exports = require('./lib')['default'];
 
-},{"./lib":46}],46:[function(require,module,exports){
+},{"./lib":50}],50:[function(require,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -4428,7 +4935,155 @@ function before(ref, node) {
   return l > r;
 }
 
-},{"ancestors":1,"index-of":48}],47:[function(require,module,exports){
+},{"ancestors":1,"index-of":54}],51:[function(require,module,exports){
+/**
+ * Check if argument is a HTML element.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.node = function(value) {
+    return value !== undefined
+        && value instanceof HTMLElement
+        && value.nodeType === 1;
+};
+
+/**
+ * Check if argument is a list of HTML elements.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.nodeList = function(value) {
+    var type = Object.prototype.toString.call(value);
+
+    return value !== undefined
+        && (type === '[object NodeList]' || type === '[object HTMLCollection]')
+        && ('length' in value)
+        && (value.length === 0 || exports.node(value[0]));
+};
+
+/**
+ * Check if argument is a string.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.string = function(value) {
+    return typeof value === 'string'
+        || value instanceof String;
+};
+
+/**
+ * Check if argument is a function.
+ *
+ * @param {Object} value
+ * @return {Boolean}
+ */
+exports.fn = function(value) {
+    var type = Object.prototype.toString.call(value);
+
+    return type === '[object Function]';
+};
+
+},{}],52:[function(require,module,exports){
+var is = require('./is');
+var delegate = require('delegate');
+
+/**
+ * Validates all params and calls the right
+ * listener function based on its target type.
+ *
+ * @param {String|HTMLElement|HTMLCollection|NodeList} target
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listen(target, type, callback) {
+    if (!target && !type && !callback) {
+        throw new Error('Missing required arguments');
+    }
+
+    if (!is.string(type)) {
+        throw new TypeError('Second argument must be a String');
+    }
+
+    if (!is.fn(callback)) {
+        throw new TypeError('Third argument must be a Function');
+    }
+
+    if (is.node(target)) {
+        return listenNode(target, type, callback);
+    }
+    else if (is.nodeList(target)) {
+        return listenNodeList(target, type, callback);
+    }
+    else if (is.string(target)) {
+        return listenSelector(target, type, callback);
+    }
+    else {
+        throw new TypeError('First argument must be a String, HTMLElement, HTMLCollection, or NodeList');
+    }
+}
+
+/**
+ * Adds an event listener to a HTML element
+ * and returns a remove listener function.
+ *
+ * @param {HTMLElement} node
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listenNode(node, type, callback) {
+    node.addEventListener(type, callback);
+
+    return {
+        destroy: function() {
+            node.removeEventListener(type, callback);
+        }
+    }
+}
+
+/**
+ * Add an event listener to a list of HTML elements
+ * and returns a remove listener function.
+ *
+ * @param {NodeList|HTMLCollection} nodeList
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listenNodeList(nodeList, type, callback) {
+    Array.prototype.forEach.call(nodeList, function(node) {
+        node.addEventListener(type, callback);
+    });
+
+    return {
+        destroy: function() {
+            Array.prototype.forEach.call(nodeList, function(node) {
+                node.removeEventListener(type, callback);
+            });
+        }
+    }
+}
+
+/**
+ * Add an event listener to a selector
+ * and returns a remove listener function.
+ *
+ * @param {String} selector
+ * @param {String} type
+ * @param {Function} callback
+ * @return {Object}
+ */
+function listenSelector(selector, type, callback) {
+    return delegate(document.body, selector, type, callback);
+}
+
+module.exports = listen;
+
+},{"./is":51,"delegate":32}],53:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = nBytes * 8 - mLen - 1
@@ -4514,7 +5169,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],48:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 /*!
  * index-of <https://github.com/jonschlinkert/index-of>
  *
@@ -4548,7 +5203,7 @@ module.exports = function indexOf(arr, ele, start) {
   return -1;
 };
 
-},{}],49:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.2.1
  * https://jquery.com/
@@ -14803,7 +15458,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],50:[function(require,module,exports){
+},{}],56:[function(require,module,exports){
 (function (process){
 // Generated by CoffeeScript 1.7.1
 (function() {
@@ -14839,7 +15494,7 @@ return jQuery;
 }).call(this);
 
 }).call(this,require('_process'))
-},{"_process":51}],51:[function(require,module,exports){
+},{"_process":57}],57:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -15021,7 +15676,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],52:[function(require,module,exports){
+},{}],58:[function(require,module,exports){
 'use strict';
 
 var pug_has_own_property = Object.prototype.hasOwnProperty;
@@ -15277,7 +15932,7 @@ function pug_rethrow(err, filename, lineno, str){
   throw err;
 };
 
-},{"fs":28}],53:[function(require,module,exports){
+},{"fs":28}],59:[function(require,module,exports){
 (function (global){
 var now = require('performance-now')
   , root = typeof window === 'undefined' ? global : window
@@ -15353,7 +16008,7 @@ module.exports.polyfill = function() {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"performance-now":50}],54:[function(require,module,exports){
+},{"performance-now":56}],60:[function(require,module,exports){
 var raf = require('raf'),
     COMPLETE = 'complete',
     CANCELED = 'canceled';
@@ -15532,7 +16187,52 @@ module.exports = function(target, settings, callback){
     }
 };
 
-},{"raf":53}],55:[function(require,module,exports){
+},{"raf":59}],61:[function(require,module,exports){
+function select(element) {
+    var selectedText;
+
+    if (element.nodeName === 'SELECT') {
+        element.focus();
+
+        selectedText = element.value;
+    }
+    else if (element.nodeName === 'INPUT' || element.nodeName === 'TEXTAREA') {
+        var isReadOnly = element.hasAttribute('readonly');
+
+        if (!isReadOnly) {
+            element.setAttribute('readonly', '');
+        }
+
+        element.select();
+        element.setSelectionRange(0, element.value.length);
+
+        if (!isReadOnly) {
+            element.removeAttribute('readonly');
+        }
+
+        selectedText = element.value;
+    }
+    else {
+        if (element.hasAttribute('contenteditable')) {
+            element.focus();
+        }
+
+        var selection = window.getSelection();
+        var range = document.createRange();
+
+        range.selectNodeContents(element);
+        selection.removeAllRanges();
+        selection.addRange(range);
+
+        selectedText = selection.toString();
+    }
+
+    return selectedText;
+}
+
+module.exports = select;
+
+},{}],62:[function(require,module,exports){
 var engine = require('../src/store-engine')
 
 var storages = require('../storages/all')
@@ -15540,7 +16240,7 @@ var plugins = [require('../plugins/json2')]
 
 module.exports = engine.createStore(storages, plugins)
 
-},{"../plugins/json2":56,"../src/store-engine":58,"../storages/all":60}],56:[function(require,module,exports){
+},{"../plugins/json2":63,"../src/store-engine":65,"../storages/all":67}],63:[function(require,module,exports){
 module.exports = json2Plugin
 
 function json2Plugin() {
@@ -15548,7 +16248,7 @@ function json2Plugin() {
 	return {}
 }
 
-},{"./lib/json2":57}],57:[function(require,module,exports){
+},{"./lib/json2":64}],64:[function(require,module,exports){
 //  json2.js
 //  2016-10-28
 //  Public Domain.
@@ -16055,7 +16755,7 @@ if (typeof JSON !== "object") {
         };
     }
 }());
-},{}],58:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 var util = require('./util')
 var slice = util.slice
 var pluck = util.pluck
@@ -16273,7 +16973,7 @@ function createStore(storages, plugins) {
 	return store
 }
 
-},{"./util":59}],59:[function(require,module,exports){
+},{"./util":66}],66:[function(require,module,exports){
 (function (global){
 var assign = make_assign()
 var create = make_create()
@@ -16395,7 +17095,7 @@ function isObject(val) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],60:[function(require,module,exports){
+},{}],67:[function(require,module,exports){
 module.exports = {
 	// Listed in order of usage preference
 	'localStorage': require('./localStorage'),
@@ -16406,7 +17106,7 @@ module.exports = {
 	'memoryStorage': require('./memoryStorage'),
 }
 
-},{"./cookieStorage":61,"./localStorage":62,"./memoryStorage":63,"./oldFF-globalStorage":64,"./oldIE-userDataStorage":65,"./sessionStorage":66}],61:[function(require,module,exports){
+},{"./cookieStorage":68,"./localStorage":69,"./memoryStorage":70,"./oldFF-globalStorage":71,"./oldIE-userDataStorage":72,"./sessionStorage":73}],68:[function(require,module,exports){
 // cookieStorage is useful Safari private browser mode, where localStorage
 // doesn't work but cookies do. This implementation is adopted from
 // https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage
@@ -16469,7 +17169,7 @@ function _has(key) {
 	return (new RegExp("(?:^|;\\s*)" + escape(key).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(doc.cookie)
 }
 
-},{"../src/util":59}],62:[function(require,module,exports){
+},{"../src/util":66}],69:[function(require,module,exports){
 var util = require('../src/util')
 var Global = util.Global
 
@@ -16509,7 +17209,7 @@ function clearAll() {
 	return localStorage().clear()
 }
 
-},{"../src/util":59}],63:[function(require,module,exports){
+},{"../src/util":66}],70:[function(require,module,exports){
 // memoryStorage is a useful last fallback to ensure that the store
 // is functions (meaning store.get(), store.set(), etc will all function).
 // However, stored values will not persist when the browser navigates to
@@ -16550,7 +17250,7 @@ function clearAll(key) {
 	memoryStorage = {}
 }
 
-},{}],64:[function(require,module,exports){
+},{}],71:[function(require,module,exports){
 // oldFF-globalStorage provides storage for Firefox
 // versions 6 and 7, where no localStorage, etc
 // is available.
@@ -16594,7 +17294,7 @@ function clearAll() {
 	})
 }
 
-},{"../src/util":59}],65:[function(require,module,exports){
+},{"../src/util":66}],72:[function(require,module,exports){
 // oldIE-userDataStorage provides storage for Internet Explorer
 // versions 6 and 7, where no localStorage, sessionStorage, etc
 // is available.
@@ -16723,7 +17423,7 @@ function _makeIEStorageElFunction() {
 	}
 }
 
-},{"../src/util":59}],66:[function(require,module,exports){
+},{"../src/util":66}],73:[function(require,module,exports){
 var util = require('../src/util')
 var Global = util.Global
 
@@ -16763,7 +17463,75 @@ function clearAll() {
 	return sessionStorage().clear()
 }
 
-},{"../src/util":59}],67:[function(require,module,exports){
+},{"../src/util":66}],74:[function(require,module,exports){
+function E () {
+  // Keep this empty so it's easier to inherit from
+  // (via https://github.com/lipsmack from https://github.com/scottcorgan/tiny-emitter/issues/3)
+}
+
+E.prototype = {
+  on: function (name, callback, ctx) {
+    var e = this.e || (this.e = {});
+
+    (e[name] || (e[name] = [])).push({
+      fn: callback,
+      ctx: ctx
+    });
+
+    return this;
+  },
+
+  once: function (name, callback, ctx) {
+    var self = this;
+    function listener () {
+      self.off(name, listener);
+      callback.apply(ctx, arguments);
+    };
+
+    listener._ = callback
+    return this.on(name, listener, ctx);
+  },
+
+  emit: function (name) {
+    var data = [].slice.call(arguments, 1);
+    var evtArr = ((this.e || (this.e = {}))[name] || []).slice();
+    var i = 0;
+    var len = evtArr.length;
+
+    for (i; i < len; i++) {
+      evtArr[i].fn.apply(evtArr[i].ctx, data);
+    }
+
+    return this;
+  },
+
+  off: function (name, callback) {
+    var e = this.e || (this.e = {});
+    var evts = e[name];
+    var liveEvents = [];
+
+    if (evts && callback) {
+      for (var i = 0, len = evts.length; i < len; i++) {
+        if (evts[i].fn !== callback && evts[i].fn._ !== callback)
+          liveEvents.push(evts[i]);
+      }
+    }
+
+    // Remove event from queue to prevent memory leak
+    // Suggested by https://github.com/lazd
+    // Ref: https://github.com/scottcorgan/tiny-emitter/commit/c6ebfaa9bc973b33d110a84a307742b7cf94c953#commitcomment-5024910
+
+    (liveEvents.length)
+      ? e[name] = liveEvents
+      : delete e[name];
+
+    return this;
+  }
+};
+
+module.exports = E;
+
+},{}],75:[function(require,module,exports){
 /*
  * Toastr
  * Copyright 2012-2015
@@ -17200,7 +17968,7 @@ function clearAll() {
     }
 }));
 
-},{"jquery":49}],68:[function(require,module,exports){
+},{"jquery":55}],76:[function(require,module,exports){
 //     Underscore.js 1.8.3
 //     http://underscorejs.org
 //     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -18750,9 +19518,102 @@ function clearAll() {
   }
 }.call(this));
 
-},{}],69:[function(require,module,exports){
+},{}],77:[function(require,module,exports){
+/**
+ * Convert array of 16 byte values to UUID string format of the form:
+ * XXXXXXXX-XXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+ */
+var byteToHex = [];
+for (var i = 0; i < 256; ++i) {
+  byteToHex[i] = (i + 0x100).toString(16).substr(1);
+}
+
+function bytesToUuid(buf, offset) {
+  var i = offset || 0;
+  var bth = byteToHex;
+  return  bth[buf[i++]] + bth[buf[i++]] +
+          bth[buf[i++]] + bth[buf[i++]] + '-' +
+          bth[buf[i++]] + bth[buf[i++]] + '-' +
+          bth[buf[i++]] + bth[buf[i++]] + '-' +
+          bth[buf[i++]] + bth[buf[i++]] + '-' +
+          bth[buf[i++]] + bth[buf[i++]] +
+          bth[buf[i++]] + bth[buf[i++]] +
+          bth[buf[i++]] + bth[buf[i++]];
+}
+
+module.exports = bytesToUuid;
+
+},{}],78:[function(require,module,exports){
+(function (global){
+// Unique ID creation requires a high quality random # generator.  In the
+// browser this is a little complicated due to unknown quality of Math.random()
+// and inconsistent support for the `crypto` API.  We do the best we can via
+// feature-detection
+var rng;
+
+var crypto = global.crypto || global.msCrypto; // for IE 11
+if (crypto && crypto.getRandomValues) {
+  // WHATWG crypto RNG - http://wiki.whatwg.org/wiki/Crypto
+  var rnds8 = new Uint8Array(16);
+  rng = function whatwgRNG() {
+    crypto.getRandomValues(rnds8);
+    return rnds8;
+  };
+}
+
+if (!rng) {
+  // Math.random()-based (RNG)
+  //
+  // If all else fails, use Math.random().  It's fast, but is of unspecified
+  // quality.
+  var  rnds = new Array(16);
+  rng = function() {
+    for (var i = 0, r; i < 16; i++) {
+      if ((i & 0x03) === 0) r = Math.random() * 0x100000000;
+      rnds[i] = r >>> ((i & 0x03) << 3) & 0xff;
+    }
+
+    return rnds;
+  };
+}
+
+module.exports = rng;
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],79:[function(require,module,exports){
+var rng = require('./lib/rng');
+var bytesToUuid = require('./lib/bytesToUuid');
+
+function v4(options, buf, offset) {
+  var i = buf && offset || 0;
+
+  if (typeof(options) == 'string') {
+    buf = options == 'binary' ? new Array(16) : null;
+    options = null;
+  }
+  options = options || {};
+
+  var rnds = options.random || (options.rng || rng)();
+
+  // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+  rnds[6] = (rnds[6] & 0x0f) | 0x40;
+  rnds[8] = (rnds[8] & 0x3f) | 0x80;
+
+  // Copy bytes to buffer, if provided
+  if (buf) {
+    for (var ii = 0; ii < 16; ++ii) {
+      buf[i + ii] = rnds[ii];
+    }
+  }
+
+  return buf || bytesToUuid(rnds);
+}
+
+module.exports = v4;
+
+},{"./lib/bytesToUuid":77,"./lib/rng":78}],80:[function(require,module,exports){
 arguments[4][28][0].apply(exports,arguments)
-},{"dup":28}],70:[function(require,module,exports){
+},{"dup":28}],81:[function(require,module,exports){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -20460,7 +21321,7 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":27,"ieee754":47}],71:[function(require,module,exports){
+},{"base64-js":27,"ieee754":53}],82:[function(require,module,exports){
 
 // return all text nodes that are contained within `el`
 function getTextNodes(el) {
@@ -20619,7 +21480,28 @@ function wrapRangeText(wrapperEl, range) {
 
 module.exports = wrapRangeText
 
-},{}],72:[function(require,module,exports){
+},{}],83:[function(require,module,exports){
+
+var axios = require("axios");
+var config = require("../config/config");
+var indexApi = config.getIdxEndpoint();
+
+function storeAnnotation(annotation) {
+  return axios.post(indexApi, annotation);
+}
+
+function getAnnotation(id) {
+  var getApi = indexApi + "/" + id;
+  return axios.get(getApi);
+}
+
+module.exports = {
+  storeAnnotation: storeAnnotation,
+  getAnnotation: getAnnotation
+};
+
+
+},{"../config/config":85,"axios":2}],84:[function(require,module,exports){
 "use strict";
 
 var config = require("./config/config");
@@ -20651,7 +21533,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-},{"./config/config":73,"./init/about":77,"./init/common":78,"./init/narrative":79,"./init/search":80}],73:[function(require,module,exports){
+},{"./config/config":85,"./init/about":89,"./init/common":90,"./init/narrative":91,"./init/search":92}],85:[function(require,module,exports){
 (function (process,Buffer){
 /* config/config.js */
 "use strict";
@@ -20661,6 +21543,7 @@ var _ = require("underscore");
 var cmiConfig;
 
 var apiEndpoint = "https://s0l2an0odc.execute-api.us-east-1.amazonaws.com/latest/search";
+var idxEndpoint = "https://4r9azgy1hb.execute-api.us-east-1.amazonaws.com/latest/index";
 
 //get array of source id (sid) values:
 function getSourceArray() {
@@ -20911,13 +21794,17 @@ module.exports = {
 
   getApiEndpoint: function() {
     return apiEndpoint;
+  },
+
+  getIdxEndpoint: function() {
+    return idxEndpoint;
   }
 };
 
 
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":51,"buffer":70,"store":55,"underscore":68}],74:[function(require,module,exports){
+},{"_process":57,"buffer":81,"store":62,"underscore":76}],86:[function(require,module,exports){
 "use strict";
 
 var _ = require("underscore");
@@ -20963,7 +21850,7 @@ module.exports = {
 };
 
 
-},{"underscore":68}],75:[function(require,module,exports){
+},{"underscore":76}],87:[function(require,module,exports){
 /*
  * Query hypothes.is API
  *
@@ -21025,7 +21912,7 @@ module.exports = {
 };
 
 
-},{}],76:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 
 "use strict";
 
@@ -21241,7 +22128,7 @@ module.exports = {
 };
 
 
-},{"./api":75,"dom-anchor-text-quote":33,"underscore":68,"wrap-range-text":71}],77:[function(require,module,exports){
+},{"./api":87,"dom-anchor-text-quote":37,"underscore":76,"wrap-range-text":82}],89:[function(require,module,exports){
 "use strict";
 
 var bookmark = require("../ui/bookmark");
@@ -21292,7 +22179,7 @@ module.exports = {
 };
 
 
-},{"../ui/bookmark":85,"toastr":67}],78:[function(require,module,exports){
+},{"../ui/bookmark":98,"toastr":75}],90:[function(require,module,exports){
 "use strict";
 
 var bookmark = require("../ui/bookmark");
@@ -21315,7 +22202,7 @@ module.exports = {
 
 
 
-},{"../refills/accordion_tabs":82,"../ui/bookmark":85}],79:[function(require,module,exports){
+},{"../refills/accordion_tabs":94,"../ui/bookmark":98}],91:[function(require,module,exports){
 "use strict";
 
 var audio = require("../ui/mediaElements");
@@ -21324,6 +22211,7 @@ var search = require("../search/search");
 var url = require("../util/url");
 var wrap = require("../h/wrap");
 var share = require("../ui/share");
+var index = require("../ui/cmiIndex");
 var scroll = require("scroll-into-view");
 
 var unwrap;
@@ -21388,6 +22276,9 @@ module.exports = {
     //init share feature
     share.initialize();
 
+    //init index feature
+    index.initialize();
+
     //not sure why I have to do this, previously the page would scroll
     //to the hash id when loaded but it doesn't do that anymore. Could be
     //because the hash id is created after the page is loaded.
@@ -21397,7 +22288,7 @@ module.exports = {
   }
 };
 
-},{"../h/wrap":76,"../search/search":83,"../ui/bookmark":85,"../ui/mediaElements":88,"../ui/share":90,"../util/url":92,"scroll-into-view":54}],80:[function(require,module,exports){
+},{"../h/wrap":88,"../search/search":95,"../ui/bookmark":98,"../ui/cmiIndex":100,"../ui/mediaElements":102,"../ui/share":104,"../util/url":106,"scroll-into-view":60}],92:[function(require,module,exports){
 "use strict";
 
 var search = require("../search/site_search");
@@ -21414,7 +22305,7 @@ module.exports = {
 };
 
 
-},{"../search/site_search":84,"../ui/bookmark":85,"store":55}],81:[function(require,module,exports){
+},{"../search/site_search":96,"../ui/bookmark":98,"store":62}],93:[function(require,module,exports){
 ;(function(root,factory){
     if (typeof define === 'function' && define.amd) {
         define([], factory);
@@ -21457,7 +22348,7 @@ module.exports = {
     return puglatizer;
 }));
 
-},{"fs":69}],82:[function(require,module,exports){
+},{"fs":80}],94:[function(require,module,exports){
 /*
  * support for refills accordion tabs
  */
@@ -21486,7 +22377,7 @@ module.exports = function() {
 };
 
 
-},{}],83:[function(require,module,exports){
+},{}],95:[function(require,module,exports){
 "use strict";
 
 var store = require("store");
@@ -21808,7 +22699,7 @@ module.exports = {
   }
 };
 
-},{"../config/config":73,"../util/url":92,"store":55,"underscore":68}],84:[function(require,module,exports){
+},{"../config/config":85,"../util/url":106,"store":62,"underscore":76}],96:[function(require,module,exports){
 "use strict";
 
 var url = require("../util/url");
@@ -21976,7 +22867,78 @@ module.exports = {
   }
 };
 
-},{"../config/config":73,"../pug/templates":81,"../util/url":92,"axios":2,"pug-runtime":52,"store":55}],85:[function(require,module,exports){
+},{"../config/config":85,"../pug/templates":93,"../util/url":106,"axios":2,"pug-runtime":58,"store":62}],97:[function(require,module,exports){
+
+//these are used for highlight
+var textPosition = require("dom-anchor-text-position");
+var textQuote = require('dom-anchor-text-quote');
+var wrapRange = require("wrap-range-text");
+var uuid = require("uuid/v4");
+
+function highlight(annotation) {
+  //const anno_id = "anno-" + btoa(annotation.id);
+  var anno_id = annotation.id;
+  if (annotation.target.source) {
+    var selectors = annotation.target.selector;
+    for (var i = 0 ; i < selectors.length ; i++) {
+      var selector = selectors[i];
+      var type = selector.type;
+      switch (type) {
+        case "TextPositionSelector":
+          // skip existing marks
+          var existing_marks = document.querySelectorAll("[data-annotation-id='"+anno_id + "']");
+          if (existing_marks.length === 0) {
+            var mark = document.createElement("mark");
+            mark.dataset["annotationId"] = anno_id;
+            mark.classList.add("page-notes");
+            var range = textPosition.toRange(document.body, selector);
+            wrapRange(mark, range);
+          }
+          break;
+      }
+    }
+  }
+}
+
+function getAnnotation(range) {
+  var pathArray = location.pathname.split("/");
+  if (range.collapsed) return;
+
+  var textPositionSelector = textPosition.fromRange(document.body, range);
+  Object.assign(textPositionSelector, {type: 'TextPositionSelector'});
+
+  var textQuoteSelector = textQuote.fromRange(document.body, range);
+  Object.assign(textQuoteSelector, {type: 'TextQuoteSelector'});
+
+  var annotation = {
+    type: 'Annotation',
+    id: uuid(),
+    url: location.origin + location.pathname,
+    pid: range.startContainer.parentNode.id,
+    source: pathArray[1],
+    book: pathArray[2],
+    unit: pathArray[3],
+    target: {
+      type: 'SpecificResource',
+      source: window.location.href,
+      selector: [
+        textPositionSelector,
+        textQuoteSelector,
+      ]
+    }
+  };
+
+
+  return annotation;
+}
+
+module.exports = {
+  getAnnotation: getAnnotation,
+  highlight: highlight
+};
+
+
+},{"dom-anchor-text-position":34,"dom-anchor-text-quote":37,"uuid/v4":79,"wrap-range-text":82}],98:[function(require,module,exports){
 /* eslint no-alert: off, no-unreachable: off */
 /* ui/bookmark.js */
 
@@ -22243,7 +23205,7 @@ module.exports = {
 };
 
 
-},{"../config/config":73,"../pug/templates":81,"store":55,"toastr":67,"underscore":68}],86:[function(require,module,exports){
+},{"../config/config":85,"../pug/templates":93,"store":62,"toastr":75,"underscore":76}],99:[function(require,module,exports){
 
 "use strict";
 
@@ -22556,7 +23518,38 @@ module.exports = {
 
 };
 
-},{"../ds/capture":74,"../util/are-you-sure":91,"./hilight":87,"./modal":89,"toastr":67,"underscore":68}],87:[function(require,module,exports){
+},{"../ds/capture":86,"../util/are-you-sure":105,"./hilight":101,"./modal":103,"toastr":75,"underscore":76}],100:[function(require,module,exports){
+"use strict";
+
+//var store = require("store");
+var url = require("../util/url");
+var scroll = require("scroll-into-view");
+var indexApi = require("../api/cmiapi");
+var annotation = require("./annotation");
+
+module.exports = {
+  initialize: function() {
+    var query = url.getQueryString("idx");
+
+    if (query) {
+      indexApi.getAnnotation(query)
+      .then(function(response) {
+        if (response.data.pid) {
+          //console.log("getAnnotation response: ", response);
+          var el = document.getElementById(response.data.pid);
+          annotation.highlight(response.data);
+          scroll(el);
+        }
+        else {
+          console.log("idx:%s not found", query);
+        }
+      });
+    }
+  }
+};
+
+
+},{"../api/cmiapi":83,"../util/url":106,"./annotation":97,"scroll-into-view":60}],101:[function(require,module,exports){
 /*
  * NOTE:
  *
@@ -22786,7 +23779,7 @@ module.exports = {
 };
 
 
-},{"scroll-into-view":54,"underscore":68}],88:[function(require,module,exports){
+},{"scroll-into-view":60,"underscore":76}],102:[function(require,module,exports){
 "use strict";
 
 var url = require("../util/url");
@@ -22808,12 +23801,15 @@ function showPlayer() {
 //this is called only when we have audio timing data
 function initPlayFromHere() {
   var store = require("store");
+
+  /*
   var playFromHere = store.get("play-from-here");
   console.log("playFromHere: %s", playFromHere);
 
   if (!playFromHere) {
     return;
   }
+  */
 
   // add markers to each paragraph
   $(".transcript p").each(function(idx) {
@@ -23052,7 +24048,7 @@ module.exports = {
 };
 
 
-},{"../util/url":92,"./capture":86,"./hilight":87,"store":55}],89:[function(require,module,exports){
+},{"../util/url":106,"./capture":99,"./hilight":101,"store":62}],103:[function(require,module,exports){
 "use strict";
 
 module.exports = {
@@ -23082,13 +24078,39 @@ module.exports = {
 };
 
 
-},{}],90:[function(require,module,exports){
+},{}],104:[function(require,module,exports){
 "use strict";
-
-var notify = require("toastr");
 
 //Not working with require but it is by loading the js by <script>
 //var WebClip = require("webclip");
+
+var notify = require("toastr");
+var Clipboard = require("clipboard");
+var annotation = require("./annotation");
+//var store = require("store");
+var indexApi = require("../api/cmiapi");
+
+var clipboard;
+var clipText = "not initialized";
+
+function initClipboard() {
+  clipboard = new Clipboard(".clipboard-copy", {
+    text: function(trigger) {
+      return clipText;
+    }
+  });
+  clipboard.on("success", function(e) {
+    notify.info("Selection copied to clipboard.");
+  });
+  clipboard.on('error', function(e) {
+    console.error("clipboard error: ", e);
+  });
+}
+
+function copyToClipboard(text) {
+  clipText = text;
+  $(".clipboard-copy").trigger("click");
+}
 
 module.exports = {
   //ui/share.js
@@ -23102,6 +24124,7 @@ module.exports = {
     if (transcript) {
       console.log("share init");
       clip = new WebClip(transcript);
+      initClipboard();
 
       var search = {
         name: "Search",
@@ -23112,32 +24135,31 @@ module.exports = {
         }
       };
 
-      var mail = {
-        name: "Mail",
-        description: "Email a friend",
-        icon: "share",
+      var clipboard = {
+        name: "Clipboard",
+        description: "Copy to Clipboard",
+        icon: "clipboard",
         action: function(value, range) {
+          var ann;
           var link;
-          if (range.startContainer.parentNode !== range.endContainer.parentNode) {
-            notify.error("Please restrict selection to one paragraph.");
-          }
-          else {
-            link = location.href + "?q=" + range.startContainer.parentNode.id + ":" +
-              range.startOffset + ":" + range.endOffset;
 
-            console.log("text: %s", value);
-            console.log("url: %s", link);
-          }
+          ann = annotation.getAnnotation(range);
+          indexApi.storeAnnotation(ann).then(function(response) {
+            console.log("indexApi.storeAnnotation(%s): ", response.data.id);
+            //store.set(ann.id, ann);
+          });
+          link = location.origin + location.pathname + "?idx=" +  ann.id;
+          copyToClipboard(value + "\n" + link);
         }
       };
 
-      clip.use([search, mail]);
+      clip.use([search, clipboard]);
     }
   }
 };
 
 
-},{"toastr":67}],91:[function(require,module,exports){
+},{"../api/cmiapi":83,"./annotation":97,"clipboard":30,"toastr":75}],105:[function(require,module,exports){
 "use strict";
 
 var isDirty = false;
@@ -23169,7 +24191,7 @@ module.exports = {
   }
 };
 
-},{}],92:[function(require,module,exports){
+},{}],106:[function(require,module,exports){
 /*
  * Url utilities
  */
@@ -23220,4 +24242,4 @@ module.exports = {
 
 };
 
-},{}]},{},[72]);
+},{}]},{},[84]);
