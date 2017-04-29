@@ -17,7 +17,7 @@ bid: "acimc"
 <div markdown="1" class="note">
 **Please note:** This is a work in progress. Most of the transcripts here
 need format changes for a more readable display. Learn how you can [help
-us do that](/#landingepresent) here.
+us do that](/#landing6present) here.
 </div>
 
 {% include ui/cards.html data=site.data.nwffacim.acim.contents source="acim" %}

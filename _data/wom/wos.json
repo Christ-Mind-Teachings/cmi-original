@@ -43,7 +43,7 @@
       "title": "Book One",
       "complete": {
         "format": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "url": "/wom/wos/chap01/",
@@ -56,7 +56,7 @@
       "title": "Book Two",
       "complete": {
         "format": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "url": "/wom/wos/chap02/",
@@ -69,7 +69,7 @@
       "title": "Book Three",
       "complete": {
         "format": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "url": "/wom/wos/chap03/",
@@ -82,7 +82,7 @@
       "title": "Book Four",
       "complete": {
         "format": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "url": "/wom/wos/chap04/",

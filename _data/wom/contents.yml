@@ -1,4 +1,14 @@
 books:
+- title: The Jeshua Letters
+  id: tjl
+  url: /wom/intro/tjl
+  img: /public/img/wom/early-cover.png
+  desc: "The Jeshua Letters"
+- title: The Way of the Servant
+  id: wos
+  url: /wom/intro/wos
+  img: /public/img/wom/early-cover.png
+  desc: "The Way of the Servant"
 - title: The Way of the Heart
   id: woh
   url: /wom/intro/woh/
@@ -19,4 +29,9 @@ books:
   url: /wom/intro/early
   img: /public/img/wom/early-cover.png
   desc: "The Early Years"
+- title: Questions
+  id: questions
+  url: /wom/intro/questions
+  img: /public/img/wom/early-cover.png
+  desc: "Way of Mastery Q&A"
 

@@ -10,7 +10,8 @@
         <em>Way of Mastery</em> sessions are here. Questions come
         from, <em>The Early Years</em>, <em>The Way of the Heart</em>,
         <em>The Way of Transformation</em>, and <em>The Way of Knowing</em>
-        </p>"
+        </p><br/><a href='/about/symbols/'>
+      <i class='fa fa-eye-slash'></i> Click here for meaning of symbols.</a>"
     },
     {
       "id": "yaa",
@@ -30,7 +31,9 @@
         <cite>Rajpur ~ from the Foreward</cite>
       </p> <br/>
       <a href='/nwffacim/yaa/acknowledgments/'>
-      <i class='fa fa-book'>&nbsp;Start Reading</i></a> or scroll down to choose a chapter."
+      <i class='fa fa-book'>&nbsp;Start Reading</i></a> or scroll down to choose a chapter.
+      <br/><a href='/about/symbols/'>
+      <i class='fa fa-search'></i> Click here for meaning of symbols.</a>"
     },
     {
       "id": "grad",
@@ -57,7 +60,9 @@
         comprehend it.<br/><cite>Rajpur ~ from the Foreward</cite>
       </p> <br/>
       <a href='/nwffacim/grad/g000002/'>
-      <i class='fa fa-book'>&nbsp;Start Reading</i></a> or scroll down to choose a chapter."
+      <i class='fa fa-book'>&nbsp;Start Reading</i></a> or scroll down to choose a chapter.
+      <br/><a href='/about/symbols/'>
+      <i class='fa fa-search'></i> Click here for meaning of symbols.</a>"
     },
     {
       "id": "woh",
@@ -82,7 +87,8 @@
         answer sessions, are the first year of 35 monthly lessons given by Jeshua
         during the years 1995-1997. Together they outline the steps and
         practices for awakening in Christ Mind.
-      </p>"
+      </p><br/><a href='/about/symbols/'>
+      <i class='fa fa-clock-o'></i> Click here for meaning of symbols.</a>"
     },
     {
       "id": "wot",
@@ -107,7 +113,8 @@
           answer sessions, are the second year of 35 monthly lessons given by Jeshua
           during the years 1995-1997. Together they outline the steps and
           practices for awakening in Christ Mind.
-        </p>"
+        </p><br/><a href='/about/symbols/'>
+      <i class='fa fa-clock-o'></i> Click here for meaning of symbols.</a>"
     },
     {
       "id": "wok",
@@ -131,7 +138,9 @@
           answer sessions, are the third year of 35 monthly lessons given by Jeshua
           during the years 1995-1997. Together they outline the steps and
           practices for awakening in Christ Mind.
-        </p>"
+        </p>
+        <br/><a href='/about/symbols/'>
+      <i class='fa fa-clock-o'></i> Click here for meaning of symbols.</a>"
     },
     {
       "id": "early",
@@ -139,7 +148,8 @@
       "heading": "The Early Years",
       "image": "underwater",
       "content": "<p><em>The Early Years</em> is a collection of messages
-     from Jeshua given prior to <em>The Way of the Heart</em> </p>"
+     from Jeshua given prior to <em>The Way of the Heart</em> </p><br/><a href='/about/symbols/'>
+      <i class='fa fa-eye-slash'></i> Click here for meaning of symbols.</a>"
     },
     {
       "id": "tjl",
@@ -157,7 +167,9 @@
       with Jayem. The wisdom, clarity, and practicality of His guidance is profound and
       unquestionable.</p><br/>
       <a href='/wom/tjl/ack/'>
-      <i class='fa fa-book'>&nbsp;Start Reading</i></a> or scroll down to choose a chapter."
+      <i class='fa fa-book'>&nbsp;Start Reading</i></a> or scroll down to choose a chapter.
+      <br/><a href='/about/symbols/'>
+      <i class='fa fa-search'></i> Click here for meaning of symbols.</a>"
     },
     {
       "id": "wos",
@@ -177,7 +189,9 @@
       </em><br/><cite>~Jeshua</cite></p>
       <br/>
       <a href='/wom/wos/foreword/'>
-      <i class='fa fa-book'>&nbsp;Start Reading</i></a> or scroll down to choose a chapter."
+      <i class='fa fa-book'>&nbsp;Start Reading</i></a> or scroll down to choose a chapter.
+      <br/><a href='/about/symbols/'>
+      <i class='fa fa-search'></i> Click here for meaning of symbols.</a>"
     }
   ]
 }

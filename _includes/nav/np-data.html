@@ -11,6 +11,7 @@ Generate next/previous page links from _data files based on page.bid
 
 {% comment %}
 <!--
+  np-data.html
   bid: {{page.bid}}
   include.resource: {{include.resource}}
 -->
@@ -35,6 +36,10 @@ Generate next/previous page links from _data files based on page.bid
     transcript-format-complete, when false, prevents the capture of audio
     timing data.
   {% endcomment %}
+  <!--
+    rick
+    page-data: {{page-data}}
+  -->
   {% if page-data.complete.format %}
     {% assign transcript-format-complete = page-data.complete.format | default: 0 %}
   {% else %}

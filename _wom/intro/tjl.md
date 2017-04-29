@@ -4,7 +4,7 @@ load-custom: true
 load-fa: true
 title: About The Jeshua Letters
 source: Way of Mastery
-surl: /wom/intro/tjl/
+surl: /wom/intro/wom/
 book: The Jeshua Letters
 burl: /wom/intro/tjl/
 nav: nav/np-data.html

@@ -142,15 +142,15 @@ defaults:
       class: nwffacim
 
 # ACIM Study Group - many years of sessions
-  - scope:
-      path: ""
-      type: nwffacim
-    values:
-      bid: acimc
-      book: ACIM Study Group
-      burl: /nwffacim/intro/acim/
-      nav: nav/np-data.html
-      contents: nav/contents.html
+#  - scope:
+#      path: ""
+#      type: nwffacim
+#    values:
+#      bid: acimc
+#      book: ACIM Study Group
+#      burl: /nwffacim/intro/acim/
+#      nav: nav/np-data.html
+#      contents: nav/contents.html
 
 # 2002
   - scope:
@@ -160,6 +160,8 @@ defaults:
       bid: 2002
       unit: 2002 Contents
       uurl: /nwffacim/intro/2002/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2003
   - scope:
@@ -169,6 +171,8 @@ defaults:
       bid: 2003
       unit: 2003 Contents
       uurl: /nwffacim/intro/2003/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2004
   - scope:
@@ -178,6 +182,8 @@ defaults:
       bid: 2004
       unit: 2004 Contents
       uurl: /nwffacim/intro/2004/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2005
   - scope:
@@ -187,6 +193,8 @@ defaults:
       bid: 2005
       unit: 2005 Contents
       uurl: /nwffacim/intro/2005/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2006
   - scope:
@@ -196,6 +204,8 @@ defaults:
       bid: 2006
       unit: 2006 Contents
       uurl: /nwffacim/intro/2006/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2007
   - scope:
@@ -205,6 +215,8 @@ defaults:
       bid: 2007
       unit: 2007 Contents
       uurl: /nwffacim/intro/2007/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2008
   - scope:
@@ -214,6 +226,8 @@ defaults:
       bid: 2008
       unit: 2008 Contents
       uurl: /nwffacim/intro/2008/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2009
   - scope:
@@ -223,6 +237,8 @@ defaults:
       bid: 2009
       unit: 2009 Contents
       uurl: /nwffacim/intro/2009/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2010
   - scope:
@@ -232,6 +248,8 @@ defaults:
       bid: 2010
       unit: 2010 Contents
       uurl: /nwffacim/intro/2010/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2011
   - scope:
@@ -241,6 +259,8 @@ defaults:
       bid: 2011
       unit: 2011 Contents
       uurl: /nwffacim/intro/2011/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2012
   - scope:
@@ -250,6 +270,8 @@ defaults:
       bid: 2012
       unit: 2012 Contents
       uurl: /nwffacim/intro/2012/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2013
   - scope:
@@ -259,6 +281,8 @@ defaults:
       bid: 2013
       unit: 2013 Contents
       uurl: /nwffacim/intro/2013/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2014
   - scope:
@@ -268,6 +292,8 @@ defaults:
       bid: 2014
       unit: 2014 Contents
       uurl: /nwffacim/intro/2014/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2015
   - scope:
@@ -277,6 +303,8 @@ defaults:
       bid: 2015
       unit: 2015 Contents
       uurl: /nwffacim/intro/2015/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2016
   - scope:
@@ -286,6 +314,8 @@ defaults:
       bid: 2016
       unit: 2016 Contents
       uurl: /nwffacim/intro/2016/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # 2017
   - scope:
@@ -295,6 +325,8 @@ defaults:
       bid: 2017
       unit: 2017 Contents
       uurl: /nwffacim/intro/2017/
+      book: ACIM Study Group
+      burl: /nwffacim/intro/acim/
 
 # You Are the Answer ebook
   - scope:
@@ -331,7 +363,7 @@ kramdown:
   enable_coderay: false
 
 # Custom vars
-version:             0.0.6
+version:             0.8.0
 fb-appId:     448658485318107
 
 # ----------- SINGLE PAGE TEMPLATE SUPPORT - USED FOR LANDING PAGE
@@ -347,31 +379,31 @@ colors:
 
 # Exclusions from the final site
 exclude: [
-  #        _wom/woh,
-  #        _wom/wot,
-  #       _wom/wok,
-  #        _wom/early,
-  #        _wom/tjl,
-  #        _wom/wos,
-  #        _wom/questions,
-  #        _nwffacim/grad,
-  #        _nwffacim/yaa,
-  #        _nwffacim/2002,
-  #        _nwffacim/2003,
-  #        _nwffacim/2004,
-  #        _nwffacim/2005,
-  ##      _nwffacim/2006,
-  #        _nwffacim/2007,
-  #        _nwffacim/2008,
-  #        _nwffacim/2009,
-  #       _nwffacim/2010,
-  #       _nwffacim/2011,
-  #       _nwffacim/2012,
-  #        _nwffacim/2013,
-  #        _nwffacim/2014,
-  #        _nwffacim/2015,
-  #        _nwffacim/2016,
-  docs, work, bin, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
+  #    _wom/woh,
+  #    _wom/wot,
+  #    _wom/wok,
+  #    _wom/early,
+  #    _wom/tjl,
+  #    _wom/wos,
+  #    _wom/questions,
+  #    _nwffacim/grad,
+  #    _nwffacim/yaa,
+  #    _nwffacim/2002,
+  #    _nwffacim/2003,
+  #    _nwffacim/2004,
+  #    _nwffacim/2005,
+  #    _nwffacim/2006,
+  #    _nwffacim/2007,
+  #    _nwffacim/2008,
+  #    _nwffacim/2009,
+  #    _nwffacim/2010,
+  #    _nwffacim/2011,
+  #    _nwffacim/2012,
+  #    _nwffacim/2013,
+  #    _nwffacim/2014,
+  #    _nwffacim/2015,
+  #    _nwffacim/2016,
+  work, bin, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
 
 xxkeep_files: [

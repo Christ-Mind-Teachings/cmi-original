@@ -24087,7 +24087,6 @@ module.exports = {
 var notify = require("toastr");
 var Clipboard = require("clipboard");
 var annotation = require("./annotation");
-//var store = require("store");
 var indexApi = require("../api/cmiapi");
 
 var clipboard;
@@ -24146,7 +24145,6 @@ module.exports = {
           ann = annotation.getAnnotation(range);
           indexApi.storeAnnotation(ann).then(function(response) {
             console.log("indexApi.storeAnnotation(%s): ", response.data.id);
-            //store.set(ann.id, ann);
           });
           link = location.origin + location.pathname + "?idx=" +  ann.id;
           copyToClipboard(value + "\n" + link);

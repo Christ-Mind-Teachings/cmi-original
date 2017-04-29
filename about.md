@@ -52,7 +52,7 @@ Rick Mercer
 
 Please send your comments and suggestions and questions. If you'd like
 to offer your help I'd love know about that too. Head over to the
-[Current](/#landingepresent) section of the landing page to learn how
+[Current](/#landing6present) section of the landing page to learn how
 you can help.
 
 <fieldset class="no-padding">
