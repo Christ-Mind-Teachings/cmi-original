@@ -1,22 +1,16 @@
-# christmind.info: Christ Mind Teachings
+# Christ Mind Teachings
 
 ## Introduction
 
 Christmind.info is a library for learning and sharing inspiration from 
 contemporary teachings of Christ, of which there are many.
 
-First, what is Christ? Here are a few hints from Raj[^1].
+The Library initially contains the teachings from the *Way of Mastery*
+and from the *Northwest Foundation for ACIM*.
 
-Christ is:
--   that which is experiencing God
--   the pure, innocent, direct expression of God
--   that which lives within you, in the quiet present
+The main goal of the project is to provide a repository of Christ Mind
+teachings that is uncluttered and easily accessible.
 
+Check us out at [Christ Mind Info](https://www.christmind.info)
 
-
-
-
-
-[^1]: Raj is channeled by Paul Tuttle at the Northwest Foundation 
-for *A Course in Miracles*.
 

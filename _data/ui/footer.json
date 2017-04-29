@@ -19,6 +19,8 @@
       "content": true,
       "about-text": "About CMI",
       "about-url": "/about/",
+      "project-text": "Project Info",
+      "project-url": "/about/releases/",
       "social": false,
       "facebook-url": "",
       "twitter-url": "",

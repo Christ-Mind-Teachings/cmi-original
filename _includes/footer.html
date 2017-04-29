@@ -32,6 +32,17 @@ info: {{info}}
           </a>
         </li>
       {% endif %}
+      {% if info.project-url %}
+        <li>
+          <a href="{{info.project-url}}">
+            {% if info.project-text %}
+              {{info.project-text}}
+            {% else %}
+              Project
+            {% endif %}
+          </a>
+        </li>
+      {% endif %}
       {% if info.contact-url %}
         <li><a href="{{info.contact-url}}">Contact</a></li>
       {% endif %}
