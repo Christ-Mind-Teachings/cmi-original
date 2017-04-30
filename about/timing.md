@@ -16,6 +16,10 @@ available from the *Way of Mastery* and the *NWFFACIM Study Group*.
 Audio that needs timing information collected is indicated by the <i
 class="fa fa-volume-up"></i> symbol as shown in this example.
 
+If the transcript has the <i class="fa fa-eye-slash"></i> symbol it is
+not yet ready for collection of timing data. Make sure to chose one that
+does not have this symbol associated.
+
 ![Need Timing](/public/img/cmi/no-timing.png)
 
 ## Step Two

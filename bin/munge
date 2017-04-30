@@ -431,6 +431,7 @@ switch (id) {
     //yml.base = "/nwffacim/acim/" + data.year + "/";
     yml.base = "/nwffacim/" + data.year + "/";
     yml.intro = data.intro;
+    yml.title = data.title;
     yml.page = _.map(data.pages, acim, {year: data.year, base: yml.base, intro: yml.intro});
     outfile = data.year + ".json";
     break;

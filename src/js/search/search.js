@@ -190,6 +190,11 @@ function initializeNavigator(data) {
     $(".search-prev-match").addClass("hide-player");
 
     $(".search-next-match > i").removeClass("fa-arrow-down").addClass("fa-asterisk");
+
+    $(".search-next-match").on("click", function(e) {
+      e.preventDefault();
+      location.href = matchArray[currentMatchIndex].location;
+    });
   }
   else {
     //add event handlers for matches on page

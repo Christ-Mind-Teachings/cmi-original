@@ -21,6 +21,8 @@
       "about-url": "/about/",
       "project-text": "Project Info",
       "project-url": "/about/releases/",
+      "time-text": "Time Capture",
+      "time-url": "/about/timing/",
       "social": false,
       "facebook-url": "",
       "twitter-url": "",

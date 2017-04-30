@@ -1,0 +1,11 @@
+
+### {{ include.book.title }}
+{: {{include.id}} }
+
+{% for unit in include.book.page %}
+
+-   [{{unit.title}}]({{unit.url}})
+    {: .sitemap}
+
+{% endfor %}
+

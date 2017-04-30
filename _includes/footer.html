@@ -32,6 +32,17 @@ info: {{info}}
           </a>
         </li>
       {% endif %}
+      {% if info.time-url %}
+        <li>
+          <a href="{{info.time-url}}">
+            {% if info.time-text %}
+              {{info.time-text}}
+            {% else %}
+              Time Capture
+            {% endif %}
+          </a>
+        </li>
+      {% endif %}
       {% if info.project-url %}
         <li>
           <a href="{{info.project-url}}">
