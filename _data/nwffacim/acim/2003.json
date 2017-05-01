@@ -95,7 +95,7 @@
       },
       "fid": "020603/",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -115,7 +115,7 @@
       "fid": "021303/",
       "ref": "Discussion",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -133,7 +133,7 @@
       },
       "fid": "022003/",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -152,7 +152,7 @@
       },
       "fid": "022703/",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -170,9 +170,9 @@
         "audio": "2003-03-06.mp3"
       },
       "fid": "030603/",
-      "desc": "Needs formatting",
+      "desc": "T2.VIII The Meaning of the Last Judgment",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0

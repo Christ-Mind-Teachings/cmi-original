@@ -75,6 +75,14 @@ That's all there is to it.
 
 Thanks in advance for your help. It is helpful indeed!
 
+This video will walk you through the process.
+
+{% include ui/video.html
+  src="https://www.youtube.com/embed/bUzG3dWmYXM"
+  width="560"
+  height="315"
+%}
+
 <script>
   $("#return").on("click", function(e) {
     e.preventDefault();

@@ -65,6 +65,7 @@ BEGIN {
   i = 0
   p = 0
   l = -1
+  omit = 0
   fm = 0
   inp = false
   needComma = "n"
@@ -89,7 +90,23 @@ $1 ~ /##/ {
   # questions
   next
 }
+# a markdown class designation
+/^{:/ {
+  omit = 1
+  next
+}
 /^$/ || /^>$/ || /^>\s*$/ {
+
+  # discard paragraphs when omit is true
+  if (omit == 1) {
+    l = -1
+    text = ""
+    delete lines
+    p++
+    omit = 0
+    next
+  }
+
   if (l > -1) {
     len = length(lines)
     printf "  %s{\n", needComma == "y" ? "," : ""
