@@ -285,11 +285,14 @@
     },
     {
       "fid": "wlk/",
+      "res": {
+        "audio": "WLK.mp3"
+      },
       "complete": {
-        "format": 0,
-        "audio": 0,
+        "format": 1,
+        "audio": 1,
         "index": 0,
-        "fb": 0
+        "fb": 1
       },
       "title": "Walk with Me",
       "url": "/wom/early/wlk/",
