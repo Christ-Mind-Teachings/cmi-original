@@ -104,10 +104,13 @@
     {
       "fid": "com/",
       "complete": {
-        "format": 0,
-        "audio": 0,
+        "format": 1,
+        "audio": 1,
         "index": 0,
         "fb": 0
+      },
+      "res": {
+        "audio": "COM.mp3"
       },
       "title": "Mastering Communication",
       "url": "/wom/early/com/",
@@ -118,8 +121,7 @@
     {
       "fid": "dbc/",
       "complete": {
-        "format": 0,
-        "audio": 0,
+        "format": 1,
         "index": 0,
         "fb": 0
       },
@@ -131,9 +133,12 @@
     },
     {
       "fid": "dth/",
+      "res": {
+        "audio": "DTH.mp3"
+      },
       "complete": {
-        "format": 0,
-        "audio": 0,
+        "format": 1,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },

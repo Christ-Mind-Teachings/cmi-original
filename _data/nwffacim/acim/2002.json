@@ -39,13 +39,14 @@
       "fid": "073102/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "desc": "T31.VIII Choose Once Again",
       "res": {
-        "audio": "2002-07-31.mp3"
+        "audio": "2002-07-31.mp3",
+        "timing": "073102.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/073102/",
@@ -58,13 +59,14 @@
       "fid": "080702/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "desc": "T1.In Introduction",
       "res": {
-        "audio": "2002-08-07.mp3"
+        "audio": "2002-08-07.mp3",
+        "timing": "080702.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/080702/",

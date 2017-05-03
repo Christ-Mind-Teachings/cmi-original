@@ -198,7 +198,7 @@ rites that had been passed from generation to generation in that strand,
 that culture, had come again to hold the greater power: that the rites
 themselves, the rituals themselves, held the power and that it was
 through the correct&hellip; hmmm behavioral methods that you could
-unlock the powers, whether it be in stones, in crystals or staffs or
+unlock the powers, whether it be in stones and crystals or staffs or
 chants. This did not feel appropriate for me. And yet, now that I was at
 the age of about eleven, as I questioned the priests, they would become
 greatly troubled and they went unto my uncle and said, “Take this one
@@ -211,7 +211,7 @@ understand,
 > *Why is there this difficulty? My Father is but Love!*
 
 I was quiet and sullen on the journey home, and when I was received back
-at home I went back to my father’s shop, the little carpenter’s shop. I
+at home I went back to my father’s shop, the little carpentry shop. I
 was never a very good carpenter, by the way&hellip; I was somewhat
 preoccupied with other things and my father, unlike the tradition of
 that time, did not insist that I remain with him in the shop, and when
@@ -223,6 +223,13 @@ And he would smile and say, “He is called by a different Voice.” There
 were some that understood that and supported me, but there were many who
 were greatly troubled by what they perceived to be my rebelliousness, my
 lack of discipline, my lack of a sense of duty to tradition.
+
+<!--
+audio: 18:02
+
+Missing text: There were at those times many travelers that would come
+from the east and in one such journey...
+-->
 
 I journeyed back, first to Egypt, and then back to Judaea, where I set
 about seeking out those who would support me and walk with me. You have

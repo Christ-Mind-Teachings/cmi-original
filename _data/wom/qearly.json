@@ -107,6 +107,97 @@
             What's your view on that?"
         }
       ]
+    },
+    {
+      "title": "Mastering Communication",
+      "questions": [
+        {
+          "fid": "comq1/",
+          "title": "Explain ACIM Quotes",
+          "question": "Jeshua I’d like for you to address two sentences that I keep hearing in
+            my mind as we go through this, directly out of your *Course in
+            Miracles*. The first sentence is: “Never tell your brother that he is
+            what you would not want to be”. And the second one is: “Words are but
+            symbols of symbols and therefore twice removed from reality.” Would you
+            elaborate on those two?"
+        }
+      ]
+    },
+    {
+      "title": "Death and Earth Changes",
+      "questions": [
+        {
+          "fid": "dthq1/",
+          "title": "Polarization",
+          "question": "There seems to be a polarization going on now between people who are
+            answering the call and people who would remain in fear. And those things
+            look like wars and fights and racial tension. Is this part of that
+            process?"
+        },
+        {
+          "fid": "dthq2/",
+          "title": "Physical Earth Changes",
+          "question": "Everything you’ve said tonight can be taken either physically or metaphorically. Is
+            this a physical change that will occur on the planet, or is this a
+            metaphorical change and the planet itself remain unscathed?"
+        },
+        {
+          "fid": "dthq3/",
+          "title": "Role of Shanti Christo",
+          "question": "Then the role of Shanti Christo must
+            also be clear in this process. Is it a beacon?"
+        },
+        {
+          "fid": "dthq4/",
+          "title": "Three Days of Darkness",
+          "question": "Are we going to experience a period
+            of three days of darkness during this change upon the earth?"
+        },
+        {
+          "fid": "dthq5/",
+          "title": "Difference Between Jeshua and Germaine, etc",
+          "question": "Is there truly any difference
+            between entities that describe themselves as Germaine, Jeshua, Michael,
+            and who would bring their message through an individual? Is there really
+            any difference among the messengers?"
+        },
+        {
+          "fid": "dthq6/",
+          "title": "Being Unaware of Death",
+          "question": "I’d like to discuss with you,
+            pursuant to the book that we’re working on, *The Way Through Death*, you
+            brought to our attention this past December that there were many
+            individuals who died in the explosion in Oklahoma City who were at that
+            time unaware of their death situation.  They were somehow hung up in
+            that moment of time of the explosion, unable to extricate themselves
+            from the collapsed building. We’ve all heard stories of ghosts still
+            inhabiting the locations of their death.  Why is this so, if what
+            Emmanuel says, that death is “like taking off a tight shoe” is true?"
+        },
+        {
+          "fid": "dthq7/",
+          "title": "The Tunnel at Death",
+          "question": "So, from what you’re saying then,
+            there is no set sequence that occurs at that moment called death. So a
+            lot of people report on going through the tunnel and you’re there
+            and&hellip;"
+        },
+        {
+          "fid": "dthq8/",
+          "title": "Is God Self-Aware",
+          "question": "Is God self-aware, or is it simply a benign metaphysical force?"
+        },
+        {
+          "fid": "dthq9/",
+          "title": "A Force Outside of God",
+          "question": "Is there a force outside of God?"
+        },
+        {
+          "fid": "dthq10/",
+          "title": "Shanti Christo",
+          "question": "Getting back to Shanti Christo, could you give us an idea when this will materialize?"
+        }
+      ]
     }
   ]
 }
