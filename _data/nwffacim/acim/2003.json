@@ -113,7 +113,7 @@
         "audio": "2003-02-13.mp3"
       },
       "fid": "021303/",
-      "ref": "Discussion",
+      "desc": "Discussion",
       "complete": {
         "format": 1,
         "audio": 1,
@@ -189,9 +189,9 @@
         "audio": "2003-03-13.mp3"
       },
       "fid": "031303/",
-      "desc": "Needs formatting",
+      "desc": "T3.1 Special Principles for Miracle Workers",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0

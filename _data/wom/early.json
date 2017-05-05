@@ -150,9 +150,12 @@
     },
     {
       "fid": "fem/",
+      "res": {
+        "audio": "FEM.mp3"
+      },
       "complete": {
-        "format": 0,
-        "audio": 0,
+        "format": 1,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },
@@ -164,9 +167,12 @@
     },
     {
       "fid": "gar/",
+      "res": {
+        "audio": "GAR.mp3"
+      },
       "complete": {
-        "format": 0,
-        "audio": 0,
+        "format": 1,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },

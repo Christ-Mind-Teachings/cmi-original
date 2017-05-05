@@ -22,7 +22,7 @@
         "audio": "2015-04-18.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -41,7 +41,7 @@
         "audio": "2015-04-25.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -55,12 +55,12 @@
     },
     {
       "fid": "050315/",
-      "desc": "",
+      "desc": "T19.7 Pleasure and Pain",
       "res": {
         "audio": "2015-05-03.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -79,7 +79,7 @@
         "audio": "2015-05-09.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -98,7 +98,7 @@
         "audio": "2015-05-17.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -117,7 +117,7 @@
         "audio": "2015-06-07.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -136,7 +136,7 @@
         "audio": "2015-06-14.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -155,7 +155,7 @@
         "audio": "2015-06-21.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -174,7 +174,7 @@
         "audio": "2015-06-28.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -193,7 +193,7 @@
         "audio": "2015-07-05.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -212,7 +212,7 @@
         "audio": "2015-07-13.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -231,7 +231,7 @@
         "audio": "2015-07-21.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -250,7 +250,7 @@
         "audio": "2015-08-01.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -269,7 +269,7 @@
         "audio": "2015-08-23.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -288,7 +288,7 @@
         "audio": "2015-09-13.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -321,12 +321,12 @@
     },
     {
       "fid": "102115/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2015-10-21.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -340,12 +340,12 @@
     },
     {
       "fid": "110115/",
-      "desc": "",
+      "desc": "T20.3 Sin as an Adjustment",
       "res": {
         "audio": "2015-11-01.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
