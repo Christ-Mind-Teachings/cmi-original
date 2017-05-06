@@ -14,19 +14,22 @@ toc:
 
 Now we begin.
 
-And, indeed, greetings unto you, beloved holy friends. Indeed, greetings to you,
-beloved and holy great Rays of Light shining eternally in the mind of our Father,
-bringing forth that which is Love, bringing forth that which is Light, bringing forth
-that which is Wisdom and Peace and Simplicity  &ndash;  and Forgiveness.
+And, indeed, greetings unto you, beloved holy friends. Indeed, greetings
+to you, beloved and holy great Rays of Light shining eternally in the
+mind of our Father, bringing forth that which is Love, bringing forth
+that which is Light, bringing forth that which is Wisdom and Peace and
+Simplicity &ndash; and Forgiveness.
 
-For in Truth, the world waits upon your forgiveness. It waits to be anointed by the
-Mind of Christ that would look upon all created things and grant it forgiveness. For
-your world lives steeped in fear. Your world is filled with many brothers and sisters
-that are plagued by a deep sense of unworthiness and guilt. Having fallen asleep, they
-continue to dream an illusory dream. But much like any dream, it holds the power to
-enchant the mind and block the very cells of the body from exuding only that which
-is real: Light. And Light is Love. And, therefore, to begin this evening and to share
-this message with our many friends, we would indeed speak of forgiveness.
+For in Truth, the world waits upon your forgiveness. It waits to be
+anointed by the Mind of Christ that would look upon all created things
+and grant it forgiveness. For your world lives steeped in fear. Your
+world is filled with many brothers and sisters that are plagued by a
+deep sense of unworthiness and guilt. Having fallen asleep, they
+continue to dream an illusory dream. But much like any dream, it holds
+the power to enchant the mind and block the very cells of the body from
+exuding only that which is real: Light. And Light is Love. And,
+therefore, to begin this evening and to share this message with our many
+friends, we would indeed speak of forgiveness.
 
 Beloved friends, forgiveness requires a graciousness; and graciousness is but the
 extension through form &ndash; through the body, through the emotions, through your
@@ -267,7 +270,7 @@ your emotional field. We come to speak directly to the essence of your Soul, whi
 already knows the truth, which *is* the Truth, and is, in fact, the *very source from which
 these words are coming*.
 
-Hm&hellip; By way of levity, if that is permitted…
+Hm&hellip; By way of levity, if that is permitted&hellip;
 
 [Laughter.]
 

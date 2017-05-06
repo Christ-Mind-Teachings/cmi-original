@@ -1,5 +1,7 @@
 ---
 title: The Meaning of Ascension
+fb:
+  desc: "Way of Mastery: The Early Years - The Meaning of Ascension"
 ---
 
 Now, we begin.

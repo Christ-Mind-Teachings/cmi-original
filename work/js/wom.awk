@@ -1,3 +1,32 @@
+#
+# if we find the regex then we keep the one line paragraph
+# - indicated this by returning 0
+#
+# return 1 if we want to discard the paragraph
+#
+function discardParagraph(p) {
+  if (n = match(p,/^[Aa]men/) > 0) {
+    return 1
+  }
+  if (n = match(p,/[Nn]ow.*we.*begin\.$/) > 0) {
+    return 1
+  }
+  if (n = match(p,/^no$/) > 0) {
+    return 1
+  }
+  if (n = match(p,/[Aa]udience/) > 0) {
+    return 1
+  }
+  if (n = match(p,/how.*you.*doing/) > 0) {
+    return 1
+  }
+  # one line paragraph contain the word 'laughter'
+  if ((n = match(p,/[Ll]aughter/)) > 0) {
+    return 1
+  }
+
+  return 0
+}
 function bookId(book) {
   switch(book) {
     case "woh":
@@ -8,6 +37,9 @@ function bookId(book) {
       break
     case "wok":
       bid = 3
+      break
+    case "early":
+      bid = 6
       break
     default:
       bid = 0;
@@ -53,6 +85,60 @@ function unitId(unit) {
       break
     case "l12":
       uid = 12
+      break
+    case "ble":
+      uid =1
+      break
+    case "c2s":
+      uid =2
+      break
+    case "com":
+      uid =3
+      break
+    case "dbc":
+      uid =4
+      break
+    case "dth":
+      uid =5
+      break
+    case "fem":
+      uid =6
+      break
+    case "gar":
+      uid =7
+      break
+    case "hea":
+      uid =8
+      break
+    case "hoe":
+      uid =9
+      break
+    case "hoi":
+      uid =10
+      break
+    case "hsp":
+      uid =11
+      break
+    case "ign":
+      uid =12
+      break
+    case "joy1":
+      uid =13
+      break
+    case "joy2":
+      uid =14
+      break
+    case "moa":
+      uid =15
+      break
+    case "mot":
+      uid =16
+      break
+    case "wak":
+      uid =17
+      break
+    case "wlk":
+      uid =18
       break
     default:
       uid = 0;
@@ -109,7 +195,19 @@ $1 ~ /##/ {
 
   if (l > -1) {
     len = length(lines)
+    discard = 0
+    if (len == 1) {
+      #found = discardParagraph(lines[0])
+      #if (found > 0) {
+      #  discard = 1
+      #}
+
+      # don't index one line paragraphs - most are banter
+      # discardParagraph determines if a one liner is kept
+      discard = discardParagraph(lines[0])
+    }
     printf "  %s{\n", needComma == "y" ? "," : ""
+    printf "    \"discard\": %u,\n", discard
     printf "    \"source\": \"%s\",\n", source
     printf "    \"book\": \"%s\",\n", book
     printf "    \"bid\": %s,\n", bookId(book)
@@ -118,6 +216,16 @@ $1 ~ /##/ {
     printf "    \"pid\": %s,\n", p
     for (line in lines) {
       raw = lines[line]
+      # remove html elements
+      gsub(/\&hellip;/, "", raw)
+      gsub(/ \&ndash; /, "", raw)
+      gsub(/\&ndash;/, " ", raw)
+      gsub(/ \&mdash; /, "", raw)
+      gsub(/\&mdash;/, " ", raw)
+      gsub(/\&ldquo;/, "", raw)
+      gsub(/\&rdquo;/, "", raw)
+      gsub(/\&lsquo;/, "", raw)
+      gsub(/\&rsquo;/, "", raw)
       # remove <p></p> 
       gsub(/<\/?p[^>]*>/,"",raw)
       # remove <span></span> 
@@ -130,6 +238,8 @@ $1 ~ /##/ {
       gsub(/[-—]/," ",raw)
       text = sprintf("%s %s", text, raw)
     }
+    # remove \%u200a
+    gsub(/ /, "", text)
     # remove leading space
     gsub(/^ */, "", text)
     # collapse two spaces into one

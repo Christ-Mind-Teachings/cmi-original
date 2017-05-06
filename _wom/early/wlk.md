@@ -224,13 +224,6 @@ were some that understood that and supported me, but there were many who
 were greatly troubled by what they perceived to be my rebelliousness, my
 lack of discipline, my lack of a sense of duty to tradition.
 
-<!--
-audio: 18:02
-
-Missing text: There were at those times many travelers that would come
-from the east and in one such journey...
--->
-
 I journeyed back, first to Egypt, and then back to Judaea, where I set
 about seeking out those who would support me and walk with me. You have
 known these as disciples; I prefer to call them friends. The abilities

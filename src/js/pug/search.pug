@@ -4,17 +4,75 @@
     var name;
     var number;
 
-    if (unit === "early") {
-      name = "Ooops...";
-    }
-    else if (unit.startsWith("chap")) {
+    if (unit.startsWith("chap")) {
       number = Number.parseInt(unit.substr(4, 2), 10);
       name = "Chapter " + number;
     }
-    else {
+    else if (unit.startsWith("l0") || unit.startsWith("l1")) {
       id = unit.substr(1);
       number = Number.parseInt(id);
       name = "Lesson " + number;
+    }
+    else {
+      switch(unit) {
+        case "ble":
+          name = "The Blessing of Forgiveness";
+          break;
+        case "c2s":
+          name = "Choose to See";
+          break;
+        case "com":
+          name = "Mastering Communication";
+          break;
+        case "dbc":
+          name = "Decide to be Christ";
+          break;
+        case "dth":
+          name = "Death and Earth Changes";
+          break;
+        case "fem":
+          name = "The Divine Feminine";
+          break;
+        case "gar":
+          name = "Grace as Reality";
+          break;
+        case "hea":
+          name = "Healing";
+          break;
+        case "hoe":
+          name = "Heaven on Earth";
+          break;
+        case "hoi":
+          name = "The Holy Instant";
+          break;
+        case "hsp":
+          name = "The Holy Spirit";
+          break;
+        case "ign":
+          name = "Ignorance is Bliss";
+          break;
+        case "joy1":
+          name = "Joy I";
+          break;
+        case "joy2":
+          name = "Joy II";
+          break;
+        case "moa":
+          name = "Meaning of Ascension";
+          break;
+        case "mot":
+          name = "Become the Master of Time";
+          break;
+        case "wak":
+          name = "Awakening";
+          break;
+        case "wlk":
+          name = "Walk with Me";
+          break;
+        default:
+          name = unit;
+          break;
+      }
     }
     return name;
   }

@@ -43,6 +43,8 @@ case $source in
       awkFile=$tjlAwk
     elif [ $book == "wos" ]; then
       awkFile=$wosAwk
+    elif [ $book == "early" ]; then
+      awkFile=$womAwk
     else
       awkFile=$womAwk
     fi

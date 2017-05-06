@@ -24,7 +24,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -41,7 +41,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -58,7 +58,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -75,7 +75,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -84,29 +84,15 @@
       "title": "Ignorance is Bliss",
       "url": "/wom/early/ign/",
       "idx": 4,
-      "next": "/wom/early/beg/",
-      "prev": "/wom/early/hoe/"
-    },
-    {
-      "fid": "beg/",
-      "complete": {
-        "format": 0,
-        "audio": 0,
-        "index": 0,
-        "fb": 0
-      },
-      "title": "In the Beginning",
-      "url": "/wom/early/beg/",
-      "idx": 5,
       "next": "/wom/early/com/",
-      "prev": "/wom/early/ign/"
+      "prev": "/wom/early/hoe/"
     },
     {
       "fid": "com/",
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "res": {
@@ -114,20 +100,20 @@
       },
       "title": "Mastering Communication",
       "url": "/wom/early/com/",
-      "idx": 6,
+      "idx": 5,
       "next": "/wom/early/dbc/",
-      "prev": "/wom/early/beg/"
+      "prev": "/wom/early/ign/"
     },
     {
       "fid": "dbc/",
       "complete": {
         "format": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "title": "Decide to be Christ",
       "url": "/wom/early/dbc/",
-      "idx": 7,
+      "idx": 6,
       "next": "/wom/early/dth/",
       "prev": "/wom/early/com/"
     },
@@ -139,12 +125,12 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "title": "Death and Earth Changes",
       "url": "/wom/early/dth/",
-      "idx": 8,
+      "idx": 7,
       "next": "/wom/early/fem/",
       "prev": "/wom/early/dbc/"
     },
@@ -156,12 +142,12 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "title": "The Divine Feminine",
       "url": "/wom/early/fem/",
-      "idx": 9,
+      "idx": 8,
       "next": "/wom/early/gar/",
       "prev": "/wom/early/dth/"
     },
@@ -173,124 +159,124 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "title": "Grace as Reality",
       "url": "/wom/early/gar/",
-      "idx": 10,
+      "idx": 9,
       "next": "/wom/early/hea/",
       "prev": "/wom/early/fem/"
     },
     {
       "fid": "hea/",
       "complete": {
-        "format": 0,
-        "audio": 0,
-        "index": 0,
+        "format": 1,
+        "index": 1,
         "fb": 0
       },
       "title": "Healing",
       "url": "/wom/early/hea/",
-      "idx": 11,
+      "idx": 10,
       "next": "/wom/early/hoi/",
       "prev": "/wom/early/gar/"
     },
     {
       "fid": "hoi/",
+      "res": {
+        "audio": "HOI.mp3"
+      },
       "complete": {
-        "format": 0,
-        "audio": 0,
-        "index": 0,
+        "format": 1,
+        "audio": 1,
+        "index": 1,
         "fb": 0
       },
       "title": "The Holy Instant",
       "url": "/wom/early/hoi/",
-      "idx": 12,
+      "idx": 11,
       "next": "/wom/early/hsp/",
       "prev": "/wom/early/hea/"
     },
     {
       "fid": "hsp/",
       "complete": {
-        "format": 0,
-        "audio": 0,
-        "index": 0,
+        "format": 1,
+        "index": 1,
         "fb": 0
       },
       "title": "The Holy Spirit",
       "url": "/wom/early/hsp/",
-      "idx": 13,
+      "idx": 12,
       "next": "/wom/early/joy1/",
       "prev": "/wom/early/hoi/"
     },
     {
       "fid": "joy1/",
       "complete": {
-        "format": 0,
-        "audio": 0,
-        "index": 0,
+        "format": 1,
+        "index": 1,
         "fb": 0
       },
       "title": "Joy I",
       "url": "/wom/early/joy1/",
-      "idx": 14,
+      "idx": 13,
       "next": "/wom/early/joy2/",
       "prev": "/wom/early/hsp/"
     },
     {
       "fid": "joy2/",
       "complete": {
-        "format": 0,
-        "audio": 0,
-        "index": 0,
+        "format": 1,
+        "index": 1,
         "fb": 0
       },
       "title": "Joy II",
       "url": "/wom/early/joy2/",
-      "idx": 15,
+      "idx": 14,
       "next": "/wom/early/moa/",
       "prev": "/wom/early/joy1/"
     },
     {
       "fid": "moa/",
+      "res": {
+        "audio": "MOA.mp3"
+      },
       "complete": {
-        "format": 0,
-        "audio": 0,
-        "index": 0,
+        "format": 1,
+        "audio": 1,
+        "index": 1,
         "fb": 0
       },
       "title": "Meaning of Ascension",
       "url": "/wom/early/moa/",
-      "idx": 16,
+      "idx": 15,
       "next": "/wom/early/mot/",
       "prev": "/wom/early/joy2/"
     },
     {
       "fid": "mot/",
       "complete": {
-        "format": 0,
-        "audio": 0,
-        "index": 0,
+        "format": 1,
+        "index": 1,
         "fb": 0
       },
       "title": "Become the Master of Time",
       "url": "/wom/early/mot/",
-      "idx": 17,
+      "idx": 16,
       "next": "/wom/early/wak/",
       "prev": "/wom/early/moa/"
     },
     {
       "fid": "wak/",
       "complete": {
-        "format": 0,
-        "audio": 0,
-        "index": 0,
+        "format": 1,
+        "index": 1,
         "fb": 0
       },
       "title": "Awakening",
       "url": "/wom/early/wak/",
-      "idx": 18,
+      "idx": 17,
       "next": "/wom/early/wlk/",
       "prev": "/wom/early/mot/"
     },
@@ -302,12 +288,12 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 1
       },
       "title": "Walk with Me",
       "url": "/wom/early/wlk/",
-      "idx": 19,
+      "idx": 18,
       "next": "/wom/intro/early/",
       "prev": "/wom/early/wak/"
     }

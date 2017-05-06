@@ -13,7 +13,5 @@ fi
 
 # ./prep_all.sh
 
-for i in woh wot wok tjl wos early; do
-cat ${i}.txt | xargs ./load -t wom -e $db > ${i}.log
-done
+cat early.txt | xargs ./load -t wom -e $db > early.log
 
