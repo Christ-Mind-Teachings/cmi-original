@@ -1,5 +1,5 @@
 ---
-title: "Death and Earth Changes - <small><a href='/wom/early/dth/#question-one'>Question One</a></small>"
+title: "Death and Earth Changes - <small><a href='/wom/early/dth/#question-ten'>Question Ten</a></small>"
 ---
 
 ### Question

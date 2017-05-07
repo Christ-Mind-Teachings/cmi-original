@@ -91,7 +91,7 @@ certain ideas you have taken upon yourself about what non-physical
 realities must be and be like, and what must occur for you to experience
 them.
 
-And again, ‘tis a good question to have asked.
+And again, it is a good question to have asked.
 
 No more questions.
 

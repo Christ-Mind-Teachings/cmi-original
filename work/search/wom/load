@@ -83,7 +83,7 @@ function load(table, fileName, verify) {
 
       //we discard some one line paragraphs for tjl
       // - like, amen, now we begin
-      if (discard === 1 && p.bid > 3) {
+      if (discard > 0 && p.bid > 3) {
         discarded++;
         return;
       }

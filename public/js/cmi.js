@@ -22340,9 +22340,9 @@ module.exports = {
 
     puglatizer["nwffacim"] = function template(a){var t,r,e,n="",u={};try{var i=a||{};(function(a,r,i,s){function o(t){var r=["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],e=a.parseInt(t.substr(0,2),10),n=a.parseInt(t.substr(4,2),10),u=a.parseInt(t.substr(2,2),10),i=(n>50?"19":"20")+t.substr(4,2),s=r[e]+" "+u+", "+i;return s}function l(a){return"g000002"===a?"Authors Note":"g000003"===a?"Foreword":o(a.substr(1))}function c(a){return"acknowledgements"==a?"Acknowledgements":"foreword"==a?"Foreword":"afterword"==a?"Afterword":o(a)}function f(a){return o(a)}function d(a,t){return"grad"===a?l(t):"yaa"===a?c(t):f(t)}e=1,e=53,u.hitList=t=function(a,r,u){this&&this.block,this&&this.attributes||{};e=54;var i=u.length;e=55,n+="<h3>",e=55,n=n+pug.escape(null==(t=a+" ("+i+")")?"":t)+"</h3>",e=56,n+='<ul class="fa-ul">',e=57,function(){var a=u;if("number"==typeof a.length)for(var i=0,s=a.length;s>i;i++){var o=a[i];e=58;var l=o.base+"?s=show"+o.location;e=59;var c=d(r,o.unit);e=60,n+="<li>",e=60,n+='<i class="fa fa-search">',e=61,n=n+"<a"+pug.attr("href",l,!0,!1)+">",e=61,n+="&nbsp; ",e=61,n=n+pug.escape(null==(t=c)?"":t)+"</a>",e=62,n+="<p>",e=62,n=n+(null==(t=o.context)?"":t)+"</p></i></li>"}else{var s=0;for(var i in a){s++;var o=a[i];e=58;var l=o.base+"?s=show"+o.location;e=59;var c=d(r,o.unit);e=60,n+="<li>",e=60,n+='<i class="fa fa-search">',e=61,n=n+"<a"+pug.attr("href",l,!0,!1)+">",e=61,n+="&nbsp; ",e=61,n=n+pug.escape(null==(t=c)?"":t)+"</a>",e=62,n+="<p>",e=62,n=n+(null==(t=o.context)?"":t)+"</p></i></li>"}}}.call(this),n+="</ul>"},e=64,s&&(e=65,u.hitList("You Are the Answer","yaa",s)),e=66,i&&(e=67,u.hitList("Graduation","grad",i)),e=68,r&&(e=69,u.hitList("ACIM Study Group - 2002","acim",r))}).call(this,"Number"in i?i.Number:"undefined"!=typeof Number?Number:void 0,"a2002"in i?i.a2002:"undefined"!=typeof a2002?a2002:void 0,"grad"in i?i.grad:"undefined"!=typeof grad?grad:void 0,"yaa"in i?i.yaa:"undefined"!=typeof yaa?yaa:void 0)}catch(s){pug.rethrow(s,r,e)}return n};
 
-    puglatizer["search"] = function template(e){var a,t,s,i="",n={};try{var o=e||{};(function(e,t,o,r,h,l,c){function f(a){var t,s,i;if(a.startsWith("chap"))i=e.parseInt(a.substr(4,2),10),s="Chapter "+i;else if(a.startsWith("l0")||a.startsWith("l1"))t=a.substr(1),i=e.parseInt(t),s="Lesson "+i;else switch(a){case"ble":s="The Blessing of Forgiveness";break;case"c2s":s="Choose to See";break;case"com":s="Mastering Communication";break;case"dbc":s="Decide to be Christ";break;case"dth":s="Death and Earth Changes";break;case"fem":s="The Divine Feminine";break;case"gar":s="Grace as Reality";break;case"hea":s="Healing";break;case"hoe":s="Heaven on Earth";break;case"hoi":s="The Holy Instant";break;case"hsp":s="The Holy Spirit";break;case"ign":s="Ignorance is Bliss";break;case"joy1":s="Joy I";break;case"joy2":s="Joy II";break;case"moa":s="Meaning of Ascension";break;case"mot":s="Become the Master of Time";break;case"wak":s="Awakening";break;case"wlk":s="Walk with Me";break;default:s=a}return s}s=1,s=80,n.hitList=a=function(e,t){this&&this.block,this&&this.attributes||{};s=81,i+="<h3>",s=81,i=i+pug.escape(null==(a=e)?"":a)+"</h3>",s=82,i+='<ul class="fa-ul">',s=83,function(){var e=t;if("number"==typeof e.length)for(var n=0,o=e.length;o>n;n++){var r=e[n];s=84;var h=r.base+"?s=show"+r.location;s=85;var l=f(r.unit);s=86,i+="<li>",s=86,i+='<i class="fa fa-search">',s=87,i=i+"<a"+pug.attr("href",h,!0,!1)+">",s=87,i+="&nbsp; ",s=87,i=i+pug.escape(null==(a=l)?"":a)+"</a>",s=88,i+="<p>",s=88,i=i+(null==(a=r.context)?"":a)+"</p></i></li>"}else{var o=0;for(var n in e){o++;var r=e[n];s=84;var h=r.base+"?s=show"+r.location;s=85;var l=f(r.unit);s=86,i+="<li>",s=86,i+='<i class="fa fa-search">',s=87,i=i+"<a"+pug.attr("href",h,!0,!1)+">",s=87,i+="&nbsp; ",s=87,i=i+pug.escape(null==(a=l)?"":a)+"</a>",s=88,i+="<p>",s=88,i=i+(null==(a=r.context)?"":a)+"</p></i></li>"}}}.call(this),i+="</ul>"},s=90,r&&(s=91,n.hitList("Way of the Heart",r)),s=92,c&&(s=93,n.hitList("Way of Transformation",c)),s=94,h&&(s=95,n.hitList("Way of Knowning",h)),s=96,l&&(s=97,n.hitList("Way of the Servant",l)),s=98,o&&(s=99,n.hitList("The Jeshua Letters",o)),s=100,t&&(s=101,n.hitList("The Early Years",t))}).call(this,"Number"in o?o.Number:"undefined"!=typeof Number?Number:void 0,"early"in o?o.early:"undefined"!=typeof early?early:void 0,"tjl"in o?o.tjl:"undefined"!=typeof tjl?tjl:void 0,"woh"in o?o.woh:"undefined"!=typeof woh?woh:void 0,"wok"in o?o.wok:"undefined"!=typeof wok?wok:void 0,"wos"in o?o.wos:"undefined"!=typeof wos?wos:void 0,"wot"in o?o.wot:"undefined"!=typeof wot?wot:void 0)}catch(r){pug.rethrow(r,t,s)}return i};
+    puglatizer["search"] = function template(e){var a,s,t,i="",n={};try{var o=e||{};(function(e,s,o,r,c,h,l,u){function f(a){var s,t,i,n,o=!1,r=a;if(a.startsWith("chap"))i=e.parseInt(a.substr(4,2),10),t="Chapter "+i;else if(a.startsWith("l0")||a.startsWith("l1"))s=a.substr(1),i=e.parseInt(s),t="Lesson "+i;else switch(a.length>3&&(o=!0,n=a.substr(4),r=a.substr(0,3)),r){case"h01":case"h02":case"h06":case"h07":case"h08":case"h09":case"h10":case"h11":case"h12":t="Way of the Heart: Lesson ",s=e.parseInt(r.substr(1,2),10),t+=s;break;case"t01":case"t06":case"t07":case"t09":case"t11":t="Way of Transformation: Lesson ",s=e.parseInt(r.substr(1,2),10),t+=s;break;case"k02":case"k03":case"k04":case"k06":case"k10":t="Way of Knowing: Lesson ",s=e.parseInt(r.substr(1,2),10),t+=s;break;case"ble":t="The Blessing of Forgiveness";break;case"c2s":t="Choose to See";break;case"com":t="Mastering Communication";break;case"dbc":t="Decide to be Christ";break;case"dth":t="Death and Earth Changes";break;case"fem":t="The Divine Feminine";break;case"gar":t="Grace as Reality";break;case"hea":t="Healing";break;case"hoe":t="Heaven on Earth";break;case"hoi":t="The Holy Instant";break;case"hsp":t="The Holy Spirit";break;case"ign":t="Ignorance is Bliss";break;case"joy":t="1"===a.charAt(3)?"Joy I":"Joy II",o=!1;break;case"moa":t="Meaning of Ascension";break;case"mot":t="Become the Master of Time";break;case"wak":t="Awakening";break;case"wlk":t="Walk with Me";break;default:t=r}return o&&(t=t+" - Question "+n),t}t=1,t=128,n.hitList=a=function(e,s){this&&this.block,this&&this.attributes||{};t=129,i+="<h3>",t=129,i=i+pug.escape(null==(a=e)?"":a)+"</h3>",t=130,i+='<ul class="fa-ul">',t=131,function(){var e=s;if("number"==typeof e.length)for(var n=0,o=e.length;o>n;n++){var r=e[n];t=132;var c=r.base+"?s=show"+r.location;t=133;var h=f(r.unit);t=134,i+="<li>",t=134,i+='<i class="fa fa-search">',t=135,i=i+"<a"+pug.attr("href",c,!0,!1)+">",t=135,i+="&nbsp; ",t=135,i=i+pug.escape(null==(a=h)?"":a)+"</a>",t=136,i+="<p>",t=136,i=i+(null==(a=r.context)?"":a)+"</p></i></li>"}else{var o=0;for(var n in e){o++;var r=e[n];t=132;var c=r.base+"?s=show"+r.location;t=133;var h=f(r.unit);t=134,i+="<li>",t=134,i+='<i class="fa fa-search">',t=135,i=i+"<a"+pug.attr("href",c,!0,!1)+">",t=135,i+="&nbsp; ",t=135,i=i+pug.escape(null==(a=h)?"":a)+"</a>",t=136,i+="<p>",t=136,i=i+(null==(a=r.context)?"":a)+"</p></i></li>"}}}.call(this),i+="</ul>"},t=138,c&&(t=139,n.hitList("Way of the Heart",c)),t=140,u&&(t=141,n.hitList("Way of Transformation",u)),t=142,h&&(t=143,n.hitList("Way of Knowning",h)),t=144,l&&(t=145,n.hitList("Way of the Servant",l)),t=146,r&&(t=147,n.hitList("The Jeshua Letters",r)),t=148,s&&(t=149,n.hitList("The Early Years",s)),t=150,o&&(t=151,n.hitList("Question and Answers",o))}).call(this,"Number"in o?o.Number:"undefined"!=typeof Number?Number:void 0,"early"in o?o.early:"undefined"!=typeof early?early:void 0,"questions"in o?o.questions:"undefined"!=typeof questions?questions:void 0,"tjl"in o?o.tjl:"undefined"!=typeof tjl?tjl:void 0,"woh"in o?o.woh:"undefined"!=typeof woh?woh:void 0,"wok"in o?o.wok:"undefined"!=typeof wok?wok:void 0,"wos"in o?o.wos:"undefined"!=typeof wos?wos:void 0,"wot"in o?o.wot:"undefined"!=typeof wot?wot:void 0)}catch(r){pug.rethrow(r,s,t)}return i};
 
-    puglatizer["wom"] = function template(t){var e,i,a,n="",o={};try{var s=t||{};(function(t,i,s,r,l,u,h){function f(e){var i,a,n;return"early"===e?a="Ooops...":e.startsWith("chap")?(n=t.parseInt(e.substr(4,2),10),a="Chapter "+n):(i=e.substr(1),n=t.parseInt(i,10),a="Lesson "+n),a}a=1,a=22,o.hitList=e=function(t,i){this&&this.block,this&&this.attributes||{};a=23,n+="<h3>",a=23,n=n+pug.escape(null==(e=t)?"":e)+"</h3>",a=24,n+='<ul class="fa-ul">',a=25,function(){var t=i;if("number"==typeof t.length)for(var o=0,s=t.length;s>o;o++){var r=t[o];a=26;var l=r.base+"?s=show"+r.location;a=27;var u=f(r.unit);a=28,n+="<li>",a=28,n+='<i class="fa fa-search">',a=29,n=n+"<a"+pug.attr("href",l,!0,!1)+">",a=29,n+="&nbsp; ",a=29,n=n+pug.escape(null==(e=u)?"":e)+"</a>",a=30,n+="<p>",a=30,n=n+(null==(e=r.context)?"":e)+"</p></i></li>"}else{var s=0;for(var o in t){s++;var r=t[o];a=26;var l=r.base+"?s=show"+r.location;a=27;var u=f(r.unit);a=28,n+="<li>",a=28,n+='<i class="fa fa-search">',a=29,n=n+"<a"+pug.attr("href",l,!0,!1)+">",a=29,n+="&nbsp; ",a=29,n=n+pug.escape(null==(e=u)?"":e)+"</a>",a=30,n+="<p>",a=30,n=n+(null==(e=r.context)?"":e)+"</p></i></li>"}}}.call(this),n+="</ul>"},a=32,r&&(a=33,o.hitList("Way of the Heart",r)),a=34,h&&(a=35,o.hitList("Way of Transformation",h)),a=36,l&&(a=37,o.hitList("Way of Knowning",l)),a=38,u&&(a=39,o.hitList("Way of the Servant",u)),a=40,s&&(a=41,o.hitList("The Jeshua Letters",s)),a=42,i&&(a=43,o.hitList("The Early Years",i))}).call(this,"Number"in s?s.Number:"undefined"!=typeof Number?Number:void 0,"early"in s?s.early:"undefined"!=typeof early?early:void 0,"tjl"in s?s.tjl:"undefined"!=typeof tjl?tjl:void 0,"woh"in s?s.woh:"undefined"!=typeof woh?woh:void 0,"wok"in s?s.wok:"undefined"!=typeof wok?wok:void 0,"wos"in s?s.wos:"undefined"!=typeof wos?wos:void 0,"wot"in s?s.wot:"undefined"!=typeof wot?wot:void 0)}catch(r){pug.rethrow(r,i,a)}return n};
+    puglatizer["wom"] = function template(t){var e,i,n,o="",s={};try{var a=t||{};(function(t,i,a,r,u,l,h,f){function p(e){var i,n,o;return"early"===e?n="Ooops...":e.startsWith("chap")?(o=t.parseInt(e.substr(4,2),10),n="Chapter "+o):(i=e.substr(1),o=t.parseInt(i,10),n="Lesson "+o),n}n=1,n=22,s.hitList=e=function(t,i){this&&this.block,this&&this.attributes||{};n=23,o+="<h3>",n=23,o=o+pug.escape(null==(e=t)?"":e)+"</h3>",n=24,o+='<ul class="fa-ul">',n=25,function(){var t=i;if("number"==typeof t.length)for(var s=0,a=t.length;a>s;s++){var r=t[s];n=26;var u=r.base+"?s=show"+r.location;n=27;var l=p(r.unit);n=28,o+="<li>",n=28,o+='<i class="fa fa-search">',n=29,o=o+"<a"+pug.attr("href",u,!0,!1)+">",n=29,o+="&nbsp; ",n=29,o=o+pug.escape(null==(e=l)?"":e)+"</a>",n=30,o+="<p>",n=30,o=o+(null==(e=r.context)?"":e)+"</p></i></li>"}else{var a=0;for(var s in t){a++;var r=t[s];n=26;var u=r.base+"?s=show"+r.location;n=27;var l=p(r.unit);n=28,o+="<li>",n=28,o+='<i class="fa fa-search">',n=29,o=o+"<a"+pug.attr("href",u,!0,!1)+">",n=29,o+="&nbsp; ",n=29,o=o+pug.escape(null==(e=l)?"":e)+"</a>",n=30,o+="<p>",n=30,o=o+(null==(e=r.context)?"":e)+"</p></i></li>"}}}.call(this),o+="</ul>"},n=32,u&&(n=33,s.hitList("Way of the Heart",u)),n=34,f&&(n=35,s.hitList("Way of Transformation",f)),n=36,l&&(n=37,s.hitList("Way of Knowning",l)),n=38,h&&(n=39,s.hitList("Way of the Servant",h)),n=40,r&&(n=41,s.hitList("The Jeshua Letters",r)),n=42,i&&(n=43,s.hitList("The Early Years",i)),n=44,a&&(n=45,s.hitList("Question and Answers",a))}).call(this,"Number"in a?a.Number:"undefined"!=typeof Number?Number:void 0,"early"in a?a.early:"undefined"!=typeof early?early:void 0,"questions"in a?a.questions:"undefined"!=typeof questions?questions:void 0,"tjl"in a?a.tjl:"undefined"!=typeof tjl?tjl:void 0,"woh"in a?a.woh:"undefined"!=typeof woh?woh:void 0,"wok"in a?a.wok:"undefined"!=typeof wok?wok:void 0,"wos"in a?a.wos:"undefined"!=typeof wos?wos:void 0,"wot"in a?a.wot:"undefined"!=typeof wot?wot:void 0)}catch(r){pug.rethrow(r,i,n)}return o};
 
 
     return puglatizer;
@@ -22380,6 +22380,7 @@ module.exports = function() {
 },{}],95:[function(require,module,exports){
 "use strict";
 
+var notify = require("toastr");
 var store = require("store");
 var url = require("../util/url");
 var config = require("../config/config");
@@ -22391,6 +22392,12 @@ var setStartTime = function(p) {
 var searchResults;
 var currentMatchIndex = 0;
 var matchArray = [];
+var markFailure = 0;
+var notifyMarkFailure = false;
+
+function showMessage(msg) {
+  notify.info(msg);
+}
 
 //display document info on search navigator
 function setSearchDocument(data) {
@@ -22495,6 +22502,7 @@ function markSearchHits(searchHits, searchData, state) {
     //test if query was highlighted
     if (el.innerHTML === content) {
       console.log("Regex did not match: \"%s\" for %s", searchData.query, id);
+      markFailure++;
     }
   }
 }
@@ -22668,10 +22676,14 @@ module.exports = {
       if (s) {
         markSearchHits(searchMatchInfo.matches, searchResults, "show");
 
-        //don't show navigator if search has only one match, there is
-        //no where to navigate to
         if (searchMatchInfo.showPlayer) {
           $(".search-results-wrapper").removeClass("hide-player");
+
+          //notify user some search hits failed to be highlighted
+          if (markFailure > 0) {
+            showMessage("Failed to highlight " + markFailure + " search matche(s)");
+            notifyMarkFailure = true;
+          }
         }
       }
       else {
@@ -22691,6 +22703,11 @@ module.exports = {
         if ($(".search-results-wrapper").hasClass("hide-player")) {
           $(".search-results-wrapper").removeClass("hide-player");
           showSearchHits();
+
+          if (markFailure > 0 && !notifyMarkFailure) {
+            showMessage("Failed to highlight " + markFailure + " search matche(s)");
+            notifyMarkFailure = true;
+          }
         }
         else {
           $(".search-results-wrapper").addClass("hide-player");
@@ -22704,7 +22721,7 @@ module.exports = {
   }
 };
 
-},{"../config/config":85,"../util/url":106,"store":62,"underscore":76}],96:[function(require,module,exports){
+},{"../config/config":85,"../util/url":106,"store":62,"toastr":75,"underscore":76}],96:[function(require,module,exports){
 "use strict";
 
 var url = require("../util/url");

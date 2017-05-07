@@ -3,6 +3,10 @@
     var id;
     var name;
     var number;
+    var isQuestion = false;
+    var isWom = false;
+    var qNum;
+    var uKnit = unit;
 
     if (unit.startsWith("chap")) {
       number = Number.parseInt(unit.substr(4, 2), 10);
@@ -14,7 +18,43 @@
       name = "Lesson " + number;
     }
     else {
-      switch(unit) {
+      if (unit.length > 3) {
+        isQuestion = true;
+        qNum = unit.substr(4);
+        uKnit = unit.substr(0,3);
+      }
+      switch(uKnit) {
+        case "h01":
+        case "h02":
+        case "h06":
+        case "h07":
+        case "h08":
+        case "h09":
+        case "h10":
+        case "h11":
+        case "h12":
+          name = "Way of the Heart: Lesson ";
+          id = Number.parseInt(uKnit.substr(1,2),10);
+          name = name + id;
+          break;
+        case "t01":
+        case "t06":
+        case "t07":
+        case "t09":
+        case "t11":
+          name = "Way of Transformation: Lesson ";
+          id = Number.parseInt(uKnit.substr(1,2),10);
+          name = name + id;
+          break;
+        case "k02":
+        case "k03":
+        case "k04":
+        case "k06":
+        case "k10":
+          name = "Way of Knowing: Lesson ";
+          id = Number.parseInt(uKnit.substr(1,2),10);
+          name = name + id;
+          break;
         case "ble":
           name = "The Blessing of Forgiveness";
           break;
@@ -51,11 +91,15 @@
         case "ign":
           name = "Ignorance is Bliss";
           break;
-        case "joy1":
-          name = "Joy I";
-          break;
-        case "joy2":
-          name = "Joy II";
+        case "joy":
+          if (unit.charAt(3) === "1") {
+            name = "Joy I";
+          }
+          else {
+            name = "Joy II";
+          }
+          //no questions for joy1 and joy2, disable
+          isQuestion = false;
           break;
         case "moa":
           name = "Meaning of Ascension";
@@ -70,9 +114,13 @@
           name = "Walk with Me";
           break;
         default:
-          name = unit;
+          name = uKnit;
           break;
       }
+    }
+
+    if (isQuestion) {
+      name = name + " - Question " + qNum;
     }
     return name;
   }
@@ -99,4 +147,6 @@ if tjl
   +hitList("The Jeshua Letters", tjl)
 if early
   +hitList("The Early Years", early)
+if questions
+  +hitList("Question and Answers", questions)
 

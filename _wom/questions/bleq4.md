@@ -38,15 +38,13 @@ The desire for freedom to be made manifest upon the planet, that’s
 coming forth, pouring forth, from a lot of our hearts.
 
 From the One Heart. Indeed, beloved brother, beloved friend, well have
-you spoken &ndash;&ndash; for in truth, that which is being called 12/12
+you spoken &ndash; for in truth, that which is being called 12/12
 symbolizes an expression of the desire of the One Mind to awaken from
 its dream. And have we not said that there are four Keys to the Kingdom?
 And is not the first Desire? Therefore, you see, you did get it, right
 from the very core of the deepest Truth. It is an expression of the
 desire of the Mind of Christ to give up the dream of the dreamer. So,
 you see, you knew after all.
-
-Mmmm.
 
 Beloved friend, there is only a small trace left of the deep pattern or
 tendency you’ve been dissolving through many lifetimes &ndash; the
@@ -61,10 +59,10 @@ Yay. Yay!
 
 Yet another timely question. So, how are you all doing?
 
-These (what you call) gatherings of the family will now commence; and
-will grow.  And remember &ndash;&ndash; with patience, without doubt,
+These, what you call, gatherings of the family will now commence; and
+will grow.  And remember &ndash; with patience, without doubt,
 trusting and allowing the perfect unfoldment. And if you think it’s not
-unfolding perfectly, don’t look outside yourself &ndash;&ndash; go back
+unfolding perfectly, don’t look outside yourself &ndash; go back
 to the question:
 
 > Did I love myself today? How many times did I express forgiveness to
@@ -88,7 +86,7 @@ world, and in that moment so did you. If it is completed in me, it must
 be completed in you because there is only One of us here. Can you, then,
 accept that you’ve already faced Crucifixion? You don’t have to repeat
 the process.  Can you accept that the Ascension is already done? Can you
-be &ndash;&ndash; will you be–the embodiment of the Truth that sets all
+be &ndash; will you be–the embodiment of the Truth that sets all
 things free? Can there be any other use of time?
 
 Blessings then be upon the One who shines brightly forever in the Mind

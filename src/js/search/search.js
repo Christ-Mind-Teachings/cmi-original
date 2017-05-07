@@ -1,5 +1,6 @@
 "use strict";
 
+var notify = require("toastr");
 var store = require("store");
 var url = require("../util/url");
 var config = require("../config/config");
@@ -11,6 +12,12 @@ var setStartTime = function(p) {
 var searchResults;
 var currentMatchIndex = 0;
 var matchArray = [];
+var markFailure = 0;
+var notifyMarkFailure = false;
+
+function showMessage(msg) {
+  notify.info(msg);
+}
 
 //display document info on search navigator
 function setSearchDocument(data) {
@@ -115,6 +122,7 @@ function markSearchHits(searchHits, searchData, state) {
     //test if query was highlighted
     if (el.innerHTML === content) {
       console.log("Regex did not match: \"%s\" for %s", searchData.query, id);
+      markFailure++;
     }
   }
 }
@@ -288,10 +296,14 @@ module.exports = {
       if (s) {
         markSearchHits(searchMatchInfo.matches, searchResults, "show");
 
-        //don't show navigator if search has only one match, there is
-        //no where to navigate to
         if (searchMatchInfo.showPlayer) {
           $(".search-results-wrapper").removeClass("hide-player");
+
+          //notify user some search hits failed to be highlighted
+          if (markFailure > 0) {
+            showMessage("Failed to highlight " + markFailure + " search matche(s)");
+            notifyMarkFailure = true;
+          }
         }
       }
       else {
@@ -311,6 +323,11 @@ module.exports = {
         if ($(".search-results-wrapper").hasClass("hide-player")) {
           $(".search-results-wrapper").removeClass("hide-player");
           showSearchHits();
+
+          if (markFailure > 0 && !notifyMarkFailure) {
+            showMessage("Failed to highlight " + markFailure + " search matche(s)");
+            notifyMarkFailure = true;
+          }
         }
         else {
           $(".search-results-wrapper").addClass("hide-player");
