@@ -3,13 +3,22 @@ layout: page
 title: Library Supporters
 ---
 
-Name | Item 
---- | ---
-Julie Franklin | Timing: NWFFACIM Jul 31, 2002
- "   | Timing: NWFFACIM Aug 7, 2002
- "   | Format: NWFFACIM May 3, 2015
- "   | Format: NWFFACIM May 9, 2015
- "   | Format: NWFFACIM May 17, 2015
- "   | Format: NWFFACIM Jul 3, 2016
- "   | Timing: NWFFACIM Jul 3, 2016
- "   | Format: NWFFACIM Jul 16, 2016
+A *very big* thank you to those supporting the Library.
+
+<ul class="fa-ul">
+  <li><i class="fa fa-li fa-thumbs-o-up"></i> Muchos Gracias</li>
+  <li><i class="fa fa-li fa-hand-peace-o"></i> Terima Kasih</li>
+  <li><i class="fa fa-li fa-heart-o"></i> Suksemo</li>
+</ul>
+
+Name | Task | Source | Book | Item 
+--- | --- | --- | ---
+Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
+ "   | Timing | NWFFACIM | Study Group | Aug 07, 2002
+ "   | Format | NWFFACIM | Study Group | Apr 13, 2014
+ "   | Format | NWFFACIM | Study Group | May 03, 2015
+ "   | Format | NWFFACIM | Study Group | May 09, 2015
+ "   | Format | NWFFACIM | Study Group | May 17, 2015
+ "   | Format | NWFFACIM | Study Group | Jul 03, 2016
+ "   | Timing | NWFFACIM | Study Group | Jul 03, 2016
+ "   | Format | NWFFACIM | Study Group | Jul 16, 2016

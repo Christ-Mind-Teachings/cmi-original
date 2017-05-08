@@ -4,7 +4,7 @@
   {% assign description = page.fb.desc | default: page.title %}
 {% else %}
   {% assign type = "website" %}
-  {% assign description = site.description %}
+  {% assign description = page.fb.desc | site.description %}
 {% endif %}
 
 <!-- facebook -->

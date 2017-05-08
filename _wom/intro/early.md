@@ -10,7 +10,7 @@ burl: /wom/intro/early/
 nav: nav/np-data.html
 bid: "early"
 fb:
-  desc: "Way of Mastery recordings from before The Way of the Heart"
+  desc: "The Early Years: Way of Mastery recordings from before The Way of the Heart"
   image:
   - "wom/earlyyears-cover.jpg"
   - "wom/ign.jpg"

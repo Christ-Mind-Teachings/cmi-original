@@ -8,6 +8,18 @@ surl: /wom/intro/wom/
 sidebar: sidebar.html
 intro: "wom"
 xfooter-id: wom
+fb:
+  desc: Visit the Library and discover the Way of Mastery, Jeshua's
+    sharing of love and truth through Jayem. Included are the Jeshua
+    Letters, the Way of the Servant, the Way of the Heart, the Way of
+    Transformation, the Way of Knowing, the Early Years, and Q&A. The
+    Library includes the original audio and the ability to search
+    all volumes.
+  image:
+    - wom/wom-books.jpg
+    - wom/wom-logo-books-bali.jpg
+    - wom/wom-logo.jpg
+    - wom/earlyyears-cover.jpg
 ---
 
 <div markdown="1" class="container content">

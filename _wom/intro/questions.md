@@ -12,6 +12,11 @@ contents: nav/contents.html
 bid: "questions"
 tabs: true
 fa: true
+fb:
+  desc: "Way of Mastery Q&A: Answers to questions asked of Jeshua
+    throughout the Way of Mastery recordings."
+  image:
+    - "wom/wom-books.jpg"
 ---
 
   <div class="custom-side-image">

@@ -9,6 +9,14 @@ book: The Jeshua Letters
 burl: /wom/intro/tjl/
 nav: nav/np-data.html
 bid: "tjl"
+fb:
+  desc: Jayem’s account of his first meetings with Jeshua and the
+    beautiful introduction to the pathway of awakening revealed
+    in their conversation.
+  image:
+    - wom/tjl-cover-sm.jpg
+    - wom/tjl-fcover-lulu.jpg
+    - wom/tjl-cover-3d.png
 ---
 
 <div class="custom-side-image">

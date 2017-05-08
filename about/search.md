@@ -50,8 +50,8 @@ The Way of the Servant | X | -
 Way of the Heart | X | -
 Way of Transformation | X | -
 Way of Knowing | X | -
-The Early Years | - | X
-Questions | - | X
+The Early Years | X | -
+Questions | X | -
 
 #### Northwest Foundation for ACIM
 

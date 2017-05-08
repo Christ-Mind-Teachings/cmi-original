@@ -395,13 +395,13 @@ colors:
 
 # Exclusions from the final site
 exclude: [
-  #        _wom/woh,
+  #       _wom/woh,
   #        _wom/wot,
   #        _wom/wok,
   #        _wom/early,
   #        _wom/tjl,
   #        _wom/wos,
-  ##        _wom/questions,
+  #       _wom/questions,
   #        _nwffacim/grad,
   #        _nwffacim/yaa,
   #        _nwffacim/2002,
@@ -416,7 +416,7 @@ exclude: [
   #        _nwffacim/2011,
   #        _nwffacim/2012,
   #       _nwffacim/2013,
-  #        _nwffacim/2014,
+  #       _nwffacim/2014,
   #      _nwffacim/2015,
   #       _nwffacim/2016,
   work, bin, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules

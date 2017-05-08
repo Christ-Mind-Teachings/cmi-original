@@ -1,36 +1,129 @@
-var cmiAudioTimingData = { title: 'Way of the Heart - Lesson Two',
-  time: 
-   [ { id: 'p0', seconds: 0 },
-     { id: 'p1', seconds: 7.736 },
-     { id: 'p2', seconds: 46.635 },
-     { id: 'p3', seconds: 135.406 },
-     { id: 'p4', seconds: 231.248 },
-     { id: 'p5', seconds: 320.544 },
-     { id: 'p6', seconds: 341.023 },
-     { id: 'p7', seconds: 370.117 },
-     { id: 'p8', seconds: 433.597 },
-     { id: 'p9', seconds: 497.221 },
-     { id: 'p10', seconds: 509.901 },
-     { id: 'p11', seconds: 535.043 },
-     { id: 'p12', seconds: 562.706 },
-     { id: 'p13', seconds: 568.445 },
-     { id: 'p14', seconds: 598.914 },
-     { id: 'p15', seconds: 639.27 },
-     { id: 'p16', seconds: 649.239 },
-     { id: 'p17', seconds: 665.329 },
-     { id: 'p18', seconds: 734.896 },
-     { id: 'p19', seconds: 751.051 },
-     { id: 'p20', seconds: 785.816 },
-     { id: 'p21', seconds: 834.56 },
-     { id: 'p22', seconds: 871.746 },
-     { id: 'p23', seconds: 959.228 },
-     { id: 'p24', seconds: 1020.145 },
-     { id: 'p25', seconds: 1056.478 },
-     { id: 'p26', seconds: 1061.035 },
-     { id: 'p27', seconds: 1065.213 },
-     { id: 'p28', seconds: 1085.152 },
-     { id: 'p29', seconds: 1099.004 },
-     { id: 'p30', seconds: 1129.246 },
-     { id: 'p31', seconds: 1141.535 },
-     { id: 'p32', seconds: 1200.258 },
-     { id: 'p33', seconds: 1269.614 } ] };
+var cmiAudioTimingData = {
+    "base": "/wom/woh/l02/",
+    "complete": false,
+    "title": "Way of the Heart - Lesson Two",
+    "time": [{
+        "id": "p0",
+        "seconds": 0
+    }, {
+        "id": "p1",
+        "seconds": 6.741111
+    }, {
+        "id": "p2",
+        "seconds": 46.788934
+    }, {
+        "id": "p3",
+        "seconds": 135.399115
+    }, {
+        "id": "p4",
+        "seconds": 231.311587
+    }, {
+        "id": "p5",
+        "seconds": 319.927687
+    }, {
+        "id": "p6",
+        "seconds": 341.270839
+    }, {
+        "id": "p7",
+        "seconds": 369.763174
+    }, {
+        "id": "p8",
+        "seconds": 433.389251
+    }, {
+        "id": "p9",
+        "seconds": 496.475461
+    }, {
+        "id": "p10",
+        "seconds": 509.84927
+    }, {
+        "id": "p11",
+        "seconds": 535.473103
+    }, {
+        "id": "p12",
+        "seconds": 562.206935
+    }, {
+        "id": "p13",
+        "seconds": 568.759134
+    }, {
+        "id": "p14",
+        "seconds": 598.926957
+    }, {
+        "id": "p15",
+        "seconds": 639.03283
+    }, {
+        "id": "p16",
+        "seconds": 650.696005
+    }, {
+        "id": "p17",
+        "seconds": 663.516118
+    }, {
+        "id": "p18",
+        "seconds": 735.218613
+    }, {
+        "id": "p19",
+        "seconds": 751.435438
+    }, {
+        "id": "p20",
+        "seconds": 784.984645
+    }, {
+        "id": "p21",
+        "seconds": 833.887524
+    }, {
+        "id": "p22",
+        "seconds": 871.087094
+    }, {
+        "id": "p23",
+        "seconds": 960.076503
+    }, {
+        "id": "p24",
+        "seconds": 1020.336251
+    }, {
+        "id": "p25",
+        "seconds": 1055.994799
+    }, {
+        "id": "p26",
+        "seconds": 1060.834391
+    }, {
+        "id": "p27",
+        "seconds": 1065.106818
+    }, {
+        "id": "p28",
+        "seconds": 1085.59879
+    }, {
+        "id": "p29",
+        "seconds": 1098.990151
+    }, {
+        "id": "p30",
+        "seconds": 1129.773393
+    }, {
+        "id": "p31",
+        "seconds": 1141.454119
+    }, {
+        "id": "p32",
+        "seconds": 1200.780331
+    }, {
+        "id": "p33",
+        "seconds": 1269.74686
+    }, {
+        "id": "p34",
+        "seconds": 1361.353819
+    }, {
+        "id": "p35",
+        "seconds": 1417.432163
+    }, {
+        "id": "p36",
+        "seconds": 1485.828215
+    }, {
+        "id": "p37",
+        "seconds": 1539.800412
+    }, {
+        "id": "p38",
+        "seconds": 1591.356215
+    }, {
+        "id": "p39",
+        "seconds": 1665.227234
+    }, {
+        "id": "p40",
+        "seconds": 1707.289773
+    }]
+};

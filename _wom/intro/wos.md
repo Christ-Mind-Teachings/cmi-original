@@ -9,6 +9,13 @@ book: Way of the Servant
 burl: /wom/intro/wos/
 nav: nav/np-data.html
 bid: "wos"
+fb:
+  desc: A poetic description of the journey of awakening taken
+    from inception to recognition of self as the servant -
+    one who walks this world awake.
+  image:
+    - wom/wos-cover-lulu.jpg
+    - wom/wos-cover-3d.png
 ---
 
 <div class="custom-side-image">

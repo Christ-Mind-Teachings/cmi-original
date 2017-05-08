@@ -136,7 +136,7 @@
         "audio": "2014-04-13.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
