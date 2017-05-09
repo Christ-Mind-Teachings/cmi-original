@@ -690,12 +690,13 @@
       "title": "Responsibility to the Poor",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q11.01.mp3"
+        "audio": "Q11.01.mp3",
+        "timing": "h11q1.js"
       },
       "url": "/wom/questions/h11q1/",
       "idx": 40,

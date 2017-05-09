@@ -1,0 +1,94 @@
+#!/usr/bin/env node
+
+var json = require("jsonfile");
+var _ = require("underscore");
+var request = require("request");
+var fs = require("fs");
+
+var dataDir = "/Users/rmercer/Projects/cmi/site/www/_data/";
+var data;
+var inputFile;
+var ifile;
+var fid;
+var cmd;
+var outfile;
+
+function syntax() {
+  console.log("status <jsonfile> [fid]");
+  console.log("where: <jsonfile> given as relative to cmis/_data");
+  console.log("                  extension '.json' optional");
+  console.log("where: <fid> given as 'mmddyy'");
+  process.exit(1);
+}
+
+if (process.argv.length > 2) {
+  ifile = process.argv[2];
+}
+else {
+  syntax();
+}
+
+if (process.argv.length > 3) {
+  fid = process.argv[3];
+}
+
+if (!ifile.endsWith(".json")) {
+  ifile = ifile + ".json";
+}
+
+inputFile = dataDir + ifile;
+
+try {
+  //console.log("reading %s", inputFile);
+  data = json.readFileSync(inputFile);
+}
+catch(e) {
+  console.log("error opening %s", inputFile);
+  console.log("** exiting");
+  //console.log(e);
+  process.exit(1);
+}
+
+if (typeof fid !== "undefined") {
+  //in the json file, fid has "/" appended
+  var page = _.find(data.page, function(page) {
+    return page.fid == this.fid + "/";
+  },{fid: fid});
+
+  if (typeof page == "undefined") {
+    console.log("page for fid: %s was not found", fid);
+    process.exit(1);
+  }
+
+  if (!page.complete) {
+    console.log("page: %s does not have 'complete' attribute ", fid);
+    process.exit(1);
+  }
+
+  var timing = "none";
+  if (page.res && page.res.timing) {
+    timing = page.res.timing;
+  }
+
+  console.log("%s: format=%s, index=%s, audio=%s, timing=%s",
+      page.fid, page.complete.format, page.complete.index, page.complete.audio, timing);
+}
+else {
+  //list fid: audioFile for all pages in json file
+  _.each(data.page, function(page) {
+    var timing = "none";
+    if (page.res && page.res.timing) {
+      timing = page.res.timing;
+    }
+    if (page.complete) {
+      console.log("%s: format=%s, index=%s, audio=%s, timing=%s",
+          page.fid, page.complete.format, page.complete.index, page.complete.audio, timing);
+    }
+    else {
+      console.log("%s: page has no status attribute.");
+    }
+  });
+}
+
+
+

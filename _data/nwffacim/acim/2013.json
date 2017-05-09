@@ -61,7 +61,7 @@
         "audio": "2013-05-11.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -194,7 +194,7 @@
         "audio": "2013-07-07.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0

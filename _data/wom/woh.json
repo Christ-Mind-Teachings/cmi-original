@@ -55,12 +55,13 @@
       "fid": "l03/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L03.mp3"
+        "audio": "L03.mp3",
+        "timing": "l03.js"
       },
       "title": "Lesson Three",
       "url": "/wom/woh/l03/",

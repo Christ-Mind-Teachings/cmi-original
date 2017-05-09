@@ -395,13 +395,13 @@ colors:
 
 # Exclusions from the final site
 exclude: [
-  #       _wom/woh,
+  ##       _wom/woh,
   #        _wom/wot,
   #        _wom/wok,
   #        _wom/early,
   #        _wom/tjl,
   #        _wom/wos,
-  #       _wom/questions,
+  ##      _wom/questions,
   #        _nwffacim/grad,
   #        _nwffacim/yaa,
   #        _nwffacim/2002,
