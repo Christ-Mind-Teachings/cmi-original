@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
     else if (location.pathname === "/about/") {
       require("./init/about").initialize();
     }
+    else if (location.pathname.startsWith("/profile/")) {
+      require("./init/profile").initialize();
+    }
     else {
       require("./init/common").initialize();
     }

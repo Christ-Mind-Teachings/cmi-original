@@ -265,9 +265,9 @@
         "audio": "2003-04-10.mp3"
       },
       "fid": "041003/",
-      "desc": "Needs formatting",
+      "desc": "T3.II Miracles as True Perception",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -284,9 +284,9 @@
         "audio": "2003-04-24.mp3"
       },
       "fid": "042403/",
-      "desc": "Needs formatting",
+      "desc": "T3.II Miracles as True Perception",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -303,9 +303,9 @@
         "audio": "2003-05-01.mp3"
       },
       "fid": "050103/",
-      "desc": "Needs formatting",
+      "desc": "T3.III Perception vs Knowledge",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -322,9 +322,9 @@
         "audio": "2003-05-11.mp3"
       },
       "fid": "051103/",
-      "desc": "Needs formatting",
+      "desc": "T3.IV Error and the Ego",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0

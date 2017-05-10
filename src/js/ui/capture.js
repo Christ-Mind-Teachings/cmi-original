@@ -8,6 +8,8 @@ var modal = require("./modal");
 var hilight = require("./hilight");
 var capture = require("../ds/capture");
 var ays = require("../util/are-you-sure");
+var config = require("../config/config");
+var store = require("store");
 
 var jPlayer;
 var currentPlayTime = 0;
@@ -89,6 +91,26 @@ function enableSidebarTimeCapture() {
   if (!transcriptFormatComplete) {
     console.log("Formatting for this transcript is incomplete, capture disabled");
     return;
+  }
+
+  //check if timing data collection is reserved to a specific user
+  var pageInfo = config.getInfo(location.pathname);
+  console.log("Page Info: ", pageInfo);
+  if (pageInfo.timer && pageInfo.timer !== "none") {
+
+    //don't enable time collection if current user is not registered user
+    var userInfo = store.get("userInfo");
+    if (!userInfo) {
+      //user not registered
+      console.log("capture disabled, assigned to: %s", pageInfo.timer);
+      return;
+    }
+
+    if (userInfo.uid !== pageInfo.timer) {
+      //user not assigned to data collection for this page
+      console.log("capture disabled, assigned to: %s", pageInfo.timer);
+      return;
+    }
   }
 
   //show sidebar menu option

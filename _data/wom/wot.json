@@ -42,7 +42,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L14.mp3"
+        "audio": "L14.mp3",
+        "timer": "pm"
       },
       "title": "Lesson Two",
       "url": "/wom/wot/l02/",
@@ -59,7 +60,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L15.mp3"
+        "audio": "L15.mp3",
+        "timer": "pm"
       },
       "title": "Lesson Three",
       "url": "/wom/wot/l03/",
@@ -76,7 +78,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L16.mp3"
+        "audio": "L16.mp3",
+        "timer": "pm"
       },
       "title": "Lesson Four",
       "url": "/wom/wot/l04/",
@@ -93,7 +96,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L17.mp3"
+        "audio": "L17.mp3",
+        "timer": "pm"
       },
       "title": "Lesson Five",
       "url": "/wom/wot/l05/",
@@ -110,7 +114,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L18.mp3"
+        "audio": "L18.mp3",
+        "timer": "pm"
       },
       "title": "Lesson Six",
       "url": "/wom/wot/l06/",
@@ -127,7 +132,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L19.mp3"
+        "audio": "L19.mp3",
+        "timer": "pm"
       },
       "title": "Lesson Seven",
       "url": "/wom/wot/l07/",

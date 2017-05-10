@@ -9,6 +9,11 @@ You can support us by listening to the audio from *The Way of Mastery*
 or the *Northwest Foundation for ACIM* and collecting timing data in the
 process. Learn how to do that here.
 
+*Note:* You can create a profile at the Library and make a reservation
+to collect timing data. Doing that ensures that there is no redundancy
+in data collection. Follow this link to [create or update your
+profile](/profile/user/).
+
 ## Step One
 
 Find a teaching with audio you want to listen to. There are many

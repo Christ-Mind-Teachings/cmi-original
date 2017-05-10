@@ -107,12 +107,13 @@
       "fid": "l06/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L06.mp3"
+        "audio": "L06.mp3",
+        "timing": "l06.js"
       },
       "title": "Lesson Six",
       "url": "/wom/woh/l06/",
@@ -214,7 +215,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L12.mp3"
+        "audio": "L12.mp3",
+        "timer": "rick"
       },
       "title": "Lesson Twelve",
       "url": "/wom/woh/l12/",
