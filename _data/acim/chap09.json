@@ -1,0 +1,147 @@
+{
+  "base": "/acim/text/09/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Nine",
+  "bid": "atext09",
+  "page": [
+    {
+      "fid": "text/#T9",
+      "url": "/acim/intro/text/#T9",
+      "idx": 0,
+      "next": "/acim/text/09/chap0900/",
+      "prev": "/acim/text/09/chap0910/"
+    },
+    {
+      "fid": "chap0900/",
+      "title": "T9 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0900/",
+      "idx": 1,
+      "next": "/acim/text/09/chap0901/",
+      "prev": "/acim/intro/text/#T9"
+    },
+    {
+      "fid": "chap0901/",
+      "title": "T9.1 Sanity and Perception",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0901/",
+      "idx": 2,
+      "next": "/acim/text/09/chap0902/",
+      "prev": "/acim/text/09/chap0900/"
+    },
+    {
+      "fid": "chap0902/",
+      "title": "T9.2 Atonement as a Lesson in Sharing",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0902/",
+      "idx": 3,
+      "next": "/acim/text/09/chap0903/",
+      "prev": "/acim/text/09/chap0901/"
+    },
+    {
+      "fid": "chap0903/",
+      "title": "T9.3 The Unhealed Healer",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0903/",
+      "idx": 4,
+      "next": "/acim/text/09/chap0904/",
+      "prev": "/acim/text/09/chap0902/"
+    },
+    {
+      "fid": "chap0904/",
+      "title": "T9.4 The Awareness of the Holy Spirit",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0904/",
+      "idx": 5,
+      "next": "/acim/text/09/chap0905/",
+      "prev": "/acim/text/09/chap0903/"
+    },
+    {
+      "fid": "chap0905/",
+      "title": "T9.5 Salvation and God’s Will",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0905/",
+      "idx": 6,
+      "next": "/acim/text/09/chap0906/",
+      "prev": "/acim/text/09/chap0904/"
+    },
+    {
+      "fid": "chap0906/",
+      "title": "T9.6 Grandeur versus Grandiosity",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0906/",
+      "idx": 7,
+      "next": "/acim/text/09/chap0907/",
+      "prev": "/acim/text/09/chap0905/"
+    },
+    {
+      "fid": "chap0907/",
+      "title": "T9.7 The Inclusiveness of Creation",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0907/",
+      "idx": 8,
+      "next": "/acim/text/09/chap0908/",
+      "prev": "/acim/text/09/chap0906/"
+    },
+    {
+      "fid": "chap0908/",
+      "title": "T9.8 The Decision to Forget",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0908/",
+      "idx": 9,
+      "next": "/acim/text/09/chap0909/",
+      "prev": "/acim/text/09/chap0907/"
+    },
+    {
+      "fid": "chap0909/",
+      "title": "T9.9 Magic versus Miracles",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0909/",
+      "idx": 10,
+      "next": "/acim/text/09/chap0910/",
+      "prev": "/acim/text/09/chap0908/"
+    },
+    {
+      "fid": "chap0910/",
+      "title": "T9.10 The Denial of God",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/09/chap0910/",
+      "idx": 11,
+      "next": "/acim/intro/text/#T9",
+      "prev": "/acim/text/09/chap0909/"
+    }
+  ]
+}

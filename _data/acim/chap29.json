@@ -1,0 +1,135 @@
+{
+  "base": "/acim/text/29/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty Nine",
+  "bid": "atext29",
+  "page": [
+    {
+      "fid": "text/#T29",
+      "url": "/acim/intro/text/#T29",
+      "idx": 0,
+      "next": "/acim/text/29/chap2900/",
+      "prev": "/acim/text/29/chap2909/"
+    },
+    {
+      "title": "T29 Introduction",
+      "fid": "chap2900/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2900/",
+      "idx": 1,
+      "next": "/acim/text/29/chap2901/",
+      "prev": "/acim/intro/text/#T29"
+    },
+    {
+      "title": "T29.1 The Closing of the Gap",
+      "fid": "chap2901/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2901/",
+      "idx": 2,
+      "next": "/acim/text/29/chap2902/",
+      "prev": "/acim/text/29/chap2900/"
+    },
+    {
+      "title": "T29.2 The Coming of the Guest",
+      "fid": "chap2902/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2902/",
+      "idx": 3,
+      "next": "/acim/text/29/chap2903/",
+      "prev": "/acim/text/29/chap2901/"
+    },
+    {
+      "title": "T29.3 God’s Witnesses",
+      "fid": "chap2903/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2903/",
+      "idx": 4,
+      "next": "/acim/text/29/chap2904/",
+      "prev": "/acim/text/29/chap2902/"
+    },
+    {
+      "title": "T29.4 Dream Roles",
+      "fid": "chap2904/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2904/",
+      "idx": 5,
+      "next": "/acim/text/29/chap2905/",
+      "prev": "/acim/text/29/chap2903/"
+    },
+    {
+      "title": "T29.5 The Changeless Dwelling-Place",
+      "fid": "chap2905/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2905/",
+      "idx": 6,
+      "next": "/acim/text/29/chap2906/",
+      "prev": "/acim/text/29/chap2904/"
+    },
+    {
+      "title": "T29.6 Forgiveness and Peace",
+      "fid": "chap2906/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2906/",
+      "idx": 7,
+      "next": "/acim/text/29/chap2907/",
+      "prev": "/acim/text/29/chap2905/"
+    },
+    {
+      "title": "T29.7 The Lingering Illusion",
+      "fid": "chap2907/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2907/",
+      "idx": 8,
+      "next": "/acim/text/29/chap2908/",
+      "prev": "/acim/text/29/chap2906/"
+    },
+    {
+      "title": "T29.8 Christ and the Anti-Christ",
+      "fid": "chap2908/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2908/",
+      "idx": 9,
+      "next": "/acim/text/29/chap2909/",
+      "prev": "/acim/text/29/chap2907/"
+    },
+    {
+      "title": "T29.9 The Forgiving Dream",
+      "fid": "chap2909/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/29/chap2909/",
+      "idx": 10,
+      "next": "/acim/intro/text/#T29",
+      "prev": "/acim/text/29/chap2908/"
+    }
+  ]
+}

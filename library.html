@@ -11,9 +11,60 @@ footer:
   netlify: true
 ---
 
+
 <div class="container content">
   <h2>The Library: Teachings of Christ Mind</h2>
+  <div class="lib-card-container">
+    <div class="libcard">
+      <div class="card-image">
+        <a title="ACIM Sparkly Edition" href="/acim/intro/acim/">
+          <img src="/public/img/acim/sparkly1.jpg">
+        </a>
+      </div>
+      <div class="card-header">
+        <h3>ACIM Sparkly Edition</h3>
+      </div>
+      <div class="card-copy">
+        <p>
+          Includes: A Course in Miracles - Text
+        </p>
+      </div>
+    </div>
+    <div class="libcard">
+      <div class="card-image">
+        <a title="The Raj Material" href="/nwffacim/intro/nwffacim/">
+          <img src="/public/img/nwffacim/nwffacim_logo2.jpg">
+        </a>
+      </div>
+      <div class="card-header">
+        <h3>Northwest Foundation for ACIM</h3>
+      </div>
+      <div class="card-copy">
+        <p>
+          Includes: You Are the Answer, Graduation, and ACIM Study Group
+        </p>
+      </div>
+    </div>
+    <div class="libcard">
+      <div class="card-image">
+        <a title="Way of Mastery" href="/wom/intro/wom/">
+          <img src="/public/img/wom/wom_logo_dark3.jpg">
+        </a>
+      </div>
+      <div class="card-header">
+        <h3>Way of Mastery</h3>
+      </div>
+      <div class="card-copy">
+        <p>
+          Includes: The Jeshua Letters, The Way of the Servant, Way of the Heart,
+          Way of Transformation, Way of Knowing, The Early Years, and Questions
+        </p>
+      </div>
+    </div>
+  </div>
 
+  {% comment %}
   {% include ui/cards.html data=site.data.cmi.volumes source="library" %}
+  {% endcomment %}
 </div>
 

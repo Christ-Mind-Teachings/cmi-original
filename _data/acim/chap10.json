@@ -1,0 +1,111 @@
+{
+  "base": "/acim/text/10/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Ten",
+  "bid": "atext10",
+  "page": [
+    {
+      "fid": "text/#T10",
+      "url": "/acim/intro/text/#T10",
+      "idx": 0,
+      "next": "/acim/text/10/chap1000/",
+      "prev": "/acim/text/10/chap1007/"
+    },
+    {
+      "fid": "chap1000/",
+      "title": "T10 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/10/chap1000/",
+      "idx": 1,
+      "next": "/acim/text/10/chap1001/",
+      "prev": "/acim/intro/text/#T10"
+    },
+    {
+      "fid": "chap1001/",
+      "title": "T10.1 Projection versus Extension",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/10/chap1001/",
+      "idx": 2,
+      "next": "/acim/text/10/chap1002/",
+      "prev": "/acim/text/10/chap1000/"
+    },
+    {
+      "fid": "chap1002/",
+      "title": "T10.2 The Willingness for Healing",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/10/chap1002/",
+      "idx": 3,
+      "next": "/acim/text/10/chap1003/",
+      "prev": "/acim/text/10/chap1001/"
+    },
+    {
+      "fid": "chap1003/",
+      "title": "T10.3 From Darkness to Light",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/10/chap1003/",
+      "idx": 4,
+      "next": "/acim/text/10/chap1004/",
+      "prev": "/acim/text/10/chap1002/"
+    },
+    {
+      "fid": "chap1004/",
+      "title": "T10.4 The Inheritance of God’s Son",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/10/chap1004/",
+      "idx": 5,
+      "next": "/acim/text/10/chap1005/",
+      "prev": "/acim/text/10/chap1003/"
+    },
+    {
+      "fid": "chap1005/",
+      "title": "T10.5 The “Dynamics” of the Ego",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/10/chap1005/",
+      "idx": 6,
+      "next": "/acim/text/10/chap1006/",
+      "prev": "/acim/text/10/chap1004/"
+    },
+    {
+      "fid": "chap1006/",
+      "title": "T10.6 Experience and Perception",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/10/chap1006/",
+      "idx": 7,
+      "next": "/acim/text/10/chap1007/",
+      "prev": "/acim/text/10/chap1005/"
+    },
+    {
+      "fid": "chap1007/",
+      "title": "T10.7 The Problem and the Answer",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/10/chap1007/",
+      "idx": 8,
+      "next": "/acim/intro/text/#T10",
+      "prev": "/acim/text/10/chap1006/"
+    }
+  ]
+}

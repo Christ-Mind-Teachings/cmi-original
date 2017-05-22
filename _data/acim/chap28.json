@@ -1,0 +1,111 @@
+{
+  "base": "/acim/text/28/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty Eight",
+  "bid": "atext28",
+  "page": [
+    {
+      "fid": "text/#T28",
+      "url": "/acim/intro/text/#T28",
+      "idx": 0,
+      "next": "/acim/text/28/chap2800/",
+      "prev": "/acim/text/28/chap2807/"
+    },
+    {
+      "title": "T28 Introduction",
+      "fid": "chap2800/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/28/chap2800/",
+      "idx": 1,
+      "next": "/acim/text/28/chap2801/",
+      "prev": "/acim/intro/text/#T28"
+    },
+    {
+      "title": "T28.1 The Present Memory",
+      "fid": "chap2801/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/28/chap2801/",
+      "idx": 2,
+      "next": "/acim/text/28/chap2802/",
+      "prev": "/acim/text/28/chap2800/"
+    },
+    {
+      "title": "T28.2 Reversing Effect and Cause",
+      "fid": "chap2802/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/28/chap2802/",
+      "idx": 3,
+      "next": "/acim/text/28/chap2803/",
+      "prev": "/acim/text/28/chap2801/"
+    },
+    {
+      "title": "T28.3 The Agreement to Join",
+      "fid": "chap2803/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/28/chap2803/",
+      "idx": 4,
+      "next": "/acim/text/28/chap2804/",
+      "prev": "/acim/text/28/chap2802/"
+    },
+    {
+      "title": "T28.4 The Greater Joining",
+      "fid": "chap2804/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/28/chap2804/",
+      "idx": 5,
+      "next": "/acim/text/28/chap2805/",
+      "prev": "/acim/text/28/chap2803/"
+    },
+    {
+      "title": "T28.5 The Alternate to Dreams of Fear",
+      "fid": "chap2805/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/28/chap2805/",
+      "idx": 6,
+      "next": "/acim/text/28/chap2806/",
+      "prev": "/acim/text/28/chap2804/"
+    },
+    {
+      "title": "T28.6 The Secret Vows",
+      "fid": "chap2806/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/28/chap2806/",
+      "idx": 7,
+      "next": "/acim/text/28/chap2807/",
+      "prev": "/acim/text/28/chap2805/"
+    },
+    {
+      "title": "T28.7 The Beautiful Relationship",
+      "fid": "chap2807/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/28/chap2807/",
+      "idx": 8,
+      "next": "/acim/intro/text/#T28",
+      "prev": "/acim/text/28/chap2806/"
+    }
+  ]
+}

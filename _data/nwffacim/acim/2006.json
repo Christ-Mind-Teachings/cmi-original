@@ -131,13 +131,14 @@
     },
     {
       "fid": "030406/",
-      "desc": "",
+      "desc": "T11.6 The Vision of Christ",
       "res": {
-        "audio": "2006-03-04.mp3"
+        "audio": "2006-03-04.mp3",
+        "timing": "030406.js"
       },
       "complete": {
-        "format": 0,
-        "audio": 1,
+        "format": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

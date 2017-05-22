@@ -1,0 +1,99 @@
+{
+  "base": "/acim/text/12/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twelve",
+  "bid": "atext12",
+  "page": [
+    {
+      "fid": "text/#T12",
+      "url": "/acim/intro/text/#T12",
+      "idx": 0,
+      "next": "/acim/text/12/chap1200/",
+      "prev": "/acim/text/12/chap1206/"
+    },
+    {
+      "fid": "chap1200/",
+      "title": "T12 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/12/chap1200/",
+      "idx": 1,
+      "next": "/acim/text/12/chap1201/",
+      "prev": "/acim/intro/text/#T12"
+    },
+    {
+      "fid": "chap1201/",
+      "title": "T12.1 Crucifixion by Guilt",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/12/chap1201/",
+      "idx": 2,
+      "next": "/acim/text/12/chap1202/",
+      "prev": "/acim/text/12/chap1200/"
+    },
+    {
+      "fid": "chap1202/",
+      "title": "T12.2 The Fear of Redemption",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/12/chap1202/",
+      "idx": 3,
+      "next": "/acim/text/12/chap1203/",
+      "prev": "/acim/text/12/chap1201/"
+    },
+    {
+      "fid": "chap1203/",
+      "title": "T12.3 Healing and Time",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/12/chap1203/",
+      "idx": 4,
+      "next": "/acim/text/12/chap1204/",
+      "prev": "/acim/text/12/chap1202/"
+    },
+    {
+      "fid": "chap1204/",
+      "title": "T12.4 The Two Emotions",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/12/chap1204/",
+      "idx": 5,
+      "next": "/acim/text/12/chap1205/",
+      "prev": "/acim/text/12/chap1203/"
+    },
+    {
+      "fid": "chap1205/",
+      "title": "T12.5 Finding the Present",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/12/chap1205/",
+      "idx": 6,
+      "next": "/acim/text/12/chap1206/",
+      "prev": "/acim/text/12/chap1204/"
+    },
+    {
+      "fid": "chap1206/",
+      "title": "T12.6 Attainment of the Real World",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/12/chap1206/",
+      "idx": 7,
+      "next": "/acim/intro/text/#T12",
+      "prev": "/acim/text/12/chap1205/"
+    }
+  ]
+}

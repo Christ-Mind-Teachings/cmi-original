@@ -1,0 +1,99 @@
+{
+  "base": "/acim/text/22/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty Two",
+  "bid": "atext22",
+  "page": [
+    {
+      "fid": "text/#T22",
+      "url": "/acim/intro/text/#T22",
+      "idx": 0,
+      "next": "/acim/text/22/chap2200/",
+      "prev": "/acim/text/22/chap2206/"
+    },
+    {
+      "title": "T22 Introduction",
+      "fid": "chap2200/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/22/chap2200/",
+      "idx": 1,
+      "next": "/acim/text/22/chap2201/",
+      "prev": "/acim/intro/text/#T22"
+    },
+    {
+      "title": "T22.1 The Message of the Holy Relationship",
+      "fid": "chap2201/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/22/chap2201/",
+      "idx": 2,
+      "next": "/acim/text/22/chap2202/",
+      "prev": "/acim/text/22/chap2200/"
+    },
+    {
+      "title": "T22.2 Your Brother’s Sinlessness",
+      "fid": "chap2202/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/22/chap2202/",
+      "idx": 3,
+      "next": "/acim/text/22/chap2203/",
+      "prev": "/acim/text/22/chap2201/"
+    },
+    {
+      "title": "T22.3 Reason and the Holy Relationship",
+      "fid": "chap2203/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/22/chap2203/",
+      "idx": 4,
+      "next": "/acim/text/22/chap2204/",
+      "prev": "/acim/text/22/chap2202/"
+    },
+    {
+      "title": "T22.4 The Branching of the Road",
+      "fid": "chap2204/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/22/chap2204/",
+      "idx": 5,
+      "next": "/acim/text/22/chap2205/",
+      "prev": "/acim/text/22/chap2203/"
+    },
+    {
+      "title": "T22.5 Weakness and Defensiveness",
+      "fid": "chap2205/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/22/chap2205/",
+      "idx": 6,
+      "next": "/acim/text/22/chap2206/",
+      "prev": "/acim/text/22/chap2204/"
+    },
+    {
+      "title": "T22.6 Freedom and the Holy Spirit",
+      "fid": "chap2206/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/22/chap2206/",
+      "idx": 7,
+      "next": "/acim/intro/text/#T22",
+      "prev": "/acim/text/22/chap2205/"
+    }
+  ]
+}

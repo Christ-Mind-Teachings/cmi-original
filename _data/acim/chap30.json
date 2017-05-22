@@ -1,0 +1,123 @@
+{
+  "base": "/acim/text/30/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Thirty",
+  "bid": "atext30",
+  "page": [
+    {
+      "fid": "text/#T30",
+      "url": "/acim/intro/text/#T30",
+      "idx": 0,
+      "next": "/acim/text/30/chap3000/",
+      "prev": "/acim/text/30/chap3008/"
+    },
+    {
+      "title": "T30 Introduction",
+      "fid": "chap3000/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/30/chap3000/",
+      "idx": 1,
+      "next": "/acim/text/30/chap3001/",
+      "prev": "/acim/intro/text/#T30"
+    },
+    {
+      "title": "T30.1 Rules for Decision",
+      "fid": "chap3001/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/30/chap3001/",
+      "idx": 2,
+      "next": "/acim/text/30/chap3002/",
+      "prev": "/acim/text/30/chap3000/"
+    },
+    {
+      "title": "T30.2 Freedom of Will",
+      "fid": "chap3002/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/30/chap3002/",
+      "idx": 3,
+      "next": "/acim/text/30/chap3003/",
+      "prev": "/acim/text/30/chap3001/"
+    },
+    {
+      "title": "T30.3 Beyond All Idols",
+      "fid": "chap3003/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/30/chap3003/",
+      "idx": 4,
+      "next": "/acim/text/30/chap3004/",
+      "prev": "/acim/text/30/chap3002/"
+    },
+    {
+      "title": "T30.4 The Truth Behind Illusions",
+      "fid": "chap3004/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/30/chap3004/",
+      "idx": 5,
+      "next": "/acim/text/30/chap3005/",
+      "prev": "/acim/text/30/chap3003/"
+    },
+    {
+      "title": "T30.5 The Only Purpose",
+      "fid": "chap3005/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/30/chap3005/",
+      "idx": 6,
+      "next": "/acim/text/30/chap3006/",
+      "prev": "/acim/text/30/chap3004/"
+    },
+    {
+      "title": "T30.6 The Justification for Forgiveness",
+      "fid": "chap3006/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/30/chap3006/",
+      "idx": 7,
+      "next": "/acim/text/30/chap3007/",
+      "prev": "/acim/text/30/chap3005/"
+    },
+    {
+      "title": "T30.7 The New Interpretation",
+      "fid": "chap3007/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/30/chap3007/",
+      "idx": 8,
+      "next": "/acim/text/30/chap3008/",
+      "prev": "/acim/text/30/chap3006/"
+    },
+    {
+      "title": "T30.8 Changeless Reality",
+      "fid": "chap3008/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/30/chap3008/",
+      "idx": 9,
+      "next": "/acim/intro/text/#T30",
+      "prev": "/acim/text/30/chap3007/"
+    }
+  ]
+}

@@ -1,0 +1,1620 @@
+{
+  "title": "Table of Contents",
+  "chapter": [
+    {
+      "id": 1,
+      "base": "/acim/text/01/",
+      "ref": "T1",
+      "title": "Introduction to Miracles",
+      "section": [
+        {
+          "url": "chap0100/",
+          "ref": "T1",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap0101/",
+          "ref": "T1.1",
+          "title": "Principles of Miracles"
+        },
+        {
+          "url": "chap0102/",
+          "ref": "T1.2",
+          "title": "Distortions of Miracle Impulses"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "base": "/acim/text/02/",
+      "ref": "T2",
+      "title": "The Illusion of Separation",
+      "section": [
+        {
+          "url": "chap0200/",
+          "ref": "T2",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap0201/",
+          "ref": "T2.1",
+          "title": "The Reinterpretation of Defenses"
+        },
+        {
+          "url": "chap0202/",
+          "ref": "T2.2",
+          "title": "Healing as Release from Fear"
+        },
+        {
+          "url": "chap0203/",
+          "ref": "T2.3",
+          "title": "Fear as Lack of Love"
+        },
+        {
+          "url": "chap0204/",
+          "ref": "T2.4",
+          "title": "The Correction for Lack of Love"
+        },
+        {
+          "url": "chap0205/",
+          "ref": "T2.5",
+          "title": "The Meaning of the Last Judgement"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "base": "/acim/text/03/",
+      "ref": "T3",
+      "title": "Retraining the Mind",
+      "section": [
+        {
+          "url": "chap0300/",
+          "ref": "T3",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap0301/",
+          "ref": "T3.1",
+          "title": "Special Principles for Miracle Workers"
+        },
+        {
+          "url": "chap0302/",
+          "ref": "T3.2",
+          "title": "Atonement without Sacrifice"
+        },
+        {
+          "url": "chap0303/",
+          "ref": "T3.3",
+          "title": "Miracles as Accurate Perception"
+        },
+        {
+          "url": "chap0304/",
+          "ref": "T3.4",
+          "title": "Perception Versus Knowledge"
+        },
+        {
+          "url": "chap0305/",
+          "ref": "T3.5",
+          "title": "Conflict and the Ego"
+        },
+        {
+          "url": "chap0306/",
+          "ref": "T3.6",
+          "title": "The Loss of Certainty"
+        },
+        {
+          "url": "chap0307/",
+          "ref": "T3.7",
+          "title": "Judgement and the Authority Problem"
+        },
+        {
+          "url": "chap0308/",
+          "ref": "T3.8",
+          "title": "Creating versus the Self-Image"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "base": "/acim/text/04/",
+      "ref": "T4",
+      "title": "The Root of all Evil",
+      "section": [
+        {
+          "url": "chap0400/",
+          "ref": "T4",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap0401/",
+          "ref": "T4.1",
+          "title": "Right Teaching and Right Learning"
+        },
+        {
+          "url": "chap0402/",
+          "ref": "T4.2",
+          "title": "The Ego and False Autonomy"
+        },
+        {
+          "url": "chap0403/",
+          "ref": "T4.3",
+          "title": "Love without Conflict"
+        },
+        {
+          "url": "chap0404/",
+          "ref": "T4.4",
+          "title": "The Escape from Fear"
+        },
+        {
+          "url": "chap0405/",
+          "ref": "T4.5",
+          "title": "The Ego-Body Illusion"
+        },
+        {
+          "url": "chap0406/",
+          "ref": "T4.6",
+          "title": "The Constant State"
+        },
+        {
+          "url": "chap0407/",
+          "ref": "T4.7",
+          "title": "Creation and Communication"
+        },
+        {
+          "url": "chap0408/",
+          "ref": "T4.8",
+          "title": "True Rehabilitation"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "base": "/acim/text/05/",
+      "ref": "T5",
+      "title": "Healing and Wholeness",
+      "section": [
+        {
+          "url": "chap0500/",
+          "ref": "T5",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap0501/",
+          "ref": "T5.1",
+          "title": "Healing as Joining"
+        },
+        {
+          "url": "chap0502/",
+          "ref": "T5.2",
+          "title": "The Mind of the Atonement"
+        },
+        {
+          "url": "chap0503/",
+          "ref": "T5.3",
+          "title": "The Voice for God"
+        },
+        {
+          "url": "chap0504/",
+          "ref": "T5.4",
+          "title": "The Guide to Salvation"
+        },
+        {
+          "url": "chap0505/",
+          "ref": "T5.5",
+          "title": "Therapy and Teaching"
+        },
+        {
+          "url": "chap0506/",
+          "ref": "T5.6",
+          "title": "The Two Decisions"
+        },
+        {
+          "url": "chap0507/",
+          "ref": "T5.7",
+          "title": "Time and Eternity"
+        },
+        {
+          "url": "chap0508/",
+          "ref": "T5.8",
+          "title": "The Eternal Fixation"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "base": "/acim/text/06/",
+      "ref": "T6",
+      "title": "Attack and Fear",
+      "section": [
+        {
+          "url": "chap0600/",
+          "ref": "T6",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap0601/",
+          "ref": "T6.1",
+          "title": "The Message of the Crucifixion"
+        },
+        {
+          "url": "chap0602/",
+          "ref": "T6.2",
+          "title": "The Uses of Projection"
+        },
+        {
+          "url": "chap0603/",
+          "ref": "T6.3",
+          "title": "The Relinquishment of Attack"
+        },
+        {
+          "url": "chap0604/",
+          "ref": "T6.4",
+          "title": "The Only Answer",
+          "subsection": [
+            {
+              "ref": "T6.4.I",
+              "title": "To Have, Give All to All"
+            },
+            {
+              "ref": "T6.4.II",
+              "title": "To Have Peace,Teach Peace to Learn It"
+            },
+            {
+              "ref": "T6.4.III",
+              "title": "Be Vigilant Only for God and His Kingdom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "base": "/acim/text/07/",
+      "ref": "T7",
+      "title": "The Consistency of the Kingdom",
+      "section": [
+        {
+          "url": "chap0700/",
+          "ref": "T7",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap0701/",
+          "ref": "T7.1",
+          "title": "Bargaining versus Healing"
+        },
+        {
+          "url": "chap0702/",
+          "ref": "T7.2",
+          "title": "The Laws of Mind"
+        },
+        {
+          "url": "chap0703/",
+          "ref": "T7.3",
+          "title": "The Unified Curriculum"
+        },
+        {
+          "url": "chap0704/",
+          "ref": "T7.4",
+          "title": "The Recognition of Truth"
+        },
+        {
+          "url": "chap0705/",
+          "ref": "T7.5",
+          "title": "Healing and the Changelessness of Mind"
+        },
+        {
+          "url": "chap0706/",
+          "ref": "T7.6",
+          "title": "From Vigilance to Peace"
+        },
+        {
+          "url": "chap0707/",
+          "ref": "T7.7",
+          "title": "The Total Commitment"
+        },
+        {
+          "url": "chap0708/",
+          "ref": "T7.8",
+          "title": "The Defense of Conflict"
+        },
+        {
+          "url": "chap0709/",
+          "ref": "T7.9",
+          "title": "The Extension of the Kingdom"
+        },
+        {
+          "url": "chap0710/",
+          "ref": "T7.10",
+          "title": "The Confusion of Strength and Weakness"
+        },
+        {
+          "url": "chap0711/",
+          "ref": "T7.11",
+          "title": "The State of Grace"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "base": "/acim/text/08/",
+      "ref": "T8",
+      "title": "The Journey Back",
+      "section": [
+        {
+          "url": "chap0800/",
+          "ref": "T8",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap0801/",
+          "ref": "T8.1",
+          "title": "The Direction of the Curriculum"
+        },
+        {
+          "url": "chap0802/",
+          "ref": "T8.2",
+          "title": "The Rationale for Choice"
+        },
+        {
+          "url": "chap0803/",
+          "ref": "T8.3",
+          "title": "The Holy Encounter"
+        },
+        {
+          "url": "chap0804/",
+          "ref": "T8.4",
+          "title": "The Light of the World"
+        },
+        {
+          "url": "chap0805/",
+          "ref": "T8.5",
+          "title": "The Power of Joint Decision"
+        },
+        {
+          "url": "chap0806/",
+          "ref": "T8.6",
+          "title": "Communication and the Ego-Body Equation"
+        },
+        {
+          "url": "chap0807/",
+          "ref": "T8.7",
+          "title": "The Body as Means or End"
+        },
+        {
+          "url": "chap0808/",
+          "ref": "T8.8",
+          "title": "Healing as Corrected Perception"
+        },
+        {
+          "url": "chap0809/",
+          "ref": "T8.9",
+          "title": "The Acceptance of Reality"
+        },
+        {
+          "url": "chap0810/",
+          "ref": "T8.10",
+          "title": "The Answer to Prayer"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "base": "/acim/text/09/",
+      "ref": "T9",
+      "title": "The Correction of Error",
+      "section": [
+        {
+          "url": "chap0900/",
+          "ref": "T9",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap0901/",
+          "ref": "T9.1",
+          "title": "Sanity and Perception"
+        },
+        {
+          "url": "chap0902/",
+          "ref": "T9.2",
+          "title": "Atonement as a Lesson in Sharing"
+        },
+        {
+          "url": "chap0903/",
+          "ref": "T9.3",
+          "title": "The Unhealed Healer"
+        },
+        {
+          "url": "chap0904/",
+          "ref": "T9.4",
+          "title": "The Awareness of the Holy Spirit"
+        },
+        {
+          "url": "chap0905/",
+          "ref": "T9.5",
+          "title": "Salvation and God’s Will"
+        },
+        {
+          "url": "chap0906/",
+          "ref": "T9.6",
+          "title": "Grandeur versus Grandiosity"
+        },
+        {
+          "url": "chap0907/",
+          "ref": "T9.7",
+          "title": "The Inclusiveness of Creation"
+        },
+        {
+          "url": "chap0908/",
+          "ref": "T9.8",
+          "title": "The Decision to Forget"
+        },
+        {
+          "url": "chap0909/",
+          "ref": "T9.9",
+          "title": "Magic versus Miracles"
+        },
+        {
+          "url": "chap0910/",
+          "ref": "T9.10",
+          "title": "The Denial of God"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "base": "/acim/text/10/",
+      "ref": "T10",
+      "title": "God and the Ego",
+      "section": [
+        {
+          "url": "chap1000/",
+          "ref": "T10",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap1001/",
+          "ref": "T10.1",
+          "title": "Projection versus Extension"
+        },
+        {
+          "url": "chap1002/",
+          "ref": "T10.2",
+          "title": "The Willingness for Healing"
+        },
+        {
+          "url": "chap1003/",
+          "ref": "T10.3",
+          "title": "From Darkness to Light"
+        },
+        {
+          "url": "chap1004/",
+          "ref": "T10.4",
+          "title": "The Inheritance of God’s Son"
+        },
+        {
+          "url": "chap1005/",
+          "ref": "T10.5",
+          "title": "The “Dynamics” of the Ego"
+        },
+        {
+          "url": "chap1006/",
+          "ref": "T10.6",
+          "title": "Experience and Perception"
+        },
+        {
+          "url": "chap1007/",
+          "ref": "T10.7",
+          "title": "The Problem and the Answer"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "base": "/acim/text/11/",
+      "ref": "T11",
+      "title": "God’s Plan for Salvation",
+      "section": [
+        {
+          "url": "chap1100/",
+          "ref": "T11",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap1101/",
+          "ref": "T11.1",
+          "title": "The Judgement of the Holy Spirit"
+        },
+        {
+          "url": "chap1102/",
+          "ref": "T11.2",
+          "title": "The Mechanism of Miracles"
+        },
+        {
+          "url": "chap1103/",
+          "ref": "T11.3",
+          "title": "The Investment in Reality"
+        },
+        {
+          "url": "chap1104/",
+          "ref": "T11.4",
+          "title": "Seeking and Finding"
+        },
+        {
+          "url": "chap1105/",
+          "ref": "T11.5",
+          "title": "The Sane Curriculum"
+        },
+        {
+          "url": "chap1106/",
+          "ref": "T11.6",
+          "title": "The Vision of Christ"
+        },
+        {
+          "url": "chap1107/",
+          "ref": "T11.7",
+          "title": "The Guide for Miracles"
+        },
+        {
+          "url": "chap1108/",
+          "ref": "T11.8",
+          "title": "Reality and Redemption"
+        },
+        {
+          "url": "chap1109/",
+          "ref": "T11.9",
+          "title": "Guiltlessness and Invulnerability"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "base": "/acim/text/12/",
+      "ref": "T12",
+      "title": "The Problem of Guilt",
+      "section": [
+        {
+          "url": "chap1200/",
+          "ref": "T12",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap1201/",
+          "ref": "T12.1",
+          "title": "Crucifixion by Guilt"
+        },
+        {
+          "url": "chap1202/",
+          "ref": "T12.2",
+          "title": "The Fear of Redemption"
+        },
+        {
+          "url": "chap1203/",
+          "ref": "T12.3",
+          "title": "Healing and Time"
+        },
+        {
+          "url": "chap1204/",
+          "ref": "T12.4",
+          "title": "The Two Emotions"
+        },
+        {
+          "url": "chap1205/",
+          "ref": "T12.5",
+          "title": "Finding the Present"
+        },
+        {
+          "url": "chap1206/",
+          "ref": "T12.6",
+          "title": "Attainment of the Real World"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "base": "/acim/text/13/",
+      "ref": "T13",
+      "title": "From Perception to Knowledge",
+      "section": [
+        {
+          "url": "chap1300/",
+          "ref": "T13",
+          "title": "Introduction"
+        },
+        {
+          "url": "chap1301/",
+          "ref": "T13.1",
+          "title": "The Role of Healing"
+        },
+        {
+          "url": "chap1302/",
+          "ref": "T13.2",
+          "title": "The Shadow of Guilt"
+        },
+        {
+          "url": "chap1303/",
+          "ref": "T13.3",
+          "title": "Release and Restoration"
+        },
+        {
+          "url": "chap1304/",
+          "ref": "T13.4",
+          "title": "The Guarantee of Heaven"
+        },
+        {
+          "url": "chap1305/",
+          "ref": "T13.5",
+          "title": "The Testimony of Miracles"
+        },
+        {
+          "url": "chap1306/",
+          "ref": "T13.6",
+          "title": "The Happy Learner"
+        },
+        {
+          "url": "chap1307/",
+          "ref": "T13.7",
+          "title": "The Decision for Guiltlessness"
+        },
+        {
+          "url": "chap1308/",
+          "ref": "T13.8",
+          "title": "The Way of Salvation"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "base": "/acim/text/14/",
+      "ref": "T14",
+      "title": "Bringing Illusions to Truth",
+      "section": [
+        {
+          "url": "chap1400/",
+          "ref": "T14",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T14.1",
+          "url": "chap1401/",
+          "title": "Guilt and Guiltlessness"
+        },
+        {
+          "ref": "T14.2",
+          "url": "chap1402/",
+          "title": "Out of the Darkness"
+        },
+        {
+          "ref": "T14.3",
+          "url": "chap1403/",
+          "title": "Perception without Deceit"
+        },
+        {
+          "ref": "T14.4",
+          "url": "chap1404/",
+          "title": "The Recognition of Holiness"
+        },
+        {
+          "ref": "T14.5",
+          "url": "chap1405/",
+          "title": "The Shift to Miracles"
+        },
+        {
+          "ref": "T14.6",
+          "url": "chap1406/",
+          "title": "The Test of Truth"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "base": "/acim/text/15/",
+      "ref": "T15",
+      "title": "The Purpose of Time",
+      "section": [
+        {
+          "url": "chap1500/",
+          "ref": "T15",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T15.1",
+          "url": "chap1501/",
+          "title": "The Uses of Time"
+        },
+        {
+          "ref": "T15.2",
+          "url": "chap1502/",
+          "title": "Time and Eternity"
+        },
+        {
+          "ref": "T15.3",
+          "url": "chap1503/",
+          "title": "Littleness versus Magnitude"
+        },
+        {
+          "ref": "T15.4",
+          "url": "chap1504/",
+          "title": "Practicing the Holy Instant"
+        },
+        {
+          "ref": "T15.5",
+          "url": "chap1505/",
+          "title": "The Holy Instant and Special Relationships"
+        },
+        {
+          "ref": "T15.6",
+          "url": "chap1506/",
+          "title": "The Holy Instant and the Laws of God"
+        },
+        {
+          "ref": "T15.7",
+          "url": "chap1507/",
+          "title": "The Holy Instant and Communication"
+        },
+        {
+          "ref": "T15.8",
+          "url": "chap1508/",
+          "title": "The Holy Instant and Real Relationships"
+        },
+        {
+          "ref": "T15.9",
+          "url": "chap1509/",
+          "title": "The Time of Christ"
+        },
+        {
+          "ref": "T15.10",
+          "url": "chap1510/",
+          "title": "The End of Sacrifice"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "base": "/acim/text/16/",
+      "ref": "T16",
+      "title": "The Forgiveness of Illusions",
+      "section": [
+        {
+          "url": "chap1600/",
+          "ref": "T16",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T16.1",
+          "url": "chap1601/",
+          "title": "True Empathy"
+        },
+        {
+          "ref": "T16.2",
+          "url": "chap1602/",
+          "title": "The Magnitude of Holiness"
+        },
+        {
+          "ref": "T16.3",
+          "url": "chap1603/",
+          "title": "The Reward of Teaching"
+        },
+        {
+          "ref": "T16.4",
+          "url": "chap1604/",
+          "title": "Illusion and Reality of Love"
+        },
+        {
+          "ref": "T16.5",
+          "url": "chap1605/",
+          "title": "Specialness and Guilt"
+        },
+        {
+          "ref": "T16.6",
+          "url": "chap1606/",
+          "title": "The Bridge to the Real World"
+        },
+        {
+          "ref": "T16.7",
+          "url": "chap1607/",
+          "title": "The End of Illusions"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "base": "/acim/text/17/",
+      "ref": "T17",
+      "title": "Forgiveness and Healing",
+      "section": [
+        {
+          "url": "chap1700/",
+          "ref": "T17",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T17.1",
+          "url": "chap1701/",
+          "title": "Fantasy and Distorted Perception"
+        },
+        {
+          "ref": "T17.2",
+          "url": "chap1702/",
+          "title": "The Forgiven World"
+        },
+        {
+          "ref": "T17.3",
+          "url": "chap1703/",
+          "title": "Shadows of the Past"
+        },
+        {
+          "ref": "T17.4",
+          "url": "chap1704/",
+          "title": "Perception and the Two Worlds"
+        },
+        {
+          "ref": "T17.5",
+          "url": "chap1705/",
+          "title": "The Healed Relationship"
+        },
+        {
+          "ref": "T17.6",
+          "url": "chap1706/",
+          "title": "Practical Forgiveness"
+        },
+        {
+          "ref": "T17.7",
+          "url": "chap1707/",
+          "title": "The Need for Faith"
+        },
+        {
+          "ref": "T17.8",
+          "url": "chap1708/",
+          "title": "Conditions of Forgiveness"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "base": "/acim/text/18/",
+      "ref": "T18",
+      "title": "The Dream and the Reality",
+      "section": [
+        {
+          "url": "chap1800/",
+          "ref": "T18",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T18.1",
+          "url": "chap1801/",
+          "title": "Substitution as a Defense"
+        },
+        {
+          "ref": "T18.2",
+          "url": "chap1802/",
+          "title": "The Basis of the Dream"
+        },
+        {
+          "ref": "T18.3",
+          "url": "chap1803/",
+          "title": "Light in the Dream"
+        },
+        {
+          "ref": "T18.4",
+          "url": "chap1804/",
+          "title": "The Little Willingness"
+        },
+        {
+          "ref": "T18.5",
+          "url": "chap1805/",
+          "title": "The Happy Dream"
+        },
+        {
+          "ref": "T18.6",
+          "url": "chap1806/",
+          "title": "Dreams and the Body"
+        },
+        {
+          "ref": "T18.7",
+          "url": "chap1807/",
+          "title": "I Need Do Nothing"
+        },
+        {
+          "ref": "T18.8",
+          "url": "chap1808/",
+          "title": "The Purpose of the Body"
+        },
+        {
+          "ref": "T18.9",
+          "url": "chap1809/",
+          "title": "The Delusional Thought System"
+        },
+        {
+          "ref": "T18.10",
+          "url": "chap1810/",
+          "title": "The Passing of the Dream"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "base": "/acim/text/19/",
+      "ref": "T19",
+      "title": "Beyond the Body",
+      "section": [
+        {
+          "url": "chap1900/",
+          "ref": "T19",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T19.1",
+          "url": "chap1901/",
+          "title": "Healing and the Mind"
+        },
+        {
+          "ref": "T19.2",
+          "url": "chap1902/",
+          "title": "Sin versus Error"
+        },
+        {
+          "ref": "T19.3",
+          "url": "chap1903/",
+          "title": "The Unreality of Sin"
+        },
+        {
+          "ref": "T19.4",
+          "url": "chap1904/",
+          "title": "Obstacles to Peace:<br/>I. The Desire to Get Rid of It"
+        },
+        {
+          "ref": "T19.5",
+          "url": "chap1905/",
+          "title": "The Attraction of Guilt"
+        },
+        {
+          "ref": "T19.6",
+          "url": "chap1906/",
+          "title": "Obstacles to Peace:<br/>II.The Belief the Body is Valuable for What it Offers"
+        },
+        {
+          "ref": "T19.7",
+          "url": "chap1907/",
+          "title": "Pleasure and Pain"
+        },
+        {
+          "ref": "T19.8",
+          "url": "chap1908/",
+          "title": "Obstacles to Peace:<br/>III. The Attraction of Death"
+        },
+        {
+          "ref": "T19.9",
+          "url": "chap1909/",
+          "title": "The Incorruptible Body"
+        },
+        {
+          "ref": "T19.10",
+          "url": "chap1910/",
+          "title": "Obstacles to Peace:<br/>IV.The Fear of God"
+        },
+        {
+          "ref": "T19.11",
+          "url": "chap1911/",
+          "title": "The Lifting of the Veil"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "base": "/acim/text/20/",
+      "ref": "T20",
+      "title": "The Promise of the Resurrection",
+      "section": [
+        {
+          "url": "chap2000/",
+          "ref": "T20",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T20.1",
+          "url": "chap2001/",
+          "title": "Holy Week"
+        },
+        {
+          "ref": "T20.2",
+          "url": "chap2002/",
+          "title": "Thorns and Lilies"
+        },
+        {
+          "ref": "T20.3",
+          "url": "chap2003/",
+          "title": "Sin as an Adjustment"
+        },
+        {
+          "ref": "T20.4",
+          "url": "chap2004/",
+          "title": "Entering the Ark"
+        },
+        {
+          "ref": "T20.5",
+          "url": "chap2005/",
+          "title": "Heralds of Eternity"
+        },
+        {
+          "ref": "T20.6",
+          "url": "chap2006/",
+          "title": "The Temple of the Holy Spirit"
+        },
+        {
+          "ref": "T20.7",
+          "url": "chap2007/",
+          "title": "The Consistency of Means and End"
+        },
+        {
+          "ref": "T20.8",
+          "url": "chap2008/",
+          "title": "The Vision of Sinlessness"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "base": "/acim/text/21/",
+      "ref": "T21",
+      "title": "The Inner Picture",
+      "section": [
+        {
+          "url": "chap2100/",
+          "ref": "T21",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T21.1",
+          "url": "chap2101/",
+          "title": "The Imagined World"
+        },
+        {
+          "ref": "T21.2",
+          "url": "chap2102/",
+          "title": "The Responsibility for Sight"
+        },
+        {
+          "ref": "T21.3",
+          "url": "chap2103/",
+          "title": "Faith, Belief and Vision"
+        },
+        {
+          "ref": "T21.4",
+          "url": "chap2104/",
+          "title": "The Fear to Look Within"
+        },
+        {
+          "ref": "T21.5",
+          "url": "chap2105/",
+          "title": "Reason and Perception"
+        },
+        {
+          "ref": "T21.6",
+          "url": "chap2106/",
+          "title": "Reason and Correction"
+        },
+        {
+          "ref": "T21.7",
+          "url": "chap2107/",
+          "title": "Perception and Wishes"
+        },
+        {
+          "ref": "T21.8",
+          "url": "chap2108/",
+          "title": "The Inner Shift"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "base": "/acim/text/22/",
+      "ref": "T22",
+      "title": "Salvation and the Holy Relationship",
+      "section": [
+        {
+          "url": "chap2200/",
+          "ref": "T22",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T22.1",
+          "url": "chap2201/",
+          "title": "The Message of the Holy Relationship"
+        },
+        {
+          "ref": "T22.2",
+          "url": "chap2202/",
+          "title": "Your Brother’s Sinlessness"
+        },
+        {
+          "ref": "T22.3",
+          "url": "chap2203/",
+          "title": "Reason and the Holy Relationship"
+        },
+        {
+          "ref": "T22.4",
+          "url": "chap2204/",
+          "title": "The Branching of the Road"
+        },
+        {
+          "ref": "T22.5",
+          "url": "chap2205/",
+          "title": "Weakness and Defensiveness"
+        },
+        {
+          "ref": "T22.6",
+          "url": "chap2206/",
+          "title": "Freedom and the Holy Spirit"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "base": "/acim/text/23/",
+      "ref": "T23",
+      "title": "The War Against Yourself",
+      "section": [
+        {
+          "url": "chap2300/",
+          "ref": "T23",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T23.1",
+          "url": "chap2301/",
+          "title": "The Irreconcilable Beliefs"
+        },
+        {
+          "ref": "T23.2",
+          "url": "chap2302/",
+          "title": "The “Laws” of Chaos"
+        },
+        {
+          "ref": "T23.3",
+          "url": "chap2303/",
+          "title": "Salvation without Compromise"
+        },
+        {
+          "ref": "T23.4",
+          "url": "chap2304/",
+          "title": "The Fear of Life"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "base": "/acim/text/24/",
+      "ref": "T24",
+      "title": "Specialness and Separation",
+      "section": [
+        {
+          "url": "chap2400/",
+          "ref": "T24",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T24.1",
+          "url": "chap2401/",
+          "title": "Specialness as a Substitute for Love"
+        },
+        {
+          "ref": "T24.2",
+          "url": "chap2402/",
+          "title": "The Treachery of Specialness"
+        },
+        {
+          "ref": "T24.3",
+          "url": "chap2403/",
+          "title": "The Forgiveness of Specialness"
+        },
+        {
+          "ref": "T24.4",
+          "url": "chap2404/",
+          "title": "Specialness and Salvation"
+        },
+        {
+          "ref": "T24.5",
+          "url": "chap2405/",
+          "title": "The Resolution of the Dream"
+        },
+        {
+          "ref": "T24.6",
+          "url": "chap2406/",
+          "title": "Salvation from Fear"
+        },
+        {
+          "ref": "T24.7",
+          "url": "chap2407/",
+          "title": "The Meeting Place"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "base": "/acim/text/25/",
+      "ref": "T25",
+      "title": "The Remedy",
+      "section": [
+        {
+          "url": "chap2500/",
+          "ref": "T25",
+          "url": "chap2500/",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T25.1",
+          "url": "chap2501/",
+          "title": "The Appointed Task"
+        },
+        {
+          "ref": "T25.2",
+          "url": "chap2502/",
+          "title": "The Savior from the Dark"
+        },
+        {
+          "ref": "T25.3",
+          "url": "chap2503/",
+          "title": "The Fundamental Law of Perception"
+        },
+        {
+          "ref": "T25.4",
+          "url": "chap2504/",
+          "title": "The Joining of Minds"
+        },
+        {
+          "ref": "T25.5",
+          "url": "chap2505/",
+          "title": "The State of Sinlessness"
+        },
+        {
+          "ref": "T25.6",
+          "url": "chap2506/",
+          "title": "The Special Function"
+        },
+        {
+          "ref": "T25.7",
+          "url": "chap2507/",
+          "title": "Commuting the Sentence"
+        },
+        {
+          "ref": "T25.8",
+          "url": "chap2508/",
+          "title": "The Principle of Salvation"
+        },
+        {
+          "ref": "T25.9",
+          "url": "chap2509/",
+          "title": "The Justice of Heaven"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "base": "/acim/text/26/",
+      "ref": "T26",
+      "title": "The Transition",
+      "section": [
+        {
+          "url": "chap2600/",
+          "ref": "T26",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T26.1",
+          "url": "chap2601/",
+          "title": "The 'Sacrifice' of Oneness"
+        },
+        {
+          "ref": "T26.2",
+          "url": "chap2602/",
+          "title": "The Forms of Error"
+        },
+        {
+          "ref": "T26.3",
+          "url": "chap2603/",
+          "title": "The Borderland"
+        },
+        {
+          "ref": "T26.4",
+          "url": "chap2604/",
+          "title": "Where Sin Has Left"
+        },
+        {
+          "ref": "T26.5",
+          "url": "chap2605/",
+          "title": "The Little Hindrance"
+        },
+        {
+          "ref": "T26.6",
+          "url": "chap2606/",
+          "title": "The Appointed Friend"
+        },
+        {
+          "ref": "T26.7",
+          "url": "chap2607/",
+          "title": "Review of Principles"
+        },
+        {
+          "ref": "T26.8",
+          "url": "chap2608/",
+          "title": "The Immediacy of Salvation"
+        },
+        {
+          "ref": "T26.9",
+          "url": "chap2609/",
+          "title": "For They Have Come"
+        },
+        {
+          "ref": "T26.10",
+          "url": "chap2610/",
+          "title": "The Remaining Task"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "base": "/acim/text/27/",
+      "ref": "T27",
+      "title": "The Body and the Dream",
+      "section": [
+        {
+          "url": "chap2700/",
+          "ref": "T27",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T27.1",
+          "url": "chap2701/",
+          "title": "The Picture of Crucifixion"
+        },
+        {
+          "ref": "T27.2",
+          "url": "chap2702/",
+          "title": "The Fear of Healing"
+        },
+        {
+          "ref": "T27.3",
+          "url": "chap2703/",
+          "title": "The Symbol of the Impossible"
+        },
+        {
+          "ref": "T27.4",
+          "url": "chap2704/",
+          "title": "The Quiet Answer"
+        },
+        {
+          "ref": "T27.5",
+          "url": "chap2705/",
+          "title": "The Healing Example"
+        },
+        {
+          "ref": "T27.6",
+          "url": "chap2706/",
+          "title": "The Purpose of Pain"
+        },
+        {
+          "ref": "T27.7",
+          "url": "chap2707/",
+          "title": "The Illusion of Suffering"
+        },
+        {
+          "ref": "T27.8",
+          "url": "chap2708/",
+          "title": "The 'Hero' of the Dream"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "base": "/acim/text/28/",
+      "ref": "T28",
+      "title": "The Undoing of Fear",
+      "section": [
+        {
+          "url": "chap2800/",
+          "ref": "T28",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T28.1",
+          "url": "chap2801/",
+          "title": "The Present Memory"
+        },
+        {
+          "ref": "T28.2",
+          "url": "chap2802/",
+          "title": "Reversing Effect and Cause"
+        },
+        {
+          "ref": "T28.3",
+          "url": "chap2803/",
+          "title": "The Agreement to Join"
+        },
+        {
+          "ref": "T28.4",
+          "url": "chap2804/",
+          "title": "The Greater Joining"
+        },
+        {
+          "ref": "T28.5",
+          "url": "chap2805/",
+          "title": "The Alternate to Dreams of Fear"
+        },
+        {
+          "ref": "T28.6",
+          "url": "chap2806/",
+          "title": "The Secret Vows"
+        },
+        {
+          "ref": "T28.7",
+          "url": "chap2807/",
+          "title": "The Beautiful Relationship"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "base": "/acim/text/29/",
+      "ref": "T29",
+      "title": "The Awakening",
+      "section": [
+        {
+          "url": "chap2900/",
+          "ref": "T29",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T29.1",
+          "url": "chap2901/",
+          "title": "The Closing of the Gap"
+        },
+        {
+          "ref": "T29.2",
+          "url": "chap2902/",
+          "title": "The Coming of the Guest"
+        },
+        {
+          "ref": "T29.3",
+          "url": "chap2903/",
+          "title": "God’s Witnesses"
+        },
+        {
+          "ref": "T29.4",
+          "url": "chap2904/",
+          "title": "Dream Roles"
+        },
+        {
+          "ref": "T29.5",
+          "url": "chap2905/",
+          "title": "The Changeless Dwelling-Place"
+        },
+        {
+          "ref": "T29.6",
+          "url": "chap2906/",
+          "title": "Forgiveness and Peace"
+        },
+        {
+          "ref": "T29.7",
+          "url": "chap2907/",
+          "title": "The Lingering Illusion"
+        },
+        {
+          "ref": "T29.8",
+          "url": "chap2908/",
+          "title": "Christ and the Anti-Christ"
+        },
+        {
+          "ref": "T29.9",
+          "url": "chap2909/",
+          "title": "The Forgiving Dream"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "base": "/acim/text/30/",
+      "ref": "T30",
+      "title": "The New Beginning",
+      "section": [
+        {
+          "url": "chap3000/",
+          "ref": "T30",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T30.1",
+          "url": "chap3001/",
+          "title": "Rules for Decision"
+        },
+        {
+          "ref": "T30.2",
+          "url": "chap3002/",
+          "title": "Freedom of Will"
+        },
+        {
+          "ref": "T30.3",
+          "url": "chap3003/",
+          "title": "Beyond All Idols"
+        },
+        {
+          "ref": "T30.4",
+          "url": "chap3004/",
+          "title": "The Truth Behind Illusions"
+        },
+        {
+          "ref": "T30.5",
+          "url": "chap3005/",
+          "title": "The Only Purpose"
+        },
+        {
+          "ref": "T30.6",
+          "url": "chap3006/",
+          "title": "The Justification for Forgiveness"
+        },
+        {
+          "ref": "T30.7",
+          "url": "chap3007/",
+          "title": "The New Interpretation"
+        },
+        {
+          "ref": "T30.8",
+          "url": "chap3008/",
+          "title": "Changeless Reality"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "base": "/acim/text/31/",
+      "ref": "T31",
+      "title": "The Simplicity of Salvation",
+      "section": [
+        {
+          "url": "chap3100/",
+          "ref": "T31",
+          "title": "Introduction"
+        },
+        {
+          "ref": "T31.1",
+          "url": "chap3101/",
+          "title": "The Illusion of an Enemy"
+        },
+        {
+          "ref": "T31.2",
+          "url": "chap3102/",
+          "title": "The Self-Accused"
+        },
+        {
+          "ref": "T31.3",
+          "url": "chap3103/",
+          "title": "The Real Alternative"
+        },
+        {
+          "ref": "T31.4",
+          "url": "chap3104/",
+          "title": "Self-Concept versus Self"
+        },
+        {
+          "ref": "T31.5",
+          "url": "chap3105/",
+          "title": "Recognizing the Spirit"
+        },
+        {
+          "ref": "T31.6",
+          "url": "chap3106/",
+          "title": "The Savior’s Vision"
+        },
+        {
+          "ref": "T31.7",
+          "url": "chap3107/",
+          "title": "Choose Once Again"
+        }
+      ]
+    }
+  ]
+}
+
+

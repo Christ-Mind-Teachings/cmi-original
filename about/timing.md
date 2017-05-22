@@ -33,6 +33,9 @@ Open the page containing the audio to capture and open the sidebar by
 clicking the *hamburger* icon at the upper left of the page. Then click
 the *Time Capture Off* menu option.
 
+**Note:** if the *Time Capture Off* menu option is missing it means that
+a reservation has been made to capture time for that page.
+
 This will display a bullseye symbol, <i class="fa fa-bullseye"></i>, in
 front of every paragraph. The first paragraph is different, it has a
 checkmark, <i class="fa fa-check"></i>, instead.

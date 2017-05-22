@@ -1,0 +1,159 @@
+{
+  "base": "/acim/text/07/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Seven",
+  "bid": "atext07",
+  "page": [
+    {
+      "fid": "text/#T7",
+      "url": "/acim/intro/text/#T7",
+      "idx": 0,
+      "next": "/acim/text/07/chap0700/",
+      "prev": "/acim/text/07/chap0711/"
+    },
+    {
+      "fid": "chap0700/",
+      "title": "T7 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0700/",
+      "idx": 1,
+      "next": "/acim/text/07/chap0701/",
+      "prev": "/acim/intro/text/#T7"
+    },
+    {
+      "fid": "chap0701/",
+      "title": "T7.1 Bargaining versus Healing",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0701/",
+      "idx": 2,
+      "next": "/acim/text/07/chap0702/",
+      "prev": "/acim/text/07/chap0700/"
+    },
+    {
+      "fid": "chap0702/",
+      "title": "T7.2 The Laws of Mind",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0702/",
+      "idx": 3,
+      "next": "/acim/text/07/chap0703/",
+      "prev": "/acim/text/07/chap0701/"
+    },
+    {
+      "fid": "chap0703/",
+      "title": "T7.3 The Unified Curriculum",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0703/",
+      "idx": 4,
+      "next": "/acim/text/07/chap0704/",
+      "prev": "/acim/text/07/chap0702/"
+    },
+    {
+      "fid": "chap0704/",
+      "title": "T7.4 The Recognition of Truth",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0704/",
+      "idx": 5,
+      "next": "/acim/text/07/chap0705/",
+      "prev": "/acim/text/07/chap0703/"
+    },
+    {
+      "fid": "chap0705/",
+      "title": "T7.5 Healing and the Changelessness of Mind",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0705/",
+      "idx": 6,
+      "next": "/acim/text/07/chap0706/",
+      "prev": "/acim/text/07/chap0704/"
+    },
+    {
+      "fid": "chap0706/",
+      "title": "T7.6 From Vigilance to Peace",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0706/",
+      "idx": 7,
+      "next": "/acim/text/07/chap0707/",
+      "prev": "/acim/text/07/chap0705/"
+    },
+    {
+      "fid": "chap0707/",
+      "title": "T7.7 The Total Commitment",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0707/",
+      "idx": 8,
+      "next": "/acim/text/07/chap0708/",
+      "prev": "/acim/text/07/chap0706/"
+    },
+    {
+      "fid": "chap0708/",
+      "title": "T7.8 The Defense of Conflict",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0708/",
+      "idx": 9,
+      "next": "/acim/text/07/chap0709/",
+      "prev": "/acim/text/07/chap0707/"
+    },
+    {
+      "fid": "chap0709/",
+      "title": "T7.9 The Extension of the Kingdom",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0709/",
+      "idx": 10,
+      "next": "/acim/text/07/chap0710/",
+      "prev": "/acim/text/07/chap0708/"
+    },
+    {
+      "fid": "chap0710/",
+      "title": "T7.10 The Confusion of Strength and Weakness",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0710/",
+      "idx": 11,
+      "next": "/acim/text/07/chap0711/",
+      "prev": "/acim/text/07/chap0709/"
+    },
+    {
+      "fid": "chap0711/",
+      "title": "T7.11 The State of Grace",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/07/chap0711/",
+      "idx": 12,
+      "next": "/acim/intro/text/#T7",
+      "prev": "/acim/text/07/chap0710/"
+    }
+  ]
+}

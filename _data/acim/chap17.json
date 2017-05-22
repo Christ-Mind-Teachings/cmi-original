@@ -1,0 +1,123 @@
+{
+  "base": "/acim/text/17/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Seventeen",
+  "bid": "atext17",
+  "page": [
+    {
+      "fid": "text/#T17",
+      "url": "/acim/intro/text/#T17",
+      "idx": 0,
+      "next": "/acim/text/17/chap1700/",
+      "prev": "/acim/text/17/chap1708/"
+    },
+    {
+      "title": "T17 Introduction",
+      "fid": "chap1700/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/17/chap1700/",
+      "idx": 1,
+      "next": "/acim/text/17/chap1701/",
+      "prev": "/acim/intro/text/#T17"
+    },
+    {
+      "title": "T17.1 Fantasy and Distorted Perception",
+      "fid": "chap1701/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/17/chap1701/",
+      "idx": 2,
+      "next": "/acim/text/17/chap1702/",
+      "prev": "/acim/text/17/chap1700/"
+    },
+    {
+      "title": "T17.2 The Forgiven World",
+      "fid": "chap1702/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/17/chap1702/",
+      "idx": 3,
+      "next": "/acim/text/17/chap1703/",
+      "prev": "/acim/text/17/chap1701/"
+    },
+    {
+      "title": "T17.3 Shadows of the Past",
+      "fid": "chap1703/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/17/chap1703/",
+      "idx": 4,
+      "next": "/acim/text/17/chap1704/",
+      "prev": "/acim/text/17/chap1702/"
+    },
+    {
+      "title": "T17.4 Perception and the Two Worlds",
+      "fid": "chap1704/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/17/chap1704/",
+      "idx": 5,
+      "next": "/acim/text/17/chap1705/",
+      "prev": "/acim/text/17/chap1703/"
+    },
+    {
+      "title": "T17.5 The Healed Relationship",
+      "fid": "chap1705/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/17/chap1705/",
+      "idx": 6,
+      "next": "/acim/text/17/chap1706/",
+      "prev": "/acim/text/17/chap1704/"
+    },
+    {
+      "title": "T17.6 Practical Forgiveness",
+      "fid": "chap1706/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/17/chap1706/",
+      "idx": 7,
+      "next": "/acim/text/17/chap1707/",
+      "prev": "/acim/text/17/chap1705/"
+    },
+    {
+      "title": "T17.7 The Need for Faith",
+      "fid": "chap1707/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/17/chap1707/",
+      "idx": 8,
+      "next": "/acim/text/17/chap1708/",
+      "prev": "/acim/text/17/chap1706/"
+    },
+    {
+      "title": "T17.8 Conditions of Forgiveness",
+      "fid": "chap1708/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/17/chap1708/",
+      "idx": 9,
+      "next": "/acim/intro/text/#T17",
+      "prev": "/acim/text/17/chap1707/"
+    }
+  ]
+}

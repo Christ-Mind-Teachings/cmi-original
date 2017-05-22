@@ -17,12 +17,12 @@
     },
     {
       "fid": "010111/",
-      "desc": "",
+      "desc": "T16.6 The Bridge to the Real World",
       "res": {
         "audio": "2011-01-01.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -36,12 +36,12 @@
     },
     {
       "fid": "010811/",
-      "desc": "",
+      "desc": "T16.6 The Bridge to the Real World",
       "res": {
         "audio": "2011-01-08.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -55,9 +55,9 @@
     },
     {
       "fid": "011511/",
-      "desc": "",
+      "desc": "Discussion",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -71,12 +71,12 @@
     },
     {
       "fid": "012211/",
-      "desc": "",
+      "desc": "T16.7 The End of Illusions",
       "res": {
         "audio": "2011-01-22.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -90,12 +90,12 @@
     },
     {
       "fid": "020511/",
-      "desc": "",
+      "desc": "T16.7 The End of Illusions",
       "res": {
         "audio": "2011-02-05.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -109,12 +109,12 @@
     },
     {
       "fid": "021611/",
-      "desc": "",
+      "desc": "T16.7 The End of Illusions",
       "res": {
         "audio": "2011-02-16.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -128,7 +128,7 @@
     },
     {
       "fid": "021911/",
-      "desc": "T17.I Bringing Fantasy to Truth",
+      "desc": "T17.1 Bringing Fantasy to Truth",
       "res": {
         "audio": "2011-02-23.mp3",
         "timing": "021911.js"
@@ -148,12 +148,12 @@
     },
     {
       "fid": "031211/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2011-03-12.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -167,12 +167,12 @@
     },
     {
       "fid": "032011/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2011-03-20.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -186,12 +186,12 @@
     },
     {
       "fid": "032611/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2011-03-26.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -205,9 +205,9 @@
     },
     {
       "fid": "040311/",
-      "desc": "",
+      "desc": "Discussion",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -224,12 +224,12 @@
     },
     {
       "fid": "040911/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2011-04-09.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -243,12 +243,12 @@
     },
     {
       "fid": "041611/",
-      "desc": "",
+      "desc": "T17.1 Fantasy and Distorted Perception",
       "res": {
         "audio": "2011-04-16.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -262,12 +262,12 @@
     },
     {
       "fid": "042311/",
-      "desc": "",
+      "desc": "T17.2 The Forgiven World",
       "res": {
         "audio": "2011-04-23.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -281,12 +281,12 @@
     },
     {
       "fid": "043011/",
-      "desc": "",
+      "desc": "T17.3 Shadows of the Past",
       "res": {
         "audio": "2011-04-30.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -300,12 +300,12 @@
     },
     {
       "fid": "050711/",
-      "desc": "",
+      "desc": "T17.3 Shadows of the Past",
       "res": {
         "audio": "2011-05-07.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -319,12 +319,12 @@
     },
     {
       "fid": "051411/",
-      "desc": "",
+      "desc": "T17.3 Shadows of the Past",
       "res": {
         "audio": "2011-05-14.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -338,12 +338,12 @@
     },
     {
       "fid": "052211/",
-      "desc": "",
+      "desc": "T17.4 Perception and the Two Worlds",
       "res": {
         "audio": "2011-05-22.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -357,12 +357,12 @@
     },
     {
       "fid": "060411/",
-      "desc": "",
+      "desc": "T17.4 Perception and the Two Worlds",
       "res": {
         "audio": "2011-06-04.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -376,12 +376,12 @@
     },
     {
       "fid": "061211/",
-      "desc": "",
+      "desc": "T17.4 Perception and the Two Worlds",
       "res": {
         "audio": "2011-06-12.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -395,12 +395,12 @@
     },
     {
       "fid": "061811/",
-      "desc": "",
+      "desc": "T17.4 Perception and the Two Worlds",
       "res": {
         "audio": "2011-06-18.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -414,12 +414,12 @@
     },
     {
       "fid": "062611/",
-      "desc": "",
+      "desc": "T17.4 Perception and the Two Worlds",
       "res": {
         "audio": "2011-06-26.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -433,12 +433,12 @@
     },
     {
       "fid": "070911/",
-      "desc": "",
+      "desc": "Workbook: Lesson 23",
       "res": {
         "audio": "2011-07-09.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -452,12 +452,12 @@
     },
     {
       "fid": "071611/",
-      "desc": "",
+      "desc": "T17.5 The Healed Relationship",
       "res": {
         "audio": "2011-07-16.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -471,12 +471,12 @@
     },
     {
       "fid": "073011/",
-      "desc": "",
+      "desc": "T17.5 The Healed Relationship",
       "res": {
         "audio": "2011-07-30.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -490,12 +490,12 @@
     },
     {
       "fid": "080611/",
-      "desc": "",
+      "desc": "T17.5 The Healed Relationship",
       "res": {
         "audio": "2011-08-06.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -509,12 +509,12 @@
     },
     {
       "fid": "082011/",
-      "desc": "",
+      "desc": "T17.6 Practical Forgiveness",
       "res": {
         "audio": "2011-08-20.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -528,9 +528,9 @@
     },
     {
       "fid": "082711/",
-      "desc": "",
+      "desc": "T17.6 Practical Forgiveness",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -547,12 +547,12 @@
     },
     {
       "fid": "090311/",
-      "desc": "",
+      "desc": "T17.6 Practical Forgiveness",
       "res": {
         "audio": "2011-09-03.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -566,9 +566,9 @@
     },
     {
       "fid": "091711/",
-      "desc": "",
+      "desc": "T17.7 The Need for Faith",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -585,12 +585,12 @@
     },
     {
       "fid": "092411/",
-      "desc": "",
+      "desc": "T17.7 The Need for Faith",
       "res": {
         "audio": "2011-09-24.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -604,12 +604,12 @@
     },
     {
       "fid": "100111/",
-      "desc": "",
+      "desc": "T17.7 The Need for Faith",
       "res": {
         "audio": "2011-10-01.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -623,12 +623,12 @@
     },
     {
       "fid": "101511/",
-      "desc": "",
+      "desc": "T17.7 The Need for Faith",
       "res": {
         "audio": "2011-10-15.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -642,9 +642,9 @@
     },
     {
       "fid": "102311/",
-      "desc": "",
+      "desc": "T17.8 The Conditions of Forgiveness",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -661,12 +661,12 @@
     },
     {
       "fid": "110511/",
-      "desc": "",
+      "desc": "T18 The Dream and the Reality",
       "res": {
         "audio": "2011-11-05.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -680,12 +680,12 @@
     },
     {
       "fid": "111311/",
-      "desc": "",
+      "desc": "T18 The Dream and the Reality",
       "res": {
         "audio": "2011-11-13.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -699,12 +699,12 @@
     },
     {
       "fid": "112611/",
-      "desc": "",
+      "desc": "T18.1 Substitution as a Defense",
       "res": {
         "audio": "2011-11-26.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -718,14 +718,14 @@
     },
     {
       "fid": "120411/",
-      "desc": "",
+      "desc": "T18.1 Substitution as a Defense",
       "res": {
         "audio": "2011-12-04.mp3"
       },
       "complete": {
         "format": 0,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -737,12 +737,12 @@
     },
     {
       "fid": "121111/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2011-12-11.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -756,12 +756,12 @@
     },
     {
       "fid": "122011/",
-      "desc": "",
+      "desc": "T18.2 The Basis of the Dream",
       "res": {
         "audio": "2011-12-20.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0

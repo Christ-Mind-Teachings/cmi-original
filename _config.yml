@@ -33,6 +33,10 @@ collections:
     output: true
     title: Northwest Foundation for ACIM
     url: /nwffacim/intro/nwffacim/
+  acim:
+    output: true
+    title: A Course in Miracles
+    url: /acim/intro/acim/
 
 defaults:
 
@@ -366,6 +370,212 @@ defaults:
       nav: nav/np-data.html
       contents: nav/contents.html
 
+# ACIM Sparkly Edition
+  - scope:
+      path: ""
+      type: acim
+    values:
+      layout: narrative
+      source: A Course in Miracles
+      surl: /acim/intro/acim/
+      sid: acim
+      class: acim
+
+  - scope:
+      path: "_acim/text"
+      type: acim
+    values:
+      book: "ACIM Sparkly Edition: Text"
+      burl: /acim/intro/text/
+      nav: nav/np-data.html
+      contents: nav/contents.html
+
+  - scope:
+      path: "_acim/text/01"
+      type: acim
+    values:
+      bid: "atext01"
+
+  - scope:
+      path: "_acim/text/02"
+      type: acim
+    values:
+      bid: "atext02"
+
+  - scope:
+      path: "_acim/text/03"
+      type: acim
+    values:
+      bid: "atext03"
+
+  - scope:
+      path: "_acim/text/04"
+      type: acim
+    values:
+      bid: "atext04"
+
+  - scope:
+      path: "_acim/text/05"
+      type: acim
+    values:
+      bid: "atext05"
+
+  - scope:
+      path: "_acim/text/06"
+      type: acim
+    values:
+      bid: "atext06"
+
+  - scope:
+      path: "_acim/text/07"
+      type: acim
+    values:
+      bid: "atext07"
+
+  - scope:
+      path: "_acim/text/08"
+      type: acim
+    values:
+      bid: "atext08"
+
+  - scope:
+      path: "_acim/text/09"
+      type: acim
+    values:
+      bid: "atext09"
+
+  - scope:
+      path: "_acim/text/10"
+      type: acim
+    values:
+      bid: "atext10"
+
+  - scope:
+      path: "_acim/text/11"
+      type: acim
+    values:
+      bid: "atext11"
+
+  - scope:
+      path: "_acim/text/12"
+      type: acim
+    values:
+      bid: "atext12"
+
+  - scope:
+      path: "_acim/text/13"
+      type: acim
+    values:
+      bid: "atext13"
+
+  - scope:
+      path: "_acim/text/14"
+      type: acim
+    values:
+      bid: "atext14"
+
+  - scope:
+      path: "_acim/text/15"
+      type: acim
+    values:
+      bid: "atext15"
+
+  - scope:
+      path: "_acim/text/16"
+      type: acim
+    values:
+      bid: "atext16"
+
+  - scope:
+      path: "_acim/text/17"
+      type: acim
+    values:
+      bid: "atext17"
+
+  - scope:
+      path: "_acim/text/18"
+      type: acim
+    values:
+      bid: "atext18"
+
+  - scope:
+      path: "_acim/text/19"
+      type: acim
+    values:
+      bid: "atext19"
+
+  - scope:
+      path: "_acim/text/20"
+      type: acim
+    values:
+      bid: "atext20"
+
+  - scope:
+      path: "_acim/text/21"
+      type: acim
+    values:
+      bid: "atext21"
+
+  - scope:
+      path: "_acim/text/22"
+      type: acim
+    values:
+      bid: "atext22"
+
+  - scope:
+      path: "_acim/text/23"
+      type: acim
+    values:
+      bid: "atext23"
+
+  - scope:
+      path: "_acim/text/24"
+      type: acim
+    values:
+      bid: "atext24"
+
+  - scope:
+      path: "_acim/text/25"
+      type: acim
+    values:
+      bid: "atext25"
+
+  - scope:
+      path: "_acim/text/26"
+      type: acim
+    values:
+      bid: "atext26"
+
+  - scope:
+      path: "_acim/text/27"
+      type: acim
+    values:
+      bid: "atext27"
+
+  - scope:
+      path: "_acim/text/28"
+      type: acim
+    values:
+      bid: "atext28"
+
+  - scope:
+      path: "_acim/text/29"
+      type: acim
+    values:
+      bid: "atext29"
+
+  - scope:
+      path: "_acim/text/30"
+      type: acim
+    values:
+      bid: "atext30"
+
+  - scope:
+      path: "_acim/text/31"
+      type: acim
+    values:
+      bid: "atext31"
+
 # Markdown specs
 markdown: kramdown
 
@@ -379,7 +589,7 @@ kramdown:
   enable_coderay: false
 
 # Custom vars
-version:             0.8.0
+version:             0.8.1
 fb-appId:     448658485318107
 
 # ----------- SINGLE PAGE TEMPLATE SUPPORT - USED FOR LANDING PAGE
@@ -395,36 +605,37 @@ colors:
 
 # Exclusions from the final site
 exclude: [
-  ##      _wom/woh,
-  #        _wom/wot,
-  #        _wom/wok,
-  #        _wom/early,
-  #        _wom/tjl,
-  #        _wom/wos,
-  #      _wom/questions,
-  #        _nwffacim/grad,
-  #        _nwffacim/yaa,
-  #        _nwffacim/2002,
-  #       _nwffacim/2003,
-  #        _nwffacim/2004,
-  #        _nwffacim/2005,
-  #        _nwffacim/2006,
-  #        _nwffacim/2007,
-  #        _nwffacim/2008,
-  #        _nwffacim/2009,
-  #        _nwffacim/2010,
-  #        _nwffacim/2011,
-  #        _nwffacim/2012,
-  ##      _nwffacim/2013,
-  #       _nwffacim/2014,
-  #      _nwffacim/2015,
-  #       _nwffacim/2016,
+     _acim/text,
+    _wom/woh,
+     _wom/wot,
+     _wom/wok,
+    _wom/early,
+     _wom/tjl,
+     _wom/wos,
+     _wom/questions,
+     _nwffacim/grad,
+     _nwffacim/yaa,
+     _nwffacim/2002,
+     _nwffacim/2003,
+     _nwffacim/2004,
+     _nwffacim/2005,
+     _nwffacim/2006,
+     _nwffacim/2007,
+     _nwffacim/2008,
+     _nwffacim/2009,
+     _nwffacim/2010,
+     _nwffacim/2011,
+     _nwffacim/2012,
+     _nwffacim/2013,
+     _nwffacim/2014,
+     _nwffacim/2015,
+     _nwffacim/2016,
   work, bin, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
 
-xxkeep_files: [
+keep_files: [
+  acim,
   wom,
   nwffacim
 ]
-
 

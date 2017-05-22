@@ -1,0 +1,123 @@
+{
+  "base": "/acim/text/21/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty One",
+  "bid": "atext21",
+  "page": [
+    {
+      "fid": "text/#T21",
+      "url": "/acim/intro/text/#T21",
+      "idx": 0,
+      "next": "/acim/text/21/chap2100/",
+      "prev": "/acim/text/21/chap2108/"
+    },
+    {
+      "title": "T21 Introduction",
+      "fid": "chap2100/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/21/chap2100/",
+      "idx": 1,
+      "next": "/acim/text/21/chap2101/",
+      "prev": "/acim/intro/text/#T21"
+    },
+    {
+      "title": "T21.1 The Imagined World",
+      "fid": "chap2101/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/21/chap2101/",
+      "idx": 2,
+      "next": "/acim/text/21/chap2102/",
+      "prev": "/acim/text/21/chap2100/"
+    },
+    {
+      "title": "T21.2 The Responsibility for Sight",
+      "fid": "chap2102/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/21/chap2102/",
+      "idx": 3,
+      "next": "/acim/text/21/chap2103/",
+      "prev": "/acim/text/21/chap2101/"
+    },
+    {
+      "title": "T21.3 Faith, Belief and Vision",
+      "fid": "chap2103/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/21/chap2103/",
+      "idx": 4,
+      "next": "/acim/text/21/chap2104/",
+      "prev": "/acim/text/21/chap2102/"
+    },
+    {
+      "title": "T21.4 The Fear to Look Within",
+      "fid": "chap2104/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/21/chap2104/",
+      "idx": 5,
+      "next": "/acim/text/21/chap2105/",
+      "prev": "/acim/text/21/chap2103/"
+    },
+    {
+      "title": "T21.5 Reason and Perception",
+      "fid": "chap2105/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/21/chap2105/",
+      "idx": 6,
+      "next": "/acim/text/21/chap2106/",
+      "prev": "/acim/text/21/chap2104/"
+    },
+    {
+      "title": "T21.6 Reason and Correction",
+      "fid": "chap2106/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/21/chap2106/",
+      "idx": 7,
+      "next": "/acim/text/21/chap2107/",
+      "prev": "/acim/text/21/chap2105/"
+    },
+    {
+      "title": "T21.7 Perception and Wishes",
+      "fid": "chap2107/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/21/chap2107/",
+      "idx": 8,
+      "next": "/acim/text/21/chap2108/",
+      "prev": "/acim/text/21/chap2106/"
+    },
+    {
+      "title": "T21.8 The Inner Shift",
+      "fid": "chap2108/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/21/chap2108/",
+      "idx": 9,
+      "next": "/acim/intro/text/#T21",
+      "prev": "/acim/text/21/chap2107/"
+    }
+  ]
+}

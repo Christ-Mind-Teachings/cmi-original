@@ -1,0 +1,99 @@
+{
+  "base": "/acim/text/14/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Fourteen",
+  "bid": "atext14",
+  "page": [
+    {
+      "fid": "text/#T14",
+      "url": "/acim/intro/text/#T14",
+      "idx": 0,
+      "next": "/acim/text/14/chap1400/",
+      "prev": "/acim/text/14/chap1406/"
+    },
+    {
+      "fid": "chap1400/",
+      "title": "T14 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/14/chap1400/",
+      "idx": 1,
+      "next": "/acim/text/14/chap1401/",
+      "prev": "/acim/intro/text/#T14"
+    },
+    {
+      "fid": "chap1401/",
+      "title": "T14.1 Guilt and Guiltlessness",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/14/chap1401/",
+      "idx": 2,
+      "next": "/acim/text/14/chap1402/",
+      "prev": "/acim/text/14/chap1400/"
+    },
+    {
+      "fid": "chap1402/",
+      "title": "T14.2 Out of the Darkness",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/14/chap1402/",
+      "idx": 3,
+      "next": "/acim/text/14/chap1403/",
+      "prev": "/acim/text/14/chap1401/"
+    },
+    {
+      "fid": "chap1403/",
+      "title": "T14.3 Perception without Deceit",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/14/chap1403/",
+      "idx": 4,
+      "next": "/acim/text/14/chap1404/",
+      "prev": "/acim/text/14/chap1402/"
+    },
+    {
+      "fid": "chap1404/",
+      "title": "T14.4 The Recognition of Holiness",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/14/chap1404/",
+      "idx": 5,
+      "next": "/acim/text/14/chap1405/",
+      "prev": "/acim/text/14/chap1403/"
+    },
+    {
+      "fid": "chap1405/",
+      "title": "T14.5 The Shift to Miracles",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/14/chap1405/",
+      "idx": 6,
+      "next": "/acim/text/14/chap1406/",
+      "prev": "/acim/text/14/chap1404/"
+    },
+    {
+      "fid": "chap1406/",
+      "title": "T14.6 The Test of Truth",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/14/chap1406/",
+      "idx": 7,
+      "next": "/acim/intro/text/#T14",
+      "prev": "/acim/text/14/chap1405/"
+    }
+  ]
+}

@@ -25,9 +25,7 @@ The initial release of the Library includes the *Way of Mastery* and the
 
 Date | Version | Comment
 --- | --- | ---
-Apr 29, 2017 | [v0.8.1](https://v0-8-1--christmind.netlify.com/) | Bug
-fix: nav/np-data.html not included preventing audio playback for ACIM
-Study Group
+Apr 29, 2017 | [v0.8.1](https://v0-8-1--christmind.netlify.com/) | -
 Apr 29, 2017 | [v0.8.0](https://v0-8-0--christmind.netlify.com/) | Initial release, announced to FB, WOM: Early Years mostly not completely formatted, NWFFACIM: ACIM Study Group mostly not completely formatted.
 
 

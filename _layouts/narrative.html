@@ -3,11 +3,8 @@ layout: default
 ---
 
 <div class="narrative">
-  <h2 class="post-title">{{ page.title }}
-    {% if page.ref %}
-      <br/>
-      <small>{{page.ref}}</small>
-    {% endif %}
+  <h2 class="post-title">
+    {% include ui/title.html %}
   </h2>
   {% comment %}
   Check for page resources, ie: pdf, rtf, audio, etc

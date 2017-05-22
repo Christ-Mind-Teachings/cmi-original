@@ -1,0 +1,123 @@
+{
+  "base": "/acim/text/05/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Five",
+  "bid": "atext05",
+  "page": [
+    {
+      "fid": "text/#T5",
+      "url": "/acim/intro/text/#T5",
+      "idx": 0,
+      "next": "/acim/text/05/chap0500/",
+      "prev": "/acim/text/05/chap0508/"
+    },
+    {
+      "fid": "chap0500/",
+      "title": "T5 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/05/chap0500/",
+      "idx": 1,
+      "next": "/acim/text/05/chap0501/",
+      "prev": "/acim/intro/text/#T5"
+    },
+    {
+      "fid": "chap0501/",
+      "title": "T5.1 Healing as Joining",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/05/chap0501/",
+      "idx": 2,
+      "next": "/acim/text/05/chap0502/",
+      "prev": "/acim/text/05/chap0500/"
+    },
+    {
+      "fid": "chap0502/",
+      "title": "T5.2 The Mind of the Atonement",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/05/chap0502/",
+      "idx": 3,
+      "next": "/acim/text/05/chap0503/",
+      "prev": "/acim/text/05/chap0501/"
+    },
+    {
+      "fid": "chap0503/",
+      "title": "T5.3 The Voice for God",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/05/chap0503/",
+      "idx": 4,
+      "next": "/acim/text/05/chap0504/",
+      "prev": "/acim/text/05/chap0502/"
+    },
+    {
+      "fid": "chap0504/",
+      "title": "T5.4 The Guide to Salvation",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/05/chap0504/",
+      "idx": 5,
+      "next": "/acim/text/05/chap0505/",
+      "prev": "/acim/text/05/chap0503/"
+    },
+    {
+      "fid": "chap0505/",
+      "title": "T5.5 Therapy and Teaching",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/05/chap0505/",
+      "idx": 6,
+      "next": "/acim/text/05/chap0506/",
+      "prev": "/acim/text/05/chap0504/"
+    },
+    {
+      "fid": "chap0506/",
+      "title": "T5.6 The Two Decisions",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/05/chap0506/",
+      "idx": 7,
+      "next": "/acim/text/05/chap0507/",
+      "prev": "/acim/text/05/chap0505/"
+    },
+    {
+      "fid": "chap0507/",
+      "title": "T5.7 Time and Eternity",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/05/chap0507/",
+      "idx": 8,
+      "next": "/acim/text/05/chap0508/",
+      "prev": "/acim/text/05/chap0506/"
+    },
+    {
+      "fid": "chap0508/",
+      "title": "T5.8 The Eternal Fixation",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/05/chap0508/",
+      "idx": 9,
+      "next": "/acim/intro/text/#T5",
+      "prev": "/acim/text/05/chap0507/"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "base": "/acim/text/15/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Fifteen",
+  "bid": "atext15",
+  "page": [
+    {
+      "fid": "text/#T15",
+      "url": "/acim/intro/text/#T15",
+      "idx": 0,
+      "next": "/acim/text/15/chap1500/",
+      "prev": "/acim/text/15/chap1510/"
+    },
+    {
+      "fid": "chap1500/",
+      "title": "T15 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1500/",
+      "idx": 1,
+      "next": "/acim/text/15/chap1501/",
+      "prev": "/acim/intro/text/#T15"
+    },
+    {
+      "fid": "chap1501/",
+      "title": "T15.1 The Uses of Time",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1501/",
+      "idx": 2,
+      "next": "/acim/text/15/chap1502/",
+      "prev": "/acim/text/15/chap1500/"
+    },
+    {
+      "fid": "chap1502/",
+      "title": "T15.2 Time and Eternity",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1502/",
+      "idx": 3,
+      "next": "/acim/text/15/chap1503/",
+      "prev": "/acim/text/15/chap1501/"
+    },
+    {
+      "fid": "chap1503/",
+      "title": "T15.3 Littleness versus Magnitude",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1503/",
+      "idx": 4,
+      "next": "/acim/text/15/chap1504/",
+      "prev": "/acim/text/15/chap1502/"
+    },
+    {
+      "fid": "chap1504/",
+      "title": "T15.4 Practicing the Holy Instant",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1504/",
+      "idx": 5,
+      "next": "/acim/text/15/chap1505/",
+      "prev": "/acim/text/15/chap1503/"
+    },
+    {
+      "fid": "chap1505/",
+      "title": "T15.5 The Holy Instant and Special Relationships",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1505/",
+      "idx": 6,
+      "next": "/acim/text/15/chap1506/",
+      "prev": "/acim/text/15/chap1504/"
+    },
+    {
+      "fid": "chap1506/",
+      "title": "T15.6 The Holy Instant and the Laws of God",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1506/",
+      "idx": 7,
+      "next": "/acim/text/15/chap1507/",
+      "prev": "/acim/text/15/chap1505/"
+    },
+    {
+      "fid": "chap1507/",
+      "title": "T15.7 The Holy Instant and Communication",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1507/",
+      "idx": 8,
+      "next": "/acim/text/15/chap1508/",
+      "prev": "/acim/text/15/chap1506/"
+    },
+    {
+      "fid": "chap1508/",
+      "title": "T15.8 The Holy Instant and Real Relationships",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1508/",
+      "idx": 9,
+      "next": "/acim/text/15/chap1509/",
+      "prev": "/acim/text/15/chap1507/"
+    },
+    {
+      "fid": "chap1509/",
+      "title": "T15.9 The Time of Christ",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1509/",
+      "idx": 10,
+      "next": "/acim/text/15/chap1510/",
+      "prev": "/acim/text/15/chap1508/"
+    },
+    {
+      "fid": "chap1510/",
+      "title": "T15.10 The End of Sacrifice",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/15/chap1510/",
+      "idx": 11,
+      "next": "/acim/intro/text/#T15",
+      "prev": "/acim/text/15/chap1509/"
+    }
+  ]
+}

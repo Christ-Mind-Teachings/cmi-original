@@ -1,0 +1,123 @@
+{
+  "base": "/acim/text/27/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty Seven",
+  "bid": "atext27",
+  "page": [
+    {
+      "fid": "text/#T27",
+      "url": "/acim/intro/text/#T27",
+      "idx": 0,
+      "next": "/acim/text/27/chap2700/",
+      "prev": "/acim/text/27/chap2708/"
+    },
+    {
+      "title": "T27 Introduction",
+      "fid": "chap2700/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/27/chap2700/",
+      "idx": 1,
+      "next": "/acim/text/27/chap2701/",
+      "prev": "/acim/intro/text/#T27"
+    },
+    {
+      "title": "T27.1 The Picture of Crucifixion",
+      "fid": "chap2701/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/27/chap2701/",
+      "idx": 2,
+      "next": "/acim/text/27/chap2702/",
+      "prev": "/acim/text/27/chap2700/"
+    },
+    {
+      "title": "T27.2 The Fear of Healing",
+      "fid": "chap2702/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/27/chap2702/",
+      "idx": 3,
+      "next": "/acim/text/27/chap2703/",
+      "prev": "/acim/text/27/chap2701/"
+    },
+    {
+      "title": "T27.3 The Symbol of the Impossible",
+      "fid": "chap2703/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/27/chap2703/",
+      "idx": 4,
+      "next": "/acim/text/27/chap2704/",
+      "prev": "/acim/text/27/chap2702/"
+    },
+    {
+      "title": "T27.4 The Quiet Answer",
+      "fid": "chap2704/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/27/chap2704/",
+      "idx": 5,
+      "next": "/acim/text/27/chap2705/",
+      "prev": "/acim/text/27/chap2703/"
+    },
+    {
+      "title": "T27.5 The Healing Example",
+      "fid": "chap2705/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/27/chap2705/",
+      "idx": 6,
+      "next": "/acim/text/27/chap2706/",
+      "prev": "/acim/text/27/chap2704/"
+    },
+    {
+      "title": "T27.6 The Purpose of Pain",
+      "fid": "chap2706/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/27/chap2706/",
+      "idx": 7,
+      "next": "/acim/text/27/chap2707/",
+      "prev": "/acim/text/27/chap2705/"
+    },
+    {
+      "title": "T27.7 The Illusion of Suffering",
+      "fid": "chap2707/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/27/chap2707/",
+      "idx": 8,
+      "next": "/acim/text/27/chap2708/",
+      "prev": "/acim/text/27/chap2706/"
+    },
+    {
+      "title": "T27.8 The 'Hero' of the Dream",
+      "fid": "chap2708/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/27/chap2708/",
+      "idx": 9,
+      "next": "/acim/intro/text/#T27",
+      "prev": "/acim/text/27/chap2707/"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "base": "/acim/text/02/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Two",
+  "bid": "atext02",
+  "page": [
+    {
+      "fid": "text/#T2",
+      "url": "/acim/intro/text/#T2",
+      "idx": 0,
+      "next": "/acim/text/02/chap0200/",
+      "prev": "/acim/text/02/chap0205/"
+    },
+    {
+      "fid": "chap0200/",
+      "title": "T2 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/02/chap0200/",
+      "idx": 1,
+      "next": "/acim/text/02/chap0201/",
+      "prev": "/acim/intro/text/#T2"
+    },
+    {
+      "fid": "chap0201/",
+      "title": "T2.1 The Reinterpretation of Defenses",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/02/chap0201/",
+      "idx": 2,
+      "next": "/acim/text/02/chap0202/",
+      "prev": "/acim/text/02/chap0200/"
+    },
+    {
+      "fid": "chap0202/",
+      "title": "T2.2 Healing as Release from Fear",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/02/chap0202/",
+      "idx": 3,
+      "next": "/acim/text/02/chap0203/",
+      "prev": "/acim/text/02/chap0201/"
+    },
+    {
+      "fid": "chap0203/",
+      "title": "T2.3 Fear as Lack of Love",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/02/chap0203/",
+      "idx": 4,
+      "next": "/acim/text/02/chap0204/",
+      "prev": "/acim/text/02/chap0202/"
+    },
+    {
+      "fid": "chap0204/",
+      "title": "T2.4 The Correction for Lack of Love",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/02/chap0204/",
+      "idx": 5,
+      "next": "/acim/text/02/chap0205/",
+      "prev": "/acim/text/02/chap0203/"
+    },
+    {
+      "fid": "chap0205/",
+      "title": "T2.5 The Meaning of the Last Judgement",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/02/chap0205/",
+      "idx": 6,
+      "next": "/acim/intro/text/#T2",
+      "prev": "/acim/text/02/chap0204/"
+    }
+  ]
+}

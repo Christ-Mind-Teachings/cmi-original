@@ -1,0 +1,159 @@
+{
+  "base": "/acim/text/19/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Nineteen",
+  "bid": "atext19",
+  "page": [
+    {
+      "fid": "text/#T19",
+      "url": "/acim/intro/text/#T19",
+      "idx": 0,
+      "next": "/acim/text/19/chap1900/",
+      "prev": "/acim/text/19/chap1911/"
+    },
+    {
+      "title": "T19 Introduction",
+      "fid": "chap1900/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1900/",
+      "idx": 1,
+      "next": "/acim/text/19/chap1901/",
+      "prev": "/acim/intro/text/#T19"
+    },
+    {
+      "title": "T19.1 Healing and the Mind",
+      "fid": "chap1901/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1901/",
+      "idx": 2,
+      "next": "/acim/text/19/chap1902/",
+      "prev": "/acim/text/19/chap1900/"
+    },
+    {
+      "title": "T19.2 Sin versus Error",
+      "fid": "chap1902/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1902/",
+      "idx": 3,
+      "next": "/acim/text/19/chap1903/",
+      "prev": "/acim/text/19/chap1901/"
+    },
+    {
+      "title": "T19.3 The Unreality of Sin",
+      "fid": "chap1903/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1903/",
+      "idx": 4,
+      "next": "/acim/text/19/chap1904/",
+      "prev": "/acim/text/19/chap1902/"
+    },
+    {
+      "title": "T19.4 Obstacles to Peace:<br/>I. The Desire to Get Rid of It",
+      "fid": "chap1904/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1904/",
+      "idx": 5,
+      "next": "/acim/text/19/chap1905/",
+      "prev": "/acim/text/19/chap1903/"
+    },
+    {
+      "title": "T19.5 The Attraction of Guilt",
+      "fid": "chap1905/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1905/",
+      "idx": 6,
+      "next": "/acim/text/19/chap1906/",
+      "prev": "/acim/text/19/chap1904/"
+    },
+    {
+      "title": "T19.6 Obstacles to Peace:<br/>II.The Belief the Body is Valuable for What it Offers",
+      "fid": "chap1906/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1906/",
+      "idx": 7,
+      "next": "/acim/text/19/chap1907/",
+      "prev": "/acim/text/19/chap1905/"
+    },
+    {
+      "title": "T19.7 Pleasure and Pain",
+      "fid": "chap1907/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1907/",
+      "idx": 8,
+      "next": "/acim/text/19/chap1908/",
+      "prev": "/acim/text/19/chap1906/"
+    },
+    {
+      "title": "T19.8 Obstacles to Peace:<br/>III. The Attraction of Death",
+      "fid": "chap1908/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1908/",
+      "idx": 9,
+      "next": "/acim/text/19/chap1909/",
+      "prev": "/acim/text/19/chap1907/"
+    },
+    {
+      "title": "T19.9 The Incorruptible Body",
+      "fid": "chap1909/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1909/",
+      "idx": 10,
+      "next": "/acim/text/19/chap1910/",
+      "prev": "/acim/text/19/chap1908/"
+    },
+    {
+      "title": "T19.10 Obstacles to Peace:<br/>IV.The Fear of God",
+      "fid": "chap1910/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1910/",
+      "idx": 11,
+      "next": "/acim/text/19/chap1911/",
+      "prev": "/acim/text/19/chap1909/"
+    },
+    {
+      "title": "T19.11 The Lifting of the Veil",
+      "fid": "chap1911/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/19/chap1911/",
+      "idx": 12,
+      "next": "/acim/intro/text/#T19",
+      "prev": "/acim/text/19/chap1910/"
+    }
+  ]
+}

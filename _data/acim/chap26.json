@@ -1,0 +1,147 @@
+{
+  "base": "/acim/text/26/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty Six",
+  "bid": "atext26",
+  "page": [
+    {
+      "fid": "text/#T26",
+      "url": "/acim/intro/text/#T26",
+      "idx": 0,
+      "next": "/acim/text/26/chap2600/",
+      "prev": "/acim/text/26/chap2610/"
+    },
+    {
+      "title": "T26 Introduction",
+      "fid": "chap2600/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2600/",
+      "idx": 1,
+      "next": "/acim/text/26/chap2601/",
+      "prev": "/acim/intro/text/#T26"
+    },
+    {
+      "title": "T26.1 The 'Sacrifice' of Oneness",
+      "fid": "chap2601/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2601/",
+      "idx": 2,
+      "next": "/acim/text/26/chap2602/",
+      "prev": "/acim/text/26/chap2600/"
+    },
+    {
+      "title": "T26.2 The Forms of Error",
+      "fid": "chap2602/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2602/",
+      "idx": 3,
+      "next": "/acim/text/26/chap2603/",
+      "prev": "/acim/text/26/chap2601/"
+    },
+    {
+      "title": "T26.3 The Borderland",
+      "fid": "chap2603/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2603/",
+      "idx": 4,
+      "next": "/acim/text/26/chap2604/",
+      "prev": "/acim/text/26/chap2602/"
+    },
+    {
+      "title": "T26.4 Where Sin Has Left",
+      "fid": "chap2604/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2604/",
+      "idx": 5,
+      "next": "/acim/text/26/chap2605/",
+      "prev": "/acim/text/26/chap2603/"
+    },
+    {
+      "title": "T26.5 The Little Hindrance",
+      "fid": "chap2605/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2605/",
+      "idx": 6,
+      "next": "/acim/text/26/chap2606/",
+      "prev": "/acim/text/26/chap2604/"
+    },
+    {
+      "title": "T26.6 The Appointed Friend",
+      "fid": "chap2606/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2606/",
+      "idx": 7,
+      "next": "/acim/text/26/chap2607/",
+      "prev": "/acim/text/26/chap2605/"
+    },
+    {
+      "title": "T26.7 Review of Principles",
+      "fid": "chap2607/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2607/",
+      "idx": 8,
+      "next": "/acim/text/26/chap2608/",
+      "prev": "/acim/text/26/chap2606/"
+    },
+    {
+      "title": "T26.8 The Immediacy of Salvation",
+      "fid": "chap2608/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2608/",
+      "idx": 9,
+      "next": "/acim/text/26/chap2609/",
+      "prev": "/acim/text/26/chap2607/"
+    },
+    {
+      "title": "T26.9 For They Have Come",
+      "fid": "chap2609/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2609/",
+      "idx": 10,
+      "next": "/acim/text/26/chap2610/",
+      "prev": "/acim/text/26/chap2608/"
+    },
+    {
+      "title": "T26.10 The Remaining Task",
+      "fid": "chap2610/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/26/chap2610/",
+      "idx": 11,
+      "next": "/acim/intro/text/#T26",
+      "prev": "/acim/text/26/chap2609/"
+    }
+  ]
+}

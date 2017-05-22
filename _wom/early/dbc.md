@@ -235,7 +235,7 @@ So take a moment and make what you call eye contact—the eyes are the
 window to the soul—make eye contact with someone in the room, some
 perfect stranger, existing in an infinitely far space away from you,
 locked into another body, painfully imprisoned just like you are
-\[laughs\] and simply decide that you are Christ and that you would do
+and simply decide that you are Christ and that you would do
 nothing else in this moment but bless them. Transmit the Love of God
 *now*.
 
@@ -403,7 +403,7 @@ and it grows and it grows and it grows and it carries the very spark of
 Divinity that you are, beyond all worlds, beyond all dimensions— which
 are, by the way, infinite, so I hope you hear what I’m saying to
 you—your own Love will carry you beyond what is infinite and is
-infinitely created, that makes you pretty darn good... Hm?
+infinitely created, that makes you pretty darn good&hellip; Hm?
 
 And I come not alone, for there is one that you have known who also
 comes with me whenever I join to do this work through this my beloved
@@ -456,8 +456,8 @@ did you go?” Beloved friends, I have gone nowhere, it is you that
 went—into fear, into contraction, into drama. Perfectly okay, if that’s
 what, shall we say (what do you call it?) lights your fire. But rest
 assured, I retract from no one who has ever once prepared a place for
-me, which simply means: I loved them and they received me. \[Snaps
-fingers\] Separation gone, unity restored, never to be broken again.
+me, which simply means: I loved them and they received me. Separation
+gone, unity restored, never to be broken again.
 
 If you could say that there may yet be something in me that I long
 for—it’s not quite accurate, however we’ll use it—what I long for is for

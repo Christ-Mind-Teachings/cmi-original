@@ -1,0 +1,111 @@
+{
+  "base": "/acim/text/31/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Thirty One",
+  "bid": "atext31",
+  "page": [
+    {
+      "fid": "text/#T31",
+      "url": "/acim/intro/text/#T31",
+      "idx": 0,
+      "next": "/acim/text/31/chap3100/",
+      "prev": "/acim/text/31/chap3107/"
+    },
+    {
+      "title": "T31 Introduction",
+      "fid": "chap3100/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/31/chap3100/",
+      "idx": 1,
+      "next": "/acim/text/31/chap3101/",
+      "prev": "/acim/intro/text/#T31"
+    },
+    {
+      "title": "T31.1 The Illusion of an Enemy",
+      "fid": "chap3101/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/31/chap3101/",
+      "idx": 2,
+      "next": "/acim/text/31/chap3102/",
+      "prev": "/acim/text/31/chap3100/"
+    },
+    {
+      "title": "T31.2 The Self-Accused",
+      "fid": "chap3102/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/31/chap3102/",
+      "idx": 3,
+      "next": "/acim/text/31/chap3103/",
+      "prev": "/acim/text/31/chap3101/"
+    },
+    {
+      "title": "T31.3 The Real Alternative",
+      "fid": "chap3103/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/31/chap3103/",
+      "idx": 4,
+      "next": "/acim/text/31/chap3104/",
+      "prev": "/acim/text/31/chap3102/"
+    },
+    {
+      "title": "T31.4 Self-Concept versus Self",
+      "fid": "chap3104/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/31/chap3104/",
+      "idx": 5,
+      "next": "/acim/text/31/chap3105/",
+      "prev": "/acim/text/31/chap3103/"
+    },
+    {
+      "title": "T31.5 Recognizing the Spirit",
+      "fid": "chap3105/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/31/chap3105/",
+      "idx": 6,
+      "next": "/acim/text/31/chap3106/",
+      "prev": "/acim/text/31/chap3104/"
+    },
+    {
+      "title": "T31.6 The Savior’s Vision",
+      "fid": "chap3106/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/31/chap3106/",
+      "idx": 7,
+      "next": "/acim/text/31/chap3107/",
+      "prev": "/acim/text/31/chap3105/"
+    },
+    {
+      "title": "T31.7 Choose Once Again",
+      "fid": "chap3107/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/31/chap3107/",
+      "idx": 8,
+      "next": "/acim/intro/text/#T31",
+      "prev": "/acim/text/31/chap3106/"
+    }
+  ]
+}

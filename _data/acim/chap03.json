@@ -1,0 +1,123 @@
+{
+  "base": "/acim/text/03/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Three",
+  "bid": "atext03",
+  "page": [
+    {
+      "fid": "text/#T3",
+      "url": "/acim/intro/text/#T3",
+      "idx": 0,
+      "next": "/acim/text/03/chap0300/",
+      "prev": "/acim/text/03/chap0308/"
+    },
+    {
+      "fid": "chap0300/",
+      "title": "T3 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/03/chap0300/",
+      "idx": 1,
+      "next": "/acim/text/03/chap0301/",
+      "prev": "/acim/intro/text/#T3"
+    },
+    {
+      "fid": "chap0301/",
+      "title": "T3.1 Special Principles for Miracle Workers",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/03/chap0301/",
+      "idx": 2,
+      "next": "/acim/text/03/chap0302/",
+      "prev": "/acim/text/03/chap0300/"
+    },
+    {
+      "fid": "chap0302/",
+      "title": "T3.2 Atonement without Sacrifice",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/03/chap0302/",
+      "idx": 3,
+      "next": "/acim/text/03/chap0303/",
+      "prev": "/acim/text/03/chap0301/"
+    },
+    {
+      "fid": "chap0303/",
+      "title": "T3.3 Miracles as Accurate Perception",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/03/chap0303/",
+      "idx": 4,
+      "next": "/acim/text/03/chap0304/",
+      "prev": "/acim/text/03/chap0302/"
+    },
+    {
+      "fid": "chap0304/",
+      "title": "T3.4 Perception Versus Knowledge",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/03/chap0304/",
+      "idx": 5,
+      "next": "/acim/text/03/chap0305/",
+      "prev": "/acim/text/03/chap0303/"
+    },
+    {
+      "fid": "chap0305/",
+      "title": "T3.5 Conflict and the Ego",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/03/chap0305/",
+      "idx": 6,
+      "next": "/acim/text/03/chap0306/",
+      "prev": "/acim/text/03/chap0304/"
+    },
+    {
+      "fid": "chap0306/",
+      "title": "T3.6 The Loss of Certainty",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/03/chap0306/",
+      "idx": 7,
+      "next": "/acim/text/03/chap0307/",
+      "prev": "/acim/text/03/chap0305/"
+    },
+    {
+      "fid": "chap0307/",
+      "title": "T3.7 Judgement and the Authority Problem",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/03/chap0307/",
+      "idx": 8,
+      "next": "/acim/text/03/chap0308/",
+      "prev": "/acim/text/03/chap0306/"
+    },
+    {
+      "fid": "chap0308/",
+      "title": "T3.8 Creating versus the Self-Image",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/03/chap0308/",
+      "idx": 9,
+      "next": "/acim/intro/text/#T3",
+      "prev": "/acim/text/03/chap0307/"
+    }
+  ]
+}

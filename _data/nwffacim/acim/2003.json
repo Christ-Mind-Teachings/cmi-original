@@ -341,9 +341,9 @@
         "audio": "2003-05-18.mp3"
       },
       "fid": "051803/",
-      "desc": "Needs formatting",
+      "desc": "T3.IV Error and the Ego",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -360,9 +360,9 @@
         "audio": "2003-05-25.mp3"
       },
       "fid": "052503/",
-      "desc": "Needs formatting",
+      "desc": "T3.IV Error and the Ego",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -379,9 +379,9 @@
         "audio": "2003-06-01.mp3"
       },
       "fid": "060103/",
-      "desc": "Needs formatting",
+      "desc": "T3.IV Error and the Ego",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -398,9 +398,9 @@
         "audio": "2003-06-08.mp3"
       },
       "fid": "060803/",
-      "desc": "Needs formatting",
+      "desc": "T3.V Beyond Pereception",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -417,9 +417,9 @@
         "audio": "2003-06-15.mp3"
       },
       "fid": "061503/",
-      "desc": "Needs formatting",
+      "desc": "T3.VI Judgement and the Authority Problem",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -436,9 +436,9 @@
         "audio": "2003-06-22.mp3"
       },
       "fid": "062203/",
-      "desc": "Needs formatting",
+      "desc": "T3.VI Judgement and the Authority Problem",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -456,7 +456,7 @@
       },
       "fid": "062903/",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -475,12 +475,12 @@
       },
       "fid": "070603/",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
-      "desc": "T4.1 Right Teaching and Right Learning",
+      "desc": "<small>Begin reading from the Sparkly Edition</small><br/>T4.1 Right Teaching and Right Learning",
       "intro": false,
       "url": "/nwffacim/2003/070603/",
       "idx": 25,
@@ -494,12 +494,12 @@
       },
       "fid": "071303/",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
-      "desc": "Needs formatting",
+      "desc": "T4.1 Right Teaching and Right Learning",
       "intro": false,
       "url": "/nwffacim/2003/071303/",
       "idx": 26,
@@ -513,12 +513,12 @@
       },
       "fid": "072003/",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
-      "desc": "Needs formatting",
+      "desc": "T4.2 The Ego and False Autonomy",
       "intro": false,
       "url": "/nwffacim/2003/072003/",
       "idx": 27,
@@ -532,12 +532,12 @@
       },
       "fid": "072703/",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
-      "desc": "Needs formatting",
+      "desc": "T4.2 The Ego and False Autonomy",
       "intro": false,
       "url": "/nwffacim/2003/072703/",
       "idx": 28,

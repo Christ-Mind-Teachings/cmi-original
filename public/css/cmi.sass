@@ -9,6 +9,105 @@
 .clipboard-copy-wrapper
   display: none
 
+.lib-card-container-3
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: 2fr 2fr
+  grid-column-gap: 20px
+  grid-row-gap: 20px
+  justify-items: stretch
+  align-items: stretch
+
+.lib-card-container
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 2fr 2fr
+  grid-column-gap: 20px
+  grid-row-gap: 20px
+  justify-items: stretch
+  align-items: stretch
+
+.libcard
+  $card-image-hover-color: #F8F2B4
+  $base-border-radius: 3px !default
+  $base-border-color: gainsboro !default
+  $base-background-color: white !default
+  $base-spacing: 1.5em !default
+  $action-color: #477DCA !default
+  $dark-gray: #333 !default
+  $base-font-color: $dark-gray !default
+  $card-border-color: $base-border-color
+  $card-border: 1px solid $card-border-color
+  $card-background: lighten($card-border-color, 10%)
+  $card-header-background: $card-background
+  $card-margin: 1em
+  $card-image-hover-opacity: 0.7
+
+  background-color: $card-background
+  border: $card-border
+  border-radius: $base-border-radius
+  box-shadow: 0 2px 4px darken($base-background-color, 10%)
+  cursor: default
+  //margin: 0 $card-margin $base-spacing $card-margin
+  //position: relative
+  transition: all 0.2s ease-in-out
+
+  .card-image
+    background-color: $card-image-hover-color
+    height: 250px
+    max-height: 250px
+    overflow: hidden
+
+    img
+      @include border-top-radius($base-border-radius)
+      opacity: 1
+      transition: all 0.2s ease-in-out
+      width: 100%
+
+  .card-image-small
+    background-color: $card-image-hover-color
+    height: 150px
+    max-height: 150px
+    overflow: hidden
+
+    img
+      @include border-top-radius($base-border-radius)
+      opacity: 1
+      transition: all 0.2s ease-in-out
+      width: 100%
+
+  .card-header
+    cursor: default
+    background-color: $card-header-background
+    border-bottom: $card-border
+    border-radius: $base-border-radius $base-border-radius 0 0
+    font-weight: bold
+    line-height: 1.5em
+    padding: ($base-spacing / 3) ($base-spacing / 2)
+    transition: all 0.2s ease-in-out
+
+  .card-copy
+    cursor: default
+    font-size: 0.9em
+    line-height: 1.5em
+    padding: ($base-spacing / 2) ($base-spacing / 2)
+
+    p
+      margin: 0 0 ($base-spacing / 2)
+
+  &:focus,
+  &:hover
+    cursor: pointer
+
+    img
+      opacity: $card-image-hover-opacity
+
+  &:active
+    background-color: $card-background
+
+    .card-header
+      background-color: $card-background
+
 dt
   float: left
   clear: left

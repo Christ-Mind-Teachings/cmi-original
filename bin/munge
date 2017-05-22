@@ -364,6 +364,42 @@ function early(item, idx, arr) {
   return page;
 }
 
+function sparkly(item, idx, arr) {
+  var page = {};
+  var fid = copyObj(page, item);
+
+  if (item.fid.charAt(0) === "*") {
+    page.url = util.format("%s%s", this.intro, item.fid.substr(1));
+  }
+  else {
+    page.url = util.format("%s%s/", this.base, item.fid);
+  }
+
+  page.title = item.title;
+  page.idx = idx;
+
+  next_prev(page, arr, {base: this.base, intro: this.intro});
+
+  //remove trailing '/' when next or prev contains '#'
+  if (page.next.indexOf("#") > -1) {
+    page.next = page.next.substr(0, page.next.length-1);
+  }
+  if (page.prev.indexOf("#") > -1) {
+    page.prev = page.prev.substr(0, page.prev.length-1);
+  }
+
+  if (item.fid.charAt(0) === "*") {
+    page.fid = item.fid.substr(1);
+  }
+  else {
+    page.fid = item.fid;
+    //append '/' to simplify workig with Jekyll Liquid
+    page.fid = page.fid + '/';
+  }
+
+  return page;
+}
+
 //------------ Start Here ----------------
 
 var baseSaveLocation = "/Users/rmercer/Projects/cmi/site/www/_data";
@@ -480,6 +516,15 @@ switch (id) {
     yml.title = data.title;
     yml.bid = data.bid;
     yml.page = _.map(data.pages, questions, {base: yml.base, intro: yml.intro});
+    outfile = data.outfile;
+    break;
+  case "sparkly":
+    source = "acim";
+    yml.base = data.base;
+    yml.intro = data.intro;
+    yml.title = data.title;
+    yml.bid = data.bid;
+    yml.page = _.map(data.pages, sparkly, {base: yml.base, intro: yml.intro});
     outfile = data.outfile;
     break;
   default:

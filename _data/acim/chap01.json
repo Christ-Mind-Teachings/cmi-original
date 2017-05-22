@@ -1,0 +1,51 @@
+{
+  "base": "/acim/text/01/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: One",
+  "bid": "atext01",
+  "page": [
+    {
+      "fid": "text/#T1",
+      "url": "/acim/intro/text/#T1",
+      "idx": 0,
+      "next": "/acim/text/01/chap0100/",
+      "prev": "/acim/text/01/chap0102/"
+    },
+    {
+      "fid": "chap0100/",
+      "title": "T1 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/01/chap0100/",
+      "idx": 1,
+      "next": "/acim/text/01/chap0101/",
+      "prev": "/acim/intro/text/#T1"
+    },
+    {
+      "fid": "chap0101/",
+      "title": "T1.1 Principles of Miracles",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/01/chap0101/",
+      "idx": 2,
+      "next": "/acim/text/01/chap0102/",
+      "prev": "/acim/text/01/chap0100/"
+    },
+    {
+      "fid": "chap0102/",
+      "title": "T1.2 Distortions of Miracle Impulses",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/01/chap0102/",
+      "idx": 3,
+      "next": "/acim/intro/text/#T1",
+      "prev": "/acim/text/01/chap0101/"
+    }
+  ]
+}

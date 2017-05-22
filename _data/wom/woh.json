@@ -43,7 +43,8 @@
       },
       "res": {
         "audio": "L02.mp3",
-        "timing": "l02.js"
+        "timing": "l02.js",
+        "timer": "Dibuor"
       },
       "title": "Lesson Two",
       "url": "/wom/woh/l02/",
@@ -78,7 +79,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L04.mp3"
+        "audio": "L04.mp3",
+        "timer": "Gleopold58"
       },
       "title": "Lesson Four",
       "url": "/wom/woh/l04/",
@@ -95,7 +97,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L05.mp3"
+        "audio": "L05.mp3",
+        "timer": "Gleopold58"
       },
       "title": "Lesson Five",
       "url": "/wom/woh/l05/",
@@ -130,7 +133,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L07.mp3"
+        "audio": "L07.mp3",
+        "timer": "Gleopold58"
       },
       "title": "Lesson Seven",
       "url": "/wom/woh/l07/",
@@ -147,7 +151,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L08.mp3"
+        "audio": "L08.mp3",
+        "timer": "Gleopold58"
       },
       "title": "Lesson Eight",
       "url": "/wom/woh/l08/",
@@ -159,12 +164,14 @@
       "fid": "l09/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L09.mp3"
+        "audio": "L09.mp3",
+        "timing": "l09.js",
+        "timer": "Dibuor"
       },
       "title": "Lesson Nine",
       "url": "/wom/woh/l09/",
@@ -176,12 +183,14 @@
       "fid": "l10/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L10.mp3"
+        "audio": "L10.mp3",
+        "timing": "l10.js",
+        "timer": "Dibuor"
       },
       "title": "Lesson Ten",
       "url": "/wom/woh/l10/",
@@ -198,7 +207,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L11.mp3"
+        "audio": "L11.mp3",
+        "timer": "Dibuor"
       },
       "title": "Lesson Eleven",
       "url": "/wom/woh/l11/",
@@ -216,7 +226,7 @@
       },
       "res": {
         "audio": "L12.mp3",
-        "timer": "rick"
+        "timer": "Dibuor"
       },
       "title": "Lesson Twelve",
       "url": "/wom/woh/l12/",

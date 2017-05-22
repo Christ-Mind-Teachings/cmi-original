@@ -1,0 +1,123 @@
+{
+  "base": "/acim/text/04/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Four",
+  "bid": "atext04",
+  "page": [
+    {
+      "fid": "text/#T4",
+      "url": "/acim/intro/text/#T4",
+      "idx": 0,
+      "next": "/acim/text/04/chap0400/",
+      "prev": "/acim/text/04/chap0408/"
+    },
+    {
+      "fid": "chap0400/",
+      "title": "T4 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/04/chap0400/",
+      "idx": 1,
+      "next": "/acim/text/04/chap0401/",
+      "prev": "/acim/intro/text/#T4"
+    },
+    {
+      "fid": "chap0401/",
+      "title": "T4.1 Right Teaching and Right Learning",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/04/chap0401/",
+      "idx": 2,
+      "next": "/acim/text/04/chap0402/",
+      "prev": "/acim/text/04/chap0400/"
+    },
+    {
+      "fid": "chap0402/",
+      "title": "T4.2 The Ego and False Autonomy",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/04/chap0402/",
+      "idx": 3,
+      "next": "/acim/text/04/chap0403/",
+      "prev": "/acim/text/04/chap0401/"
+    },
+    {
+      "fid": "chap0403/",
+      "title": "T4.3 Love without Conflict",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/04/chap0403/",
+      "idx": 4,
+      "next": "/acim/text/04/chap0404/",
+      "prev": "/acim/text/04/chap0402/"
+    },
+    {
+      "fid": "chap0404/",
+      "title": "T4.4 The Escape from Fear",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/04/chap0404/",
+      "idx": 5,
+      "next": "/acim/text/04/chap0405/",
+      "prev": "/acim/text/04/chap0403/"
+    },
+    {
+      "fid": "chap0405/",
+      "title": "T4.5 The Ego-Body Illusion",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/04/chap0405/",
+      "idx": 6,
+      "next": "/acim/text/04/chap0406/",
+      "prev": "/acim/text/04/chap0404/"
+    },
+    {
+      "fid": "chap0406/",
+      "title": "T4.6 The Constant State",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/04/chap0406/",
+      "idx": 7,
+      "next": "/acim/text/04/chap0407/",
+      "prev": "/acim/text/04/chap0405/"
+    },
+    {
+      "fid": "chap0407/",
+      "title": "T4.7 Creation and Communication",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/04/chap0407/",
+      "idx": 8,
+      "next": "/acim/text/04/chap0408/",
+      "prev": "/acim/text/04/chap0406/"
+    },
+    {
+      "fid": "chap0408/",
+      "title": "T4.8 True Rehabilitation",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/04/chap0408/",
+      "idx": 9,
+      "next": "/acim/intro/text/#T4",
+      "prev": "/acim/text/04/chap0407/"
+    }
+  ]
+}

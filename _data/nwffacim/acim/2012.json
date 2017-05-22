@@ -17,12 +17,12 @@
     },
     {
       "fid": "010712/",
-      "desc": "",
+      "desc": "T18.3 Light in the Dream",
       "res": {
         "audio": "2012-01-07.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -36,9 +36,10 @@
     },
     {
       "fid": "012212/",
-      "desc": "",
+      "desc": "T18.3 Light in the Dream",
+      "note": "audio for 032212 is available on celestialrealm, that's a mistake",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 0,
         "index": 0,
         "fb": 0
@@ -52,12 +53,12 @@
     },
     {
       "fid": "020512/",
-      "desc": "",
+      "desc": "T18.4 The Little Willingness",
       "res": {
         "audio": "2012-02-05.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -71,12 +72,12 @@
     },
     {
       "fid": "021212/",
-      "desc": "",
+      "desc": "T18.5 The Happy Dream",
       "res": {
         "audio": "2012-02-12.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -90,12 +91,12 @@
     },
     {
       "fid": "021812/",
-      "desc": "",
+      "desc": "T18.6 Dreams and the Body",
       "res": {
         "audio": "2012-02-18.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -147,13 +148,14 @@
     },
     {
       "fid": "040812/",
-      "desc": "",
+      "desc": "T18.7 I Need do Nothing",
       "res": {
-        "audio": "2012-04-08.mp3"
+        "audio": "2012-04-08.mp3",
+        "timing": "040812.js"
       },
       "complete": {
-        "format": 0,
-        "audio": 1,
+        "format": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -166,12 +168,12 @@
     },
     {
       "fid": "041512/",
-      "desc": "",
+      "desc": "T18.8 The Purpose of the Body",
       "res": {
         "audio": "2012-04-15.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -185,12 +187,12 @@
     },
     {
       "fid": "042212/",
-      "desc": "",
+      "desc": "T18.8 The Purpose of the Body",
       "res": {
         "audio": "2012-04-22.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -204,12 +206,12 @@
     },
     {
       "fid": "042912/",
-      "desc": "",
+      "desc": "T18.9 The Delusional Thought System",
       "res": {
         "audio": "2012-04-29.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -223,12 +225,12 @@
     },
     {
       "fid": "051212/",
-      "desc": "",
+      "desc": "T18.10 The Passing of the Dream",
       "res": {
         "audio": "2012-05-12.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -242,12 +244,12 @@
     },
     {
       "fid": "052012/",
-      "desc": "",
+      "desc": "T19.1 Healing and the Mind",
       "res": {
         "audio": "2012-05-20.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -261,12 +263,12 @@
     },
     {
       "fid": "060312/",
-      "desc": "",
+      "desc": "T19.1 Healing and the Mind",
       "res": {
         "audio": "2012-06-03.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -280,12 +282,12 @@
     },
     {
       "fid": "061712/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2012-06-17.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -299,7 +301,7 @@
     },
     {
       "fid": "072212/",
-      "desc": "",
+      "desc": "T19.1 Healing and the Mind",
       "res": {
         "audio": "2012-07-22.mp3"
       },
@@ -318,7 +320,7 @@
     },
     {
       "fid": "072912/",
-      "desc": "",
+      "desc": "T19.1 Healing and the Mind",
       "res": {
         "audio": "2012-07-29.mp3"
       },
@@ -337,7 +339,7 @@
     },
     {
       "fid": "080412/",
-      "desc": "T19.II Sin vs Error",
+      "desc": "T19.2 Sin vs Error",
       "note": "Audio abruptly ends at 51:20",
       "res": {
         "audio": "2012-08-04.mp3"
@@ -357,7 +359,7 @@
     },
     {
       "fid": "081112/",
-      "desc": "",
+      "desc": "T19.2 Sin vs Error",
       "res": {
         "audio": "2012-08-11.mp3"
       },
@@ -376,7 +378,7 @@
     },
     {
       "fid": "081812/",
-      "desc": "",
+      "desc": "T19.3 The Unreality of Sin",
       "res": {
         "audio": "2012-08-18.mp3"
       },
@@ -400,7 +402,7 @@
         "audio": "2012-08-27.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -419,7 +421,7 @@
         "audio": "2012-09-08.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -433,7 +435,7 @@
     },
     {
       "fid": "091612/",
-      "desc": "",
+      "desc": "T19.3 The Unreality of Sin",
       "res": {
         "audio": "2012-09-16.mp3"
       },
@@ -452,7 +454,7 @@
     },
     {
       "fid": "092312/",
-      "desc": "",
+      "desc": "T19.3 The Unreality of Sin",
       "res": {
         "audio": "2012-09-23.mp3"
       },
@@ -552,7 +554,7 @@
         "audio": "2012-11-05.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0

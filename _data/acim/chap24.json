@@ -1,0 +1,111 @@
+{
+  "base": "/acim/text/24/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty Four",
+  "bid": "atext24",
+  "page": [
+    {
+      "fid": "text/#T24",
+      "url": "/acim/intro/text/#T24",
+      "idx": 0,
+      "next": "/acim/text/24/chap2400/",
+      "prev": "/acim/text/24/chap2407/"
+    },
+    {
+      "title": "T24 Introduction",
+      "fid": "chap2400/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/24/chap2400/",
+      "idx": 1,
+      "next": "/acim/text/24/chap2401/",
+      "prev": "/acim/intro/text/#T24"
+    },
+    {
+      "title": "T24.1 Specialness as a Substitute for Love",
+      "fid": "chap2401/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/24/chap2401/",
+      "idx": 2,
+      "next": "/acim/text/24/chap2402/",
+      "prev": "/acim/text/24/chap2400/"
+    },
+    {
+      "title": "T24.2 The Treachery of Specialness",
+      "fid": "chap2402/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/24/chap2402/",
+      "idx": 3,
+      "next": "/acim/text/24/chap2403/",
+      "prev": "/acim/text/24/chap2401/"
+    },
+    {
+      "title": "T24.3 The Forgiveness of Specialness",
+      "fid": "chap2403/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/24/chap2403/",
+      "idx": 4,
+      "next": "/acim/text/24/chap2404/",
+      "prev": "/acim/text/24/chap2402/"
+    },
+    {
+      "title": "T24.4 Specialness and Salvation",
+      "fid": "chap2404/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/24/chap2404/",
+      "idx": 5,
+      "next": "/acim/text/24/chap2405/",
+      "prev": "/acim/text/24/chap2403/"
+    },
+    {
+      "title": "T24.5 The Resolution of the Dream",
+      "fid": "chap2405/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/24/chap2405/",
+      "idx": 6,
+      "next": "/acim/text/24/chap2406/",
+      "prev": "/acim/text/24/chap2404/"
+    },
+    {
+      "title": "T24.6 Salvation from Fear",
+      "fid": "chap2406/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/24/chap2406/",
+      "idx": 7,
+      "next": "/acim/text/24/chap2407/",
+      "prev": "/acim/text/24/chap2405/"
+    },
+    {
+      "title": "T24.7 The Meeting Place",
+      "fid": "chap2407/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/24/chap2407/",
+      "idx": 8,
+      "next": "/acim/intro/text/#T24",
+      "prev": "/acim/text/24/chap2406/"
+    }
+  ]
+}

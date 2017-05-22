@@ -1,0 +1,135 @@
+{
+  "base": "/acim/text/11/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Eleven",
+  "bid": "atext11",
+  "page": [
+    {
+      "fid": "text/#T11",
+      "url": "/acim/intro/text/#T11",
+      "idx": 0,
+      "next": "/acim/text/11/chap1100/",
+      "prev": "/acim/text/11/chap1109/"
+    },
+    {
+      "fid": "chap1100/",
+      "title": "T11 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1100/",
+      "idx": 1,
+      "next": "/acim/text/11/chap1101/",
+      "prev": "/acim/intro/text/#T11"
+    },
+    {
+      "fid": "chap1101/",
+      "title": "T11.1 The Judgement of the Holy Spirit",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1101/",
+      "idx": 2,
+      "next": "/acim/text/11/chap1102/",
+      "prev": "/acim/text/11/chap1100/"
+    },
+    {
+      "fid": "chap1102/",
+      "title": "T11.2 The Mechanism of Miracles",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1102/",
+      "idx": 3,
+      "next": "/acim/text/11/chap1103/",
+      "prev": "/acim/text/11/chap1101/"
+    },
+    {
+      "fid": "chap1103/",
+      "title": "T11.3 The Investment in Reality",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1103/",
+      "idx": 4,
+      "next": "/acim/text/11/chap1104/",
+      "prev": "/acim/text/11/chap1102/"
+    },
+    {
+      "fid": "chap1104/",
+      "title": "T11.4 Seeking and Finding",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1104/",
+      "idx": 5,
+      "next": "/acim/text/11/chap1105/",
+      "prev": "/acim/text/11/chap1103/"
+    },
+    {
+      "fid": "chap1105/",
+      "title": "T11.5 The Sane Curriculum",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1105/",
+      "idx": 6,
+      "next": "/acim/text/11/chap1106/",
+      "prev": "/acim/text/11/chap1104/"
+    },
+    {
+      "fid": "chap1106/",
+      "title": "T11.6 The Vision of Christ",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1106/",
+      "idx": 7,
+      "next": "/acim/text/11/chap1107/",
+      "prev": "/acim/text/11/chap1105/"
+    },
+    {
+      "fid": "chap1107/",
+      "title": "T11.7 The Guide for Miracles",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1107/",
+      "idx": 8,
+      "next": "/acim/text/11/chap1108/",
+      "prev": "/acim/text/11/chap1106/"
+    },
+    {
+      "fid": "chap1108/",
+      "title": "T11.8 Reality and Redemption",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1108/",
+      "idx": 9,
+      "next": "/acim/text/11/chap1109/",
+      "prev": "/acim/text/11/chap1107/"
+    },
+    {
+      "fid": "chap1109/",
+      "title": "T11.9 Guiltlessness and Invulnerability",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/11/chap1109/",
+      "idx": 10,
+      "next": "/acim/intro/text/#T11",
+      "prev": "/acim/text/11/chap1108/"
+    }
+  ]
+}

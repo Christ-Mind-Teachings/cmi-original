@@ -5,8 +5,6 @@ fb:
   image: "wom/wlk.jpg"
 ---
 
-Now we begin.
-
 And once again, greetings unto you, beloved and holy friends, those that
 have journeyed with me since before time is and those who will *remain*
 with me after the purpose of time has been completed, and the things of

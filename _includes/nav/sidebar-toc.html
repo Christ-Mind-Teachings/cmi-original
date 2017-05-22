@@ -1,0 +1,57 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>
+      {% if page.book %}
+        {{page.book}} <br/>
+      {% endif %}
+      {{ page.title }}
+    </p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item list-bookmarks" href="javascript:void(0);">Show Bookmarks</a>
+    <a class="sidebar-nav-item first-item{% if page.url == "{{site.home}}" %} active{% endif %}" href="{{ site.home }}">Home</a>
+    <a class="sidebar-nav-item" href="/about/">About</a>
+    <a class="sidebar-nav-item" href="/search/?s={{page.sid}}">Search</a>
+    <a class="sidebar-nav-item" href="{{ page.surl }}" >{{ page.source }}</a>
+    {% if page.burl != page.url %}
+      <a class="sidebar-nav-item" href="{{ page.burl }}" >{{ page.book }}</a>
+      {% if page.uurl != page.url and page.unit %}
+        <a class="sidebar-nav-item" href="{{ page.uurl }}" >{{ page.unit }}</a>
+      {% endif %}
+    {% endif %}
+    <a class="sidebar-nav-item first-item" href="#" data-proofer-ignore>Top of Page</a>
+    <a class="sidebar-nav-item hide-player search-navigator" href="javascript:void(0);">Search Navigator</a>
+    <a class="sidebar-nav-item bookmark" href="javascript:void(0);">Bookmark Page</a>
+    <a class="sidebar-nav-item playmark hide-player" href="javascript:void(0);">Play From Here</a>
+    <div class="capture pmarker-wrapper">
+      <a class="pmarker-toggle sidebar-nav-item" href="#">
+        <i class="fa fa-toggle-off"></i>
+        &nbsp;Time Capture Off
+      </a>
+      <a class="time-lister sidebar-nav-item" href="#">
+        <i class="fa fa-send-o"></i>
+      </a>
+    </div>
+    {% for node in page.toc %}
+      <a class="sidebar-nav-item sidebar-nav-item-toc" href="#{{ node | slugify }}">{{ node }}</a>
+    {% endfor %}
+    {% comment %}
+    {% endcomment %}
+    {% include {{page.contents | default: "nav/contents.html" }} %}
+
+  </nav>
+
+  <div class="sidebar-item">
+    {% if page.editor %}
+      <p>
+       Edited by {{ page.editor }}, {{ site.time | date: '%Y' }}.
+      </p>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,75 @@
+{
+  "base": "/acim/text/06/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Six",
+  "bid": "atext06",
+  "page": [
+    {
+      "fid": "text/#T6",
+      "url": "/acim/intro/text/#T6",
+      "idx": 0,
+      "next": "/acim/text/06/chap0600/",
+      "prev": "/acim/text/06/chap0604/"
+    },
+    {
+      "fid": "chap0600/",
+      "title": "T6 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/06/chap0600/",
+      "idx": 1,
+      "next": "/acim/text/06/chap0601/",
+      "prev": "/acim/intro/text/#T6"
+    },
+    {
+      "fid": "chap0601/",
+      "title": "T6.1 The Message of the Crucifixion",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/06/chap0601/",
+      "idx": 2,
+      "next": "/acim/text/06/chap0602/",
+      "prev": "/acim/text/06/chap0600/"
+    },
+    {
+      "fid": "chap0602/",
+      "title": "T6.2 The Uses of Projection",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/06/chap0602/",
+      "idx": 3,
+      "next": "/acim/text/06/chap0603/",
+      "prev": "/acim/text/06/chap0601/"
+    },
+    {
+      "fid": "chap0603/",
+      "title": "T6.3 The Relinquishment of Attack",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/06/chap0603/",
+      "idx": 4,
+      "next": "/acim/text/06/chap0604/",
+      "prev": "/acim/text/06/chap0602/"
+    },
+    {
+      "fid": "chap0604/",
+      "title": "T6.4 The Only Answer",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/06/chap0604/",
+      "idx": 5,
+      "next": "/acim/intro/text/#T6",
+      "prev": "/acim/text/06/chap0603/"
+    }
+  ]
+}

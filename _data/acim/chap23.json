@@ -1,0 +1,75 @@
+{
+  "base": "/acim/text/23/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty Three",
+  "bid": "atext23",
+  "page": [
+    {
+      "fid": "text/#T23",
+      "url": "/acim/intro/text/#T23",
+      "idx": 0,
+      "next": "/acim/text/23/chap2300/",
+      "prev": "/acim/text/23/chap2304/"
+    },
+    {
+      "title": "T23 Introduction",
+      "fid": "chap2300/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/23/chap2300/",
+      "idx": 1,
+      "next": "/acim/text/23/chap2301/",
+      "prev": "/acim/intro/text/#T23"
+    },
+    {
+      "title": "T23.1 The Irreconcilable Beliefs",
+      "fid": "chap2301/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/23/chap2301/",
+      "idx": 2,
+      "next": "/acim/text/23/chap2302/",
+      "prev": "/acim/text/23/chap2300/"
+    },
+    {
+      "title": "T23.2 The “Laws” of Chaos",
+      "fid": "chap2302/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/23/chap2302/",
+      "idx": 3,
+      "next": "/acim/text/23/chap2303/",
+      "prev": "/acim/text/23/chap2301/"
+    },
+    {
+      "title": "T23.3 Salvation without Compromise",
+      "fid": "chap2303/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/23/chap2303/",
+      "idx": 4,
+      "next": "/acim/text/23/chap2304/",
+      "prev": "/acim/text/23/chap2302/"
+    },
+    {
+      "title": "T23.4 The Fear of Life",
+      "fid": "chap2304/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/23/chap2304/",
+      "idx": 5,
+      "next": "/acim/intro/text/#T23",
+      "prev": "/acim/text/23/chap2303/"
+    }
+  ]
+}

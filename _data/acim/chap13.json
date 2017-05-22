@@ -1,0 +1,123 @@
+{
+  "base": "/acim/text/13/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Thirteen",
+  "bid": "atext13",
+  "page": [
+    {
+      "fid": "text/#T13",
+      "url": "/acim/intro/text/#T13",
+      "idx": 0,
+      "next": "/acim/text/13/chap1300/",
+      "prev": "/acim/text/13/chap1308/"
+    },
+    {
+      "fid": "chap1300/",
+      "title": "T13 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/13/chap1300/",
+      "idx": 1,
+      "next": "/acim/text/13/chap1301/",
+      "prev": "/acim/intro/text/#T13"
+    },
+    {
+      "fid": "chap1301/",
+      "title": "T13.1 The Role of Healing",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/13/chap1301/",
+      "idx": 2,
+      "next": "/acim/text/13/chap1302/",
+      "prev": "/acim/text/13/chap1300/"
+    },
+    {
+      "fid": "chap1302/",
+      "title": "T13.2 The Shadow of Guilt",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/13/chap1302/",
+      "idx": 3,
+      "next": "/acim/text/13/chap1303/",
+      "prev": "/acim/text/13/chap1301/"
+    },
+    {
+      "fid": "chap1303/",
+      "title": "T13.3 Release and Restoration",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/13/chap1303/",
+      "idx": 4,
+      "next": "/acim/text/13/chap1304/",
+      "prev": "/acim/text/13/chap1302/"
+    },
+    {
+      "fid": "chap1304/",
+      "title": "T13.4 The Guarantee of Heaven",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/13/chap1304/",
+      "idx": 5,
+      "next": "/acim/text/13/chap1305/",
+      "prev": "/acim/text/13/chap1303/"
+    },
+    {
+      "fid": "chap1305/",
+      "title": "T13.5 The Testimony of Miracles",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/13/chap1305/",
+      "idx": 6,
+      "next": "/acim/text/13/chap1306/",
+      "prev": "/acim/text/13/chap1304/"
+    },
+    {
+      "fid": "chap1306/",
+      "title": "T13.6 The Happy Learner",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/13/chap1306/",
+      "idx": 7,
+      "next": "/acim/text/13/chap1307/",
+      "prev": "/acim/text/13/chap1305/"
+    },
+    {
+      "fid": "chap1307/",
+      "title": "T13.7 The Decision for Guiltlessness",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/13/chap1307/",
+      "idx": 8,
+      "next": "/acim/text/13/chap1308/",
+      "prev": "/acim/text/13/chap1306/"
+    },
+    {
+      "fid": "chap1308/",
+      "title": "T13.8 The Way of Salvation",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/13/chap1308/",
+      "idx": 9,
+      "next": "/acim/intro/text/#T13",
+      "prev": "/acim/text/13/chap1307/"
+    }
+  ]
+}

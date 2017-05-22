@@ -1,0 +1,147 @@
+{
+  "base": "/acim/text/18/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Eighteen",
+  "bid": "atext18",
+  "page": [
+    {
+      "fid": "text/#T18",
+      "url": "/acim/intro/text/#T18",
+      "idx": 0,
+      "next": "/acim/text/18/chap1800/",
+      "prev": "/acim/text/18/chap1810/"
+    },
+    {
+      "title": "T18 Introduction",
+      "fid": "chap1800/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1800/",
+      "idx": 1,
+      "next": "/acim/text/18/chap1801/",
+      "prev": "/acim/intro/text/#T18"
+    },
+    {
+      "title": "T18.1 Substitution as a Defense",
+      "fid": "chap1801/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1801/",
+      "idx": 2,
+      "next": "/acim/text/18/chap1802/",
+      "prev": "/acim/text/18/chap1800/"
+    },
+    {
+      "title": "T18.2 The Basis of the Dream",
+      "fid": "chap1802/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1802/",
+      "idx": 3,
+      "next": "/acim/text/18/chap1803/",
+      "prev": "/acim/text/18/chap1801/"
+    },
+    {
+      "title": "T18.3 Light in the Dream",
+      "fid": "chap1803/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1803/",
+      "idx": 4,
+      "next": "/acim/text/18/chap1804/",
+      "prev": "/acim/text/18/chap1802/"
+    },
+    {
+      "title": "T18.4 The Little Willingness",
+      "fid": "chap1804/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1804/",
+      "idx": 5,
+      "next": "/acim/text/18/chap1805/",
+      "prev": "/acim/text/18/chap1803/"
+    },
+    {
+      "title": "T18.5 The Happy Dream",
+      "fid": "chap1805/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1805/",
+      "idx": 6,
+      "next": "/acim/text/18/chap1806/",
+      "prev": "/acim/text/18/chap1804/"
+    },
+    {
+      "title": "T18.6 Dreams and the Body",
+      "fid": "chap1806/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1806/",
+      "idx": 7,
+      "next": "/acim/text/18/chap1807/",
+      "prev": "/acim/text/18/chap1805/"
+    },
+    {
+      "title": "T18.7 I Need Do Nothing",
+      "fid": "chap1807/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1807/",
+      "idx": 8,
+      "next": "/acim/text/18/chap1808/",
+      "prev": "/acim/text/18/chap1806/"
+    },
+    {
+      "title": "T18.8 The Purpose of the Body",
+      "fid": "chap1808/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1808/",
+      "idx": 9,
+      "next": "/acim/text/18/chap1809/",
+      "prev": "/acim/text/18/chap1807/"
+    },
+    {
+      "title": "T18.9 The Delusional Thought System",
+      "fid": "chap1809/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1809/",
+      "idx": 10,
+      "next": "/acim/text/18/chap1810/",
+      "prev": "/acim/text/18/chap1808/"
+    },
+    {
+      "title": "T18.10 The Passing of the Dream",
+      "fid": "chap1810/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/18/chap1810/",
+      "idx": 11,
+      "next": "/acim/intro/text/#T18",
+      "prev": "/acim/text/18/chap1809/"
+    }
+  ]
+}

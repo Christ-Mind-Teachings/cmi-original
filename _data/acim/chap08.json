@@ -1,0 +1,147 @@
+{
+  "base": "/acim/text/08/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Eight",
+  "bid": "atext08",
+  "page": [
+    {
+      "fid": "text/#T8",
+      "url": "/acim/intro/text/#T8",
+      "idx": 0,
+      "next": "/acim/text/08/chap0800/",
+      "prev": "/acim/text/08/chap0810/"
+    },
+    {
+      "fid": "chap0800/",
+      "title": "T8 Introduction",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0800/",
+      "idx": 1,
+      "next": "/acim/text/08/chap0801/",
+      "prev": "/acim/intro/text/#T8"
+    },
+    {
+      "fid": "chap0801/",
+      "title": "T8.1 The Direction of the Curriculum",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0801/",
+      "idx": 2,
+      "next": "/acim/text/08/chap0802/",
+      "prev": "/acim/text/08/chap0800/"
+    },
+    {
+      "fid": "chap0802/",
+      "title": "T8.2 The Rationale for Choice",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0802/",
+      "idx": 3,
+      "next": "/acim/text/08/chap0803/",
+      "prev": "/acim/text/08/chap0801/"
+    },
+    {
+      "fid": "chap0803/",
+      "title": "T8.3 The Holy Encounter",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0803/",
+      "idx": 4,
+      "next": "/acim/text/08/chap0804/",
+      "prev": "/acim/text/08/chap0802/"
+    },
+    {
+      "fid": "chap0804/",
+      "title": "T8.4 The Light of the World",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0804/",
+      "idx": 5,
+      "next": "/acim/text/08/chap0805/",
+      "prev": "/acim/text/08/chap0803/"
+    },
+    {
+      "fid": "chap0805/",
+      "title": "T8.5 The Power of Joint Decision",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0805/",
+      "idx": 6,
+      "next": "/acim/text/08/chap0806/",
+      "prev": "/acim/text/08/chap0804/"
+    },
+    {
+      "fid": "chap0806/",
+      "title": "T8.6 Communication and the Ego-Body Equation",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0806/",
+      "idx": 7,
+      "next": "/acim/text/08/chap0807/",
+      "prev": "/acim/text/08/chap0805/"
+    },
+    {
+      "fid": "chap0807/",
+      "title": "T8.7 The Body as Means or End",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0807/",
+      "idx": 8,
+      "next": "/acim/text/08/chap0808/",
+      "prev": "/acim/text/08/chap0806/"
+    },
+    {
+      "fid": "chap0808/",
+      "title": "T8.8 Healing as Corrected Perception",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0808/",
+      "idx": 9,
+      "next": "/acim/text/08/chap0809/",
+      "prev": "/acim/text/08/chap0807/"
+    },
+    {
+      "fid": "chap0809/",
+      "title": "T8.9 The Acceptance of Reality",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0809/",
+      "idx": 10,
+      "next": "/acim/text/08/chap0810/",
+      "prev": "/acim/text/08/chap0808/"
+    },
+    {
+      "fid": "chap0810/",
+      "title": "T8.10 The Answer to Prayer",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/08/chap0810/",
+      "idx": 11,
+      "next": "/acim/intro/text/#T8",
+      "prev": "/acim/text/08/chap0809/"
+    }
+  ]
+}

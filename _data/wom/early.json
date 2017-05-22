@@ -239,16 +239,18 @@
     },
     {
       "fid": "moa/",
+      "title": "Meaning of Ascension",
       "res": {
-        "audio": "MOA.mp3"
+        "audio": "MOA.mp3",
+        "timing": "moa.js",
+        "timer": "JohnEEAAA"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
-      "title": "Meaning of Ascension",
       "url": "/wom/early/moa/",
       "idx": 15,
       "next": "/wom/early/mot/",
@@ -283,7 +285,8 @@
     {
       "fid": "wlk/",
       "res": {
-        "audio": "WLK.mp3"
+        "audio": "WLK.mp3",
+        "timer": "JohnEEAAA"
       },
       "complete": {
         "format": 1,

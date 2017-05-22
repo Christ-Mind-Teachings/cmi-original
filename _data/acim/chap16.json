@@ -1,0 +1,111 @@
+{
+  "base": "/acim/text/16/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Sixteen",
+  "bid": "atext16",
+  "page": [
+    {
+      "fid": "text/#T16",
+      "url": "/acim/intro/text/#T16",
+      "idx": 0,
+      "next": "/acim/text/16/chap1600/",
+      "prev": "/acim/text/16/chap1607/"
+    },
+    {
+      "title": "T16 Introduction",
+      "fid": "chap1600/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/16/chap1600/",
+      "idx": 1,
+      "next": "/acim/text/16/chap1601/",
+      "prev": "/acim/intro/text/#T16"
+    },
+    {
+      "title": "T16.1 True Empathy",
+      "fid": "chap1601/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/16/chap1601/",
+      "idx": 2,
+      "next": "/acim/text/16/chap1602/",
+      "prev": "/acim/text/16/chap1600/"
+    },
+    {
+      "title": "T16.2 The Magnitude of Holiness",
+      "fid": "chap1602/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/16/chap1602/",
+      "idx": 3,
+      "next": "/acim/text/16/chap1603/",
+      "prev": "/acim/text/16/chap1601/"
+    },
+    {
+      "title": "T16.3 The Reward of Teaching",
+      "fid": "chap1603/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/16/chap1603/",
+      "idx": 4,
+      "next": "/acim/text/16/chap1604/",
+      "prev": "/acim/text/16/chap1602/"
+    },
+    {
+      "title": "T16.4 Illusion and Reality of Love",
+      "fid": "chap1604/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/16/chap1604/",
+      "idx": 5,
+      "next": "/acim/text/16/chap1605/",
+      "prev": "/acim/text/16/chap1603/"
+    },
+    {
+      "title": "T16.5 Specialness and Guilt",
+      "fid": "chap1605/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/16/chap1605/",
+      "idx": 6,
+      "next": "/acim/text/16/chap1606/",
+      "prev": "/acim/text/16/chap1604/"
+    },
+    {
+      "title": "T16.6 The Bridge to the Real World",
+      "fid": "chap1606/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/16/chap1606/",
+      "idx": 7,
+      "next": "/acim/text/16/chap1607/",
+      "prev": "/acim/text/16/chap1605/"
+    },
+    {
+      "title": "T16.7 The End of Illusions",
+      "fid": "chap1607/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/16/chap1607/",
+      "idx": 8,
+      "next": "/acim/intro/text/#T16",
+      "prev": "/acim/text/16/chap1606/"
+    }
+  ]
+}

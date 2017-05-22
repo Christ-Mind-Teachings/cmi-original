@@ -36,7 +36,8 @@ function processSeek(time) {
   if (locptr === -1) {
     locptr++;
     console.log("adjusted index: %s", locptr);
-    console.log("seek time: %s > %s (last ptime)", time, timingData.time[timingData.time.length - 1].seconds);
+    console.log("seek time: %s > %s (last ptime)", time,
+        timingData.time[timingData.time.length - 1].seconds);
   }
 
   console.log("[ptr:%s] seeking to %s which begins at %s", 
@@ -79,15 +80,15 @@ function removeCurrentHilight() {
 function showNscroll(idx) {
   var tinfo = timingData.time[idx];
 
+  //scroll into view
+  scroll(document.getElementById(tinfo.id));
+
   if (prevptr > -1) {
     $("#" + timingData.time[prevptr].id).removeClass(hilightClass);
   }
 
   $("#" + tinfo.id).addClass(hilightClass);
   prevptr = idx;
-
-  //scroll into view
-  scroll(document.getElementById(tinfo.id));
 }
 
 function getTime(idx) {

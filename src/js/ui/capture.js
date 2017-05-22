@@ -123,10 +123,10 @@ function enableSidebarTimeCapture() {
     var ct = $(".pmarker-toggle");
     e.preventDefault();
     if (ct.children("i").hasClass("fa-toggle-off")) {
-      ct.html("<i class='fa fa-toggle-on'></i>&nbsp;Time Capture On");
+      ct.html("<i class='fa fa-toggle-on'></i>&nbsp;Disable Time Capture");
     }
     else {
-      ct.html("<i class='fa fa-toggle-off'></i>&nbsp;Time Capture Off");
+      ct.html("<i class='fa fa-toggle-off'></i>&nbsp;Enable Time Capture");
     }
 
     toggleMarkers();

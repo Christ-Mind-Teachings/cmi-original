@@ -1,0 +1,264 @@
+{
+  "base": "/acim/text/",
+  "intro": "/acim/intro/",
+  "title": "A Course in Miracles",
+  "bid": "acim-text",
+  "page": [
+    {
+      "fid": "text",
+      "title": "Text: Table of Contents",
+      "url": "/acim/intro/text",
+      "idx": 0,
+      "next": "/acim/text/01/chap0100/",
+      "prev": "/acim/text/31/chap3100/"
+    },
+    {
+      "fid": "01/chap0100/",
+      "title": "T1 Introduction to Miracles",
+      "url": "/acim/text/01/chap0100/",
+      "idx": 1,
+      "next": "/acim/text/02/chap0200/",
+      "prev": "/acim/intro/text/"
+    },
+    {
+      "fid": "02/chap0200/",
+      "title": "T2 The Illusion of Separation",
+      "url": "/acim/text/02/chap0200/",
+      "idx": 2,
+      "next": "/acim/text/03/chap0300/",
+      "prev": "/acim/text/01/chap0100/"
+    },
+    {
+      "fid": "03/chap0300/",
+      "title": "T3 Retraining the Mind",
+      "url": "/acim/text/03/chap0300/",
+      "idx": 3,
+      "next": "/acim/text/04/chap0400/",
+      "prev": "/acim/text/02/chap0200/"
+    },
+    {
+      "fid": "04/chap0400/",
+      "title": "T4 The Root of all Evil",
+      "url": "/acim/text/04/chap0400/",
+      "idx": 4,
+      "next": "/acim/text/05/chap0500/",
+      "prev": "/acim/text/03/chap0300/"
+    },
+    {
+      "fid": "05/chap0500/",
+      "title": "T5 Healing and Wholeness",
+      "url": "/acim/text/05/chap0500/",
+      "idx": 5,
+      "next": "/acim/text/06/chap0600/",
+      "prev": "/acim/text/04/chap0400/"
+    },
+    {
+      "fid": "06/chap0600/",
+      "title": "T6 Attack and Fear",
+      "url": "/acim/text/06/chap0600/",
+      "idx": 6,
+      "next": "/acim/text/07/chap0700/",
+      "prev": "/acim/text/05/chap0500/"
+    },
+    {
+      "fid": "07/chap0700/",
+      "title": "T7 The Consistency of the Kingdom",
+      "url": "/acim/text/07/chap0700/",
+      "idx": 7,
+      "next": "/acim/text/08/chap0800/",
+      "prev": "/acim/text/06/chap0600/"
+    },
+    {
+      "fid": "08/chap0800/",
+      "title": "T8 The Journey Back",
+      "url": "/acim/text/08/chap0800/",
+      "idx": 8,
+      "next": "/acim/text/09/chap0900/",
+      "prev": "/acim/text/07/chap0700/"
+    },
+    {
+      "fid": "09/chap0900/",
+      "title": "T9 The Correction of Error",
+      "url": "/acim/text/09/chap0900/",
+      "idx": 9,
+      "next": "/acim/text/10/chap1000/",
+      "prev": "/acim/text/08/chap0800/"
+    },
+    {
+      "fid": "10/chap1000/",
+      "title": "T10 God and the Ego",
+      "url": "/acim/text/10/chap1000/",
+      "idx": 10,
+      "next": "/acim/text/11/chap1100/",
+      "prev": "/acim/text/09/chap0900/"
+    },
+    {
+      "fid": "11/chap1100/",
+      "title": "T11 God’s Plan for Salvation",
+      "url": "/acim/text/11/chap1100/",
+      "idx": 11,
+      "next": "/acim/text/12/chap1200/",
+      "prev": "/acim/text/10/chap1000/"
+    },
+    {
+      "fid": "12/chap1200/",
+      "title": "T12 The Problem of Guilt",
+      "url": "/acim/text/12/chap1200/",
+      "idx": 12,
+      "next": "/acim/text/13/chap1300/",
+      "prev": "/acim/text/11/chap1100/"
+    },
+    {
+      "fid": "13/chap1300/",
+      "title": "T13 From Perception to Knowledge",
+      "url": "/acim/text/13/chap1300/",
+      "idx": 13,
+      "next": "/acim/text/14/chap1400/",
+      "prev": "/acim/text/12/chap1200/"
+    },
+    {
+      "fid": "14/chap1400/",
+      "title": "T14 Bringing Illusions to Truth",
+      "url": "/acim/text/14/chap1400/",
+      "idx": 14,
+      "next": "/acim/text/15/chap1500/",
+      "prev": "/acim/text/13/chap1300/"
+    },
+    {
+      "fid": "15/chap1500/",
+      "title": "T15 The Purpose of Time",
+      "url": "/acim/text/15/chap1500/",
+      "idx": 15,
+      "next": "/acim/text/16/chap1600/",
+      "prev": "/acim/text/14/chap1400/"
+    },
+    {
+      "fid": "16/chap1600/",
+      "title": "T16 The Forgiveness of Illusions",
+      "url": "/acim/text/16/chap1600/",
+      "idx": 16,
+      "next": "/acim/text/17/chap1700/",
+      "prev": "/acim/text/15/chap1500/"
+    },
+    {
+      "fid": "17/chap1700/",
+      "title": "T17 Forgiveness and Healing",
+      "url": "/acim/text/17/chap1700/",
+      "idx": 17,
+      "next": "/acim/text/18/chap1800/",
+      "prev": "/acim/text/16/chap1600/"
+    },
+    {
+      "fid": "18/chap1800/",
+      "title": "T18 The Dream and the Reality",
+      "url": "/acim/text/18/chap1800/",
+      "idx": 18,
+      "next": "/acim/text/19/chap1900/",
+      "prev": "/acim/text/17/chap1700/"
+    },
+    {
+      "fid": "19/chap1900/",
+      "title": "T19 Beyond the Body",
+      "url": "/acim/text/19/chap1900/",
+      "idx": 19,
+      "next": "/acim/text/20/chap2000/",
+      "prev": "/acim/text/18/chap1800/"
+    },
+    {
+      "fid": "20/chap2000/",
+      "title": "T20 The Promise of the Resurrection",
+      "url": "/acim/text/20/chap2000/",
+      "idx": 20,
+      "next": "/acim/text/21/chap2100/",
+      "prev": "/acim/text/19/chap1900/"
+    },
+    {
+      "fid": "21/chap2100/",
+      "title": "T21 The Inner Picture",
+      "url": "/acim/text/21/chap2100/",
+      "idx": 21,
+      "next": "/acim/text/22/chap2200/",
+      "prev": "/acim/text/20/chap2000/"
+    },
+    {
+      "fid": "22/chap2200/",
+      "title": "T22 Salvation and the Holy Relationship",
+      "url": "/acim/text/22/chap2200/",
+      "idx": 22,
+      "next": "/acim/text/23/chap2300/",
+      "prev": "/acim/text/21/chap2100/"
+    },
+    {
+      "fid": "23/chap2300/",
+      "title": "T23 The War Against Yourself",
+      "url": "/acim/text/23/chap2300/",
+      "idx": 23,
+      "next": "/acim/text/24/chap2400/",
+      "prev": "/acim/text/22/chap2200/"
+    },
+    {
+      "fid": "24/chap2400/",
+      "title": "T24 Specialness and Separation",
+      "url": "/acim/text/24/chap2400/",
+      "idx": 24,
+      "next": "/acim/text/25/chap2500/",
+      "prev": "/acim/text/23/chap2300/"
+    },
+    {
+      "fid": "25/chap2500/",
+      "title": "T25 The Remedy",
+      "url": "/acim/text/25/chap2500/",
+      "idx": 25,
+      "next": "/acim/text/26/chap2600/",
+      "prev": "/acim/text/24/chap2400/"
+    },
+    {
+      "fid": "26/chap2600/",
+      "title": "T26 The Transition",
+      "url": "/acim/text/26/chap2600/",
+      "idx": 26,
+      "next": "/acim/text/27/chap2700/",
+      "prev": "/acim/text/25/chap2500/"
+    },
+    {
+      "fid": "27/chap2700/",
+      "title": "T27 The Body and the Dream",
+      "url": "/acim/text/27/chap2700/",
+      "idx": 27,
+      "next": "/acim/text/28/chap2800/",
+      "prev": "/acim/text/26/chap2600/"
+    },
+    {
+      "fid": "28/chap2800/",
+      "title": "T28 The Undoing of Fear",
+      "url": "/acim/text/28/chap2800/",
+      "idx": 28,
+      "next": "/acim/text/29/chap2900/",
+      "prev": "/acim/text/27/chap2700/"
+    },
+    {
+      "fid": "29/chap2900/",
+      "title": "T29 The Awakening",
+      "url": "/acim/text/29/chap2900/",
+      "idx": 29,
+      "next": "/acim/text/30/chap3000/",
+      "prev": "/acim/text/28/chap2800/"
+    },
+    {
+      "fid": "30/chap3000/",
+      "title": "T30 The New Beginning",
+      "url": "/acim/text/30/chap3000/",
+      "idx": 30,
+      "next": "/acim/text/31/chap3100/",
+      "prev": "/acim/text/29/chap2900/"
+    },
+    {
+      "fid": "31/chap3100/",
+      "title": "T31 The Simplicity of Salvation",
+      "url": "/acim/text/31/chap3100/",
+      "idx": 31,
+      "next": "/acim/intro/text/",
+      "prev": "/acim/text/30/chap3000/"
+    }
+  ]
+}

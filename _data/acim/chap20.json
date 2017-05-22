@@ -1,0 +1,123 @@
+{
+  "base": "/acim/text/20/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty",
+  "bid": "atext20",
+  "page": [
+    {
+      "fid": "text/#T20",
+      "url": "/acim/intro/text/#T20",
+      "idx": 0,
+      "next": "/acim/text/20/chap2000/",
+      "prev": "/acim/text/20/chap2008/"
+    },
+    {
+      "title": "T20 Introduction",
+      "fid": "chap2000/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/20/chap2000/",
+      "idx": 1,
+      "next": "/acim/text/20/chap2001/",
+      "prev": "/acim/intro/text/#T20"
+    },
+    {
+      "title": "T20.1 Holy Week",
+      "fid": "chap2001/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/20/chap2001/",
+      "idx": 2,
+      "next": "/acim/text/20/chap2002/",
+      "prev": "/acim/text/20/chap2000/"
+    },
+    {
+      "title": "T20.2 Thorns and Lilies",
+      "fid": "chap2002/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/20/chap2002/",
+      "idx": 3,
+      "next": "/acim/text/20/chap2003/",
+      "prev": "/acim/text/20/chap2001/"
+    },
+    {
+      "title": "T20.3 Sin as an Adjustment",
+      "fid": "chap2003/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/20/chap2003/",
+      "idx": 4,
+      "next": "/acim/text/20/chap2004/",
+      "prev": "/acim/text/20/chap2002/"
+    },
+    {
+      "title": "T20.4 Entering the Ark",
+      "fid": "chap2004/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/20/chap2004/",
+      "idx": 5,
+      "next": "/acim/text/20/chap2005/",
+      "prev": "/acim/text/20/chap2003/"
+    },
+    {
+      "title": "T20.5 Heralds of Eternity",
+      "fid": "chap2005/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/20/chap2005/",
+      "idx": 6,
+      "next": "/acim/text/20/chap2006/",
+      "prev": "/acim/text/20/chap2004/"
+    },
+    {
+      "title": "T20.6 The Temple of the Holy Spirit",
+      "fid": "chap2006/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/20/chap2006/",
+      "idx": 7,
+      "next": "/acim/text/20/chap2007/",
+      "prev": "/acim/text/20/chap2005/"
+    },
+    {
+      "title": "T20.7 The Consistency of Means and End",
+      "fid": "chap2007/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/20/chap2007/",
+      "idx": 8,
+      "next": "/acim/text/20/chap2008/",
+      "prev": "/acim/text/20/chap2006/"
+    },
+    {
+      "title": "T20.8 The Vision of Sinlessness",
+      "fid": "chap2008/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/20/chap2008/",
+      "idx": 9,
+      "next": "/acim/intro/text/#T20",
+      "prev": "/acim/text/20/chap2007/"
+    }
+  ]
+}

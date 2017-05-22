@@ -1,0 +1,135 @@
+{
+  "base": "/acim/text/25/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Text: Twenty Five",
+  "bid": "atext25",
+  "page": [
+    {
+      "fid": "text/#T25",
+      "url": "/acim/intro/text/#T25",
+      "idx": 0,
+      "next": "/acim/text/25/chap2500/",
+      "prev": "/acim/text/25/chap2509/"
+    },
+    {
+      "title": "T25 Introduction",
+      "fid": "chap2500/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2500/",
+      "idx": 1,
+      "next": "/acim/text/25/chap2501/",
+      "prev": "/acim/intro/text/#T25"
+    },
+    {
+      "title": "T25.1 The Appointed Task",
+      "fid": "chap2501/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2501/",
+      "idx": 2,
+      "next": "/acim/text/25/chap2502/",
+      "prev": "/acim/text/25/chap2500/"
+    },
+    {
+      "title": "T25.2 The Savior from the Dark",
+      "fid": "chap2502/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2502/",
+      "idx": 3,
+      "next": "/acim/text/25/chap2503/",
+      "prev": "/acim/text/25/chap2501/"
+    },
+    {
+      "title": "T25.3 The Fundamental Law of Perception",
+      "fid": "chap2503/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2503/",
+      "idx": 4,
+      "next": "/acim/text/25/chap2504/",
+      "prev": "/acim/text/25/chap2502/"
+    },
+    {
+      "title": "T25.4 The Joining of Minds",
+      "fid": "chap2504/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2504/",
+      "idx": 5,
+      "next": "/acim/text/25/chap2505/",
+      "prev": "/acim/text/25/chap2503/"
+    },
+    {
+      "title": "T25.5 The State of Sinlessness",
+      "fid": "chap2505/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2505/",
+      "idx": 6,
+      "next": "/acim/text/25/chap2506/",
+      "prev": "/acim/text/25/chap2504/"
+    },
+    {
+      "title": "T25.6 The Special Function",
+      "fid": "chap2506/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2506/",
+      "idx": 7,
+      "next": "/acim/text/25/chap2507/",
+      "prev": "/acim/text/25/chap2505/"
+    },
+    {
+      "title": "T25.7 Commuting the Sentence",
+      "fid": "chap2507/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2507/",
+      "idx": 8,
+      "next": "/acim/text/25/chap2508/",
+      "prev": "/acim/text/25/chap2506/"
+    },
+    {
+      "title": "T25.8 The Principle of Salvation",
+      "fid": "chap2508/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2508/",
+      "idx": 9,
+      "next": "/acim/text/25/chap2509/",
+      "prev": "/acim/text/25/chap2507/"
+    },
+    {
+      "title": "T25.9 The Justice of Heaven",
+      "fid": "chap2509/",
+      "complete": {
+        "format": 1,
+        "index": 0
+      },
+      "url": "/acim/text/25/chap2509/",
+      "idx": 10,
+      "next": "/acim/intro/text/#T25",
+      "prev": "/acim/text/25/chap2508/"
+    }
+  ]
+}
