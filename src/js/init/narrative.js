@@ -42,14 +42,19 @@ function showRequestedAnnotation() {
 module.exports = {
   initialize: function() {
     var transcriptParagraphs;
+    var count = 0;
 
     //assign id's to all paragraphs in div.transcript
     transcriptParagraphs = $(".transcript p");
     transcriptParagraphs.each(function(idx) {
       if (!$(this).hasClass("omit")) {
+        count++;
         $(this).attr("id", "p" + idx);
       }
     });
+
+    //log number of not omitted paragraphs
+    console.log("%s", count);
 
     //display hypothes.is annotation if url contains: id=<annotation id>
     showRequestedAnnotation();

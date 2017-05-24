@@ -477,11 +477,12 @@
       "fid": "112413/",
       "desc": "T15.1 The Uses of Time",
       "res": {
-        "audio": "2013-11-24.mp3"
+        "audio": "2013-11-24.mp3",
+        "timing": "112413.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

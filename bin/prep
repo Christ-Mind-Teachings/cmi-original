@@ -11,6 +11,8 @@ wosAwk="wos.awk"
 nwffacimDir="/Users/rmercer/Projects/cmi/site/www/_nwffacim"
 nwffacimAwk="nwffacim.awk"
 unitDir=""
+acimDir="/Users/rmercer/Projects/cmi/site/www/_acim"
+acimAwk="acim.awk"
 debug=0
 
 function syntax {
@@ -35,6 +37,7 @@ if [[ -z $1 ]]; then
 fi
 
 unit=$1
+outputFile=$1
 
 case $source in
   wom)
@@ -53,6 +56,11 @@ case $source in
     unitDir=$nwffacimDir
     awkFile=$nwffacimAwk
     ;;
+  acim)
+    unitDir=$acimDir
+    awkFile=$acimAwk
+    outputFile=${outputFile:3}
+    ;;
   *) syntax;;
 esac
 
@@ -62,19 +70,17 @@ unitFileName=${unitDirName}/${unit}.md
 echo "Reading $unitFileName"
 
 if [ $debug == 1 ]; then
-  (gawk -f ${scriptDir}/${awkFile} -v debug=1 -v source=$source -v book=$book -v unit=$unit ${unitFileName} > $unit.json.debug)
+  outputFile=${outputFile}.json.debug
+  (gawk -f ${scriptDir}/${awkFile} -v debug=1 -v source=$source -v book=$book -v unit=$unit ${unitFileName} > $outputFile)
 else
-  (gawk -f ${scriptDir}/${awkFile} -v debug=0 -v source=$source -v book=$book -v unit=$unit ${unitFileName} > $unit.json)
+  outputFile=${outputFile}.json
+  (gawk -f ${scriptDir}/${awkFile} -v debug=0 -v source=$source -v book=$book -v unit=$unit ${unitFileName} > $outputFile)
 fi
 
 rc="$?"
 
 if [ "$rc" == "0" ]; then
-  if [ $debug == 1 ]; then
-    echo "./$unit.json.debug created."
-  else
-    echo "./$unit.json created."
-  fi
+  echo "./$outputFile created."
 else
   echo "conversion to json failed"
 fi

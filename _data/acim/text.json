@@ -2,2984 +2,3254 @@
   "base": "/acim/text/",
   "intro": "/acim/intro/",
   "title": "A Course in Miracles",
-  "bid": "acim-text",
+  "bid": "acim",
   "page": [
     {
-      "fid": "text/",
-      "url": "/acim/intro/text/",
+      "fid": "text",
+      "url": "/acim/intro/text",
       "idx": 0,
-      "next": "/acim/text/chap0100/",
-      "prev": "/acim/text/chap3107/"
+      "next": "/acim/text/01/chap0100/",
+      "prev": "/acim/text/31/chap3107/"
     },
     {
-      "fid": "chap0100/",
+      "fid": "01/chap0100/",
+      "title": "T1 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0100/",
+      "url": "/acim/text/01/chap0100/",
       "idx": 1,
-      "next": "/acim/text/chap0101/",
+      "next": "/acim/text/01/chap0101/",
       "prev": "/acim/intro/text/"
     },
     {
-      "fid": "chap0101/",
+      "fid": "01/chap0101/",
+      "title": "T1.1 Principles of Miracles",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0101/",
+      "url": "/acim/text/01/chap0101/",
       "idx": 2,
-      "next": "/acim/text/chap0102/",
-      "prev": "/acim/text/chap0100/"
+      "next": "/acim/text/01/chap0102/",
+      "prev": "/acim/text/01/chap0100/"
     },
     {
-      "fid": "chap0102/",
+      "fid": "01/chap0102/",
+      "title": "T1.2 Distortions of Miracle Impulses",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0102/",
+      "url": "/acim/text/01/chap0102/",
       "idx": 3,
-      "next": "/acim/text/chap0200/",
-      "prev": "/acim/text/chap0101/"
+      "next": "/acim/text/02/chap0200/",
+      "prev": "/acim/text/01/chap0101/"
     },
     {
-      "fid": "chap0200/",
+      "fid": "02/chap0200/",
+      "title": "T2 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0200/",
+      "url": "/acim/text/02/chap0200/",
       "idx": 4,
-      "next": "/acim/text/chap0201/",
-      "prev": "/acim/text/chap0102/"
+      "next": "/acim/text/02/chap0201/",
+      "prev": "/acim/text/01/chap0102/"
     },
     {
-      "fid": "chap0201/",
+      "fid": "02/chap0201/",
+      "title": "T2.1 The Reinterpretation of Defenses",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0201/",
+      "url": "/acim/text/02/chap0201/",
       "idx": 5,
-      "next": "/acim/text/chap0202/",
-      "prev": "/acim/text/chap0200/"
+      "next": "/acim/text/02/chap0202/",
+      "prev": "/acim/text/02/chap0200/"
     },
     {
-      "fid": "chap0202/",
+      "fid": "02/chap0202/",
+      "title": "T2.2 Healing as Release from Fear",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0202/",
+      "url": "/acim/text/02/chap0202/",
       "idx": 6,
-      "next": "/acim/text/chap0203/",
-      "prev": "/acim/text/chap0201/"
+      "next": "/acim/text/02/chap0203/",
+      "prev": "/acim/text/02/chap0201/"
     },
     {
-      "fid": "chap0203/",
+      "fid": "02/chap0203/",
+      "title": "T2.3 Fear as Lack of Love",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0203/",
+      "url": "/acim/text/02/chap0203/",
       "idx": 7,
-      "next": "/acim/text/chap0204/",
-      "prev": "/acim/text/chap0202/"
+      "next": "/acim/text/02/chap0204/",
+      "prev": "/acim/text/02/chap0202/"
     },
     {
-      "fid": "chap0204/",
+      "fid": "02/chap0204/",
+      "title": "T2.4 The Correction for Lack of Love",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0204/",
+      "url": "/acim/text/02/chap0204/",
       "idx": 8,
-      "next": "/acim/text/chap0205/",
-      "prev": "/acim/text/chap0203/"
+      "next": "/acim/text/02/chap0205/",
+      "prev": "/acim/text/02/chap0203/"
     },
     {
-      "fid": "chap0205/",
+      "fid": "02/chap0205/",
+      "title": "T2.5 The Meaning of the Last Judgement",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0205/",
+      "url": "/acim/text/02/chap0205/",
       "idx": 9,
-      "next": "/acim/text/chap0300/",
-      "prev": "/acim/text/chap0204/"
+      "next": "/acim/text/03/chap0300/",
+      "prev": "/acim/text/02/chap0204/"
     },
     {
-      "fid": "chap0300/",
+      "fid": "03/chap0300/",
+      "title": "T3 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0300/",
+      "url": "/acim/text/03/chap0300/",
       "idx": 10,
-      "next": "/acim/text/chap0301/",
-      "prev": "/acim/text/chap0205/"
+      "next": "/acim/text/03/chap0301/",
+      "prev": "/acim/text/02/chap0205/"
     },
     {
-      "fid": "chap0301/",
+      "fid": "03/chap0301/",
+      "title": "T3.1 Special Principles for Miracle Workers",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0301/",
+      "url": "/acim/text/03/chap0301/",
       "idx": 11,
-      "next": "/acim/text/chap0302/",
-      "prev": "/acim/text/chap0300/"
+      "next": "/acim/text/03/chap0302/",
+      "prev": "/acim/text/03/chap0300/"
     },
     {
-      "fid": "chap0302/",
+      "fid": "03/chap0302/",
+      "title": "T3.2 Atonement without Sacrifice",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0302/",
+      "url": "/acim/text/03/chap0302/",
       "idx": 12,
-      "next": "/acim/text/chap0303/",
-      "prev": "/acim/text/chap0301/"
+      "next": "/acim/text/03/chap0303/",
+      "prev": "/acim/text/03/chap0301/"
     },
     {
-      "fid": "chap0303/",
+      "fid": "03/chap0303/",
+      "title": "T3.3 Miracles as Accurate Perception",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0303/",
+      "url": "/acim/text/03/chap0303/",
       "idx": 13,
-      "next": "/acim/text/chap0304/",
-      "prev": "/acim/text/chap0302/"
+      "next": "/acim/text/03/chap0304/",
+      "prev": "/acim/text/03/chap0302/"
     },
     {
-      "fid": "chap0304/",
+      "fid": "03/chap0304/",
+      "title": "T3.4 Perception Versus Knowledge",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0304/",
+      "url": "/acim/text/03/chap0304/",
       "idx": 14,
-      "next": "/acim/text/chap0305/",
-      "prev": "/acim/text/chap0303/"
+      "next": "/acim/text/03/chap0305/",
+      "prev": "/acim/text/03/chap0303/"
     },
     {
-      "fid": "chap0305/",
+      "fid": "03/chap0305/",
+      "title": "T3.5 Conflict and the Ego",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0305/",
+      "url": "/acim/text/03/chap0305/",
       "idx": 15,
-      "next": "/acim/text/chap0306/",
-      "prev": "/acim/text/chap0304/"
+      "next": "/acim/text/03/chap0306/",
+      "prev": "/acim/text/03/chap0304/"
     },
     {
-      "fid": "chap0306/",
+      "fid": "03/chap0306/",
+      "title": "T3.6 The Loss of Certainty",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0306/",
+      "url": "/acim/text/03/chap0306/",
       "idx": 16,
-      "next": "/acim/text/chap0307/",
-      "prev": "/acim/text/chap0305/"
+      "next": "/acim/text/03/chap0307/",
+      "prev": "/acim/text/03/chap0305/"
     },
     {
-      "fid": "chap0307/",
+      "fid": "03/chap0307/",
+      "title": "T3.7 Judgement and the Authority Problem",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0307/",
+      "url": "/acim/text/03/chap0307/",
       "idx": 17,
-      "next": "/acim/text/chap0308/",
-      "prev": "/acim/text/chap0306/"
+      "next": "/acim/text/03/chap0308/",
+      "prev": "/acim/text/03/chap0306/"
     },
     {
-      "fid": "chap0308/",
+      "fid": "03/chap0308/",
+      "title": "T3.8 Creating versus the Self-Image",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0308/",
+      "url": "/acim/text/03/chap0308/",
       "idx": 18,
-      "next": "/acim/text/chap0400/",
-      "prev": "/acim/text/chap0307/"
+      "next": "/acim/text/04/chap0400/",
+      "prev": "/acim/text/03/chap0307/"
     },
     {
-      "fid": "chap0400/",
+      "fid": "04/chap0400/",
+      "title": "T4 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0400/",
+      "url": "/acim/text/04/chap0400/",
       "idx": 19,
-      "next": "/acim/text/chap0401/",
-      "prev": "/acim/text/chap0308/"
+      "next": "/acim/text/04/chap0401/",
+      "prev": "/acim/text/03/chap0308/"
     },
     {
-      "fid": "chap0401/",
+      "fid": "04/chap0401/",
+      "title": "T4.1 Right Teaching and Right Learning",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0401/",
+      "url": "/acim/text/04/chap0401/",
       "idx": 20,
-      "next": "/acim/text/chap0402/",
-      "prev": "/acim/text/chap0400/"
+      "next": "/acim/text/04/chap0402/",
+      "prev": "/acim/text/04/chap0400/"
     },
     {
-      "fid": "chap0402/",
+      "fid": "04/chap0402/",
+      "title": "T4.2 The Ego and False Autonomy",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0402/",
+      "url": "/acim/text/04/chap0402/",
       "idx": 21,
-      "next": "/acim/text/chap0403/",
-      "prev": "/acim/text/chap0401/"
+      "next": "/acim/text/04/chap0403/",
+      "prev": "/acim/text/04/chap0401/"
     },
     {
-      "fid": "chap0403/",
+      "fid": "04/chap0403/",
+      "title": "T4.3 Love without Conflict",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0403/",
+      "url": "/acim/text/04/chap0403/",
       "idx": 22,
-      "next": "/acim/text/chap0404/",
-      "prev": "/acim/text/chap0402/"
+      "next": "/acim/text/04/chap0404/",
+      "prev": "/acim/text/04/chap0402/"
     },
     {
-      "fid": "chap0404/",
+      "fid": "04/chap0404/",
+      "title": "T4.4 The Escape from Fear",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0404/",
+      "url": "/acim/text/04/chap0404/",
       "idx": 23,
-      "next": "/acim/text/chap0405/",
-      "prev": "/acim/text/chap0403/"
+      "next": "/acim/text/04/chap0405/",
+      "prev": "/acim/text/04/chap0403/"
     },
     {
-      "fid": "chap0405/",
+      "fid": "04/chap0405/",
+      "title": "T4.5 The Ego-Body Illusion",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0405/",
+      "url": "/acim/text/04/chap0405/",
       "idx": 24,
-      "next": "/acim/text/chap0406/",
-      "prev": "/acim/text/chap0404/"
+      "next": "/acim/text/04/chap0406/",
+      "prev": "/acim/text/04/chap0404/"
     },
     {
-      "fid": "chap0406/",
+      "fid": "04/chap0406/",
+      "title": "T4.6 The Constant State",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0406/",
+      "url": "/acim/text/04/chap0406/",
       "idx": 25,
-      "next": "/acim/text/chap0407/",
-      "prev": "/acim/text/chap0405/"
+      "next": "/acim/text/04/chap0407/",
+      "prev": "/acim/text/04/chap0405/"
     },
     {
-      "fid": "chap0407/",
+      "fid": "04/chap0407/",
+      "title": "T4.7 Creation and Communication",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0407/",
+      "url": "/acim/text/04/chap0407/",
       "idx": 26,
-      "next": "/acim/text/chap0408/",
-      "prev": "/acim/text/chap0406/"
+      "next": "/acim/text/04/chap0408/",
+      "prev": "/acim/text/04/chap0406/"
     },
     {
-      "fid": "chap0408/",
+      "fid": "04/chap0408/",
+      "title": "T4.8 True Rehabilitation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0408/",
+      "url": "/acim/text/04/chap0408/",
       "idx": 27,
-      "next": "/acim/text/chap0500/",
-      "prev": "/acim/text/chap0407/"
+      "next": "/acim/text/05/chap0500/",
+      "prev": "/acim/text/04/chap0407/"
     },
     {
-      "fid": "chap0500/",
+      "fid": "05/chap0500/",
+      "title": "T5 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0500/",
+      "url": "/acim/text/05/chap0500/",
       "idx": 28,
-      "next": "/acim/text/chap0501/",
-      "prev": "/acim/text/chap0408/"
+      "next": "/acim/text/05/chap0501/",
+      "prev": "/acim/text/04/chap0408/"
     },
     {
-      "fid": "chap0501/",
+      "fid": "05/chap0501/",
+      "title": "T5.1 Healing as Joining",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0501/",
+      "url": "/acim/text/05/chap0501/",
       "idx": 29,
-      "next": "/acim/text/chap0502/",
-      "prev": "/acim/text/chap0500/"
+      "next": "/acim/text/05/chap0502/",
+      "prev": "/acim/text/05/chap0500/"
     },
     {
-      "fid": "chap0502/",
+      "fid": "05/chap0502/",
+      "title": "T5.2 The Mind of the Atonement",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0502/",
+      "url": "/acim/text/05/chap0502/",
       "idx": 30,
-      "next": "/acim/text/chap0503/",
-      "prev": "/acim/text/chap0501/"
+      "next": "/acim/text/05/chap0503/",
+      "prev": "/acim/text/05/chap0501/"
     },
     {
-      "fid": "chap0503/",
+      "fid": "05/chap0503/",
+      "title": "T5.3 The Voice for God",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0503/",
+      "url": "/acim/text/05/chap0503/",
       "idx": 31,
-      "next": "/acim/text/chap0504/",
-      "prev": "/acim/text/chap0502/"
+      "next": "/acim/text/05/chap0504/",
+      "prev": "/acim/text/05/chap0502/"
     },
     {
-      "fid": "chap0504/",
+      "fid": "05/chap0504/",
+      "title": "T5.4 The Guide to Salvation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0504/",
+      "url": "/acim/text/05/chap0504/",
       "idx": 32,
-      "next": "/acim/text/chap0505/",
-      "prev": "/acim/text/chap0503/"
+      "next": "/acim/text/05/chap0505/",
+      "prev": "/acim/text/05/chap0503/"
     },
     {
-      "fid": "chap0505/",
+      "fid": "05/chap0505/",
+      "title": "T5.5 Therapy and Teaching",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0505/",
+      "url": "/acim/text/05/chap0505/",
       "idx": 33,
-      "next": "/acim/text/chap0506/",
-      "prev": "/acim/text/chap0504/"
+      "next": "/acim/text/05/chap0506/",
+      "prev": "/acim/text/05/chap0504/"
     },
     {
-      "fid": "chap0506/",
+      "fid": "05/chap0506/",
+      "title": "T5.6 The Two Decisions",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0506/",
+      "url": "/acim/text/05/chap0506/",
       "idx": 34,
-      "next": "/acim/text/chap0507/",
-      "prev": "/acim/text/chap0505/"
+      "next": "/acim/text/05/chap0507/",
+      "prev": "/acim/text/05/chap0505/"
     },
     {
-      "fid": "chap0507/",
+      "fid": "05/chap0507/",
+      "title": "T5.7 Time and Eternity",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0507/",
+      "url": "/acim/text/05/chap0507/",
       "idx": 35,
-      "next": "/acim/text/chap0508/",
-      "prev": "/acim/text/chap0506/"
+      "next": "/acim/text/05/chap0508/",
+      "prev": "/acim/text/05/chap0506/"
     },
     {
-      "fid": "chap0508/",
+      "fid": "05/chap0508/",
+      "title": "T5.8 The Eternal Fixation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0508/",
+      "url": "/acim/text/05/chap0508/",
       "idx": 36,
-      "next": "/acim/text/chap0600/",
-      "prev": "/acim/text/chap0507/"
+      "next": "/acim/text/06/chap0600/",
+      "prev": "/acim/text/05/chap0507/"
     },
     {
-      "fid": "chap0600/",
+      "fid": "06/chap0600/",
+      "title": "T6 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0600/",
+      "url": "/acim/text/06/chap0600/",
       "idx": 37,
-      "next": "/acim/text/chap0601/",
-      "prev": "/acim/text/chap0508/"
+      "next": "/acim/text/06/chap0601/",
+      "prev": "/acim/text/05/chap0508/"
     },
     {
-      "fid": "chap0601/",
+      "fid": "06/chap0601/",
+      "title": "T6.1 The Message of the Crucifixion",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0601/",
+      "url": "/acim/text/06/chap0601/",
       "idx": 38,
-      "next": "/acim/text/chap0602/",
-      "prev": "/acim/text/chap0600/"
+      "next": "/acim/text/06/chap0602/",
+      "prev": "/acim/text/06/chap0600/"
     },
     {
-      "fid": "chap0602/",
+      "fid": "06/chap0602/",
+      "title": "T6.2 The Uses of Projection",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0602/",
+      "url": "/acim/text/06/chap0602/",
       "idx": 39,
-      "next": "/acim/text/chap0603/",
-      "prev": "/acim/text/chap0601/"
+      "next": "/acim/text/06/chap0603/",
+      "prev": "/acim/text/06/chap0601/"
     },
     {
-      "fid": "chap0603/",
+      "fid": "06/chap0603/",
+      "title": "T6.3 The Relinquishment of Attack",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0603/",
+      "url": "/acim/text/06/chap0603/",
       "idx": 40,
-      "next": "/acim/text/chap0604/",
-      "prev": "/acim/text/chap0602/"
+      "next": "/acim/text/06/chap0604/",
+      "prev": "/acim/text/06/chap0602/"
     },
     {
-      "fid": "chap0604/",
+      "fid": "06/chap0604/",
+      "title": "T6.4 The Only Answer",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0604/",
+      "url": "/acim/text/06/chap0604/",
       "idx": 41,
-      "next": "/acim/text/chap0700/",
-      "prev": "/acim/text/chap0603/"
+      "next": "/acim/text/07/chap0700/",
+      "prev": "/acim/text/06/chap0603/"
     },
     {
-      "fid": "chap0700/",
+      "fid": "07/chap0700/",
+      "title": "T7 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0700/",
+      "url": "/acim/text/07/chap0700/",
       "idx": 42,
-      "next": "/acim/text/chap0701/",
-      "prev": "/acim/text/chap0604/"
+      "next": "/acim/text/07/chap0701/",
+      "prev": "/acim/text/06/chap0604/"
     },
     {
-      "fid": "chap0701/",
+      "fid": "07/chap0701/",
+      "title": "T7.1 Bargaining versus Healing",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0701/",
+      "url": "/acim/text/07/chap0701/",
       "idx": 43,
-      "next": "/acim/text/chap0702/",
-      "prev": "/acim/text/chap0700/"
+      "next": "/acim/text/07/chap0702/",
+      "prev": "/acim/text/07/chap0700/"
     },
     {
-      "fid": "chap0702/",
+      "fid": "07/chap0702/",
+      "title": "T7.2 The Laws of Mind",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0702/",
+      "url": "/acim/text/07/chap0702/",
       "idx": 44,
-      "next": "/acim/text/chap0703/",
-      "prev": "/acim/text/chap0701/"
+      "next": "/acim/text/07/chap0703/",
+      "prev": "/acim/text/07/chap0701/"
     },
     {
-      "fid": "chap0703/",
+      "fid": "07/chap0703/",
+      "title": "T7.3 The Unified Curriculum",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0703/",
+      "url": "/acim/text/07/chap0703/",
       "idx": 45,
-      "next": "/acim/text/chap0704/",
-      "prev": "/acim/text/chap0702/"
+      "next": "/acim/text/07/chap0704/",
+      "prev": "/acim/text/07/chap0702/"
     },
     {
-      "fid": "chap0704/",
+      "fid": "07/chap0704/",
+      "title": "T7.4 The Recognition of Truth",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0704/",
+      "url": "/acim/text/07/chap0704/",
       "idx": 46,
-      "next": "/acim/text/chap0705/",
-      "prev": "/acim/text/chap0703/"
+      "next": "/acim/text/07/chap0705/",
+      "prev": "/acim/text/07/chap0703/"
     },
     {
-      "fid": "chap0705/",
+      "fid": "07/chap0705/",
+      "title": "T7.5 Healing and the Changelessness of Mind",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0705/",
+      "url": "/acim/text/07/chap0705/",
       "idx": 47,
-      "next": "/acim/text/chap0706/",
-      "prev": "/acim/text/chap0704/"
+      "next": "/acim/text/07/chap0706/",
+      "prev": "/acim/text/07/chap0704/"
     },
     {
-      "fid": "chap0706/",
+      "fid": "07/chap0706/",
+      "title": "T7.6 From Vigilance to Peace",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0706/",
+      "url": "/acim/text/07/chap0706/",
       "idx": 48,
-      "next": "/acim/text/chap0707/",
-      "prev": "/acim/text/chap0705/"
+      "next": "/acim/text/07/chap0707/",
+      "prev": "/acim/text/07/chap0705/"
     },
     {
-      "fid": "chap0707/",
+      "fid": "07/chap0707/",
+      "title": "T7.7 The Total Commitment",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0707/",
+      "url": "/acim/text/07/chap0707/",
       "idx": 49,
-      "next": "/acim/text/chap0708/",
-      "prev": "/acim/text/chap0706/"
+      "next": "/acim/text/07/chap0708/",
+      "prev": "/acim/text/07/chap0706/"
     },
     {
-      "fid": "chap0708/",
+      "fid": "07/chap0708/",
+      "title": "T7.8 The Defense of Conflict",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0708/",
+      "url": "/acim/text/07/chap0708/",
       "idx": 50,
-      "next": "/acim/text/chap0709/",
-      "prev": "/acim/text/chap0707/"
+      "next": "/acim/text/07/chap0709/",
+      "prev": "/acim/text/07/chap0707/"
     },
     {
-      "fid": "chap0709/",
+      "fid": "07/chap0709/",
+      "title": "T7.9 The Extension of the Kingdom",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0709/",
+      "url": "/acim/text/07/chap0709/",
       "idx": 51,
-      "next": "/acim/text/chap0710/",
-      "prev": "/acim/text/chap0708/"
+      "next": "/acim/text/07/chap0710/",
+      "prev": "/acim/text/07/chap0708/"
     },
     {
-      "fid": "chap0710/",
+      "fid": "07/chap0710/",
+      "title": "T7.10 The Confusion of Strength and Weakness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0710/",
+      "url": "/acim/text/07/chap0710/",
       "idx": 52,
-      "next": "/acim/text/chap0711/",
-      "prev": "/acim/text/chap0709/"
+      "next": "/acim/text/07/chap0711/",
+      "prev": "/acim/text/07/chap0709/"
     },
     {
-      "fid": "chap0711/",
+      "fid": "07/chap0711/",
+      "title": "T7.11 The State of Grace",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0711/",
+      "url": "/acim/text/07/chap0711/",
       "idx": 53,
-      "next": "/acim/text/chap0800/",
-      "prev": "/acim/text/chap0710/"
+      "next": "/acim/text/08/chap0800/",
+      "prev": "/acim/text/07/chap0710/"
     },
     {
-      "fid": "chap0800/",
+      "fid": "08/chap0800/",
+      "title": "T8 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0800/",
+      "url": "/acim/text/08/chap0800/",
       "idx": 54,
-      "next": "/acim/text/chap0801/",
-      "prev": "/acim/text/chap0711/"
+      "next": "/acim/text/08/chap0801/",
+      "prev": "/acim/text/07/chap0711/"
     },
     {
-      "fid": "chap0801/",
+      "fid": "08/chap0801/",
+      "title": "T8.1 The Direction of the Curriculum",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0801/",
+      "url": "/acim/text/08/chap0801/",
       "idx": 55,
-      "next": "/acim/text/chap0802/",
-      "prev": "/acim/text/chap0800/"
+      "next": "/acim/text/08/chap0802/",
+      "prev": "/acim/text/08/chap0800/"
     },
     {
-      "fid": "chap0802/",
+      "fid": "08/chap0802/",
+      "title": "T8.2 The Rationale for Choice",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0802/",
+      "url": "/acim/text/08/chap0802/",
       "idx": 56,
-      "next": "/acim/text/chap0803/",
-      "prev": "/acim/text/chap0801/"
+      "next": "/acim/text/08/chap0803/",
+      "prev": "/acim/text/08/chap0801/"
     },
     {
-      "fid": "chap0803/",
+      "fid": "08/chap0803/",
+      "title": "T8.3 The Holy Encounter",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0803/",
+      "url": "/acim/text/08/chap0803/",
       "idx": 57,
-      "next": "/acim/text/chap0804/",
-      "prev": "/acim/text/chap0802/"
+      "next": "/acim/text/08/chap0804/",
+      "prev": "/acim/text/08/chap0802/"
     },
     {
-      "fid": "chap0804/",
+      "fid": "08/chap0804/",
+      "title": "T8.4 The Light of the World",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0804/",
+      "url": "/acim/text/08/chap0804/",
       "idx": 58,
-      "next": "/acim/text/chap0805/",
-      "prev": "/acim/text/chap0803/"
+      "next": "/acim/text/08/chap0805/",
+      "prev": "/acim/text/08/chap0803/"
     },
     {
-      "fid": "chap0805/",
+      "fid": "08/chap0805/",
+      "title": "T8.5 The Power of Joint Decision",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0805/",
+      "url": "/acim/text/08/chap0805/",
       "idx": 59,
-      "next": "/acim/text/chap0806/",
-      "prev": "/acim/text/chap0804/"
+      "next": "/acim/text/08/chap0806/",
+      "prev": "/acim/text/08/chap0804/"
     },
     {
-      "fid": "chap0806/",
+      "fid": "08/chap0806/",
+      "title": "T8.6 Communication and the Ego-Body Equation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0806/",
+      "url": "/acim/text/08/chap0806/",
       "idx": 60,
-      "next": "/acim/text/chap0807/",
-      "prev": "/acim/text/chap0805/"
+      "next": "/acim/text/08/chap0807/",
+      "prev": "/acim/text/08/chap0805/"
     },
     {
-      "fid": "chap0807/",
+      "fid": "08/chap0807/",
+      "title": "T8.7 The Body as Means or End",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0807/",
+      "url": "/acim/text/08/chap0807/",
       "idx": 61,
-      "next": "/acim/text/chap0808/",
-      "prev": "/acim/text/chap0806/"
+      "next": "/acim/text/08/chap0808/",
+      "prev": "/acim/text/08/chap0806/"
     },
     {
-      "fid": "chap0808/",
+      "fid": "08/chap0808/",
+      "title": "T8.8 Healing as Corrected Perception",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0808/",
+      "url": "/acim/text/08/chap0808/",
       "idx": 62,
-      "next": "/acim/text/chap0809/",
-      "prev": "/acim/text/chap0807/"
+      "next": "/acim/text/08/chap0809/",
+      "prev": "/acim/text/08/chap0807/"
     },
     {
-      "fid": "chap0809/",
+      "fid": "08/chap0809/",
+      "title": "T8.9 The Acceptance of Reality",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0809/",
+      "url": "/acim/text/08/chap0809/",
       "idx": 63,
-      "next": "/acim/text/chap0810/",
-      "prev": "/acim/text/chap0808/"
+      "next": "/acim/text/08/chap0810/",
+      "prev": "/acim/text/08/chap0808/"
     },
     {
-      "fid": "chap0810/",
+      "fid": "08/chap0810/",
+      "title": "T8.10 The Answer to Prayer",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0810/",
+      "url": "/acim/text/08/chap0810/",
       "idx": 64,
-      "next": "/acim/text/chap0900/",
-      "prev": "/acim/text/chap0809/"
+      "next": "/acim/text/09/chap0900/",
+      "prev": "/acim/text/08/chap0809/"
     },
     {
-      "fid": "chap0900/",
+      "fid": "09/chap0900/",
+      "title": "T9 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0900/",
+      "url": "/acim/text/09/chap0900/",
       "idx": 65,
-      "next": "/acim/text/chap0901/",
-      "prev": "/acim/text/chap0810/"
+      "next": "/acim/text/09/chap0901/",
+      "prev": "/acim/text/08/chap0810/"
     },
     {
-      "fid": "chap0901/",
+      "fid": "09/chap0901/",
+      "title": "T9.1 Sanity and Perception",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0901/",
+      "url": "/acim/text/09/chap0901/",
       "idx": 66,
-      "next": "/acim/text/chap0902/",
-      "prev": "/acim/text/chap0900/"
+      "next": "/acim/text/09/chap0902/",
+      "prev": "/acim/text/09/chap0900/"
     },
     {
-      "fid": "chap0902/",
+      "fid": "09/chap0902/",
+      "title": "T9.2 Atonement as a Lesson in Sharing",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0902/",
+      "url": "/acim/text/09/chap0902/",
       "idx": 67,
-      "next": "/acim/text/chap0903/",
-      "prev": "/acim/text/chap0901/"
+      "next": "/acim/text/09/chap0903/",
+      "prev": "/acim/text/09/chap0901/"
     },
     {
-      "fid": "chap0903/",
+      "fid": "09/chap0903/",
+      "title": "T9.3 The Unhealed Healer",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0903/",
+      "url": "/acim/text/09/chap0903/",
       "idx": 68,
-      "next": "/acim/text/chap0904/",
-      "prev": "/acim/text/chap0902/"
+      "next": "/acim/text/09/chap0904/",
+      "prev": "/acim/text/09/chap0902/"
     },
     {
-      "fid": "chap0904/",
+      "fid": "09/chap0904/",
+      "title": "T9.4 The Awareness of the Holy Spirit",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0904/",
+      "url": "/acim/text/09/chap0904/",
       "idx": 69,
-      "next": "/acim/text/chap0905/",
-      "prev": "/acim/text/chap0903/"
+      "next": "/acim/text/09/chap0905/",
+      "prev": "/acim/text/09/chap0903/"
     },
     {
-      "fid": "chap0905/",
+      "fid": "09/chap0905/",
+      "title": "T9.5 Salvation and God’s Will",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0905/",
+      "url": "/acim/text/09/chap0905/",
       "idx": 70,
-      "next": "/acim/text/chap0906/",
-      "prev": "/acim/text/chap0904/"
+      "next": "/acim/text/09/chap0906/",
+      "prev": "/acim/text/09/chap0904/"
     },
     {
-      "fid": "chap0906/",
+      "fid": "09/chap0906/",
+      "title": "T9.6 Grandeur versus Grandiosity",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0906/",
+      "url": "/acim/text/09/chap0906/",
       "idx": 71,
-      "next": "/acim/text/chap0907/",
-      "prev": "/acim/text/chap0905/"
+      "next": "/acim/text/09/chap0907/",
+      "prev": "/acim/text/09/chap0905/"
     },
     {
-      "fid": "chap0907/",
+      "fid": "09/chap0907/",
+      "title": "T9.7 The Inclusiveness of Creation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0907/",
+      "url": "/acim/text/09/chap0907/",
       "idx": 72,
-      "next": "/acim/text/chap0908/",
-      "prev": "/acim/text/chap0906/"
+      "next": "/acim/text/09/chap0908/",
+      "prev": "/acim/text/09/chap0906/"
     },
     {
-      "fid": "chap0908/",
+      "fid": "09/chap0908/",
+      "title": "T9.8 The Decision to Forget",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0908/",
+      "url": "/acim/text/09/chap0908/",
       "idx": 73,
-      "next": "/acim/text/chap0909/",
-      "prev": "/acim/text/chap0907/"
+      "next": "/acim/text/09/chap0909/",
+      "prev": "/acim/text/09/chap0907/"
     },
     {
-      "fid": "chap0909/",
+      "fid": "09/chap0909/",
+      "title": "T9.9 Magic versus Miracles",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0909/",
+      "url": "/acim/text/09/chap0909/",
       "idx": 74,
-      "next": "/acim/text/chap0910/",
-      "prev": "/acim/text/chap0908/"
+      "next": "/acim/text/09/chap0910/",
+      "prev": "/acim/text/09/chap0908/"
     },
     {
-      "fid": "chap0910/",
+      "fid": "09/chap0910/",
+      "title": "T9.10 The Denial of God",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap0910/",
+      "url": "/acim/text/09/chap0910/",
       "idx": 75,
-      "next": "/acim/text/chap1000/",
-      "prev": "/acim/text/chap0909/"
+      "next": "/acim/text/10/chap1000/",
+      "prev": "/acim/text/09/chap0909/"
     },
     {
-      "fid": "chap1000/",
+      "fid": "10/chap1000/",
+      "title": "T10 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1000/",
+      "url": "/acim/text/10/chap1000/",
       "idx": 76,
-      "next": "/acim/text/chap1001/",
-      "prev": "/acim/text/chap0910/"
+      "next": "/acim/text/10/chap1001/",
+      "prev": "/acim/text/09/chap0910/"
     },
     {
-      "fid": "chap1001/",
+      "fid": "10/chap1001/",
+      "title": "T10.1 Projection versus Extension",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1001/",
+      "url": "/acim/text/10/chap1001/",
       "idx": 77,
-      "next": "/acim/text/chap1002/",
-      "prev": "/acim/text/chap1000/"
+      "next": "/acim/text/10/chap1002/",
+      "prev": "/acim/text/10/chap1000/"
     },
     {
-      "fid": "chap1002/",
+      "fid": "10/chap1002/",
+      "title": "T10.2 The Willingness for Healing",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1002/",
+      "url": "/acim/text/10/chap1002/",
       "idx": 78,
-      "next": "/acim/text/chap1003/",
-      "prev": "/acim/text/chap1001/"
+      "next": "/acim/text/10/chap1003/",
+      "prev": "/acim/text/10/chap1001/"
     },
     {
-      "fid": "chap1003/",
+      "fid": "10/chap1003/",
+      "title": "T10.3 From Darkness to Light",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1003/",
+      "url": "/acim/text/10/chap1003/",
       "idx": 79,
-      "next": "/acim/text/chap1004/",
-      "prev": "/acim/text/chap1002/"
+      "next": "/acim/text/10/chap1004/",
+      "prev": "/acim/text/10/chap1002/"
     },
     {
-      "fid": "chap1004/",
+      "fid": "10/chap1004/",
+      "title": "T10.4 The Inheritance of God’s Son",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1004/",
+      "url": "/acim/text/10/chap1004/",
       "idx": 80,
-      "next": "/acim/text/chap1005/",
-      "prev": "/acim/text/chap1003/"
+      "next": "/acim/text/10/chap1005/",
+      "prev": "/acim/text/10/chap1003/"
     },
     {
-      "fid": "chap1005/",
+      "fid": "10/chap1005/",
+      "title": "T10.5 The “Dynamics” of the Ego",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1005/",
+      "url": "/acim/text/10/chap1005/",
       "idx": 81,
-      "next": "/acim/text/chap1006/",
-      "prev": "/acim/text/chap1004/"
+      "next": "/acim/text/10/chap1006/",
+      "prev": "/acim/text/10/chap1004/"
     },
     {
-      "fid": "chap1006/",
+      "fid": "10/chap1006/",
+      "title": "T10.6 Experience and Perception",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1006/",
+      "url": "/acim/text/10/chap1006/",
       "idx": 82,
-      "next": "/acim/text/chap1007/",
-      "prev": "/acim/text/chap1005/"
+      "next": "/acim/text/10/chap1007/",
+      "prev": "/acim/text/10/chap1005/"
     },
     {
-      "fid": "chap1007/",
+      "fid": "10/chap1007/",
+      "title": "T10.7 The Problem and the Answer",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1007/",
+      "url": "/acim/text/10/chap1007/",
       "idx": 83,
-      "next": "/acim/text/chap1100/",
-      "prev": "/acim/text/chap1006/"
+      "next": "/acim/text/11/chap1100/",
+      "prev": "/acim/text/10/chap1006/"
     },
     {
-      "fid": "chap1100/",
+      "fid": "11/chap1100/",
+      "title": "T11 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1100/",
+      "url": "/acim/text/11/chap1100/",
       "idx": 84,
-      "next": "/acim/text/chap1101/",
-      "prev": "/acim/text/chap1007/"
+      "next": "/acim/text/11/chap1101/",
+      "prev": "/acim/text/10/chap1007/"
     },
     {
-      "fid": "chap1101/",
+      "fid": "11/chap1101/",
+      "title": "T11.1 The Judgement of the Holy Spirit",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1101/",
+      "url": "/acim/text/11/chap1101/",
       "idx": 85,
-      "next": "/acim/text/chap1102/",
-      "prev": "/acim/text/chap1100/"
+      "next": "/acim/text/11/chap1102/",
+      "prev": "/acim/text/11/chap1100/"
     },
     {
-      "fid": "chap1102/",
+      "fid": "11/chap1102/",
+      "title": "T11.2 The Mechanism of Miracles",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1102/",
+      "url": "/acim/text/11/chap1102/",
       "idx": 86,
-      "next": "/acim/text/chap1103/",
-      "prev": "/acim/text/chap1101/"
+      "next": "/acim/text/11/chap1103/",
+      "prev": "/acim/text/11/chap1101/"
     },
     {
-      "fid": "chap1103/",
+      "fid": "11/chap1103/",
+      "title": "T11.3 The Investment in Reality",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1103/",
+      "url": "/acim/text/11/chap1103/",
       "idx": 87,
-      "next": "/acim/text/chap1104/",
-      "prev": "/acim/text/chap1102/"
+      "next": "/acim/text/11/chap1104/",
+      "prev": "/acim/text/11/chap1102/"
     },
     {
-      "fid": "chap1104/",
+      "fid": "11/chap1104/",
+      "title": "T11.4 Seeking and Finding",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1104/",
+      "url": "/acim/text/11/chap1104/",
       "idx": 88,
-      "next": "/acim/text/chap1105/",
-      "prev": "/acim/text/chap1103/"
+      "next": "/acim/text/11/chap1105/",
+      "prev": "/acim/text/11/chap1103/"
     },
     {
-      "fid": "chap1105/",
+      "fid": "11/chap1105/",
+      "title": "T11.5 The Sane Curriculum",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1105/",
+      "url": "/acim/text/11/chap1105/",
       "idx": 89,
-      "next": "/acim/text/chap1106/",
-      "prev": "/acim/text/chap1104/"
+      "next": "/acim/text/11/chap1106/",
+      "prev": "/acim/text/11/chap1104/"
     },
     {
-      "fid": "chap1106/",
+      "fid": "11/chap1106/",
+      "title": "T11.6 The Vision of Christ",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1106/",
+      "url": "/acim/text/11/chap1106/",
       "idx": 90,
-      "next": "/acim/text/chap1107/",
-      "prev": "/acim/text/chap1105/"
+      "next": "/acim/text/11/chap1107/",
+      "prev": "/acim/text/11/chap1105/"
     },
     {
-      "fid": "chap1107/",
+      "fid": "11/chap1107/",
+      "title": "T11.7 The Guide for Miracles",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1107/",
+      "url": "/acim/text/11/chap1107/",
       "idx": 91,
-      "next": "/acim/text/chap1108/",
-      "prev": "/acim/text/chap1106/"
+      "next": "/acim/text/11/chap1108/",
+      "prev": "/acim/text/11/chap1106/"
     },
     {
-      "fid": "chap1108/",
+      "fid": "11/chap1108/",
+      "title": "T11.8 Reality and Redemption",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1108/",
+      "url": "/acim/text/11/chap1108/",
       "idx": 92,
-      "next": "/acim/text/chap1109/",
-      "prev": "/acim/text/chap1107/"
+      "next": "/acim/text/11/chap1109/",
+      "prev": "/acim/text/11/chap1107/"
     },
     {
-      "fid": "chap1109/",
+      "fid": "11/chap1109/",
+      "title": "T11.9 Guiltlessness and Invulnerability",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1109/",
+      "url": "/acim/text/11/chap1109/",
       "idx": 93,
-      "next": "/acim/text/chap1200/",
-      "prev": "/acim/text/chap1108/"
+      "next": "/acim/text/12/chap1200/",
+      "prev": "/acim/text/11/chap1108/"
     },
     {
-      "fid": "chap1200/",
+      "fid": "12/chap1200/",
+      "title": "T12 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1200/",
+      "url": "/acim/text/12/chap1200/",
       "idx": 94,
-      "next": "/acim/text/chap1201/",
-      "prev": "/acim/text/chap1109/"
+      "next": "/acim/text/12/chap1201/",
+      "prev": "/acim/text/11/chap1109/"
     },
     {
-      "fid": "chap1201/",
+      "fid": "12/chap1201/",
+      "title": "T12.1 Crucifixion by Guilt",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1201/",
+      "url": "/acim/text/12/chap1201/",
       "idx": 95,
-      "next": "/acim/text/chap1202/",
-      "prev": "/acim/text/chap1200/"
+      "next": "/acim/text/12/chap1202/",
+      "prev": "/acim/text/12/chap1200/"
     },
     {
-      "fid": "chap1202/",
+      "fid": "12/chap1202/",
+      "title": "T12.2 The Fear of Redemption",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1202/",
+      "url": "/acim/text/12/chap1202/",
       "idx": 96,
-      "next": "/acim/text/chap1203/",
-      "prev": "/acim/text/chap1201/"
+      "next": "/acim/text/12/chap1203/",
+      "prev": "/acim/text/12/chap1201/"
     },
     {
-      "fid": "chap1203/",
+      "fid": "12/chap1203/",
+      "title": "T12.3 Healing and Time",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1203/",
+      "url": "/acim/text/12/chap1203/",
       "idx": 97,
-      "next": "/acim/text/chap1204/",
-      "prev": "/acim/text/chap1202/"
+      "next": "/acim/text/12/chap1204/",
+      "prev": "/acim/text/12/chap1202/"
     },
     {
-      "fid": "chap1204/",
+      "fid": "12/chap1204/",
+      "title": "T12.4 The Two Emotions",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1204/",
+      "url": "/acim/text/12/chap1204/",
       "idx": 98,
-      "next": "/acim/text/chap1205/",
-      "prev": "/acim/text/chap1203/"
+      "next": "/acim/text/12/chap1205/",
+      "prev": "/acim/text/12/chap1203/"
     },
     {
-      "fid": "chap1205/",
+      "fid": "12/chap1205/",
+      "title": "T12.5 Finding the Present",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1205/",
+      "url": "/acim/text/12/chap1205/",
       "idx": 99,
-      "next": "/acim/text/chap1206/",
-      "prev": "/acim/text/chap1204/"
+      "next": "/acim/text/12/chap1206/",
+      "prev": "/acim/text/12/chap1204/"
     },
     {
-      "fid": "chap1206/",
+      "fid": "12/chap1206/",
+      "title": "T12.6 Attainment of the Real World",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1206/",
+      "url": "/acim/text/12/chap1206/",
       "idx": 100,
-      "next": "/acim/text/chap1300/",
-      "prev": "/acim/text/chap1205/"
+      "next": "/acim/text/13/chap1300/",
+      "prev": "/acim/text/12/chap1205/"
     },
     {
-      "fid": "chap1300/",
+      "fid": "13/chap1300/",
+      "title": "T13 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1300/",
+      "url": "/acim/text/13/chap1300/",
       "idx": 101,
-      "next": "/acim/text/chap1301/",
-      "prev": "/acim/text/chap1206/"
+      "next": "/acim/text/13/chap1301/",
+      "prev": "/acim/text/12/chap1206/"
     },
     {
-      "fid": "chap1301/",
+      "fid": "13/chap1301/",
+      "title": "T13.1 The Role of Healing",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1301/",
+      "url": "/acim/text/13/chap1301/",
       "idx": 102,
-      "next": "/acim/text/chap1302/",
-      "prev": "/acim/text/chap1300/"
+      "next": "/acim/text/13/chap1302/",
+      "prev": "/acim/text/13/chap1300/"
     },
     {
-      "fid": "chap1302/",
+      "fid": "13/chap1302/",
+      "title": "T13.2 The Shadow of Guilt",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1302/",
+      "url": "/acim/text/13/chap1302/",
       "idx": 103,
-      "next": "/acim/text/chap1303/",
-      "prev": "/acim/text/chap1301/"
+      "next": "/acim/text/13/chap1303/",
+      "prev": "/acim/text/13/chap1301/"
     },
     {
-      "fid": "chap1303/",
+      "fid": "13/chap1303/",
+      "title": "T13.3 Release and Restoration",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1303/",
+      "url": "/acim/text/13/chap1303/",
       "idx": 104,
-      "next": "/acim/text/chap1304/",
-      "prev": "/acim/text/chap1302/"
+      "next": "/acim/text/13/chap1304/",
+      "prev": "/acim/text/13/chap1302/"
     },
     {
-      "fid": "chap1304/",
+      "fid": "13/chap1304/",
+      "title": "T13.4 The Guarantee of Heaven",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1304/",
+      "url": "/acim/text/13/chap1304/",
       "idx": 105,
-      "next": "/acim/text/chap1305/",
-      "prev": "/acim/text/chap1303/"
+      "next": "/acim/text/13/chap1305/",
+      "prev": "/acim/text/13/chap1303/"
     },
     {
-      "fid": "chap1305/",
+      "fid": "13/chap1305/",
+      "title": "T13.5 The Testimony of Miracles",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1305/",
+      "url": "/acim/text/13/chap1305/",
       "idx": 106,
-      "next": "/acim/text/chap1306/",
-      "prev": "/acim/text/chap1304/"
+      "next": "/acim/text/13/chap1306/",
+      "prev": "/acim/text/13/chap1304/"
     },
     {
-      "fid": "chap1306/",
+      "fid": "13/chap1306/",
+      "title": "T13.6 The Happy Learner",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1306/",
+      "url": "/acim/text/13/chap1306/",
       "idx": 107,
-      "next": "/acim/text/chap1307/",
-      "prev": "/acim/text/chap1305/"
+      "next": "/acim/text/13/chap1307/",
+      "prev": "/acim/text/13/chap1305/"
     },
     {
-      "fid": "chap1307/",
+      "fid": "13/chap1307/",
+      "title": "T13.7 The Decision for Guiltlessness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1307/",
+      "url": "/acim/text/13/chap1307/",
       "idx": 108,
-      "next": "/acim/text/chap1308/",
-      "prev": "/acim/text/chap1306/"
+      "next": "/acim/text/13/chap1308/",
+      "prev": "/acim/text/13/chap1306/"
     },
     {
-      "fid": "chap1308/",
+      "fid": "13/chap1308/",
+      "title": "T13.8 The Way of Salvation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1308/",
+      "url": "/acim/text/13/chap1308/",
       "idx": 109,
-      "next": "/acim/text/chap1400/",
-      "prev": "/acim/text/chap1307/"
+      "next": "/acim/text/14/chap1400/",
+      "prev": "/acim/text/13/chap1307/"
     },
     {
-      "fid": "chap1400/",
+      "fid": "14/chap1400/",
+      "title": "T14 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1400/",
+      "url": "/acim/text/14/chap1400/",
       "idx": 110,
-      "next": "/acim/text/chap1401/",
-      "prev": "/acim/text/chap1308/"
+      "next": "/acim/text/14/chap1401/",
+      "prev": "/acim/text/13/chap1308/"
     },
     {
-      "fid": "chap1401/",
+      "fid": "14/chap1401/",
+      "title": "T14.1 Guilt and Guiltlessness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1401/",
+      "url": "/acim/text/14/chap1401/",
       "idx": 111,
-      "next": "/acim/text/chap1402/",
-      "prev": "/acim/text/chap1400/"
+      "next": "/acim/text/14/chap1402/",
+      "prev": "/acim/text/14/chap1400/"
     },
     {
-      "fid": "chap1402/",
+      "fid": "14/chap1402/",
+      "title": "T14.2 Out of the Darkness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1402/",
+      "url": "/acim/text/14/chap1402/",
       "idx": 112,
-      "next": "/acim/text/chap1403/",
-      "prev": "/acim/text/chap1401/"
+      "next": "/acim/text/14/chap1403/",
+      "prev": "/acim/text/14/chap1401/"
     },
     {
-      "fid": "chap1403/",
+      "fid": "14/chap1403/",
+      "title": "T14.3 Perception without Deceit",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1403/",
+      "url": "/acim/text/14/chap1403/",
       "idx": 113,
-      "next": "/acim/text/chap1404/",
-      "prev": "/acim/text/chap1402/"
+      "next": "/acim/text/14/chap1404/",
+      "prev": "/acim/text/14/chap1402/"
     },
     {
-      "fid": "chap1404/",
+      "fid": "14/chap1404/",
+      "title": "T14.4 The Recognition of Holiness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1404/",
+      "url": "/acim/text/14/chap1404/",
       "idx": 114,
-      "next": "/acim/text/chap1405/",
-      "prev": "/acim/text/chap1403/"
+      "next": "/acim/text/14/chap1405/",
+      "prev": "/acim/text/14/chap1403/"
     },
     {
-      "fid": "chap1405/",
+      "fid": "14/chap1405/",
+      "title": "T14.5 The Shift to Miracles",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1405/",
+      "url": "/acim/text/14/chap1405/",
       "idx": 115,
-      "next": "/acim/text/chap1406/",
-      "prev": "/acim/text/chap1404/"
+      "next": "/acim/text/14/chap1406/",
+      "prev": "/acim/text/14/chap1404/"
     },
     {
-      "fid": "chap1406/",
+      "fid": "14/chap1406/",
+      "title": "T14.6 The Test of Truth",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1406/",
+      "url": "/acim/text/14/chap1406/",
       "idx": 116,
-      "next": "/acim/text/chap1500/",
-      "prev": "/acim/text/chap1405/"
+      "next": "/acim/text/15/chap1500/",
+      "prev": "/acim/text/14/chap1405/"
     },
     {
-      "fid": "chap1500/",
+      "fid": "15/chap1500/",
+      "title": "T15 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1500/",
+      "url": "/acim/text/15/chap1500/",
       "idx": 117,
-      "next": "/acim/text/chap1501/",
-      "prev": "/acim/text/chap1406/"
+      "next": "/acim/text/15/chap1501/",
+      "prev": "/acim/text/14/chap1406/"
     },
     {
-      "fid": "chap1501/",
+      "fid": "15/chap1501/",
+      "title": "T15.1 The Uses of Time",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1501/",
+      "url": "/acim/text/15/chap1501/",
       "idx": 118,
-      "next": "/acim/text/chap1502/",
-      "prev": "/acim/text/chap1500/"
+      "next": "/acim/text/15/chap1502/",
+      "prev": "/acim/text/15/chap1500/"
     },
     {
-      "fid": "chap1502/",
+      "fid": "15/chap1502/",
+      "title": "T15.2 Time and Eternity",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1502/",
+      "url": "/acim/text/15/chap1502/",
       "idx": 119,
-      "next": "/acim/text/chap1503/",
-      "prev": "/acim/text/chap1501/"
+      "next": "/acim/text/15/chap1503/",
+      "prev": "/acim/text/15/chap1501/"
     },
     {
-      "fid": "chap1503/",
+      "fid": "15/chap1503/",
+      "title": "T15.3 Littleness versus Magnitude",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1503/",
+      "url": "/acim/text/15/chap1503/",
       "idx": 120,
-      "next": "/acim/text/chap1504/",
-      "prev": "/acim/text/chap1502/"
+      "next": "/acim/text/15/chap1504/",
+      "prev": "/acim/text/15/chap1502/"
     },
     {
-      "fid": "chap1504/",
+      "fid": "15/chap1504/",
+      "title": "T15.4 Practicing the Holy Instant",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1504/",
+      "url": "/acim/text/15/chap1504/",
       "idx": 121,
-      "next": "/acim/text/chap1505/",
-      "prev": "/acim/text/chap1503/"
+      "next": "/acim/text/15/chap1505/",
+      "prev": "/acim/text/15/chap1503/"
     },
     {
-      "fid": "chap1505/",
+      "fid": "15/chap1505/",
+      "title": "T15.5 The Holy Instant and Special Relationships",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1505/",
+      "url": "/acim/text/15/chap1505/",
       "idx": 122,
-      "next": "/acim/text/chap1506/",
-      "prev": "/acim/text/chap1504/"
+      "next": "/acim/text/15/chap1506/",
+      "prev": "/acim/text/15/chap1504/"
     },
     {
-      "fid": "chap1506/",
+      "fid": "15/chap1506/",
+      "title": "T15.6 The Holy Instant and the Laws of God",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1506/",
+      "url": "/acim/text/15/chap1506/",
       "idx": 123,
-      "next": "/acim/text/chap1507/",
-      "prev": "/acim/text/chap1505/"
+      "next": "/acim/text/15/chap1507/",
+      "prev": "/acim/text/15/chap1505/"
     },
     {
-      "fid": "chap1507/",
+      "fid": "15/chap1507/",
+      "title": "T15.7 The Holy Instant and Communication",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1507/",
+      "url": "/acim/text/15/chap1507/",
       "idx": 124,
-      "next": "/acim/text/chap1508/",
-      "prev": "/acim/text/chap1506/"
+      "next": "/acim/text/15/chap1508/",
+      "prev": "/acim/text/15/chap1506/"
     },
     {
-      "fid": "chap1508/",
+      "fid": "15/chap1508/",
+      "title": "T15.8 The Holy Instant and Real Relationships",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1508/",
+      "url": "/acim/text/15/chap1508/",
       "idx": 125,
-      "next": "/acim/text/chap1509/",
-      "prev": "/acim/text/chap1507/"
+      "next": "/acim/text/15/chap1509/",
+      "prev": "/acim/text/15/chap1507/"
     },
     {
-      "fid": "chap1509/",
+      "fid": "15/chap1509/",
+      "title": "T15.9 The Time of Christ",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1509/",
+      "url": "/acim/text/15/chap1509/",
       "idx": 126,
-      "next": "/acim/text/chap1510/",
-      "prev": "/acim/text/chap1508/"
+      "next": "/acim/text/15/chap1510/",
+      "prev": "/acim/text/15/chap1508/"
     },
     {
-      "fid": "chap1510/",
+      "fid": "15/chap1510/",
+      "title": "T15.10 The End of Sacrifice",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1510/",
+      "url": "/acim/text/15/chap1510/",
       "idx": 127,
-      "next": "/acim/text/chap1600/",
-      "prev": "/acim/text/chap1509/"
+      "next": "/acim/text/16/chap1600/",
+      "prev": "/acim/text/15/chap1509/"
     },
     {
-      "fid": "chap1600/",
+      "fid": "16/chap1600/",
+      "title": "T16 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1600/",
+      "url": "/acim/text/16/chap1600/",
       "idx": 128,
-      "next": "/acim/text/chap1601/",
-      "prev": "/acim/text/chap1510/"
+      "next": "/acim/text/16/chap1601/",
+      "prev": "/acim/text/15/chap1510/"
     },
     {
-      "fid": "chap1601/",
+      "fid": "16/chap1601/",
+      "title": "T16.1 True Empathy",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1601/",
+      "url": "/acim/text/16/chap1601/",
       "idx": 129,
-      "next": "/acim/text/chap1602/",
-      "prev": "/acim/text/chap1600/"
+      "next": "/acim/text/16/chap1602/",
+      "prev": "/acim/text/16/chap1600/"
     },
     {
-      "fid": "chap1602/",
+      "fid": "16/chap1602/",
+      "title": "T16.2 The Magnitude of Holiness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1602/",
+      "url": "/acim/text/16/chap1602/",
       "idx": 130,
-      "next": "/acim/text/chap1603/",
-      "prev": "/acim/text/chap1601/"
+      "next": "/acim/text/16/chap1603/",
+      "prev": "/acim/text/16/chap1601/"
     },
     {
-      "fid": "chap1603/",
+      "fid": "16/chap1603/",
+      "title": "T16.3 The Reward of Teaching",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1603/",
+      "url": "/acim/text/16/chap1603/",
       "idx": 131,
-      "next": "/acim/text/chap1604/",
-      "prev": "/acim/text/chap1602/"
+      "next": "/acim/text/16/chap1604/",
+      "prev": "/acim/text/16/chap1602/"
     },
     {
-      "fid": "chap1604/",
+      "fid": "16/chap1604/",
+      "title": "T16.4 Illusion and Reality of Love",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1604/",
+      "url": "/acim/text/16/chap1604/",
       "idx": 132,
-      "next": "/acim/text/chap1605/",
-      "prev": "/acim/text/chap1603/"
+      "next": "/acim/text/16/chap1605/",
+      "prev": "/acim/text/16/chap1603/"
     },
     {
-      "fid": "chap1605/",
+      "fid": "16/chap1605/",
+      "title": "T16.5 Specialness and Guilt",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1605/",
+      "url": "/acim/text/16/chap1605/",
       "idx": 133,
-      "next": "/acim/text/chap1606/",
-      "prev": "/acim/text/chap1604/"
+      "next": "/acim/text/16/chap1606/",
+      "prev": "/acim/text/16/chap1604/"
     },
     {
-      "fid": "chap1606/",
+      "fid": "16/chap1606/",
+      "title": "T16.6 The Bridge to the Real World",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1606/",
+      "url": "/acim/text/16/chap1606/",
       "idx": 134,
-      "next": "/acim/text/chap1607/",
-      "prev": "/acim/text/chap1605/"
+      "next": "/acim/text/16/chap1607/",
+      "prev": "/acim/text/16/chap1605/"
     },
     {
-      "fid": "chap1607/",
+      "fid": "16/chap1607/",
+      "title": "T16.7 The End of Illusions",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1607/",
+      "url": "/acim/text/16/chap1607/",
       "idx": 135,
-      "next": "/acim/text/chap1700/",
-      "prev": "/acim/text/chap1606/"
+      "next": "/acim/text/17/chap1700/",
+      "prev": "/acim/text/16/chap1606/"
     },
     {
-      "fid": "chap1700/",
+      "fid": "17/chap1700/",
+      "title": "T17 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1700/",
+      "url": "/acim/text/17/chap1700/",
       "idx": 136,
-      "next": "/acim/text/chap1701/",
-      "prev": "/acim/text/chap1607/"
+      "next": "/acim/text/17/chap1701/",
+      "prev": "/acim/text/16/chap1607/"
     },
     {
-      "fid": "chap1701/",
+      "fid": "17/chap1701/",
+      "title": "T17.1 Fantasy and Distorted Perception",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1701/",
+      "url": "/acim/text/17/chap1701/",
       "idx": 137,
-      "next": "/acim/text/chap1702/",
-      "prev": "/acim/text/chap1700/"
+      "next": "/acim/text/17/chap1702/",
+      "prev": "/acim/text/17/chap1700/"
     },
     {
-      "fid": "chap1702/",
+      "fid": "17/chap1702/",
+      "title": "T17.2 The Forgiven World",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1702/",
+      "url": "/acim/text/17/chap1702/",
       "idx": 138,
-      "next": "/acim/text/chap1703/",
-      "prev": "/acim/text/chap1701/"
+      "next": "/acim/text/17/chap1703/",
+      "prev": "/acim/text/17/chap1701/"
     },
     {
-      "fid": "chap1703/",
+      "fid": "17/chap1703/",
+      "title": "T17.3 Shadows of the Past",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1703/",
+      "url": "/acim/text/17/chap1703/",
       "idx": 139,
-      "next": "/acim/text/chap1704/",
-      "prev": "/acim/text/chap1702/"
+      "next": "/acim/text/17/chap1704/",
+      "prev": "/acim/text/17/chap1702/"
     },
     {
-      "fid": "chap1704/",
+      "fid": "17/chap1704/",
+      "title": "T17.4 Perception and the Two Worlds",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1704/",
+      "url": "/acim/text/17/chap1704/",
       "idx": 140,
-      "next": "/acim/text/chap1705/",
-      "prev": "/acim/text/chap1703/"
+      "next": "/acim/text/17/chap1705/",
+      "prev": "/acim/text/17/chap1703/"
     },
     {
-      "fid": "chap1705/",
+      "fid": "17/chap1705/",
+      "title": "T17.5 The Healed Relationship",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1705/",
+      "url": "/acim/text/17/chap1705/",
       "idx": 141,
-      "next": "/acim/text/chap1706/",
-      "prev": "/acim/text/chap1704/"
+      "next": "/acim/text/17/chap1706/",
+      "prev": "/acim/text/17/chap1704/"
     },
     {
-      "fid": "chap1706/",
+      "fid": "17/chap1706/",
+      "title": "T17.6 Practical Forgiveness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1706/",
+      "url": "/acim/text/17/chap1706/",
       "idx": 142,
-      "next": "/acim/text/chap1707/",
-      "prev": "/acim/text/chap1705/"
+      "next": "/acim/text/17/chap1707/",
+      "prev": "/acim/text/17/chap1705/"
     },
     {
-      "fid": "chap1707/",
+      "fid": "17/chap1707/",
+      "title": "T17.7 The Need for Faith",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1707/",
+      "url": "/acim/text/17/chap1707/",
       "idx": 143,
-      "next": "/acim/text/chap1708/",
-      "prev": "/acim/text/chap1706/"
+      "next": "/acim/text/17/chap1708/",
+      "prev": "/acim/text/17/chap1706/"
     },
     {
-      "fid": "chap1708/",
+      "fid": "17/chap1708/",
+      "title": "T17.8 Conditions of Forgiveness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1708/",
+      "url": "/acim/text/17/chap1708/",
       "idx": 144,
-      "next": "/acim/text/chap1800/",
-      "prev": "/acim/text/chap1707/"
+      "next": "/acim/text/18/chap1800/",
+      "prev": "/acim/text/17/chap1707/"
     },
     {
-      "fid": "chap1800/",
+      "fid": "18/chap1800/",
+      "title": "T18 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1800/",
+      "url": "/acim/text/18/chap1800/",
       "idx": 145,
-      "next": "/acim/text/chap1801/",
-      "prev": "/acim/text/chap1708/"
+      "next": "/acim/text/18/chap1801/",
+      "prev": "/acim/text/17/chap1708/"
     },
     {
-      "fid": "chap1801/",
+      "fid": "18/chap1801/",
+      "title": "T18.1 Substitution as a Defense",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1801/",
+      "url": "/acim/text/18/chap1801/",
       "idx": 146,
-      "next": "/acim/text/chap1802/",
-      "prev": "/acim/text/chap1800/"
+      "next": "/acim/text/18/chap1802/",
+      "prev": "/acim/text/18/chap1800/"
     },
     {
-      "fid": "chap1802/",
+      "fid": "18/chap1802/",
+      "title": "T18.2 The Basis of the Dream",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1802/",
+      "url": "/acim/text/18/chap1802/",
       "idx": 147,
-      "next": "/acim/text/chap1803/",
-      "prev": "/acim/text/chap1801/"
+      "next": "/acim/text/18/chap1803/",
+      "prev": "/acim/text/18/chap1801/"
     },
     {
-      "fid": "chap1803/",
+      "fid": "18/chap1803/",
+      "title": "T18.3 Light in the Dream",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1803/",
+      "url": "/acim/text/18/chap1803/",
       "idx": 148,
-      "next": "/acim/text/chap1804/",
-      "prev": "/acim/text/chap1802/"
+      "next": "/acim/text/18/chap1804/",
+      "prev": "/acim/text/18/chap1802/"
     },
     {
-      "fid": "chap1804/",
+      "fid": "18/chap1804/",
+      "title": "T18.4 The Little Willingness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1804/",
+      "url": "/acim/text/18/chap1804/",
       "idx": 149,
-      "next": "/acim/text/chap1805/",
-      "prev": "/acim/text/chap1803/"
+      "next": "/acim/text/18/chap1805/",
+      "prev": "/acim/text/18/chap1803/"
     },
     {
-      "fid": "chap1805/",
+      "fid": "18/chap1805/",
+      "title": "T18.5 The Happy Dream",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1805/",
+      "url": "/acim/text/18/chap1805/",
       "idx": 150,
-      "next": "/acim/text/chap1806/",
-      "prev": "/acim/text/chap1804/"
+      "next": "/acim/text/18/chap1806/",
+      "prev": "/acim/text/18/chap1804/"
     },
     {
-      "fid": "chap1806/",
+      "fid": "18/chap1806/",
+      "title": "T18.6 Dreams and the Body",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1806/",
+      "url": "/acim/text/18/chap1806/",
       "idx": 151,
-      "next": "/acim/text/chap1807/",
-      "prev": "/acim/text/chap1805/"
+      "next": "/acim/text/18/chap1807/",
+      "prev": "/acim/text/18/chap1805/"
     },
     {
-      "fid": "chap1807/",
+      "fid": "18/chap1807/",
+      "title": "T18.7 I Need Do Nothing",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1807/",
+      "url": "/acim/text/18/chap1807/",
       "idx": 152,
-      "next": "/acim/text/chap1808/",
-      "prev": "/acim/text/chap1806/"
+      "next": "/acim/text/18/chap1808/",
+      "prev": "/acim/text/18/chap1806/"
     },
     {
-      "fid": "chap1808/",
+      "fid": "18/chap1808/",
+      "title": "T18.8 The Purpose of the Body",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1808/",
+      "url": "/acim/text/18/chap1808/",
       "idx": 153,
-      "next": "/acim/text/chap1809/",
-      "prev": "/acim/text/chap1807/"
+      "next": "/acim/text/18/chap1809/",
+      "prev": "/acim/text/18/chap1807/"
     },
     {
-      "fid": "chap1809/",
+      "fid": "18/chap1809/",
+      "title": "T18.9 The Delusional Thought System",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1809/",
+      "url": "/acim/text/18/chap1809/",
       "idx": 154,
-      "next": "/acim/text/chap1810/",
-      "prev": "/acim/text/chap1808/"
+      "next": "/acim/text/18/chap1810/",
+      "prev": "/acim/text/18/chap1808/"
     },
     {
-      "fid": "chap1810/",
+      "fid": "18/chap1810/",
+      "title": "T18.10 The Passing of the Dream",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1810/",
+      "url": "/acim/text/18/chap1810/",
       "idx": 155,
-      "next": "/acim/text/chap1900/",
-      "prev": "/acim/text/chap1809/"
+      "next": "/acim/text/19/chap1900/",
+      "prev": "/acim/text/18/chap1809/"
     },
     {
-      "fid": "chap1900/",
+      "fid": "19/chap1900/",
+      "title": "T19 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1900/",
+      "url": "/acim/text/19/chap1900/",
       "idx": 156,
-      "next": "/acim/text/chap1901/",
-      "prev": "/acim/text/chap1810/"
+      "next": "/acim/text/19/chap1901/",
+      "prev": "/acim/text/18/chap1810/"
     },
     {
-      "fid": "chap1901/",
+      "fid": "19/chap1901/",
+      "title": "T19.1 Healing and the Mind",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1901/",
+      "url": "/acim/text/19/chap1901/",
       "idx": 157,
-      "next": "/acim/text/chap1902/",
-      "prev": "/acim/text/chap1900/"
+      "next": "/acim/text/19/chap1902/",
+      "prev": "/acim/text/19/chap1900/"
     },
     {
-      "fid": "chap1902/",
+      "fid": "19/chap1902/",
+      "title": "T19.2 Sin versus Error",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1902/",
+      "url": "/acim/text/19/chap1902/",
       "idx": 158,
-      "next": "/acim/text/chap1903/",
-      "prev": "/acim/text/chap1901/"
+      "next": "/acim/text/19/chap1903/",
+      "prev": "/acim/text/19/chap1901/"
     },
     {
-      "fid": "chap1903/",
+      "fid": "19/chap1903/",
+      "title": "T19.3 The Unreality of Sin",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1903/",
+      "url": "/acim/text/19/chap1903/",
       "idx": 159,
-      "next": "/acim/text/chap1904/",
-      "prev": "/acim/text/chap1902/"
+      "next": "/acim/text/19/chap1904/",
+      "prev": "/acim/text/19/chap1902/"
     },
     {
-      "fid": "chap1904/",
+      "fid": "19/chap1904/",
+      "title": "T19.4 Obstacles to Peace:<br/>I. The Desire to Get Rid of It",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1904/",
+      "url": "/acim/text/19/chap1904/",
       "idx": 160,
-      "next": "/acim/text/chap1905/",
-      "prev": "/acim/text/chap1903/"
+      "next": "/acim/text/19/chap1905/",
+      "prev": "/acim/text/19/chap1903/"
     },
     {
-      "fid": "chap1905/",
+      "fid": "19/chap1905/",
+      "title": "T19.5 The Attraction of Guilt",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1905/",
+      "url": "/acim/text/19/chap1905/",
       "idx": 161,
-      "next": "/acim/text/chap1906/",
-      "prev": "/acim/text/chap1904/"
+      "next": "/acim/text/19/chap1906/",
+      "prev": "/acim/text/19/chap1904/"
     },
     {
-      "fid": "chap1906/",
+      "fid": "19/chap1906/",
+      "title": "T19.6 Obstacles to Peace:<br/>II.The Belief the Body is Valuable for What it Offers",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1906/",
+      "url": "/acim/text/19/chap1906/",
       "idx": 162,
-      "next": "/acim/text/chap1907/",
-      "prev": "/acim/text/chap1905/"
+      "next": "/acim/text/19/chap1907/",
+      "prev": "/acim/text/19/chap1905/"
     },
     {
-      "fid": "chap1907/",
+      "fid": "19/chap1907/",
+      "title": "T19.7 Pleasure and Pain",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1907/",
+      "url": "/acim/text/19/chap1907/",
       "idx": 163,
-      "next": "/acim/text/chap1908/",
-      "prev": "/acim/text/chap1906/"
+      "next": "/acim/text/19/chap1908/",
+      "prev": "/acim/text/19/chap1906/"
     },
     {
-      "fid": "chap1908/",
+      "fid": "19/chap1908/",
+      "title": "T19.8 Obstacles to Peace:<br/>III. The Attraction of Death",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1908/",
+      "url": "/acim/text/19/chap1908/",
       "idx": 164,
-      "next": "/acim/text/chap1909/",
-      "prev": "/acim/text/chap1907/"
+      "next": "/acim/text/19/chap1909/",
+      "prev": "/acim/text/19/chap1907/"
     },
     {
-      "fid": "chap1909/",
+      "fid": "19/chap1909/",
+      "title": "T19.9 The Incorruptible Body",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1909/",
+      "url": "/acim/text/19/chap1909/",
       "idx": 165,
-      "next": "/acim/text/chap1910/",
-      "prev": "/acim/text/chap1908/"
+      "next": "/acim/text/19/chap1910/",
+      "prev": "/acim/text/19/chap1908/"
     },
     {
-      "fid": "chap1910/",
+      "fid": "19/chap1910/",
+      "title": "T19.10 Obstacles to Peace:<br/>IV.The Fear of God",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1910/",
+      "url": "/acim/text/19/chap1910/",
       "idx": 166,
-      "next": "/acim/text/chap1911/",
-      "prev": "/acim/text/chap1909/"
+      "next": "/acim/text/19/chap1911/",
+      "prev": "/acim/text/19/chap1909/"
     },
     {
-      "fid": "chap1911/",
+      "fid": "19/chap1911/",
+      "title": "T19.11 The Lifting of the Veil",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap1911/",
+      "url": "/acim/text/19/chap1911/",
       "idx": 167,
-      "next": "/acim/text/chap2000/",
-      "prev": "/acim/text/chap1910/"
+      "next": "/acim/text/20/chap2000/",
+      "prev": "/acim/text/19/chap1910/"
     },
     {
-      "fid": "chap2000/",
+      "fid": "20/chap2000/",
+      "title": "T20 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2000/",
+      "url": "/acim/text/20/chap2000/",
       "idx": 168,
-      "next": "/acim/text/chap2001/",
-      "prev": "/acim/text/chap1911/"
+      "next": "/acim/text/20/chap2001/",
+      "prev": "/acim/text/19/chap1911/"
     },
     {
-      "fid": "chap2001/",
+      "fid": "20/chap2001/",
+      "title": "T20.1 Holy Week",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2001/",
+      "url": "/acim/text/20/chap2001/",
       "idx": 169,
-      "next": "/acim/text/chap2002/",
-      "prev": "/acim/text/chap2000/"
+      "next": "/acim/text/20/chap2002/",
+      "prev": "/acim/text/20/chap2000/"
     },
     {
-      "fid": "chap2002/",
+      "fid": "20/chap2002/",
+      "title": "T20.2 Thorns and Lilies",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2002/",
+      "url": "/acim/text/20/chap2002/",
       "idx": 170,
-      "next": "/acim/text/chap2003/",
-      "prev": "/acim/text/chap2001/"
+      "next": "/acim/text/20/chap2003/",
+      "prev": "/acim/text/20/chap2001/"
     },
     {
-      "fid": "chap2003/",
+      "fid": "20/chap2003/",
+      "title": "T20.3 Sin as an Adjustment",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2003/",
+      "url": "/acim/text/20/chap2003/",
       "idx": 171,
-      "next": "/acim/text/chap2004/",
-      "prev": "/acim/text/chap2002/"
+      "next": "/acim/text/20/chap2004/",
+      "prev": "/acim/text/20/chap2002/"
     },
     {
-      "fid": "chap2004/",
+      "fid": "20/chap2004/",
+      "title": "T20.4 Entering the Ark",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2004/",
+      "url": "/acim/text/20/chap2004/",
       "idx": 172,
-      "next": "/acim/text/chap2005/",
-      "prev": "/acim/text/chap2003/"
+      "next": "/acim/text/20/chap2005/",
+      "prev": "/acim/text/20/chap2003/"
     },
     {
-      "fid": "chap2005/",
+      "fid": "20/chap2005/",
+      "title": "T20.5 Heralds of Eternity",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2005/",
+      "url": "/acim/text/20/chap2005/",
       "idx": 173,
-      "next": "/acim/text/chap2006/",
-      "prev": "/acim/text/chap2004/"
+      "next": "/acim/text/20/chap2006/",
+      "prev": "/acim/text/20/chap2004/"
     },
     {
-      "fid": "chap2006/",
+      "fid": "20/chap2006/",
+      "title": "T20.6 The Temple of the Holy Spirit",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2006/",
+      "url": "/acim/text/20/chap2006/",
       "idx": 174,
-      "next": "/acim/text/chap2007/",
-      "prev": "/acim/text/chap2005/"
+      "next": "/acim/text/20/chap2007/",
+      "prev": "/acim/text/20/chap2005/"
     },
     {
-      "fid": "chap2007/",
+      "fid": "20/chap2007/",
+      "title": "T20.7 The Consistency of Means and End",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2007/",
+      "url": "/acim/text/20/chap2007/",
       "idx": 175,
-      "next": "/acim/text/chap2008/",
-      "prev": "/acim/text/chap2006/"
+      "next": "/acim/text/20/chap2008/",
+      "prev": "/acim/text/20/chap2006/"
     },
     {
-      "fid": "chap2008/",
+      "fid": "20/chap2008/",
+      "title": "T20.8 The Vision of Sinlessness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2008/",
+      "url": "/acim/text/20/chap2008/",
       "idx": 176,
-      "next": "/acim/text/chap2100/",
-      "prev": "/acim/text/chap2007/"
+      "next": "/acim/text/21/chap2100/",
+      "prev": "/acim/text/20/chap2007/"
     },
     {
-      "fid": "chap2100/",
+      "fid": "21/chap2100/",
+      "title": "T21 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2100/",
+      "url": "/acim/text/21/chap2100/",
       "idx": 177,
-      "next": "/acim/text/chap2101/",
-      "prev": "/acim/text/chap2008/"
+      "next": "/acim/text/21/chap2101/",
+      "prev": "/acim/text/20/chap2008/"
     },
     {
-      "fid": "chap2101/",
+      "fid": "21/chap2101/",
+      "title": "T21.1 The Imagined World",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2101/",
+      "url": "/acim/text/21/chap2101/",
       "idx": 178,
-      "next": "/acim/text/chap2102/",
-      "prev": "/acim/text/chap2100/"
+      "next": "/acim/text/21/chap2102/",
+      "prev": "/acim/text/21/chap2100/"
     },
     {
-      "fid": "chap2102/",
+      "fid": "21/chap2102/",
+      "title": "T21.2 The Responsibility for Sight",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2102/",
+      "url": "/acim/text/21/chap2102/",
       "idx": 179,
-      "next": "/acim/text/chap2103/",
-      "prev": "/acim/text/chap2101/"
+      "next": "/acim/text/21/chap2103/",
+      "prev": "/acim/text/21/chap2101/"
     },
     {
-      "fid": "chap2103/",
+      "fid": "21/chap2103/",
+      "title": "T21.3 Faith, Belief and Vision",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2103/",
+      "url": "/acim/text/21/chap2103/",
       "idx": 180,
-      "next": "/acim/text/chap2104/",
-      "prev": "/acim/text/chap2102/"
+      "next": "/acim/text/21/chap2104/",
+      "prev": "/acim/text/21/chap2102/"
     },
     {
-      "fid": "chap2104/",
+      "fid": "21/chap2104/",
+      "title": "T21.4 The Fear to Look Within",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2104/",
+      "url": "/acim/text/21/chap2104/",
       "idx": 181,
-      "next": "/acim/text/chap2105/",
-      "prev": "/acim/text/chap2103/"
+      "next": "/acim/text/21/chap2105/",
+      "prev": "/acim/text/21/chap2103/"
     },
     {
-      "fid": "chap2105/",
+      "fid": "21/chap2105/",
+      "title": "T21.5 Reason and Perception",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2105/",
+      "url": "/acim/text/21/chap2105/",
       "idx": 182,
-      "next": "/acim/text/chap2106/",
-      "prev": "/acim/text/chap2104/"
+      "next": "/acim/text/21/chap2106/",
+      "prev": "/acim/text/21/chap2104/"
     },
     {
-      "fid": "chap2106/",
+      "fid": "21/chap2106/",
+      "title": "T21.6 Reason and Correction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2106/",
+      "url": "/acim/text/21/chap2106/",
       "idx": 183,
-      "next": "/acim/text/chap2107/",
-      "prev": "/acim/text/chap2105/"
+      "next": "/acim/text/21/chap2107/",
+      "prev": "/acim/text/21/chap2105/"
     },
     {
-      "fid": "chap2107/",
+      "fid": "21/chap2107/",
+      "title": "T21.7 Perception and Wishes",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2107/",
+      "url": "/acim/text/21/chap2107/",
       "idx": 184,
-      "next": "/acim/text/chap2108/",
-      "prev": "/acim/text/chap2106/"
+      "next": "/acim/text/21/chap2108/",
+      "prev": "/acim/text/21/chap2106/"
     },
     {
-      "fid": "chap2108/",
+      "fid": "21/chap2108/",
+      "title": "T21.8 The Inner Shift",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2108/",
+      "url": "/acim/text/21/chap2108/",
       "idx": 185,
-      "next": "/acim/text/chap2200/",
-      "prev": "/acim/text/chap2107/"
+      "next": "/acim/text/22/chap2200/",
+      "prev": "/acim/text/21/chap2107/"
     },
     {
-      "fid": "chap2200/",
+      "fid": "22/chap2200/",
+      "title": "T22 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2200/",
+      "url": "/acim/text/22/chap2200/",
       "idx": 186,
-      "next": "/acim/text/chap2201/",
-      "prev": "/acim/text/chap2108/"
+      "next": "/acim/text/22/chap2201/",
+      "prev": "/acim/text/21/chap2108/"
     },
     {
-      "fid": "chap2201/",
+      "fid": "22/chap2201/",
+      "title": "T22.1 The Message of the Holy Relationship",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2201/",
+      "url": "/acim/text/22/chap2201/",
       "idx": 187,
-      "next": "/acim/text/chap2202/",
-      "prev": "/acim/text/chap2200/"
+      "next": "/acim/text/22/chap2202/",
+      "prev": "/acim/text/22/chap2200/"
     },
     {
-      "fid": "chap2202/",
+      "fid": "22/chap2202/",
+      "title": "T22.2 Your Brother’s Sinlessness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2202/",
+      "url": "/acim/text/22/chap2202/",
       "idx": 188,
-      "next": "/acim/text/chap2203/",
-      "prev": "/acim/text/chap2201/"
+      "next": "/acim/text/22/chap2203/",
+      "prev": "/acim/text/22/chap2201/"
     },
     {
-      "fid": "chap2203/",
+      "fid": "22/chap2203/",
+      "title": "T22.3 Reason and the Holy Relationship",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2203/",
+      "url": "/acim/text/22/chap2203/",
       "idx": 189,
-      "next": "/acim/text/chap2204/",
-      "prev": "/acim/text/chap2202/"
+      "next": "/acim/text/22/chap2204/",
+      "prev": "/acim/text/22/chap2202/"
     },
     {
-      "fid": "chap2204/",
+      "fid": "22/chap2204/",
+      "title": "T22.4 The Branching of the Road",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2204/",
+      "url": "/acim/text/22/chap2204/",
       "idx": 190,
-      "next": "/acim/text/chap2205/",
-      "prev": "/acim/text/chap2203/"
+      "next": "/acim/text/22/chap2205/",
+      "prev": "/acim/text/22/chap2203/"
     },
     {
-      "fid": "chap2205/",
+      "fid": "22/chap2205/",
+      "title": "T22.5 Weakness and Defensiveness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2205/",
+      "url": "/acim/text/22/chap2205/",
       "idx": 191,
-      "next": "/acim/text/chap2206/",
-      "prev": "/acim/text/chap2204/"
+      "next": "/acim/text/22/chap2206/",
+      "prev": "/acim/text/22/chap2204/"
     },
     {
-      "fid": "chap2206/",
+      "fid": "22/chap2206/",
+      "title": "T22.6 Freedom and the Holy Spirit",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2206/",
+      "url": "/acim/text/22/chap2206/",
       "idx": 192,
-      "next": "/acim/text/chap2300/",
-      "prev": "/acim/text/chap2205/"
+      "next": "/acim/text/23/chap2300/",
+      "prev": "/acim/text/22/chap2205/"
     },
     {
-      "fid": "chap2300/",
+      "fid": "23/chap2300/",
+      "title": "T23 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2300/",
+      "url": "/acim/text/23/chap2300/",
       "idx": 193,
-      "next": "/acim/text/chap2301/",
-      "prev": "/acim/text/chap2206/"
+      "next": "/acim/text/23/chap2301/",
+      "prev": "/acim/text/22/chap2206/"
     },
     {
-      "fid": "chap2301/",
+      "fid": "23/chap2301/",
+      "title": "T23.1 The Irreconcilable Beliefs",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2301/",
+      "url": "/acim/text/23/chap2301/",
       "idx": 194,
-      "next": "/acim/text/chap2302/",
-      "prev": "/acim/text/chap2300/"
+      "next": "/acim/text/23/chap2302/",
+      "prev": "/acim/text/23/chap2300/"
     },
     {
-      "fid": "chap2302/",
+      "fid": "23/chap2302/",
+      "title": "T23.2 The “Laws” of Chaos",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2302/",
+      "url": "/acim/text/23/chap2302/",
       "idx": 195,
-      "next": "/acim/text/chap2303/",
-      "prev": "/acim/text/chap2301/"
+      "next": "/acim/text/23/chap2303/",
+      "prev": "/acim/text/23/chap2301/"
     },
     {
-      "fid": "chap2303/",
+      "fid": "23/chap2303/",
+      "title": "T23.3 Salvation without Compromise",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2303/",
+      "url": "/acim/text/23/chap2303/",
       "idx": 196,
-      "next": "/acim/text/chap2304/",
-      "prev": "/acim/text/chap2302/"
+      "next": "/acim/text/23/chap2304/",
+      "prev": "/acim/text/23/chap2302/"
     },
     {
-      "fid": "chap2304/",
+      "fid": "23/chap2304/",
+      "title": "T23.4 The Fear of Life",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2304/",
+      "url": "/acim/text/23/chap2304/",
       "idx": 197,
-      "next": "/acim/text/chap2400/",
-      "prev": "/acim/text/chap2303/"
+      "next": "/acim/text/24/chap2400/",
+      "prev": "/acim/text/23/chap2303/"
     },
     {
-      "fid": "chap2400/",
+      "fid": "24/chap2400/",
+      "title": "T24 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2400/",
+      "url": "/acim/text/24/chap2400/",
       "idx": 198,
-      "next": "/acim/text/chap2401/",
-      "prev": "/acim/text/chap2304/"
+      "next": "/acim/text/24/chap2401/",
+      "prev": "/acim/text/23/chap2304/"
     },
     {
-      "fid": "chap2401/",
+      "fid": "24/chap2401/",
+      "title": "T24.1 Specialness as a Substitute for Love",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2401/",
+      "url": "/acim/text/24/chap2401/",
       "idx": 199,
-      "next": "/acim/text/chap2402/",
-      "prev": "/acim/text/chap2400/"
+      "next": "/acim/text/24/chap2402/",
+      "prev": "/acim/text/24/chap2400/"
     },
     {
-      "fid": "chap2402/",
+      "fid": "24/chap2402/",
+      "title": "T24.2 The Treachery of Specialness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2402/",
+      "url": "/acim/text/24/chap2402/",
       "idx": 200,
-      "next": "/acim/text/chap2403/",
-      "prev": "/acim/text/chap2401/"
+      "next": "/acim/text/24/chap2403/",
+      "prev": "/acim/text/24/chap2401/"
     },
     {
-      "fid": "chap2403/",
+      "fid": "24/chap2403/",
+      "title": "T24.3 The Forgiveness of Specialness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2403/",
+      "url": "/acim/text/24/chap2403/",
       "idx": 201,
-      "next": "/acim/text/chap2404/",
-      "prev": "/acim/text/chap2402/"
+      "next": "/acim/text/24/chap2404/",
+      "prev": "/acim/text/24/chap2402/"
     },
     {
-      "fid": "chap2404/",
+      "fid": "24/chap2404/",
+      "title": "T24.4 Specialness and Salvation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2404/",
+      "url": "/acim/text/24/chap2404/",
       "idx": 202,
-      "next": "/acim/text/chap2405/",
-      "prev": "/acim/text/chap2403/"
+      "next": "/acim/text/24/chap2405/",
+      "prev": "/acim/text/24/chap2403/"
     },
     {
-      "fid": "chap2405/",
+      "fid": "24/chap2405/",
+      "title": "T24.5 The Resolution of the Dream",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2405/",
+      "url": "/acim/text/24/chap2405/",
       "idx": 203,
-      "next": "/acim/text/chap2406/",
-      "prev": "/acim/text/chap2404/"
+      "next": "/acim/text/24/chap2406/",
+      "prev": "/acim/text/24/chap2404/"
     },
     {
-      "fid": "chap2406/",
+      "fid": "24/chap2406/",
+      "title": "T24.6 Salvation from Fear",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2406/",
+      "url": "/acim/text/24/chap2406/",
       "idx": 204,
-      "next": "/acim/text/chap2407/",
-      "prev": "/acim/text/chap2405/"
+      "next": "/acim/text/24/chap2407/",
+      "prev": "/acim/text/24/chap2405/"
     },
     {
-      "fid": "chap2407/",
+      "fid": "24/chap2407/",
+      "title": "T24.7 The Meeting Place",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2407/",
+      "url": "/acim/text/24/chap2407/",
       "idx": 205,
-      "next": "/acim/text/chap2500/",
-      "prev": "/acim/text/chap2406/"
+      "next": "/acim/text/25/chap2500/",
+      "prev": "/acim/text/24/chap2406/"
     },
     {
-      "fid": "chap2500/",
+      "fid": "25/chap2500/",
+      "title": "T25 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2500/",
+      "url": "/acim/text/25/chap2500/",
       "idx": 206,
-      "next": "/acim/text/chap2501/",
-      "prev": "/acim/text/chap2407/"
+      "next": "/acim/text/25/chap2501/",
+      "prev": "/acim/text/24/chap2407/"
     },
     {
-      "fid": "chap2501/",
+      "fid": "25/chap2501/",
+      "title": "T25.1 The Appointed Task",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2501/",
+      "url": "/acim/text/25/chap2501/",
       "idx": 207,
-      "next": "/acim/text/chap2502/",
-      "prev": "/acim/text/chap2500/"
+      "next": "/acim/text/25/chap2502/",
+      "prev": "/acim/text/25/chap2500/"
     },
     {
-      "fid": "chap2502/",
+      "fid": "25/chap2502/",
+      "title": "T25.2 The Savior from the Dark",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2502/",
+      "url": "/acim/text/25/chap2502/",
       "idx": 208,
-      "next": "/acim/text/chap2503/",
-      "prev": "/acim/text/chap2501/"
+      "next": "/acim/text/25/chap2503/",
+      "prev": "/acim/text/25/chap2501/"
     },
     {
-      "fid": "chap2503/",
+      "fid": "25/chap2503/",
+      "title": "T25.3 The Fundamental Law of Perception",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2503/",
+      "url": "/acim/text/25/chap2503/",
       "idx": 209,
-      "next": "/acim/text/chap2504/",
-      "prev": "/acim/text/chap2502/"
+      "next": "/acim/text/25/chap2504/",
+      "prev": "/acim/text/25/chap2502/"
     },
     {
-      "fid": "chap2504/",
+      "fid": "25/chap2504/",
+      "title": "T25.4 The Joining of Minds",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2504/",
+      "url": "/acim/text/25/chap2504/",
       "idx": 210,
-      "next": "/acim/text/chap2505/",
-      "prev": "/acim/text/chap2503/"
+      "next": "/acim/text/25/chap2505/",
+      "prev": "/acim/text/25/chap2503/"
     },
     {
-      "fid": "chap2505/",
+      "fid": "25/chap2505/",
+      "title": "T25.5 The State of Sinlessness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2505/",
+      "url": "/acim/text/25/chap2505/",
       "idx": 211,
-      "next": "/acim/text/chap2506/",
-      "prev": "/acim/text/chap2504/"
+      "next": "/acim/text/25/chap2506/",
+      "prev": "/acim/text/25/chap2504/"
     },
     {
-      "fid": "chap2506/",
+      "fid": "25/chap2506/",
+      "title": "T25.6 The Special Function",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2506/",
+      "url": "/acim/text/25/chap2506/",
       "idx": 212,
-      "next": "/acim/text/chap2507/",
-      "prev": "/acim/text/chap2505/"
+      "next": "/acim/text/25/chap2507/",
+      "prev": "/acim/text/25/chap2505/"
     },
     {
-      "fid": "chap2507/",
+      "fid": "25/chap2507/",
+      "title": "T25.7 Commuting the Sentence",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2507/",
+      "url": "/acim/text/25/chap2507/",
       "idx": 213,
-      "next": "/acim/text/chap2508/",
-      "prev": "/acim/text/chap2506/"
+      "next": "/acim/text/25/chap2508/",
+      "prev": "/acim/text/25/chap2506/"
     },
     {
-      "fid": "chap2508/",
+      "fid": "25/chap2508/",
+      "title": "T25.8 The Principle of Salvation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2508/",
+      "url": "/acim/text/25/chap2508/",
       "idx": 214,
-      "next": "/acim/text/chap2509/",
-      "prev": "/acim/text/chap2507/"
+      "next": "/acim/text/25/chap2509/",
+      "prev": "/acim/text/25/chap2507/"
     },
     {
-      "fid": "chap2509/",
+      "fid": "25/chap2509/",
+      "title": "T25.9 The Justice of Heaven",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2509/",
+      "url": "/acim/text/25/chap2509/",
       "idx": 215,
-      "next": "/acim/text/chap2600/",
-      "prev": "/acim/text/chap2508/"
+      "next": "/acim/text/26/chap2600/",
+      "prev": "/acim/text/25/chap2508/"
     },
     {
-      "fid": "chap2600/",
+      "fid": "26/chap2600/",
+      "title": "T26 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2600/",
+      "url": "/acim/text/26/chap2600/",
       "idx": 216,
-      "next": "/acim/text/chap2601/",
-      "prev": "/acim/text/chap2509/"
+      "next": "/acim/text/26/chap2601/",
+      "prev": "/acim/text/25/chap2509/"
     },
     {
-      "fid": "chap2601/",
+      "fid": "26/chap2601/",
+      "title": "T26.1 The 'Sacrifice' of Oneness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2601/",
+      "url": "/acim/text/26/chap2601/",
       "idx": 217,
-      "next": "/acim/text/chap2602/",
-      "prev": "/acim/text/chap2600/"
+      "next": "/acim/text/26/chap2602/",
+      "prev": "/acim/text/26/chap2600/"
     },
     {
-      "fid": "chap2602/",
+      "fid": "26/chap2602/",
+      "title": "T26.2 The Forms of Error",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2602/",
+      "url": "/acim/text/26/chap2602/",
       "idx": 218,
-      "next": "/acim/text/chap2603/",
-      "prev": "/acim/text/chap2601/"
+      "next": "/acim/text/26/chap2603/",
+      "prev": "/acim/text/26/chap2601/"
     },
     {
-      "fid": "chap2603/",
+      "fid": "26/chap2603/",
+      "title": "T26.3 The Borderland",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2603/",
+      "url": "/acim/text/26/chap2603/",
       "idx": 219,
-      "next": "/acim/text/chap2604/",
-      "prev": "/acim/text/chap2602/"
+      "next": "/acim/text/26/chap2604/",
+      "prev": "/acim/text/26/chap2602/"
     },
     {
-      "fid": "chap2604/",
+      "fid": "26/chap2604/",
+      "title": "T26.4 Where Sin Has Left",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2604/",
+      "url": "/acim/text/26/chap2604/",
       "idx": 220,
-      "next": "/acim/text/chap2605/",
-      "prev": "/acim/text/chap2603/"
+      "next": "/acim/text/26/chap2605/",
+      "prev": "/acim/text/26/chap2603/"
     },
     {
-      "fid": "chap2605/",
+      "fid": "26/chap2605/",
+      "title": "T26.5 The Little Hindrance",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2605/",
+      "url": "/acim/text/26/chap2605/",
       "idx": 221,
-      "next": "/acim/text/chap2606/",
-      "prev": "/acim/text/chap2604/"
+      "next": "/acim/text/26/chap2606/",
+      "prev": "/acim/text/26/chap2604/"
     },
     {
-      "fid": "chap2606/",
+      "fid": "26/chap2606/",
+      "title": "T26.6 The Appointed Friend",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2606/",
+      "url": "/acim/text/26/chap2606/",
       "idx": 222,
-      "next": "/acim/text/chap2607/",
-      "prev": "/acim/text/chap2605/"
+      "next": "/acim/text/26/chap2607/",
+      "prev": "/acim/text/26/chap2605/"
     },
     {
-      "fid": "chap2607/",
+      "fid": "26/chap2607/",
+      "title": "T26.7 Review of Principles",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2607/",
+      "url": "/acim/text/26/chap2607/",
       "idx": 223,
-      "next": "/acim/text/chap2608/",
-      "prev": "/acim/text/chap2606/"
+      "next": "/acim/text/26/chap2608/",
+      "prev": "/acim/text/26/chap2606/"
     },
     {
-      "fid": "chap2608/",
+      "fid": "26/chap2608/",
+      "title": "T26.8 The Immediacy of Salvation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2608/",
+      "url": "/acim/text/26/chap2608/",
       "idx": 224,
-      "next": "/acim/text/chap2609/",
-      "prev": "/acim/text/chap2607/"
+      "next": "/acim/text/26/chap2609/",
+      "prev": "/acim/text/26/chap2607/"
     },
     {
-      "fid": "chap2609/",
+      "fid": "26/chap2609/",
+      "title": "T26.9 For They Have Come",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2609/",
+      "url": "/acim/text/26/chap2609/",
       "idx": 225,
-      "next": "/acim/text/chap2610/",
-      "prev": "/acim/text/chap2608/"
+      "next": "/acim/text/26/chap2610/",
+      "prev": "/acim/text/26/chap2608/"
     },
     {
-      "fid": "chap2610/",
+      "fid": "26/chap2610/",
+      "title": "T26.10 The Remaining Task",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2610/",
+      "url": "/acim/text/26/chap2610/",
       "idx": 226,
-      "next": "/acim/text/chap2700/",
-      "prev": "/acim/text/chap2609/"
+      "next": "/acim/text/27/chap2700/",
+      "prev": "/acim/text/26/chap2609/"
     },
     {
-      "fid": "chap2700/",
+      "fid": "27/chap2700/",
+      "title": "T27 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2700/",
+      "url": "/acim/text/27/chap2700/",
       "idx": 227,
-      "next": "/acim/text/chap2701/",
-      "prev": "/acim/text/chap2610/"
+      "next": "/acim/text/27/chap2701/",
+      "prev": "/acim/text/26/chap2610/"
     },
     {
-      "fid": "chap2701/",
+      "fid": "27/chap2701/",
+      "title": "T27.1 The Picture of Crucifixion",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2701/",
+      "url": "/acim/text/27/chap2701/",
       "idx": 228,
-      "next": "/acim/text/chap2702/",
-      "prev": "/acim/text/chap2700/"
+      "next": "/acim/text/27/chap2702/",
+      "prev": "/acim/text/27/chap2700/"
     },
     {
-      "fid": "chap2702/",
+      "fid": "27/chap2702/",
+      "title": "T27.2 The Fear of Healing",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2702/",
+      "url": "/acim/text/27/chap2702/",
       "idx": 229,
-      "next": "/acim/text/chap2703/",
-      "prev": "/acim/text/chap2701/"
+      "next": "/acim/text/27/chap2703/",
+      "prev": "/acim/text/27/chap2701/"
     },
     {
-      "fid": "chap2703/",
+      "fid": "27/chap2703/",
+      "title": "T27.3 The Symbol of the Impossible",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2703/",
+      "url": "/acim/text/27/chap2703/",
       "idx": 230,
-      "next": "/acim/text/chap2704/",
-      "prev": "/acim/text/chap2702/"
+      "next": "/acim/text/27/chap2704/",
+      "prev": "/acim/text/27/chap2702/"
     },
     {
-      "fid": "chap2704/",
+      "fid": "27/chap2704/",
+      "title": "T27.4 The Quiet Answer",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2704/",
+      "url": "/acim/text/27/chap2704/",
       "idx": 231,
-      "next": "/acim/text/chap2705/",
-      "prev": "/acim/text/chap2703/"
+      "next": "/acim/text/27/chap2705/",
+      "prev": "/acim/text/27/chap2703/"
     },
     {
-      "fid": "chap2705/",
+      "fid": "27/chap2705/",
+      "title": "T27.5 The Healing Example",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2705/",
+      "url": "/acim/text/27/chap2705/",
       "idx": 232,
-      "next": "/acim/text/chap2706/",
-      "prev": "/acim/text/chap2704/"
+      "next": "/acim/text/27/chap2706/",
+      "prev": "/acim/text/27/chap2704/"
     },
     {
-      "fid": "chap2706/",
+      "fid": "27/chap2706/",
+      "title": "T27.6 The Purpose of Pain",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2706/",
+      "url": "/acim/text/27/chap2706/",
       "idx": 233,
-      "next": "/acim/text/chap2707/",
-      "prev": "/acim/text/chap2705/"
+      "next": "/acim/text/27/chap2707/",
+      "prev": "/acim/text/27/chap2705/"
     },
     {
-      "fid": "chap2707/",
+      "fid": "27/chap2707/",
+      "title": "T27.7 The Illusion of Suffering",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2707/",
+      "url": "/acim/text/27/chap2707/",
       "idx": 234,
-      "next": "/acim/text/chap2708/",
-      "prev": "/acim/text/chap2706/"
+      "next": "/acim/text/27/chap2708/",
+      "prev": "/acim/text/27/chap2706/"
     },
     {
-      "fid": "chap2708/",
+      "fid": "27/chap2708/",
+      "title": "T27.8 The 'Hero' of the Dream",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2708/",
+      "url": "/acim/text/27/chap2708/",
       "idx": 235,
-      "next": "/acim/text/chap2800/",
-      "prev": "/acim/text/chap2707/"
+      "next": "/acim/text/28/chap2800/",
+      "prev": "/acim/text/27/chap2707/"
     },
     {
-      "fid": "chap2800/",
+      "fid": "28/chap2800/",
+      "title": "T28 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2800/",
+      "url": "/acim/text/28/chap2800/",
       "idx": 236,
-      "next": "/acim/text/chap2801/",
-      "prev": "/acim/text/chap2708/"
+      "next": "/acim/text/28/chap2801/",
+      "prev": "/acim/text/27/chap2708/"
     },
     {
-      "fid": "chap2801/",
+      "fid": "28/chap2801/",
+      "title": "T28.1 The Present Memory",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2801/",
+      "url": "/acim/text/28/chap2801/",
       "idx": 237,
-      "next": "/acim/text/chap2802/",
-      "prev": "/acim/text/chap2800/"
+      "next": "/acim/text/28/chap2802/",
+      "prev": "/acim/text/28/chap2800/"
     },
     {
-      "fid": "chap2802/",
+      "fid": "28/chap2802/",
+      "title": "T28.2 Reversing Effect and Cause",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2802/",
+      "url": "/acim/text/28/chap2802/",
       "idx": 238,
-      "next": "/acim/text/chap2803/",
-      "prev": "/acim/text/chap2801/"
+      "next": "/acim/text/28/chap2803/",
+      "prev": "/acim/text/28/chap2801/"
     },
     {
-      "fid": "chap2803/",
+      "fid": "28/chap2803/",
+      "title": "T28.3 The Agreement to Join",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2803/",
+      "url": "/acim/text/28/chap2803/",
       "idx": 239,
-      "next": "/acim/text/chap2804/",
-      "prev": "/acim/text/chap2802/"
+      "next": "/acim/text/28/chap2804/",
+      "prev": "/acim/text/28/chap2802/"
     },
     {
-      "fid": "chap2804/",
+      "fid": "28/chap2804/",
+      "title": "T28.4 The Greater Joining",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2804/",
+      "url": "/acim/text/28/chap2804/",
       "idx": 240,
-      "next": "/acim/text/chap2805/",
-      "prev": "/acim/text/chap2803/"
+      "next": "/acim/text/28/chap2805/",
+      "prev": "/acim/text/28/chap2803/"
     },
     {
-      "fid": "chap2805/",
+      "fid": "28/chap2805/",
+      "title": "T28.5 The Alternate to Dreams of Fear",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2805/",
+      "url": "/acim/text/28/chap2805/",
       "idx": 241,
-      "next": "/acim/text/chap2806/",
-      "prev": "/acim/text/chap2804/"
+      "next": "/acim/text/28/chap2806/",
+      "prev": "/acim/text/28/chap2804/"
     },
     {
-      "fid": "chap2806/",
+      "fid": "28/chap2806/",
+      "title": "T28.6 The Secret Vows",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2806/",
+      "url": "/acim/text/28/chap2806/",
       "idx": 242,
-      "next": "/acim/text/chap2807/",
-      "prev": "/acim/text/chap2805/"
+      "next": "/acim/text/28/chap2807/",
+      "prev": "/acim/text/28/chap2805/"
     },
     {
-      "fid": "chap2807/",
+      "fid": "28/chap2807/",
+      "title": "T28.7 The Beautiful Relationship",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2807/",
+      "url": "/acim/text/28/chap2807/",
       "idx": 243,
-      "next": "/acim/text/chap2900/",
-      "prev": "/acim/text/chap2806/"
+      "next": "/acim/text/29/chap2900/",
+      "prev": "/acim/text/28/chap2806/"
     },
     {
-      "fid": "chap2900/",
+      "fid": "29/chap2900/",
+      "title": "T29 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2900/",
+      "url": "/acim/text/29/chap2900/",
       "idx": 244,
-      "next": "/acim/text/chap2901/",
-      "prev": "/acim/text/chap2807/"
+      "next": "/acim/text/29/chap2901/",
+      "prev": "/acim/text/28/chap2807/"
     },
     {
-      "fid": "chap2901/",
+      "fid": "29/chap2901/",
+      "title": "T29.1 The Closing of the Gap",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2901/",
+      "url": "/acim/text/29/chap2901/",
       "idx": 245,
-      "next": "/acim/text/chap2902/",
-      "prev": "/acim/text/chap2900/"
+      "next": "/acim/text/29/chap2902/",
+      "prev": "/acim/text/29/chap2900/"
     },
     {
-      "fid": "chap2902/",
+      "fid": "29/chap2902/",
+      "title": "T29.2 The Coming of the Guest",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2902/",
+      "url": "/acim/text/29/chap2902/",
       "idx": 246,
-      "next": "/acim/text/chap2903/",
-      "prev": "/acim/text/chap2901/"
+      "next": "/acim/text/29/chap2903/",
+      "prev": "/acim/text/29/chap2901/"
     },
     {
-      "fid": "chap2903/",
+      "fid": "29/chap2903/",
+      "title": "T29.3 God’s Witnesses",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2903/",
+      "url": "/acim/text/29/chap2903/",
       "idx": 247,
-      "next": "/acim/text/chap2904/",
-      "prev": "/acim/text/chap2902/"
+      "next": "/acim/text/29/chap2904/",
+      "prev": "/acim/text/29/chap2902/"
     },
     {
-      "fid": "chap2904/",
+      "fid": "29/chap2904/",
+      "title": "T29.4 Dream Roles",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2904/",
+      "url": "/acim/text/29/chap2904/",
       "idx": 248,
-      "next": "/acim/text/chap2905/",
-      "prev": "/acim/text/chap2903/"
+      "next": "/acim/text/29/chap2905/",
+      "prev": "/acim/text/29/chap2903/"
     },
     {
-      "fid": "chap2905/",
+      "fid": "29/chap2905/",
+      "title": "T29.5 The Changeless Dwelling-Place",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2905/",
+      "url": "/acim/text/29/chap2905/",
       "idx": 249,
-      "next": "/acim/text/chap2906/",
-      "prev": "/acim/text/chap2904/"
+      "next": "/acim/text/29/chap2906/",
+      "prev": "/acim/text/29/chap2904/"
     },
     {
-      "fid": "chap2906/",
+      "fid": "29/chap2906/",
+      "title": "T29.6 Forgiveness and Peace",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2906/",
+      "url": "/acim/text/29/chap2906/",
       "idx": 250,
-      "next": "/acim/text/chap2907/",
-      "prev": "/acim/text/chap2905/"
+      "next": "/acim/text/29/chap2907/",
+      "prev": "/acim/text/29/chap2905/"
     },
     {
-      "fid": "chap2907/",
+      "fid": "29/chap2907/",
+      "title": "T29.7 The Lingering Illusion",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2907/",
+      "url": "/acim/text/29/chap2907/",
       "idx": 251,
-      "next": "/acim/text/chap2908/",
-      "prev": "/acim/text/chap2906/"
+      "next": "/acim/text/29/chap2908/",
+      "prev": "/acim/text/29/chap2906/"
     },
     {
-      "fid": "chap2908/",
+      "fid": "29/chap2908/",
+      "title": "T29.8 Christ and the Anti-Christ",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2908/",
+      "url": "/acim/text/29/chap2908/",
       "idx": 252,
-      "next": "/acim/text/chap2909/",
-      "prev": "/acim/text/chap2907/"
+      "next": "/acim/text/29/chap2909/",
+      "prev": "/acim/text/29/chap2907/"
     },
     {
-      "fid": "chap2909/",
+      "fid": "29/chap2909/",
+      "title": "T29.9 The Forgiving Dream",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap2909/",
+      "url": "/acim/text/29/chap2909/",
       "idx": 253,
-      "next": "/acim/text/chap3000/",
-      "prev": "/acim/text/chap2908/"
+      "next": "/acim/text/30/chap3000/",
+      "prev": "/acim/text/29/chap2908/"
     },
     {
-      "fid": "chap3000/",
+      "fid": "30/chap3000/",
+      "title": "T30 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3000/",
+      "url": "/acim/text/30/chap3000/",
       "idx": 254,
-      "next": "/acim/text/chap3001/",
-      "prev": "/acim/text/chap2909/"
+      "next": "/acim/text/30/chap3001/",
+      "prev": "/acim/text/29/chap2909/"
     },
     {
-      "fid": "chap3001/",
+      "fid": "30/chap3001/",
+      "title": "T30.1 Rules for Decision",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3001/",
+      "url": "/acim/text/30/chap3001/",
       "idx": 255,
-      "next": "/acim/text/chap3002/",
-      "prev": "/acim/text/chap3000/"
+      "next": "/acim/text/30/chap3002/",
+      "prev": "/acim/text/30/chap3000/"
     },
     {
-      "fid": "chap3002/",
+      "fid": "30/chap3002/",
+      "title": "T30.2 Freedom of Will",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3002/",
+      "url": "/acim/text/30/chap3002/",
       "idx": 256,
-      "next": "/acim/text/chap3003/",
-      "prev": "/acim/text/chap3001/"
+      "next": "/acim/text/30/chap3003/",
+      "prev": "/acim/text/30/chap3001/"
     },
     {
-      "fid": "chap3003/",
+      "fid": "30/chap3003/",
+      "title": "T30.3 Beyond All Idols",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3003/",
+      "url": "/acim/text/30/chap3003/",
       "idx": 257,
-      "next": "/acim/text/chap3004/",
-      "prev": "/acim/text/chap3002/"
+      "next": "/acim/text/30/chap3004/",
+      "prev": "/acim/text/30/chap3002/"
     },
     {
-      "fid": "chap3004/",
+      "fid": "30/chap3004/",
+      "title": "T30.4 The Truth Behind Illusions",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3004/",
+      "url": "/acim/text/30/chap3004/",
       "idx": 258,
-      "next": "/acim/text/chap3005/",
-      "prev": "/acim/text/chap3003/"
+      "next": "/acim/text/30/chap3005/",
+      "prev": "/acim/text/30/chap3003/"
     },
     {
-      "fid": "chap3005/",
+      "fid": "30/chap3005/",
+      "title": "T30.5 The Only Purpose",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3005/",
+      "url": "/acim/text/30/chap3005/",
       "idx": 259,
-      "next": "/acim/text/chap3006/",
-      "prev": "/acim/text/chap3004/"
+      "next": "/acim/text/30/chap3006/",
+      "prev": "/acim/text/30/chap3004/"
     },
     {
-      "fid": "chap3006/",
+      "fid": "30/chap3006/",
+      "title": "T30.6 The Justification for Forgiveness",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3006/",
+      "url": "/acim/text/30/chap3006/",
       "idx": 260,
-      "next": "/acim/text/chap3007/",
-      "prev": "/acim/text/chap3005/"
+      "next": "/acim/text/30/chap3007/",
+      "prev": "/acim/text/30/chap3005/"
     },
     {
-      "fid": "chap3007/",
+      "fid": "30/chap3007/",
+      "title": "T30.7 The New Interpretation",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3007/",
+      "url": "/acim/text/30/chap3007/",
       "idx": 261,
-      "next": "/acim/text/chap3008/",
-      "prev": "/acim/text/chap3006/"
+      "next": "/acim/text/30/chap3008/",
+      "prev": "/acim/text/30/chap3006/"
     },
     {
-      "fid": "chap3008/",
+      "fid": "30/chap3008/",
+      "title": "T30.8 Changeless Reality",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3008/",
+      "url": "/acim/text/30/chap3008/",
       "idx": 262,
-      "next": "/acim/text/chap3100/",
-      "prev": "/acim/text/chap3007/"
+      "next": "/acim/text/31/chap3100/",
+      "prev": "/acim/text/30/chap3007/"
     },
     {
-      "fid": "chap3100/",
+      "fid": "31/chap3100/",
+      "title": "T31 Introduction",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3100/",
+      "url": "/acim/text/31/chap3100/",
       "idx": 263,
-      "next": "/acim/text/chap3101/",
-      "prev": "/acim/text/chap3008/"
+      "next": "/acim/text/31/chap3101/",
+      "prev": "/acim/text/30/chap3008/"
     },
     {
-      "fid": "chap3101/",
+      "fid": "31/chap3101/",
+      "title": "T31.1 The Illusion of an Enemy",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3101/",
+      "url": "/acim/text/31/chap3101/",
       "idx": 264,
-      "next": "/acim/text/chap3102/",
-      "prev": "/acim/text/chap3100/"
+      "next": "/acim/text/31/chap3102/",
+      "prev": "/acim/text/31/chap3100/"
     },
     {
-      "fid": "chap3102/",
+      "fid": "31/chap3102/",
+      "title": "T31.2 The Self-Accused",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3102/",
+      "url": "/acim/text/31/chap3102/",
       "idx": 265,
-      "next": "/acim/text/chap3103/",
-      "prev": "/acim/text/chap3101/"
+      "next": "/acim/text/31/chap3103/",
+      "prev": "/acim/text/31/chap3101/"
     },
     {
-      "fid": "chap3103/",
+      "fid": "31/chap3103/",
+      "title": "T31.3 The Real Alternative",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3103/",
+      "url": "/acim/text/31/chap3103/",
       "idx": 266,
-      "next": "/acim/text/chap3104/",
-      "prev": "/acim/text/chap3102/"
+      "next": "/acim/text/31/chap3104/",
+      "prev": "/acim/text/31/chap3102/"
     },
     {
-      "fid": "chap3104/",
+      "fid": "31/chap3104/",
+      "title": "T31.4 Self-Concept versus Self",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3104/",
+      "url": "/acim/text/31/chap3104/",
       "idx": 267,
-      "next": "/acim/text/chap3105/",
-      "prev": "/acim/text/chap3103/"
+      "next": "/acim/text/31/chap3105/",
+      "prev": "/acim/text/31/chap3103/"
     },
     {
-      "fid": "chap3105/",
+      "fid": "31/chap3105/",
+      "title": "T31.5 Recognizing the Spirit",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3105/",
+      "url": "/acim/text/31/chap3105/",
       "idx": 268,
-      "next": "/acim/text/chap3106/",
-      "prev": "/acim/text/chap3104/"
+      "next": "/acim/text/31/chap3106/",
+      "prev": "/acim/text/31/chap3104/"
     },
     {
-      "fid": "chap3106/",
+      "fid": "31/chap3106/",
+      "title": "T31.6 The Savior’s Vision",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3106/",
+      "url": "/acim/text/31/chap3106/",
       "idx": 269,
-      "next": "/acim/text/chap3107/",
-      "prev": "/acim/text/chap3105/"
+      "next": "/acim/text/31/chap3107/",
+      "prev": "/acim/text/31/chap3105/"
     },
     {
-      "fid": "chap3107/",
+      "fid": "31/chap3107/",
+      "title": "T31.7 Choose Once Again",
       "complete": {
         "format": 1,
         "index": 0
       },
-      "url": "/acim/text/chap3107/",
+      "url": "/acim/text/31/chap3107/",
       "idx": 270,
       "next": "/acim/intro/text/",
-      "prev": "/acim/text/chap3106/"
+      "prev": "/acim/text/31/chap3106/"
     }
   ]
 }

@@ -15,7 +15,9 @@ Name | Task | Source | Book | Item
 --- | --- | --- | --- | ---
 Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Aug 07, 2002
+ "   | Timing | NWFFACIM | Study Group | Jan 01, 2011
  "   | Format | NWFFACIM | Study Group | Jan 01, 2011
+ "   | Timing | NWFFACIM | Study Group | Jan 08, 2011
  "   | Format | NWFFACIM | Study Group | Jan 08, 2011
  "   | Format | NWFFACIM | Study Group | Jan 22, 2011
  "   | Format | NWFFACIM | Study Group | Feb 05, 2011
@@ -58,6 +60,10 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | May 12, 2012
  "   | Format | NWFFACIM | Study Group | May 20, 2012
  "   | Format | NWFFACIM | Study Group | Jun 03, 2012
+ "   | Format | NWFFACIM | Study Group | Jul 22, 2012
+ "   | Format | NWFFACIM | Study Group | Jul 29, 2012
+ "   | Format | NWFFACIM | Study Group | Aug 04, 2012
+ "   | Format | NWFFACIM | Study Group | Aug 11, 2012
  "   | Format | NWFFACIM | Study Group | May 11, 2013
  "   | Format | NWFFACIM | Study Group | May 20, 2013
  "   | Format | NWFFACIM | Study Group | Jul 07, 2013

@@ -11,6 +11,7 @@ var searchApi = config.getApiEndpoint();
 var msgField;
 
 function doSearch(queryInfo) {
+  console.log("queryInfo: ", queryInfo);
   return axios.post(searchApi, queryInfo);
 }
 
@@ -19,6 +20,7 @@ function processSearchResults(queryInfo, response) {
      + queryInfo.query + "</em> found "
      + response.count + " matches.");
 
+  //console.log("search results: ", response);
   if (response.count > 0) {
     saveResults(response);
     showSearchResults(response);
@@ -63,6 +65,10 @@ function showSearchResults(data) {
   else if (data.source === "nwffacim") {
     console.log("applying nwffacim template");
     html = templates.nwffacim(data);
+  }
+  else if (data.source === "acim") {
+    console.log("applying acim template");
+    html = templates.acim(data);
   }
   var resultsDiv = document.getElementById("search-results");
   resultsDiv.innerHTML = html;
@@ -164,3 +170,4 @@ module.exports = {
     }
   }
 };
+

@@ -152,6 +152,13 @@ function initializeNavigator(data) {
   var thisUnit = path[3];
   var matchIndex;
 
+  //true for sparkly acim pages
+  if (path.length === 6) {
+    thisUnit = thisUnit + "/" + path[4];
+  }
+
+  console.log("thisUnit: %s", thisUnit);
+
   //for nwffacim study group books, the array of search hits is prefixed
   //with an 'a'. If we are processing an study group page we adjust the array name
   //accordingly

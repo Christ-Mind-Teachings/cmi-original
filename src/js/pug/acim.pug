@@ -1,0 +1,27 @@
+-
+  function getUnitName(unit) {
+    var id;
+    var name;
+    var chapter;
+    var section;
+
+    chapter = Number.parseInt(unit.substr(0, 2), 10);
+    section = Number.parseInt(unit.substr(9, 2), 10);
+    name = "T" + chapter + "." + section;
+
+    return name;
+  }
+
+mixin hitList(book, hits)
+  h3= book
+  ul.fa-ul
+    each val in hits
+      - var url = val.base + "?s=show" + val.location;
+      - var unit = getUnitName(val.unit);
+      li: i.fa.fa-search
+        a(href=url) &nbsp; #{unit}
+        p !{val.context}
+
+if text
+  +hitList("Sparkly ACIM: Text", text)
+

@@ -27,6 +27,7 @@ function addBookmarkDialogCloseListener() {
 function prepareBookmarks(bm) {
   var i;
 
+  console.log("prepareBookmarks");
   for (i = 0; i < bm.length; i++) {
     bm[i].title = config.getPageTitle(bm[i].page);
     bm[i].key = config.getKey(bm[i].page);

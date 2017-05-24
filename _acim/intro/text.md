@@ -54,7 +54,7 @@ Ref | Chapter | Section
   {% endfor %}
   {% capture toc %}
 <div id="{{chapter.ref}}" markdown="1" class="acim-toc">
-### Chapter {{chapter.id}}: {{title}}
+### <i class="fa fa-search"></i> Chapter {{chapter.id}}: {{title}}
 
 Ref | Section
 --- | --- {{toc}}{% endcapture %}

@@ -19,11 +19,12 @@
       "fid": "010111/",
       "desc": "T16.6 The Bridge to the Real World",
       "res": {
-        "audio": "2011-01-01.mp3"
+        "audio": "2011-01-01.mp3",
+        "timing": "010111.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -38,11 +39,12 @@
       "fid": "010811/",
       "desc": "T16.6 The Bridge to the Real World",
       "res": {
-        "audio": "2011-01-08.mp3"
+        "audio": "2011-01-08.mp3",
+        "timing": "010811.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

@@ -25,9 +25,9 @@ number of actual matches is greater than the number reported.
 
 ### Search Sources
 
-A search is limited the selected source, either *Way of Mastery* or
-*Northwest Foundation for ACIM*. It is not possible to search across
-both sources with a single search.
+A search is limited to the selected source, either the ACIM Sparkly
+Edition, the *Way of Mastery* or *Northwest Foundation for ACIM*. It is
+not possible to search across sources with a single search.
 
 Before performing a search make sure the desired source is selected.
 
@@ -35,11 +35,16 @@ Before performing a search make sure the desired source is selected.
 
 Library contents must be indexed before being searchable and not all
 materials are currently indexed. A page cannot be indexed before it is
-fully formatted. Most of the *Way of the Heart* materials are indexed but
-most of the *Northwest Foundation for ACIM* study group materials are
-not.
+fully formatted. Only the *Northwest Foundation for ACIM* study
+group materials are not fully indexed.
 
 These tables show what is indexed and what is not.
+
+#### ACIM Sparkly Edition
+
+Book | Yes | No
+--- | --- | ---
+Text | X | -
 
 #### Way of Mastery
 
