@@ -57,11 +57,12 @@
       "fid": "011709/",
       "desc": "T15.2 Time and Eternity",
       "res": {
-        "audio": "2009-01-17.mp3"
+        "audio": "2009-01-17.mp3",
+        "timing": "011709.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

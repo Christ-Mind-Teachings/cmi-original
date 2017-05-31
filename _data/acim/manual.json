@@ -1,0 +1,264 @@
+{
+  "base": "/acim/manual/",
+  "intro": "/acim/intro/",
+  "title": "ACIM Manual",
+  "bid": "manual",
+  "page": [
+    {
+      "fid": "manual",
+      "title": "About the Manual",
+      "url": "/acim/intro/manual",
+      "idx": 0,
+      "next": "/acim/manual/chap01/",
+      "prev": "/acim/manual/chap31/"
+    },
+    {
+      "fid": "chap01/",
+      "title": "Introduction",
+      "url": "/acim/manual/chap01/",
+      "idx": 1,
+      "next": "/acim/manual/chap02/",
+      "prev": "/acim/intro/manual/"
+    },
+    {
+      "fid": "chap02/",
+      "title": "Who Are God's Teachers?",
+      "url": "/acim/manual/chap02/",
+      "idx": 2,
+      "next": "/acim/manual/chap03/",
+      "prev": "/acim/manual/chap01/"
+    },
+    {
+      "fid": "chap03/",
+      "title": "Who are their Pupils?",
+      "url": "/acim/manual/chap03/",
+      "idx": 3,
+      "next": "/acim/manual/chap04/",
+      "prev": "/acim/manual/chap02/"
+    },
+    {
+      "fid": "chap04/",
+      "title": "What are the Levels of Teaching?",
+      "url": "/acim/manual/chap04/",
+      "idx": 4,
+      "next": "/acim/manual/chap05/",
+      "prev": "/acim/manual/chap03/"
+    },
+    {
+      "fid": "chap05/",
+      "title": "What are the Characteristics of God's Teachers?",
+      "url": "/acim/manual/chap05/",
+      "idx": 5,
+      "next": "/acim/manual/chap06/",
+      "prev": "/acim/manual/chap04/"
+    },
+    {
+      "fid": "chap06/",
+      "title": "How is Healing Accomplished?",
+      "url": "/acim/manual/chap06/",
+      "idx": 6,
+      "next": "/acim/manual/chap07/",
+      "prev": "/acim/manual/chap05/"
+    },
+    {
+      "fid": "chap07/",
+      "title": "Is Healing Certain?",
+      "url": "/acim/manual/chap07/",
+      "idx": 7,
+      "next": "/acim/manual/chap08/",
+      "prev": "/acim/manual/chap06/"
+    },
+    {
+      "fid": "chap08/",
+      "title": "Should Healing be Repeated?",
+      "url": "/acim/manual/chap08/",
+      "idx": 8,
+      "next": "/acim/manual/chap09/",
+      "prev": "/acim/manual/chap07/"
+    },
+    {
+      "fid": "chap09/",
+      "title": "How Can the Perception of Order of Difficulties be Avoided?",
+      "url": "/acim/manual/chap09/",
+      "idx": 9,
+      "next": "/acim/manual/chap10/",
+      "prev": "/acim/manual/chap08/"
+    },
+    {
+      "fid": "chap10/",
+      "title": "Are Changes Required in the Life Situation of God's Teachers?",
+      "url": "/acim/manual/chap10/",
+      "idx": 10,
+      "next": "/acim/manual/chap11/",
+      "prev": "/acim/manual/chap09/"
+    },
+    {
+      "fid": "chap11/",
+      "title": "How is Judgement Relinquished?",
+      "url": "/acim/manual/chap11/",
+      "idx": 11,
+      "next": "/acim/manual/chap12/",
+      "prev": "/acim/manual/chap10/"
+    },
+    {
+      "fid": "chap12/",
+      "title": "How is Peace Possible in this World?",
+      "url": "/acim/manual/chap12/",
+      "idx": 12,
+      "next": "/acim/manual/chap13/",
+      "prev": "/acim/manual/chap11/"
+    },
+    {
+      "fid": "chap13/",
+      "title": "How Many Teachers of God are Needed to Save the World?",
+      "url": "/acim/manual/chap13/",
+      "idx": 13,
+      "next": "/acim/manual/chap14/",
+      "prev": "/acim/manual/chap12/"
+    },
+    {
+      "fid": "chap14/",
+      "title": "What is the Real Meaning of Sacrifice?",
+      "url": "/acim/manual/chap14/",
+      "idx": 14,
+      "next": "/acim/manual/chap15/",
+      "prev": "/acim/manual/chap13/"
+    },
+    {
+      "fid": "chap15/",
+      "title": "How Will the World End?",
+      "url": "/acim/manual/chap15/",
+      "idx": 15,
+      "next": "/acim/manual/chap16/",
+      "prev": "/acim/manual/chap14/"
+    },
+    {
+      "fid": "chap16/",
+      "title": "Is Each One to be Judged in the End?",
+      "url": "/acim/manual/chap16/",
+      "idx": 16,
+      "next": "/acim/manual/chap17/",
+      "prev": "/acim/manual/chap15/"
+    },
+    {
+      "fid": "chap17/",
+      "title": "How Should the Teacher of God Spend His Day?",
+      "url": "/acim/manual/chap17/",
+      "idx": 17,
+      "next": "/acim/manual/chap18/",
+      "prev": "/acim/manual/chap16/"
+    },
+    {
+      "fid": "chap18/",
+      "title": "How do God's Teachers Deal with their Pupils' Thoughts of Magic?",
+      "url": "/acim/manual/chap18/",
+      "idx": 18,
+      "next": "/acim/manual/chap19/",
+      "prev": "/acim/manual/chap17/"
+    },
+    {
+      "fid": "chap19/",
+      "title": "How is Correction Made?",
+      "url": "/acim/manual/chap19/",
+      "idx": 19,
+      "next": "/acim/manual/chap20/",
+      "prev": "/acim/manual/chap18/"
+    },
+    {
+      "fid": "chap20/",
+      "title": "What is Justice?",
+      "url": "/acim/manual/chap20/",
+      "idx": 20,
+      "next": "/acim/manual/chap21/",
+      "prev": "/acim/manual/chap19/"
+    },
+    {
+      "fid": "chap21/",
+      "title": "What is the Peace of God?",
+      "url": "/acim/manual/chap21/",
+      "idx": 21,
+      "next": "/acim/manual/chap22/",
+      "prev": "/acim/manual/chap20/"
+    },
+    {
+      "fid": "chap22/",
+      "title": "What is the Role of Words in Healing?",
+      "url": "/acim/manual/chap22/",
+      "idx": 22,
+      "next": "/acim/manual/chap23/",
+      "prev": "/acim/manual/chap21/"
+    },
+    {
+      "fid": "chap23/",
+      "title": "How are Healing and Atonement Related?",
+      "url": "/acim/manual/chap23/",
+      "idx": 23,
+      "next": "/acim/manual/chap24/",
+      "prev": "/acim/manual/chap22/"
+    },
+    {
+      "fid": "chap24/",
+      "title": "Does Jesus Have a Special Place in Healing?",
+      "url": "/acim/manual/chap24/",
+      "idx": 24,
+      "next": "/acim/manual/chap25/",
+      "prev": "/acim/manual/chap23/"
+    },
+    {
+      "fid": "chap25/",
+      "title": "Is Reincarnation True?",
+      "url": "/acim/manual/chap25/",
+      "idx": 25,
+      "next": "/acim/manual/chap26/",
+      "prev": "/acim/manual/chap24/"
+    },
+    {
+      "fid": "chap26/",
+      "title": "Are 'Phychic' Powers Desirable?",
+      "url": "/acim/manual/chap26/",
+      "idx": 26,
+      "next": "/acim/manual/chap27/",
+      "prev": "/acim/manual/chap25/"
+    },
+    {
+      "fid": "chap27/",
+      "title": "Can God be Reached Directly?",
+      "url": "/acim/manual/chap27/",
+      "idx": 27,
+      "next": "/acim/manual/chap28/",
+      "prev": "/acim/manual/chap26/"
+    },
+    {
+      "fid": "chap28/",
+      "title": "What is Death?",
+      "url": "/acim/manual/chap28/",
+      "idx": 28,
+      "next": "/acim/manual/chap29/",
+      "prev": "/acim/manual/chap27/"
+    },
+    {
+      "fid": "chap29/",
+      "title": "What is the Resurrection?",
+      "url": "/acim/manual/chap29/",
+      "idx": 29,
+      "next": "/acim/manual/chap30/",
+      "prev": "/acim/manual/chap28/"
+    },
+    {
+      "fid": "chap30/",
+      "title": "As for the Rest&hellip;",
+      "url": "/acim/manual/chap30/",
+      "idx": 30,
+      "next": "/acim/manual/chap31/",
+      "prev": "/acim/manual/chap29/"
+    },
+    {
+      "fid": "chap31/",
+      "title": "Forget Not&hellip;",
+      "url": "/acim/manual/chap31/",
+      "idx": 31,
+      "next": "/acim/intro/manual/",
+      "prev": "/acim/manual/chap30/"
+    }
+  ]
+}

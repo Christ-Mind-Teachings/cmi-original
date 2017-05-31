@@ -19,11 +19,12 @@
       "fid": "041815/",
       "desc": "Discussion",
       "res": {
-        "audio": "2015-04-18.mp3"
+        "audio": "2015-04-18.mp3",
+        "timing": "041815.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -188,7 +189,7 @@
     },
     {
       "fid": "070515/",
-      "desc": "T20.In The Promise of the Resurrection",
+      "desc": "T20 The Promise of the Resurrection",
       "res": {
         "audio": "2015-07-05.mp3"
       },
@@ -285,11 +286,12 @@
       "fid": "091315/",
       "desc": "Discussion",
       "res": {
-        "audio": "2015-09-13.mp3"
+        "audio": "2015-09-13.mp3",
+        "timing": "091315.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -304,11 +306,12 @@
       "fid": "100215/",
       "desc": "Discussion",
       "res": {
-        "audio": "2015-10-02.mp3"
+        "audio": "2015-10-02.mp3",
+        "timing": "100215.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -323,11 +326,12 @@
       "fid": "102115/",
       "desc": "Discussion",
       "res": {
-        "audio": "2015-10-21.mp3"
+        "audio": "2015-10-21.mp3",
+        "timing": "102115.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

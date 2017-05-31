@@ -39,11 +39,12 @@
       "fid": "071616/",
       "desc": "W12 I am upset because I see a meaningless world",
       "res": {
-        "audio": "2016-07-16.mp3"
+        "audio": "2016-07-16.mp3",
+        "timing": "071616.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -56,13 +57,14 @@
     },
     {
       "fid": "080216/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
-        "audio": "2016-08-02.mp3"
+        "audio": "2016-08-02.mp3",
+        "timing": "080216.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

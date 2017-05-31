@@ -16,11 +16,14 @@
       "fid": "2004/"
     },
     {
+      "res": {
+        "audio": "2004-01-11.mp3"
+      },
       "fid": "011104/",
-      "desc": "",
+      "desc": "T6.2 The Uses of Projection",
       "complete": {
-        "format": 0,
-        "audio": 0,
+        "format": 1,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },
@@ -36,9 +39,9 @@
         "audio": "2004-01-18.mp3"
       },
       "fid": "011804/",
-      "desc": "",
+      "desc": "T6.2 The Uses of Projection",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -55,9 +58,9 @@
         "audio": "2004-01-25.mp3"
       },
       "fid": "012504/",
-      "desc": "",
+      "desc": "T6.2 The Uses of Projection",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -74,9 +77,9 @@
         "audio": "2004-02-01.mp3"
       },
       "fid": "020104/",
-      "desc": "",
+      "desc": "T6.3 The Relinquishment of Attack",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -93,9 +96,9 @@
         "audio": "2004-02-08.mp3"
       },
       "fid": "020804/",
-      "desc": "",
+      "desc": "T6.4 The Only Answer",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -112,9 +115,9 @@
         "audio": "2004-02-15.mp3"
       },
       "fid": "021504/",
-      "desc": "",
+      "desc": "T6.5 'To Have, Give All to All'",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -131,9 +134,9 @@
         "audio": "2004-02-22.mp3"
       },
       "fid": "022204/",
-      "desc": "",
+      "desc": "T6.5 'To Have, Give All to All'",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -150,9 +153,9 @@
         "audio": "2004-03-07.mp3"
       },
       "fid": "030704/",
-      "desc": "",
+      "desc": "T6.6 'To Have Peace, Teach Peace to Learn It'",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -169,9 +172,9 @@
         "audio": "2004-03-14.mp3"
       },
       "fid": "031404/",
-      "desc": "",
+      "desc": "T6.7 'Be Vigilant Only for God and His Kingdom'",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -188,9 +191,9 @@
         "audio": "2004-03-28.mp3"
       },
       "fid": "032804/",
-      "desc": "",
+      "desc": "T7 Introduction",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -207,9 +210,9 @@
         "audio": "2004-04-04.mp3"
       },
       "fid": "040404/",
-      "desc": "",
+      "desc": "T7.1 Bargaining versus Healing",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -226,9 +229,9 @@
         "audio": "2004-04-11.mp3"
       },
       "fid": "041104/",
-      "desc": "",
+      "desc": "T7.3 The Unified Curriculum",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -245,9 +248,9 @@
         "audio": "2004-04-18.mp3"
       },
       "fid": "041804/",
-      "desc": "",
+      "desc": "T7.3 The Unified Curriculum",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -264,9 +267,9 @@
         "audio": "2004-04-25.mp3"
       },
       "fid": "042504/",
-      "desc": "",
+      "desc": "T7.4 The Recognition of Truth",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -283,9 +286,9 @@
         "audio": "2004-05-02.mp3"
       },
       "fid": "050204/",
-      "desc": "",
+      "desc": "T7.5 Healing and the Changelessness of Mind",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -302,9 +305,9 @@
         "audio": "2004-05-09.mp3"
       },
       "fid": "050904/",
-      "desc": "",
+      "desc": "T7.6 From Vigilance to Peace",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -318,9 +321,10 @@
     },
     {
       "fid": "051604/",
-      "desc": "",
+      "desc": "T7.6 From Vigilance to Peace",
+      "note": "celestialrealm.com references 2004-05-02.mp3 instead of May 16",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 0,
         "index": 0,
         "fb": 0
@@ -337,9 +341,9 @@
         "audio": "2004-05-23.mp3"
       },
       "fid": "052304/",
-      "desc": "",
+      "desc": "T7.6 From Vigilance to Peace",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -356,9 +360,9 @@
         "audio": "2004-05-30.mp3"
       },
       "fid": "053004/",
-      "desc": "",
+      "desc": "T7.7 The Total Commitment",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -375,9 +379,9 @@
         "audio": "2004-06-13.mp3"
       },
       "fid": "061304/",
-      "desc": "",
+      "desc": "T7.7 The Total Commitment",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -391,12 +395,12 @@
     },
     {
       "fid": "062004/",
-      "desc": "",
+      "desc": "T7.7 The Total Commitment",
       "res": {
         "audio": "2004-06-20.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -410,12 +414,12 @@
     },
     {
       "fid": "062704/",
-      "desc": "",
+      "desc": "T7.8 The Defense of Conflict",
       "res": {
         "audio": "2004-06-27.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -429,12 +433,12 @@
     },
     {
       "fid": "071104/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2004-07-11.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -451,10 +455,10 @@
         "audio": "2004-07-18.mp3"
       },
       "fid": "071804/",
-      "desc": "",
+      "desc": "T7.9 The Extension of the Kingdom",
       "complete": {
-        "format": 0,
-        "audio": 0,
+        "format": 1,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },
@@ -467,12 +471,12 @@
     },
     {
       "fid": "072504/",
-      "desc": "",
+      "desc": "T7.10 The Confusion of Strength and Weakness",
       "res": {
         "audio": "2004-07-25.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -489,9 +493,9 @@
         "audio": "2004-08-01.mp3"
       },
       "fid": "080104/",
-      "desc": "",
+      "desc": "T7.11 The State of Grace",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -508,9 +512,9 @@
         "audio": "2004-08-08.mp3"
       },
       "fid": "080804/",
-      "desc": "",
+      "desc": "T8 The Journey Back",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -524,12 +528,12 @@
     },
     {
       "fid": "081504/",
-      "desc": "",
+      "desc": "T8.1 The Direction of the Curriculum",
       "res": {
         "audio": "2004-08-15.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -546,9 +550,9 @@
         "audio": "2004-08-22.mp3"
       },
       "fid": "082204/",
-      "desc": "",
+      "desc": "T8.2 The Rationale for Choice",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -557,62 +561,81 @@
       "url": "/nwffacim/2004/082204/",
       "idx": 29,
       "title": "Aug 22, 2004",
-      "next": "/nwffacim/2004/091204/",
+      "next": "/nwffacim/2004/090504/",
       "prev": "/nwffacim/2004/081504/"
+    },
+    {
+      "res": {
+        "audio": "2004-09-05.mp3"
+      },
+      "fid": "090504/",
+      "desc": "T8.3 The Holy Encounter",
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2004/090504/",
+      "idx": 30,
+      "title": "Sep 5, 2004",
+      "next": "/nwffacim/2004/091204/",
+      "prev": "/nwffacim/2004/082204/"
     },
     {
       "res": {
         "audio": "2004-09-12.mp3"
       },
       "fid": "091204/",
-      "desc": "",
+      "desc": "T8.3 The Holy Encounter",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/091204/",
-      "idx": 30,
+      "idx": 31,
       "title": "Sep 12, 2004",
       "next": "/nwffacim/2004/091904/",
-      "prev": "/nwffacim/2004/082204/"
+      "prev": "/nwffacim/2004/090504/"
     },
     {
       "res": {
         "audio": "2004-09-19.mp3"
       },
       "fid": "091904/",
-      "desc": "",
+      "desc": "T8.4 The Light of the World",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/091904/",
-      "idx": 31,
+      "idx": 32,
       "title": "Sep 19, 2004",
       "next": "/nwffacim/2004/092604/",
       "prev": "/nwffacim/2004/091204/"
     },
     {
       "fid": "092604/",
-      "desc": "",
+      "desc": "T8.4 The Light of the World",
       "res": {
         "audio": "2004-09-26.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/092604/",
-      "idx": 32,
+      "idx": 33,
       "title": "Sep 26, 2004",
       "next": "/nwffacim/2004/100304/",
       "prev": "/nwffacim/2004/091904/"
@@ -622,16 +645,16 @@
         "audio": "2004-10-03.mp3"
       },
       "fid": "100304/",
-      "desc": "",
+      "desc": "T8.4 The Light of the World",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/100304/",
-      "idx": 33,
+      "idx": 34,
       "title": "Oct 3, 2004",
       "next": "/nwffacim/2004/101004/",
       "prev": "/nwffacim/2004/092604/"
@@ -641,35 +664,35 @@
         "audio": "2004-10-10.mp3"
       },
       "fid": "101004/",
-      "desc": "",
+      "desc": "T8.5 The Power of Joint Decision",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/101004/",
-      "idx": 34,
+      "idx": 35,
       "title": "Oct 10, 2004",
       "next": "/nwffacim/2004/101704/",
       "prev": "/nwffacim/2004/100304/"
     },
     {
       "fid": "101704/",
-      "desc": "",
+      "desc": "T8.5 The Power of Joint Decision",
       "res": {
         "audio": "2004-10-17.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/101704/",
-      "idx": 35,
+      "idx": 36,
       "title": "Oct 17, 2004",
       "next": "/nwffacim/2004/102404/",
       "prev": "/nwffacim/2004/101004/"
@@ -679,92 +702,111 @@
         "audio": "2004-10-24.mp3"
       },
       "fid": "102404/",
-      "desc": "",
+      "desc": "T8.6 Communication and the Ego-Body Equation",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/102404/",
-      "idx": 36,
+      "idx": 37,
       "title": "Oct 24, 2004",
-      "next": "/nwffacim/2004/112104/",
+      "next": "/nwffacim/2004/110704/",
       "prev": "/nwffacim/2004/101704/"
     },
     {
+      "fid": "110704/",
+      "desc": "T8.6 Communication and the Ego-Body Equation",
+      "res": {
+        "audio": "2004-11-07.mp3"
+      },
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2004/110704/",
+      "idx": 38,
+      "title": "Nov 7, 2004",
+      "next": "/nwffacim/2004/112104/",
+      "prev": "/nwffacim/2004/102404/"
+    },
+    {
       "fid": "112104/",
-      "desc": "",
+      "desc": "T8.8 Healing as Corrected Perception",
       "res": {
         "audio": "2004-11-21.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/112104/",
-      "idx": 37,
+      "idx": 39,
       "title": "Nov 21, 2004",
       "next": "/nwffacim/2004/112804/",
-      "prev": "/nwffacim/2004/102404/"
+      "prev": "/nwffacim/2004/110704/"
     },
     {
       "fid": "112804/",
-      "desc": "",
+      "desc": "T8.8 Healing as Corrected Perception",
       "res": {
         "audio": "2004-11-28.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/112804/",
-      "idx": 38,
+      "idx": 40,
       "title": "Nov 28, 2004",
       "next": "/nwffacim/2004/120504/",
       "prev": "/nwffacim/2004/112104/"
     },
     {
       "fid": "120504/",
-      "desc": "",
+      "desc": "T8.9 The Acceptance of Reality",
       "res": {
         "audio": "2004-12-05.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/120504/",
-      "idx": 39,
+      "idx": 41,
       "title": "Dec 5, 2004",
       "next": "/nwffacim/2004/121204/",
       "prev": "/nwffacim/2004/112804/"
     },
     {
       "fid": "121204/",
-      "desc": "",
+      "desc": "T8.9 The Acceptance of Reality",
       "res": {
         "audio": "2004-12-12.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/121204/",
-      "idx": 40,
+      "idx": 42,
       "title": "Dec 12, 2004",
       "next": "/nwffacim/2004/121904/",
       "prev": "/nwffacim/2004/120504/"
@@ -774,16 +816,16 @@
         "audio": "2004-12-19.mp3"
       },
       "fid": "121904/",
-      "desc": "",
+      "desc": "T8.10 The Answer to Prayer",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
       },
       "intro": false,
       "url": "/nwffacim/2004/121904/",
-      "idx": 41,
+      "idx": 43,
       "title": "Dec 19, 2004",
       "next": "/nwffacim/intro/2004/",
       "prev": "/nwffacim/2004/121204/"

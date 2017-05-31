@@ -19,12 +19,13 @@
       "fid": "l01/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L25.mp3"
+        "audio": "L25.mp3",
+        "timing": "l25.js"
       },
       "title": "Lesson One",
       "url": "/wom/wok/l01/",
@@ -42,7 +43,7 @@
       },
       "res": {
         "audio": "L26.mp3",
-        "timing": "l02.js"
+        "timing": "l26.js"
       },
       "title": "Lesson Two",
       "url": "/wom/wok/l02/",
@@ -54,12 +55,13 @@
       "fid": "l03/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L27.mp3"
+        "audio": "L27.mp3",
+        "timing": "l27.js"
       },
       "title": "Lesson Three",
       "url": "/wom/wok/l03/",
@@ -71,12 +73,13 @@
       "fid": "l04/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L28.mp3"
+        "audio": "L28.mp3",
+        "timing": "l28.js"
       },
       "title": "Lesson Four",
       "url": "/wom/wok/l04/",
@@ -88,12 +91,13 @@
       "fid": "l05/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L29.mp3"
+        "audio": "L29.mp3",
+        "timing": "l29.js"
       },
       "title": "Lesson Five",
       "url": "/wom/wok/l05/",
@@ -105,12 +109,13 @@
       "fid": "l06/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L30.mp3"
+        "audio": "L30.mp3",
+        "timing": "l30.js"
       },
       "title": "Lesson Six",
       "url": "/wom/wok/l06/",
@@ -122,12 +127,13 @@
       "fid": "l07/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L31.mp3"
+        "audio": "L31.mp3",
+        "timing": "l31.js"
       },
       "title": "Lesson Seven",
       "url": "/wom/wok/l07/",
@@ -139,12 +145,13 @@
       "fid": "l08/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L32.mp3"
+        "audio": "L32.mp3",
+        "timing": "l32.js"
       },
       "title": "Lesson Eight",
       "url": "/wom/wok/l08/",

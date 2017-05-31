@@ -1,7 +1,11 @@
 {% case page.sid %}
   {% when "acim" %}
-    {{ page.chapter | prepend: "Chapter " }}
-    <br/><small>{{ page.ref }} {{page.title}}</small>
+    {% if page.chapter %}
+      {{ page.chapter | prepend: "Chapter " }}
+      <br/><small>{{ page.ref }} {{page.title}}</small>
+    {% else  %}
+      {{page.title}}
+    {% endif %}
   {% else  %}
     {{ page.title }}
     {% if page.ref %}

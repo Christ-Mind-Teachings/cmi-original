@@ -145,12 +145,14 @@
       "fid": "l08/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L20.mp3"
+        "audio": "L20.mp3",
+        "timing": "l20.js",
+        "timer": "Dibuor"
       },
       "title": "Lesson Eight",
       "url": "/wom/wot/l08/",
@@ -162,12 +164,14 @@
       "fid": "l09/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L21.mp3"
+        "audio": "L21.mp3",
+        "timing": "l21.js",
+        "timer": "Dibuor"
       },
       "title": "Lesson Nine",
       "url": "/wom/wot/l09/",
@@ -184,7 +188,9 @@
         "fb": 0
       },
       "res": {
-        "audio": "L22.mp3"
+        "audio": "L22.mp3",
+        "timing": "l22.js",
+        "timer": "Dibuor"
       },
       "title": "Lesson Ten",
       "url": "/wom/wot/l10/",
@@ -196,12 +202,14 @@
       "fid": "l11/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L23.mp3"
+        "audio": "L23.mp3",
+        "timing": "l23.js",
+        "timer": "Dibuor"
       },
       "title": "Lesson Eleven",
       "url": "/wom/wot/l11/",

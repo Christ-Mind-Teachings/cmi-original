@@ -22,16 +22,27 @@ Principles Of Miracles. This version was put together through the
 guidance and assurance received by 5 individuals and was based on all
 the material provided through the process of discovery and Jesus’
 direction. This is the original edit that Helen and Bill were guided to
-complete and place on deposit in the Edgar Cayce Library , before the
-later edits made in the popular Foundation of Inner Peace version or
+complete and place on deposit in the Edgar Cayce Library, before the
+later edits made in the popular Foundation for Inner Peace version or
 “FIP”.
 
-[*The Sparkly Edition of A Course in Miracles* Text](/acim/intro/text/) is available here.
+<ul class="vert fa-ul">
+<li><i class="fa-li fa fa-book"></i>
+<a href="/acim/intro/preface/">Preface</a>
+</li>
+<li><i class="fa-li fa fa-book"></i>
+<a href="/acim/intro/text/">Text</a>
+</li>
+<li><i class="fa-li fa fa-book"></i>
+Workbook: Not available yet.
+</li>
+<li><i class="fa-li fa fa-book"></i>
+Manual: Not available yet.
+</li>
+</ul>
 
-The Workbook and Manual for Teachers will be added to the Library -
-eventually!
-
-You can learn more about the Sparkly Edition at [ACIM Search](http://acimsearch.org/).
+You can learn more about the Sparkly Edition at
+[ACIM Search](http://acimsearch.org/).
 
 </div>
 

@@ -95,13 +95,14 @@
       "fid": "082802/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "desc": "T1.I Principles of Miracles, Principle 33",
       "res": {
-        "audio": "2002-08-28.mp3"
+        "audio": "2002-08-28.mp3",
+        "timing": "082802.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/082802/",
@@ -305,12 +306,13 @@
       "desc": "Discussion",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "2002-11-21.mp3"
+        "audio": "2002-11-21.mp3",
+        "timing": "112102.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/112102/",

@@ -75,11 +75,12 @@
       "fid": "012211/",
       "desc": "T16.7 The End of Illusions",
       "res": {
-        "audio": "2011-01-22.mp3"
+        "audio": "2011-01-22.mp3",
+        "timing": "012211.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -94,11 +95,12 @@
       "fid": "020511/",
       "desc": "T16.7 The End of Illusions",
       "res": {
-        "audio": "2011-02-05.mp3"
+        "audio": "2011-02-05.mp3",
+        "timing": "020511.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -113,11 +115,12 @@
       "fid": "021611/",
       "desc": "T16.7 The End of Illusions",
       "res": {
-        "audio": "2011-02-16.mp3"
+        "audio": "2011-02-16.mp3",
+        "timing": "021611.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -130,7 +133,7 @@
     },
     {
       "fid": "021911/",
-      "desc": "T17.1 Bringing Fantasy to Truth",
+      "desc": "T17.1 Fantasy and Distorted Perception",
       "res": {
         "audio": "2011-02-23.mp3",
         "timing": "021911.js"
@@ -727,7 +730,7 @@
       "complete": {
         "format": 0,
         "audio": 1,
-        "index": 1,
+        "index": 0,
         "fb": 0
       },
       "intro": false,

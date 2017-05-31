@@ -202,12 +202,13 @@
       "fid": "l11/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "L11.mp3",
+        "timing": "l11.js",
         "timer": "Dibuor"
       },
       "title": "Lesson Eleven",
@@ -220,12 +221,13 @@
       "fid": "l12/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "L12.mp3",
+        "timing": "l12.js",
         "timer": "Dibuor"
       },
       "title": "Lesson Twelve",

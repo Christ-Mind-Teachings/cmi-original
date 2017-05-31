@@ -15,12 +15,98 @@ Name | Task | Source | Book | Item
 --- | --- | --- | --- | ---
 Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Aug 07, 2002
+ "   | Timing | NWFFACIM | Study Group | Aug 28, 2002
+ "   | Timing | NWFFACIM | Study Group | Nov 21, 2002
+ "   | Format | NWFFACIM | Study Group | Aug 03, 2003
+ "   | Format | NWFFACIM | Study Group | Aug 10, 2003
+ "   | Format | NWFFACIM | Study Group | Aug 17, 2003
+ "   | Format | NWFFACIM | Study Group | Aug 24, 2003
+ "   | Format | NWFFACIM | Study Group | Aug 31, 2003
+ "   | Format | NWFFACIM | Study Group | Sep 07, 2003
+ "   | Format | NWFFACIM | Study Group | Sep 14, 2003
+ "   | Format | NWFFACIM | Study Group | Sep 21, 2003
+ "   | Format | NWFFACIM | Study Group | Oct 19, 2003
+ "   | Format | NWFFACIM | Study Group | Oct 26, 2003
+ "   | Format | NWFFACIM | Study Group | Nov 02, 2003
+ "   | Format | NWFFACIM | Study Group | Nov 09, 2003
+ "   | Format | NWFFACIM | Study Group | Nov 16, 2003
+ "   | Format | NWFFACIM | Study Group | Nov 23, 2003
+ "   | Format | NWFFACIM | Study Group | Dec 07, 2003
+ "   | Format | NWFFACIM | Study Group | Dec 14, 2003
+ "   | Format | NWFFACIM | Study Group | Dec 21, 2003
+ "   | Format | NWFFACIM | Study Group | Jan 18, 2004
+ "   | Format | NWFFACIM | Study Group | Jan 25, 2004
+ "   | Format | NWFFACIM | Study Group | Feb 01, 2004
+ "   | Format | NWFFACIM | Study Group | Feb 08, 2004
+ "   | Format | NWFFACIM | Study Group | Feb 15, 2004
+ "   | Format | NWFFACIM | Study Group | Feb 22, 2004
+ "   | Format | NWFFACIM | Study Group | Mar 07, 2004
+ "   | Format | NWFFACIM | Study Group | Mar 14, 2004
+ "   | Format | NWFFACIM | Study Group | Mar 28, 2004
+ "   | Format | NWFFACIM | Study Group | Apr 04, 2004
+ "   | Format | NWFFACIM | Study Group | Apr 11, 2004
+ "   | Format | NWFFACIM | Study Group | Apr 18, 2004
+ "   | Format | NWFFACIM | Study Group | Apr 25, 2004
+ "   | Format | NWFFACIM | Study Group | May 02, 2004
+ "   | Format | NWFFACIM | Study Group | May 09, 2004
+ "   | Format | NWFFACIM | Study Group | May 16, 2004
+ "   | Format | NWFFACIM | Study Group | May 30, 2004
+ "   | Format | NWFFACIM | Study Group | Jun 13, 2004
+ "   | Format | NWFFACIM | Study Group | Jun 20, 2004
+ "   | Format | NWFFACIM | Study Group | Jun 27, 2004
+ "   | Format | NWFFACIM | Study Group | Jul 18, 2004
+ "   | Format | NWFFACIM | Study Group | Jul 25, 2004
+ "   | Format | NWFFACIM | Study Group | Aug 01, 2004
+ "   | Format | NWFFACIM | Study Group | Aug 08, 2004
+ "   | Format | NWFFACIM | Study Group | Aug 15, 2004
+ "   | Format | NWFFACIM | Study Group | Aug 22, 2004
+ "   | Format | NWFFACIM | Study Group | Sep 05, 2004
+ "   | Format | NWFFACIM | Study Group | Sep 12, 2004
+ "   | Format | NWFFACIM | Study Group | Sep 19, 2004
+ "   | Format | NWFFACIM | Study Group | Sep 26, 2004
+ "   | Format | NWFFACIM | Study Group | Oct 03, 2004
+ "   | Format | NWFFACIM | Study Group | Oct 10, 2004
+ "   | Format | NWFFACIM | Study Group | Oct 17, 2004
+ "   | Format | NWFFACIM | Study Group | Oct 24, 2004
+ "   | Format | NWFFACIM | Study Group | Nov 07, 2004
+ "   | Format | NWFFACIM | Study Group | Nov 21, 2004
+ "   | Format | NWFFACIM | Study Group | Nov 28, 2004
+ "   | Format | NWFFACIM | Study Group | Dec 05, 2004
+ "   | Format | NWFFACIM | Study Group | Dec 12, 2004
+ "   | Format | NWFFACIM | Study Group | Dec 19, 2004
+ "   | Timing | NWFFACIM | Study Group | Jan 17, 2009
+ "   | Format | NWFFACIM | Study Group | Jan 02, 2010
+ "   | Format | NWFFACIM | Study Group | Jan 16, 2010
+ "   | Format | NWFFACIM | Study Group | Jan 30, 2010
+ "   | Format | NWFFACIM | Study Group | Feb 06, 2010
+ "   | Format | NWFFACIM | Study Group | Feb 13, 2010
+ "   | Format | NWFFACIM | Study Group | Mar 06, 2010
+ "   | Format | NWFFACIM | Study Group | Mar 20, 2010
+ "   | Format | NWFFACIM | Study Group | Mar 27, 2010
+ "   | Format | NWFFACIM | Study Group | Apr 03, 2010
+ "   | Format | NWFFACIM | Study Group | Apr 10, 2010
+ "   | Format | NWFFACIM | Study Group | May 15, 2010
+ "   | Format | NWFFACIM | Study Group | May 29, 2010
+ "   | Format | NWFFACIM | Study Group | Jun 12, 2010
+ "   | Format | NWFFACIM | Study Group | Jun 19, 2010
+ "   | Format | NWFFACIM | Study Group | Jul 10, 2010
+ "   | Format | NWFFACIM | Study Group | Oct 02, 2010
+ "   | Format | NWFFACIM | Study Group | Oct 16, 2010
+ "   | Format | NWFFACIM | Study Group | Oct 23, 2010
+ "   | Format | NWFFACIM | Study Group | Nov 06, 2010
+ "   | Format | NWFFACIM | Study Group | Nov 13, 2010
+ "   | Format | NWFFACIM | Study Group | Nov 20, 2010
+ "   | Format | NWFFACIM | Study Group | Nov 27, 2010
+ "   | Format | NWFFACIM | Study Group | Dec 04, 2010
  "   | Timing | NWFFACIM | Study Group | Jan 01, 2011
  "   | Format | NWFFACIM | Study Group | Jan 01, 2011
  "   | Timing | NWFFACIM | Study Group | Jan 08, 2011
  "   | Format | NWFFACIM | Study Group | Jan 08, 2011
+ "   | Timing | NWFFACIM | Study Group | Jan 22, 2011
  "   | Format | NWFFACIM | Study Group | Jan 22, 2011
+ "   | Timing | NWFFACIM | Study Group | Feb 05, 2011
  "   | Format | NWFFACIM | Study Group | Feb 05, 2011
+ "   | Timing | NWFFACIM | Study Group | Feb 16, 2011
  "   | Format | NWFFACIM | Study Group | Feb 16, 2011
  "   | Format | NWFFACIM | Study Group | Apr 23, 2011
  "   | Format | NWFFACIM | Study Group | Apr 30, 2011
@@ -64,6 +150,12 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Jul 29, 2012
  "   | Format | NWFFACIM | Study Group | Aug 04, 2012
  "   | Format | NWFFACIM | Study Group | Aug 11, 2012
+ "   | Format | NWFFACIM | Study Group | Aug 18, 2012
+ "   | Format | NWFFACIM | Study Group | Sep 16, 2012
+ "   | Format | NWFFACIM | Study Group | Sep 23, 2012
+ "   | Format | NWFFACIM | Study Group | Sep 30, 2012
+ "   | Format | NWFFACIM | Study Group | Oct 14, 2012
+ "   | Format | NWFFACIM | Study Group | Oct 21, 2012
  "   | Format | NWFFACIM | Study Group | May 11, 2013
  "   | Format | NWFFACIM | Study Group | May 20, 2013
  "   | Format | NWFFACIM | Study Group | Jul 07, 2013
@@ -76,20 +168,36 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Oct 27, 2013
  "   | Format | NWFFACIM | Study Group | Nov 24, 2013
  "   | Format | NWFFACIM | Study Group | Apr 13, 2014
+ "   | Timing | NWFFACIM | Study Group | Apr 18, 2015
  "   | Format | NWFFACIM | Study Group | May 03, 2015
  "   | Format | NWFFACIM | Study Group | May 09, 2015
  "   | Format | NWFFACIM | Study Group | May 17, 2015
+ "   | Timing | NWFFACIM | Study Group | Sep 13, 2015
+ "   | Timing | NWFFACIM | Study Group | Oct 02, 2015
+ "   | Timing | NWFFACIM | Study Group | Oct 21, 2015
  "   | Format | NWFFACIM | Study Group | Jul 03, 2016
  "   | Timing | NWFFACIM | Study Group | Jul 03, 2016
+ "   | Timing | NWFFACIM | Study Group | Jul 16, 2016
  "   | Format | NWFFACIM | Study Group | Jul 16, 2016
-Gail Leopold | Timing | WOM | WOH | Lesson 3
-Patricia Lawrence | Timing | WOM | WOH | Lesson 6
+ "   | Timing | NWFFACIM | Study Group | Aug 02, 2016
+Gail Leopold | Timing | WOM | WOH | Lesson 03
+Patricia Lawrence | Timing | WOM | WOH | Lesson 06
  " | Timing | WOM | WOT | Lesson 12
 John Hempstead | Timing | WOM | Early | Walk with Me
 " | Timing | WOM | Early | Meaning of Ascension
-Ndivhuwo | Timing | WOM | WOH | Lesson 2
-" | Timing | WOM | WOH | Lesson 9
+Ndivhuwo | Timing | WOM | WOH | Lesson 02
+" | Timing | WOM | WOH | Lesson 09
 " | Timing | WOM | WOH | Lesson 10
+" | Timing | WOM | WOT | Lesson 08
+" | Timing | WOM | WOT | Lesson 10
+" | Timing | WOM | WOT | Lesson 11
+" | Timing | WOM | WOK | Lesson 01
+" | Timing | WOM | WOK | Lesson 03
+" | Timing | WOM | WOK | Lesson 04
+" | Timing | WOM | WOK | Lesson 05
+" | Timing | WOM | WOK | Lesson 06
+" | Timing | WOM | WOK | Lesson 07
+" | Timing | WOM | WOK | Lesson 08
 
 
 

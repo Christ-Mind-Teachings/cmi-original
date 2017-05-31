@@ -17,7 +17,7 @@
     },
     {
       "fid": "012008/",
-      "desc": "",
+      "desc": "T13.4 The Guarantee of Heaven",
       "res": {
         "audio": "2008-01-20.mp3"
       },
@@ -36,7 +36,7 @@
     },
     {
       "fid": "012708/",
-      "desc": "",
+      "desc": "T13.4 The Guarantee of Heaven",
       "res": {
         "audio": "2008-01-27.mp3"
       },
@@ -55,7 +55,7 @@
     },
     {
       "fid": "021008/",
-      "desc": "",
+      "desc": "T13.4 The Guarantee of Heaven",
       "res": {
         "audio": "2008-02-10.mp3"
       },
@@ -74,7 +74,7 @@
     },
     {
       "fid": "021708/",
-      "desc": "",
+      "desc": "T13.5 The Testimony of Miracles",
       "complete": {
         "format": 0,
         "audio": 0,
@@ -90,7 +90,7 @@
     },
     {
       "fid": "022408/",
-      "desc": "",
+      "desc": "T13.6 The Happy Learner",
       "res": {
         "audio": "2008-02-24.mp3"
       },
@@ -109,7 +109,7 @@
     },
     {
       "fid": "030208/",
-      "desc": "",
+      "desc": "T13.6 The Happy Learner",
       "res": {
         "audio": "2008-03-02.mp3"
       },
@@ -128,7 +128,7 @@
     },
     {
       "fid": "030908/",
-      "desc": "",
+      "desc": "T13.7 The Decision for Guiltlessness",
       "res": {
         "audio": "2008-03-09.mp3"
       },
@@ -147,7 +147,7 @@
     },
     {
       "fid": "032508/",
-      "desc": "",
+      "desc": "T13.7 The Decision for Guiltlessness",
       "res": {
         "audio": "2008-03-25.mp3"
       },
@@ -166,7 +166,7 @@
     },
     {
       "fid": "033008/",
-      "desc": "",
+      "desc": "T13.7 The Decision for Guiltlessness",
       "res": {
         "audio": "2008-03-30.mp3"
       },
@@ -185,7 +185,7 @@
     },
     {
       "fid": "040608/",
-      "desc": "",
+      "desc": "T13.7 The Decision for Guiltlessness",
       "res": {
         "audio": "2008-04-06.mp3"
       },
@@ -204,7 +204,7 @@
     },
     {
       "fid": "041308/",
-      "desc": "",
+      "desc": "T13.8 The Way of Salvation",
       "res": {
         "audio": "2008-04-13.mp3"
       },
@@ -223,7 +223,7 @@
     },
     {
       "fid": "042008/",
-      "desc": "",
+      "desc": "T14 Introduction",
       "res": {
         "audio": "2008-04-20.mp3"
       },
@@ -242,7 +242,7 @@
     },
     {
       "fid": "050408/",
-      "desc": "",
+      "desc": "T14.1 Guilt and Guiltlessness",
       "res": {
         "audio": "2008-05-04.mp3"
       },
@@ -261,7 +261,7 @@
     },
     {
       "fid": "051808/",
-      "desc": "",
+      "desc": "T14.1 Guilt and Guiltlessness",
       "res": {
         "audio": "2008-05-18.mp3"
       },
@@ -280,7 +280,7 @@
     },
     {
       "fid": "052508/",
-      "desc": "",
+      "desc": "T14.1 Guilt and Guiltlessness",
       "res": {
         "audio": "2008-05-25.mp3"
       },
@@ -299,7 +299,7 @@
     },
     {
       "fid": "060108/",
-      "desc": "",
+      "desc": "T14.1 Guilt and Guiltlessness",
       "res": {
         "audio": "2008-06-01.mp3"
       },
@@ -318,7 +318,7 @@
     },
     {
       "fid": "060808/",
-      "desc": "",
+      "desc": "T14.2 Out of the Darkness",
       "res": {
         "audio": "2008-06-08.mp3"
       },
@@ -337,7 +337,7 @@
     },
     {
       "fid": "061508/",
-      "desc": "",
+      "desc": "T14.3 Perception without Deceit",
       "res": {
         "audio": "2008-06-15.mp3"
       },
@@ -356,7 +356,7 @@
     },
     {
       "fid": "062208/",
-      "desc": "",
+      "desc": "T14.3 Perception without Deceit",
       "res": {
         "audio": "2008-06-22.mp3"
       },
@@ -375,12 +375,12 @@
     },
     {
       "fid": "070608/",
-      "desc": "",
+      "desc": "T14.3 Perception without Deceit",
       "res": {
         "audio": "2008-07-06.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -394,7 +394,7 @@
     },
     {
       "fid": "071308/",
-      "desc": "",
+      "desc": "T14.3 Perception without Deceit",
       "res": {
         "audio": "2008-07-13.mp3"
       },
@@ -413,7 +413,7 @@
     },
     {
       "fid": "072708/",
-      "desc": "",
+      "desc": "T14.4 The Recognition of Holiness",
       "res": {
         "audio": "2008-07-27.mp3"
       },
@@ -432,7 +432,7 @@
     },
     {
       "fid": "081708/",
-      "desc": "",
+      "desc": "T14.5 The Shift to Miracles",
       "res": {
         "audio": "2008-08-17.mp3"
       },
@@ -451,7 +451,7 @@
     },
     {
       "fid": "083108/",
-      "desc": "",
+      "desc": "T14.5 The Shift to Miracles",
       "res": {
         "audio": "2008-08-31.mp3"
       },
@@ -470,7 +470,7 @@
     },
     {
       "fid": "090708/",
-      "desc": "",
+      "desc": "T14.5 The Shift to Miracles",
       "res": {
         "audio": "2008-09-07.mp3"
       },
@@ -489,7 +489,7 @@
     },
     {
       "fid": "091408/",
-      "desc": "",
+      "desc": "T14.6 The Test of Truth",
       "res": {
         "audio": "2008-09-14.mp3"
       },
@@ -508,7 +508,7 @@
     },
     {
       "fid": "092108/",
-      "desc": "",
+      "desc": "T14.6 The Test of Truth",
       "res": {
         "audio": "2008-09-21.mp3"
       },
@@ -527,7 +527,7 @@
     },
     {
       "fid": "100508/",
-      "desc": "",
+      "desc": "T14.6 The Test of Truth",
       "res": {
         "audio": "2008-10-05.mp3"
       },
@@ -546,7 +546,7 @@
     },
     {
       "fid": "101908/",
-      "desc": "",
+      "desc": "T14.6 The Test of Truth",
       "res": {
         "audio": "2008-10-19.mp3"
       },
@@ -565,7 +565,7 @@
     },
     {
       "fid": "102608/",
-      "desc": "",
+      "desc": "T15.1 The Uses of Time",
       "res": {
         "audio": "2008-10-26.mp3"
       },
@@ -584,7 +584,7 @@
     },
     {
       "fid": "110208/",
-      "desc": "",
+      "desc": "T15.1 The Uses of Time",
       "res": {
         "audio": "2008-11-02.mp3"
       },
@@ -603,7 +603,7 @@
     },
     {
       "fid": "110908/",
-      "desc": "",
+      "desc": "T15.1 The Uses of Time",
       "res": {
         "audio": "2008-11-09.mp3"
       },
@@ -622,10 +622,14 @@
     },
     {
       "fid": "112308/",
-      "desc": "",
+      "desc": "T15.2 Time and Eternity",
+      "note": "audio link on celestialrealm is messed up but got it from rajcast",
+      "res": {
+        "audio": "2008-11-23.mp3"
+      },
       "complete": {
         "format": 0,
-        "audio": 0,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },

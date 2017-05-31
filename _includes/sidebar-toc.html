@@ -43,7 +43,9 @@
     {% endfor %}
     {% comment %}
     {% endcomment %}
-    {% include {{page.contents | default: "nav/contents.html" }} %}
+    {% if page.contents != "None" %}
+      {% include {{page.contents | default: "nav/contents.html" }} %}
+    {% endif %}
 
   </nav>
 

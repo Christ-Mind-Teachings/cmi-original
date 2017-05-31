@@ -17,12 +17,12 @@
     },
     {
       "fid": "081807/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2007-08-18.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -36,7 +36,7 @@
     },
     {
       "fid": "082507/",
-      "desc": "",
+      "desc": "T13 Introduction",
       "res": {
         "audio": "2007-08-25.mp3"
       },
@@ -55,7 +55,7 @@
     },
     {
       "fid": "090907/",
-      "desc": "",
+      "desc": "T13.1 The Role of Healing",
       "res": {
         "audio": "2007-09-09.mp3"
       },
@@ -74,7 +74,7 @@
     },
     {
       "fid": "091607/",
-      "desc": "",
+      "desc": "T13.1 The Role of Healing",
       "res": {
         "audio": "2007-09-16.mp3"
       },
@@ -93,7 +93,7 @@
     },
     {
       "fid": "092207/",
-      "desc": "",
+      "desc": "T13.1 The Role of Healing",
       "res": {
         "audio": "2007-09-22.mp3"
       },
@@ -112,7 +112,7 @@
     },
     {
       "fid": "100607/",
-      "desc": "",
+      "desc": "T13.2 The Shadow of Guilt",
       "res": {
         "audio": "2007-10-06.mp3"
       },
@@ -131,7 +131,7 @@
     },
     {
       "fid": "101407/",
-      "desc": "",
+      "desc": "T13.2 The Shadow of Guilt",
       "res": {
         "audio": "2007-10-14.mp3"
       },
@@ -150,7 +150,7 @@
     },
     {
       "fid": "102707/",
-      "desc": "",
+      "desc": "T13.3 Release and Restoration",
       "res": {
         "audio": "2007-10-27.mp3"
       },
@@ -169,7 +169,7 @@
     },
     {
       "fid": "110307/",
-      "desc": "",
+      "desc": "T13.3 Release and Restoration",
       "res": {
         "audio": "2007-11-03.mp3"
       },
@@ -188,7 +188,7 @@
     },
     {
       "fid": "111007/",
-      "desc": "",
+      "desc": "T13.3 Release and Restoration",
       "res": {
         "audio": "2007-11-10.mp3"
       },
@@ -207,7 +207,7 @@
     },
     {
       "fid": "111807/",
-      "desc": "",
+      "desc": "T13.3 Release and Restoration",
       "res": {
         "audio": "2007-11-18.mp3"
       },
@@ -226,7 +226,7 @@
     },
     {
       "fid": "120807/",
-      "desc": "",
+      "desc": "T13.3 Release and Restoration",
       "res": {
         "audio": "2007-12-08.mp3"
       },
@@ -245,7 +245,7 @@
     },
     {
       "fid": "121607/",
-      "desc": "",
+      "desc": "T13.3 Release and Restoration",
       "res": {
         "audio": "2007-12-16.mp3"
       },

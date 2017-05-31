@@ -95,7 +95,7 @@ function enableSidebarTimeCapture() {
 
   //check if timing data collection is reserved to a specific user
   var pageInfo = config.getInfo(location.pathname);
-  console.log("Page Info: ", pageInfo);
+  //console.log("Page Info: ", pageInfo);
   if (pageInfo.timer && pageInfo.timer !== "none") {
 
     //don't enable time collection if current user is not registered user

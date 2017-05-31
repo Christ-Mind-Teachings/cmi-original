@@ -44,14 +44,40 @@ Ref | Chapter | Section
 {% for chapter in site.data.acim.textcontents.chapter %}
   {% assign base = chapter.base %}
   {% assign title = chapter.title %}
+  {% assign crossref = false %}
 {% capture workspace %}
   {% capture toc %}{% endcapture %}
   {% for section in chapter.section %}
     {% assign ref = section.ref | prepend: "[" | append: "](" | append: base | append: section.url | append: ")" %}
     {% assign row = ref | append: ' | ' | append: section.title %}
+    {% if section.nwffacim %}
+      {% assign crossref = true %}
+      {% capture rajref %}{% endcapture %}
+      {% for ref in section.nwffacim %}
+        {% if forloop.last %}
+{% capture rajref %}{{rajref}}[{{ref.title}}]({{ref.url}}){% endcapture %}
+        {% else %}
+{% capture rajref %}{{rajref}}[{{ref.title}}]({{ref.url}})<br/>{% endcapture %}
+        {% endif %}
+      {% endfor %}
+      {% assign row = row | append: ' | ' | append: rajref %}
+      {% comment %}
+    {% else %}
+      {% assign row = row | append: ' | ' | append: "-" %}
+      {% endcomment %}
+    {% endif %}
 {% capture toc %}{{toc}}
 {{row}}{% endcapture %}
   {% endfor %}
+  {% if crossref == true %}
+  {% capture toc %}
+<div id="{{chapter.ref}}" markdown="1" class="acim-toc">
+### <i class="fa fa-search"></i> Chapter {{chapter.id}}: {{title}}
+
+Ref | Section | NWFFACIM
+--- | --- | --- {{toc}}{% endcapture %}
+</div>
+{% else %}
   {% capture toc %}
 <div id="{{chapter.ref}}" markdown="1" class="acim-toc">
 ### <i class="fa fa-search"></i> Chapter {{chapter.id}}: {{title}}
@@ -59,6 +85,7 @@ Ref | Chapter | Section
 Ref | Section
 --- | --- {{toc}}{% endcapture %}
 </div>
+{% endif %}
 {% endcapture %}{% assign workspace = "" %}
 
 {{toc | markdownify }}
