@@ -75,9 +75,12 @@
     {
       "fid": "021708/",
       "desc": "T13.5 The Testimony of Miracles",
+      "res": {
+        "audio": "2008-02-17.mp3"
+      },
       "complete": {
         "format": 0,
-        "audio": 0,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },

@@ -1,218 +1,215 @@
 var cmiAudioTimingData = {
-    "base": "/wom/early/wlk/",
+    "base": "/wom/early/wlk",
     "title": "Walk with Me",
     "time": [{
         "id": "p0",
         "seconds": 0
     }, {
         "id": "p1",
-        "seconds": 98.404987
+        "seconds": 94.473043
     }, {
         "id": "p2",
-        "seconds": 131.404228
+        "seconds": 126.666855
     }, {
         "id": "p3",
-        "seconds": 137.40172
+        "seconds": 132.163994
     }, {
         "id": "p4",
-        "seconds": 147.900119
+        "seconds": 143.168357
     }, {
         "id": "p5",
-        "seconds": 151.650268
+        "seconds": 146.860643
     }, {
         "id": "p6",
-        "seconds": 156.40013
+        "seconds": 151.615385
     }, {
         "id": "p7",
-        "seconds": 161.400234
+        "seconds": 156.865366
     }, {
         "id": "p8",
-        "seconds": 167.400651
+        "seconds": 163.115438
     }, {
         "id": "p9",
-        "seconds": 178.900838
+        "seconds": 174.111156
     }, {
         "id": "p10",
-        "seconds": 187.65032
+        "seconds": 183.112776
     }, {
         "id": "p11",
-        "seconds": 189.90084
+        "seconds": 185.610855
     }, {
         "id": "p12",
-        "seconds": 204.900251
+        "seconds": 200.614852
     }, {
         "id": "p13",
-        "seconds": 208.900517
+        "seconds": 204.111184
     }, {
         "id": "p14",
-        "seconds": 274.900931
+        "seconds": 270.115478
     }, {
         "id": "p15",
-        "seconds": 287.904856
+        "seconds": 283.362203
     }, {
         "id": "p16",
-        "seconds": 314.405288
+        "seconds": 310.115566
     }, {
         "id": "p17",
-        "seconds": 332.901131
+        "seconds": 328.114702
     }, {
         "id": "p18",
-        "seconds": 454.905408
+        "seconds": 450.115395
     }, {
         "id": "p19",
-        "seconds": 511.904317
+        "seconds": 507.362128
     }, {
         "id": "p20",
-        "seconds": 530.401463
+        "seconds": 526.138283
     }, {
         "id": "p21",
-        "seconds": 587.650833
+        "seconds": 581.487584
     }, {
         "id": "p22",
-        "seconds": 661.404491
+        "seconds": 654.989457
     }, {
         "id": "p23",
-        "seconds": 669.901497
+        "seconds": 663.242049
     }, {
         "id": "p24",
-        "seconds": 724.90508
+        "seconds": 717.99174
     }, {
         "id": "p25",
-        "seconds": 832.90605
+        "seconds": 826.2392
     }, {
         "id": "p26",
-        "seconds": 867.65159
+        "seconds": 861.238486
     }, {
         "id": "p27",
-        "seconds": 870.401116
+        "seconds": 864.737448
     }, {
         "id": "p28",
-        "seconds": 918.903518
+        "seconds": 910.702237
     }, {
         "id": "p29",
-        "seconds": 997.903698
+        "seconds": 989.447978
     }, {
         "id": "p30",
-        "seconds": 1012.902164
+        "seconds": 1004.697627
     }, {
         "id": "p31",
-        "seconds": 1016.904236
+        "seconds": 1009.198584
     }, {
         "id": "p32",
-        "seconds": 1082.151925
+        "seconds": 1074.447641
     }, {
         "id": "p33",
-        "seconds": 1125.901924
+        "seconds": 1117.447546
     }, {
         "id": "p34",
-        "seconds": 1130.40229
+        "seconds": 1121.949247
     }, {
         "id": "p35",
-        "seconds": 1208.90253
+        "seconds": 1200.699304
     }, {
         "id": "p36",
-        "seconds": 1271.401502
+        "seconds": 1263.449429
     }, {
         "id": "p37",
-        "seconds": 1356.903543
+        "seconds": 1348.947783
     }, {
         "id": "p38",
-        "seconds": 1454.40447
+        "seconds": 1445.952812
     }, {
         "id": "p39",
-        "seconds": 1595.90567
+        "seconds": 1588.199318
     }, {
         "id": "p40",
-        "seconds": 1622.403815
+        "seconds": 1613.698482
     }, {
         "id": "p41",
-        "seconds": 1687.402057
+        "seconds": 1679.700082
     }, {
         "id": "p42",
-        "seconds": 1745.402523
+        "seconds": 1737.198231
     }, {
         "id": "p43",
-        "seconds": 1762.40701
+        "seconds": 1750.147312
     }, {
         "id": "p44",
-        "seconds": 1892.406982
+        "seconds": 1880.146989
     }, {
         "id": "p45",
-        "seconds": 1940.155489
+        "seconds": 1928.393648
     }, {
         "id": "p46",
-        "seconds": 1995.406043
+        "seconds": 1983.645075
     }, {
         "id": "p47",
-        "seconds": 2004.405199
+        "seconds": 1992.398712
     }, {
         "id": "p48",
-        "seconds": 2179.156237
+        "seconds": 2166.894987
     }, {
         "id": "p49",
-        "seconds": 2264.907584
+        "seconds": 2251.288706
     }, {
         "id": "p50",
-        "seconds": 2301.154491
+        "seconds": 2287.037643
     }, {
         "id": "p51",
-        "seconds": 2377.903452
+        "seconds": 2364.538278
     }, {
         "id": "p52",
-        "seconds": 2453.404504
+        "seconds": 2439.78987
     }, {
         "id": "p53",
-        "seconds": 2500.907945
+        "seconds": 2486.542611
     }, {
         "id": "p54",
-        "seconds": 2528.905854
+        "seconds": 2515.038552
     }, {
         "id": "p55",
-        "seconds": 2581.405924
+        "seconds": 2567.790865
     }, {
         "id": "p56",
-        "seconds": 2767.157196
+        "seconds": 2751.817905
     }, {
         "id": "p57",
-        "seconds": 2780.403578
+        "seconds": 2763.572574
     }, {
         "id": "p58",
-        "seconds": 2796.905508
+        "seconds": 2781.317954
     }, {
         "id": "p59",
-        "seconds": 2862.404249
+        "seconds": 2846.068672
     }, {
         "id": "p60",
-        "seconds": 2866.403213
+        "seconds": 2850.321902
     }, {
         "id": "p61",
-        "seconds": 2882.40835
+        "seconds": 2865.073025
     }, {
         "id": "p62",
-        "seconds": 2886.904036
+        "seconds": 2871.31921
     }, {
         "id": "p63",
-        "seconds": 2891.904154
+        "seconds": 2875.56966
     }, {
         "id": "p64",
-        "seconds": 2895.656208
+        "seconds": 2878.818167
     }, {
         "id": "p65",
-        "seconds": 2930.403836
+        "seconds": 2914.568301
     }, {
         "id": "p66",
-        "seconds": 3019.408444
+        "seconds": 3003.318659
     }, {
         "id": "p67",
-        "seconds": 3054.407897
+        "seconds": 3037.823018
     }, {
         "id": "p68",
-        "seconds": 3130.903942
+        "seconds": 3114.823268
     }, {
         "id": "p69",
-        "seconds": 3149.403905
-    }, {
-        "id": "p70",
-        "seconds": 3155.155357
+        "seconds": 3133.568909
     }]
 };

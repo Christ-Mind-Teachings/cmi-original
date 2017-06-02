@@ -74,8 +74,8 @@ Ref | Chapter | Section
 <div id="{{chapter.ref}}" markdown="1" class="acim-toc">
 ### <i class="fa fa-search"></i> Chapter {{chapter.id}}: {{title}}
 
-Ref | Section | NWFFACIM
---- | --- | --- {{toc}}{% endcapture %}
+Ref | Section | Raj Study<br/>Group Reference
+--- | --- | :---: {{toc}}{% endcapture %}
 </div>
 {% else %}
   {% capture toc %}

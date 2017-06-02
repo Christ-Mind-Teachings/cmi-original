@@ -26,6 +26,16 @@
     {
       "fid": "chap0401/",
       "title": "T4.1 Right Teaching and Right Learning",
+      "nwffacim": [
+        {
+          "title": "Jul 6, 2003",
+          "url": "/nwffacim/2003/070603/"
+        },
+        {
+          "title": "Apr 1, 2003",
+          "url": "/nwffacim/2003/071303/"
+        }
+      ],
       "complete": {
         "format": 1,
         "index": 0
@@ -38,6 +48,16 @@
     {
       "fid": "chap0402/",
       "title": "T4.2 The Ego and False Autonomy",
+      "nwffacim": [
+        {
+          "title": "Jul 20, 2003",
+          "url": "/nwffacim/2003/072003/"
+        },
+        {
+          "title": "Jul 27, 2003",
+          "url": "/nwffacim/2003/072703/"
+        }
+      ],
       "complete": {
         "format": 1,
         "index": 0

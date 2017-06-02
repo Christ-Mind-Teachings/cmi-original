@@ -198,6 +198,7 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | WOM | WOK | Lesson 06
 " | Timing | WOM | WOK | Lesson 07
 " | Timing | WOM | WOK | Lesson 08
+" | Timing | WOM | WOK | Lesson 09
 
 
 

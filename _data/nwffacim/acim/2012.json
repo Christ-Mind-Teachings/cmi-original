@@ -37,10 +37,13 @@
     {
       "fid": "012212/",
       "desc": "T18.3 Light in the Dream",
-      "note": "audio for 032212 is available on celestialrealm, that's a mistake",
+      "note": "got audio from Rajcast",
+      "res": {
+        "audio": "2012-01-22.mp3"
+      },
       "complete": {
         "format": 1,
-        "audio": 0,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },

@@ -286,11 +286,12 @@
       "fid": "wlk/",
       "res": {
         "audio": "WLK.mp3",
+        "timing": "wlk.js",
         "timer": "JohnEEAAA"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 1
       },

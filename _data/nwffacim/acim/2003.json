@@ -18,13 +18,13 @@
     {
       "res": {
         "audio": "2003-01-02.mp3",
-        "timing": "010203.js"
+        "xtiming": "010203.js"
       },
       "fid": "010203/",
       "desc": "T2.V The Function of the Miracle Worker",
       "complete": {
         "format": 1,
-        "audio": 2,
+        "audio": 1,
         "index": 0,
         "fb": 0
       },

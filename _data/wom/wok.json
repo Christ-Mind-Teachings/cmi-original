@@ -163,12 +163,13 @@
       "fid": "l09/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L33.mp3"
+        "audio": "L33.mp3",
+        "timing": "l33.js"
       },
       "title": "Lesson Nine",
       "url": "/wom/wok/l09/",

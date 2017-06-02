@@ -17,7 +17,7 @@
     },
     {
       "fid": "010309/",
-      "desc": "",
+      "desc": "T15.2 Time and Eternity",
       "res": {
         "audio": "2009-01-03.mp3"
       },
@@ -36,7 +36,7 @@
     },
     {
       "fid": "011009/",
-      "desc": "",
+      "desc": "T15.2 Time and Eternity",
       "res": {
         "audio": "2009-01-10.mp3"
       },
@@ -75,7 +75,7 @@
     },
     {
       "fid": "012409/",
-      "desc": "",
+      "desc": "T15.3 Littleness versus Magnitude",
       "res": {
         "audio": "2009-01-24.mp3"
       },
@@ -94,7 +94,7 @@
     },
     {
       "fid": "020709/",
-      "desc": "",
+      "desc": "T15.3 Littleness versus Magnitude",
       "res": {
         "audio": "2009-02-07.mp3"
       },
@@ -113,7 +113,7 @@
     },
     {
       "fid": "022809/",
-      "desc": "",
+      "desc": "T15.3 Littleness versus Magnitude",
       "res": {
         "audio": "2009-02-28.mp3"
       },
@@ -132,7 +132,7 @@
     },
     {
       "fid": "031409/",
-      "desc": "",
+      "desc": "T15.3 Littleness versus Magnitude",
       "res": {
         "audio": "2009-03-14.mp3"
       },
@@ -151,7 +151,7 @@
     },
     {
       "fid": "032809/",
-      "desc": "",
+      "desc": "T15.4 Practicing the Holy Instant",
       "res": {
         "audio": "2009-03-28.mp3"
       },
@@ -170,12 +170,12 @@
     },
     {
       "fid": "040409/",
-      "desc": "",
+      "desc": "T15.4 Practicing the Holy Instant",
       "res": {
         "audio": "2009-04-04.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -189,7 +189,7 @@
     },
     {
       "fid": "041209/",
-      "desc": "",
+      "desc": "T15.3 Littleness versus Magnitude",
       "res": {
         "audio": "2009-04-12.mp3"
       },
@@ -208,7 +208,7 @@
     },
     {
       "fid": "042509/",
-      "desc": "",
+      "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "audio": "2009-04-25.mp3"
       },
@@ -227,7 +227,7 @@
     },
     {
       "fid": "050909/",
-      "desc": "",
+      "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "audio": "2009-05-09.mp3"
       },
@@ -246,7 +246,7 @@
     },
     {
       "fid": "052409/",
-      "desc": "",
+      "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "audio": "2009-05-24.mp3"
       },
@@ -265,7 +265,7 @@
     },
     {
       "fid": "053109/",
-      "desc": "",
+      "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "audio": "2009-05-31.mp3"
       },
@@ -284,7 +284,7 @@
     },
     {
       "fid": "060709/",
-      "desc": "",
+      "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "audio": "2009-06-07.mp3"
       },
@@ -303,7 +303,7 @@
     },
     {
       "fid": "061309/",
-      "desc": "",
+      "desc": "T15.6 The Holy Instant and the Laws of God",
       "res": {
         "audio": "2009-06-13.mp3"
       },
@@ -322,7 +322,7 @@
     },
     {
       "fid": "062009/",
-      "desc": "",
+      "desc": "T15.6 The Holy Instant and the Laws of God",
       "res": {
         "audio": "2009-06-20.mp3"
       },
@@ -341,12 +341,12 @@
     },
     {
       "fid": "071109/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2009-07-11.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -360,12 +360,12 @@
     },
     {
       "fid": "071809/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2009-07-18.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -379,7 +379,7 @@
     },
     {
       "fid": "072509/",
-      "desc": "",
+      "desc": "T15.7 The Holy Instant and Communication",
       "res": {
         "audio": "2009-07-25.mp3"
       },
@@ -398,7 +398,7 @@
     },
     {
       "fid": "080109/",
-      "desc": "",
+      "desc": "T15.7 The Holy Instant and Communication",
       "res": {
         "audio": "2009-08-01.mp3"
       },
@@ -417,7 +417,7 @@
     },
     {
       "fid": "080809/",
-      "desc": "",
+      "desc": "T15.7 The Holy Instant and Communication",
       "res": {
         "audio": "2009-08-08.mp3"
       },
@@ -436,7 +436,7 @@
     },
     {
       "fid": "082909/",
-      "desc": "",
+      "desc": "T15.7 The Holy Instant and Communication",
       "res": {
         "audio": "2009-08-29.mp3"
       },
@@ -455,7 +455,7 @@
     },
     {
       "fid": "090509/",
-      "desc": "",
+      "desc": "T15.7 The Holy Instant and Communication",
       "res": {
         "audio": "2009-09-05.mp3"
       },
@@ -474,7 +474,7 @@
     },
     {
       "fid": "091209/",
-      "desc": "",
+      "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
         "audio": "2009-09-12.mp3"
       },
@@ -493,7 +493,7 @@
     },
     {
       "fid": "091909/",
-      "desc": "",
+      "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
         "audio": "2009-09-19.mp3"
       },
@@ -512,7 +512,7 @@
     },
     {
       "fid": "092709/",
-      "desc": "",
+      "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
         "audio": "2009-09-27.mp3"
       },
@@ -531,7 +531,7 @@
     },
     {
       "fid": "101009/",
-      "desc": "",
+      "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
         "audio": "2009-10-10.mp3"
       },
@@ -550,7 +550,7 @@
     },
     {
       "fid": "102409/",
-      "desc": "",
+      "desc": "T15.9 The Time of Christ",
       "res": {
         "audio": "2009-10-24.mp3"
       },
@@ -569,7 +569,7 @@
     },
     {
       "fid": "103109/",
-      "desc": "",
+      "desc": "T15.9 The Time of Christ",
       "res": {
         "audio": "2009-10-31.mp3"
       },
@@ -588,7 +588,7 @@
     },
     {
       "fid": "111409/",
-      "desc": "",
+      "desc": "T15.9 The Time of Christ",
       "res": {
         "audio": "2009-11-14.mp3"
       },
@@ -607,7 +607,7 @@
     },
     {
       "fid": "112209/",
-      "desc": "",
+      "desc": "T15.10 The End of Sacrifice",
       "res": {
         "audio": "2009-11-22.mp3"
       },
@@ -626,7 +626,7 @@
     },
     {
       "fid": "112809/",
-      "desc": "",
+      "desc": "T15.10 The End of Sacrifice",
       "res": {
         "audio": "2009-11-28.mp3"
       },
@@ -645,7 +645,7 @@
     },
     {
       "fid": "120509/",
-      "desc": "",
+      "desc": "T16.1 True Empathy",
       "res": {
         "audio": "2009-12-05.mp3"
       },
@@ -664,7 +664,7 @@
     },
     {
       "fid": "121909/",
-      "desc": "",
+      "desc": "T16.1 True Empathy",
       "res": {
         "audio": "2009-12-19.mp3"
       },
