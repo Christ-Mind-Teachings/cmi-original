@@ -1,5 +1,5 @@
 ---
-title: 1Introduction
+title: Introduction
 ---
 
 The role of teaching and learning is actually reversed in the

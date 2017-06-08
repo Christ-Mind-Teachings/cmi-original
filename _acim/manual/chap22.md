@@ -1,5 +1,5 @@
 ---
-title: 22What is the Role of Words in Healing?
+title: What is the Role of Words in Healing?
 ---
 
 Strictly speaking, words play no part at all in healing. The motivating

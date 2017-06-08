@@ -1,5 +1,5 @@
 ---
-title: 8Should Healing be Repeated?
+title: Should Healing be Repeated?
 ---
 
 This question really answers itself. Healing cannot be repeated. If the

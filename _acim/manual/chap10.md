@@ -1,5 +1,5 @@
 ---
-title: 10Are Changes Required in the Life Situation of God's Teachers?
+title: Are Changes Required in the Life Situation of God's Teachers?
 ---
 
 Changes are required in the minds of God’s teachers. This may or may not

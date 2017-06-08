@@ -1,5 +1,5 @@
 ---
-title: 16Is Each One to be Judged in the End?
+title: Is Each One to be Judged in the End?
 ---
 
 Indeed yes! No-one can escape God’s final judgement. Who could flee

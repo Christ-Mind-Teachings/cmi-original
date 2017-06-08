@@ -1,5 +1,5 @@
 ---
-title: 11How is Judgement Relinquished?
+title: How is Judgement Relinquished?
 ---
 
 Judgement, like other devices by which the world of illusions is

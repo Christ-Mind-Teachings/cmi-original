@@ -1,5 +1,5 @@
 ---
-title: 29What is the Resurrection?
+title: What is the Resurrection?
 ---
 
 Very simply, the resurrection is the overcoming or surmounting of death.

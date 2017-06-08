@@ -10,6 +10,7 @@
     {
       "fid": "early/",
       "complete": {
+        "copyright": 1,
         "format": 1,
         "fb": 0
       },
@@ -22,6 +23,7 @@
     {
       "fid": "ble/",
       "complete": {
+        "copyright": 1,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -39,6 +41,7 @@
     {
       "fid": "c2s/",
       "complete": {
+        "copyright": 1,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -56,6 +59,7 @@
     {
       "fid": "hoe/",
       "complete": {
+        "copyright": 1,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -73,6 +77,7 @@
     {
       "fid": "ign/",
       "complete": {
+        "copyright": 1,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -90,6 +95,7 @@
     {
       "fid": "com/",
       "complete": {
+        "copyright": 1,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -107,6 +113,7 @@
     {
       "fid": "dbc/",
       "complete": {
+        "copyright": 0,
         "format": 1,
         "index": 1,
         "fb": 0
@@ -123,6 +130,7 @@
         "audio": "DTH.mp3"
       },
       "complete": {
+        "copyright": 1,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -137,11 +145,13 @@
     {
       "fid": "fem/",
       "res": {
-        "audio": "FEM.mp3"
+        "audio": "FEM.mp3",
+        "timing": "fem.js"
       },
       "complete": {
+        "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -157,6 +167,7 @@
         "audio": "GAR.mp3"
       },
       "complete": {
+        "copyright": 1,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -171,6 +182,7 @@
     {
       "fid": "hea/",
       "complete": {
+        "copyright": 0,
         "format": 1,
         "index": 1,
         "fb": 0
@@ -187,6 +199,7 @@
         "audio": "HOI.mp3"
       },
       "complete": {
+        "copyright": 1,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -201,6 +214,7 @@
     {
       "fid": "hsp/",
       "complete": {
+        "copyright": 0,
         "format": 1,
         "index": 1,
         "fb": 0
@@ -214,6 +228,7 @@
     {
       "fid": "joy1/",
       "complete": {
+        "copyright": 0,
         "format": 1,
         "index": 1,
         "fb": 0
@@ -227,6 +242,7 @@
     {
       "fid": "joy2/",
       "complete": {
+        "copyright": 0,
         "format": 1,
         "index": 1,
         "fb": 0
@@ -246,6 +262,7 @@
         "timer": "JohnEEAAA"
       },
       "complete": {
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -259,6 +276,7 @@
     {
       "fid": "mot/",
       "complete": {
+        "copyright": 0,
         "format": 1,
         "index": 1,
         "fb": 0
@@ -272,6 +290,7 @@
     {
       "fid": "wak/",
       "complete": {
+        "copyright": 0,
         "format": 1,
         "index": 1,
         "fb": 0
@@ -290,6 +309,7 @@
         "timer": "JohnEEAAA"
       },
       "complete": {
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,

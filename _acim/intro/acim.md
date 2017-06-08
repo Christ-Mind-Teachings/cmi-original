@@ -34,10 +34,10 @@ later edits made in the popular Foundation for Inner Peace version or
 <a href="/acim/intro/text/">Text</a>
 </li>
 <li><i class="fa-li fa fa-book"></i>
-Workbook: Not available yet.
+<a href="/acim/intro/workbook/">Workbook for Students</a>
 </li>
 <li><i class="fa-li fa fa-book"></i>
-Manual: Not available yet.
+<a href="/acim/intro/manual/">Manual for Teachers</a>
 </li>
 </ul>
 

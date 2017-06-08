@@ -1,5 +1,5 @@
 ---
-title: 12How is Peace Possible in this World?
+title: How is Peace Possible in this World?
 ---
 
 This is a question everyone must ask. Certainly peace seems to be

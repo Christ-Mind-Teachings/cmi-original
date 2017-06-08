@@ -1,5 +1,5 @@
 ---
-title: 15How Will the World End?
+title: How Will the World End?
 ---
 
 Can what has no beginning really end? The world will end in an illusion,

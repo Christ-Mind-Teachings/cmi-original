@@ -1,5 +1,5 @@
 ---
-title: 23How are Healing and Atonement Related?
+title: How are Healing and Atonement Related?
 ---
 
 Healing and Atonement are not related; they are identical. There is no

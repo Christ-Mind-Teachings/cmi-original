@@ -1,6 +1,5 @@
 {% comment %}
 bullet-icon images
-<img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
 {% endcomment %}
 
 {% comment %}
@@ -20,6 +19,9 @@ info: {{info}}
         <div class="bullet-content">
           <h2>
             <a title="Read {{bullet.title}}" href="{{bullet.url}}">
+              {% if copyright != "" %}
+                <i class="fa fa-fw {{copyright}}"></i>
+              {% endif %}
               {% if audio != "" %}
                 <i class="fa fa-fw {{audio}}"></i>
               {% endif %}

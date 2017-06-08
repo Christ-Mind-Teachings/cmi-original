@@ -1,5 +1,5 @@
 ---
-title: 13How Many Teachers of God are Needed to Save the World?
+title: How Many Teachers of God are Needed to Save the World?
 ---
 
 The answer to this question is “one.” One wholly perfect teacher, whose

@@ -1,5 +1,5 @@
 ---
-title: 17How Should the Teacher of God Spend His Day?
+title: How Should the Teacher of God Spend His Day?
 ---
 
 To the advanced teacher of God this question is meaningless. There is no

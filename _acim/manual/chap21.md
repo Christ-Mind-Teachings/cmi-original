@@ -1,5 +1,5 @@
 ---
-title: 21What is the Peace of God?
+title: What is the Peace of God?
 ---
 
 It has been said that there is a kind of peace that is not of this

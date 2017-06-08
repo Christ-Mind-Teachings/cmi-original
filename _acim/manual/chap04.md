@@ -1,5 +1,5 @@
 ---
-title: 4What are the Levels of Teaching?
+title: What are the Levels of Teaching?
 ---
 
 The teachers of God have no set teaching level. Each teaching-learning

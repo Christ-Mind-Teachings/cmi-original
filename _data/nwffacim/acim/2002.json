@@ -287,12 +287,13 @@
       "desc": "T2.II The Atonement as Defense",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "2002-11-07.mp3"
+        "audio": "2002-11-07.mp3",
+        "timing": "110702.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/110702/",

@@ -1,5 +1,5 @@
 ---
-title: 25Is Reincarnation True?
+title: Is Reincarnation True?
 ---
 
 In the ultimate sense, reincarnation is impossible. There is no past nor

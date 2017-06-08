@@ -9,12 +9,16 @@
       "url": "/search/"
     },
     {
+      "title": "The Way of Mastery",
+      "url": "/wom/intro/wom/"
+    },
+    {
       "title": "Northwest Foundation for ACIM",
       "url": "/nwffacim/intro/nwffacim/"
     },
     {
-      "title": "The Way of Mastery",
-      "url": "/wom/intro/wom/"
+      "title": "A Course in Miracles",
+      "url": "/acim/intro/acim/"
     }
   ]
 }

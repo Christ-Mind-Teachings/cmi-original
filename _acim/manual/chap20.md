@@ -1,5 +1,5 @@
 ---
-title: 20What is Justice?
+title: What is Justice?
 ---
 
 Justice is the divine correction for injustice. Injustice is the basis

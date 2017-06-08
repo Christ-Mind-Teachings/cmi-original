@@ -1,5 +1,5 @@
 ---
-title: 19How is Correction Made?
+title: How is Correction Made?
 ---
 
 Correction of a lasting nature, – and only this is true correction, –

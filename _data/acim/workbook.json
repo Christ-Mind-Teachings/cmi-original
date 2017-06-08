@@ -1,0 +1,69 @@
+{
+  "base": "/acim/workbook/",
+  "intro": "/acim/intro/",
+  "title": "Workbook for Students",
+  "bid": "workbook",
+  "page": [
+    {
+      "fid": "workbook",
+      "title": "Workbook for Students",
+      "url": "/acim/intro/workbook",
+      "idx": 0,
+      "next": "/acim/workbook/introp1/",
+      "prev": "/acim/workbook/l005/"
+    },
+    {
+      "fid": "introp1/",
+      "title": "Part 1: Introduction",
+      "url": "/acim/workbook/introp1/",
+      "idx": 1,
+      "next": "/acim/workbook/l001/",
+      "prev": "/acim/intro/workbook/"
+    },
+    {
+      "fid": "l001/",
+      "lesson": 1,
+      "title": "Nothing I see means anything.",
+      "url": "/acim/workbook/l001/",
+      "idx": 2,
+      "next": "/acim/workbook/l002/",
+      "prev": "/acim/workbook/introp1/"
+    },
+    {
+      "fid": "l002/",
+      "lesson": 2,
+      "title": "I have given everything I see all the meaning that it has for me.",
+      "url": "/acim/workbook/l002/",
+      "idx": 3,
+      "next": "/acim/workbook/l003/",
+      "prev": "/acim/workbook/l001/"
+    },
+    {
+      "fid": "l003/",
+      "lesson": 3,
+      "title": "I do not understand anything I see.",
+      "url": "/acim/workbook/l003/",
+      "idx": 4,
+      "next": "/acim/workbook/l004/",
+      "prev": "/acim/workbook/l002/"
+    },
+    {
+      "fid": "l004/",
+      "lesson": 4,
+      "title": "These thoughts do not mean anything.",
+      "url": "/acim/workbook/l004/",
+      "idx": 5,
+      "next": "/acim/workbook/l005/",
+      "prev": "/acim/workbook/l003/"
+    },
+    {
+      "fid": "l005/",
+      "lesson": 5,
+      "title": "I am never upset for the reason I think.",
+      "url": "/acim/workbook/l005/",
+      "idx": 6,
+      "next": "/acim/intro/workbook/",
+      "prev": "/acim/workbook/l004/"
+    }
+  ]
+}

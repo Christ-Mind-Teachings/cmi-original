@@ -1,5 +1,5 @@
 ---
-title: 27Can God be Reached Directly?
+title: Can God be Reached Directly?
 ---
 
 God indeed can be reached directly, for there is no distance between Him

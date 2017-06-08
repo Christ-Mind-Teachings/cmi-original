@@ -1,5 +1,5 @@
 ---
-title: 31Forget Not&hellip;
+title: Forget Not&hellip;
 ---
 
 Forget not once this journey is begun the end is certain. Doubt along

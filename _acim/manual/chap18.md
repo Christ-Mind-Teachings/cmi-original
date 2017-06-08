@@ -1,5 +1,5 @@
 ---
-title: 18How do God's Teachers Deal with their Pupils' Thoughts of Magic?
+title: How do God's Teachers Deal with their Pupils' Thoughts of Magic?
 ---
 
 This is a crucial question both for teacher and student. If this issue

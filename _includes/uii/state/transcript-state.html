@@ -6,6 +6,7 @@
 -->
 {% endcomment %}
 
+{% assign copyright = "" %}
 {% assign format = "" %}
 {% assign audio = "" %}
 {% assign index = "" %}
@@ -15,6 +16,9 @@
   {% endif %}
   {% if include.page.complete.index == 1 %}
     {% assign format = "fa-search" %}
+  {% endif %}
+  {% if include.page.complete.copyright == 1 %}
+    {% assign copyright = "fa-copyright" %}
   {% endif %}
 
   {% comment %}

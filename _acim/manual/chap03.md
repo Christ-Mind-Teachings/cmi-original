@@ -1,5 +1,5 @@
 ---
-title: 3Who are their Pupils?
+title: Who are their Pupils?
 ---
 
 Certain pupils have been assigned to each of God’s teachers, and they

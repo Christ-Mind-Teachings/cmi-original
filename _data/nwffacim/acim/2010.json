@@ -19,11 +19,13 @@
       "fid": "010210/",
       "desc": "T16.1 True Empathy",
       "res": {
-        "audio": "2010-01-02.mp3"
+        "audio": "2010-01-02.mp3",
+        "timing": "010210.js",
+        "timer": "Gleopold58"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -38,7 +40,8 @@
       "fid": "011610/",
       "desc": "T16.2 The Magnitude of Holiness",
       "res": {
-        "audio": "2010-01-16.mp3"
+        "audio": "2010-01-16.mp3",
+        "timer": "Gleopold58"
       },
       "complete": {
         "format": 1,
@@ -57,7 +60,8 @@
       "fid": "013010/",
       "desc": "T16.2 The Magnitude of Holiness",
       "res": {
-        "audio": "2010-01-30.mp3"
+        "audio": "2010-01-30.mp3",
+        "timer": "Gleopold58"
       },
       "complete": {
         "format": 1,
@@ -76,7 +80,8 @@
       "fid": "020610/",
       "desc": "T16.2 The Magnitude of Holiness",
       "res": {
-        "audio": "2010-02-06.mp3"
+        "audio": "2010-02-06.mp3",
+        "timer": "Gleopold58"
       },
       "complete": {
         "format": 1,
@@ -95,7 +100,8 @@
       "fid": "021310/",
       "desc": "T16.2 The Magnitude of Holiness",
       "res": {
-        "audio": "2010-02-13.mp3"
+        "audio": "2010-02-13.mp3",
+        "timer": "Gleopold58"
       },
       "complete": {
         "format": 1,

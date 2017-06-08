@@ -1,5 +1,5 @@
 ---
-title: 7Is Healing Certain?
+title: Is Healing Certain?
 ---
 
 Healing is always certain. It is impossible to let illusions be brought

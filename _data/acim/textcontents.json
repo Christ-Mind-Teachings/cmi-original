@@ -1118,7 +1118,13 @@
         {
           "url": "chap1105/",
           "ref": "T11.5",
-          "title": "The Sane Curriculum"
+          "title": "The Sane Curriculum",
+          "nwffacim": [
+            {
+              "title": "Feb 12, 2006",
+              "url": "/nwffacim/2006/021206/"
+            }
+          ]
         },
         {
           "url": "chap1106/",

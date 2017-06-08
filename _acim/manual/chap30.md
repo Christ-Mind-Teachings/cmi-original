@@ -1,5 +1,5 @@
 ---
-title: 30As for the Rest&hellip;
+title: As for the Rest&hellip;
 ---
 
 This manual is not intended to answer all questions that both teacher

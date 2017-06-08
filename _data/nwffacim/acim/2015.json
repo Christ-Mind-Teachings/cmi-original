@@ -346,11 +346,12 @@
       "fid": "110115/",
       "desc": "T20.3 Sin as an Adjustment",
       "res": {
-        "audio": "2015-11-01.mp3"
+        "audio": "2015-11-01.mp3",
+        "timing": "110115.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

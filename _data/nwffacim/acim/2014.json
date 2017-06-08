@@ -19,11 +19,12 @@
       "fid": "010614/",
       "desc": "Discussion",
       "res": {
-        "audio": "2014-01-06.mp3"
+        "audio": "2014-01-06.mp3",
+        "timing": "010614.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -38,11 +39,12 @@
       "fid": "011414/",
       "desc": "Discussion",
       "res": {
-        "audio": "2014-01-14.mp3"
+        "audio": "2014-01-14.mp3",
+        "timing": "011414.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -57,11 +59,12 @@
       "fid": "012814/",
       "desc": "Discussion",
       "res": {
-        "audio": "2014-01-28.mp3"
+        "audio": "2014-01-28.mp3",
+        "timing": "012814.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -133,11 +136,12 @@
       "fid": "041314/",
       "desc": "T15.4 Practicing the Holy Instant",
       "res": {
-        "audio": "2014-04-13.mp3"
+        "audio": "2014-04-13.mp3",
+        "timing": "041314.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

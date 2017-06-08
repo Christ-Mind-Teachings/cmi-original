@@ -22,7 +22,7 @@
         "audio": "2005-01-02.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -41,7 +41,7 @@
       },
       "desc": "T9 Introduction",
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -60,7 +60,7 @@
         "audio": "2005-01-23.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -79,7 +79,7 @@
         "audio": "2005-01-30.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -98,7 +98,7 @@
         "audio": "2005-02-13.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -117,7 +117,7 @@
         "audio": "2005-02-20.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -133,11 +133,12 @@
       "fid": "030605/",
       "desc": "Discussion",
       "res": {
-        "audio": "2005-03-06.mp3"
+        "audio": "2005-03-06.mp3",
+        "timing": "030605.js"
       },
       "complete": {
-        "format": 0,
-        "audio": 1,
+        "format": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -155,7 +156,7 @@
         "audio": "2005-03-13.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -174,7 +175,7 @@
         "audio": "2005-03-27.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -193,7 +194,7 @@
         "audio": "2005-04-03.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -212,7 +213,7 @@
         "audio": "2005-04-10.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -231,7 +232,7 @@
         "audio": "2005-04-17.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -250,7 +251,7 @@
         "audio": "2005-04-24.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -269,7 +270,7 @@
         "audio": "2005-05-01.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -288,7 +289,7 @@
         "audio": "2005-05-08.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -307,7 +308,7 @@
         "audio": "2005-05-22.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -364,7 +365,7 @@
         "audio": "2005-06-19.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -383,7 +384,7 @@
         "audio": "2005-07-03.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -402,7 +403,7 @@
         "audio": "2005-07-10.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -421,7 +422,7 @@
         "audio": "2005-07-17.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -440,7 +441,7 @@
         "audio": "2005-07-24.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -459,7 +460,7 @@
         "audio": "2005-08-07.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -478,7 +479,7 @@
         "audio": "2005-08-14.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -497,7 +498,7 @@
         "audio": "2005-08-21.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -516,7 +517,7 @@
         "audio": "2005-08-28.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -535,7 +536,7 @@
         "audio": "2005-09-04.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -554,7 +555,7 @@
         "audio": "2005-09-11.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -573,7 +574,7 @@
         "audio": "2005-09-18.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -592,7 +593,7 @@
         "audio": "2005-10-02.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -611,7 +612,7 @@
         "audio": "2005-10-09.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -630,7 +631,7 @@
         "audio": "2005-10-16.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -649,7 +650,7 @@
         "audio": "2005-10-23.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -668,7 +669,7 @@
         "audio": "2005-11-06.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -687,7 +688,7 @@
         "audio": "2005-11-13.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -706,7 +707,7 @@
         "audio": "2005-11-20.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -725,7 +726,7 @@
         "audio": "2005-12-04.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -741,11 +742,12 @@
       "fid": "121105/",
       "desc": "Discussion",
       "res": {
-        "audio": "2005-12-11.mp3"
+        "audio": "2005-12-11.mp3",
+        "timing": "121105.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -763,7 +765,7 @@
         "audio": "2005-12-18.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0

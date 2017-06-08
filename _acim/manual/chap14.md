@@ -1,5 +1,5 @@
 ---
-title: 14What is the Real Meaning of Sacrifice?
+title: What is the Real Meaning of Sacrifice?
 ---
 
 Although in truth the term sacrifice is altogether meaningless, it does

@@ -1,5 +1,5 @@
 ---
-title: 2Who Are God's Teachers?
+title: Who Are God's Teachers?
 ---
 
 A teacher of God is anyone who chooses to be one. His qualifications

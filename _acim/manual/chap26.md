@@ -1,5 +1,5 @@
 ---
-title: 26Are "Phychic" Powers Desirable?
+title: Are "Phychic" Powers Desirable?
 ---
 
 The answer to this question is much like the preceding one. There are,

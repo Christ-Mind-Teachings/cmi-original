@@ -435,11 +435,12 @@
       "fid": "071104/",
       "desc": "Discussion",
       "res": {
-        "audio": "2004-07-11.mp3"
+        "audio": "2004-07-11.mp3",
+        "timing": "071104.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -739,11 +740,12 @@
       "fid": "112104/",
       "desc": "T8.8 Healing as Corrected Perception",
       "res": {
-        "audio": "2004-11-21.mp3"
+        "audio": "2004-11-21.mp3",
+        "timing": "112104.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -758,11 +760,12 @@
       "fid": "112804/",
       "desc": "T8.8 Healing as Corrected Perception",
       "res": {
-        "audio": "2004-11-28.mp3"
+        "audio": "2004-11-28.mp3",
+        "timing": "112804.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

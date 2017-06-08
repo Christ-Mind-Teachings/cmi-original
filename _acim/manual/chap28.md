@@ -1,5 +1,5 @@
 ---
-title: 28What is Death?
+title: What is Death?
 ---
 
 Death is the central dream from which all illusions stem. Is it not

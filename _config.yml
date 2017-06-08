@@ -391,6 +391,26 @@ defaults:
       contents: nav/contents.html
 
   - scope:
+      path: "_acim/manual"
+      type: acim
+    values:
+      bid: manual
+      book: "ACIM Sparkly Edition: Manual"
+      burl: /acim/intro/manual/
+      nav: nav/np-data.html
+      contents: nav/contents.html
+
+  - scope:
+      path: "_acim/workbook"
+      type: acim
+    values:
+      bid: workbook
+      book: "ACIM Sparkly Edition: Workbook"
+      burl: /acim/intro/workbook/
+      nav: nav/np-data.html
+      contents: nav/contents.html
+
+  - scope:
       path: "_acim/text/01"
       type: acim
     values:
@@ -634,10 +654,14 @@ colors:
   orange:    '#fab125'
   turquoise: '#0fbfcf'
 
+# force inclusion of
+include: [_redirects]
+
 # Exclusions from the final site
 exclude: [
   #       _acim/text,
   #       _acim/manual,
+  #       _acim/workbook,
   #       _wom/woh,
   #       _wom/wot,
   #       _wom/wok,

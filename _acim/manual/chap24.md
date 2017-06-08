@@ -1,5 +1,5 @@
 ---
-title: 24Does Jesus Have a Special Place in Healing?
+title: Does Jesus Have a Special Place in Healing?
 ---
 
 God’s gifts can rarely be received directly. Even the most advanced of

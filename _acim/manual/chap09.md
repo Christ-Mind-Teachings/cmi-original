@@ -1,5 +1,5 @@
 ---
-title: 9How Can the Perception of Order of Difficulties be Avoided?
+title: How Can the Perception of Order of Difficulties be Avoided?
 ---
 
 The belief in order of difficulties is the basis for the world’s

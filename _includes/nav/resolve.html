@@ -53,6 +53,10 @@ for location page.bid declaration
     {% assign data = site.data.wom.wos %}
   {% when "questions" %}
     {% assign data = site.data.wom.questions %}
+  {% when "manual" %}
+    {% assign data = site.data.acim.manual %}
+  {% when "workbook" %}
+    {% assign data = site.data.acim.workbook %}
   {% when "atext" %}
     {% assign data = site.data.acim.chapters %}
   {% when "atext01" %}
