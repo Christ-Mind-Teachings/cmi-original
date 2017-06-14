@@ -10,11 +10,11 @@
       "url": "/acim/intro/workbook",
       "idx": 0,
       "next": "/acim/workbook/introp1/",
-      "prev": "/acim/workbook/l005/"
+      "prev": "/acim/workbook/l361/"
     },
     {
       "fid": "introp1/",
-      "title": "Part 1: Introduction",
+      "title": "Introduction to the Workbook",
       "url": "/acim/workbook/introp1/",
       "idx": 1,
       "next": "/acim/workbook/l001/",
@@ -62,8 +62,3432 @@
       "title": "I am never upset for the reason I think.",
       "url": "/acim/workbook/l005/",
       "idx": 6,
-      "next": "/acim/intro/workbook/",
+      "next": "/acim/workbook/l006/",
       "prev": "/acim/workbook/l004/"
+    },
+    {
+      "fid": "l006/",
+      "lesson": 6,
+      "title": "I am upset because I see something that is not there.",
+      "url": "/acim/workbook/l006/",
+      "idx": 7,
+      "next": "/acim/workbook/l007/",
+      "prev": "/acim/workbook/l005/"
+    },
+    {
+      "fid": "l007/",
+      "lesson": 7,
+      "title": "I see only the past.",
+      "url": "/acim/workbook/l007/",
+      "idx": 8,
+      "next": "/acim/workbook/l008/",
+      "prev": "/acim/workbook/l006/"
+    },
+    {
+      "fid": "l008/",
+      "lesson": 8,
+      "title": "My mind is preoccupied with past thoughts.",
+      "url": "/acim/workbook/l008/",
+      "idx": 9,
+      "next": "/acim/workbook/l009/",
+      "prev": "/acim/workbook/l007/"
+    },
+    {
+      "fid": "l009/",
+      "lesson": 9,
+      "title": "I see nothing as it is now.",
+      "url": "/acim/workbook/l009/",
+      "idx": 10,
+      "next": "/acim/workbook/l010/",
+      "prev": "/acim/workbook/l008/"
+    },
+    {
+      "fid": "l010/",
+      "lesson": 10,
+      "title": "My thoughts do not mean anything.",
+      "url": "/acim/workbook/l010/",
+      "idx": 11,
+      "next": "/acim/workbook/l011/",
+      "prev": "/acim/workbook/l009/"
+    },
+    {
+      "fid": "l011/",
+      "lesson": 11,
+      "title": "My meaningless thoughts are showing me a meaningless world.",
+      "url": "/acim/workbook/l011/",
+      "idx": 12,
+      "next": "/acim/workbook/l012/",
+      "prev": "/acim/workbook/l010/"
+    },
+    {
+      "fid": "l012/",
+      "lesson": 12,
+      "title": "I am upset because I see a meaningless world.",
+      "url": "/acim/workbook/l012/",
+      "idx": 13,
+      "next": "/acim/workbook/l013/",
+      "prev": "/acim/workbook/l011/"
+    },
+    {
+      "fid": "l013/",
+      "lesson": 13,
+      "title": "A meaningless world engenders fear.",
+      "url": "/acim/workbook/l013/",
+      "idx": 14,
+      "next": "/acim/workbook/l014/",
+      "prev": "/acim/workbook/l012/"
+    },
+    {
+      "fid": "l014/",
+      "lesson": 14,
+      "title": "God did not create a meaningless world",
+      "url": "/acim/workbook/l014/",
+      "idx": 15,
+      "next": "/acim/workbook/l015/",
+      "prev": "/acim/workbook/l013/"
+    },
+    {
+      "fid": "l015/",
+      "lesson": 15,
+      "title": "My thoughts are images which I have made.",
+      "url": "/acim/workbook/l015/",
+      "idx": 16,
+      "next": "/acim/workbook/l016/",
+      "prev": "/acim/workbook/l014/"
+    },
+    {
+      "fid": "l016/",
+      "lesson": 16,
+      "title": "I have no neutral thoughts.",
+      "url": "/acim/workbook/l016/",
+      "idx": 17,
+      "next": "/acim/workbook/l017/",
+      "prev": "/acim/workbook/l015/"
+    },
+    {
+      "fid": "l017/",
+      "lesson": 17,
+      "title": "I see no neutral things.",
+      "url": "/acim/workbook/l017/",
+      "idx": 18,
+      "next": "/acim/workbook/l018/",
+      "prev": "/acim/workbook/l016/"
+    },
+    {
+      "fid": "l018/",
+      "lesson": 18,
+      "title": "I am not alone in experiencing the effects of my seeing.",
+      "url": "/acim/workbook/l018/",
+      "idx": 19,
+      "next": "/acim/workbook/l019/",
+      "prev": "/acim/workbook/l017/"
+    },
+    {
+      "fid": "l019/",
+      "lesson": 19,
+      "title": "I am not alone in experiencing the effects of my thoughts.",
+      "url": "/acim/workbook/l019/",
+      "idx": 20,
+      "next": "/acim/workbook/l020/",
+      "prev": "/acim/workbook/l018/"
+    },
+    {
+      "fid": "l020/",
+      "lesson": 20,
+      "title": "I am determined to see.",
+      "url": "/acim/workbook/l020/",
+      "idx": 21,
+      "next": "/acim/workbook/l021/",
+      "prev": "/acim/workbook/l019/"
+    },
+    {
+      "fid": "l021/",
+      "lesson": 21,
+      "title": "I am determined to see things differently.",
+      "url": "/acim/workbook/l021/",
+      "idx": 22,
+      "next": "/acim/workbook/l022/",
+      "prev": "/acim/workbook/l020/"
+    },
+    {
+      "fid": "l022/",
+      "lesson": 22,
+      "title": "What I see is a form of vengeance.",
+      "url": "/acim/workbook/l022/",
+      "idx": 23,
+      "next": "/acim/workbook/l023/",
+      "prev": "/acim/workbook/l021/"
+    },
+    {
+      "fid": "l023/",
+      "lesson": 23,
+      "title": "I can escape from the world I see by giving up attack thoughts.",
+      "url": "/acim/workbook/l023/",
+      "idx": 24,
+      "next": "/acim/workbook/l024/",
+      "prev": "/acim/workbook/l022/"
+    },
+    {
+      "fid": "l024/",
+      "lesson": 24,
+      "title": "I do not perceive my own best interests.",
+      "url": "/acim/workbook/l024/",
+      "idx": 25,
+      "next": "/acim/workbook/l025/",
+      "prev": "/acim/workbook/l023/"
+    },
+    {
+      "fid": "l025/",
+      "lesson": 25,
+      "title": "I do not know what anything is for.",
+      "url": "/acim/workbook/l025/",
+      "idx": 26,
+      "next": "/acim/workbook/l026/",
+      "prev": "/acim/workbook/l024/"
+    },
+    {
+      "fid": "l026/",
+      "lesson": 26,
+      "title": "My attack thoughts are attacking my invulnerability.",
+      "url": "/acim/workbook/l026/",
+      "idx": 27,
+      "next": "/acim/workbook/l027/",
+      "prev": "/acim/workbook/l025/"
+    },
+    {
+      "fid": "l027/",
+      "lesson": 27,
+      "title": "Above all else I want to see.",
+      "url": "/acim/workbook/l027/",
+      "idx": 28,
+      "next": "/acim/workbook/l028/",
+      "prev": "/acim/workbook/l026/"
+    },
+    {
+      "fid": "l028/",
+      "lesson": 28,
+      "title": "Above all else I want to see things differently.",
+      "url": "/acim/workbook/l028/",
+      "idx": 29,
+      "next": "/acim/workbook/l029/",
+      "prev": "/acim/workbook/l027/"
+    },
+    {
+      "fid": "l029/",
+      "lesson": 29,
+      "title": "God is in everything I see.",
+      "url": "/acim/workbook/l029/",
+      "idx": 30,
+      "next": "/acim/workbook/l030/",
+      "prev": "/acim/workbook/l028/"
+    },
+    {
+      "fid": "l030/",
+      "lesson": 30,
+      "title": "God is in everything I see because God is in my mind.",
+      "url": "/acim/workbook/l030/",
+      "idx": 31,
+      "next": "/acim/workbook/l031/",
+      "prev": "/acim/workbook/l029/"
+    },
+    {
+      "fid": "l031/",
+      "lesson": 31,
+      "title": "I am not the victim of the world I see.",
+      "url": "/acim/workbook/l031/",
+      "idx": 32,
+      "next": "/acim/workbook/l032/",
+      "prev": "/acim/workbook/l030/"
+    },
+    {
+      "fid": "l032/",
+      "lesson": 32,
+      "title": "I have invented the world I see.",
+      "url": "/acim/workbook/l032/",
+      "idx": 33,
+      "next": "/acim/workbook/l033/",
+      "prev": "/acim/workbook/l031/"
+    },
+    {
+      "fid": "l033/",
+      "lesson": 33,
+      "title": "There is another way of looking at the world.",
+      "url": "/acim/workbook/l033/",
+      "idx": 34,
+      "next": "/acim/workbook/l034/",
+      "prev": "/acim/workbook/l032/"
+    },
+    {
+      "fid": "l034/",
+      "lesson": 34,
+      "title": "I could see peace instead of this.",
+      "url": "/acim/workbook/l034/",
+      "idx": 35,
+      "next": "/acim/workbook/l035/",
+      "prev": "/acim/workbook/l033/"
+    },
+    {
+      "fid": "l035/",
+      "lesson": 35,
+      "title": "My mind is part of God’s. I am very holy.",
+      "url": "/acim/workbook/l035/",
+      "idx": 36,
+      "next": "/acim/workbook/l036/",
+      "prev": "/acim/workbook/l034/"
+    },
+    {
+      "fid": "l036/",
+      "lesson": 36,
+      "title": "My holiness envelops everything I see.",
+      "url": "/acim/workbook/l036/",
+      "idx": 37,
+      "next": "/acim/workbook/l037/",
+      "prev": "/acim/workbook/l035/"
+    },
+    {
+      "fid": "l037/",
+      "lesson": 37,
+      "title": "My holiness blesses the world.",
+      "url": "/acim/workbook/l037/",
+      "idx": 38,
+      "next": "/acim/workbook/l038/",
+      "prev": "/acim/workbook/l036/"
+    },
+    {
+      "fid": "l038/",
+      "lesson": 38,
+      "title": "There is nothing my holiness cannot do.",
+      "url": "/acim/workbook/l038/",
+      "idx": 39,
+      "next": "/acim/workbook/l039/",
+      "prev": "/acim/workbook/l037/"
+    },
+    {
+      "fid": "l039/",
+      "lesson": 39,
+      "title": "My holiness is my salvation.",
+      "url": "/acim/workbook/l039/",
+      "idx": 40,
+      "next": "/acim/workbook/l040/",
+      "prev": "/acim/workbook/l038/"
+    },
+    {
+      "fid": "l040/",
+      "lesson": 40,
+      "title": "I am blessed as a Son of God.",
+      "url": "/acim/workbook/l040/",
+      "idx": 41,
+      "next": "/acim/workbook/l041/",
+      "prev": "/acim/workbook/l039/"
+    },
+    {
+      "fid": "l041/",
+      "lesson": 41,
+      "title": "God goes with me wherever I go.",
+      "url": "/acim/workbook/l041/",
+      "idx": 42,
+      "next": "/acim/workbook/l042/",
+      "prev": "/acim/workbook/l040/"
+    },
+    {
+      "fid": "l042/",
+      "lesson": 42,
+      "title": "God is my strength. Vision is His gift.",
+      "url": "/acim/workbook/l042/",
+      "idx": 43,
+      "next": "/acim/workbook/l043/",
+      "prev": "/acim/workbook/l041/"
+    },
+    {
+      "fid": "l043/",
+      "lesson": 43,
+      "title": "God is my Source. I cannot see apart from Him.",
+      "url": "/acim/workbook/l043/",
+      "idx": 44,
+      "next": "/acim/workbook/l044/",
+      "prev": "/acim/workbook/l042/"
+    },
+    {
+      "fid": "l044/",
+      "lesson": 44,
+      "title": "God is the Light in which I see.",
+      "url": "/acim/workbook/l044/",
+      "idx": 45,
+      "next": "/acim/workbook/l045/",
+      "prev": "/acim/workbook/l043/"
+    },
+    {
+      "fid": "l045/",
+      "lesson": 45,
+      "title": "God is the Mind with which I think.",
+      "url": "/acim/workbook/l045/",
+      "idx": 46,
+      "next": "/acim/workbook/l046/",
+      "prev": "/acim/workbook/l044/"
+    },
+    {
+      "fid": "l046/",
+      "lesson": 46,
+      "title": "God is the Love in which I forgive.",
+      "url": "/acim/workbook/l046/",
+      "idx": 47,
+      "next": "/acim/workbook/l047/",
+      "prev": "/acim/workbook/l045/"
+    },
+    {
+      "fid": "l047/",
+      "lesson": 47,
+      "title": "God is the Strength in which I trust.",
+      "url": "/acim/workbook/l047/",
+      "idx": 48,
+      "next": "/acim/workbook/l048/",
+      "prev": "/acim/workbook/l046/"
+    },
+    {
+      "fid": "l048/",
+      "lesson": 48,
+      "title": "There is nothing to fear.",
+      "url": "/acim/workbook/l048/",
+      "idx": 49,
+      "next": "/acim/workbook/l049/",
+      "prev": "/acim/workbook/l047/"
+    },
+    {
+      "fid": "l049/",
+      "lesson": 49,
+      "title": "God’s Voice speaks to me all through the day.",
+      "url": "/acim/workbook/l049/",
+      "idx": 50,
+      "next": "/acim/workbook/l050/",
+      "prev": "/acim/workbook/l048/"
+    },
+    {
+      "fid": "l050/",
+      "lesson": 50,
+      "title": "I am sustained by the Love of God.",
+      "url": "/acim/workbook/l050/",
+      "idx": 51,
+      "next": "/acim/workbook/review1/",
+      "prev": "/acim/workbook/l049/"
+    },
+    {
+      "fid": "review1/",
+      "title": "Review I Introduction",
+      "url": "/acim/workbook/review1/",
+      "idx": 52,
+      "next": "/acim/workbook/l051/",
+      "prev": "/acim/workbook/l050/"
+    },
+    {
+      "fid": "l051/",
+      "lesson": 51,
+      "title": "Review 1 - 5",
+      "url": "/acim/workbook/l051/",
+      "idx": 53,
+      "next": "/acim/workbook/l052/",
+      "prev": "/acim/workbook/review1/"
+    },
+    {
+      "fid": "l052/",
+      "lesson": 52,
+      "title": "Review 6 - 10",
+      "url": "/acim/workbook/l052/",
+      "idx": 54,
+      "next": "/acim/workbook/l053/",
+      "prev": "/acim/workbook/l051/"
+    },
+    {
+      "fid": "l053/",
+      "lesson": 53,
+      "title": "Review 11 - 15",
+      "url": "/acim/workbook/l053/",
+      "idx": 55,
+      "next": "/acim/workbook/l054/",
+      "prev": "/acim/workbook/l052/"
+    },
+    {
+      "fid": "l054/",
+      "lesson": 54,
+      "title": "Review 16 - 20",
+      "url": "/acim/workbook/l054/",
+      "idx": 56,
+      "next": "/acim/workbook/l055/",
+      "prev": "/acim/workbook/l053/"
+    },
+    {
+      "fid": "l055/",
+      "lesson": 55,
+      "title": "Review 21 - 25",
+      "url": "/acim/workbook/l055/",
+      "idx": 57,
+      "next": "/acim/workbook/l056/",
+      "prev": "/acim/workbook/l054/"
+    },
+    {
+      "fid": "l056/",
+      "lesson": 56,
+      "title": "Review 26 - 30",
+      "url": "/acim/workbook/l056/",
+      "idx": 58,
+      "next": "/acim/workbook/l057/",
+      "prev": "/acim/workbook/l055/"
+    },
+    {
+      "fid": "l057/",
+      "lesson": 57,
+      "title": "Review 31 - 35",
+      "url": "/acim/workbook/l057/",
+      "idx": 59,
+      "next": "/acim/workbook/l058/",
+      "prev": "/acim/workbook/l056/"
+    },
+    {
+      "fid": "l058/",
+      "lesson": 58,
+      "title": "Review 36 - 40",
+      "url": "/acim/workbook/l058/",
+      "idx": 60,
+      "next": "/acim/workbook/l059/",
+      "prev": "/acim/workbook/l057/"
+    },
+    {
+      "fid": "l059/",
+      "lesson": 59,
+      "title": "Review 41 - 45",
+      "url": "/acim/workbook/l059/",
+      "idx": 61,
+      "next": "/acim/workbook/l060/",
+      "prev": "/acim/workbook/l058/"
+    },
+    {
+      "fid": "l060/",
+      "lesson": 60,
+      "title": "Review 46 - 50",
+      "url": "/acim/workbook/l060/",
+      "idx": 62,
+      "next": "/acim/workbook/l061/",
+      "prev": "/acim/workbook/l059/"
+    },
+    {
+      "fid": "l061/",
+      "lesson": 61,
+      "title": "I am the light of the world.",
+      "url": "/acim/workbook/l061/",
+      "idx": 63,
+      "next": "/acim/workbook/l062/",
+      "prev": "/acim/workbook/l060/"
+    },
+    {
+      "fid": "l062/",
+      "lesson": 62,
+      "title": "Forgiveness is my function as the light of the world.",
+      "url": "/acim/workbook/l062/",
+      "idx": 64,
+      "next": "/acim/workbook/l063/",
+      "prev": "/acim/workbook/l061/"
+    },
+    {
+      "fid": "l063/",
+      "lesson": 63,
+      "title": "The light of the world brings peace to every mind through my forgiveness.",
+      "url": "/acim/workbook/l063/",
+      "idx": 65,
+      "next": "/acim/workbook/l064/",
+      "prev": "/acim/workbook/l062/"
+    },
+    {
+      "fid": "l064/",
+      "lesson": 64,
+      "title": "Let me not forget my function.",
+      "url": "/acim/workbook/l064/",
+      "idx": 66,
+      "next": "/acim/workbook/l065/",
+      "prev": "/acim/workbook/l063/"
+    },
+    {
+      "fid": "l065/",
+      "lesson": 65,
+      "title": "My only function is the one God gave me.",
+      "url": "/acim/workbook/l065/",
+      "idx": 67,
+      "next": "/acim/workbook/l066/",
+      "prev": "/acim/workbook/l064/"
+    },
+    {
+      "fid": "l066/",
+      "lesson": 66,
+      "title": "My happiness and my function are one.",
+      "url": "/acim/workbook/l066/",
+      "idx": 68,
+      "next": "/acim/workbook/l067/",
+      "prev": "/acim/workbook/l065/"
+    },
+    {
+      "fid": "l067/",
+      "lesson": 67,
+      "title": "Love created me like Itself.",
+      "url": "/acim/workbook/l067/",
+      "idx": 69,
+      "next": "/acim/workbook/l068/",
+      "prev": "/acim/workbook/l066/"
+    },
+    {
+      "fid": "l068/",
+      "lesson": 68,
+      "title": "Love holds no grievances.",
+      "url": "/acim/workbook/l068/",
+      "idx": 70,
+      "next": "/acim/workbook/l069/",
+      "prev": "/acim/workbook/l067/"
+    },
+    {
+      "fid": "l069/",
+      "lesson": 69,
+      "title": "My grievances hide the light of the world in me.",
+      "url": "/acim/workbook/l069/",
+      "idx": 71,
+      "next": "/acim/workbook/l070/",
+      "prev": "/acim/workbook/l068/"
+    },
+    {
+      "fid": "l070/",
+      "lesson": 70,
+      "title": "My salvation comes from me.",
+      "url": "/acim/workbook/l070/",
+      "idx": 72,
+      "next": "/acim/workbook/l071/",
+      "prev": "/acim/workbook/l069/"
+    },
+    {
+      "fid": "l071/",
+      "lesson": 71,
+      "title": "Only God’s plan for salvation will work.",
+      "url": "/acim/workbook/l071/",
+      "idx": 73,
+      "next": "/acim/workbook/l072/",
+      "prev": "/acim/workbook/l070/"
+    },
+    {
+      "fid": "l072/",
+      "lesson": 72,
+      "title": "Holding grievances is an attack on God’s plan for salvation.",
+      "url": "/acim/workbook/l072/",
+      "idx": 74,
+      "next": "/acim/workbook/l073/",
+      "prev": "/acim/workbook/l071/"
+    },
+    {
+      "fid": "l073/",
+      "lesson": 73,
+      "title": "I will there be light.",
+      "url": "/acim/workbook/l073/",
+      "idx": 75,
+      "next": "/acim/workbook/l074/",
+      "prev": "/acim/workbook/l072/"
+    },
+    {
+      "fid": "l074/",
+      "lesson": 74,
+      "title": "There is no will but God’s.",
+      "url": "/acim/workbook/l074/",
+      "idx": 76,
+      "next": "/acim/workbook/l075/",
+      "prev": "/acim/workbook/l073/"
+    },
+    {
+      "fid": "l075/",
+      "lesson": 75,
+      "title": "The light has come.",
+      "url": "/acim/workbook/l075/",
+      "idx": 77,
+      "next": "/acim/workbook/l076/",
+      "prev": "/acim/workbook/l074/"
+    },
+    {
+      "fid": "l076/",
+      "lesson": 76,
+      "title": "I am under no laws but God’s.",
+      "url": "/acim/workbook/l076/",
+      "idx": 78,
+      "next": "/acim/workbook/l077/",
+      "prev": "/acim/workbook/l075/"
+    },
+    {
+      "fid": "l077/",
+      "lesson": 77,
+      "title": "I am entitled to miracles.",
+      "url": "/acim/workbook/l077/",
+      "idx": 79,
+      "next": "/acim/workbook/l078/",
+      "prev": "/acim/workbook/l076/"
+    },
+    {
+      "fid": "l078/",
+      "lesson": 78,
+      "title": "Let miracles replace all grievances.",
+      "url": "/acim/workbook/l078/",
+      "idx": 80,
+      "next": "/acim/workbook/l079/",
+      "prev": "/acim/workbook/l077/"
+    },
+    {
+      "fid": "l079/",
+      "lesson": 79,
+      "title": "Let me recognize the problem so it can be solved.",
+      "url": "/acim/workbook/l079/",
+      "idx": 81,
+      "next": "/acim/workbook/l080/",
+      "prev": "/acim/workbook/l078/"
+    },
+    {
+      "fid": "l080/",
+      "lesson": 80,
+      "title": "Let me recognize my problems have been solved.",
+      "url": "/acim/workbook/l080/",
+      "idx": 82,
+      "next": "/acim/workbook/review2/",
+      "prev": "/acim/workbook/l079/"
+    },
+    {
+      "fid": "review2/",
+      "title": "Review II Introduction",
+      "url": "/acim/workbook/review2/",
+      "idx": 83,
+      "next": "/acim/workbook/l081/",
+      "prev": "/acim/workbook/l080/"
+    },
+    {
+      "fid": "l081/",
+      "lesson": 81,
+      "title": "Review 61 - 62",
+      "url": "/acim/workbook/l081/",
+      "idx": 84,
+      "next": "/acim/workbook/l082/",
+      "prev": "/acim/workbook/review2/"
+    },
+    {
+      "fid": "l082/",
+      "lesson": 82,
+      "title": "Review 63 - 64",
+      "url": "/acim/workbook/l082/",
+      "idx": 85,
+      "next": "/acim/workbook/l083/",
+      "prev": "/acim/workbook/l081/"
+    },
+    {
+      "fid": "l083/",
+      "lesson": 83,
+      "title": "Review 65 - 66",
+      "url": "/acim/workbook/l083/",
+      "idx": 86,
+      "next": "/acim/workbook/l084/",
+      "prev": "/acim/workbook/l082/"
+    },
+    {
+      "fid": "l084/",
+      "lesson": 84,
+      "title": "Review 67 - 68",
+      "url": "/acim/workbook/l084/",
+      "idx": 87,
+      "next": "/acim/workbook/l085/",
+      "prev": "/acim/workbook/l083/"
+    },
+    {
+      "fid": "l085/",
+      "lesson": 85,
+      "title": "Review 69 - 70",
+      "url": "/acim/workbook/l085/",
+      "idx": 88,
+      "next": "/acim/workbook/l086/",
+      "prev": "/acim/workbook/l084/"
+    },
+    {
+      "fid": "l086/",
+      "lesson": 86,
+      "title": "Review 71 - 72",
+      "url": "/acim/workbook/l086/",
+      "idx": 89,
+      "next": "/acim/workbook/l087/",
+      "prev": "/acim/workbook/l085/"
+    },
+    {
+      "fid": "l087/",
+      "lesson": 87,
+      "title": "Review 73 - 74",
+      "url": "/acim/workbook/l087/",
+      "idx": 90,
+      "next": "/acim/workbook/l088/",
+      "prev": "/acim/workbook/l086/"
+    },
+    {
+      "fid": "l088/",
+      "lesson": 88,
+      "title": "Review 75 - 76",
+      "url": "/acim/workbook/l088/",
+      "idx": 91,
+      "next": "/acim/workbook/l089/",
+      "prev": "/acim/workbook/l087/"
+    },
+    {
+      "fid": "l089/",
+      "lesson": 89,
+      "title": "Review 77 - 78",
+      "url": "/acim/workbook/l089/",
+      "idx": 92,
+      "next": "/acim/workbook/l090/",
+      "prev": "/acim/workbook/l088/"
+    },
+    {
+      "fid": "l090/",
+      "lesson": 90,
+      "title": "Review 79 - 80",
+      "url": "/acim/workbook/l090/",
+      "idx": 93,
+      "next": "/acim/workbook/l091/",
+      "prev": "/acim/workbook/l089/"
+    },
+    {
+      "fid": "l091/",
+      "lesson": 91,
+      "title": "Miracles are seen in light.",
+      "url": "/acim/workbook/l091/",
+      "idx": 94,
+      "next": "/acim/workbook/l092/",
+      "prev": "/acim/workbook/l090/"
+    },
+    {
+      "fid": "l092/",
+      "lesson": 92,
+      "title": "Miracles are seen in light, and light and strength are one.",
+      "url": "/acim/workbook/l092/",
+      "idx": 95,
+      "next": "/acim/workbook/l093/",
+      "prev": "/acim/workbook/l091/"
+    },
+    {
+      "fid": "l093/",
+      "lesson": 93,
+      "title": "Light and joy and peace abide in me.",
+      "url": "/acim/workbook/l093/",
+      "idx": 96,
+      "next": "/acim/workbook/l094/",
+      "prev": "/acim/workbook/l092/"
+    },
+    {
+      "fid": "l094/",
+      "lesson": 94,
+      "title": "I am as God created me.",
+      "url": "/acim/workbook/l094/",
+      "idx": 97,
+      "next": "/acim/workbook/l095/",
+      "prev": "/acim/workbook/l093/"
+    },
+    {
+      "fid": "l095/",
+      "lesson": 95,
+      "title": "I am One Self, united with my Creator.",
+      "url": "/acim/workbook/l095/",
+      "idx": 98,
+      "next": "/acim/workbook/l096/",
+      "prev": "/acim/workbook/l094/"
+    },
+    {
+      "fid": "l096/",
+      "lesson": 96,
+      "title": "Salvation comes from my One Self.",
+      "url": "/acim/workbook/l096/",
+      "idx": 99,
+      "next": "/acim/workbook/l097/",
+      "prev": "/acim/workbook/l095/"
+    },
+    {
+      "fid": "l097/",
+      "lesson": 97,
+      "title": "I am Spirit.",
+      "url": "/acim/workbook/l097/",
+      "idx": 100,
+      "next": "/acim/workbook/l098/",
+      "prev": "/acim/workbook/l096/"
+    },
+    {
+      "fid": "l098/",
+      "lesson": 98,
+      "title": "I will accept my part in God’s plan for salvation.",
+      "url": "/acim/workbook/l098/",
+      "idx": 101,
+      "next": "/acim/workbook/l099/",
+      "prev": "/acim/workbook/l097/"
+    },
+    {
+      "fid": "l099/",
+      "lesson": 99,
+      "title": "Salvation is my only function here.",
+      "url": "/acim/workbook/l099/",
+      "idx": 102,
+      "next": "/acim/workbook/l100/",
+      "prev": "/acim/workbook/l098/"
+    },
+    {
+      "fid": "l100/",
+      "lesson": 100,
+      "title": "My part is essential to God’s plan for salvation.",
+      "url": "/acim/workbook/l100/",
+      "idx": 103,
+      "next": "/acim/workbook/l101/",
+      "prev": "/acim/workbook/l099/"
+    },
+    {
+      "fid": "l101/",
+      "lesson": 101,
+      "title": "God’s Will for me is perfect happiness.",
+      "url": "/acim/workbook/l101/",
+      "idx": 104,
+      "next": "/acim/workbook/l102/",
+      "prev": "/acim/workbook/l100/"
+    },
+    {
+      "fid": "l102/",
+      "lesson": 102,
+      "title": "I share God’s Will for happiness for me.",
+      "url": "/acim/workbook/l102/",
+      "idx": 105,
+      "next": "/acim/workbook/l103/",
+      "prev": "/acim/workbook/l101/"
+    },
+    {
+      "fid": "l103/",
+      "lesson": 103,
+      "title": "God, being Love, is also happiness.",
+      "url": "/acim/workbook/l103/",
+      "idx": 106,
+      "next": "/acim/workbook/l104/",
+      "prev": "/acim/workbook/l102/"
+    },
+    {
+      "fid": "l104/",
+      "lesson": 104,
+      "title": "I seek but what belongs to me in truth.",
+      "url": "/acim/workbook/l104/",
+      "idx": 107,
+      "next": "/acim/workbook/l105/",
+      "prev": "/acim/workbook/l103/"
+    },
+    {
+      "fid": "l105/",
+      "lesson": 105,
+      "title": "God’s peace and joy are mine.",
+      "url": "/acim/workbook/l105/",
+      "idx": 108,
+      "next": "/acim/workbook/l106/",
+      "prev": "/acim/workbook/l104/"
+    },
+    {
+      "fid": "l106/",
+      "lesson": 106,
+      "title": "Let me be still and listen to the truth.",
+      "url": "/acim/workbook/l106/",
+      "idx": 109,
+      "next": "/acim/workbook/l107/",
+      "prev": "/acim/workbook/l105/"
+    },
+    {
+      "fid": "l107/",
+      "lesson": 107,
+      "title": "Truth will correct all errors in my mind.",
+      "url": "/acim/workbook/l107/",
+      "idx": 110,
+      "next": "/acim/workbook/l108/",
+      "prev": "/acim/workbook/l106/"
+    },
+    {
+      "fid": "l108/",
+      "lesson": 108,
+      "title": "To give and to receive are one in truth.",
+      "url": "/acim/workbook/l108/",
+      "idx": 111,
+      "next": "/acim/workbook/l109/",
+      "prev": "/acim/workbook/l107/"
+    },
+    {
+      "fid": "l109/",
+      "lesson": 109,
+      "title": "I rest in God.",
+      "url": "/acim/workbook/l109/",
+      "idx": 112,
+      "next": "/acim/workbook/l110/",
+      "prev": "/acim/workbook/l108/"
+    },
+    {
+      "fid": "l110/",
+      "lesson": 110,
+      "title": "I am as God created me.",
+      "url": "/acim/workbook/l110/",
+      "idx": 113,
+      "next": "/acim/workbook/review3/",
+      "prev": "/acim/workbook/l109/"
+    },
+    {
+      "fid": "review3/",
+      "title": "Review III Introduction",
+      "url": "/acim/workbook/review3/",
+      "idx": 114,
+      "next": "/acim/workbook/l111/",
+      "prev": "/acim/workbook/l110/"
+    },
+    {
+      "fid": "l111/",
+      "lesson": 111,
+      "title": "Review 91 - 92",
+      "url": "/acim/workbook/l111/",
+      "idx": 115,
+      "next": "/acim/workbook/l112/",
+      "prev": "/acim/workbook/review3/"
+    },
+    {
+      "fid": "l112/",
+      "lesson": 112,
+      "title": "Review 93 - 94",
+      "url": "/acim/workbook/l112/",
+      "idx": 116,
+      "next": "/acim/workbook/l113/",
+      "prev": "/acim/workbook/l111/"
+    },
+    {
+      "fid": "l113/",
+      "lesson": 113,
+      "title": "Review 95 - 96",
+      "url": "/acim/workbook/l113/",
+      "idx": 117,
+      "next": "/acim/workbook/l114/",
+      "prev": "/acim/workbook/l112/"
+    },
+    {
+      "fid": "l114/",
+      "lesson": 114,
+      "title": "Review 97 - 98",
+      "url": "/acim/workbook/l114/",
+      "idx": 118,
+      "next": "/acim/workbook/l115/",
+      "prev": "/acim/workbook/l113/"
+    },
+    {
+      "fid": "l115/",
+      "lesson": 115,
+      "title": "Review 99 - 100",
+      "url": "/acim/workbook/l115/",
+      "idx": 119,
+      "next": "/acim/workbook/l116/",
+      "prev": "/acim/workbook/l114/"
+    },
+    {
+      "fid": "l116/",
+      "lesson": 116,
+      "title": "Review 101 - 102",
+      "url": "/acim/workbook/l116/",
+      "idx": 120,
+      "next": "/acim/workbook/l117/",
+      "prev": "/acim/workbook/l115/"
+    },
+    {
+      "fid": "l117/",
+      "lesson": 117,
+      "title": "Review 103 - 104",
+      "url": "/acim/workbook/l117/",
+      "idx": 121,
+      "next": "/acim/workbook/l118/",
+      "prev": "/acim/workbook/l116/"
+    },
+    {
+      "fid": "l118/",
+      "lesson": 118,
+      "title": "Review 105 - 106",
+      "url": "/acim/workbook/l118/",
+      "idx": 122,
+      "next": "/acim/workbook/l119/",
+      "prev": "/acim/workbook/l117/"
+    },
+    {
+      "fid": "l119/",
+      "lesson": 119,
+      "title": "Review 107 - 108",
+      "url": "/acim/workbook/l119/",
+      "idx": 123,
+      "next": "/acim/workbook/l120/",
+      "prev": "/acim/workbook/l118/"
+    },
+    {
+      "fid": "l120/",
+      "lesson": 120,
+      "title": "Review 109 - 110",
+      "url": "/acim/workbook/l120/",
+      "idx": 124,
+      "next": "/acim/workbook/l121/",
+      "prev": "/acim/workbook/l119/"
+    },
+    {
+      "fid": "l121/",
+      "lesson": 121,
+      "title": "Forgiveness is the key to happiness.",
+      "url": "/acim/workbook/l121/",
+      "idx": 125,
+      "next": "/acim/workbook/l122/",
+      "prev": "/acim/workbook/l120/"
+    },
+    {
+      "fid": "l122/",
+      "lesson": 122,
+      "title": "Forgiveness offers everything I want.",
+      "url": "/acim/workbook/l122/",
+      "idx": 126,
+      "next": "/acim/workbook/l123/",
+      "prev": "/acim/workbook/l121/"
+    },
+    {
+      "fid": "l123/",
+      "lesson": 123,
+      "title": "I thank my Father for His gifts to me.",
+      "url": "/acim/workbook/l123/",
+      "idx": 127,
+      "next": "/acim/workbook/l124/",
+      "prev": "/acim/workbook/l122/"
+    },
+    {
+      "fid": "l124/",
+      "lesson": 124,
+      "title": "Let me remember I am one with God.",
+      "url": "/acim/workbook/l124/",
+      "idx": 128,
+      "next": "/acim/workbook/l125/",
+      "prev": "/acim/workbook/l123/"
+    },
+    {
+      "fid": "l125/",
+      "lesson": 125,
+      "title": "In quiet I receive God’s Word today.",
+      "url": "/acim/workbook/l125/",
+      "idx": 129,
+      "next": "/acim/workbook/l126/",
+      "prev": "/acim/workbook/l124/"
+    },
+    {
+      "fid": "l126/",
+      "lesson": 126,
+      "title": "All that I give is given to myself.",
+      "url": "/acim/workbook/l126/",
+      "idx": 130,
+      "next": "/acim/workbook/l127/",
+      "prev": "/acim/workbook/l125/"
+    },
+    {
+      "fid": "l127/",
+      "lesson": 127,
+      "title": "There is no love but God’s.",
+      "url": "/acim/workbook/l127/",
+      "idx": 131,
+      "next": "/acim/workbook/l128/",
+      "prev": "/acim/workbook/l126/"
+    },
+    {
+      "fid": "l128/",
+      "lesson": 128,
+      "title": "There is no love but God’s.",
+      "url": "/acim/workbook/l128/",
+      "idx": 132,
+      "next": "/acim/workbook/l129/",
+      "prev": "/acim/workbook/l127/"
+    },
+    {
+      "fid": "l129/",
+      "lesson": 129,
+      "title": "Beyond this world there is a world I want.",
+      "url": "/acim/workbook/l129/",
+      "idx": 133,
+      "next": "/acim/workbook/l130/",
+      "prev": "/acim/workbook/l128/"
+    },
+    {
+      "fid": "l130/",
+      "lesson": 130,
+      "title": "It is impossible to see two worlds.",
+      "url": "/acim/workbook/l130/",
+      "idx": 134,
+      "next": "/acim/workbook/l131/",
+      "prev": "/acim/workbook/l129/"
+    },
+    {
+      "fid": "l131/",
+      "lesson": 131,
+      "title": "It is impossible to see two worlds.",
+      "url": "/acim/workbook/l131/",
+      "idx": 135,
+      "next": "/acim/workbook/l132/",
+      "prev": "/acim/workbook/l130/"
+    },
+    {
+      "fid": "l132/",
+      "lesson": 132,
+      "title": "I loose the world from all I thought it was.",
+      "url": "/acim/workbook/l132/",
+      "idx": 136,
+      "next": "/acim/workbook/l133/",
+      "prev": "/acim/workbook/l131/"
+    },
+    {
+      "fid": "l133/",
+      "lesson": 133,
+      "title": "I will not value what is valueless.",
+      "url": "/acim/workbook/l133/",
+      "idx": 137,
+      "next": "/acim/workbook/l134/",
+      "prev": "/acim/workbook/l132/"
+    },
+    {
+      "fid": "l134/",
+      "lesson": 134,
+      "title": "Let me perceive forgiveness as it is.",
+      "url": "/acim/workbook/l134/",
+      "idx": 138,
+      "next": "/acim/workbook/l135/",
+      "prev": "/acim/workbook/l133/"
+    },
+    {
+      "fid": "l135/",
+      "lesson": 135,
+      "title": "If I defend myself I am attacked.",
+      "url": "/acim/workbook/l135/",
+      "idx": 139,
+      "next": "/acim/workbook/l136/",
+      "prev": "/acim/workbook/l134/"
+    },
+    {
+      "fid": "l136/",
+      "lesson": 136,
+      "title": "Sickness is a defense against the truth.",
+      "url": "/acim/workbook/l136/",
+      "idx": 140,
+      "next": "/acim/workbook/l137/",
+      "prev": "/acim/workbook/l135/"
+    },
+    {
+      "fid": "l137/",
+      "lesson": 137,
+      "title": "When I am healed I am not healed alone.",
+      "url": "/acim/workbook/l137/",
+      "idx": 141,
+      "next": "/acim/workbook/l138/",
+      "prev": "/acim/workbook/l136/"
+    },
+    {
+      "fid": "l138/",
+      "lesson": 138,
+      "title": "Heaven is the decision I must make.",
+      "url": "/acim/workbook/l138/",
+      "idx": 142,
+      "next": "/acim/workbook/l139/",
+      "prev": "/acim/workbook/l137/"
+    },
+    {
+      "fid": "l139/",
+      "lesson": 139,
+      "title": "I will accept Atonement for myself.",
+      "url": "/acim/workbook/l139/",
+      "idx": 143,
+      "next": "/acim/workbook/l140/",
+      "prev": "/acim/workbook/l138/"
+    },
+    {
+      "fid": "l140/",
+      "lesson": 140,
+      "title": "Only salvation can be said to cure.",
+      "url": "/acim/workbook/l140/",
+      "idx": 144,
+      "next": "/acim/workbook/review4/",
+      "prev": "/acim/workbook/l139/"
+    },
+    {
+      "fid": "review4/",
+      "title": "Introduction",
+      "url": "/acim/workbook/review4/",
+      "idx": 145,
+      "next": "/acim/workbook/l141/",
+      "prev": "/acim/workbook/l140/"
+    },
+    {
+      "fid": "l141/",
+      "lesson": 141,
+      "title": "Review 121 - 122",
+      "url": "/acim/workbook/l141/",
+      "idx": 146,
+      "next": "/acim/workbook/l142/",
+      "prev": "/acim/workbook/review4/"
+    },
+    {
+      "fid": "l142/",
+      "lesson": 142,
+      "title": "Review 123 - 124",
+      "url": "/acim/workbook/l142/",
+      "idx": 147,
+      "next": "/acim/workbook/l143/",
+      "prev": "/acim/workbook/l141/"
+    },
+    {
+      "fid": "l143/",
+      "lesson": 143,
+      "title": "Review 125 - 126",
+      "url": "/acim/workbook/l143/",
+      "idx": 148,
+      "next": "/acim/workbook/l144/",
+      "prev": "/acim/workbook/l142/"
+    },
+    {
+      "fid": "l144/",
+      "lesson": 144,
+      "title": "Review 127 - 128",
+      "url": "/acim/workbook/l144/",
+      "idx": 149,
+      "next": "/acim/workbook/l145/",
+      "prev": "/acim/workbook/l143/"
+    },
+    {
+      "fid": "l145/",
+      "lesson": 145,
+      "title": "Review 129 - 130",
+      "url": "/acim/workbook/l145/",
+      "idx": 150,
+      "next": "/acim/workbook/l146/",
+      "prev": "/acim/workbook/l144/"
+    },
+    {
+      "fid": "l146/",
+      "lesson": 146,
+      "title": "Review 131 - 132",
+      "url": "/acim/workbook/l146/",
+      "idx": 151,
+      "next": "/acim/workbook/l147/",
+      "prev": "/acim/workbook/l145/"
+    },
+    {
+      "fid": "l147/",
+      "lesson": 147,
+      "title": "Review 133 - 134",
+      "url": "/acim/workbook/l147/",
+      "idx": 152,
+      "next": "/acim/workbook/l148/",
+      "prev": "/acim/workbook/l146/"
+    },
+    {
+      "fid": "l148/",
+      "lesson": 148,
+      "title": "Review 135 - 136",
+      "url": "/acim/workbook/l148/",
+      "idx": 153,
+      "next": "/acim/workbook/l149/",
+      "prev": "/acim/workbook/l147/"
+    },
+    {
+      "fid": "l149/",
+      "lesson": 149,
+      "title": "Review 137 - 138",
+      "url": "/acim/workbook/l149/",
+      "idx": 154,
+      "next": "/acim/workbook/l150/",
+      "prev": "/acim/workbook/l148/"
+    },
+    {
+      "fid": "l150/",
+      "lesson": 150,
+      "title": "Review 139 - 140",
+      "url": "/acim/workbook/l150/",
+      "idx": 155,
+      "next": "/acim/workbook/l151/",
+      "prev": "/acim/workbook/l149/"
+    },
+    {
+      "fid": "l151/",
+      "lesson": 151,
+      "title": "All things are echoes of the Voice of God.",
+      "url": "/acim/workbook/l151/",
+      "idx": 156,
+      "next": "/acim/workbook/l152/",
+      "prev": "/acim/workbook/l150/"
+    },
+    {
+      "fid": "l152/",
+      "lesson": 152,
+      "title": "The power of decision is my own.",
+      "url": "/acim/workbook/l152/",
+      "idx": 157,
+      "next": "/acim/workbook/l153/",
+      "prev": "/acim/workbook/l151/"
+    },
+    {
+      "fid": "l153/",
+      "lesson": 153,
+      "title": "In my defenselessness my safety lies.",
+      "url": "/acim/workbook/l153/",
+      "idx": 158,
+      "next": "/acim/workbook/l154/",
+      "prev": "/acim/workbook/l152/"
+    },
+    {
+      "fid": "l154/",
+      "lesson": 154,
+      "title": "I am among the ministers of God.",
+      "url": "/acim/workbook/l154/",
+      "idx": 159,
+      "next": "/acim/workbook/l155/",
+      "prev": "/acim/workbook/l153/"
+    },
+    {
+      "fid": "l155/",
+      "lesson": 155,
+      "title": "I will step back and let Him lead the way.",
+      "url": "/acim/workbook/l155/",
+      "idx": 160,
+      "next": "/acim/workbook/l156/",
+      "prev": "/acim/workbook/l154/"
+    },
+    {
+      "fid": "l156/",
+      "lesson": 156,
+      "title": "I walk with God in perfect holiness.",
+      "url": "/acim/workbook/l156/",
+      "idx": 161,
+      "next": "/acim/workbook/l157/",
+      "prev": "/acim/workbook/l155/"
+    },
+    {
+      "fid": "l157/",
+      "lesson": 157,
+      "title": "Into His Presence would I enter now.",
+      "url": "/acim/workbook/l157/",
+      "idx": 162,
+      "next": "/acim/workbook/l158/",
+      "prev": "/acim/workbook/l156/"
+    },
+    {
+      "fid": "l158/",
+      "lesson": 158,
+      "title": "Today I learn to give as I receive.",
+      "url": "/acim/workbook/l158/",
+      "idx": 163,
+      "next": "/acim/workbook/l159/",
+      "prev": "/acim/workbook/l157/"
+    },
+    {
+      "fid": "l159/",
+      "lesson": 159,
+      "title": "I give the miracles I have received.",
+      "url": "/acim/workbook/l159/",
+      "idx": 164,
+      "next": "/acim/workbook/l160/",
+      "prev": "/acim/workbook/l158/"
+    },
+    {
+      "fid": "l160/",
+      "lesson": 160,
+      "title": "I am at home. Fear is the stranger here.",
+      "url": "/acim/workbook/l160/",
+      "idx": 165,
+      "next": "/acim/workbook/l161/",
+      "prev": "/acim/workbook/l159/"
+    },
+    {
+      "fid": "l161/",
+      "lesson": 161,
+      "title": "Give me your blessing, holy Son of God.",
+      "url": "/acim/workbook/l161/",
+      "idx": 166,
+      "next": "/acim/workbook/l162/",
+      "prev": "/acim/workbook/l160/"
+    },
+    {
+      "fid": "l162/",
+      "lesson": 162,
+      "title": "I am as God created me.",
+      "url": "/acim/workbook/l162/",
+      "idx": 167,
+      "next": "/acim/workbook/l163/",
+      "prev": "/acim/workbook/l161/"
+    },
+    {
+      "fid": "l163/",
+      "lesson": 163,
+      "title": "There is no death. The Son of God is free.",
+      "url": "/acim/workbook/l163/",
+      "idx": 168,
+      "next": "/acim/workbook/l164/",
+      "prev": "/acim/workbook/l162/"
+    },
+    {
+      "fid": "l164/",
+      "lesson": 164,
+      "title": "Now are we One with Him Who is our Source.",
+      "url": "/acim/workbook/l164/",
+      "idx": 169,
+      "next": "/acim/workbook/l165/",
+      "prev": "/acim/workbook/l163/"
+    },
+    {
+      "fid": "l165/",
+      "lesson": 165,
+      "title": "Let not my mind deny the Thought of God.",
+      "url": "/acim/workbook/l165/",
+      "idx": 170,
+      "next": "/acim/workbook/l166/",
+      "prev": "/acim/workbook/l164/"
+    },
+    {
+      "fid": "l166/",
+      "lesson": 166,
+      "title": "I am entrusted with the gifts of God.",
+      "url": "/acim/workbook/l166/",
+      "idx": 171,
+      "next": "/acim/workbook/l167/",
+      "prev": "/acim/workbook/l165/"
+    },
+    {
+      "fid": "l167/",
+      "lesson": 167,
+      "title": "There is one life, and that I share with God.",
+      "url": "/acim/workbook/l167/",
+      "idx": 172,
+      "next": "/acim/workbook/l168/",
+      "prev": "/acim/workbook/l166/"
+    },
+    {
+      "fid": "l168/",
+      "lesson": 168,
+      "title": "Your grace is given me. I claim it now.",
+      "url": "/acim/workbook/l168/",
+      "idx": 173,
+      "next": "/acim/workbook/l169/",
+      "prev": "/acim/workbook/l167/"
+    },
+    {
+      "fid": "l169/",
+      "lesson": 169,
+      "title": "By grace I live. By grace I am released.",
+      "url": "/acim/workbook/l169/",
+      "idx": 174,
+      "next": "/acim/workbook/l170/",
+      "prev": "/acim/workbook/l168/"
+    },
+    {
+      "fid": "l170/",
+      "lesson": 170,
+      "title": "There is no cruelty in God and none in me.",
+      "url": "/acim/workbook/l170/",
+      "idx": 175,
+      "next": "/acim/workbook/review5/",
+      "prev": "/acim/workbook/l169/"
+    },
+    {
+      "fid": "review5/",
+      "title": "Introduction",
+      "url": "/acim/workbook/review5/",
+      "idx": 176,
+      "next": "/acim/workbook/l171/",
+      "prev": "/acim/workbook/l170/"
+    },
+    {
+      "fid": "l171/",
+      "lesson": 171,
+      "title": "Review 151 - 152",
+      "url": "/acim/workbook/l171/",
+      "idx": 177,
+      "next": "/acim/workbook/l172/",
+      "prev": "/acim/workbook/review5/"
+    },
+    {
+      "fid": "l172/",
+      "lesson": 172,
+      "title": "Review 153 - 154",
+      "url": "/acim/workbook/l172/",
+      "idx": 178,
+      "next": "/acim/workbook/l173/",
+      "prev": "/acim/workbook/l171/"
+    },
+    {
+      "fid": "l173/",
+      "lesson": 173,
+      "title": "Review 155 - 156",
+      "url": "/acim/workbook/l173/",
+      "idx": 179,
+      "next": "/acim/workbook/l174/",
+      "prev": "/acim/workbook/l172/"
+    },
+    {
+      "fid": "l174/",
+      "lesson": 174,
+      "title": "Review 157 - 158",
+      "url": "/acim/workbook/l174/",
+      "idx": 180,
+      "next": "/acim/workbook/l175/",
+      "prev": "/acim/workbook/l173/"
+    },
+    {
+      "fid": "l175/",
+      "lesson": 175,
+      "title": "Review 159 - 160",
+      "url": "/acim/workbook/l175/",
+      "idx": 181,
+      "next": "/acim/workbook/l176/",
+      "prev": "/acim/workbook/l174/"
+    },
+    {
+      "fid": "l176/",
+      "lesson": 176,
+      "title": "Review 161 - 162",
+      "url": "/acim/workbook/l176/",
+      "idx": 182,
+      "next": "/acim/workbook/l177/",
+      "prev": "/acim/workbook/l175/"
+    },
+    {
+      "fid": "l177/",
+      "lesson": 177,
+      "title": "Review 163 - 164",
+      "url": "/acim/workbook/l177/",
+      "idx": 183,
+      "next": "/acim/workbook/l178/",
+      "prev": "/acim/workbook/l176/"
+    },
+    {
+      "fid": "l178/",
+      "lesson": 178,
+      "title": "Review 165 - 166",
+      "url": "/acim/workbook/l178/",
+      "idx": 184,
+      "next": "/acim/workbook/l179/",
+      "prev": "/acim/workbook/l177/"
+    },
+    {
+      "fid": "l179/",
+      "lesson": 179,
+      "title": "Review 167 - 168",
+      "url": "/acim/workbook/l179/",
+      "idx": 185,
+      "next": "/acim/workbook/l180/",
+      "prev": "/acim/workbook/l178/"
+    },
+    {
+      "fid": "l180/",
+      "lesson": 180,
+      "title": "Review 169 - 170",
+      "url": "/acim/workbook/l180/",
+      "idx": 186,
+      "next": "/acim/workbook/intro181/",
+      "prev": "/acim/workbook/l179/"
+    },
+    {
+      "fid": "intro181/",
+      "title": "Lessons 181 - 200 Introduction",
+      "url": "/acim/workbook/intro181/",
+      "idx": 187,
+      "next": "/acim/workbook/l181/",
+      "prev": "/acim/workbook/l180/"
+    },
+    {
+      "fid": "l181/",
+      "lesson": 181,
+      "title": "I trust my brothers, who are one with me.",
+      "url": "/acim/workbook/l181/",
+      "idx": 188,
+      "next": "/acim/workbook/l182/",
+      "prev": "/acim/workbook/intro181/"
+    },
+    {
+      "fid": "l182/",
+      "lesson": 182,
+      "title": "I will be still an instant and go home.",
+      "url": "/acim/workbook/l182/",
+      "idx": 189,
+      "next": "/acim/workbook/l183/",
+      "prev": "/acim/workbook/l181/"
+    },
+    {
+      "fid": "l183/",
+      "lesson": 183,
+      "title": "I call upon God’s Name and on my own.",
+      "url": "/acim/workbook/l183/",
+      "idx": 190,
+      "next": "/acim/workbook/l184/",
+      "prev": "/acim/workbook/l182/"
+    },
+    {
+      "fid": "l184/",
+      "lesson": 184,
+      "title": "The Name of God is my inheritance.",
+      "url": "/acim/workbook/l184/",
+      "idx": 191,
+      "next": "/acim/workbook/l185/",
+      "prev": "/acim/workbook/l183/"
+    },
+    {
+      "fid": "l185/",
+      "lesson": 185,
+      "title": "I want the peace of God.",
+      "url": "/acim/workbook/l185/",
+      "idx": 192,
+      "next": "/acim/workbook/l186/",
+      "prev": "/acim/workbook/l184/"
+    },
+    {
+      "fid": "l186/",
+      "lesson": 186,
+      "title": "Salvation of the world depends on me.",
+      "url": "/acim/workbook/l186/",
+      "idx": 193,
+      "next": "/acim/workbook/l187/",
+      "prev": "/acim/workbook/l185/"
+    },
+    {
+      "fid": "l187/",
+      "lesson": 187,
+      "title": "I bless the world because I bless myself.",
+      "url": "/acim/workbook/l187/",
+      "idx": 194,
+      "next": "/acim/workbook/l188/",
+      "prev": "/acim/workbook/l186/"
+    },
+    {
+      "fid": "l188/",
+      "lesson": 188,
+      "title": "The peace of God is shining in me now.",
+      "url": "/acim/workbook/l188/",
+      "idx": 195,
+      "next": "/acim/workbook/l189/",
+      "prev": "/acim/workbook/l187/"
+    },
+    {
+      "fid": "l189/",
+      "lesson": 189,
+      "title": "I feel the Love of God within me now.",
+      "url": "/acim/workbook/l189/",
+      "idx": 196,
+      "next": "/acim/workbook/l190/",
+      "prev": "/acim/workbook/l188/"
+    },
+    {
+      "fid": "l190/",
+      "lesson": 190,
+      "title": "I choose the joy of God instead of pain.",
+      "url": "/acim/workbook/l190/",
+      "idx": 197,
+      "next": "/acim/workbook/l191/",
+      "prev": "/acim/workbook/l189/"
+    },
+    {
+      "fid": "l191/",
+      "lesson": 191,
+      "title": "I am the holy Son of God Himself.",
+      "url": "/acim/workbook/l191/",
+      "idx": 198,
+      "next": "/acim/workbook/l192/",
+      "prev": "/acim/workbook/l190/"
+    },
+    {
+      "fid": "l192/",
+      "lesson": 192,
+      "title": "I have a function God would have me fill.",
+      "url": "/acim/workbook/l192/",
+      "idx": 199,
+      "next": "/acim/workbook/l193/",
+      "prev": "/acim/workbook/l191/"
+    },
+    {
+      "fid": "l193/",
+      "lesson": 193,
+      "title": "All things are lessons God would have me learn.",
+      "url": "/acim/workbook/l193/",
+      "idx": 200,
+      "next": "/acim/workbook/l194/",
+      "prev": "/acim/workbook/l192/"
+    },
+    {
+      "fid": "l194/",
+      "lesson": 194,
+      "title": "I place the future in the Hands of God.",
+      "url": "/acim/workbook/l194/",
+      "idx": 201,
+      "next": "/acim/workbook/l195/",
+      "prev": "/acim/workbook/l193/"
+    },
+    {
+      "fid": "l195/",
+      "lesson": 195,
+      "title": "Love is the way I walk in gratitude.",
+      "url": "/acim/workbook/l195/",
+      "idx": 202,
+      "next": "/acim/workbook/l196/",
+      "prev": "/acim/workbook/l194/"
+    },
+    {
+      "fid": "l196/",
+      "lesson": 196,
+      "title": "It can be but myself I crucify.",
+      "url": "/acim/workbook/l196/",
+      "idx": 203,
+      "next": "/acim/workbook/l197/",
+      "prev": "/acim/workbook/l195/"
+    },
+    {
+      "fid": "l197/",
+      "lesson": 197,
+      "title": "It can be but my gratitude I earn.",
+      "url": "/acim/workbook/l197/",
+      "idx": 204,
+      "next": "/acim/workbook/l198/",
+      "prev": "/acim/workbook/l196/"
+    },
+    {
+      "fid": "l198/",
+      "lesson": 198,
+      "title": "Only my condemnation injures me.",
+      "url": "/acim/workbook/l198/",
+      "idx": 205,
+      "next": "/acim/workbook/l199/",
+      "prev": "/acim/workbook/l197/"
+    },
+    {
+      "fid": "l199/",
+      "lesson": 199,
+      "title": "I am not a body. I am free.",
+      "url": "/acim/workbook/l199/",
+      "idx": 206,
+      "next": "/acim/workbook/l200/",
+      "prev": "/acim/workbook/l198/"
+    },
+    {
+      "fid": "l200/",
+      "lesson": 200,
+      "title": "There is no peace except the peace of God.",
+      "url": "/acim/workbook/l200/",
+      "idx": 207,
+      "next": "/acim/workbook/review6/",
+      "prev": "/acim/workbook/l199/"
+    },
+    {
+      "fid": "review6/",
+      "title": "Introduction 181 - 200",
+      "url": "/acim/workbook/review6/",
+      "idx": 208,
+      "next": "/acim/workbook/l201/",
+      "prev": "/acim/workbook/l200/"
+    },
+    {
+      "fid": "l201/",
+      "lesson": 201,
+      "title": "Review Lesson 181",
+      "url": "/acim/workbook/l201/",
+      "idx": 209,
+      "next": "/acim/workbook/l202/",
+      "prev": "/acim/workbook/review6/"
+    },
+    {
+      "fid": "l202/",
+      "lesson": 202,
+      "title": "Review Lesson 182",
+      "url": "/acim/workbook/l202/",
+      "idx": 210,
+      "next": "/acim/workbook/l203/",
+      "prev": "/acim/workbook/l201/"
+    },
+    {
+      "fid": "l203/",
+      "lesson": 203,
+      "title": "Review Lesson 183",
+      "url": "/acim/workbook/l203/",
+      "idx": 211,
+      "next": "/acim/workbook/l204/",
+      "prev": "/acim/workbook/l202/"
+    },
+    {
+      "fid": "l204/",
+      "lesson": 204,
+      "title": "Review Lesson 184",
+      "url": "/acim/workbook/l204/",
+      "idx": 212,
+      "next": "/acim/workbook/l205/",
+      "prev": "/acim/workbook/l203/"
+    },
+    {
+      "fid": "l205/",
+      "lesson": 205,
+      "title": "Review Lesson 185",
+      "url": "/acim/workbook/l205/",
+      "idx": 213,
+      "next": "/acim/workbook/l206/",
+      "prev": "/acim/workbook/l204/"
+    },
+    {
+      "fid": "l206/",
+      "lesson": 206,
+      "title": "Review Lesson 186",
+      "url": "/acim/workbook/l206/",
+      "idx": 214,
+      "next": "/acim/workbook/l207/",
+      "prev": "/acim/workbook/l205/"
+    },
+    {
+      "fid": "l207/",
+      "lesson": 207,
+      "title": "Review Lesson 187",
+      "url": "/acim/workbook/l207/",
+      "idx": 215,
+      "next": "/acim/workbook/l208/",
+      "prev": "/acim/workbook/l206/"
+    },
+    {
+      "fid": "l208/",
+      "lesson": 208,
+      "title": "Review Lesson 188",
+      "url": "/acim/workbook/l208/",
+      "idx": 216,
+      "next": "/acim/workbook/l209/",
+      "prev": "/acim/workbook/l207/"
+    },
+    {
+      "fid": "l209/",
+      "lesson": 209,
+      "title": "Review Lesson 189",
+      "url": "/acim/workbook/l209/",
+      "idx": 217,
+      "next": "/acim/workbook/l210/",
+      "prev": "/acim/workbook/l208/"
+    },
+    {
+      "fid": "l210/",
+      "lesson": 210,
+      "title": "Review Lesson 190",
+      "url": "/acim/workbook/l210/",
+      "idx": 218,
+      "next": "/acim/workbook/l211/",
+      "prev": "/acim/workbook/l209/"
+    },
+    {
+      "fid": "l211/",
+      "lesson": 211,
+      "title": "Review Lesson 191",
+      "url": "/acim/workbook/l211/",
+      "idx": 219,
+      "next": "/acim/workbook/l212/",
+      "prev": "/acim/workbook/l210/"
+    },
+    {
+      "fid": "l212/",
+      "lesson": 212,
+      "title": "Review Lesson 192",
+      "url": "/acim/workbook/l212/",
+      "idx": 220,
+      "next": "/acim/workbook/l213/",
+      "prev": "/acim/workbook/l211/"
+    },
+    {
+      "fid": "l213/",
+      "lesson": 213,
+      "title": "Review Lesson 193",
+      "url": "/acim/workbook/l213/",
+      "idx": 221,
+      "next": "/acim/workbook/l214/",
+      "prev": "/acim/workbook/l212/"
+    },
+    {
+      "fid": "l214/",
+      "lesson": 214,
+      "title": "Review Lesson 194",
+      "url": "/acim/workbook/l214/",
+      "idx": 222,
+      "next": "/acim/workbook/l215/",
+      "prev": "/acim/workbook/l213/"
+    },
+    {
+      "fid": "l215/",
+      "lesson": 215,
+      "title": "Review Lesson 195",
+      "url": "/acim/workbook/l215/",
+      "idx": 223,
+      "next": "/acim/workbook/l216/",
+      "prev": "/acim/workbook/l214/"
+    },
+    {
+      "fid": "l216/",
+      "lesson": 215,
+      "title": "Review Lesson 196",
+      "url": "/acim/workbook/l216/",
+      "idx": 224,
+      "next": "/acim/workbook/l217/",
+      "prev": "/acim/workbook/l215/"
+    },
+    {
+      "fid": "l217/",
+      "lesson": 217,
+      "title": "Review Lesson 197",
+      "url": "/acim/workbook/l217/",
+      "idx": 225,
+      "next": "/acim/workbook/l218/",
+      "prev": "/acim/workbook/l216/"
+    },
+    {
+      "fid": "l218/",
+      "lesson": 218,
+      "title": "Review Lesson 198",
+      "url": "/acim/workbook/l218/",
+      "idx": 226,
+      "next": "/acim/workbook/l219/",
+      "prev": "/acim/workbook/l217/"
+    },
+    {
+      "fid": "l219/",
+      "lesson": 219,
+      "title": "Review Lesson 199",
+      "url": "/acim/workbook/l219/",
+      "idx": 227,
+      "next": "/acim/workbook/l220/",
+      "prev": "/acim/workbook/l218/"
+    },
+    {
+      "fid": "l220/",
+      "lesson": 220,
+      "title": "Review Lesson 200",
+      "url": "/acim/workbook/l220/",
+      "idx": 228,
+      "next": "/acim/workbook/introp2/",
+      "prev": "/acim/workbook/l219/"
+    },
+    {
+      "fid": "introp2/",
+      "title": "Part II Introduction",
+      "url": "/acim/workbook/introp2/",
+      "idx": 229,
+      "next": "/acim/workbook/forgiveness/",
+      "prev": "/acim/workbook/l220/"
+    },
+    {
+      "fid": "forgiveness/",
+      "title": "What is Forgiveness?",
+      "url": "/acim/workbook/forgiveness/",
+      "idx": 230,
+      "next": "/acim/workbook/l221/",
+      "prev": "/acim/workbook/introp2/"
+    },
+    {
+      "fid": "l221/",
+      "lesson": 221,
+      "title": "Peace to my mind. Let all my thoughts be still.",
+      "url": "/acim/workbook/l221/",
+      "idx": 231,
+      "next": "/acim/workbook/l222/",
+      "prev": "/acim/workbook/forgiveness/"
+    },
+    {
+      "fid": "l222/",
+      "lesson": 222,
+      "title": "God is with me. I live and breathe in Him.",
+      "url": "/acim/workbook/l222/",
+      "idx": 232,
+      "next": "/acim/workbook/l223/",
+      "prev": "/acim/workbook/l221/"
+    },
+    {
+      "fid": "l223/",
+      "lesson": 223,
+      "title": "God is my life. I have no life but His.",
+      "url": "/acim/workbook/l223/",
+      "idx": 233,
+      "next": "/acim/workbook/l224/",
+      "prev": "/acim/workbook/l222/"
+    },
+    {
+      "fid": "l224/",
+      "lesson": 224,
+      "title": "God is my Father, and He loves His Son.",
+      "url": "/acim/workbook/l224/",
+      "idx": 234,
+      "next": "/acim/workbook/l225/",
+      "prev": "/acim/workbook/l223/"
+    },
+    {
+      "fid": "l225/",
+      "lesson": 225,
+      "title": "God is my Father, and His Son loves Him.",
+      "url": "/acim/workbook/l225/",
+      "idx": 235,
+      "next": "/acim/workbook/l226/",
+      "prev": "/acim/workbook/l224/"
+    },
+    {
+      "fid": "l226/",
+      "lesson": 226,
+      "title": "My home awaits me. I will hasten there.",
+      "url": "/acim/workbook/l226/",
+      "idx": 236,
+      "next": "/acim/workbook/l227/",
+      "prev": "/acim/workbook/l225/"
+    },
+    {
+      "fid": "l227/",
+      "lesson": 227,
+      "title": "This is my holy instant of release.",
+      "url": "/acim/workbook/l227/",
+      "idx": 237,
+      "next": "/acim/workbook/l228/",
+      "prev": "/acim/workbook/l226/"
+    },
+    {
+      "fid": "l228/",
+      "lesson": 228,
+      "title": "God has condemned me not. No more do I.",
+      "url": "/acim/workbook/l228/",
+      "idx": 238,
+      "next": "/acim/workbook/l229/",
+      "prev": "/acim/workbook/l227/"
+    },
+    {
+      "fid": "l229/",
+      "lesson": 229,
+      "title": "Love, Which created me, is what I am.",
+      "url": "/acim/workbook/l229/",
+      "idx": 239,
+      "next": "/acim/workbook/l230/",
+      "prev": "/acim/workbook/l228/"
+    },
+    {
+      "fid": "l230/",
+      "lesson": 230,
+      "title": "Now will I seek and find the peace of God.",
+      "url": "/acim/workbook/l230/",
+      "idx": 240,
+      "next": "/acim/workbook/salvation/",
+      "prev": "/acim/workbook/l229/"
+    },
+    {
+      "fid": "salvation/",
+      "title": "What is Salvation?",
+      "url": "/acim/workbook/salvation/",
+      "idx": 241,
+      "next": "/acim/workbook/l231/",
+      "prev": "/acim/workbook/l230/"
+    },
+    {
+      "fid": "l231/",
+      "lesson": 231,
+      "title": "Father, I will but to remember You.",
+      "url": "/acim/workbook/l231/",
+      "idx": 242,
+      "next": "/acim/workbook/l232/",
+      "prev": "/acim/workbook/salvation/"
+    },
+    {
+      "fid": "l232/",
+      "lesson": 232,
+      "title": "Be in my mind, my Father, through the day.",
+      "url": "/acim/workbook/l232/",
+      "idx": 243,
+      "next": "/acim/workbook/l233/",
+      "prev": "/acim/workbook/l231/"
+    },
+    {
+      "fid": "l233/",
+      "lesson": 233,
+      "title": "I give my life to God to run today.",
+      "url": "/acim/workbook/l233/",
+      "idx": 244,
+      "next": "/acim/workbook/l234/",
+      "prev": "/acim/workbook/l232/"
+    },
+    {
+      "fid": "l234/",
+      "lesson": 234,
+      "title": "Father, today I am Your Son again.",
+      "url": "/acim/workbook/l234/",
+      "idx": 245,
+      "next": "/acim/workbook/l235/",
+      "prev": "/acim/workbook/l233/"
+    },
+    {
+      "fid": "l235/",
+      "lesson": 235,
+      "title": "God in His mercy wills that I be saved.",
+      "url": "/acim/workbook/l235/",
+      "idx": 246,
+      "next": "/acim/workbook/l236/",
+      "prev": "/acim/workbook/l234/"
+    },
+    {
+      "fid": "l236/",
+      "lesson": 236,
+      "title": "I rule my mind, which I alone must rule.",
+      "url": "/acim/workbook/l236/",
+      "idx": 247,
+      "next": "/acim/workbook/l237/",
+      "prev": "/acim/workbook/l235/"
+    },
+    {
+      "fid": "l237/",
+      "lesson": 237,
+      "title": "Now would I be as God created me.",
+      "url": "/acim/workbook/l237/",
+      "idx": 248,
+      "next": "/acim/workbook/l238/",
+      "prev": "/acim/workbook/l236/"
+    },
+    {
+      "fid": "l238/",
+      "lesson": 238,
+      "title": "On my decision all salvation rests.",
+      "url": "/acim/workbook/l238/",
+      "idx": 249,
+      "next": "/acim/workbook/l239/",
+      "prev": "/acim/workbook/l237/"
+    },
+    {
+      "fid": "l239/",
+      "lesson": 239,
+      "title": "The glory of my Father is my own.",
+      "url": "/acim/workbook/l239/",
+      "idx": 250,
+      "next": "/acim/workbook/l240/",
+      "prev": "/acim/workbook/l238/"
+    },
+    {
+      "fid": "l240/",
+      "lesson": 240,
+      "title": "Fear is not justified in any form.",
+      "url": "/acim/workbook/l240/",
+      "idx": 251,
+      "next": "/acim/workbook/world/",
+      "prev": "/acim/workbook/l239/"
+    },
+    {
+      "fid": "world/",
+      "title": "What is the World?",
+      "url": "/acim/workbook/world/",
+      "idx": 252,
+      "next": "/acim/workbook/l241/",
+      "prev": "/acim/workbook/l240/"
+    },
+    {
+      "fid": "l241/",
+      "lesson": 241,
+      "title": "This holy instant is salvation come.",
+      "url": "/acim/workbook/l241/",
+      "idx": 253,
+      "next": "/acim/workbook/l242/",
+      "prev": "/acim/workbook/world/"
+    },
+    {
+      "fid": "l242/",
+      "lesson": 242,
+      "title": "This day is God’s. It is my gift to Him.",
+      "url": "/acim/workbook/l242/",
+      "idx": 254,
+      "next": "/acim/workbook/l243/",
+      "prev": "/acim/workbook/l241/"
+    },
+    {
+      "fid": "l243/",
+      "lesson": 243,
+      "title": "Today I will judge nothing that occurs.",
+      "url": "/acim/workbook/l243/",
+      "idx": 255,
+      "next": "/acim/workbook/l244/",
+      "prev": "/acim/workbook/l242/"
+    },
+    {
+      "fid": "l244/",
+      "lesson": 244,
+      "title": "I am in danger nowhere in the world.",
+      "url": "/acim/workbook/l244/",
+      "idx": 256,
+      "next": "/acim/workbook/l245/",
+      "prev": "/acim/workbook/l243/"
+    },
+    {
+      "fid": "l245/",
+      "lesson": 245,
+      "title": "Your peace is with me, Father. I am safe.",
+      "url": "/acim/workbook/l245/",
+      "idx": 257,
+      "next": "/acim/workbook/l246/",
+      "prev": "/acim/workbook/l244/"
+    },
+    {
+      "fid": "l246/",
+      "lesson": 246,
+      "title": "To love my Father is to love His Son.",
+      "url": "/acim/workbook/l246/",
+      "idx": 258,
+      "next": "/acim/workbook/l247/",
+      "prev": "/acim/workbook/l245/"
+    },
+    {
+      "fid": "l247/",
+      "lesson": 247,
+      "title": "Without forgiveness I will still be blind.",
+      "url": "/acim/workbook/l247/",
+      "idx": 259,
+      "next": "/acim/workbook/l248/",
+      "prev": "/acim/workbook/l246/"
+    },
+    {
+      "fid": "l248/",
+      "lesson": 248,
+      "title": "Whatever suffers is not part of me.",
+      "url": "/acim/workbook/l248/",
+      "idx": 260,
+      "next": "/acim/workbook/l249/",
+      "prev": "/acim/workbook/l247/"
+    },
+    {
+      "fid": "l249/",
+      "lesson": 249,
+      "title": "Forgiveness ends all suffering and loss.",
+      "url": "/acim/workbook/l249/",
+      "idx": 261,
+      "next": "/acim/workbook/l250/",
+      "prev": "/acim/workbook/l248/"
+    },
+    {
+      "fid": "l250/",
+      "lesson": 250,
+      "title": "Let me not see myself as limited.",
+      "url": "/acim/workbook/l250/",
+      "idx": 262,
+      "next": "/acim/workbook/sin/",
+      "prev": "/acim/workbook/l249/"
+    },
+    {
+      "fid": "sin/",
+      "title": "What is Sin?",
+      "url": "/acim/workbook/sin/",
+      "idx": 263,
+      "next": "/acim/workbook/l251/",
+      "prev": "/acim/workbook/l250/"
+    },
+    {
+      "fid": "l251/",
+      "lesson": 251,
+      "title": "I am in need of nothing but the truth.",
+      "url": "/acim/workbook/l251/",
+      "idx": 264,
+      "next": "/acim/workbook/l252/",
+      "prev": "/acim/workbook/sin/"
+    },
+    {
+      "fid": "l252/",
+      "lesson": 252,
+      "title": "The Son of God is my identity.",
+      "url": "/acim/workbook/l252/",
+      "idx": 265,
+      "next": "/acim/workbook/l253/",
+      "prev": "/acim/workbook/l251/"
+    },
+    {
+      "fid": "l253/",
+      "lesson": 253,
+      "title": "My Self is ruler of the universe.",
+      "url": "/acim/workbook/l253/",
+      "idx": 266,
+      "next": "/acim/workbook/l254/",
+      "prev": "/acim/workbook/l252/"
+    },
+    {
+      "fid": "l254/",
+      "lesson": 254,
+      "title": "Let every voice but God’s be still in me.",
+      "url": "/acim/workbook/l254/",
+      "idx": 267,
+      "next": "/acim/workbook/l255/",
+      "prev": "/acim/workbook/l253/"
+    },
+    {
+      "fid": "l255/",
+      "lesson": 255,
+      "title": "This day I choose to spend in perfect peace.",
+      "url": "/acim/workbook/l255/",
+      "idx": 268,
+      "next": "/acim/workbook/l256/",
+      "prev": "/acim/workbook/l254/"
+    },
+    {
+      "fid": "l256/",
+      "lesson": 256,
+      "title": "God is the only goal I have today.",
+      "url": "/acim/workbook/l256/",
+      "idx": 269,
+      "next": "/acim/workbook/l257/",
+      "prev": "/acim/workbook/l255/"
+    },
+    {
+      "fid": "l257/",
+      "lesson": 257,
+      "title": "Let me remember what my purpose is.",
+      "url": "/acim/workbook/l257/",
+      "idx": 270,
+      "next": "/acim/workbook/l258/",
+      "prev": "/acim/workbook/l256/"
+    },
+    {
+      "fid": "l258/",
+      "lesson": 258,
+      "title": "Let me remember that my goal is God.",
+      "url": "/acim/workbook/l258/",
+      "idx": 271,
+      "next": "/acim/workbook/l259/",
+      "prev": "/acim/workbook/l257/"
+    },
+    {
+      "fid": "l259/",
+      "lesson": 259,
+      "title": "Let me remember that there is no sin.",
+      "url": "/acim/workbook/l259/",
+      "idx": 272,
+      "next": "/acim/workbook/l260/",
+      "prev": "/acim/workbook/l258/"
+    },
+    {
+      "fid": "l260/",
+      "lesson": 260,
+      "title": "Let me remember God created me.",
+      "url": "/acim/workbook/l260/",
+      "idx": 273,
+      "next": "/acim/workbook/body/",
+      "prev": "/acim/workbook/l259/"
+    },
+    {
+      "fid": "body/",
+      "title": "What is the Body?",
+      "url": "/acim/workbook/body/",
+      "idx": 274,
+      "next": "/acim/workbook/l261/",
+      "prev": "/acim/workbook/l260/"
+    },
+    {
+      "fid": "l261/",
+      "lesson": 261,
+      "title": "God is my refuge and security.",
+      "url": "/acim/workbook/l261/",
+      "idx": 275,
+      "next": "/acim/workbook/l262/",
+      "prev": "/acim/workbook/body/"
+    },
+    {
+      "fid": "l262/",
+      "lesson": 262,
+      "title": "Let me perceive no differences today.",
+      "url": "/acim/workbook/l262/",
+      "idx": 276,
+      "next": "/acim/workbook/l263/",
+      "prev": "/acim/workbook/l261/"
+    },
+    {
+      "fid": "l263/",
+      "lesson": 263,
+      "title": "My holy vision sees all things as pure.",
+      "url": "/acim/workbook/l263/",
+      "idx": 277,
+      "next": "/acim/workbook/l264/",
+      "prev": "/acim/workbook/l262/"
+    },
+    {
+      "fid": "l264/",
+      "lesson": 264,
+      "title": "I am surrounded by the Love of God.",
+      "url": "/acim/workbook/l264/",
+      "idx": 278,
+      "next": "/acim/workbook/l265/",
+      "prev": "/acim/workbook/l263/"
+    },
+    {
+      "fid": "l265/",
+      "lesson": 265,
+      "title": "Creation’s gentleness is all I see.",
+      "url": "/acim/workbook/l265/",
+      "idx": 279,
+      "next": "/acim/workbook/l266/",
+      "prev": "/acim/workbook/l264/"
+    },
+    {
+      "fid": "l266/",
+      "lesson": 266,
+      "title": "My holy Self abides in you, God’s Son.",
+      "url": "/acim/workbook/l266/",
+      "idx": 280,
+      "next": "/acim/workbook/l267/",
+      "prev": "/acim/workbook/l265/"
+    },
+    {
+      "fid": "l267/",
+      "lesson": 267,
+      "title": "My heart is beating in the peace of God.",
+      "url": "/acim/workbook/l267/",
+      "idx": 281,
+      "next": "/acim/workbook/l268/",
+      "prev": "/acim/workbook/l266/"
+    },
+    {
+      "fid": "l268/",
+      "lesson": 268,
+      "title": "Let all things be exactly as they are.",
+      "url": "/acim/workbook/l268/",
+      "idx": 282,
+      "next": "/acim/workbook/l269/",
+      "prev": "/acim/workbook/l267/"
+    },
+    {
+      "fid": "l269/",
+      "lesson": 269,
+      "title": "My sight goes forth to look upon Christ’s face.",
+      "url": "/acim/workbook/l269/",
+      "idx": 283,
+      "next": "/acim/workbook/l270/",
+      "prev": "/acim/workbook/l268/"
+    },
+    {
+      "fid": "l270/",
+      "lesson": 270,
+      "title": "I will not use the body’s eyes today.",
+      "url": "/acim/workbook/l270/",
+      "idx": 284,
+      "next": "/acim/workbook/christ/",
+      "prev": "/acim/workbook/l269/"
+    },
+    {
+      "fid": "christ/",
+      "title": "What is the Christ?",
+      "url": "/acim/workbook/christ/",
+      "idx": 285,
+      "next": "/acim/workbook/l271/",
+      "prev": "/acim/workbook/l270/"
+    },
+    {
+      "fid": "l271/",
+      "lesson": 271,
+      "title": "Christ’s is the vision I will use today.",
+      "url": "/acim/workbook/l271/",
+      "idx": 286,
+      "next": "/acim/workbook/l272/",
+      "prev": "/acim/workbook/christ/"
+    },
+    {
+      "fid": "l272/",
+      "lesson": 272,
+      "title": "How can illusions satisfy God’s Son?",
+      "url": "/acim/workbook/l272/",
+      "idx": 287,
+      "next": "/acim/workbook/l273/",
+      "prev": "/acim/workbook/l271/"
+    },
+    {
+      "fid": "l273/",
+      "lesson": 273,
+      "title": "The stillness of the peace of God is mine.",
+      "url": "/acim/workbook/l273/",
+      "idx": 288,
+      "next": "/acim/workbook/l274/",
+      "prev": "/acim/workbook/l272/"
+    },
+    {
+      "fid": "l274/",
+      "lesson": 274,
+      "title": "Today belongs to Love. Let me not fear.",
+      "url": "/acim/workbook/l274/",
+      "idx": 289,
+      "next": "/acim/workbook/l275/",
+      "prev": "/acim/workbook/l273/"
+    },
+    {
+      "fid": "l275/",
+      "lesson": 275,
+      "title": "God’s healing Voice protects all things today.",
+      "url": "/acim/workbook/l275/",
+      "idx": 290,
+      "next": "/acim/workbook/l276/",
+      "prev": "/acim/workbook/l274/"
+    },
+    {
+      "fid": "l276/",
+      "lesson": 276,
+      "title": "The Word of God is given me to speak.",
+      "url": "/acim/workbook/l276/",
+      "idx": 291,
+      "next": "/acim/workbook/l277/",
+      "prev": "/acim/workbook/l275/"
+    },
+    {
+      "fid": "l277/",
+      "lesson": 277,
+      "title": "Let me not bind Your Son with laws I made.",
+      "url": "/acim/workbook/l277/",
+      "idx": 292,
+      "next": "/acim/workbook/l278/",
+      "prev": "/acim/workbook/l276/"
+    },
+    {
+      "fid": "l278/",
+      "lesson": 278,
+      "title": "If I am bound, my Father is not free.",
+      "url": "/acim/workbook/l278/",
+      "idx": 293,
+      "next": "/acim/workbook/l279/",
+      "prev": "/acim/workbook/l277/"
+    },
+    {
+      "fid": "l279/",
+      "lesson": 279,
+      "title": "Creation’s freedom promises my own.",
+      "url": "/acim/workbook/l279/",
+      "idx": 294,
+      "next": "/acim/workbook/l280/",
+      "prev": "/acim/workbook/l278/"
+    },
+    {
+      "fid": "l280/",
+      "lesson": 280,
+      "title": "What limits can I lay upon God’s Son?",
+      "url": "/acim/workbook/l280/",
+      "idx": 295,
+      "next": "/acim/workbook/holyspirit/",
+      "prev": "/acim/workbook/l279/"
+    },
+    {
+      "fid": "holyspirit/",
+      "title": "What is the Holy Spirit?",
+      "url": "/acim/workbook/holyspirit/",
+      "idx": 296,
+      "next": "/acim/workbook/l281/",
+      "prev": "/acim/workbook/l280/"
+    },
+    {
+      "fid": "l281/",
+      "lesson": 281,
+      "title": "I can be hurt by nothing but my thoughts.",
+      "url": "/acim/workbook/l281/",
+      "idx": 297,
+      "next": "/acim/workbook/l282/",
+      "prev": "/acim/workbook/holyspirit/"
+    },
+    {
+      "fid": "l282/",
+      "lesson": 282,
+      "title": "I will not be afraid of love today.",
+      "url": "/acim/workbook/l282/",
+      "idx": 298,
+      "next": "/acim/workbook/l283/",
+      "prev": "/acim/workbook/l281/"
+    },
+    {
+      "fid": "l283/",
+      "lesson": 283,
+      "title": "My true Identity abides in You.",
+      "url": "/acim/workbook/l283/",
+      "idx": 299,
+      "next": "/acim/workbook/l284/",
+      "prev": "/acim/workbook/l282/"
+    },
+    {
+      "fid": "l284/",
+      "lesson": 284,
+      "title": "I can elect to change all thoughts that hurt.",
+      "url": "/acim/workbook/l284/",
+      "idx": 300,
+      "next": "/acim/workbook/l285/",
+      "prev": "/acim/workbook/l283/"
+    },
+    {
+      "fid": "l285/",
+      "lesson": 285,
+      "title": "My holiness shines bright and clear today.",
+      "url": "/acim/workbook/l285/",
+      "idx": 301,
+      "next": "/acim/workbook/l286/",
+      "prev": "/acim/workbook/l284/"
+    },
+    {
+      "fid": "l286/",
+      "lesson": 286,
+      "title": "The hush of Heaven holds my heart today.",
+      "url": "/acim/workbook/l286/",
+      "idx": 302,
+      "next": "/acim/workbook/l287/",
+      "prev": "/acim/workbook/l285/"
+    },
+    {
+      "fid": "l287/",
+      "lesson": 287,
+      "title": "You are my goal, my Father. Only You.",
+      "url": "/acim/workbook/l287/",
+      "idx": 303,
+      "next": "/acim/workbook/l288/",
+      "prev": "/acim/workbook/l286/"
+    },
+    {
+      "fid": "l288/",
+      "lesson": 288,
+      "title": "Let me forget my brother’s past today.",
+      "url": "/acim/workbook/l288/",
+      "idx": 304,
+      "next": "/acim/workbook/l289/",
+      "prev": "/acim/workbook/l287/"
+    },
+    {
+      "fid": "l289/",
+      "lesson": 289,
+      "title": "The past is over. It can touch me not.",
+      "url": "/acim/workbook/l289/",
+      "idx": 305,
+      "next": "/acim/workbook/l290/",
+      "prev": "/acim/workbook/l288/"
+    },
+    {
+      "fid": "l290/",
+      "lesson": 290,
+      "title": "My present happiness is all I see.",
+      "url": "/acim/workbook/l290/",
+      "idx": 306,
+      "next": "/acim/workbook/realworld/",
+      "prev": "/acim/workbook/l289/"
+    },
+    {
+      "fid": "realworld/",
+      "title": "What is the Real World?",
+      "url": "/acim/workbook/realworld/",
+      "idx": 307,
+      "next": "/acim/workbook/l291/",
+      "prev": "/acim/workbook/l290/"
+    },
+    {
+      "fid": "l291/",
+      "lesson": 291,
+      "title": "This is a day of stillness and of peace.",
+      "url": "/acim/workbook/l291/",
+      "idx": 308,
+      "next": "/acim/workbook/l292/",
+      "prev": "/acim/workbook/realworld/"
+    },
+    {
+      "fid": "l292/",
+      "lesson": 292,
+      "title": "A happy outcome to all things is sure.",
+      "url": "/acim/workbook/l292/",
+      "idx": 309,
+      "next": "/acim/workbook/l293/",
+      "prev": "/acim/workbook/l291/"
+    },
+    {
+      "fid": "l293/",
+      "lesson": 293,
+      "title": "All fear is past, and only love is here.",
+      "url": "/acim/workbook/l293/",
+      "idx": 310,
+      "next": "/acim/workbook/l294/",
+      "prev": "/acim/workbook/l292/"
+    },
+    {
+      "fid": "l294/",
+      "lesson": 294,
+      "title": "My body is a wholly neutral thing.",
+      "url": "/acim/workbook/l294/",
+      "idx": 311,
+      "next": "/acim/workbook/l295/",
+      "prev": "/acim/workbook/l293/"
+    },
+    {
+      "fid": "l295/",
+      "lesson": 295,
+      "title": "The Holy Spirit looks through me today.",
+      "url": "/acim/workbook/l295/",
+      "idx": 312,
+      "next": "/acim/workbook/l296/",
+      "prev": "/acim/workbook/l294/"
+    },
+    {
+      "fid": "l296/",
+      "lesson": 296,
+      "title": "The Holy Spirit speaks through me today.",
+      "url": "/acim/workbook/l296/",
+      "idx": 313,
+      "next": "/acim/workbook/l297/",
+      "prev": "/acim/workbook/l295/"
+    },
+    {
+      "fid": "l297/",
+      "lesson": 297,
+      "title": "Forgiveness is the only gift I give.",
+      "url": "/acim/workbook/l297/",
+      "idx": 314,
+      "next": "/acim/workbook/l298/",
+      "prev": "/acim/workbook/l296/"
+    },
+    {
+      "fid": "l298/",
+      "lesson": 298,
+      "title": "I love You, Father, and I love Your Son.",
+      "url": "/acim/workbook/l298/",
+      "idx": 315,
+      "next": "/acim/workbook/l299/",
+      "prev": "/acim/workbook/l297/"
+    },
+    {
+      "fid": "l299/",
+      "lesson": 299,
+      "title": "Eternal holiness abides in me.",
+      "url": "/acim/workbook/l299/",
+      "idx": 316,
+      "next": "/acim/workbook/l300/",
+      "prev": "/acim/workbook/l298/"
+    },
+    {
+      "fid": "l300/",
+      "lesson": 300,
+      "title": "Only an instant does this world endure.",
+      "url": "/acim/workbook/l300/",
+      "idx": 317,
+      "next": "/acim/workbook/secondcoming/",
+      "prev": "/acim/workbook/l299/"
+    },
+    {
+      "fid": "secondcoming/",
+      "title": "What is the Second Coming?",
+      "url": "/acim/workbook/secondcoming/",
+      "idx": 318,
+      "next": "/acim/workbook/l301/",
+      "prev": "/acim/workbook/l300/"
+    },
+    {
+      "fid": "l301/",
+      "lesson": 301,
+      "title": "And God Himself shall wipe away all tears.",
+      "url": "/acim/workbook/l301/",
+      "idx": 319,
+      "next": "/acim/workbook/l302/",
+      "prev": "/acim/workbook/secondcoming/"
+    },
+    {
+      "fid": "l302/",
+      "lesson": 302,
+      "title": "Where darkness was I look upon the light.",
+      "url": "/acim/workbook/l302/",
+      "idx": 320,
+      "next": "/acim/workbook/l303/",
+      "prev": "/acim/workbook/l301/"
+    },
+    {
+      "fid": "l303/",
+      "lesson": 303,
+      "title": "The holy Christ is born in me today.",
+      "url": "/acim/workbook/l303/",
+      "idx": 321,
+      "next": "/acim/workbook/l304/",
+      "prev": "/acim/workbook/l302/"
+    },
+    {
+      "fid": "l304/",
+      "lesson": 304,
+      "title": "Let not my world obscure the sight of Christ.",
+      "url": "/acim/workbook/l304/",
+      "idx": 322,
+      "next": "/acim/workbook/l305/",
+      "prev": "/acim/workbook/l303/"
+    },
+    {
+      "fid": "l305/",
+      "lesson": 305,
+      "title": "There is a peace that Christ bestows on us.",
+      "url": "/acim/workbook/l305/",
+      "idx": 323,
+      "next": "/acim/workbook/l306/",
+      "prev": "/acim/workbook/l304/"
+    },
+    {
+      "fid": "l306/",
+      "lesson": 306,
+      "title": "The gift of Christ is all I seek today.",
+      "url": "/acim/workbook/l306/",
+      "idx": 324,
+      "next": "/acim/workbook/l307/",
+      "prev": "/acim/workbook/l305/"
+    },
+    {
+      "fid": "l307/",
+      "lesson": 307,
+      "title": "Conflicting wishes cannot be my will.",
+      "url": "/acim/workbook/l307/",
+      "idx": 325,
+      "next": "/acim/workbook/l308/",
+      "prev": "/acim/workbook/l306/"
+    },
+    {
+      "fid": "l308/",
+      "lesson": 308,
+      "title": "This instant is the only time there is.",
+      "url": "/acim/workbook/l308/",
+      "idx": 326,
+      "next": "/acim/workbook/l309/",
+      "prev": "/acim/workbook/l307/"
+    },
+    {
+      "fid": "l309/",
+      "lesson": 309,
+      "title": "I will not fear to look within today.",
+      "url": "/acim/workbook/l309/",
+      "idx": 327,
+      "next": "/acim/workbook/l310/",
+      "prev": "/acim/workbook/l308/"
+    },
+    {
+      "fid": "l310/",
+      "lesson": 310,
+      "title": "In fearlessness and love I spend today.",
+      "url": "/acim/workbook/l310/",
+      "idx": 328,
+      "next": "/acim/workbook/lastjudgement/",
+      "prev": "/acim/workbook/l309/"
+    },
+    {
+      "fid": "lastjudgement/",
+      "title": "What is the Last Judgement?",
+      "url": "/acim/workbook/lastjudgement/",
+      "idx": 329,
+      "next": "/acim/workbook/l311/",
+      "prev": "/acim/workbook/l310/"
+    },
+    {
+      "fid": "l311/",
+      "lesson": 311,
+      "title": "I judge all things as I would have them be.",
+      "url": "/acim/workbook/l311/",
+      "idx": 330,
+      "next": "/acim/workbook/l312/",
+      "prev": "/acim/workbook/lastjudgement/"
+    },
+    {
+      "fid": "l312/",
+      "lesson": 312,
+      "title": "I see all things as I would have them be.",
+      "url": "/acim/workbook/l312/",
+      "idx": 331,
+      "next": "/acim/workbook/l313/",
+      "prev": "/acim/workbook/l311/"
+    },
+    {
+      "fid": "l313/",
+      "lesson": 313,
+      "title": "Now let a new perception come to me.",
+      "url": "/acim/workbook/l313/",
+      "idx": 332,
+      "next": "/acim/workbook/l314/",
+      "prev": "/acim/workbook/l312/"
+    },
+    {
+      "fid": "l314/",
+      "lesson": 314,
+      "title": "I seek a future different from the past.",
+      "url": "/acim/workbook/l314/",
+      "idx": 333,
+      "next": "/acim/workbook/l315/",
+      "prev": "/acim/workbook/l313/"
+    },
+    {
+      "fid": "l315/",
+      "lesson": 315,
+      "title": "All gifts my brothers give belong to me.",
+      "url": "/acim/workbook/l315/",
+      "idx": 334,
+      "next": "/acim/workbook/l316/",
+      "prev": "/acim/workbook/l314/"
+    },
+    {
+      "fid": "l316/",
+      "lesson": 316,
+      "title": "All gifts I give my brothers are my own.",
+      "url": "/acim/workbook/l316/",
+      "idx": 335,
+      "next": "/acim/workbook/l317/",
+      "prev": "/acim/workbook/l315/"
+    },
+    {
+      "fid": "l317/",
+      "lesson": 317,
+      "title": "I follow in the way appointed me.",
+      "url": "/acim/workbook/l317/",
+      "idx": 336,
+      "next": "/acim/workbook/l318/",
+      "prev": "/acim/workbook/l316/"
+    },
+    {
+      "fid": "l318/",
+      "lesson": 318,
+      "title": "In me salvation’s means and end are one.",
+      "url": "/acim/workbook/l318/",
+      "idx": 337,
+      "next": "/acim/workbook/l319/",
+      "prev": "/acim/workbook/l317/"
+    },
+    {
+      "fid": "l319/",
+      "lesson": 319,
+      "title": "I came for the salvation of the world.",
+      "url": "/acim/workbook/l319/",
+      "idx": 338,
+      "next": "/acim/workbook/l320/",
+      "prev": "/acim/workbook/l318/"
+    },
+    {
+      "fid": "l320/",
+      "lesson": 320,
+      "title": "My Father gives all power unto me.",
+      "url": "/acim/workbook/l320/",
+      "idx": 339,
+      "next": "/acim/workbook/creation/",
+      "prev": "/acim/workbook/l319/"
+    },
+    {
+      "fid": "creation/",
+      "title": "What is Creation?",
+      "url": "/acim/workbook/creation/",
+      "idx": 340,
+      "next": "/acim/workbook/l321/",
+      "prev": "/acim/workbook/l320/"
+    },
+    {
+      "fid": "l321/",
+      "lesson": 321,
+      "title": "Father, my freedom is in You alone.",
+      "url": "/acim/workbook/l321/",
+      "idx": 341,
+      "next": "/acim/workbook/l322/",
+      "prev": "/acim/workbook/creation/"
+    },
+    {
+      "fid": "l322/",
+      "lesson": 322,
+      "title": "I can give up but what was never real.",
+      "url": "/acim/workbook/l322/",
+      "idx": 342,
+      "next": "/acim/workbook/l323/",
+      "prev": "/acim/workbook/l321/"
+    },
+    {
+      "fid": "l323/",
+      "lesson": 323,
+      "title": "I gladly make the ‘sacrifice’ of fear.",
+      "url": "/acim/workbook/l323/",
+      "idx": 343,
+      "next": "/acim/workbook/l324/",
+      "prev": "/acim/workbook/l322/"
+    },
+    {
+      "fid": "l324/",
+      "lesson": 324,
+      "title": "I merely follow, for I would not lead.",
+      "url": "/acim/workbook/l324/",
+      "idx": 344,
+      "next": "/acim/workbook/l325/",
+      "prev": "/acim/workbook/l323/"
+    },
+    {
+      "fid": "l325/",
+      "lesson": 325,
+      "title": "All things I think I see reflect ideas.",
+      "url": "/acim/workbook/l325/",
+      "idx": 345,
+      "next": "/acim/workbook/l326/",
+      "prev": "/acim/workbook/l324/"
+    },
+    {
+      "fid": "l326/",
+      "lesson": 326,
+      "title": "I am forever an Effect of God.",
+      "url": "/acim/workbook/l326/",
+      "idx": 346,
+      "next": "/acim/workbook/l327/",
+      "prev": "/acim/workbook/l325/"
+    },
+    {
+      "fid": "l327/",
+      "lesson": 327,
+      "title": "I need but call and You will answer me.",
+      "url": "/acim/workbook/l327/",
+      "idx": 347,
+      "next": "/acim/workbook/l328/",
+      "prev": "/acim/workbook/l326/"
+    },
+    {
+      "fid": "l328/",
+      "lesson": 328,
+      "title": "I choose the second place to gain the first.",
+      "url": "/acim/workbook/l328/",
+      "idx": 348,
+      "next": "/acim/workbook/l329/",
+      "prev": "/acim/workbook/l327/"
+    },
+    {
+      "fid": "l329/",
+      "lesson": 329,
+      "title": "I have already chosen what You will.",
+      "url": "/acim/workbook/l329/",
+      "idx": 349,
+      "next": "/acim/workbook/l330/",
+      "prev": "/acim/workbook/l328/"
+    },
+    {
+      "fid": "l330/",
+      "lesson": 330,
+      "title": "I will not hurt myself again today.",
+      "url": "/acim/workbook/l330/",
+      "idx": 350,
+      "next": "/acim/workbook/ego/",
+      "prev": "/acim/workbook/l329/"
+    },
+    {
+      "fid": "ego/",
+      "title": "What is the Ego?",
+      "url": "/acim/workbook/ego/",
+      "idx": 351,
+      "next": "/acim/workbook/l331/",
+      "prev": "/acim/workbook/l330/"
+    },
+    {
+      "fid": "l331/",
+      "lesson": 331,
+      "title": "There is no conflict, for my will is Yours.",
+      "url": "/acim/workbook/l331/",
+      "idx": 352,
+      "next": "/acim/workbook/l332/",
+      "prev": "/acim/workbook/ego/"
+    },
+    {
+      "fid": "l332/",
+      "lesson": 332,
+      "title": "Fear binds the world. Forgiveness sets it free.",
+      "url": "/acim/workbook/l332/",
+      "idx": 353,
+      "next": "/acim/workbook/l333/",
+      "prev": "/acim/workbook/l331/"
+    },
+    {
+      "fid": "l333/",
+      "lesson": 333,
+      "title": "Forgiveness ends the dream of conflict here.",
+      "url": "/acim/workbook/l333/",
+      "idx": 354,
+      "next": "/acim/workbook/l334/",
+      "prev": "/acim/workbook/l332/"
+    },
+    {
+      "fid": "l334/",
+      "lesson": 334,
+      "title": "Today I claim the gifts forgiveness gives.",
+      "url": "/acim/workbook/l334/",
+      "idx": 355,
+      "next": "/acim/workbook/l335/",
+      "prev": "/acim/workbook/l333/"
+    },
+    {
+      "fid": "l335/",
+      "lesson": 335,
+      "title": "I choose to see my brother’s sinlessness.",
+      "url": "/acim/workbook/l335/",
+      "idx": 356,
+      "next": "/acim/workbook/l336/",
+      "prev": "/acim/workbook/l334/"
+    },
+    {
+      "fid": "l336/",
+      "lesson": 336,
+      "title": "Forgiveness lets me know that minds are joined.",
+      "url": "/acim/workbook/l336/",
+      "idx": 357,
+      "next": "/acim/workbook/l337/",
+      "prev": "/acim/workbook/l335/"
+    },
+    {
+      "fid": "l337/",
+      "lesson": 337,
+      "title": "My sinlessness protects me from all harm.",
+      "url": "/acim/workbook/l337/",
+      "idx": 358,
+      "next": "/acim/workbook/l338/",
+      "prev": "/acim/workbook/l336/"
+    },
+    {
+      "fid": "l338/",
+      "lesson": 338,
+      "title": "I am affected only by my thoughts.",
+      "url": "/acim/workbook/l338/",
+      "idx": 359,
+      "next": "/acim/workbook/l339/",
+      "prev": "/acim/workbook/l337/"
+    },
+    {
+      "fid": "l339/",
+      "lesson": 339,
+      "title": "I will receive whatever I request.",
+      "url": "/acim/workbook/l339/",
+      "idx": 360,
+      "next": "/acim/workbook/l340/",
+      "prev": "/acim/workbook/l338/"
+    },
+    {
+      "fid": "l340/",
+      "lesson": 340,
+      "title": "I can be free of suffering today.",
+      "url": "/acim/workbook/l340/",
+      "idx": 361,
+      "next": "/acim/workbook/miracle/",
+      "prev": "/acim/workbook/l339/"
+    },
+    {
+      "fid": "miracle/",
+      "title": "What is a Miracle?",
+      "url": "/acim/workbook/miracle/",
+      "idx": 362,
+      "next": "/acim/workbook/l341/",
+      "prev": "/acim/workbook/l340/"
+    },
+    {
+      "fid": "l341/",
+      "lesson": 341,
+      "title": "I can attack but my own sinlessness",
+      "url": "/acim/workbook/l341/",
+      "idx": 363,
+      "next": "/acim/workbook/l342/",
+      "prev": "/acim/workbook/miracle/"
+    },
+    {
+      "fid": "l342/",
+      "lesson": 342,
+      "title": "I let forgiveness rest upon all things",
+      "url": "/acim/workbook/l342/",
+      "idx": 364,
+      "next": "/acim/workbook/l343/",
+      "prev": "/acim/workbook/l341/"
+    },
+    {
+      "fid": "l343/",
+      "lesson": 343,
+      "title": "I am not asked to make a sacrifice",
+      "url": "/acim/workbook/l343/",
+      "idx": 365,
+      "next": "/acim/workbook/l344/",
+      "prev": "/acim/workbook/l342/"
+    },
+    {
+      "fid": "l344/",
+      "lesson": 344,
+      "title": "Today I learn the law of love",
+      "url": "/acim/workbook/l344/",
+      "idx": 366,
+      "next": "/acim/workbook/l345/",
+      "prev": "/acim/workbook/l343/"
+    },
+    {
+      "fid": "l345/",
+      "lesson": 345,
+      "title": "I offer only miracles today",
+      "url": "/acim/workbook/l345/",
+      "idx": 367,
+      "next": "/acim/workbook/l346/",
+      "prev": "/acim/workbook/l344/"
+    },
+    {
+      "fid": "l346/",
+      "lesson": 346,
+      "title": "Today the peace of God envelops me",
+      "url": "/acim/workbook/l346/",
+      "idx": 368,
+      "next": "/acim/workbook/l347/",
+      "prev": "/acim/workbook/l345/"
+    },
+    {
+      "fid": "l347/",
+      "lesson": 347,
+      "title": "Anger must come from judgement",
+      "url": "/acim/workbook/l347/",
+      "idx": 369,
+      "next": "/acim/workbook/l348/",
+      "prev": "/acim/workbook/l346/"
+    },
+    {
+      "fid": "l348/",
+      "lesson": 348,
+      "title": "I have no cause for anger or for fear",
+      "url": "/acim/workbook/l348/",
+      "idx": 370,
+      "next": "/acim/workbook/l349/",
+      "prev": "/acim/workbook/l347/"
+    },
+    {
+      "fid": "l349/",
+      "lesson": 349,
+      "title": "Today I let Christ’s vision look upon",
+      "url": "/acim/workbook/l349/",
+      "idx": 371,
+      "next": "/acim/workbook/l350/",
+      "prev": "/acim/workbook/l348/"
+    },
+    {
+      "fid": "l350/",
+      "lesson": 350,
+      "title": "Miracles mirror God’s eternal Love.",
+      "url": "/acim/workbook/l350/",
+      "idx": 372,
+      "next": "/acim/workbook/whatami/",
+      "prev": "/acim/workbook/l349/"
+    },
+    {
+      "fid": "whatami/",
+      "title": "What am I?",
+      "url": "/acim/workbook/whatami/",
+      "idx": 373,
+      "next": "/acim/workbook/l351/",
+      "prev": "/acim/workbook/l350/"
+    },
+    {
+      "fid": "l351/",
+      "lesson": 351,
+      "title": "Miracles mirror God’s eternal Love.",
+      "url": "/acim/workbook/l351/",
+      "idx": 374,
+      "next": "/acim/workbook/l352/",
+      "prev": "/acim/workbook/whatami/"
+    },
+    {
+      "fid": "l352/",
+      "lesson": 352,
+      "title": "Judgement and love are opposites.",
+      "url": "/acim/workbook/l352/",
+      "idx": 375,
+      "next": "/acim/workbook/l353/",
+      "prev": "/acim/workbook/l351/"
+    },
+    {
+      "fid": "l353/",
+      "lesson": 353,
+      "title": "My eyes, my tongue, my hands, my feet",
+      "url": "/acim/workbook/l353/",
+      "idx": 376,
+      "next": "/acim/workbook/l354/",
+      "prev": "/acim/workbook/l352/"
+    },
+    {
+      "fid": "l354/",
+      "lesson": 354,
+      "title": "We stand together, Christ and I",
+      "url": "/acim/workbook/l354/",
+      "idx": 377,
+      "next": "/acim/workbook/l355/",
+      "prev": "/acim/workbook/l353/"
+    },
+    {
+      "fid": "l355/",
+      "lesson": 355,
+      "title": "There is no end to all the peace and joy",
+      "url": "/acim/workbook/l355/",
+      "idx": 378,
+      "next": "/acim/workbook/l356/",
+      "prev": "/acim/workbook/l354/"
+    },
+    {
+      "fid": "l356/",
+      "lesson": 356,
+      "title": "Sickness is but another name for sin.",
+      "url": "/acim/workbook/l356/",
+      "idx": 379,
+      "next": "/acim/workbook/l357/",
+      "prev": "/acim/workbook/l355/"
+    },
+    {
+      "fid": "l357/",
+      "lesson": 357,
+      "title": "Truth answers every call we make to God",
+      "url": "/acim/workbook/l357/",
+      "idx": 380,
+      "next": "/acim/workbook/l358/",
+      "prev": "/acim/workbook/l356/"
+    },
+    {
+      "fid": "l358/",
+      "lesson": 358,
+      "title": "No call to God can be unheard",
+      "url": "/acim/workbook/l358/",
+      "idx": 381,
+      "next": "/acim/workbook/l359/",
+      "prev": "/acim/workbook/l357/"
+    },
+    {
+      "fid": "l359/",
+      "lesson": 359,
+      "title": "God’s answer is some form of peace.",
+      "url": "/acim/workbook/l359/",
+      "idx": 382,
+      "next": "/acim/workbook/l360/",
+      "prev": "/acim/workbook/l358/"
+    },
+    {
+      "fid": "l360/",
+      "lesson": 360,
+      "title": "Peace be to me, the holy Son of God.",
+      "url": "/acim/workbook/l360/",
+      "idx": 383,
+      "next": "/acim/workbook/final/",
+      "prev": "/acim/workbook/l359/"
+    },
+    {
+      "fid": "final/",
+      "title": "Final Lessons",
+      "url": "/acim/workbook/final/",
+      "idx": 384,
+      "next": "/acim/workbook/l361/",
+      "prev": "/acim/workbook/l360/"
+    },
+    {
+      "fid": "l361/",
+      "lesson": 361,
+      "title": "This holy instant would I give to You.",
+      "url": "/acim/workbook/l361/",
+      "idx": 385,
+      "next": "/acim/workbook/l361/",
+      "prev": "/acim/workbook/final/"
+    },
+    {
+      "fid": "l361/",
+      "lesson": 362,
+      "title": "This holy instant would I give to You.",
+      "url": "/acim/workbook/l361/",
+      "idx": 386,
+      "next": "/acim/workbook/l361/",
+      "prev": "/acim/workbook/l361/"
+    },
+    {
+      "fid": "l361/",
+      "lesson": 363,
+      "title": "This holy instant would I give to You.",
+      "url": "/acim/workbook/l361/",
+      "idx": 387,
+      "next": "/acim/workbook/l361/",
+      "prev": "/acim/workbook/l361/"
+    },
+    {
+      "fid": "l361/",
+      "lesson": 364,
+      "title": "This holy instant would I give to You.",
+      "url": "/acim/workbook/l361/",
+      "idx": 388,
+      "next": "/acim/workbook/l361/",
+      "prev": "/acim/workbook/l361/"
+    },
+    {
+      "fid": "l361/",
+      "lesson": 355,
+      "title": "This holy instant would I give to You.",
+      "url": "/acim/workbook/l361/",
+      "idx": 389,
+      "next": "/acim/intro/workbook/",
+      "prev": "/acim/workbook/l361/"
     }
   ]
 }

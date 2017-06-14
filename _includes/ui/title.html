@@ -3,6 +3,9 @@
     {% if page.chapter %}
       {{ page.chapter | prepend: "Chapter " }}
       <br/><small>{{ page.ref }} {{page.title}}</small>
+    {% elsif page.ref %}
+      {{ page.title }}
+      <br/><small>{{ page.ref }}</small>
     {% else  %}
       {{page.title}}
     {% endif %}

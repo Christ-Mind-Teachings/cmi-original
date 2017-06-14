@@ -22300,6 +22300,13 @@ module.exports = {
     if (location.hash) {
       location.href = location.hash;
     }
+
+    //reveal link to review for acim workbook lesson
+    // - this happens only when page is linked from the review lesson
+    var review = url.getQueryString("r");
+    if (review) {
+      $(".hide-review").removeClass("hide-review");
+    }
   }
 };
 

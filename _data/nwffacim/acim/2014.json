@@ -79,11 +79,12 @@
       "fid": "020914/",
       "desc": "Discussion",
       "res": {
-        "audio": "2014-02-09.mp3"
+        "audio": "2014-02-09.mp3",
+        "timing": "020914.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

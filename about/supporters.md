@@ -130,7 +130,63 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Jun 03, 2006
  "   | Format | NWFFACIM | Study Group | Jun 10, 2006
  "   | Format | NWFFACIM | Study Group | Jun 18, 2006
+ "   | Format | NWFFACIM | Study Group | Jul 01, 2006
+ "   | Format | NWFFACIM | Study Group | Jul 15, 2006
+ "   | Format | NWFFACIM | Study Group | Aug 05, 2006
+ "   | Format | NWFFACIM | Study Group | Aug 20, 2006
+ "   | Format | NWFFACIM | Study Group | Sep 02, 2006
  "   | Format | NWFFACIM | Study Group | Jun 24, 2006
+ "   | Format | NWFFACIM | Study Group | Sep 09, 2006
+ "   | Format | NWFFACIM | Study Group | Sep 23, 2006
+ "   | Format | NWFFACIM | Study Group | Oct 07, 2006
+ "   | Format | NWFFACIM | Study Group | Oct 14, 2006
+ "   | Format | NWFFACIM | Study Group | Nov 11, 2006
+ "   | Format | NWFFACIM | Study Group | Nov 18, 2006
+ "   | Format | NWFFACIM | Study Group | Aug 25, 2007
+ "   | Format | NWFFACIM | Study Group | Sep 09, 2007
+ "   | Format | NWFFACIM | Study Group | Sep 16, 2007
+ "   | Format | NWFFACIM | Study Group | Sep 22, 2007
+ "   | Format | NWFFACIM | Study Group | Oct 06, 2007
+ "   | Format | NWFFACIM | Study Group | Oct 14, 2007
+ "   | Format | NWFFACIM | Study Group | Oct 27, 2007
+ "   | Format | NWFFACIM | Study Group | Nov 03, 2007
+ "   | Format | NWFFACIM | Study Group | Nov 10, 2007
+ "   | Format | NWFFACIM | Study Group | Nov 18, 2007
+ "   | Format | NWFFACIM | Study Group | Dec 08, 2007
+ "   | Format | NWFFACIM | Study Group | Dec 16, 2007
+ "   | Format | NWFFACIM | Study Group | Jan 20, 2008
+ "   | Format | NWFFACIM | Study Group | Jan 27, 2008
+ "   | Format | NWFFACIM | Study Group | Feb 10, 2008
+ "   | Format | NWFFACIM | Study Group | Feb 17, 2008
+ "   | Format | NWFFACIM | Study Group | Feb 24, 2008
+ "   | Format | NWFFACIM | Study Group | Mar 02, 2008
+ "   | Format | NWFFACIM | Study Group | Mar 09, 2008
+ "   | Format | NWFFACIM | Study Group | Mar 25, 2008
+ "   | Format | NWFFACIM | Study Group | Mar 30, 2008
+ "   | Format | NWFFACIM | Study Group | Apr 06, 2008
+ "   | Format | NWFFACIM | Study Group | Apr 13, 2008
+ "   | Format | NWFFACIM | Study Group | Apr 20, 2008
+ "   | Format | NWFFACIM | Study Group | May 04, 2008
+ "   | Format | NWFFACIM | Study Group | May 18, 2008
+ "   | Format | NWFFACIM | Study Group | May 25, 2008
+ "   | Format | NWFFACIM | Study Group | Jun 01, 2008
+ "   | Format | NWFFACIM | Study Group | Jun 08, 2008
+ "   | Format | NWFFACIM | Study Group | Jun 15, 2008
+ "   | Format | NWFFACIM | Study Group | Jun 22, 2008
+ "   | Format | NWFFACIM | Study Group | Jul 13, 2008
+ "   | Format | NWFFACIM | Study Group | Jul 27, 2008
+ "   | Format | NWFFACIM | Study Group | Aug 17, 2008
+ "   | Format | NWFFACIM | Study Group | Aug 31, 2008
+ "   | Format | NWFFACIM | Study Group | Sep 07, 2008
+ "   | Format | NWFFACIM | Study Group | Sep 14, 2008
+ "   | Format | NWFFACIM | Study Group | Sep 21, 2008
+ "   | Format | NWFFACIM | Study Group | Oct 05, 2008
+ "   | Format | NWFFACIM | Study Group | Oct 19, 2008
+ "   | Format | NWFFACIM | Study Group | Oct 26, 2008
+ "   | Format | NWFFACIM | Study Group | Nov 02, 2008
+ "   | Format | NWFFACIM | Study Group | Nov 09, 2008
+ "   | Format | NWFFACIM | Study Group | Nov 23, 2008
+ "   | Format | NWFFACIM | Study Group | Dec 02, 2006
  "   | Timing | NWFFACIM | Study Group | Jan 17, 2009
  "   | Format | NWFFACIM | Study Group | Jan 02, 2010
  "   | Format | NWFFACIM | Study Group | Jan 16, 2010
@@ -226,6 +282,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Nov 24, 2013
  "   | Timing | NWFFACIM | Study Group | Jan 06, 2014
  "   | Timing | NWFFACIM | Study Group | Jan 14, 2014
+ "   | Timing | NWFFACIM | Study Group | Feb 09, 2014
  "   | Timing | NWFFACIM | Study Group | Apr 13, 2014
  "   | Format | NWFFACIM | Study Group | Apr 13, 2014
  "   | Timing | NWFFACIM | Study Group | Apr 18, 2015

@@ -1,0 +1,32 @@
+{% comment %}
+  Sidebar contents from data files based on page.bid
+  {% assign link = base | append: i.url %}
+{% endcomment %}
+{% include nav/resolve.html %}
+
+{% assign class = "sidebar-nav-item sidebar-nav-item-toc" %}
+{% if data %}
+  {% assign base = data.base %}
+  {% for i in data.page %}
+    {% assign link = i.url %}
+    {% assign extra = "" %}
+    {% if i.lesson %}
+      {% assign title = i.lesson | append: ": " | append: i.title %}
+    {% else %}
+      {% assign title = i.title %}
+    {% endif %}
+    {% if forloop.first %}
+      {% assign extra = "first-item" %}
+    {% endif %}
+    {% if page.url == link %}
+      {% assign extra = extra | append: " active" | append: " selected-item" %}
+      {% assign title = title | prepend: "&gt; " | append: " &lt;" %}
+      {% assign link = "#" %}
+    {% endif %}
+    <a class="{{class}} {{extra}}" href="{{link}}"> {{ title }} </a>
+  {% endfor %}
+{% else %}
+  <a class="{{class}}" href="#">nav/contents error: page.bid: {{page.bid}} not found</a>
+{% endif %}
+
+

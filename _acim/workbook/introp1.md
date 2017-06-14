@@ -1,6 +1,6 @@
 ---
 title: Introduction
-ref: Part 1
+ref: Workbook Introduction
 ---
 
 *A* theoretical foundation, such as the text, is necessary as a
