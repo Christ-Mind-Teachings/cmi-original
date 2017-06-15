@@ -1,5 +1,6 @@
 ---
 title: Epilog
+burl: /acim/intro/workbook/#epilog
 ---
 
 This course is a beginning, not an end. Your Friend goes with you. You

@@ -1,5 +1,6 @@
 ---
 title: "What is the Christ?"
+burl: /acim/intro/workbook/#christ
 ---
 
 Christ is God’s Son as He created Him. He is the Self we share, uniting

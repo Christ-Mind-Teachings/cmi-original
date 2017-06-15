@@ -669,7 +669,8 @@
       "fid": "120206/",
       "desc": "T12.6 Attainment of the Real World",
       "res": {
-        "audio": "2006-12-02.mp3"
+        "audio": "2006-12-02.mp3",
+        "timing": "120206.js"
       },
       "complete": {
         "format": 1,

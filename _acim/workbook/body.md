@@ -1,5 +1,6 @@
 ---
 title: "What is the Body?"
+burl: /acim/intro/workbook/#body
 ---
 
 The body is a fence the Son of God imagines he has built to separate

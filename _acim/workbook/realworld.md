@@ -1,5 +1,6 @@
 ---
 title: "What is the Real World?"
+burl: /acim/intro/workbook/#realworld
 ---
 
 The real world is a symbol, like the rest of what perception offers. Yet

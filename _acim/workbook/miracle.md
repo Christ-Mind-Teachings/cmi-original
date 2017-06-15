@@ -1,5 +1,6 @@
 ---
 title: "What is a Miracle?"
+burl: /acim/intro/workbook/#miracle
 ---
 
 A miracle is a correction. It does not create, nor really change at all.

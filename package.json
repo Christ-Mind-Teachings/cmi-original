@@ -21,25 +21,12 @@
     "jquery": "global:jQuery",
     "jQuery": "global:jQuery"
   },
-  "rickify": {
-    "transform": [
-      "brfs",
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015"
-          ]
-        }
-      ]
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rmercer33/christmind.info.git"
   },
   "author": "Rick Mercer",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rmercer33/christmind.info/issues"
   },

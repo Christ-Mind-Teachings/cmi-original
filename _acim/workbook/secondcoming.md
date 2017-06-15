@@ -1,5 +1,6 @@
 ---
 title: "What is the Second Coming?"
+burl: /acim/intro/workbook/#secondcoming
 ---
 
 Christ’s Second Coming, which is sure as God, is merely the correction

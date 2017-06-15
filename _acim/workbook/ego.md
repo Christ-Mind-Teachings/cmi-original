@@ -1,5 +1,6 @@
 ---
 title: "What is the Ego?"
+burl: /acim/intro/workbook/#ego
 ---
 
 The ego is idolatry; the sign of limited and separated self, born in a

@@ -1,5 +1,6 @@
 ---
 title: "What is Sin?"
+burl: /acim/intro/workbook/#sin
 ---
 
 Sin is insanity. It is the means by which the mind is driven mad, and

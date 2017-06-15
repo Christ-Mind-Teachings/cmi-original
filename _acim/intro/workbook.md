@@ -56,7 +56,7 @@ Lesson | Title
 {{row}}{% endcapture %}
     {% endfor %}
   {% capture table %}
-<div markdown="1" class="acim-toc">
+<div id="{{section.ref}}" markdown="1" class="acim-toc">
 ### {{title}}
 
 Lesson | Title

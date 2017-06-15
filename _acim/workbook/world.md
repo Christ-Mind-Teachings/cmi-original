@@ -1,5 +1,6 @@
 ---
 title: "What is the World?"
+burl: /acim/intro/workbook/#world
 ---
 
 The world is false perception. It is born of error, and it has not left

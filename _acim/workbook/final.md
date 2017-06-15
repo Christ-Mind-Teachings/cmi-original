@@ -1,5 +1,6 @@
 ---
 title: Final Lessons
+burl: /acim/intro/workbook/#finallessons
 ---
 
 Our final lessons will be left as free of words as possible. We use them

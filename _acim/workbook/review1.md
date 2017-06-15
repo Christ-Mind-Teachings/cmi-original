@@ -1,6 +1,7 @@
 ---
 title: "Review I: Lessons 1 - 50"
 ref: Introduction
+burl: /acim/intro/workbook/#r1
 ---
 
 Beginning with today, we will have a series of review periods. Each of

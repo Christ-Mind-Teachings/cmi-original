@@ -1,6 +1,7 @@
 ---
 title: Introduction
 ref: Workbook Introduction
+burl: /acim/intro/workbook/#intro
 ---
 
 *A* theoretical foundation, such as the text, is necessary as a

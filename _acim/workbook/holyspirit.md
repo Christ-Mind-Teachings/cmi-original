@@ -1,5 +1,6 @@
 ---
 title: "What is the Holy Spirit?"
+burl: /acim/intro/workbook/#holyspirit
 ---
 
 The Holy Spirit mediates between illusions and the truth. As He must

@@ -1,5 +1,6 @@
 ---
 title: "What is the Last Judgement?"
+burl: /acim/intro/workbook/#lastjudgement
 ---
 
 Christ’s Second Coming gives the Son of God the gift to hear the Voice
