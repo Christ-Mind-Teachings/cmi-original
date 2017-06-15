@@ -324,11 +324,12 @@
       "fid": "061006/",
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
-        "audio": "2006-06-10.mp3"
+        "audio": "2006-06-10.mp3",
+        "timing": "061006.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

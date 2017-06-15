@@ -19,11 +19,12 @@
       "fid": "081807/",
       "desc": "Discussion",
       "res": {
-        "audio": "2007-08-18.mp3"
+        "audio": "2007-08-18.mp3",
+        "timing": "081807.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

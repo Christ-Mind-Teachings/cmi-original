@@ -195,11 +195,12 @@
       "fid": "091514/",
       "desc": "Disucssion",
       "res": {
-        "audio": "2014-09-15.mp3"
+        "audio": "2014-09-15.mp3",
+        "timing": "091514.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
