@@ -1,0 +1,5 @@
+*.log
+manual/*.json
+workbook/*.json
+text/*.json
+

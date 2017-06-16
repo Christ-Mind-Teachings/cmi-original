@@ -4,6 +4,29 @@
 # return 1 if we want to discard the paragraph
 #
 function discardParagraph(p) {
+  # a reveiw lesson link
+  if (n = match(p,/^\[\*/) > 0) {
+    return 1
+  }
+  # no review lessn 'return to review' link
+  if (n = match(p,/^<a/) > 0) {
+    return 1
+  }
+  if (n = match(p,/and/i) > 0) {
+    return 1
+  }
+  if (n = match(p,/for example/i) > 0) {
+    return 1
+  }
+  if (n = match(p,/on the hour/i) > 0) {
+    return 1
+  }
+  if (n = match(p,/on the half hour/i) > 0) {
+    return 1
+  }
+  if (n = match(p,/for morning and evening review/i) > 0) {
+    return 1
+  }
   return 0
 }
 
@@ -11,6 +34,12 @@ function bookId(book) {
   switch(book) {
     case "text":
       bid = 1
+      break
+    case "manual":
+      bid = 2
+      break
+    case "workbook":
+      bid = 3
       break
     default:
       bid = 0;
@@ -26,6 +55,99 @@ function unitId(book, unit) {
       sec = substr(unit, 10, 2)
       uid = chap * 100 + sec
       break
+    case "manual":
+      chap = substr(unit, 5, 2)
+      uid = chap * 1
+      break
+    case "workbook":
+      lesson = "l"
+      if (lesson == substr(unit, 1, 1)) {
+        lessonNo = substr(unit, 2, 3)
+        uid = lessonNo * 1
+      }
+      else {
+        switch(unit) {
+          case "body":
+            uid = 400
+            break
+          case "christ":
+            uid = 401
+            break
+          case "creation":
+            uid = 402
+            break
+          case "ego":
+            uid = 403
+            break
+          case "epilog":
+            uid = 404
+            break
+          case "final":
+            uid = 405
+            break
+          case "forgiveness":
+            uid = 406
+            break
+          case "holyspirit":
+            uid = 407
+            break
+          case "intro181":
+            uid = 408
+            break
+          case "introp1":
+            uid = 409
+            break
+          case "introp2":
+            uid = 411
+            break
+          case "lastjudgement":
+            uid = 412
+            break
+          case "miracle":
+            uid = 413
+            break
+          case "realworld":
+            uid = 414
+            break
+          case "review1":
+            uid = 415
+            break
+          case "review2":
+            uid = 416
+            break
+          case "review3":
+            uid = 417
+            break
+          case "review4":
+            uid = 418
+            break
+          case "review5":
+            uid = 419
+            break
+          case "review6":
+            uid = 420
+            break
+          case "salvation":
+            uid = 421
+            break
+          case "secondcoming":
+            uid = 422
+            break
+          case "sin":
+            uid = 423
+            break
+          case "whatami":
+            uid = 424
+            break
+          case "world":
+            uid = 425
+            break
+          default:
+            uid = -1
+            break
+        }
+      }
+      break
     default:
       uid = -1
       break
@@ -40,6 +162,7 @@ BEGIN {
   l = -1
   fm = 0
   inp = false
+  discard = 0
   needComma = "n"
 
   if (debug == 0) {
@@ -58,6 +181,10 @@ BEGIN {
 }
 $1 ~ /##/ {
   # questions
+  next
+}
+$1 ~ /{:/ {
+  # markdown id or class definition
   next
 }
 /^<div/ || /^<\/div/ {
@@ -83,7 +210,6 @@ $1 ~ /##/ {
 
   if (l > -1) {
     len = length(lines)
-    discard = 0
     if (len == 1) {
       #found = discardParagraph(lines[0])
       #if (found > 0) {
@@ -120,6 +246,8 @@ $1 ~ /##/ {
       gsub(/[\[\])(*>.,!?;:‘’'"“”/\\]/,"",raw)
       #remove 0xa0
       gsub(/ /,"",raw)
+      #remove 0x09
+      gsub(/	/," ",raw)
       # convert dash to space 
       gsub(/[-—–]/," ",raw)
       # remove footnotes: [^1]
@@ -137,6 +265,7 @@ $1 ~ /##/ {
     text = ""
     delete lines
     needComma = "y"
+    discard = 0
     p++
   }
   next

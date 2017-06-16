@@ -1,27 +1,239 @@
 -
-  function getUnitName(unit) {
+  function getManualUnitName(unit) {
+    var number = Number.parseInt(unit.substr(4, 2),10);
+    var name;
+    switch(number) {
+      case 1:
+        name = "Introduction";
+        break;
+      case 2:
+        name = "Who are God's Teachers?";
+        break;
+      case 3:
+        name = "Who are their Pupils?";
+        break;
+      case 4:
+        name = "What are the Levels of Teaching?";
+        break;
+      case 5:
+        name = "What are the Characteristics of God’s Teachers?";
+        break;
+      case 6:
+        name = "How is Healing Accomplished?";
+        break;
+      case 7:
+        name = "Is Healing Certain?";
+        break;
+      case 8:
+        name = "Should Healing be Repeated?";
+        break;
+      case 9:
+        name = "How Can the Perception of Order of Difficulties be Avoided?";
+        break;
+      case 10:
+        name = "Are Changes Required in the Life Situation of God’s Teachers?";
+        break;
+      case 11:
+        name = "How is Judgement Relinquished?";
+        break;
+      case 12:
+        name = "How is Peace Possible in this World?";
+        break;
+      case 13:
+        name = "How Many Teachers of God are Needed to Save the World?";
+        break;
+      case 14:
+        name = "What is the Real Meaning of Sacrifice?";
+        break;
+      case 15:
+        name = "How Will the World End?";
+        break;
+      case 16:
+        name = "Is Each One to be Judged in the End?";
+        break;
+      case 17:
+        name = "How Should the Teacher of God Spend His Day?";
+        break;
+      case 18:
+        name = "How do God’s Teachers Deal with their Pupils’ Thoughts of Magic?";
+        break;
+      case 19:
+        name = "How is Correction Made?";
+        break;
+      case 20:
+        name = "What is Justice?";
+        break;
+      case 21:
+        name = "What is the Peace of God?";
+        break;
+      case 22:
+        name = "What is the Role of Words in Healing?";
+        break;
+      case 23:
+        name = "How are Healing and Atonement Related?";
+        break;
+      case 24:
+        name = "Does Jesus Have a Special Place in Healing?";
+        break;
+      case 25:
+        name = "Is Reincarnation True?";
+        break;
+      case 26:
+        name = "Are ‘Phychic’ Powers Desirable?";
+        break;
+      case 27:
+        name = "Can God be Reached Directly?";
+        break;
+      case 28:
+        name = "What is Death?";
+        break;
+      case 29:
+        name = "What is the Resurrection?";
+        break;
+      case 30:
+        name = "As for the Rest…";
+        break;
+      case 31:
+        name = "Forget Not…";
+        break;
+      default:
+        name = "????";
+        break;
+    }
+    return name;
+  }
+  function getWorkbookUnitName(unit) {
+    var name = unit;
+    var number;
+
+    if (unit === "lastjudgement") {
+      name = "What is the Last Judgement?";
+    }
+    else if (unit.charAt(0) === "l") {
+      number = Number.parseInt(unit.substr(1, 3),10);
+      name = "Lesson " + number;
+    }
+    else {
+      switch(unit) {
+        case "body":
+          name = "What is the Body?";
+          break;
+        case "christ":
+          name = "What is the Christ?";
+          break;
+        case "creation":
+          name = "What is Creation?";
+          break;
+        case "ego":
+          name = "What is the Ego?";
+          break;
+        case "epilog":
+          name = "Epilog";
+          break;
+        case "final":
+          name = "Final Lessons";
+          break;
+        case "forgiveness":
+          name = "What is Forgiveness?";
+          break;
+        case "holyspirit":
+          name = "What is the Holy Spirit?";
+          break;
+        case "intro181":
+          name = "Lessons 181 - 200 Introduction";
+          break;
+        case "introp1":
+          name = "Workbook Introduction";
+          break;
+        case "introp2":
+          name = "Workbook Part II Introduction";
+          break;
+        case "miracle":
+          name = "What is a Miracle?";
+          break;
+        case "realworld":
+          name = "What is the Real World?";
+          break;
+        case "review1":
+          name = "Review I Introduction";
+          break;
+        case "review2":
+          name = "Review II Introduction";
+          break;
+        case "review3":
+          name = "Review III Introduction";
+          break;
+        case "review4":
+          name = "Review IV Introduction";
+          break;
+        case "review5":
+          name = "Review V Introduction";
+          break;
+        case "review6":
+          name = "Review V Introduction";
+          break;
+        case "salvation":
+          name = "What is Salvation?";
+          break;
+        case "secondcoming":
+          name = "What is the Second Coming?";
+          break;
+        case "sin":
+          name = "What is Sin?";
+          break;
+        case "whatami":
+          name = "What am I?";
+          break;
+        case "world":
+          name = "What is the World?";
+          break;
+        default:
+          name = "????";
+          break;
+      }
+    }
+    return name;
+  }
+  function getUnitName(id, unit) {
     var id;
     var name;
     var chapter;
     var section;
 
-    chapter = Number.parseInt(unit.substr(0, 2), 10);
-    section = Number.parseInt(unit.substr(9, 2), 10);
-    name = "T" + chapter + "." + section;
+    switch(id) {
+      case 1:
+        chapter = Number.parseInt(unit.substr(0, 2), 10);
+        section = Number.parseInt(unit.substr(9, 2), 10);
+        name = "T" + chapter + "." + section;
+        break;
+      case 2:
+        name = getManualUnitName(unit);
+        break;
+      case 3:
+        name = getWorkbookUnitName(unit);
+        break;
+      default:
+        name = "???";
+        break;
+    }
 
     return name;
   }
 
-mixin hitList(book, hits)
+mixin hitList(book, id, hits)
   h3= book
   ul.fa-ul
     each val in hits
       - var url = val.base + "?s=show" + val.location;
-      - var unit = getUnitName(val.unit);
+      - var unit = getUnitName(id, val.unit);
       li: i.fa.fa-search
         a(href=url) &nbsp; #{unit}
         p !{val.context}
 
 if text
-  +hitList("Sparkly ACIM: Text", text)
+  +hitList("ACIM Text", 1, text)
+if manual
+  +hitList("ACIM Manual for Teachers", 2, manual)
+if workbook
+  +hitList("ACIM Workbook for Students", 3, workbook)
 

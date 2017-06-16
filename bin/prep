@@ -59,7 +59,9 @@ case $source in
   acim)
     unitDir=$acimDir
     awkFile=$acimAwk
-    outputFile=${outputFile:3}
+    if [ $book == "text" ]; then
+      outputFile=${outputFile:3}
+    fi
     ;;
   *) syntax;;
 esac

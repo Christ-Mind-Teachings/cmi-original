@@ -62,6 +62,7 @@ function load(table, fileName, verify) {
 
   var lesson = JSON.parse(fs.readFileSync(fileName, 'utf8'));
   console.log("file has %s paragraphs to load", lesson.paragraph.length);
+  console.log("+%s:%s", fileName, lesson.paragraph.length);
 
   if (verify) {
     return;
@@ -81,9 +82,9 @@ function load(table, fileName, verify) {
         }
       };
 
-      //we discard some one line paragraphs for tjl
+      //we discard some one line paragraphs
       // - like, amen, now we begin
-      if (discard > 0 && p.bid > 3) {
+      if (discard > 0) {
         discarded++;
         return;
       }
