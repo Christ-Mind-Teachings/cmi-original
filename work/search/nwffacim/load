@@ -62,6 +62,7 @@ function load(table, fileName, verify) {
 
   var lesson = JSON.parse(fs.readFileSync(fileName, 'utf8'));
   console.log("file has %s paragraphs to load", lesson.paragraph.length);
+  console.log("+%s:%s", fileName, lesson.paragraph.length);
 
   if (verify) {
     return;
@@ -94,9 +95,12 @@ function load(table, fileName, verify) {
        if (err) {
            console.error("Unable to add paragraph: %s:%s (%s).", p.book, p.unit, key);
            console.error("Error JSON:", JSON.stringify(err, null, 2));
-       } else {
+       }
+       /*
+       else {
            console.log("PutItem succeeded: %s:%s (%s)", p.book, p.unit, key);
        }
+      */
     });
   });
   console.log("file has %s discarded paragraphs", discarded);

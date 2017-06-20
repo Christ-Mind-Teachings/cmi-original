@@ -5,11 +5,118 @@
 # return 1 if we want to discard the paragraph
 #
 function discardParagraph(p) {
-  if (n = match(p,/^\[Miracle/) > 0) {
-    return 0
+  IGNORECASE = 1
+  if (match(p,/start here/)) {
+    return 1
+  }
+  if (match(p,/start the/)) {
+    return 1
+  }
+  if (match(p,/what\?/)) {
+    return 1
+  }
+  if (match(p,/read/)) {
+    return 1
+  }
+  if (match(p,/yes/)) {
+    return 1
+  }
+  if (match(p,/okay/)) {
+    return 1
+  }
+  if (match(p,/thank you/)) {
+    return 1
+  }
+  if (match(p,/exactly/)) {
+    return 1
+  }
+  if (match(p,/of course/)) {
+    return 1
+  }
+  if (match(p,/oh/)) {
+    return 1
+  }
+  if (match(p,/continue/)) {
+    return 1
+  }
+  if (match(p,/I see/)) {
+    return 1
+  }
+  if (match(p,/I say/)) {
+    return 1
+  }
+  if (match(p,/I have/)) {
+    return 1
+  }
+  if (match(p,/I can/)) {
+    return 1
+  }
+  if (match(p,/good afternoon/)) {
+    return 1
+  }
+  if (match(p,/good evening/)) {
+    return 1
+  }
+  if (match(p,/welcome/)) {
+    return 1
+  }
+  if (match(p,/makes sense/)) {
+    return 1
+  }
+  if (match(p,/you say/)) {
+    return 1
+  }
+  if (match(p,/want me/)) {
+    return 1
+  }
+  if (match(p,/answer your/)) {
+    return 1
+  }
+  if (match(p,/back up/)) {
+    return 1
+  }
+  if (match(p,/a question/)) {
+    return 1
+  }
+  if (match(p,/microphone/)) {
+    return 1
+  }
+  if (match(p,/that is correct/)) {
+    return 1
+  }
+  if (match(p,/right/)) {
+    return 1
+  }
+  if (match(p,/can i/)) {
+    return 1
+  }
+  if (match(p,/indeed/)) {
+    return 1
+  }
+  if (match(p,/i mean/)) {
+    return 1
+  }
+  if (match(p,/very true/)) {
+    return 1
+  }
+  if (match(p,/hello/)) {
+    return 1
+  }
+  if (match(p,/^now$/)) {
+    return 1
+  }
+  if (match(p,/^so$/)) {
+    return 1
+  }
+  if (match(p,/^again$/)) {
+    return 1
+  }
+  if (match(p,/^you see$/)) {
+    return 1
   }
 
-  return 1
+  IGNORECASE = 0
+  return 0
 }
 
 function bookId(book) {
@@ -158,7 +265,7 @@ $1 ~ /##/ {
   # a footnote reference
   next
 }
-/^$/ || /^>$/ || /^>\s*$/ {
+/^\r$/ || /^$/ || /^\s*$/ || /^>$/ || /^>\s*$/ {
   if (debug == 1) {
     for (line in lines) {
       text = sprintf("%s %s", text, lines[line])
@@ -194,12 +301,16 @@ $1 ~ /##/ {
     printf "    \"pid\": %s,\n", p
     for (line in lines) {
       raw = lines[line]
+      # some files contain 0x0d line terminators, remove them
+      gsub(/\r/, "", raw)
       # remove html elements
       gsub(/\&hellip;/, "", raw)
       gsub(/\&ldquo;/, "", raw)
       gsub(/\&rdquo;/, "", raw)
       gsub(/\&lsquo;/, "", raw)
       gsub(/\&rsquo;/, "", raw)
+      gsub(/\&ndash;/, " ", raw)
+      gsub(/\&mdash;/, " ", raw)
       # remove <p></p> 
       gsub(/<\/?p[^>]*>/,"",raw)
       # remove <span></span> 
@@ -208,6 +319,10 @@ $1 ~ /##/ {
       gsub(/[\[\])(*>.,!?;:‘’'"“”/\\]/,"",raw)
       #remove 0xa0
       gsub(/ /,"",raw)
+      #remove 0x09
+      gsub(/	/," ",raw)
+      #remove \%u2026 (elipsis)
+      gsub(/…/," ",raw)
       # convert dash to space 
       gsub(/[-—]/," ",raw)
       # remove footnotes: [^1]

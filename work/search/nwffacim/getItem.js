@@ -60,10 +60,9 @@ if (!program.key) {
 }
 else {
   // user supplying keys
-  program.args.forEach(function(key) {
-    var info = nwffacim.parseKey(key);
-    getItem(info);
-  });
+  console.log("program.key: %s", program.key);
+  var info = nwffacim.parseKey(program.key);
+  getItem(info);
 }
 
 function getItem(info) {

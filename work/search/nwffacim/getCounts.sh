@@ -11,5 +11,5 @@ else
   db="local"
 fi
 
-node getCount.js -e ${db} | sort -n -k 4,6 | tee wom_${db}_count.txt
+node getCount.js -e ${db} | sort -n -k 4,6 | tee nwffacim_${db}_count.txt
 
