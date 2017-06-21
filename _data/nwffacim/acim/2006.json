@@ -24,7 +24,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -43,7 +43,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -62,7 +62,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -81,7 +81,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -100,7 +100,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -119,7 +119,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -139,7 +139,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -158,7 +158,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -177,7 +177,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -196,7 +196,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -215,7 +215,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -234,7 +234,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -253,7 +253,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -267,12 +267,13 @@
       "fid": "052006/",
       "desc": "Discussion",
       "res": {
-        "audio": "2006-05-20.mp3"
+        "audio": "2006-05-20.mp3",
+        "timing": "052016.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
-        "index": 0,
+        "audio": 2,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -291,7 +292,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -310,7 +311,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -330,7 +331,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -349,7 +350,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -368,7 +369,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -387,7 +388,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -406,7 +407,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -425,7 +426,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -444,7 +445,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -463,7 +464,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -482,7 +483,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -501,7 +502,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -520,7 +521,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -539,7 +540,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -558,7 +559,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -577,7 +578,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -597,7 +598,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -617,7 +618,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -636,7 +637,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -655,7 +656,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -675,7 +676,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,

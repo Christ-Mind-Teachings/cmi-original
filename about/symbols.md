@@ -96,18 +96,11 @@ associated audio. It's easy to do while you listen. See the guide for
 ### <i class="fa fa-fw fa-eye-slash"></i> Incomplete Format
 
 Items that are not completely formatted, for the most part, are in an
-acceptable condition for reading but are still in need of attention. The
-majority of items from the NWFFACIM ACIM Study Group fall into this
-category.
+acceptable condition for reading but are still in need of attention.
 
 Items must be formatted properly before they can be indexed and
 referenced by searches. Completed formatting is also required before
 timing information can be collected.
-
-**We Need Your Help** to complete item formatting. This requires
-experience using a text editor, not a word processor. Please contact me
-using the contact form on the [about page](/about/) for more
-information. Thanks!
 
 <script>
   $("#return").on("click", function(e) {

@@ -41,7 +41,7 @@ var params = {
     ],
     ProvisionedThroughput: {
         ReadCapacityUnits: 10,
-        WriteCapacityUnits: 2
+        WriteCapacityUnits: 4
     }
 };
 

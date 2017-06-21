@@ -25,7 +25,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -45,7 +45,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -65,7 +65,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -85,7 +85,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -99,12 +99,13 @@
       "fid": "022414/",
       "desc": "Discussion",
       "res": {
-        "audio": "2014-02-24.mp3"
+        "audio": "2014-02-24.mp3",
+        "timing": "022414.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
-        "index": 0,
+        "audio": 2,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -118,12 +119,13 @@
       "fid": "030914/",
       "desc": "Discussion",
       "res": {
-        "audio": "2014-03-09.mp3"
+        "audio": "2014-03-09.mp3",
+        "timing": "030914.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
-        "index": 0,
+        "audio": 2,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -143,7 +145,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -157,12 +159,13 @@
       "fid": "061614/",
       "desc": "Disucssion",
       "res": {
-        "audio": "2014-06-16.mp3"
+        "audio": "2014-06-16.mp3",
+        "timing": "061614.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
-        "index": 0,
+        "audio": 2,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -176,12 +179,13 @@
       "fid": "062914/",
       "desc": "Disucssion",
       "res": {
-        "audio": "2014-06-29.mp3"
+        "audio": "2014-06-29.mp3",
+        "timing": "062914.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
-        "index": 0,
+        "audio": 2,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -201,7 +205,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,

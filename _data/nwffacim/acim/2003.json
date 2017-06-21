@@ -25,7 +25,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -44,7 +44,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -63,7 +63,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -79,7 +79,7 @@
       "complete": {
         "format": 1,
         "audio": 0,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -97,7 +97,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T2.VII Cause and Effect",
@@ -117,7 +117,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -135,7 +135,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T2.VII Cause and Effect",
@@ -154,7 +154,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T2.VII Cause and Effect",
@@ -174,7 +174,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -193,7 +193,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -212,7 +212,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -231,7 +231,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -250,7 +250,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -269,7 +269,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -288,7 +288,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -307,7 +307,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -326,7 +326,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -345,7 +345,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -364,7 +364,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -383,7 +383,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -402,7 +402,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -421,7 +421,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -440,7 +440,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "intro": false,
@@ -458,7 +458,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.In Introduction",
@@ -477,7 +477,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "<small>Begin reading from the Sparkly Edition</small><br/>T4.1 Right Teaching and Right Learning",
@@ -496,7 +496,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.1 Right Teaching and Right Learning",
@@ -515,7 +515,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.2 The Ego and False Autonomy",
@@ -534,7 +534,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.2 The Ego and False Autonomy",
@@ -553,7 +553,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.3 Love without Conflict",
@@ -572,7 +572,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.4 The Escape from Fear",
@@ -591,7 +591,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.5 The Ego-Body Illusion",
@@ -610,7 +610,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.5 The Ego-Body Illusion",
@@ -629,7 +629,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.7 Creation and Communication",
@@ -648,7 +648,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T4.8 True Rehabilitation",
@@ -667,7 +667,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T5.1 Healing as Joining",
@@ -686,7 +686,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T5.3 The Voice for God",
@@ -705,7 +705,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T5.4 The Guide to Salvation",
@@ -725,7 +725,7 @@
       "complete": {
         "format": 1,
         "audio": 2,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "Discussion",
@@ -744,7 +744,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T5.4 The Guide to Salvation",
@@ -763,7 +763,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T5.5 Therapy and Teaching",
@@ -782,7 +782,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T5.6 The Two Decisions",
@@ -801,7 +801,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T5.6 The Two Decisions",
@@ -820,7 +820,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T5.7 Time and Eternity",
@@ -839,7 +839,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T5.8 The Eternal Fixation",
@@ -858,7 +858,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T6.1 The Message of the Crucifixion",
@@ -877,7 +877,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T6.1 The Message of the Crucifixion",
@@ -896,7 +896,7 @@
       "complete": {
         "format": 1,
         "audio": 1,
-        "index": 0,
+        "index": 1,
         "fb": 0
       },
       "desc": "T6.1 The Message of the Crucifixion",

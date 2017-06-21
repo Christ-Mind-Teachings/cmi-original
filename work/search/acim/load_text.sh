@@ -12,15 +12,15 @@ else
 fi
 
 # ./prep_all.sh
-date > workbook.log
+date > text.log
 
 # for i in text manual workbook; do
-for i in `cat workbook.txt`; do
+for i in `cat text.txt`; do
 # cat ${i}.txt | xargs ./load -t acim -e $db > ${i}.log
 echo $i
-echo $i >> workbook.log
-echo "------------" >> workbook.log
-./load -t acim -e $db $i >> workbook.log 2>&1
+echo $i >> text.log
+echo "------------" >> text.log
+./load -t acim -e $db $i >> text.log 2>&1
 sleep 1
 done
 

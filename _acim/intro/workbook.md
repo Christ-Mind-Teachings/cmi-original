@@ -10,33 +10,6 @@ contents: nav/workbook.html
 bid: workbook
 ---
 
-{% comment %}
-### Table of Contents
-
-{% capture workspace %}
-  {% for page in site.data.acim.workbook.page %}
-    {% assign lesson = "" %}
-    {% if forloop.first %}
-      {% continue %}
-    {% else %}
-      {% assign link = page.title | prepend: "[" | append: "](" | append: page.url | append: ")" %}
-      {% if page.lesson %}
-        {% assign lesson = page.lesson | prepend: "Lesson " %}
-      {% endif %}
-{% capture toc %}{{toc}}
-  {{lesson}} | {{link}}{% endcapture %}
-    {% endif %}
-  {% endfor %}
-  {% capture toc %}
-<div id="workbook-contents" markdown="1" class="acim-toc">
-Lesson | Title
---- | --- {{toc}}{% endcapture %}
-</div>
-{% endcapture %}
-
-{{toc | markdownify }}
-{% endcomment %}
-
 ### {{site.data.acim.wbcontents.title}}
 
 {% for part in site.data.acim.wbcontents.part %}
@@ -57,7 +30,7 @@ Lesson | Title
     {% endfor %}
   {% capture table %}
 <div id="{{section.ref}}" markdown="1" class="acim-toc">
-### {{title}}
+### <i class="fa fa-search"></i> {{title}}
 
 Lesson | Title
 --- | --- {{toc}}

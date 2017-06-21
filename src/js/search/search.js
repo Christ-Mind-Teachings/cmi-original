@@ -101,12 +101,18 @@ function markSearchHits(searchHits, searchData, state) {
   var i;
 
   //Note: this regex wont find a string within a string - only finds
-  //matches that begin and end on word boundaries
+  //matches that begin on a word boundary
   //var regex = new RegExp("(?:^|\\b)(" + searchData.query + ")(?:$|\\b)", "gim");
   var regex = new RegExp("(?:^|\\b)(" + searchData.query + ")(?:$|\\b|)", "gim");
   for (i = 0; i < searchHits.length; i++) {
     var id = searchHits[i].location.substr(1);
     var el = document.getElementById(id);
+
+    // a data error is indicated by el == null
+    if (!el) {
+      markFailure++;
+      continue;
+    }
     var content = el.innerHTML;
 
     //remove newline chars in content - they can prevent the
