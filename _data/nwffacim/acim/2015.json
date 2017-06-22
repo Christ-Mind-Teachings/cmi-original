@@ -84,7 +84,7 @@
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -119,11 +119,12 @@
       "fid": "060715/",
       "desc": "T19.8 Obstacles to Peace; The Attraction of Death",
       "res": {
-        "audio": "2015-06-07.mp3"
+        "audio": "2015-06-07.mp3",
+        "timing": "060715.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -25,6 +25,7 @@ The initial release of the Library includes the *Way of Mastery* and the
 
 Date | Version | Comment
 --- | --- | ---
+Jun 23, 2017 | [v1.0.0](https://v1-0-0--christmind.netlify.com/) | Includes ACIM Sparkly Edition, NWFFACIM, and WOM. All complete and searchable.
 Apr 29, 2017 | [v0.8.1](https://v0-8-1--christmind.netlify.com/) | -
 Apr 29, 2017 | [v0.8.0](https://v0-8-0--christmind.netlify.com/) | Initial release, announced to FB, WOM: Early Years mostly not completely formatted, NWFFACIM: ACIM Study Group mostly not completely formatted.
 

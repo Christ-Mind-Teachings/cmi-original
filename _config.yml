@@ -686,7 +686,7 @@ exclude: [
   #        _nwffacim/2013,
   #        _nwffacim/2014,
   #        _nwffacim/2015,
-  #       _nwffacim/2016,
+  #        _nwffacim/2016,
   work, bin, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
 

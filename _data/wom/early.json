@@ -10,7 +10,7 @@
     {
       "fid": "early/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "fb": 0
       },
@@ -23,7 +23,7 @@
     {
       "fid": "ble/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -41,7 +41,7 @@
     {
       "fid": "c2s/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -59,7 +59,7 @@
     {
       "fid": "hoe/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -77,7 +77,7 @@
     {
       "fid": "ign/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -95,7 +95,7 @@
     {
       "fid": "com/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -130,7 +130,7 @@
         "audio": "DTH.mp3"
       },
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -167,7 +167,7 @@
         "audio": "GAR.mp3"
       },
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -199,7 +199,7 @@
         "audio": "HOI.mp3"
       },
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,

@@ -18,7 +18,7 @@
     {
       "fid": "l01/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -37,7 +37,7 @@
     {
       "fid": "l02/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -56,7 +56,7 @@
     {
       "fid": "l03/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -75,7 +75,7 @@
     {
       "fid": "l04/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -94,7 +94,7 @@
     {
       "fid": "l05/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -113,7 +113,7 @@
     {
       "fid": "l06/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -132,7 +132,7 @@
     {
       "fid": "l07/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -151,7 +151,7 @@
     {
       "fid": "l08/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -170,7 +170,7 @@
     {
       "fid": "l09/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 2,
         "index": 1,
@@ -189,7 +189,7 @@
     {
       "fid": "l10/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,
@@ -207,7 +207,7 @@
     {
       "fid": "l11/",
       "complete": {
-        "copyright": 1,
+        "copyright": 0,
         "format": 1,
         "audio": 1,
         "index": 1,

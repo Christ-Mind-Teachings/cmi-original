@@ -13,7 +13,11 @@
     {{ page.title }}
     {% if page.ref %}
       <br/>
-      <small>{{page.ref}}</small>
+      {% if page.alink %}
+        <small><a title="Link to ACIM" href="{{page.alink}}">{{page.ref}}</a></small>
+      {% else %}
+        <small>{{page.ref}}</small>
+      {% endif %}
     {% endif %}
 {% endcase %}
 

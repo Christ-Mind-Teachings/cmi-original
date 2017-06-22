@@ -4,6 +4,13 @@
 {% include singlepage/css/skeleton.css %}
 {% include singlepage/css/main.css %}
 
+p.announcement {
+  font-size: x-large;
+  font-weight: bold;
+  line-height: 1.3em;
+  font-family: fantasy;
+}
+
 .enter-library {
   text-align: center;
   font-size: 3em;
@@ -11,7 +18,7 @@
 
 span.fa-stack.fa-lg {
   margin-top: 50px;
-  margin-bottom: 130px;
+  margin-bottom: 100px;
 }
 
 .facenter {
@@ -78,6 +85,10 @@ span.fa-stack.fa-lg {
 
 .landing .container .landing-h3 {
   text-align: left;
+}
+
+.landing .section.confetti {
+  background: no-repeat center/80% url(/public/img/cmi/confetti.jpg);
 }
 
 .landing .section.enter {
