@@ -660,7 +660,7 @@ include: [_redirects, LICENSE.txt]
 
 # Exclusions from the final site
 exclude: [
-  #        _acim/text,
+  #       _acim/text,
   #        _acim/manual,
   #        _acim/workbook,
   #        _wom/woh,

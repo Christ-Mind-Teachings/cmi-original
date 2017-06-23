@@ -27,6 +27,11 @@ function processSearchResults(queryInfo, response) {
   }
 }
 
+function reportSearchError(queryInfo) {
+  displayMessage("Search of " + queryInfo.source.toUpperCase() + " for <em>"
+     + queryInfo.query + "</em> ended with an error.");
+}
+
 //combine book specific arrays into one to simplify navigation on
 //transcript pages - then store results
 function saveResults(data) {
@@ -118,20 +123,12 @@ module.exports = {
       displayMessage("Please wait...", true);
       doSearch(queryInfo).then(function(response) {
         //console.log("query count: %s", response.data.count);
-
-        //make second api call only if the first one returned no data
-        if (response.data.startKey && response.data.count === 0) {
-          queryInfo.startKey = response.data.startKey;
-          doSearch(queryInfo).then(function(response) {
-            processSearchResults(queryInfo, response.data);
-            query.value = "";
-          });
-        }
-        else {
-          processSearchResults(queryInfo, response.data);
-          query.value = "";
-        }
-      });
+        processSearchResults(queryInfo, response.data);
+        query.value = "";
+      }).catch(function(error) {
+        console.log("Error calling search API: %s", error.message);
+        reportSearchError(queryInfo, error);
+      })
     });
 
     var source = url.getQueryString("s");

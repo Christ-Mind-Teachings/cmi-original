@@ -139,11 +139,12 @@
       "fid": "061415/",
       "desc": "T19.10 Obstacles to Peace; The Fear of God",
       "res": {
-        "audio": "2015-06-14.mp3"
+        "audio": "2015-06-14.mp3",
+        "timing": "061415.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
