@@ -16,9 +16,12 @@ Name | Task | Source | Book | Item
 Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Aug 07, 2002
  "   | Timing | NWFFACIM | Study Group | Aug 28, 2002
+ "   | Timing | NWFFACIM | Study Group | Sep 04, 2002
+ "   | Timing | NWFFACIM | Study Group | Sep 11, 2002
+ "   | Timing | NWFFACIM | Study Group | Sep 18, 2002
  "   | Timing | NWFFACIM | Study Group | Nov 07, 2002
  "   | Timing | NWFFACIM | Study Group | Nov 21, 2002
- "   | Timing | NWFFACIM | Study Group | Jan 02, 2002
+ "   | Timing | NWFFACIM | Study Group | Jan 02, 2003
  "   | Format | NWFFACIM | Study Group | Aug 03, 2003
  "   | Format | NWFFACIM | Study Group | Aug 10, 2003
  "   | Format | NWFFACIM | Study Group | Aug 17, 2003
@@ -294,16 +297,21 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | May 12, 2012
  "   | Format | NWFFACIM | Study Group | May 20, 2012
  "   | Format | NWFFACIM | Study Group | Jun 03, 2012
+ "   | Timing | NWFFACIM | Study Group | Jun 17, 2012
  "   | Format | NWFFACIM | Study Group | Jul 22, 2012
  "   | Format | NWFFACIM | Study Group | Jul 29, 2012
  "   | Format | NWFFACIM | Study Group | Aug 04, 2012
  "   | Format | NWFFACIM | Study Group | Aug 11, 2012
  "   | Format | NWFFACIM | Study Group | Aug 18, 2012
+ "   | Timing | NWFFACIM | Study Group | Sep 08, 2012
  "   | Format | NWFFACIM | Study Group | Sep 16, 2012
  "   | Format | NWFFACIM | Study Group | Sep 23, 2012
  "   | Format | NWFFACIM | Study Group | Sep 30, 2012
  "   | Format | NWFFACIM | Study Group | Oct 14, 2012
  "   | Format | NWFFACIM | Study Group | Oct 21, 2012
+ "   | Timing | NWFFACIM | Study Group | Nov 05, 2012
+ "   | Timing | NWFFACIM | Study Group | Apr 27, 2013
+ "   | Timing | NWFFACIM | Study Group | May 04, 2013
  "   | Format | NWFFACIM | Study Group | May 11, 2013
  "   | Format | NWFFACIM | Study Group | May 20, 2013
  "   | Format | NWFFACIM | Study Group | Jul 07, 2013
@@ -334,6 +342,13 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | May 17, 2015
  "   | Timing | NWFFACIM | Study Group | Jun 07, 2015
  "   | Timing | NWFFACIM | Study Group | Jun 14, 2015
+ "   | Timing | NWFFACIM | Study Group | Jun 21, 2015
+ "   | Timing | NWFFACIM | Study Group | Jun 28, 2015
+ "   | Timing | NWFFACIM | Study Group | Jul 05, 2015
+ "   | Timing | NWFFACIM | Study Group | Jul 13, 2015
+ "   | Timing | NWFFACIM | Study Group | Jul 21, 2015
+ "   | Timing | NWFFACIM | Study Group | Aug 01, 2015
+ "   | Timing | NWFFACIM | Study Group | Aug 23, 2015
  "   | Timing | NWFFACIM | Study Group | Sep 13, 2015
  "   | Timing | NWFFACIM | Study Group | Oct 02, 2015
  "   | Timing | NWFFACIM | Study Group | Oct 21, 2015
@@ -344,8 +359,10 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Jul 16, 2016
  "   | Timing | NWFFACIM | Study Group | Aug 02, 2016
 Gail Leopold | Timing | WOM | WOH | Lesson 03
+" | Timing | WOM | WOH | Lesson 04
 " | Timing | NWFFACIM | Study Group | Jan 02, 2010
 Patricia Lawrence | Timing | WOM | WOH | Lesson 06
+ " | Timing | WOM | WOT | Lesson 02
  " | Timing | WOM | WOT | Lesson 12
 John Hempstead | Timing | WOM | Early | Walk with Me
 " | Timing | WOM | Early | Meaning of Ascension
@@ -365,6 +382,7 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | WOM | WOK | Lesson 08
 " | Timing | WOM | WOK | Lesson 09
 " | Timing | NWFFACIM  | Study Group | Jan 02, 2003
+" | Timing | NWFFACIM  | Study Group | Jan 11, 2004
 
 
 

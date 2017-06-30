@@ -115,13 +115,14 @@
       "fid": "090402/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "desc": "T1.I Principles of Miracles, Principle 42",
       "res": {
-        "audio": "2002-09-04.mp3"
+        "audio": "2002-09-04.mp3",
+        "timing": "090402.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/090402/",
@@ -134,13 +135,14 @@
       "fid": "091102/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "desc": "T1.I Principles of Miracles, Principle 47",
       "res": {
-        "audio": "2002-09-11.mp3"
+        "audio": "2002-09-11.mp3",
+        "timing": "091102.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/091102/",
@@ -153,13 +155,14 @@
       "fid": "091802/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "desc": "T1.II Revelation, Time and Miracles",
       "res": {
-        "audio": "2002-09-18.mp3"
+        "audio": "2002-09-18.mp3",
+        "timing": "091802.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/091802/",

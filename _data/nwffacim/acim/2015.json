@@ -159,11 +159,12 @@
       "fid": "062115/",
       "desc": "T19.10 Obstacles to Peace; The Fear of God",
       "res": {
-        "audio": "2015-06-21.mp3"
+        "audio": "2015-06-21.mp3",
+        "timing": "062115.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -178,11 +179,12 @@
       "fid": "062815/",
       "desc": "T19.11 The Lifting of the Veil",
       "res": {
-        "audio": "2015-06-28.mp3"
+        "audio": "2015-06-28.mp3",
+        "timing": "062815.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -197,11 +199,12 @@
       "fid": "070515/",
       "desc": "T20 The Promise of the Resurrection",
       "res": {
-        "audio": "2015-07-05.mp3"
+        "audio": "2015-07-05.mp3",
+        "timing": "070515.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -216,11 +219,12 @@
       "fid": "071315/",
       "desc": "T20.2 Thorns and Lilies",
       "res": {
-        "audio": "2015-07-13.mp3"
+        "audio": "2015-07-13.mp3",
+        "timing": "071315.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -235,11 +239,12 @@
       "fid": "072115/",
       "desc": "T20.2 Thorns and Lilies",
       "res": {
-        "audio": "2015-07-21.mp3"
+        "audio": "2015-07-21.mp3",
+        "timing": "072115.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -254,11 +259,12 @@
       "fid": "080115/",
       "desc": "T20.2 Thorns and Lilies",
       "res": {
-        "audio": "2015-08-01.mp3"
+        "audio": "2015-08-01.mp3",
+        "timing": "080115.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -273,11 +279,12 @@
       "fid": "082315/",
       "desc": "T20.3 Sin as an Adjustment",
       "res": {
-        "audio": "2015-08-23.mp3"
+        "audio": "2015-08-23.mp3",
+        "timing": "082315.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -20,11 +20,12 @@
       "fid": "042713/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-04-27.mp3"
+        "audio": "2013-04-27.mp3",
+        "timing": "042713.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -39,11 +40,12 @@
       "fid": "050413/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-05-04.mp3"
+        "audio": "2013-05-04.mp3",
+        "timing": "050413.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

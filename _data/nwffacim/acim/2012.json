@@ -287,11 +287,12 @@
       "fid": "061712/",
       "desc": "Discussion",
       "res": {
-        "audio": "2012-06-17.mp3"
+        "audio": "2012-06-17.mp3",
+        "timing": "061712.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -422,11 +423,12 @@
       "fid": "090812/",
       "desc": "Discussion",
       "res": {
-        "audio": "2012-09-08.mp3"
+        "audio": "2012-09-08.mp3",
+        "timing": "090812.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -555,11 +557,12 @@
       "fid": "110512/",
       "desc": "Disucssion",
       "res": {
-        "audio": "2012-11-05.mp3"
+        "audio": "2012-11-05.mp3",
+        "timing": "110512.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

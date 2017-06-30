@@ -56,7 +56,7 @@ to offer your help I'd love know about that too. Head over to the
 you can help.
 
 <fieldset class="no-padding">
-  <form action="?" action="/about/" id="contact-form" class="" netlify>
+  <form action="/about/" id="contact-form" class="" netlify>
     <p>
       <label for="name">Name <span class="color-red">*</span></label>
       <input type="text" required name="name" id="name" class="form-control">
@@ -84,7 +84,7 @@ share!
 
 <div class="mail-list">
   <fieldset class="no-padding">
-    <form action="?" action="/about/" id="subscribe-form" class="" netlify>
+    <form action="/about/" id="subscribe-form" class="" netlify>
       <p>
         <label for="name">Name: </label>
         <input type="text" name="name" id="name" class="form-control">
