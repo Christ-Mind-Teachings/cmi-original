@@ -404,11 +404,12 @@
       "fid": "082712/",
       "desc": "Discussion",
       "res": {
-        "audio": "2012-08-27.mp3"
+        "audio": "2012-08-27.mp3",
+        "timing": "082712.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
