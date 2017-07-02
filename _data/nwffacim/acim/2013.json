@@ -60,11 +60,12 @@
       "fid": "051113/",
       "desc": "T19.6 The Obstacles to Peace, The Second Obstacle",
       "res": {
-        "audio": "2013-05-11.mp3"
+        "audio": "2013-05-11.mp3",
+        "timing": "051113.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -79,11 +80,12 @@
       "fid": "052013/",
       "desc": "T19.7 Pleasure and Pain",
       "res": {
-        "audio": "2013-05-20.mp3"
+        "audio": "2013-05-20.mp3",
+        "timing": "052013.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -98,11 +100,12 @@
       "fid": "052813/",
       "desc": "T19.7 Pleasure and Pain",
       "res": {
-        "audio": "2013-05-28.mp3"
+        "audio": "2013-05-28.mp3",
+        "timing": "052813.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
