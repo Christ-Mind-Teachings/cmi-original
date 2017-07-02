@@ -44,3 +44,7 @@ Gemfile.lock
 
 .eslintcache
 src/js/pug/templates.js
+
+semantic.json
+semantic
+

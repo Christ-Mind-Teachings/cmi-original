@@ -660,9 +660,11 @@ include: [_redirects, LICENSE.txt]
 
 # Exclusions from the final site
 exclude: [
+          _acim/intro,
           _acim/text,
           _acim/manual,
           _acim/workbook,
+          _wom/intro,
           _wom/woh,
           _wom/wot,
           _wom/wok,
@@ -670,6 +672,7 @@ exclude: [
           _wom/tjl,
           _wom/wos,
           _wom/questions,
+          _nwffacim/intro,
           _nwffacim/grad,
           _nwffacim/yaa,
           _nwffacim/2002,
@@ -687,7 +690,7 @@ exclude: [
           _nwffacim/2014,
           _nwffacim/2015,
           _nwffacim/2016,
-  work, bin, src, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
+  work, bin, src, package-lock.json, semantic/, semantic.json, config, optional, README.md, Gemfile, Gemfile.lock, Gruntfile.js, package.json, node_modules
 ]
 
 keep_files: [
