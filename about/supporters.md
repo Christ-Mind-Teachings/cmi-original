@@ -139,7 +139,10 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Jul 15, 2006
  "   | Format | NWFFACIM | Study Group | Aug 05, 2006
  "   | Format | NWFFACIM | Study Group | Aug 20, 2006
+ "   | Timing | NWFFACIM | Study Group | Sep 02, 2006
  "   | Format | NWFFACIM | Study Group | Sep 02, 2006
+ "   | Timing | NWFFACIM | Study Group | Sep 09, 2006
+ "   | Timing | NWFFACIM | Study Group | Sep 23, 2006
  "   | Format | NWFFACIM | Study Group | Jun 24, 2006
  "   | Format | NWFFACIM | Study Group | Sep 09, 2006
  "   | Format | NWFFACIM | Study Group | Sep 23, 2006
@@ -318,6 +321,9 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | May 20, 2013
  "   | Format | NWFFACIM | Study Group | May 20, 2013
  "   | Timing | NWFFACIM | Study Group | May 28, 2013
+ "   | Timing | NWFFACIM | Study Group | Jun 02, 2013
+ "   | Timing | NWFFACIM | Study Group | Jun 09, 2013
+ "   | Timing | NWFFACIM | Study Group | Jun 25, 2013
  "   | Format | NWFFACIM | Study Group | Jul 07, 2013
  "   | Format | NWFFACIM | Study Group | Jul 14, 2013
  "   | Format | NWFFACIM | Study Group | Jul 21, 2013

@@ -120,11 +120,12 @@
       "fid": "060213/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-06-02.mp3"
+        "audio": "2013-06-02.mp3",
+        "timing": "060213.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -139,11 +140,12 @@
       "fid": "060913/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-06-09.mp3"
+        "audio": "2013-06-09.mp3",
+        "timing": "060913.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -158,11 +160,12 @@
       "fid": "062513/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-06-25.mp3"
+        "audio": "2013-06-25.mp3",
+        "timing": "062513.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
