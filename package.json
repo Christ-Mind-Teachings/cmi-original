@@ -56,7 +56,6 @@
     "pug-runtime": "^2.0.3",
     "s3": "^4.4.0",
     "scroll-into-view": "^1.7.1",
-    "semantic-ui": "^2.2.10",
     "siema": "^1.2.1",
     "store": "^2.0.4",
     "toastr": "^2.1.2",

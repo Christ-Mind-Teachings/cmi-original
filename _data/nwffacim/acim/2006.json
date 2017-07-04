@@ -191,11 +191,12 @@
       "fid": "040106/",
       "desc": "Disucssion",
       "res": {
-        "audio": "2006-04-01.mp3"
+        "audio": "2006-04-01.mp3",
+        "timing": "040106.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
