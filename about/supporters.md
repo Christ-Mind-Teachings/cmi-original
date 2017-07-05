@@ -136,6 +136,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Jun 10, 2006
  "   | Format | NWFFACIM | Study Group | Jun 10, 2006
  "   | Format | NWFFACIM | Study Group | Jun 18, 2006
+ "   | Format | NWFFACIM | Study Group | Jun 24, 2006
  "   | Format | NWFFACIM | Study Group | Jul 01, 2006
  "   | Format | NWFFACIM | Study Group | Jul 15, 2006
  "   | Format | NWFFACIM | Study Group | Aug 05, 2006
@@ -144,10 +145,11 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Sep 02, 2006
  "   | Timing | NWFFACIM | Study Group | Sep 09, 2006
  "   | Timing | NWFFACIM | Study Group | Sep 23, 2006
- "   | Format | NWFFACIM | Study Group | Jun 24, 2006
  "   | Format | NWFFACIM | Study Group | Sep 09, 2006
  "   | Format | NWFFACIM | Study Group | Sep 23, 2006
+ "   | Timing | NWFFACIM | Study Group | Oct 07, 2006
  "   | Format | NWFFACIM | Study Group | Oct 07, 2006
+ "   | Timing | NWFFACIM | Study Group | Oct 14, 2006
  "   | Format | NWFFACIM | Study Group | Oct 14, 2006
  "   | Format | NWFFACIM | Study Group | Nov 11, 2006
  "   | Format | NWFFACIM | Study Group | Nov 18, 2006
@@ -394,6 +396,7 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | WOM | WOK | Lesson 09
 " | Timing | NWFFACIM  | Study Group | Jan 02, 2003
 " | Timing | NWFFACIM  | Study Group | Jan 11, 2004
+Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 
 
 

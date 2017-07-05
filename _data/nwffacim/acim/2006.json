@@ -19,11 +19,12 @@
       "fid": "010806/",
       "desc": "T11.2 The Mechanism for Miracles",
       "res": {
-        "audio": "2006-01-08.mp3"
+        "audio": "2006-01-08.mp3",
+        "timing": "010806.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -557,12 +558,13 @@
     {
       "fid": "100706/",
       "res": {
-        "audio": "2006-10-07.mp3"
+        "audio": "2006-10-07.mp3",
+        "timing": "100706.js"
       },
       "desc": "T12.5 Finding the Present",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -577,11 +579,12 @@
       "fid": "101406/",
       "desc": "T12.5 Finding the Present",
       "res": {
-        "audio": "2006-10-14.mp3"
+        "audio": "2006-10-14.mp3",
+        "timing": "101406.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
