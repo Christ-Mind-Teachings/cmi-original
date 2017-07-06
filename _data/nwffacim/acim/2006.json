@@ -39,7 +39,8 @@
       "fid": "011506/",
       "desc": "T11.3 The Investment in Reality",
       "res": {
-        "audio": "2006-01-15.mp3"
+        "audio": "2006-01-15.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -58,7 +59,8 @@
       "fid": "012206/",
       "desc": "T11.3 The Investment in Reality",
       "res": {
-        "audio": "2006-01-22.mp3"
+        "audio": "2006-01-22.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -77,7 +79,8 @@
       "fid": "012906/",
       "desc": "T11.4 Seeking and Finding",
       "res": {
-        "audio": "2006-01-29.mp3"
+        "audio": "2006-01-29.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -96,7 +99,8 @@
       "fid": "021206/",
       "desc": "T11.5 The Sane Curriculum",
       "res": {
-        "audio": "2006-02-12.mp3"
+        "audio": "2006-02-12.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -115,11 +119,12 @@
       "fid": "022606/",
       "desc": "T11.6 The Vision of Christ",
       "res": {
-        "audio": "2006-02-26.mp3"
+        "audio": "2006-02-26.mp3",
+        "timing": "022606.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -154,7 +159,8 @@
       "fid": "031106/",
       "desc": "T11.7 The Guide for Miracles",
       "res": {
-        "audio": "2006-03-11.mp3"
+        "audio": "2006-03-11.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -173,7 +179,8 @@
       "fid": "031906/",
       "desc": "T11.7 The Guide for Miracles",
       "res": {
-        "audio": "2006-03-19.mp3"
+        "audio": "2006-03-19.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -212,7 +219,8 @@
       "fid": "041506/",
       "desc": "T11.7 The Guide for Miracles",
       "res": {
-        "audio": "2006-04-15.mp3"
+        "audio": "2006-04-15.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -231,7 +239,8 @@
       "fid": "042906/",
       "desc": "T11.7 The Guide for Miracles",
       "res": {
-        "audio": "2006-04-29.mp3"
+        "audio": "2006-04-29.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -250,7 +259,8 @@
       "fid": "050606/",
       "desc": "T11.8 Reality and Redemption",
       "res": {
-        "audio": "2006-05-06.mp3"
+        "audio": "2006-05-06.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -289,7 +299,8 @@
       "fid": "052706/",
       "desc": "T11.8 Reality and Redemption",
       "res": {
-        "audio": "2006-05-27.mp3"
+        "audio": "2006-05-27.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -308,7 +319,8 @@
       "fid": "060306/",
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
-        "audio": "2006-06-03.mp3"
+        "audio": "2006-06-03.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -347,7 +359,8 @@
       "fid": "061806/",
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
-        "audio": "2006-06-18.mp3"
+        "audio": "2006-06-18.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -366,7 +379,8 @@
       "fid": "062406/",
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
-        "audio": "2006-06-24.mp3"
+        "audio": "2006-06-24.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -385,7 +399,8 @@
       "fid": "070106/",
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
-        "audio": "2006-07-01.mp3"
+        "audio": "2006-07-01.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -404,7 +419,8 @@
       "fid": "071506/",
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
-        "audio": "2006-07-15.mp3"
+        "audio": "2006-07-15.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -423,7 +439,8 @@
       "fid": "073006/",
       "desc": "T12.1 Crucifixion by Guilt",
       "res": {
-        "audio": "2006-07-30.mp3"
+        "audio": "2006-07-30.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -442,7 +459,8 @@
       "fid": "080506/",
       "desc": "T12.1 Crucifixion by Guilt",
       "res": {
-        "audio": "2006-08-05.mp3"
+        "audio": "2006-08-05.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -461,7 +479,8 @@
       "fid": "081206/",
       "desc": "T12.2 The Fear of Redemption",
       "res": {
-        "audio": "2006-08-12.mp3"
+        "audio": "2006-08-12.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -480,7 +499,8 @@
       "fid": "082006/",
       "desc": "T12.2 The Fear of Redemption",
       "res": {
-        "audio": "2006-08-20.mp3"
+        "audio": "2006-08-20.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -639,7 +659,8 @@
       "fid": "111106/",
       "desc": "T12.6 Attainment of the Real World",
       "res": {
-        "audio": "2006-11-11.mp3"
+        "audio": "2006-11-11.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
@@ -658,7 +679,8 @@
       "fid": "111806/",
       "desc": "T12.6 Attainment of the Real World",
       "res": {
-        "audio": "2006-11-18.mp3"
+        "audio": "2006-11-18.mp3",
+        "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
