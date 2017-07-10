@@ -1002,12 +1002,13 @@
       "title": "Bible Codes",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q34.01.mp3"
+        "audio": "Q34.01.mp3",
+        "timing": "k10q1.js"
       },
       "url": "/wom/questions/k10q1/",
       "idx": 58,
@@ -1019,12 +1020,13 @@
       "title": "Free Will of Children",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q34.02.mp3"
+        "audio": "Q34.02.mp3",
+        "timing": "k10q2.js"
       },
       "url": "/wom/questions/k10q2/",
       "idx": 59,

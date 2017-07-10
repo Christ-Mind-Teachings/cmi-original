@@ -180,11 +180,12 @@
       "fid": "063013/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-06-30.mp3"
+        "audio": "2013-06-30.mp3",
+        "timing": "063913.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -199,11 +200,12 @@
       "fid": "070713/",
       "desc": "T13.8 The Way of Salvation",
       "res": {
-        "audio": "2013-07-07.mp3"
+        "audio": "2013-07-07.mp3",
+        "timing": "070713.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -466,11 +468,12 @@
       "fid": "110313/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-11-03.mp3"
+        "audio": "2013-11-03.mp3",
+        "timing": "110313.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

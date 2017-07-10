@@ -196,7 +196,8 @@
         "fb": 0
       },
       "res": {
-        "audio": "L34.mp3"
+        "audio": "L34.mp3",
+        "timing": "l34.js"
       },
       "title": "Lesson Ten",
       "url": "/wom/wok/l10/",
@@ -209,7 +210,7 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

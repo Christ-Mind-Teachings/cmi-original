@@ -37,13 +37,14 @@
     },
     {
       "res": {
-        "audio": "2004-01-18.mp3"
+        "audio": "2004-01-18.mp3",
+        "timing": "011804.js"
       },
       "fid": "011804/",
       "desc": "T6.2 The Uses of Projection",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

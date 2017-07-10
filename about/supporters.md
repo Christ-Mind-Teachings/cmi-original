@@ -327,6 +327,8 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Jun 02, 2013
  "   | Timing | NWFFACIM | Study Group | Jun 09, 2013
  "   | Timing | NWFFACIM | Study Group | Jun 25, 2013
+ "   | Timing | NWFFACIM | Study Group | Jun 30, 2013
+ "   | Timing | NWFFACIM | Study Group | Jul 07, 2013
  "   | Format | NWFFACIM | Study Group | Jul 07, 2013
  "   | Format | NWFFACIM | Study Group | Jul 14, 2013
  "   | Format | NWFFACIM | Study Group | Jul 21, 2013
@@ -335,6 +337,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Oct 06, 2013
  "   | Timing | NWFFACIM | Study Group | Oct 27, 2013
  "   | Format | NWFFACIM | Study Group | Oct 27, 2013
+ "   | Timing | NWFFACIM | Study Group | Nov 03, 2013
  "   | Format | NWFFACIM | Study Group | Nov 24, 2013
  "   | Timing | NWFFACIM | Study Group | Jan 06, 2014
  "   | Timing | NWFFACIM | Study Group | Jan 14, 2014
@@ -377,6 +380,9 @@ Gail Leopold | Timing | WOM | WOH | Lesson 03
 Patricia Lawrence | Timing | WOM | WOH | Lesson 06
  " | Timing | WOM | WOT | Lesson 02
  " | Timing | WOM | WOT | Lesson 12
+ " | Timing | WOM | WOK | Lesson 10
+ " | Timing | Questions | WOK | Lesson 10 Q1
+ " | Timing | Questions | WOK | Lesson 10 Q2
 John Hempstead | Timing | WOM | Early | Walk with Me
 " | Timing | WOM | Early | Meaning of Ascension
 " | Timing | WOM | Early | Divine Feminine
@@ -396,6 +402,7 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | WOM | WOK | Lesson 09
 " | Timing | NWFFACIM  | Study Group | Jan 02, 2003
 " | Timing | NWFFACIM  | Study Group | Jan 11, 2004
+" | Timing | NWFFACIM  | Study Group | Jan 18, 2004
 Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Feb 26, 2006
 
