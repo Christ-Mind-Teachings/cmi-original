@@ -330,8 +330,13 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Jun 30, 2013
  "   | Timing | NWFFACIM | Study Group | Jul 07, 2013
  "   | Format | NWFFACIM | Study Group | Jul 07, 2013
+ "   | Timing | NWFFACIM | Study Group | Jul 14, 2013
  "   | Format | NWFFACIM | Study Group | Jul 14, 2013
+ "   | Timing | NWFFACIM | Study Group | Jul 21, 2013
  "   | Format | NWFFACIM | Study Group | Jul 21, 2013
+ "   | Timing | NWFFACIM | Study Group | Aug 04, 2013
+ "   | Format | NWFFACIM | Study Group | Aug 04, 2013
+ "   | Timing | NWFFACIM | Study Group | Aug 25, 2013
  "   | Format | NWFFACIM | Study Group | Aug 04, 2013
  "   | Format | NWFFACIM | Study Group | Sep 23, 2013
  "   | Format | NWFFACIM | Study Group | Oct 06, 2013
@@ -404,6 +409,8 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | NWFFACIM  | Study Group | Jan 11, 2004
 " | Timing | NWFFACIM  | Study Group | Jan 18, 2004
 Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
+" | Timing | NWFFACIM | Study Group | Aug 07, 2005
+" | Timing | NWFFACIM | Study Group | Aug 14, 2005
 " | Timing | NWFFACIM | Study Group | Feb 26, 2006
 
 

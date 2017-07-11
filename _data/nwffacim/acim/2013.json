@@ -220,11 +220,12 @@
       "fid": "071413/",
       "desc": "T27.5 The Healing Example",
       "res": {
-        "audio": "2013-07-15.mp3"
+        "audio": "2013-07-15.mp3",
+        "timing": "071413.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -239,11 +240,12 @@
       "fid": "072113/",
       "desc": "T27.5 The Healing Example",
       "res": {
-        "audio": "2013-07-21.mp3"
+        "audio": "2013-07-21.mp3",
+        "timing": "072113.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -258,11 +260,12 @@
       "fid": "080413/",
       "desc": "T27.5 The Healing Example",
       "res": {
-        "audio": "2013-08-04.mp3"
+        "audio": "2013-08-04.mp3",
+        "timing": "080413.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -277,11 +280,12 @@
       "fid": "081113/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-08-11.mp3"
+        "audio": "2013-08-11.mp3",
+        "timing": "081113.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -296,11 +300,12 @@
       "fid": "082513/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-08-25.mp3"
+        "audio": "2013-08-25.mp3",
+        "timing": "082513.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -315,11 +320,12 @@
       "fid": "090113/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-09-01.mp3"
+        "audio": "2013-09-01.mp3",
+        "timing": "090113.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

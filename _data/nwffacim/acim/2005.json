@@ -457,11 +457,12 @@
       "fid": "080705/",
       "desc": "T10.2 The Willingness for Healing",
       "res": {
-        "audio": "2005-08-07.mp3"
+        "audio": "2005-08-07.mp3",
+        "timing": "080705.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -476,11 +477,12 @@
       "fid": "081405/",
       "desc": "T10.3 From Darkness to Light",
       "res": {
-        "audio": "2005-08-14.mp3"
+        "audio": "2005-08-14.mp3",
+        "timing": "081405.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
