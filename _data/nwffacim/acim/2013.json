@@ -340,11 +340,12 @@
       "fid": "090813/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-09-08.mp3"
+        "audio": "2013-09-08.mp3",
+        "timing": "090813.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -359,11 +360,12 @@
       "fid": "091513/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-09-15.mp3"
+        "audio": "2013-09-15.mp3",
+        "timing": "091513.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -378,11 +380,12 @@
       "fid": "092313/",
       "desc": "T30.1 Rules for Decision",
       "res": {
-        "audio": "2013-09-23.mp3"
+        "audio": "2013-09-23.mp3",
+        "timing": "092313.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -397,11 +400,12 @@
       "fid": "100613/",
       "desc": "T30.2 Freedom of Will",
       "res": {
-        "audio": "2013-10-06.mp3"
+        "audio": "2013-10-06.mp3",
+        "timing": "100613.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -416,11 +420,12 @@
       "fid": "101513/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-10-15.mp3"
+        "audio": "2013-10-15.mp3",
+        "timing": "101513.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
