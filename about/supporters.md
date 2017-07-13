@@ -345,10 +345,13 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Oct 06, 2013
  "   | Format | NWFFACIM | Study Group | Oct 06, 2013
  "   | Timing | NWFFACIM | Study Group | Oct 15, 2013
+ "   | Timing | NWFFACIM | Study Group | Oct 20, 2013
  "   | Timing | NWFFACIM | Study Group | Oct 27, 2013
  "   | Format | NWFFACIM | Study Group | Oct 27, 2013
  "   | Timing | NWFFACIM | Study Group | Nov 03, 2013
  "   | Format | NWFFACIM | Study Group | Nov 24, 2013
+ "   | Timing | NWFFACIM | Study Group | Dec 22, 2013
+ "   | Timing | NWFFACIM | Study Group | Dec 30, 2013
  "   | Timing | NWFFACIM | Study Group | Jan 06, 2014
  "   | Timing | NWFFACIM | Study Group | Jan 14, 2014
  "   | Timing | NWFFACIM | Study Group | Feb 09, 2014

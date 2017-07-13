@@ -440,11 +440,12 @@
       "fid": "102013/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-10-20.mp3"
+        "audio": "2013-10-20.mp3",
+        "timing": "102013.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -519,11 +520,12 @@
       "fid": "122213/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-12-22.mp3"
+        "audio": "2013-12-22.mp3",
+        "timing": "122213.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -538,11 +540,12 @@
       "fid": "123013/",
       "desc": "Discussion",
       "res": {
-        "audio": "2013-12-30.mp3"
+        "audio": "2013-12-30.mp3",
+        "timing": "123013.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
