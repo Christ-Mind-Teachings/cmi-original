@@ -77,11 +77,12 @@
       "fid": "021212/",
       "desc": "T18.5 The Happy Dream",
       "res": {
-        "audio": "2012-02-12.mp3"
+        "audio": "2012-02-12.mp3",
+        "timing": "021212.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

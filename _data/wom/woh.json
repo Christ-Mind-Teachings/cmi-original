@@ -78,12 +78,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "L04.mp3",
+        "timing": "l04.js",
         "timer": "Gleopold58"
       },
       "title": "Lesson Four",
@@ -97,12 +98,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "L05.mp3",
+        "timing": "l05.js",
         "timer": "Gleopold58"
       },
       "title": "Lesson Five",
