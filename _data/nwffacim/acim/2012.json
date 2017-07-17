@@ -19,11 +19,12 @@
       "fid": "010712/",
       "desc": "T18.3 Light in the Dream",
       "res": {
-        "audio": "2012-01-07.mp3"
+        "audio": "2012-01-07.mp3",
+        "timing": "010712.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -39,11 +40,12 @@
       "desc": "T18.3 Light in the Dream",
       "note": "got audio from Rajcast",
       "res": {
-        "audio": "2012-01-22.mp3"
+        "audio": "2012-01-22.mp3",
+        "timing": "012212.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -58,11 +60,12 @@
       "fid": "020512/",
       "desc": "T18.4 The Little Willingness",
       "res": {
-        "audio": "2012-02-05.mp3"
+        "audio": "2012-02-05.mp3",
+        "timing": "020512.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -97,11 +100,12 @@
       "fid": "021812/",
       "desc": "T18.6 Dreams and the Body",
       "res": {
-        "audio": "2012-02-18.mp3"
+        "audio": "2012-02-18.mp3",
+        "timing": "021812.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -116,11 +120,12 @@
       "fid": "032412/",
       "desc": "T18.6 Dreams and the Body",
       "res": {
-        "audio": "2012-03-24.mp3"
+        "audio": "2012-03-24.mp3",
+        "timing": "032412.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

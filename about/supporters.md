@@ -291,12 +291,17 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Nov 26, 2011
  "   | Format | NWFFACIM | Study Group | Dec 04, 2011
  "   | Format | NWFFACIM | Study Group | Dec 20, 2011
+ "   | Timing | NWFFACIM | Study Group | Jan 07, 2012
  "   | Format | NWFFACIM | Study Group | Jan 07, 2012
+ "   | Timing | NWFFACIM | Study Group | Jan 22, 2012
  "   | Format | NWFFACIM | Study Group | Jan 22, 2012
+ "   | Timing | NWFFACIM | Study Group | Feb 05, 2012
  "   | Format | NWFFACIM | Study Group | Feb 05, 2012
  "   | Timing | NWFFACIM | Study Group | Feb 12, 2012
  "   | Format | NWFFACIM | Study Group | Feb 12, 2012
+ "   | Timing | NWFFACIM | Study Group | Feb 18, 2012
  "   | Format | NWFFACIM | Study Group | Feb 18, 2012
+ "   | Timing | NWFFACIM | Study Group | Mar 24, 2012
  "   | Format | NWFFACIM | Study Group | Apr 08, 2012
  "   | Timing | NWFFACIM | Study Group | Apr 08, 2012
  "   | Format | NWFFACIM | Study Group | Apr 15, 2012
@@ -392,9 +397,11 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
 Gail Leopold | Timing | WOM | WOH | Lesson 03
 " | Timing | WOM | WOH | Lesson 04
 " | Timing | WOM | WOH | Lesson 05
+" | Timing | WOM | WOH | Lesson 08
 " | Timing | NWFFACIM | Study Group | Jan 02, 2010
 Patricia Lawrence | Timing | WOM | WOH | Lesson 06
  " | Timing | WOM | WOT | Lesson 02
+ " | Timing | WOM | WOT | Lesson 03
  " | Timing | WOM | WOT | Lesson 12
  " | Timing | WOM | WOK | Lesson 10
  " | Timing | Questions | WOK | Lesson 10 Q1

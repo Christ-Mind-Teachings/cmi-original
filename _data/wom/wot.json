@@ -45,7 +45,7 @@
       },
       "res": {
         "audio": "L14.mp3",
-        "timing": "l13.js",
+        "timing": "l14.js",
         "timer": "pm"
       },
       "title": "Lesson Two",
@@ -59,12 +59,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "L15.mp3",
+        "timing": "l15.js",
         "timer": "pm"
       },
       "title": "Lesson Three",

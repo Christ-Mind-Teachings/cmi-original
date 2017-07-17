@@ -156,12 +156,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "L08.mp3",
+        "timing": "l08.js",
         "timer": "Gleopold58"
       },
       "title": "Lesson Eight",
