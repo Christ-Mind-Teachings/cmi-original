@@ -60,7 +60,7 @@
       "desc": "Discussion",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 0,
         "index": 1,
         "fb": 0
       },
@@ -155,11 +155,12 @@
       "fid": "031211/",
       "desc": "Discussion",
       "res": {
-        "audio": "2011-03-12.mp3"
+        "audio": "2011-03-12.mp3",
+        "timing": "031211.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

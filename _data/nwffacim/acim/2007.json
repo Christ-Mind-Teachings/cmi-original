@@ -58,11 +58,12 @@
       "fid": "090907/",
       "desc": "T13.1 The Role of Healing",
       "res": {
-        "audio": "2007-09-09.mp3"
+        "audio": "2007-09-09.mp3",
+        "timing": "090907.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

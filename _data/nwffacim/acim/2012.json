@@ -140,11 +140,12 @@
       "fid": "033112/",
       "desc": "T18.6 Dreams and the Body",
       "res": {
-        "audio": "2012-03-31.mp3"
+        "audio": "2012-03-31.mp3",
+        "timing": "033112.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

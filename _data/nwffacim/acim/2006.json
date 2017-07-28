@@ -360,11 +360,12 @@
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
         "audio": "2006-06-18.mp3",
+        "timing": "061806.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -380,11 +381,12 @@
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
         "audio": "2006-06-24.mp3",
+        "timing": "062406.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
