@@ -180,11 +180,12 @@
       "fid": "041512/",
       "desc": "T18.8 The Purpose of the Body",
       "res": {
-        "audio": "2012-04-15.mp3"
+        "audio": "2012-04-15.mp3",
+        "timing": "041512.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -199,11 +200,12 @@
       "fid": "042212/",
       "desc": "T18.8 The Purpose of the Body",
       "res": {
-        "audio": "2012-04-22.mp3"
+        "audio": "2012-04-22.mp3",
+        "timing": "042212.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -218,11 +220,12 @@
       "fid": "042912/",
       "desc": "T18.9 The Delusional Thought System",
       "res": {
-        "audio": "2012-04-29.mp3"
+        "audio": "2012-04-29.mp3",
+        "timing": "042912.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -237,11 +240,12 @@
       "fid": "051212/",
       "desc": "T18.10 The Passing of the Dream",
       "res": {
-        "audio": "2012-05-12.mp3"
+        "audio": "2012-05-12.mp3",
+        "timing": "051212.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -256,11 +260,12 @@
       "fid": "052012/",
       "desc": "T19.1 Healing and the Mind",
       "res": {
-        "audio": "2012-05-20.mp3"
+        "audio": "2012-05-20.mp3",
+        "timing": "052012.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -275,11 +280,12 @@
       "fid": "060312/",
       "desc": "T19.1 Healing and the Mind",
       "res": {
-        "audio": "2012-06-03.mp3"
+        "audio": "2012-06-03.mp3",
+        "timing": "060312.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -334,11 +340,12 @@
       "fid": "072912/",
       "desc": "T19.1 Healing and the Mind",
       "res": {
-        "audio": "2012-07-29.mp3"
+        "audio": "2012-07-29.mp3",
+        "timing": "072912.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -354,11 +361,12 @@
       "desc": "T19.2 Sin vs Error",
       "note": "Audio abruptly ends at 51:20",
       "res": {
-        "audio": "2012-08-04.mp3"
+        "audio": "2012-08-04.mp3",
+        "timing": "080412.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -373,11 +381,12 @@
       "fid": "081112/",
       "desc": "T19.2 Sin vs Error",
       "res": {
-        "audio": "2012-08-11.mp3"
+        "audio": "2012-08-11.mp3",
+        "timing": "081112.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -392,11 +401,12 @@
       "fid": "081812/",
       "desc": "T19.3 The Unreality of Sin",
       "res": {
-        "audio": "2012-08-18.mp3"
+        "audio": "2012-08-18.mp3",
+        "timing": "081812.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -451,11 +461,12 @@
       "fid": "091612/",
       "desc": "T19.3 The Unreality of Sin",
       "res": {
-        "audio": "2012-09-16.mp3"
+        "audio": "2012-09-16.mp3",
+        "timing": "091612.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -470,11 +481,12 @@
       "fid": "092312/",
       "desc": "T19.3 The Unreality of Sin",
       "res": {
-        "audio": "2012-09-23.mp3"
+        "audio": "2012-09-23.mp3",
+        "timing": "092312.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -489,11 +501,12 @@
       "fid": "093012/",
       "desc": "T19.4 The Obstacles to Peace",
       "res": {
-        "audio": "2012-09-30.mp3"
+        "audio": "2012-09-30.mp3",
+        "timing": "093012.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -508,11 +521,12 @@
       "fid": "100812/",
       "desc": "T19.5 The Attraction of Guilt",
       "res": {
-        "audio": "2012-10-08.mp3"
+        "audio": "2012-10-08.mp3",
+        "timing": "100812.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -527,11 +541,12 @@
       "fid": "101412/",
       "desc": "T19.5 The Attraction of Guilt",
       "res": {
-        "audio": "2012-10-14.mp3"
+        "audio": "2012-10-14.mp3",
+        "timing": "101412.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

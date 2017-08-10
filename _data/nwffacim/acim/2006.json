@@ -402,11 +402,12 @@
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
         "audio": "2006-07-01.mp3",
+        "timing": "070106.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -422,11 +423,12 @@
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
         "audio": "2006-07-15.mp3",
+        "timing": "071506.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -442,11 +444,12 @@
       "desc": "T12.1 Crucifixion by Guilt",
       "res": {
         "audio": "2006-07-30.mp3",
+        "timing": "073006.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -482,11 +485,12 @@
       "desc": "T12.2 The Fear of Redemption",
       "res": {
         "audio": "2006-08-12.mp3",
+        "timing": "081206.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

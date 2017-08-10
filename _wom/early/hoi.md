@@ -248,7 +248,7 @@ released from the burden of believing that *you* must know. And in any
 moment, as you cultivate the ability to remember first the Kingdom, to
 receive Love, to abide in that place, where Grace can speak to you, the
 Holy Spirit—that part of the mind that remains perfectly united with God
-and is heard when all the other dimension of your being are at peace
+and is heard when all the other dimensions of your being are at peace
 (and peace requires non-attachment to the world)—in that moment, the
 Holy Spirit will guide your words, your gestures, your choices and
 decisions. You might find yourself speaking, you might find yourself
@@ -265,7 +265,7 @@ even as you live in this physical dimension and the body moves about on
 your planet, and decisions and bills to pay and all the rest arises, but
 the mind goes
 
-> *Oh, I think I’ll just receive Love. I’ll just receive Love. I think
+> *Oh, I think I’ll just receive Love. I think I’ll just receive Love. I think
 > I’ll just abide in the remembrance that only Love is real.*
 
 Ah, drink that sweet, sweet, clear water, if you will, and *then* enjoin
@@ -336,7 +336,7 @@ Ask It to become the magnet that pulls your attention to It before each
 decision. For the Holy Spirit can only come to you to the degree that
 you invite It in.
 
-Your are beginning to near a certain time upon your calendar, called the
+You are beginning to near a certain time upon your calendar, called the
 Christmas Season. As I have shared with you many times before, rest
 assured it was not the month of my birth into the world, but it became a
 symbol, a symbol for the birth of Light into the world, even as my life
@@ -429,7 +429,7 @@ each and everyone of you and not above you in any way. If you would
 honor me in any way whatsoever, please remind your brothers and sisters
 of the times in which they have been the bearers and gifters of Christ
 to you, the times that your soul has been uplifted and inspired, the
-times that you have healed and transformed in their presence as they
+times that you have been healed and transformed in their presence as they
 took the courageous act to let Love be given through them. In this way,
 my heart will indeed be gladdened.This is the transformation that must
 come to your planet and to your human consciousness.
@@ -485,7 +485,7 @@ be accomplished, save this: The restoration of the memory of God in the
 seat of the soul, so that it becomes perfectly centred as the conduit
 through which Love creates.
 
-Then indeed, as you enjoin your plans, you know that you are merely
+Then indeed, as you enjoin your plans, you'll know that you are merely
 creating contexts in which Holy Instances can arise. Reasons to
 celebrate! Reasons to dance! Reason to give praise! Reason to give
 thankfulness! You are looking for moments as excuses to have a party.

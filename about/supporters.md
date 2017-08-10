@@ -306,23 +306,37 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Mar 21, 2012
  "   | Format | NWFFACIM | Study Group | Apr 08, 2012
  "   | Timing | NWFFACIM | Study Group | Apr 08, 2012
+ "   | Timing | NWFFACIM | Study Group | Apr 15, 2012
  "   | Format | NWFFACIM | Study Group | Apr 15, 2012
+ "   | Timing | NWFFACIM | Study Group | Apr 22, 2012
  "   | Format | NWFFACIM | Study Group | Apr 22, 2012
+ "   | Timing | NWFFACIM | Study Group | Apr 29, 2012
  "   | Format | NWFFACIM | Study Group | Apr 29, 2012
+ "   | Timing | NWFFACIM | Study Group | May 12, 2012
  "   | Format | NWFFACIM | Study Group | May 12, 2012
+ "   | Timing | NWFFACIM | Study Group | May 20, 2012
  "   | Format | NWFFACIM | Study Group | May 20, 2012
+ "   | Timing | NWFFACIM | Study Group | Jun 03, 2012
  "   | Format | NWFFACIM | Study Group | Jun 03, 2012
  "   | Timing | NWFFACIM | Study Group | Jun 17, 2012
  "   | Format | NWFFACIM | Study Group | Jul 22, 2012
+ "   | Timing | NWFFACIM | Study Group | Jul 29, 2012
  "   | Format | NWFFACIM | Study Group | Jul 29, 2012
+ "   | Timing | NWFFACIM | Study Group | Aug 04, 2012
  "   | Format | NWFFACIM | Study Group | Aug 04, 2012
+ "   | Timing | NWFFACIM | Study Group | Aug 11, 2012
  "   | Format | NWFFACIM | Study Group | Aug 11, 2012
+ "   | Timing | NWFFACIM | Study Group | Aug 18, 2012
  "   | Format | NWFFACIM | Study Group | Aug 18, 2012
  "   | Timing | NWFFACIM | Study Group | Aug 27, 2012
  "   | Timing | NWFFACIM | Study Group | Sep 08, 2012
  "   | Format | NWFFACIM | Study Group | Sep 16, 2012
+ "   | Timing | NWFFACIM | Study Group | Sep 23, 2012
  "   | Format | NWFFACIM | Study Group | Sep 23, 2012
+ "   | Timing | NWFFACIM | Study Group | Sep 30, 2012
  "   | Format | NWFFACIM | Study Group | Sep 30, 2012
+ "   | Timing | NWFFACIM | Study Group | Oct 08, 2012
+ "   | Timing | NWFFACIM | Study Group | Oct 14, 2012
  "   | Format | NWFFACIM | Study Group | Oct 14, 2012
  "   | Format | NWFFACIM | Study Group | Oct 21, 2012
  "   | Timing | NWFFACIM | Study Group | Nov 05, 2012
@@ -402,6 +416,7 @@ Gail Leopold | Timing | WOM | WOH | Lesson 03
 " | Timing | WOM | WOH | Lesson 08
 " | Timing | NWFFACIM | Study Group | Jan 02, 2010
 Patricia Lawrence | Timing | WOM | WOH | Lesson 06
+ " | Timing | WOM | Early Years | The Holy Instant
  " | Timing | WOM | WOT | Lesson 02
  " | Timing | WOM | WOT | Lesson 03
  " | Timing | WOM | WOT | Lesson 12
@@ -435,5 +450,9 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Feb 26, 2006
 " | Timing | NWFFACIM | Study Group | Jun 18, 2006
 " | Timing | NWFFACIM | Study Group | Jun 24, 2006
+" | Timing | NWFFACIM | Study Group | Jul 01, 2006
+" | Timing | NWFFACIM | Study Group | Jul 15, 2006
+" | Timing | NWFFACIM | Study Group | Jul 30, 2006
+" | Timing | NWFFACIM | Study Group | Aug 12, 2006
 " | Timing | NWFFACIM | Study Group | Sep 09, 2007
 

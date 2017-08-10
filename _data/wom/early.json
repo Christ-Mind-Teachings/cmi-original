@@ -196,12 +196,13 @@
     {
       "fid": "hoi/",
       "res": {
-        "audio": "HOI.mp3"
+        "audio": "HOI.mp3",
+        "timing": "hoi.js"
       },
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
