@@ -561,11 +561,12 @@
       "fid": "102112/",
       "desc": "T19.5 The Attraction of Guilt",
       "res": {
-        "audio": "2012-10-21.mp3"
+        "audio": "2012-10-21.mp3",
+        "timing": "102112.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -600,11 +601,12 @@
       "fid": "111212/",
       "desc": "T19.6 Obstacles to Peace, The Second Obstacle",
       "res": {
-        "audio": "2012-11-12.mp3"
+        "audio": "2012-11-12.mp3",
+        "timing": "111212.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -160,11 +160,12 @@
       "desc": "T11.7 The Guide for Miracles",
       "res": {
         "audio": "2006-03-11.mp3",
+        "timing": "031106.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -220,11 +221,12 @@
       "desc": "T11.7 The Guide for Miracles",
       "res": {
         "audio": "2006-04-15.mp3",
+        "timing": "041506.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -506,11 +508,12 @@
       "desc": "T12.2 The Fear of Redemption",
       "res": {
         "audio": "2006-08-20.mp3",
+        "timing": "082006.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -338,8 +338,10 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Oct 08, 2012
  "   | Timing | NWFFACIM | Study Group | Oct 14, 2012
  "   | Format | NWFFACIM | Study Group | Oct 14, 2012
+ "   | Timing | NWFFACIM | Study Group | Oct 21, 2012
  "   | Format | NWFFACIM | Study Group | Oct 21, 2012
  "   | Timing | NWFFACIM | Study Group | Nov 05, 2012
+ "   | Timing | NWFFACIM | Study Group | Nov 12, 2012
  "   | Timing | NWFFACIM | Study Group | Apr 27, 2013
  "   | Timing | NWFFACIM | Study Group | May 04, 2013
  "   | Timing | NWFFACIM | Study Group | May 11, 2013
@@ -448,11 +450,14 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Aug 07, 2005
 " | Timing | NWFFACIM | Study Group | Aug 14, 2005
 " | Timing | NWFFACIM | Study Group | Feb 26, 2006
+" | Timing | NWFFACIM | Study Group | Mar 11, 2006
+" | Timing | NWFFACIM | Study Group | Apr 15, 2006
 " | Timing | NWFFACIM | Study Group | Jun 18, 2006
 " | Timing | NWFFACIM | Study Group | Jun 24, 2006
 " | Timing | NWFFACIM | Study Group | Jul 01, 2006
 " | Timing | NWFFACIM | Study Group | Jul 15, 2006
 " | Timing | NWFFACIM | Study Group | Jul 30, 2006
 " | Timing | NWFFACIM | Study Group | Aug 12, 2006
+" | Timing | NWFFACIM | Study Group | Aug 20, 2006
 " | Timing | NWFFACIM | Study Group | Sep 09, 2007
 
