@@ -182,12 +182,13 @@
       "title": "Explain ACIM Quotes",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "COMQ1.mp3"
+        "audio": "COMQ1.mp3",
+        "timing": "comq1.js"
       },
       "url": "/wom/questions/comq1/",
       "idx": 10,
@@ -216,12 +217,13 @@
       "title": "Physical Earth Changes",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "DTHQ02.mp3"
+        "audio": "DTHQ02.mp3",
+        "timing": "dthq2.js"
       },
       "url": "/wom/questions/dthq2/",
       "idx": 12,
@@ -233,12 +235,13 @@
       "title": "Role of Shanti Christo",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "DTHQ03.mp3"
+        "audio": "DTHQ03.mp3",
+        "timing": "dthq3.js"
       },
       "url": "/wom/questions/dthq3/",
       "idx": 13,
@@ -250,12 +253,13 @@
       "title": "Three Days of Darkness",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "DTHQ04.mp3"
+        "audio": "DTHQ04.mp3",
+        "timing": "dthq4.js"
       },
       "url": "/wom/questions/dthq4/",
       "idx": 14,
@@ -267,12 +271,13 @@
       "title": "Differences Between Jeshua and Germaine, etc",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "DTHQ05.mp3"
+        "audio": "DTHQ05.mp3",
+        "timing": "dthq5.js"
       },
       "url": "/wom/questions/dthq5/",
       "idx": 15,
@@ -284,12 +289,13 @@
       "title": "Being Unaware of Death",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "DTHQ06.mp3"
+        "audio": "DTHQ06.mp3",
+        "timing": "dthq6.js"
       },
       "url": "/wom/questions/dthq6/",
       "idx": 16,
@@ -301,12 +307,13 @@
       "title": "The Tunnel at Death",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "DTHQ07.mp3"
+        "audio": "DTHQ07.mp3",
+        "timing": "dthq7.js"
       },
       "url": "/wom/questions/dthq7/",
       "idx": 17,
@@ -335,12 +342,13 @@
       "title": "A Force Outside of God",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "DTHQ09.mp3"
+        "audio": "DTHQ09.mp3",
+        "timing": "dthq9.js"
       },
       "url": "/wom/questions/dthq9/",
       "idx": 19,
@@ -352,12 +360,13 @@
       "title": "Shanti Christo",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "DTHQ10.mp3"
+        "audio": "DTHQ10.mp3",
+        "timing": "dthq10.js"
       },
       "url": "/wom/questions/dthq10/",
       "idx": 20,

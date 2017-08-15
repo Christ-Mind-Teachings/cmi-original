@@ -65,6 +65,4 @@ certainty, in knowingness: It is finished. What a delightful way to
 spend the last afternoon of the dream of separation. Something to think
 about.
 
-Mmmm. Indeed. So, may I be allowed to leave this time?
-
 

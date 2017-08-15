@@ -15,21 +15,21 @@ elaborate on those two?
 
 ### Answer
 
-Certainly. Words are indeed symbols of symbols, since they represent an
-idea; and when a word is spoken it again gives the message that this is
-the idea that you are valuing. Hm?
+Certainly, I never said that. Words are indeed symbols of symbols, since
+they represent an idea; and when a word is spoken it again gives the
+message that this is the idea that you are valuing. Hm?
 
-Now that is why I asked you when we began: Do you live in a world where
-words are not necessary? Since you abide *here*, it must be the Father’s
-Will that you be the one who finds a way to communicate Love *here*. And
-the wise teacher speaks the language of the student. Therefore, words
-are necessary in this dimension as a way of pointing beyond themselves
-to the symbols they represent and even beyond the ideas to the direct
-experience of the revelation of Love’s presence.
+Now that is why, by the way, I asked you when we began: Do you live in a
+world where words are not necessary? Since you abide *here*, it must be
+your Father’s Will that you be the one who finds a way to communicate
+Love *here*. And the wise teacher speaks the language of the student.
+Therefore, words are necessary in this dimension as a way of pointing
+beyond themselves to the symbols they represent and even beyond the
+ideas to the direct experience of the revelation of Love’s presence.
 
-Now when you communicate to a brother or a sister in a way that
+Now, when you communicate to a brother or a sister in a way that
 indicates to them that you believe they are less than Christ, because of
-the power of thought and words you have immediately placed *yourself* in
+the power of thought and words, you have immediately placed *yourself* in
 a position less than Christ. So that sentence refers to the divine
 selfishness that we have spoke of in this hour.
 

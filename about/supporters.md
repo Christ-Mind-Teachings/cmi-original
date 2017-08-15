@@ -419,6 +419,16 @@ Gail Leopold | Timing | WOM | WOH | Lesson 03
 " | Timing | NWFFACIM | Study Group | Jan 02, 2010
 Patricia Lawrence | Timing | WOM | WOH | Lesson 06
  " | Timing | WOM | Early Years | The Holy Instant
+ " | Timing | WOM | Early Years | Mastering Communication
+ " | Timing | WOM | Questions | Death and Earth Changes Q2
+ " | Timing | WOM | Questions | Death and Earth Changes Q3
+ " | Timing | WOM | Questions | Death and Earth Changes Q4
+ " | Timing | WOM | Questions | Death and Earth Changes Q5
+ " | Timing | WOM | Questions | Death and Earth Changes Q6
+ " | Timing | WOM | Questions | Death and Earth Changes Q7
+ " | Timing | WOM | Questions | Death and Earth Changes Q9
+ " | Timing | WOM | Questions | Death and Earth Changes Q10
+ " | Timing | WOM | Questions | Mastering Communication Q1
  " | Timing | WOM | WOT | Lesson 02
  " | Timing | WOM | WOT | Lesson 03
  " | Timing | WOM | WOT | Lesson 12
@@ -459,5 +469,6 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Jul 30, 2006
 " | Timing | NWFFACIM | Study Group | Aug 12, 2006
 " | Timing | NWFFACIM | Study Group | Aug 20, 2006
+" | Timing | NWFFACIM | Study Group | Nov 11, 2006
 " | Timing | NWFFACIM | Study Group | Sep 09, 2007
 

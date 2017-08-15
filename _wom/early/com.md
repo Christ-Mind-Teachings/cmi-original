@@ -162,7 +162,7 @@ awareness. And then, indeed, you are free.
 Communication requires, then, in any given moment of relationship that
 someone assume responsibility for remembering that neither party knows
 anything. Now often we would see that in your relationships one would
-like to enter that state but is quite sure the other one doesn’t want
+like to enter into that state but is quite sure the other one doesn’t want
 to, and so then needs to defend themselves and steps into ego
 consciousness — and off you go, spinning like your planet, getting
 nowhere. The purpose of communication is to teach only love. Therefore,
@@ -266,7 +266,7 @@ important and very serious element — innocent play. Innocent play.
 > ask what would be the best way to communicate Christ in this moment.
 > If you really want to have fun, tell the one in front of you, “You
 > know, I’ve decided to communicate Christ in this moment. Now just take
-> a deep breath and give me some time, because I am learning by doing.”*
+> a deep breath and give me some time here, because I am learning by doing.”*
 
 Rest assured, that if you would begin each communication in that way,
 you will immediately disarm the one in front of you and you will have
@@ -367,11 +367,7 @@ of my Father.
 
 So. Hmm. Do you think that that will be sufficient?
 
-Beloved sister?
-
-I think it’s wonderful. Thank you.
-
-What would you wish to communicate in this moment?
+Carol, What would you wish to communicate in this moment?
 
 I love you.
 

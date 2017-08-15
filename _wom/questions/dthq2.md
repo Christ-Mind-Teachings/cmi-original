@@ -6,8 +6,8 @@ title: "Death and Earth Changes - <small><a href='/wom/early/dth/#question-two'>
 
 Yes, thank you. But everything you’ve said tonight can be taken either
 physically or metaphorically. Is this a physical change that will occur
-on the planet, or is this a metaphorical change and the planet itself
-remain unscathed?
+on the planet, or is this a metaphorical change that will occur on the
+planet and the planet itself remains unscathed?
 
 ### Answer
 
@@ -28,7 +28,7 @@ are vast beyond the reach of all solar systems. And when you get a feel
 for that, you will, indeed, marvel.
 
 Yes, it will occur, and it is inappropriate and inaccurate for anyone to
-assume that this change is merely pictures or symbols, that it really
+assume that this change is merely pictures or symbols, but it really
 only occurs in something called the mind that’s somewhere tucked inside
 a body and has nothing at all to do with the planet, with the stars,
 with the comets, with the photon belts. ‘Tis all one thing: Mind
