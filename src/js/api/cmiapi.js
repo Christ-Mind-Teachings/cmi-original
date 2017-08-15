@@ -1,6 +1,6 @@
 
 var axios = require("axios");
-var config = require("../config/config");
+var config = require("../bundle/config/config");
 var indexApi = config.getIdxEndpoint();
 
 function storeAnnotation(annotation) {

@@ -8,7 +8,7 @@ var modal = require("./modal");
 var hilight = require("./hilight");
 var capture = require("../ds/capture");
 var ays = require("../util/are-you-sure");
-var config = require("../config/config");
+var config = require("../bundle/config/config");
 var store = require("store");
 
 var jPlayer;

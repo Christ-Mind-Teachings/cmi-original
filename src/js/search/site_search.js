@@ -4,7 +4,7 @@ var url = require("../util/url");
 var axios = require("axios");
 var store = require("store");
 var runtime = require("pug-runtime");
-var config = require("../config/config");
+var config = require("../bundle/config/config");
 var templates = require("../pug/templates");
 
 var searchApi = config.getApiEndpoint();

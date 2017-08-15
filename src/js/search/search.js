@@ -3,7 +3,7 @@
 var notify = require("toastr");
 var store = require("store");
 var url = require("../util/url");
-var config = require("../config/config");
+var config = require("../bundle/config/config");
 var _ = require("underscore");
 var setStartTime = function(p) {
   console.error("search.setStartTime(%s) - function not initialized", p);

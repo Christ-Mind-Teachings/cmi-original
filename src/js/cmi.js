@@ -1,6 +1,6 @@
 "use strict";
 
-var config = require("./config/config");
+var config = require("./bundle/config/config");
 
 //initialize javascript on page when loaded
 document.addEventListener("DOMContentLoaded", function() {

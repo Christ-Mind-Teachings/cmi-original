@@ -128,7 +128,8 @@
     {
       "fid": "dth/",
       "res": {
-        "audio": "DTH.mp3"
+        "audio": "DTH.mp3",
+        "timer": "pm"
       },
       "complete": {
         "copyright": 0,
