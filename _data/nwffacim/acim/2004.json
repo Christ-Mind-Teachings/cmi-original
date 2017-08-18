@@ -819,13 +819,14 @@
     },
     {
       "res": {
-        "audio": "2004-12-19.mp3"
+        "audio": "2004-12-19.mp3",
+        "timing": "121904.js"
       },
       "fid": "121904/",
       "desc": "T8.10 The Answer to Prayer",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

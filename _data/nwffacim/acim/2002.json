@@ -175,13 +175,14 @@
       "fid": "092502/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "desc": "T1.III Atonement and Miracles",
       "res": {
-        "audio": "2002-09-25.mp3"
+        "audio": "2002-09-25.mp3",
+        "timing": "092502.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/092502/",

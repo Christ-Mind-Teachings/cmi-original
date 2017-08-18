@@ -19,11 +19,12 @@
       "fid": "010205/",
       "desc": "T8.10 The Answer to Prayer",
       "res": {
-        "audio": "2005-01-02.mp3"
+        "audio": "2005-01-02.mp3",
+        "timing": "010205.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
