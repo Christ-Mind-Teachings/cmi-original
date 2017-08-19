@@ -25,10 +25,8 @@ var cmiAudioTimingData = {
     }, {
         "id": "p7",
         "seconds": 465.435948535
-    }, {
-        "id": "p8",
-        "seconds": 486.777581628
-    }, {
+    },
+    {
         "id": "p9",
         "seconds": 491.545912023
     }, {
@@ -43,10 +41,8 @@ var cmiAudioTimingData = {
     }, {
         "id": "p13",
         "seconds": 597.49194327
-    }, {
-        "id": "p14",
-        "seconds": 608.038081388
-    }, {
+    },
+    {
         "id": "p15",
         "seconds": 613.560441727
     }, {
@@ -70,10 +66,8 @@ var cmiAudioTimingData = {
     }, {
         "id": "p22",
         "seconds": 802.36902371
-    }, {
-        "id": "p23",
-        "seconds": 809.904841333
-    }, {
+    },
+    {
         "id": "p24",
         "seconds": 813.419984822
     }, {
@@ -211,13 +205,12 @@ var cmiAudioTimingData = {
     }, {
         "id": "p69",
         "seconds": 2367.720526886
-    }, {
+    },
+    {
         "id": "p70",
         "seconds": 2369.978643817
-    }, {
-        "id": "p71",
-        "seconds": 2372.238680798
-    }, {
+    },
+    {
         "id": "p72",
         "seconds": 2376.758764145
     }, {
@@ -226,10 +219,8 @@ var cmiAudioTimingData = {
     }, {
         "id": "p74",
         "seconds": 2425.46937034
-    }, {
-        "id": "p75",
-        "seconds": 2429.989527492
-    }, {
+    },
+    {
         "id": "p76",
         "seconds": 2431.495894515
     }, {
@@ -319,10 +310,8 @@ var cmiAudioTimingData = {
     }, {
         "id": "p105",
         "seconds": 3424.348970533
-    }, {
-        "id": "p106",
-        "seconds": 3427.613257981
-    }, {
+    },
+    {
         "id": "p107",
         "seconds": 3430.876466193
     }, {
@@ -365,9 +354,6 @@ var cmiAudioTimingData = {
         "id": "p120",
         "seconds": 3703.155205949
     }, {
-        "id": "p121",
-        "seconds": 3705.917593589
-    }, {
         "id": "p122",
         "seconds": 3708.429792208
     }, {
@@ -377,17 +363,11 @@ var cmiAudioTimingData = {
         "id": "p124",
         "seconds": 3794.808755837
     }, {
-        "id": "p125",
-        "seconds": 3930.895954656
-    }, {
         "id": "p126",
         "seconds": 3935.413053463
     }, {
         "id": "p127",
         "seconds": 3944.45413989
-    }, {
-        "id": "p128",
-        "seconds": 3974.582883644
     }, {
         "id": "p129",
         "seconds": 3978.85297112

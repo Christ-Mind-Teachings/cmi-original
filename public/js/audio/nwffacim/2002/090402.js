@@ -26,9 +26,6 @@ var cmiAudioTimingData = {
         "id": "p7",
         "seconds": 441.710085417
     }, {
-        "id": "p8",
-        "seconds": 465.565875987
-    }, {
         "id": "p9",
         "seconds": 466.824681491
     }, {
@@ -37,9 +34,6 @@ var cmiAudioTimingData = {
     }, {
         "id": "p11",
         "seconds": 569.73439325
-    }, {
-        "id": "p12",
-        "seconds": 585.298689042
     }, {
         "id": "p13",
         "seconds": 586.302305632
@@ -452,9 +446,6 @@ var cmiAudioTimingData = {
         "id": "p149",
         "seconds": 3244.784039146
     }, {
-        "id": "p150",
-        "seconds": 3249.553937489
-    }, {
         "id": "p151",
         "seconds": 3250.809054573
     }, {
@@ -485,9 +476,6 @@ var cmiAudioTimingData = {
         "id": "p160",
         "seconds": 3747.469881167
     }, {
-        "id": "p161",
-        "seconds": 3753.244427327
-    }, {
         "id": "p162",
         "seconds": 3754.752398038
     }, {
@@ -496,9 +484,6 @@ var cmiAudioTimingData = {
     }, {
         "id": "p164",
         "seconds": 3831.586593513
-    }, {
-        "id": "p165",
-        "seconds": 3837.617935757
     }, {
         "id": "p166",
         "seconds": 3838.371606204
