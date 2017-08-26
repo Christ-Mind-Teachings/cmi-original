@@ -172,7 +172,7 @@ Mind that Christ is. You have chosen, therefore, the body, this time
 frame; you have chosen it. It has not been forced upon you by any means.
 
 The Kingdom of Heaven is indeed within you. It lies as a jewel, placed
-gently on the altar of the Heart &ndash; with a capital &ndash; the
+gently on the altar of the Heart &ndash; with a capital H &ndash; the
 Heart whose first beat came from the breath that God breathed into it,
 long before there were ever such a thing as a body. The Kingdom lies
 within the &lsquo;you&rsquo; that you have constructed out of your
@@ -218,7 +218,7 @@ more often that choice is made, the simpler it becomes, and in the end,
 silence becomes what you could call pervasive in the mind, so that
 although you walk and talk seemingly in this world, there is a core
 within of Perfect Silence, of Perfect Light, and though you speak and
-hear others speak to you, though you get up in the morning and make the
+hear others speak to you, though you get up in the morning and make your
 breakfast so you can feed the body, though you do all things, there is a
 place of perfect Peace and it comes as the result of being willing, over
 and over again, to relinquish your beliefs and your perceptions about
@@ -250,7 +250,7 @@ the noise of my own thoughts, and to ask of my Father,
 And I was taught that the body itself has been created in error. It is
 &ndash; in a sense &ndash; it has been created to house the ego, to
 create and to give forth the symbol, and therefore the belief, that
-separation exists, because (everybody knows it) if you look upon another
+separation exists, because (everybody knows it) that if you look upon another
 one as a body, you *know* there&rsquo;s a distance between you. That is
 evident, through the body&rsquo;s eyes.
 
@@ -296,7 +296,7 @@ given to you so that the Holy Spirit can ask you,
 > peace or judgment, extension or contraction, giving or the insane
 > attempt to take?*
 
-The body is either the symbol of separation and pain or it becomes the
+The body, the body is either the symbol of separation and pain or it becomes the
 temple of the living Spirit. And that is all that little phrase once
 meant. It&rsquo;s where the body becomes solely the means for
 communicating Love, and nothing else; it becomes the servant of the
@@ -337,22 +337,23 @@ daily life is suspended and you feel joy. Have you had that experience?
 
 To the degree that one&rsquo;s mind has become corrected so that the
 body is not used to house old judgments and old fears and old angers,
-and it is not used to look upon other bodies as having something that
-this body can gain, but as correction comes to the mind and the mind
-becomes enlightened, so too must the body follow. The cells of the body
-begin to vibrate in a different way; emotional and even physical
-toxicity is released; the body becomes clearer and clearer and clearer.
-It becomes a vehicle that radiates Light to various degrees, and that is
-what you&rsquo;re feeling. What you&rsquo;re feeling through the body of
-that one is really the reflection of what has occurred in the mind. And
-the body of one who, shall we say, is what you might call a master is
-simply the body that has become so perfected that it becomes *as Light*
-because there&rsquo;s no trace in the mind left of judgment or fear or
-doubt, there is only the unconditional Love that God Is.
+and it is not used to look upon other bodies as something perhaps that
+they have something that this body can gain, but as correction comes to
+the mind and the mind becomes enlightened, so too must the body follow.
+The cells of the body begin to vibrate in a different way; emotional and
+even physical toxicity is released; the body becomes clearer and clearer
+and clearer.  It becomes a vehicle that radiates Light to various
+degrees, and that is what you&rsquo;re feeling. What you&rsquo;re
+feeling through the body of that one is really the reflection of what
+has occurred in the mind. And the body of one who, shall we say, is what
+you might call a master is simply the body that has become so perfected
+that it becomes *as Light* because there&rsquo;s no trace in the mind
+left of judgment or fear or doubt, there is only the unconditional Love
+that God Is.
 
 And what I want to share with you is &ndash; as you look down at your
 thighs and your feet and your hands &ndash; that bag of dust that you
-have identified with as being you, is not you. It comes to you from the
+have identified with as being you, is not you. It comes from the
 dust of the ground, it is given to you by your Holy Mother, this
 precious Earth, and its one purpose and function &ndash; its *only*
 purpose and function &ndash; has been to be the vehicle through which
@@ -446,7 +447,7 @@ diner of all places, it becomes a sacred temple in which the Holy
 Children of God join together and look innocently upon one another and
 laugh at the ego. And perhaps you extend your hands to one another, and
 you clasp your hands and you look into their eyes; and suddenly the very
-energy that was going on in you, that seemed to compel you into the
+energy that was going on within you, that seemed to compel you into the
 whole series of events that got you and your friend at the diner, that
 conflict dissolves.
 
@@ -748,7 +749,7 @@ buildings, look at the automobiles, and just say,
 > me.*
 
 It would begin to bring about discernment, the discernment between Truth
-and falsehood. And as you relinquish the value you&rsquo;ve placed upon
+and falsehood. And as you relinquish the value that you&rsquo;ve placed upon
 the things you hoped would bring you happiness and safety, you will
 discover that the place of safety is still within you and has been there
 since the moment when the Holy Son of God first held the thought,
@@ -839,7 +840,7 @@ doesn&rsquo;t have any &ndash; and it just says:
 
 And it sets aside the weight of the world, and a Light begins to be
 remembered. Hmm. The echo of an ancient melody, at once so familiar but
-it seemed to be forgotten, begins to arise in the soul that has
+seemed to be forgotten, begins to arise in the soul that has
 relinquished the world and returned to silence. And the thought comes to
 replace the one thought of separation &ndash; for upon it all worlds
 have been built, and all subsequent thoughts and dramas are nothing more
@@ -1032,7 +1033,7 @@ blessing.  Embrace it, honor it and then ask within and be really
 honest: Is this truly the life that the Son of God would choose to live
 if the Son of God was thoroughly awake? Hm! Interesting question! For
 you see it might be, and it might not be. It requires your willingness
-to surrender your perceptions of yourself and world. And if in your
+to surrender your perceptions of yourself and the world. And if in your
 circumstances you can go inside and say,
 
 > *I am at peace. I am where my Father is asking me to be. I don&rsquo;t
@@ -1326,7 +1327,7 @@ different choice, and you can be that one in every moment. Isn&rsquo;t
 that true? Hm!  Indeed.
 
 So there you have it. Grace as Reality comes when you consciously choose
-to accept what is the case:
+to accept what is always the case:
 
 > *This illusion isn&rsquo;t true, these feelings of lack are not true,
 > this need to make judgments isn&rsquo;t true &ndash; that&rsquo;s all
@@ -1413,16 +1414,16 @@ voice you&rsquo;re listening to?
 
 If you&rsquo;re not standing out as just a little crazy, you have
 conformed yourself to the world. Hmm. I taught certain friends many
-things in secret, something that wasn&rsquo;t meant to be broadcast to
-minds that really weren&rsquo;t interested in learning anyway, but the
-essence of what I taught my closest friends was the simplicity of the
-great power of choosing laughter, dancing, play and singing in each and
-every day until that frequency permeates every decision you make and
-every experience you&rsquo;re having. For you see, it is lightness that
-*enlightens* the mind and lightness carries the mind out
-of density, out of seriousness. So if you&rsquo;re feeling a bit heavy
-and a bit down, ask yourself, &ldquo;Did I laugh, did I sing, did I
-dance, did I play this day?&rdquo; If not, and it&rsquo;s eleven
+things in secret, that simply meant that, umm, it wasn&rsquo;t meant to
+be broadcast to minds that really weren&rsquo;t interested in learning
+anyway, but the essence of what I taught my closest friends was the
+simplicity of the great power of choosing laughter, dancing, play and
+singing in each and every day until that frequency permeates every
+decision you make and every experience you&rsquo;re having. For you see,
+it is lightness that *enlightens* the mind and lightness carries the
+mind out of density, out of seriousness. So if you&rsquo;re feeling a
+bit heavy and a bit down, ask yourself, &ldquo;Did I laugh, did I sing,
+did I dance, did I play this day?&rdquo; If not, and it&rsquo;s eleven
 o&rsquo;clock and you&rsquo;re laying in bed and you&rsquo;re dog tired
 and you&rsquo;re feeling depressed&hellip; Get up!
 
@@ -1459,7 +1460,7 @@ are always going to know, *you are always going to know* that the one
 who walked this plane as a man is like unto yourself. The one the world
 has tried to get rid of, first through crucifixion and then by making
 him into a grand savior so far removed and above every other human
-being, that is untouchable and unreachable anyway, so why try? All
+being, that he is untouchable and unreachable anyway, so why try? All
 attempts to continue the illusion. You are going to know that what I
 said then is true: &ldquo;*I am* *with you always, even unto the end of
 this age.&rdquo;* And when you fully understand who I am and have become

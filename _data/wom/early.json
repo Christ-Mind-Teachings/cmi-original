@@ -129,12 +129,13 @@
       "fid": "dth/",
       "res": {
         "audio": "DTH.mp3",
+        "timing": "dth.js",
         "timer": "pm"
       },
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -166,12 +167,13 @@
     {
       "fid": "gar/",
       "res": {
-        "audio": "GAR.mp3"
+        "audio": "GAR.mp3",
+        "timing": "gar.js"
       },
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

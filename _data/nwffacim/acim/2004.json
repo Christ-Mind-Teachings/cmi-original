@@ -783,11 +783,12 @@
       "fid": "120504/",
       "desc": "T8.9 The Acceptance of Reality",
       "res": {
-        "audio": "2004-12-05.mp3"
+        "audio": "2004-12-05.mp3",
+        "timing": "120504.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -802,11 +803,12 @@
       "fid": "121204/",
       "desc": "T8.9 The Acceptance of Reality",
       "res": {
-        "audio": "2004-12-12.mp3"
+        "audio": "2004-12-12.mp3",
+        "timing": "121204.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

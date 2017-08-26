@@ -690,11 +690,12 @@
       "desc": "T12.6 Attainment of the Real World",
       "res": {
         "audio": "2006-11-18.mp3",
+        "timing": "111806.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

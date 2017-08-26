@@ -96,7 +96,7 @@ the face of this Earth. But unlike the time when Man recognized it not,
 mankind *will know* that *the truth is true, always — *and that what
 is real cannot be threatened, and *only* what is real exists.
 
-There, indeed, will come a moment when all dreams of fear are forgotten,
+There indeed, will come a moment when all dreams of fear are forgotten,
 when all strife and enmity between brothers and sisters is dissolved as
 but an echo of a thought — thought so long ago that it’s hardly even
 imaginable. The Earth will radiate the light of Truth yet again, as she,

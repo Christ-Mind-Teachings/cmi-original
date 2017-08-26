@@ -84,7 +84,7 @@ There are many who are having their fears escalate. And why? Because
 they are committed to fear. They believe in fear; it is what keeps them
 safe. I know that sounds odd, but it’s very true. As long as I can look
 out upon my neighbor and see you as the bad person, then I know who
-needs to be attacked. And all we have left to do is figure out how to
+needs to be attacked. And all I have left to do is figure out how to
 attack you before you attack me. Very simple. And if I win, I get all
 the marbles. But in attack, no one *can* win. For when the attacker
 attacks, the attacker *is* attacked by the weight of the negativity of
