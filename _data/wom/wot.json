@@ -85,6 +85,7 @@
       },
       "res": {
         "audio": "L16.mp3",
+        "timing": "l16.js",
         "timer": "pm"
       },
       "title": "Lesson Four",
@@ -98,12 +99,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "L17.mp3",
+        "timing": "l17.js",
         "timer": "pm"
       },
       "title": "Lesson Five",

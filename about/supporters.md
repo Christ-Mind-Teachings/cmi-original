@@ -436,6 +436,7 @@ Patricia Lawrence | Timing | WOM | WOH | Lesson 06
  " | Timing | WOM | WOT | Lesson 02
  " | Timing | WOM | WOT | Lesson 03
  " | Timing | WOM | WOT | Lesson 04
+ " | Timing | WOM | WOT | Lesson 05
  " | Timing | WOM | WOT | Lesson 12
  " | Timing | WOM | WOK | Lesson 10
  " | Timing | Questions | WOK | Lesson 10 Q1
