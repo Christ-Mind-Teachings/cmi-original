@@ -306,11 +306,12 @@
       "desc": "T11.8 Reality and Redemption",
       "res": {
         "audio": "2006-05-27.mp3",
+        "timing": "052706.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

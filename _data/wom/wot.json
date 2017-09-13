@@ -119,12 +119,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "L18.mp3",
+        "timing": "l18.js",
         "timer": "pm"
       },
       "title": "Lesson Six",
@@ -138,12 +139,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "L19.mp3",
+        "timing": "l19.js",
         "timer": "pm"
       },
       "title": "Lesson Seven",

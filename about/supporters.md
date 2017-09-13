@@ -439,10 +439,15 @@ Patricia Lawrence | Timing | WOM | WOH | Lesson 06
  " | Timing | WOM | WOT | Lesson 03
  " | Timing | WOM | WOT | Lesson 04
  " | Timing | WOM | WOT | Lesson 05
+ " | Timing | WOM | WOT | Lesson 06
+ " | Timing | WOM | Questions | WOT Lesson 06 Q1
+ " | Timing | WOM | Questions | WOT Lesson 06 Q2
+ " | Timing | WOM | WOT | Lesson 07
+ " | Timing | WOM | Questions | WOT Lesson 07 Q1
  " | Timing | WOM | WOT | Lesson 12
  " | Timing | WOM | WOK | Lesson 10
- " | Timing | Questions | WOK | Lesson 10 Q1
- " | Timing | Questions | WOK | Lesson 10 Q2
+ " | Timing | WOM | Questions | WOK Lesson 10 Q1
+ " | Timing | WOM | Questions | WOK Lesson 10 Q2
 John Hempstead | Timing | WOM | Early | Walk with Me
 " | Timing | WOM | Early | Meaning of Ascension
 " | Timing | WOM | Early | Divine Feminine
@@ -479,6 +484,7 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Apr 15, 2006
 " | Timing | NWFFACIM | Study Group | Apr 29, 2006
 " | Timing | NWFFACIM | Study Group | May 06, 2006
+" | Timing | NWFFACIM | Study Group | May 27, 2006
 " | Timing | NWFFACIM | Study Group | Jun 18, 2006
 " | Timing | NWFFACIM | Study Group | Jun 24, 2006
 " | Timing | NWFFACIM | Study Group | Jul 01, 2006

@@ -570,13 +570,14 @@
     },
     {
       "res": {
-        "audio": "2004-09-05.mp3"
+        "audio": "2004-09-05.mp3",
+        "timing": "090504.js"
       },
       "fid": "090504/",
       "desc": "T8.3 The Holy Encounter",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -589,13 +590,14 @@
     },
     {
       "res": {
-        "audio": "2004-09-12.mp3"
+        "audio": "2004-09-12.mp3",
+        "timing": "091204.js"
       },
       "fid": "091204/",
       "desc": "T8.3 The Holy Encounter",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -608,13 +610,14 @@
     },
     {
       "res": {
-        "audio": "2004-09-19.mp3"
+        "audio": "2004-09-19.mp3",
+        "timing": "091904.js"
       },
       "fid": "091904/",
       "desc": "T8.4 The Light of the World",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -730,11 +733,12 @@
       "fid": "110704/",
       "desc": "T8.6 Communication and the Ego-Body Equation",
       "res": {
-        "audio": "2004-11-07.mp3"
+        "audio": "2004-11-07.mp3",
+        "timing": "110704.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

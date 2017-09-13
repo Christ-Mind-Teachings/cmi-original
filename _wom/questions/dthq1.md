@@ -48,7 +48,7 @@ Beloved friend, you have heard it said that when you hear of wars and
 rumors of wars — no, the time is not quite yet but, boy, is it getting
 close. Hmm? Indeed. As we spoke a moment ago — and please understand
 this — *there is no such thing as punishment*. There is no condemnation
-or judgment in the mind of God, who is above, and seeks to give his Holy
+or judgment in the mind of God, who is but love, and seeks to give his Holy
 Child all good things, and would lead the child from dreams of strife
 and suffering and fear to dreams of freedom and peace and empowerment
 and Christedness. There is a vibration beginning to build in the depth
