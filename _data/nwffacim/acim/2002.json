@@ -195,13 +195,14 @@
       "fid": "100202/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "desc": "T1.IV The Escape from Darkness",
       "res": {
-        "audio": "2002-10-02.mp3"
+        "audio": "2002-10-02.mp3",
+        "timing": "100202.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/100202/",
@@ -215,12 +216,13 @@
       "desc": "T1.V Wholeness and Spirit",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "2002-10-10.mp3"
+        "audio": "2002-10-10.mp3",
+        "timing": "101002.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/101002/",
@@ -234,12 +236,13 @@
       "desc": "T1.VI The Illusion of Needs",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "2002-10-17.mp3"
+        "audio": "2002-10-17.mp3",
+        "timing": "101702.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/101702/",
@@ -253,12 +256,13 @@
       "desc": "T1.VII Distortions of Miracle Impulses",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "2002-10-24.mp3"
+        "audio": "2002-10-24.mp3",
+        "timing": "102402.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/102402/",
@@ -272,12 +276,13 @@
       "desc": "T2.I The Origins of Separation",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "2002-10-31.mp3"
+        "audio": "2002-10-31.mp3",
+        "timing": "103102.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/103102/",

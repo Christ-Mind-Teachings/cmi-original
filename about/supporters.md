@@ -421,6 +421,7 @@ Gail Leopold | Timing | WOM | WOH | Lesson 03
 Patricia Lawrence | Timing | WOM | WOH | Lesson 06
  " | Timing | WOM | Early Years | The Holy Instant
  " | Timing | WOM | Early Years | Grace as Reality
+ " | Timing | WOM | Early Years | Ignorance is Bliss
  " | Timing | WOM | Early Years | Mastering Communication
  " | Timing | WOM | Questions | Mastering Communication Q1
  " | Timing | WOM | Early Years | Death and Earth Changes
@@ -431,6 +432,7 @@ Patricia Lawrence | Timing | WOM | WOH | Lesson 06
  " | Timing | WOM | Questions | Death and Earth Changes Q5
  " | Timing | WOM | Questions | Death and Earth Changes Q6
  " | Timing | WOM | Questions | Death and Earth Changes Q7
+ " | Timing | WOM | Questions | Death and Earth Changes Q8
  " | Timing | WOM | Questions | Death and Earth Changes Q9
  " | Timing | WOM | Questions | Death and Earth Changes Q10
  " | Timing | WOM | WOT | Lesson 02
@@ -458,6 +460,11 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | WOM | WOK | Lesson 07
 " | Timing | WOM | WOK | Lesson 08
 " | Timing | WOM | WOK | Lesson 09
+" | Timing | NWFFACIM  | Study Group | Oct 02, 2002
+" | Timing | NWFFACIM  | Study Group | Oct 10, 2002
+" | Timing | NWFFACIM  | Study Group | Oct 17, 2002
+" | Timing | NWFFACIM  | Study Group | Oct 24, 2002
+" | Timing | NWFFACIM  | Study Group | Oct 31, 2002
 " | Timing | NWFFACIM  | Study Group | Jan 02, 2003
 " | Timing | NWFFACIM  | Study Group | Jan 11, 2004
 " | Timing | NWFFACIM  | Study Group | Jan 18, 2004
@@ -465,9 +472,13 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Aug 07, 2005
 " | Timing | NWFFACIM | Study Group | Aug 14, 2005
+" | Timing | NWFFACIM | Study Group | Jan 22, 2006
 " | Timing | NWFFACIM | Study Group | Feb 26, 2006
 " | Timing | NWFFACIM | Study Group | Mar 11, 2006
+" | Timing | NWFFACIM | Study Group | Mar 19, 2006
 " | Timing | NWFFACIM | Study Group | Apr 15, 2006
+" | Timing | NWFFACIM | Study Group | Apr 29, 2006
+" | Timing | NWFFACIM | Study Group | May 06, 2006
 " | Timing | NWFFACIM | Study Group | Jun 18, 2006
 " | Timing | NWFFACIM | Study Group | Jun 24, 2006
 " | Timing | NWFFACIM | Study Group | Jul 01, 2006

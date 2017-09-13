@@ -79,12 +79,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "IGN.mp3"
+        "audio": "IGN.mp3",
+        "timing": "ign.js"
       },
       "title": "Ignorance is Bliss",
       "url": "/wom/early/ign/",

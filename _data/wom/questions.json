@@ -326,12 +326,13 @@
       "title": "Is God Self-Aware",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "DTHQ08.mp3"
+        "audio": "DTHQ08.mp3",
+        "timing": "dthq8.js"
       },
       "url": "/wom/questions/dthq8/",
       "idx": 18,

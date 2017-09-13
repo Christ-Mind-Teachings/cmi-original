@@ -666,6 +666,7 @@
     {
       "res": {
         "audio": "2004-10-10.mp3",
+        "timer": "rick",
         "timing": "101004.js"
       },
       "fid": "101004/",
@@ -688,6 +689,7 @@
       "desc": "T8.5 The Power of Joint Decision",
       "res": {
         "audio": "2004-10-17.mp3",
+        "timer": "rick",
         "timing": "101704.js"
       },
       "complete": {
@@ -705,13 +707,15 @@
     },
     {
       "res": {
-        "audio": "2004-10-24.mp3"
+        "audio": "2004-10-24.mp3",
+        "timer": "rick",
+        "timing": "102404.js"
       },
       "fid": "102404/",
       "desc": "T8.6 Communication and the Ego-Body Equation",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -46,7 +46,7 @@ upon when you decide what a thing is and what it is for, you have
 *projected* your value system upon these things. Something is already
 operating in the depth of your consciousness that stimulates an impulse
 which requires you to shape your experience of what you see and what you
-believe these things are for to fit what you most value in the moment.
+believe these things are for to fit what you must value in the moment.
 Always, then, what you *truly* experience is not the thing in itself,
 not what it may or may not be for within itself &ndash; you experience
 only the boundaries of your own mind. Nothing more. And nothing less.
@@ -102,12 +102,12 @@ Why is this important? Because as you go through your day you believe
 you are directly experiencing *what is*, and you are absolutely certain
 that what is is *outside of you* &ndash; the person, the chair, the
 rain, any perceived thing is outside of you. You have not yet truly
-learned to understand, to comprehend deep in the cellular structure
-itself. For the body is a knowing mechanism. It is the way in which you
-attract energy to yourself. It is that through which you project the
-energy of your mind. It&rsquo;s the meeting place of inner and outer,
-just as the skin is the meeting ground of what is within and what is
-without.
+learned to understand, to comprehend deep in the cellular structure of
+the body itself. For the body is a knowing mechanism. It is the way in
+which you attract energy to yourself. It is that through which you
+project the energy of your mind. It&rsquo;s the meeting place of inner
+and outer, just as the skin is the meeting ground of what is within and
+what is without.
 
 You believe that what you are perceiving and therefore knowing is
 something outside of you that is etched in stone: it is defined, it is
@@ -249,7 +249,7 @@ decided that you&rsquo;re going to be hearing me communicating through
 this, my beloved brother &ndash; rest assured, in the future you will
 have some surprises. You have already decided what is before you begin
 it.  You have already decided how to approach the experience: by turning
-on your thinking analytical mind so that you heard the words in the
+on your thinking analytical mind so that you hear the words in the
 sentences and therefore believe that you will come to understanding.
 
 But I say unto you, there are some among you who have learned how to
@@ -305,7 +305,7 @@ to be true. And from what you *need* you project impulses of what you
 every person and every drop of rain and every wisp of cloud and every
 chair around you. But again I say unto you, meekness truly begins with
 the complete recognition that *you don&rsquo;t know* what you truly
-want, unless you have come to a place where there is silent voice
+want, unless you have come to a place where there is a silent voice
 calling within that says to you,
 
 > I want God. I want Peace. I want to come Home.
@@ -442,7 +442,7 @@ you&rsquo;re for. You are in a state of *complete divine ignorance*. And
 you can prove it to yourself in this way. Look upon the person sitting
 across from you for at least two or three minutes and then tell them the
 thought that is occurring in their mind in this moment. You&rsquo;ll
-find that 99.9999999 percent of time you are totally wrong. Ask them to
+find that 99.9999999 percent of the time you are totally wrong. Ask them to
 do some gesture, to change the body language, and then tell them what
 they are trying to express.  You will discover again that they can fool
 you any time they want. Do you know what a thing is and what it&rsquo;s

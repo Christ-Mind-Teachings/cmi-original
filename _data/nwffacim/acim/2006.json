@@ -60,11 +60,12 @@
       "desc": "T11.3 The Investment in Reality",
       "res": {
         "audio": "2006-01-22.mp3",
+        "timing": "012206.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -181,11 +182,12 @@
       "desc": "T11.7 The Guide for Miracles",
       "res": {
         "audio": "2006-03-19.mp3",
+        "timing": "031906.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -242,11 +244,12 @@
       "desc": "T11.7 The Guide for Miracles",
       "res": {
         "audio": "2006-04-29.mp3",
+        "timing": "042906.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -262,11 +265,12 @@
       "desc": "T11.8 Reality and Redemption",
       "res": {
         "audio": "2006-05-06.mp3",
+        "timing": "050606.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
