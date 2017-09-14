@@ -81,11 +81,12 @@
       "desc": "T11.4 Seeking and Finding",
       "res": {
         "audio": "2006-01-29.mp3",
+        "timing": "012906.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -327,11 +328,12 @@
       "desc": "T11.9 Guiltlessness and Invulnerability",
       "res": {
         "audio": "2006-06-03.mp3",
+        "timing": "060306.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -472,11 +474,12 @@
       "desc": "T12.1 Crucifixion by Guilt",
       "res": {
         "audio": "2006-08-05.mp3",
+        "timing": "080506.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
