@@ -175,6 +175,7 @@
       "fid": "032011/",
       "desc": "Discussion",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-03-20.mp3"
       },
       "complete": {
@@ -194,6 +195,7 @@
       "fid": "032611/",
       "desc": "Discussion",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-03-26.mp3"
       },
       "complete": {
@@ -219,6 +221,7 @@
         "fb": 0
       },
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-04-03.mp3"
       },
       "intro": false,
@@ -232,6 +235,7 @@
       "fid": "040911/",
       "desc": "Discussion",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-04-09.mp3"
       },
       "complete": {
@@ -251,6 +255,7 @@
       "fid": "041611/",
       "desc": "T17.1 Fantasy and Distorted Perception",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-04-16.mp3"
       },
       "complete": {
@@ -270,6 +275,7 @@
       "fid": "042311/",
       "desc": "T17.2 The Forgiven World",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-04-23.mp3"
       },
       "complete": {
@@ -289,6 +295,7 @@
       "fid": "043011/",
       "desc": "T17.3 Shadows of the Past",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-04-30.mp3"
       },
       "complete": {
@@ -308,6 +315,7 @@
       "fid": "050711/",
       "desc": "T17.3 Shadows of the Past",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-05-07.mp3"
       },
       "complete": {
@@ -327,6 +335,7 @@
       "fid": "051411/",
       "desc": "T17.3 Shadows of the Past",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-05-14.mp3"
       },
       "complete": {
@@ -346,6 +355,7 @@
       "fid": "052211/",
       "desc": "T17.4 Perception and the Two Worlds",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-05-22.mp3"
       },
       "complete": {
@@ -365,6 +375,7 @@
       "fid": "060411/",
       "desc": "T17.4 Perception and the Two Worlds",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-06-04.mp3"
       },
       "complete": {
@@ -384,6 +395,7 @@
       "fid": "061211/",
       "desc": "T17.4 Perception and the Two Worlds",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-06-12.mp3"
       },
       "complete": {
@@ -403,6 +415,7 @@
       "fid": "061811/",
       "desc": "T17.4 Perception and the Two Worlds",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-06-18.mp3"
       },
       "complete": {
@@ -422,6 +435,7 @@
       "fid": "062611/",
       "desc": "T17.4 Perception and the Two Worlds",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-06-26.mp3"
       },
       "complete": {
@@ -441,6 +455,7 @@
       "fid": "070911/",
       "desc": "Workbook: Lesson 23",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-07-09.mp3"
       },
       "complete": {
@@ -460,6 +475,7 @@
       "fid": "071611/",
       "desc": "T17.5 The Healed Relationship",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-07-16.mp3"
       },
       "complete": {
@@ -479,6 +495,7 @@
       "fid": "073011/",
       "desc": "T17.5 The Healed Relationship",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-07-30.mp3"
       },
       "complete": {
@@ -498,6 +515,7 @@
       "fid": "080611/",
       "desc": "T17.5 The Healed Relationship",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-08-06.mp3"
       },
       "complete": {
@@ -517,6 +535,7 @@
       "fid": "082011/",
       "desc": "T17.6 Practical Forgiveness",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-08-20.mp3"
       },
       "complete": {
@@ -542,6 +561,7 @@
         "fb": 0
       },
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-08-27.mp3"
       },
       "intro": false,
@@ -555,6 +575,7 @@
       "fid": "090311/",
       "desc": "T17.6 Practical Forgiveness",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-09-03.mp3"
       },
       "complete": {
@@ -580,6 +601,7 @@
         "fb": 0
       },
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-09-17.mp3"
       },
       "intro": false,
@@ -593,6 +615,7 @@
       "fid": "092411/",
       "desc": "T17.7 The Need for Faith",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-09-24.mp3"
       },
       "complete": {
@@ -612,6 +635,7 @@
       "fid": "100111/",
       "desc": "T17.7 The Need for Faith",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-10-01.mp3"
       },
       "complete": {
@@ -631,6 +655,7 @@
       "fid": "101511/",
       "desc": "T17.7 The Need for Faith",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-10-15.mp3"
       },
       "complete": {
@@ -656,6 +681,7 @@
         "fb": 0
       },
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-10-23.mp3"
       },
       "intro": false,
@@ -669,6 +695,7 @@
       "fid": "110511/",
       "desc": "T18 The Dream and the Reality",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-11-05.mp3"
       },
       "complete": {
@@ -688,6 +715,7 @@
       "fid": "111311/",
       "desc": "T18 The Dream and the Reality",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-11-13.mp3"
       },
       "complete": {
@@ -707,6 +735,7 @@
       "fid": "112611/",
       "desc": "T18.1 Substitution as a Defense",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-11-26.mp3"
       },
       "complete": {
@@ -726,6 +755,7 @@
       "fid": "120411/",
       "desc": "T18.1 Substitution as a Defense",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-12-04.mp3"
       },
       "complete": {
@@ -745,6 +775,7 @@
       "fid": "121111/",
       "desc": "Discussion",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-12-11.mp3"
       },
       "complete": {
@@ -764,6 +795,7 @@
       "fid": "122011/",
       "desc": "T18.2 The Basis of the Dream",
       "res": {
+        "timer": "Yodi.debebe",
         "audio": "2011-12-20.mp3"
       },
       "complete": {
