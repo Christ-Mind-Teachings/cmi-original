@@ -470,6 +470,7 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | NWFFACIM  | Study Group | Oct 17, 2002
 " | Timing | NWFFACIM  | Study Group | Oct 24, 2002
 " | Timing | NWFFACIM  | Study Group | Oct 31, 2002
+" | Timing | NWFFACIM  | Study Group | Dec 12, 2002
 " | Timing | NWFFACIM  | Study Group | Jan 02, 2003
 " | Timing | NWFFACIM  | Study Group | Jan 11, 2004
 " | Timing | NWFFACIM  | Study Group | Jan 18, 2004
@@ -498,4 +499,6 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Nov 11, 2006
 " | Timing | NWFFACIM | Study Group | Nov 18, 2006
 " | Timing | NWFFACIM | Study Group | Sep 09, 2007
+" | Timing | NWFFACIM | Study Group | Sep 16, 2007
+" | Timing | NWFFACIM | Study Group | Mar 20, 2011
 

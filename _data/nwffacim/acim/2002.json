@@ -374,12 +374,13 @@
       "desc": "T2.V The Function of the Miracle Worker",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "2002-12-19.mp3"
+        "audio": "2002-12-19.mp3",
+        "timing": "121202.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/121902/",

@@ -176,11 +176,12 @@
       "desc": "Discussion",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "032011.js",
         "audio": "2011-03-20.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

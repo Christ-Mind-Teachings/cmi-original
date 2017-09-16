@@ -115,11 +115,12 @@
       "fid": "022005/",
       "desc": "T9.3 The Unhealed Healer",
       "res": {
-        "audio": "2005-02-20.mp3"
+        "audio": "2005-02-20.mp3",
+        "timing": "022005.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
