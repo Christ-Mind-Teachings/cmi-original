@@ -570,7 +570,8 @@
       "fid": "102608/",
       "desc": "T15.1 The Uses of Time",
       "res": {
-        "audio": "2008-10-26.mp3"
+        "audio": "2008-10-26.mp3",
+        "timer": "Julief8"
       },
       "complete": {
         "format": 1,
@@ -589,7 +590,8 @@
       "fid": "110208/",
       "desc": "T15.1 The Uses of Time",
       "res": {
-        "audio": "2008-11-02.mp3"
+        "audio": "2008-11-02.mp3",
+        "timer": "Julief8"
       },
       "complete": {
         "format": 1,
@@ -608,6 +610,7 @@
       "fid": "110908/",
       "desc": "T15.1 The Uses of Time",
       "res": {
+        "timer": "Julief8",
         "audio": "2008-11-09.mp3"
       },
       "complete": {
@@ -628,6 +631,7 @@
       "desc": "T15.2 Time and Eternity",
       "note": "audio link on celestialrealm is messed up but got it from rajcast",
       "res": {
+        "timer": "Julief8",
         "audio": "2008-11-23.mp3"
       },
       "complete": {
