@@ -38,12 +38,13 @@
     {
       "fid": "011605/",
       "res": {
-        "audio": "2005-01-16.mp3"
+        "audio": "2005-01-16.mp3",
+        "timing": "011605.js"
       },
       "desc": "T9 Introduction",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

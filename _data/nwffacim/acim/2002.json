@@ -336,12 +336,13 @@
       "desc": "T2.III The Alter of God",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "2002-12-05.mp3"
+        "audio": "2002-12-05.mp3",
+        "timing": "120502.js"
       },
       "intro": false,
       "url": "/nwffacim/2002/120502/",
