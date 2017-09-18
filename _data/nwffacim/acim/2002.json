@@ -356,12 +356,13 @@
       "desc": "T2.IV Healing as Release from Fear",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "audio": "2002-12-12.mp3",
+        "timing": "121202.js",
         "timer": "Julief8"
       },
       "intro": false,
@@ -376,13 +377,12 @@
       "desc": "T2.V The Function of the Miracle Worker",
       "complete": {
         "format": 1,
-        "audio": 2,
+        "audio": 1,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "2002-12-19.mp3",
-        "timing": "121202.js"
+        "audio": "2002-12-19.mp3"
       },
       "intro": false,
       "url": "/nwffacim/2002/121902/",

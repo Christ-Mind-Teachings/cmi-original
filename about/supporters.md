@@ -23,6 +23,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Nov 07, 2002
  "   | Timing | NWFFACIM | Study Group | Nov 21, 2002
  "   | Timing | NWFFACIM | Study Group | Dec 05, 2002
+ "   | Timing | NWFFACIM | Study Group | Dec 12, 2002
  "   | Timing | NWFFACIM | Study Group | Jan 02, 2003
  "   | Format | NWFFACIM | Study Group | Aug 03, 2003
  "   | Format | NWFFACIM | Study Group | Aug 10, 2003
