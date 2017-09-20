@@ -197,11 +197,12 @@
       "desc": "Discussion",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "032611.js",
         "audio": "2011-03-26.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -217,12 +218,13 @@
       "desc": "Discussion",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "040311.js",
         "audio": "2011-04-03.mp3"
       },
       "intro": false,
@@ -237,11 +239,12 @@
       "desc": "Discussion",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "040911.js",
         "audio": "2011-04-09.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -257,11 +260,12 @@
       "desc": "T17.1 Fantasy and Distorted Perception",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "041611.js",
         "audio": "2011-04-16.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
