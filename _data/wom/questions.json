@@ -894,12 +894,13 @@
       "title": "Glee Clubs and Attack",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q26.02.mp3"
+        "audio": "Q26.02.mp3",
+        "timing": "k02q2.js"
       },
       "url": "/wom/questions/k02q2/",
       "idx": 51,
@@ -911,12 +912,13 @@
       "title": "Love of Self and Others",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q27.01.mp3"
+        "audio": "Q27.01.mp3",
+        "timing": "k03q1.js"
       },
       "url": "/wom/questions/k03q1/",
       "idx": 52,
@@ -928,12 +930,13 @@
       "title": "Guidance of the Holy Spirit",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q27.02.mp3"
+        "audio": "Q27.02.mp3",
+        "timing": "k03q2.js"
       },
       "url": "/wom/questions/k03q2/",
       "idx": 53,
@@ -945,12 +948,13 @@
       "title": "Great Rays of Light",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q28.01.mp3"
+        "audio": "Q28.01.mp3",
+        "timing": "k04q1.js"
       },
       "url": "/wom/questions/k04q1/",
       "idx": 54,
@@ -1083,12 +1087,13 @@
       "title": "Vulnerability and Invulnerability",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q18.01.mp3"
+        "audio": "Q18.01.mp3",
+        "timing": "t06q1.js"
       },
       "url": "/wom/questions/t06q1/",
       "idx": 62,
@@ -1100,12 +1105,13 @@
       "title": "Message of the Cross",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q18.02.mp3"
+        "audio": "Q18.02.mp3",
+        "timing": "t06q2.js"
       },
       "url": "/wom/questions/t06q2/",
       "idx": 63,
@@ -1117,12 +1123,13 @@
       "title": "Enlightenment",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "Q19.01.mp3"
+        "audio": "Q19.01.mp3",
+        "timing": "t07q1.js"
       },
       "url": "/wom/questions/t07q1/",
       "idx": 64,
