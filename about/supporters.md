@@ -473,6 +473,7 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | NWFFACIM  | Study Group | Oct 24, 2002
 " | Timing | NWFFACIM  | Study Group | Oct 31, 2002
 " | Timing | NWFFACIM  | Study Group | Dec 12, 2002
+" | Timing | NWFFACIM  | Study Group | Dec 19, 2002
 " | Timing | NWFFACIM  | Study Group | Jan 02, 2003
 " | Timing | NWFFACIM  | Study Group | Jan 11, 2004
 " | Timing | NWFFACIM  | Study Group | Jan 18, 2004
@@ -508,7 +509,18 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Apr 09, 2011
 " | Timing | NWFFACIM | Study Group | Apr 16, 2011
 Heather Gray | Timing | WOM | Questions | WOK Lesson 2 Q2
-" | Timing | WOM | Questions | WOK Lesson 3 Q1
-" | Timing | WOM | Questions | WOK Lesson 3 Q2
-" | Timing | WOM | Questions | WOK Lesson 4 Q1
+" | Timing | WOM | Questions | WOT Lesson 01 Q2
+" | Timing | WOM | Questions | WOT Lesson 01 Q1
+" | Timing | WOM | Questions | WOT Lesson 09 Q1
+" | Timing | WOM | Questions | WOT Lesson 09 Q2
+" | Timing | WOM | Questions | WOT Lesson 09 Q3
+" | Timing | WOM | Questions | WOT Lesson 09 Q4
+" | Timing | WOM | Questions | WOT Lesson 11 Q1
+" | Timing | WOM | Questions | WOK Lesson 02 Q1
+" | Timing | WOM | Questions | WOK Lesson 03 Q1
+" | Timing | WOM | Questions | WOK Lesson 03 Q2
+" | Timing | WOM | Questions | WOK Lesson 04 Q1
+" | Timing | WOM | Questions | WOK Lesson 04 Q2
+" | Timing | WOM | Questions | WOK Lesson 06 Q1
+" | Timing | WOM | Questions | WOK Lesson 06 Q2
 
