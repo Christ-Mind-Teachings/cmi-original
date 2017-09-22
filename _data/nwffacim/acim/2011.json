@@ -281,11 +281,12 @@
       "desc": "T17.2 The Forgiven World",
       "res": {
         "timer": "Yodi.debebe",
-        "audio": "2011-04-23.mp3"
+        "audio": "2011-04-23.mp3",
+        "timing": "042311.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
