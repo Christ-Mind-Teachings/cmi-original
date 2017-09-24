@@ -37,13 +37,14 @@
     },
     {
       "res": {
-        "audio": "2003-01-09.mp3"
+        "audio": "2003-01-09.mp3",
+        "timing": "010903.js"
       },
       "fid": "010903/",
       "desc": "T2.VI Fear and Conflict",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

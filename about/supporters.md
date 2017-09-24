@@ -475,6 +475,7 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | NWFFACIM  | Study Group | Dec 12, 2002
 " | Timing | NWFFACIM  | Study Group | Dec 19, 2002
 " | Timing | NWFFACIM  | Study Group | Jan 02, 2003
+" | Timing | NWFFACIM  | Study Group | Jan 09, 2003
 " | Timing | NWFFACIM  | Study Group | Jan 11, 2004
 " | Timing | NWFFACIM  | Study Group | Jan 18, 2004
 " | Timing | NWFFACIM  | Study Group | Jan 25, 2004
