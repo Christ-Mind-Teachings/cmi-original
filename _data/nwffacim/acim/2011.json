@@ -343,11 +343,12 @@
       "desc": "T17.3 Shadows of the Past",
       "res": {
         "timer": "Yodi.debebe",
-        "audio": "2011-05-14.mp3"
+        "audio": "2011-05-14.mp3",
+        "timing": "051411.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
