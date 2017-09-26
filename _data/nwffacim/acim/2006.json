@@ -40,11 +40,12 @@
       "desc": "T11.3 The Investment in Reality",
       "res": {
         "audio": "2006-01-15.mp3",
+        "timing": "011506.js",
         "timer": "Yodi.debebe"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

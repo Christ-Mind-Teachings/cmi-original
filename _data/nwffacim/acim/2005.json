@@ -179,11 +179,12 @@
       "fid": "032705/",
       "desc": "T9.5 Salvation and God's Will",
       "res": {
-        "audio": "2005-03-27.mp3"
+        "audio": "2005-03-27.mp3",
+        "timing": "032705.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
