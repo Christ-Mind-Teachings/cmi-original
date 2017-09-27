@@ -364,11 +364,12 @@
       "desc": "T17.4 Perception and the Two Worlds",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "052211.js",
         "audio": "2011-05-22.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -384,11 +385,12 @@
       "desc": "T17.4 Perception and the Two Worlds",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "060411.js",
         "audio": "2011-06-04.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
