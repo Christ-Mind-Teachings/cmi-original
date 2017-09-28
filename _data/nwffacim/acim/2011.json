@@ -466,11 +466,12 @@
       "desc": "Workbook: Lesson 23",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "070911.js",
         "audio": "2011-07-09.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

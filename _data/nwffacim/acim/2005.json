@@ -199,11 +199,12 @@
       "fid": "040305/",
       "desc": "T9.6 Grandeur versus Grandiosity",
       "res": {
-        "audio": "2005-04-03.mp3"
+        "audio": "2005-04-03.mp3",
+        "timing": "040305.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
