@@ -43,7 +43,7 @@ here and include:
     inception to recognition of self as the servant - one who walks this
     world awake.
 
-- The core teaching - a compliation of a three year period of monthly messages.
+- The core teaching - a compilation of a three year period of monthly messages.
     - [ Year One: *The Way of the Heart* ](/wom/intro/woh/)
     - [ Year Two: *The Way of Transformation* ](/wom/intro/wot/)
     - [ Year Three: *The Way of Knowning* ](/wom/intro/wok/)

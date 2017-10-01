@@ -279,11 +279,12 @@
       "fid": "050105/",
       "desc": "T9.8 The Decision to Forget",
       "res": {
-        "audio": "2005-05-01.mp3"
+        "audio": "2005-05-01.mp3",
+        "timing": "050105.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
