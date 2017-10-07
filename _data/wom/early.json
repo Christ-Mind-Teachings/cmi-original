@@ -25,12 +25,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "BLE.mp3"
+        "audio": "BLE.mp3",
+        "timing": "ble.js"
       },
       "title": "The Blessing of Forgiveness",
       "url": "/wom/early/ble/",
@@ -61,12 +62,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "HOE.mp3"
+        "audio": "HOE.mp3",
+        "timing": "hoe.js"
       },
       "title": "Heaven on Earth",
       "url": "/wom/early/hoe/",

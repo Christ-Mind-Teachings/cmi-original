@@ -512,11 +512,12 @@
       "desc": "T17.5 The Healed Relationship",
       "res": {
         "timer": "Yodi.debebe",
-        "audio": "2011-07-30.mp3"
+        "audio": "2011-07-30.mp3",
+        "timing": "073011.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
