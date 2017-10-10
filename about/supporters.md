@@ -220,6 +220,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Jun 07, 2009
  "   | Format | NWFFACIM | Study Group | Jun 13, 2009
  "   | Format | NWFFACIM | Study Group | Jun 20, 2009
+ "   | Timing | NWFFACIM | Study Group | Jul 11, 2009
  "   | Format | NWFFACIM | Study Group | Jul 25, 2009
  "   | Format | NWFFACIM | Study Group | Aug 01, 2009
  "   | Format | NWFFACIM | Study Group | Aug 08, 2009
@@ -521,7 +522,8 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Jun 26, 2011
 " | Timing | NWFFACIM | Study Group | Jul 09, 2011
 " | Timing | NWFFACIM | Study Group | Jul 16, 2011
-" | Timing | NWFFACIM | Study Group | Jul 30, 2011
+" | Timing | NWFFACIM | Study Group | Jul 30, 2011 (2)
+" | Timing | NWFFACIM | Study Group | Aug 06, 2011
 Heather Gray | Timing | WOM | Questions | WOK Lesson 2 Q2
 " | Timing | WOM | Questions | WOT Lesson 01 Q2
 " | Timing | WOM | Questions | WOT Lesson 01 Q1
@@ -538,6 +540,7 @@ Heather Gray | Timing | WOM | Questions | WOK Lesson 2 Q2
 " | Timing | WOM | Questions | WOK Lesson 06 Q1
 " | Timing | WOM | Questions | WOK Lesson 06 Q2
 " | Timing | WOM | Early | Blessing of Forgiveness
+" | Timing | WOM | Early | Choose to See
 " | Timing | WOM | Early | Heaven on Earth
 
 

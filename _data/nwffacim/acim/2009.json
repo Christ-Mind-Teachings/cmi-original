@@ -345,11 +345,12 @@
       "fid": "071109/",
       "desc": "Discussion",
       "res": {
-        "audio": "2009-07-11.mp3"
+        "audio": "2009-07-11.mp3",
+        "timing": "071109.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

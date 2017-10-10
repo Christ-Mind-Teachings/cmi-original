@@ -44,12 +44,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "C2S.mp3"
+        "audio": "C2S.mp3",
+        "timing": "c2s.js"
       },
       "title": "Choose to See",
       "url": "/wom/early/c2s/",
