@@ -200,6 +200,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Sep 21, 2008
  "   | Format | NWFFACIM | Study Group | Oct 05, 2008
  "   | Format | NWFFACIM | Study Group | Oct 19, 2008
+ "   | Timing | NWFFACIM | Study Group | Oct 26, 2008
  "   | Format | NWFFACIM | Study Group | Oct 26, 2008
  "   | Format | NWFFACIM | Study Group | Nov 02, 2008
  "   | Format | NWFFACIM | Study Group | Nov 09, 2008
@@ -221,6 +222,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Jun 13, 2009
  "   | Format | NWFFACIM | Study Group | Jun 20, 2009
  "   | Timing | NWFFACIM | Study Group | Jul 11, 2009
+ "   | Timing | NWFFACIM | Study Group | Jul 18, 2009
  "   | Format | NWFFACIM | Study Group | Jul 25, 2009
  "   | Format | NWFFACIM | Study Group | Aug 01, 2009
  "   | Format | NWFFACIM | Study Group | Aug 08, 2009
@@ -524,6 +526,9 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Jul 16, 2011
 " | Timing | NWFFACIM | Study Group | Jul 30, 2011 (2)
 " | Timing | NWFFACIM | Study Group | Aug 06, 2011
+" | Timing | NWFFACIM | Study Group | Aug 20, 2011
+" | Timing | NWFFACIM | Study Group | Aug 27, 2011
+" | Timing | NWFFACIM | Study Group | Sep 03, 2011
 Heather Gray | Timing | WOM | Questions | WOK Lesson 2 Q2
 " | Timing | WOM | Questions | WOT Lesson 01 Q2
 " | Timing | WOM | Questions | WOT Lesson 01 Q1
