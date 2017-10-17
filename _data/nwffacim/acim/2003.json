@@ -92,12 +92,13 @@
     },
     {
       "res": {
-        "audio": "2003-02-06.mp3"
+        "audio": "2003-02-06.mp3",
+        "timing": "020603.js"
       },
       "fid": "020603/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

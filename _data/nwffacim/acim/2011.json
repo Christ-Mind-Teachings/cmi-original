@@ -617,12 +617,13 @@
       "desc": "T17.7 The Need for Faith",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "091711.js",
         "audio": "2011-09-17.mp3"
       },
       "intro": false,
@@ -637,11 +638,12 @@
       "desc": "T17.7 The Need for Faith",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "092411.js",
         "audio": "2011-09-24.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
