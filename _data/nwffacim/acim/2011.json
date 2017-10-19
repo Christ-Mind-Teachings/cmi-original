@@ -659,11 +659,12 @@
       "desc": "T17.7 The Need for Faith",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "100111.js",
         "audio": "2011-10-01.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -679,11 +680,12 @@
       "desc": "T17.7 The Need for Faith",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "101511.js",
         "audio": "2011-10-15.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -699,12 +701,13 @@
       "desc": "T17.8 The Conditions of Forgiveness",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "102311.js",
         "audio": "2011-10-23.mp3"
       },
       "intro": false,

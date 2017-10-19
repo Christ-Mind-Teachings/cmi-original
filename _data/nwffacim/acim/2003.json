@@ -112,13 +112,14 @@
     },
     {
       "res": {
-        "audio": "2003-02-13.mp3"
+        "audio": "2003-02-13.mp3",
+        "timing": "021303.js"
       },
       "fid": "021303/",
       "desc": "Discussion",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
