@@ -592,11 +592,12 @@
       "desc": "T15.1 The Uses of Time",
       "res": {
         "audio": "2008-11-02.mp3",
+        "timing": "110208.js",
         "timer": "Julief8"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -612,11 +613,12 @@
       "desc": "T15.1 The Uses of Time",
       "res": {
         "timer": "Julief8",
+        "timing": "110908.js",
         "audio": "2008-11-09.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -633,11 +635,12 @@
       "note": "audio link on celestialrealm is messed up but got it from rajcast",
       "res": {
         "timer": "Julief8",
+        "timing": "112308.js",
         "audio": "2008-11-23.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

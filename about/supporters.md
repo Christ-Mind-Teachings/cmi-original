@@ -202,8 +202,11 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Oct 19, 2008
  "   | Timing | NWFFACIM | Study Group | Oct 26, 2008
  "   | Format | NWFFACIM | Study Group | Oct 26, 2008
+ "   | Timing | NWFFACIM | Study Group | Nov 02, 2008
  "   | Format | NWFFACIM | Study Group | Nov 02, 2008
+ "   | Timing | NWFFACIM | Study Group | Nov 09, 2008
  "   | Format | NWFFACIM | Study Group | Nov 09, 2008
+ "   | Timing | NWFFACIM | Study Group | Nov 23, 2008
  "   | Format | NWFFACIM | Study Group | Nov 23, 2008
  "   | Format | NWFFACIM | Study Group | Jan 03, 2009
  "   | Format | NWFFACIM | Study Group | Jan 10, 2009
@@ -479,8 +482,10 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | NWFFACIM  | Study Group | Dec 19, 2002
 " | Timing | NWFFACIM  | Study Group | Jan 02, 2003
 " | Timing | NWFFACIM  | Study Group | Jan 09, 2003
+" | Timing | NWFFACIM  | Study Group | Jan 16, 2003
 " | Timing | NWFFACIM  | Study Group | Feb 06, 2003
 " | Timing | NWFFACIM  | Study Group | Feb 13, 2003
+" | Timing | NWFFACIM  | Study Group | Feb 20, 2003
 " | Timing | NWFFACIM  | Study Group | Jan 11, 2004
 " | Timing | NWFFACIM  | Study Group | Jan 18, 2004
 " | Timing | NWFFACIM  | Study Group | Jan 25, 2004
@@ -536,6 +541,10 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Oct 01, 2011
 " | Timing | NWFFACIM | Study Group | Oct 15, 2011
 " | Timing | NWFFACIM | Study Group | Oct 23, 2011
+" | Timing | NWFFACIM | Study Group | Nov 05, 2011
+" | Timing | NWFFACIM | Study Group | Nov 13, 2011
+" | Timing | NWFFACIM | Study Group | Nov 26, 2011
+" | Timing | NWFFACIM | Study Group | Dec 11, 2011
 Heather Gray | Timing | WOM | Questions | WOK Lesson 2 Q2
 " | Timing | WOM | Questions | WOT Lesson 01 Q2
 " | Timing | WOM | Questions | WOT Lesson 01 Q1

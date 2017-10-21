@@ -57,13 +57,14 @@
     },
     {
       "res": {
-        "audio": "2003-01-16.mp3"
+        "audio": "2003-01-16.mp3",
+        "timing": "011603.js"
       },
       "fid": "011603/",
       "desc": "T2.VI Fear and Conflict",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -132,12 +133,13 @@
     },
     {
       "res": {
-        "audio": "2003-02-20.mp3"
+        "audio": "2003-02-20.mp3",
+        "timing": "022003.js"
       },
       "fid": "022003/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -339,11 +339,12 @@
       "fid": "060505/",
       "desc": "T9.9 Magic vs Miracles",
       "res": {
-        "audio": "2005-06-05.mp3"
+        "audio": "2005-06-05.mp3",
+        "timing": "060505.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
