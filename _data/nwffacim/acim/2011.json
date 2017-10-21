@@ -785,7 +785,7 @@
         "audio": "2011-12-04.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 1,
         "fb": 0
