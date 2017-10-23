@@ -785,11 +785,12 @@
       "desc": "T18.1 Substitution as a Defense",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "120411.js",
         "audio": "2011-12-04.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -826,11 +827,12 @@
       "desc": "T18.2 The Basis of the Dream",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "122011.js",
         "audio": "2011-12-20.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
