@@ -632,11 +632,12 @@
       "fid": "092604/",
       "desc": "T8.4 The Light of the World",
       "res": {
-        "audio": "2004-09-26.mp3"
+        "audio": "2004-09-26.mp3",
+        "timing": "092604.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -649,13 +650,14 @@
     },
     {
       "res": {
-        "audio": "2004-10-03.mp3"
+        "audio": "2004-10-03.mp3",
+        "timing": "100304.js"
       },
       "fid": "100304/",
       "desc": "T8.4 The Light of the World",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

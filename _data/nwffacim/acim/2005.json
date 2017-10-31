@@ -379,11 +379,12 @@
       "fid": "061905/",
       "desc": "T9.10 The Denial of God",
       "res": {
-        "audio": "2005-06-19.mp3"
+        "audio": "2005-06-19.mp3",
+        "timing": "061905.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

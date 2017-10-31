@@ -621,11 +621,12 @@
       "desc": "T16.6 The Bridge to the Real World",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "111310.js",
         "audio": "2010-11-13.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
