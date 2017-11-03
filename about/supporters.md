@@ -210,7 +210,9 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Nov 09, 2008
  "   | Timing | NWFFACIM | Study Group | Nov 23, 2008
  "   | Format | NWFFACIM | Study Group | Nov 23, 2008
+ "   | Timing | NWFFACIM | Study Group | Jan 03, 2009
  "   | Format | NWFFACIM | Study Group | Jan 03, 2009
+ "   | Timing | NWFFACIM | Study Group | Jan 10, 2009
  "   | Format | NWFFACIM | Study Group | Jan 10, 2009
  "   | Timing | NWFFACIM | Study Group | Jan 17, 2009
  "   | Format | NWFFACIM | Study Group | Jan 24, 2009
