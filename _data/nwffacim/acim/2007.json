@@ -39,7 +39,8 @@
       "fid": "082507/",
       "desc": "T13 Introduction",
       "res": {
-        "audio": "2007-08-25.mp3"
+        "audio": "2007-08-25.mp3",
+        "timer": "Julief8"
       },
       "complete": {
         "format": 1,
@@ -98,7 +99,8 @@
       "fid": "092207/",
       "desc": "T13.1 The Role of Healing",
       "res": {
-        "audio": "2007-09-22.mp3"
+        "audio": "2007-09-22.mp3",
+        "timer": "Julief8"
       },
       "complete": {
         "format": 1,
@@ -117,7 +119,8 @@
       "fid": "100607/",
       "desc": "T13.2 The Shadow of Guilt",
       "res": {
-        "audio": "2007-10-06.mp3"
+        "audio": "2007-10-06.mp3",
+        "timer": "Julief8"
       },
       "complete": {
         "format": 1,
@@ -136,6 +139,7 @@
       "fid": "101407/",
       "desc": "T13.2 The Shadow of Guilt",
       "res": {
+        "timer": "Julief8",
         "audio": "2007-10-14.mp3"
       },
       "complete": {
@@ -155,6 +159,7 @@
       "fid": "102707/",
       "desc": "T13.3 Release and Restoration",
       "res": {
+        "timer": "Julief8",
         "audio": "2007-10-27.mp3"
       },
       "complete": {
@@ -174,6 +179,7 @@
       "fid": "110307/",
       "desc": "T13.3 Release and Restoration",
       "res": {
+        "timer": "Julief8",
         "audio": "2007-11-03.mp3"
       },
       "complete": {
@@ -193,6 +199,7 @@
       "fid": "111007/",
       "desc": "T13.3 Release and Restoration",
       "res": {
+        "timer": "Julief8",
         "audio": "2007-11-10.mp3"
       },
       "complete": {
@@ -212,6 +219,7 @@
       "fid": "111807/",
       "desc": "T13.3 Release and Restoration",
       "res": {
+        "timer": "Julief8",
         "audio": "2007-11-18.mp3"
       },
       "complete": {
@@ -231,6 +239,7 @@
       "fid": "120807/",
       "desc": "T13.3 Release and Restoration",
       "res": {
+        "timer": "Julief8",
         "audio": "2007-12-08.mp3"
       },
       "complete": {
@@ -250,6 +259,7 @@
       "fid": "121607/",
       "desc": "T13.3 Release and Restoration",
       "res": {
+        "timer": "Julief8",
         "audio": "2007-12-16.mp3"
       },
       "complete": {
