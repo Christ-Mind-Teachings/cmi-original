@@ -41,3 +41,4 @@ else has revealed the meaning of Love.
 To the entire staff of Kairos, who have undertaken the publishing of this book,
 and especially Dr. Kenneth and Sally Eyre, I extend my thanks. It has been a
 major undertaking.
+
