@@ -439,7 +439,8 @@
       "fid": "071705/",
       "desc": "T10.1 Projection versus Extension",
       "res": {
-        "audio": "2005-07-17.mp3"
+        "audio": "2005-07-17.mp3",
+        "timing": "071705.js"
       },
       "complete": {
         "format": 1,
