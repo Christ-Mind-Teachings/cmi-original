@@ -62,11 +62,12 @@
       "desc": "T16.2 The Magnitude of Holiness",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "013010.js",
         "audio": "2010-01-30.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -643,11 +644,12 @@
       "desc": "T16.6 The Bridge to the Real World",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "112010.js",
         "audio": "2010-11-20.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

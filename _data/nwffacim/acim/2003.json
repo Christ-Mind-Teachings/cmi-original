@@ -153,12 +153,13 @@
     },
     {
       "res": {
-        "audio": "2003-02-27.mp3"
+        "audio": "2003-02-27.mp3",
+        "timing": "022703.js"
       },
       "fid": "022703/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

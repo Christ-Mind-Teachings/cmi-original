@@ -444,7 +444,7 @@
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -459,11 +459,12 @@
       "fid": "072405/",
       "desc": "T10.1 Projection versus Extension",
       "res": {
-        "audio": "2005-07-24.mp3"
+        "audio": "2005-07-24.mp3",
+        "timing": "072405.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
