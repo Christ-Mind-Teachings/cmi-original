@@ -519,11 +519,12 @@
       "fid": "082105/",
       "desc": "T10.3 From Darkness to Light",
       "res": {
-        "audio": "2005-08-21.mp3"
+        "audio": "2005-08-21.mp3",
+        "timing": "082105.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

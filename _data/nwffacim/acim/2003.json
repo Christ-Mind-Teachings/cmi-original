@@ -173,13 +173,14 @@
     },
     {
       "res": {
-        "audio": "2003-03-06.mp3"
+        "audio": "2003-03-06.mp3",
+        "timing": "030603.js"
       },
       "fid": "030603/",
       "desc": "T2.VIII The Meaning of the Last Judgment",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

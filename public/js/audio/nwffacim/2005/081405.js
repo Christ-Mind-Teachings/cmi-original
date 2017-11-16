@@ -218,6 +218,9 @@ var cmiAudioTimingData = {
         "id": "p71",
         "seconds": 2726.369692668
     }, {
+        "id": "p72",
+        "seconds": 2767.369692668
+    }, {
         "id": "p73",
         "seconds": 2830.900636593
     }, {
@@ -403,8 +406,5 @@ var cmiAudioTimingData = {
     }, {
         "id": "p134",
         "seconds": 4153.665282809
-    }, {
-        "id": "p135",
-        "seconds": 4158.061219972
     }]
 };

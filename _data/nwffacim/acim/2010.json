@@ -83,11 +83,12 @@
       "desc": "T16.2 The Magnitude of Holiness",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "020610.js",
         "audio": "2010-02-06.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
