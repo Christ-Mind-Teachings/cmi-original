@@ -40,11 +40,12 @@
       "desc": "T13 Introduction",
       "res": {
         "audio": "2007-08-25.mp3",
+        "timing": "082507.js",
         "timer": "Julief8"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

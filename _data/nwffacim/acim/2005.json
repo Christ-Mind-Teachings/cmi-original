@@ -539,7 +539,8 @@
       "fid": "082805/",
       "desc": "T10.4 The Inheritance of God's Son",
       "res": {
-        "audio": "2005-08-28.mp3"
+        "audio": "2005-08-28.mp3",
+        "timing": "082805.js"
       },
       "complete": {
         "format": 1,
