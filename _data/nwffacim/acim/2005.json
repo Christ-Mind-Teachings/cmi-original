@@ -559,11 +559,12 @@
       "fid": "090405/",
       "desc": "T10.5 The 'Dynamics' of the Ego",
       "res": {
-        "audio": "2005-09-04.mp3"
+        "audio": "2005-09-04.mp3",
+        "timing": "090405.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -578,11 +579,12 @@
       "fid": "091105/",
       "desc": "T10.5 The 'Dynamics' of the Ego",
       "res": {
-        "audio": "2005-09-11.mp3"
+        "audio": "2005-09-11.mp3",
+        "timing": "091105.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

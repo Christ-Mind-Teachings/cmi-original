@@ -104,11 +104,12 @@
       "desc": "T16.2 The Magnitude of Holiness",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "021310.js",
         "audio": "2010-02-13.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -124,11 +125,12 @@
       "desc": "T16.3 The Reward of Teaching",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "030610.js",
         "audio": "2010-03-06.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
