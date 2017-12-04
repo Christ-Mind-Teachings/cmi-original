@@ -122,11 +122,12 @@
       "desc": "T13.2 The Shadow of Guilt",
       "res": {
         "audio": "2007-10-06.mp3",
+        "timing": "100607.js",
         "timer": "Julief8"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -142,11 +143,12 @@
       "desc": "T13.2 The Shadow of Guilt",
       "res": {
         "timer": "Julief8",
+        "timing": "101407.js",
         "audio": "2007-10-14.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -162,11 +164,12 @@
       "desc": "T13.3 Release and Restoration",
       "res": {
         "timer": "Julief8",
+        "timing": "102707.js",
         "audio": "2007-10-27.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -182,11 +185,12 @@
       "desc": "T13.3 Release and Restoration",
       "res": {
         "timer": "Julief8",
+        "timing": "110307.js",
         "audio": "2007-11-03.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -202,11 +206,12 @@
       "desc": "T13.3 Release and Restoration",
       "res": {
         "timer": "Julief8",
+        "timing": "111007.js",
         "audio": "2007-11-10.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -222,11 +227,12 @@
       "desc": "T13.3 Release and Restoration",
       "res": {
         "timer": "Julief8",
+        "timing": "111807.js",
         "audio": "2007-11-18.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -242,11 +248,12 @@
       "desc": "T13.3 Release and Restoration",
       "res": {
         "timer": "Julief8",
+        "timing": "120807.js",
         "audio": "2007-12-08.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
