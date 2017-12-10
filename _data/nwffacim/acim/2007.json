@@ -269,11 +269,12 @@
       "desc": "T13.3 Release and Restoration",
       "res": {
         "timer": "Julief8",
+        "timing": "121607.js",
         "audio": "2007-12-16.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
