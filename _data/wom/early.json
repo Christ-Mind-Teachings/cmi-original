@@ -259,8 +259,26 @@
       "title": "Joy II",
       "url": "/wom/early/joy2/",
       "idx": 14,
-      "next": "/wom/early/moa/",
+      "next": "/wom/early/lht/",
       "prev": "/wom/early/joy1/"
+    },
+    {
+      "fid": "lht/",
+      "title": "Love Heals All Things",
+      "res": {
+        "audio": "LHT.mp3"
+      },
+      "complete": {
+        "copyright": 0,
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "url": "/wom/early/lht/",
+      "idx": 15,
+      "next": "/wom/early/moa/",
+      "prev": "/wom/early/joy2/"
     },
     {
       "fid": "moa/",
@@ -278,9 +296,9 @@
         "fb": 0
       },
       "url": "/wom/early/moa/",
-      "idx": 15,
+      "idx": 16,
       "next": "/wom/early/mot/",
-      "prev": "/wom/early/joy2/"
+      "prev": "/wom/early/lht/"
     },
     {
       "fid": "mot/",
@@ -292,7 +310,7 @@
       },
       "title": "Become the Master of Time",
       "url": "/wom/early/mot/",
-      "idx": 16,
+      "idx": 17,
       "next": "/wom/early/wak/",
       "prev": "/wom/early/moa/"
     },
@@ -306,7 +324,7 @@
       },
       "title": "Awakening",
       "url": "/wom/early/wak/",
-      "idx": 17,
+      "idx": 18,
       "next": "/wom/early/wlk/",
       "prev": "/wom/early/mot/"
     },
@@ -326,7 +344,7 @@
       },
       "title": "Walk with Me",
       "url": "/wom/early/wlk/",
-      "idx": 18,
+      "idx": 19,
       "next": "/wom/intro/early/",
       "prev": "/wom/early/wak/"
     }
