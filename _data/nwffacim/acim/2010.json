@@ -230,11 +230,12 @@
       "desc": "T16.4 Illusion and Reality of Love",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "050110.js",
         "audio": "2010-05-01.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -250,11 +251,12 @@
       "desc": "T16.4 Illusion and Reality of Love",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "051510.js",
         "audio": "2010-05-15.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

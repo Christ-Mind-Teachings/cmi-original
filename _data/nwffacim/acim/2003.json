@@ -364,13 +364,14 @@
     },
     {
       "res": {
-        "audio": "2003-05-25.mp3"
+        "audio": "2003-05-25.mp3",
+        "timing": "052503.js"
       },
       "fid": "052503/",
       "desc": "T3.IV Error and the Ego",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -104,11 +104,12 @@
       "desc": "T13.6 The Happy Learner",
       "res": {
         "timer": "Julief8",
+        "timing": "022408.js",
         "audio": "2008-02-24.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

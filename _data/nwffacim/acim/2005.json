@@ -619,11 +619,12 @@
       "fid": "100205/",
       "desc": "T10.5 The 'Dynamics' of the Ego",
       "res": {
-        "audio": "2005-10-02.mp3"
+        "audio": "2005-10-02.mp3",
+        "timing": "100205.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
