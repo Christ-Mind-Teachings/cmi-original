@@ -102,6 +102,7 @@ function addBookmarkToggleListener() {
       if ($(this).hasClass("bkmark-hide")) {
         $(this).removeClass("bkmark-hide");
 
+        //show paragraph number
         let id = parent.attr("id");
         parent.prepend(`<span class='pnum'>(${id})&nbsp;</span>`);
 
@@ -111,6 +112,7 @@ function addBookmarkToggleListener() {
         if ($(this).hasClass("fa-bookmark-o")) {
           $(this).addClass("bkmark-hide");
 
+          //hide paragraph number
           if (parent.children("span.pnum").length > 0) {
             parent.children("span.pnum").remove();
           }
