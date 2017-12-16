@@ -139,11 +139,12 @@
       "fid": "030908/",
       "desc": "T13.7 The Decision for Guiltlessness",
       "res": {
+        "timing": "030908.js",
         "audio": "2008-03-09.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
