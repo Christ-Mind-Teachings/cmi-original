@@ -23205,7 +23205,7 @@ function addBookmarkToggleListener() {
         $(this).removeClass("bkmark-hide");
 
         //show paragraph number
-        let id = parent.attr("id");
+        var id = parent.attr("id");
         parent.prepend(`<span class='pnum'>(${id})&nbsp;</span>`);
 
       }
