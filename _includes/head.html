@@ -44,4 +44,12 @@
   <!-- google -->
   {% include script/analytics.html %}
 
+  {% if page.hypothesis %}
+  <!-- hypothesis -->
+  <script type="application/json" class="js-hypothesis-config">
+    {"showHighlights": false}
+  </script>
+  <script src="https://hypothes.is/embed.js" async></script>
+  {% endif %}
+
 </head>

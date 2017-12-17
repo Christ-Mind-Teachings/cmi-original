@@ -203,6 +203,7 @@ defaults:
       book: ACIM Study Group
       burl: /nwffacim/intro/acim/
       nav: nav/np-data.html
+      hypothesis: load
 
 # 2006
   - scope:
