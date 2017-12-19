@@ -18,6 +18,7 @@
     {
       "fid": "010210/",
       "desc": "T16.1 True Empathy",
+      "summary": "Mother May I?",
       "res": {
         "audio": "2010-01-02.mp3",
         "timing": "010210.js",
@@ -60,6 +61,7 @@
     {
       "fid": "013010/",
       "desc": "T16.2 The Magnitude of Holiness",
+      "summary": "You Will Feel Your Way",
       "res": {
         "timer": "Yodi.debebe",
         "timing": "013010.js",
@@ -81,6 +83,7 @@
     {
       "fid": "020610/",
       "desc": "T16.2 The Magnitude of Holiness",
+      "summary": "You Were the Cause of a Miracle",
       "res": {
         "timer": "Yodi.debebe",
         "timing": "020610.js",
@@ -102,6 +105,7 @@
     {
       "fid": "021310/",
       "desc": "T16.2 The Magnitude of Holiness",
+      "summary": "This is a Year of Joy",
       "res": {
         "timer": "Yodi.debebe",
         "timing": "021310.js",
@@ -186,6 +190,7 @@
     {
       "fid": "040310/",
       "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "My Easter Message",
       "res": {
         "timer": "Yodi.debebe",
         "timing": "040310.js",
@@ -207,6 +212,7 @@
     {
       "fid": "041010/",
       "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "You're Not the Visibility and Tangibility",
       "res": {
         "timer": "Yodi.debebe",
         "timing": "041010.js",
@@ -228,6 +234,7 @@
     {
       "fid": "050110/",
       "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "When One is Thinking",
       "res": {
         "timer": "Yodi.debebe",
         "timing": "050110.js",
@@ -249,6 +256,7 @@
     {
       "fid": "051510/",
       "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "The Concept of Intimacy",
       "res": {
         "timer": "Yodi.debebe",
         "timing": "051510.js",
@@ -270,13 +278,15 @@
     {
       "fid": "052910/",
       "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "An Experience of Intimacy",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "052910.js",
         "audio": "2010-05-29.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -292,11 +302,12 @@
       "desc": "Discussion",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "060510.js",
         "audio": "2010-06-05.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -330,6 +341,7 @@
     {
       "fid": "061910/",
       "desc": "T16.5 Specialness and Guilt",
+      "summary": "To Everyone Heaven is Completion",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-06-19.mp3"
@@ -350,6 +362,7 @@
     {
       "fid": "070310/",
       "desc": "Discussion",
+      "summary": "A Night for Gratitude",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-07-03.mp3"
@@ -370,6 +383,7 @@
     {
       "fid": "071010/",
       "desc": "T31.4 Self-Concept versus Self",
+      "summary": "Letting God's Love In",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-07-10.mp3"
@@ -390,6 +404,7 @@
     {
       "fid": "071710/",
       "desc": "Discussion",
+      "summary": "God's Laws Prevail",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-07-17.mp3"
@@ -410,6 +425,7 @@
     {
       "fid": "072410/",
       "desc": "Discussion",
+      "summary": "A Night to be Glad",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-07-24.mp3"
@@ -430,6 +446,7 @@
     {
       "fid": "080710/",
       "desc": "Discussion",
+      "summary": "The Movement Continues",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-08-07.mp3"
@@ -450,6 +467,7 @@
     {
       "fid": "082810/",
       "desc": "Discussion",
+      "summary": "The Movement Continues",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-08-28.mp3"
@@ -470,6 +488,7 @@
     {
       "fid": "090410/",
       "desc": "Discussion",
+      "summary": "The Two Step Solution to Everything",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-09-04.mp3"
@@ -490,6 +509,7 @@
     {
       "fid": "091110/",
       "desc": "Discussion",
+      "summary": "The Meaning of Religion is Love",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-09-11.mp3"
@@ -510,6 +530,7 @@
     {
       "fid": "092510/",
       "desc": "Discussion",
+      "summary": "Paul Shares",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-09-25.mp3"
@@ -530,6 +551,7 @@
     {
       "fid": "100210/",
       "desc": "T16.5 Specialness and Guilt",
+      "summary": "The Only Way to Lose Joy",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-10-02.mp3"
@@ -550,6 +572,7 @@
     {
       "fid": "100910/",
       "desc": "Discussion",
+      "summary": "Nullifying the Special Relationship",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-10-09.mp3"
@@ -570,6 +593,7 @@
     {
       "fid": "101610/",
       "desc": "T16.5 Specialness and Guilt",
+      "summary": "The Purpose of a Special Relationship",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-10-16.mp3"
@@ -590,6 +614,7 @@
     {
       "fid": "102310/",
       "desc": "T16.5 Specialness and Guilt",
+      "summary": "Father, I'd Rather Do It My Way",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-10-23.mp3"
@@ -610,6 +635,7 @@
     {
       "fid": "110610/",
       "desc": "T16.5 Specialness and Guilt",
+      "summary": "The Second Creation",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-11-06.mp3"
@@ -651,6 +677,7 @@
     {
       "fid": "112010/",
       "desc": "T16.6 The Bridge to the Real World",
+      "summary": "A Thanksgiving Recipe",
       "res": {
         "timer": "Yodi.debebe",
         "timing": "112010.js",
@@ -672,6 +699,7 @@
     {
       "fid": "112710/",
       "desc": "T16.6 The Bridge to the Real World",
+      "summary": "Agreements of Special Relationships",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-11-27.mp3"
@@ -692,6 +720,7 @@
     {
       "fid": "120410/",
       "desc": "T16.6 The Bridge to the Real World",
+      "summary": "Concocted Definitions",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-12-04.mp3"
@@ -712,6 +741,7 @@
     {
       "fid": "121810/",
       "desc": "Disucssion",
+      "summary": "The First Gift of Christmas",
       "res": {
         "timer": "Yodi.debebe",
         "audio": "2010-12-18.mp3"

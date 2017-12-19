@@ -159,11 +159,12 @@
       "fid": "032508/",
       "desc": "T13.7 The Decision for Guiltlessness",
       "res": {
+        "timing": "032508.js",
         "audio": "2008-03-25.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -178,11 +179,12 @@
       "fid": "033008/",
       "desc": "T13.7 The Decision for Guiltlessness",
       "res": {
+        "timing": "033008.js",
         "audio": "2008-03-30.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -197,11 +199,12 @@
       "fid": "040608/",
       "desc": "T13.7 The Decision for Guiltlessness",
       "res": {
+        "timing": "040608.js",
         "audio": "2008-04-06.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -216,11 +219,12 @@
       "fid": "041308/",
       "desc": "T13.8 The Way of Salvation",
       "res": {
+        "timing": "041308.js",
         "audio": "2008-04-13.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -235,11 +239,12 @@
       "fid": "042008/",
       "desc": "T14 Introduction",
       "res": {
+        "timing": "042008.js",
         "audio": "2008-04-20.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -254,11 +259,12 @@
       "fid": "050408/",
       "desc": "T14.1 Guilt and Guiltlessness",
       "res": {
+        "timing": "050408.js",
         "audio": "2008-05-04.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -273,11 +279,12 @@
       "fid": "051808/",
       "desc": "T14.1 Guilt and Guiltlessness",
       "res": {
+        "timing": "051808.js",
         "audio": "2008-05-18.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -292,11 +299,12 @@
       "fid": "052508/",
       "desc": "T14.1 Guilt and Guiltlessness",
       "res": {
+        "timing": "052508.js",
         "audio": "2008-05-25.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -311,11 +319,12 @@
       "fid": "060108/",
       "desc": "T14.1 Guilt and Guiltlessness",
       "res": {
+        "timing": "060108.js",
         "audio": "2008-06-01.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -659,11 +659,12 @@
       "fid": "101605/",
       "desc": "T10.6 Experience and Perception",
       "res": {
-        "audio": "2005-10-16.mp3"
+        "audio": "2005-10-16.mp3",
+        "timing": "101605.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
