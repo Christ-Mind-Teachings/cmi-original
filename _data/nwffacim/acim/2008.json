@@ -339,11 +339,12 @@
       "fid": "060808/",
       "desc": "T14.2 Out of the Darkness",
       "res": {
+        "timing": "060808.js",
         "audio": "2008-06-08.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -358,11 +359,12 @@
       "fid": "061508/",
       "desc": "T14.3 Perception without Deceit",
       "res": {
+        "timing": "061508.js",
         "audio": "2008-06-15.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -377,11 +379,12 @@
       "fid": "062208/",
       "desc": "T14.3 Perception without Deceit",
       "res": {
+        "timing": "062208.js",
         "audio": "2008-06-22.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

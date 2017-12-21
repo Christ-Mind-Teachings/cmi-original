@@ -217,8 +217,11 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | May 25, 2008
  "   | Timing | NWFFACIM | Study Group | Jun 01, 2008
  "   | Format | NWFFACIM | Study Group | Jun 01, 2008
+ "   | Timing | NWFFACIM | Study Group | Jun 08, 2008
  "   | Format | NWFFACIM | Study Group | Jun 08, 2008
+ "   | Timing | NWFFACIM | Study Group | Jun 15, 2008
  "   | Format | NWFFACIM | Study Group | Jun 15, 2008
+ "   | Timing | NWFFACIM | Study Group | Jun 22, 2008
  "   | Format | NWFFACIM | Study Group | Jun 22, 2008
  "   | Format | NWFFACIM | Study Group | Jul 13, 2008
  "   | Format | NWFFACIM | Study Group | Jul 27, 2008
@@ -613,5 +616,9 @@ Heather Gray | Timing | WOM | Questions | WOK Lesson 2 Q2
 " | Timing | WOM | Early | Blessing of Forgiveness
 " | Timing | WOM | Early | Choose to See
 " | Timing | WOM | Early | Heaven on Earth
+Ken Hoover | Timing | NWFFACIM | Study Group | Oct 24, 2009
+" | Timing | NWFFACIM | Study Group | Oct 31, 2009
+" | Timing | NWFFACIM | Study Group | Nov 14, 2009
+
 
 

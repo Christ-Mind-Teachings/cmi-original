@@ -584,11 +584,12 @@
       "desc": "T15.9 The Time of Christ",
       "res": {
         "timer": "Ken",
+        "timing": "102409.js",
         "audio": "2009-10-24.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -604,11 +605,12 @@
       "desc": "T15.9 The Time of Christ",
       "res": {
         "timer": "Ken",
+        "timing": "103109.js",
         "audio": "2009-10-31.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -624,11 +626,12 @@
       "desc": "T15.9 The Time of Christ",
       "res": {
         "timer": "Ken",
+        "timing": "111409.js",
         "audio": "2009-11-14.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
