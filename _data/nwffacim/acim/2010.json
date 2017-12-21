@@ -323,11 +323,12 @@
       "desc": "T16.5 Specialness and Guilt",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "061210.js",
         "audio": "2010-06-12.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -344,11 +345,12 @@
       "summary": "To Everyone Heaven is Completion",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "061910.js",
         "audio": "2010-06-19.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
