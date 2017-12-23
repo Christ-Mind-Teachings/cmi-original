@@ -367,11 +367,12 @@
       "summary": "A Night for Gratitude",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "070310.js",
         "audio": "2010-07-03.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -388,11 +389,12 @@
       "summary": "Letting God's Love In",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "071010.js",
         "audio": "2010-07-10.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

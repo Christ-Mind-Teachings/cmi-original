@@ -419,11 +419,12 @@
       "fid": "071308/",
       "desc": "T14.3 Perception without Deceit",
       "res": {
+        "timing": "071308.js",
         "audio": "2008-07-13.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -438,11 +439,12 @@
       "fid": "072708/",
       "desc": "T14.4 The Recognition of Holiness",
       "res": {
+        "timing": "072708.js",
         "audio": "2008-07-27.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

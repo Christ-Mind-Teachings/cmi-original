@@ -78,13 +78,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "020104.js",
         "audio": "2004-02-01.mp3"
       },
       "fid": "020104/",
       "desc": "T6.3 The Relinquishment of Attack",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -98,13 +99,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "020804.js",
         "audio": "2004-02-08.mp3"
       },
       "fid": "020804/",
       "desc": "T6.4 The Only Answer",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
