@@ -459,11 +459,12 @@
       "fid": "081708/",
       "desc": "T14.5 The Shift to Miracles",
       "res": {
+        "timing": "081708.js",
         "audio": "2008-08-17.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -478,11 +479,12 @@
       "fid": "083108/",
       "desc": "T14.5 The Shift to Miracles",
       "res": {
+        "timing": "083108.js",
         "audio": "2008-08-31.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

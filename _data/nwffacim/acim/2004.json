@@ -120,13 +120,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "021504.js",
         "audio": "2004-02-15.mp3"
       },
       "fid": "021504/",
       "desc": "T6.5 'To Have, Give All to All'",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -140,13 +141,15 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "022204.js",
         "audio": "2004-02-22.mp3"
       },
       "fid": "022204/",
       "desc": "T6.5 'To Have, Give All to All'",
+      "note": "Empty audio section begins at: 41:46 and ends at: 59:22",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

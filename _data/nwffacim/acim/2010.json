@@ -411,11 +411,12 @@
       "summary": "God's Laws Prevail",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "071710.js",
         "audio": "2010-07-17.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

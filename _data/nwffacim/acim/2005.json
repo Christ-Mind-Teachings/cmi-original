@@ -679,11 +679,12 @@
       "fid": "102305/",
       "desc": "T10.7 The Problem and the Answer",
       "res": {
-        "audio": "2005-10-23.mp3"
+        "audio": "2005-10-23.mp3",
+        "timing": "102305.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
