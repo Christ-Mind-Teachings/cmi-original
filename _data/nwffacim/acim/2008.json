@@ -499,11 +499,12 @@
       "fid": "090708/",
       "desc": "T14.5 The Shift to Miracles",
       "res": {
+        "timing": "090708.js",
         "audio": "2008-09-07.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
