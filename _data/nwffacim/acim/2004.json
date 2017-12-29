@@ -203,13 +203,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "032804.js",
         "audio": "2004-03-28.mp3"
       },
       "fid": "032804/",
       "desc": "T7 Introduction",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -223,13 +224,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "040404.js",
         "audio": "2004-04-04.mp3"
       },
       "fid": "040404/",
       "desc": "T7.1 Bargaining versus Healing",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -193,13 +193,14 @@
     },
     {
       "res": {
-        "audio": "2003-03-13.mp3"
+        "audio": "2003-03-13.mp3",
+        "timing": "031303.js"
       },
       "fid": "031303/",
       "desc": "T2.V.A Special Principles for Miracle Workers",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -212,13 +213,14 @@
     },
     {
       "res": {
-        "audio": "2003-03-20.mp3"
+        "audio": "2003-03-20.mp3",
+        "timing": "032003.js"
       },
       "fid": "032003/",
       "desc": "T3.I Atonement without Sacrifice",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

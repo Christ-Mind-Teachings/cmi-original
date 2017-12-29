@@ -519,11 +519,12 @@
       "fid": "091408/",
       "desc": "T14.6 The Test of Truth",
       "res": {
+        "timing": "091408.js",
         "audio": "2008-09-14.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -538,11 +539,12 @@
       "fid": "092108/",
       "desc": "T14.6 The Test of Truth",
       "res": {
+        "timing": "092108.js",
         "audio": "2008-09-21.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -557,11 +559,12 @@
       "fid": "100508/",
       "desc": "T14.6 The Test of Truth",
       "res": {
+        "timing": "100508.js",
         "audio": "2008-10-05.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -576,11 +579,12 @@
       "fid": "101908/",
       "desc": "T14.6 The Test of Truth",
       "res": {
+        "timing": "101908.js",
         "audio": "2008-10-19.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

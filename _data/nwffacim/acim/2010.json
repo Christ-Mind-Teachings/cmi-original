@@ -433,11 +433,12 @@
       "summary": "A Night to be Glad",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "072410.js",
         "audio": "2010-07-24.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -454,11 +455,12 @@
       "summary": "The Movement Continues",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "080710.js",
         "audio": "2010-08-07.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -475,11 +477,12 @@
       "summary": "The Movement Continues",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "082810.js",
         "audio": "2010-08-28.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
