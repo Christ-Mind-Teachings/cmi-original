@@ -719,11 +719,12 @@
       "fid": "111305/",
       "desc": "T11.1 The Judgement of the Holy Spirit",
       "res": {
-        "audio": "2005-11-13.mp3"
+        "audio": "2005-11-13.mp3",
+        "timing": "111305.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -738,11 +739,12 @@
       "fid": "112005/",
       "desc": "T11.1 The Judgement of the Holy Spirit",
       "res": {
-        "audio": "2005-11-20.mp3"
+        "audio": "2005-11-20.mp3",
+        "timing": "112005.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
