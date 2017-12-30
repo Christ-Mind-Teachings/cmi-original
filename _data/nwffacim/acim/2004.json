@@ -245,13 +245,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "041104.js",
         "audio": "2004-04-11.mp3"
       },
       "fid": "041104/",
       "desc": "T7.3 The Unified Curriculum",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -265,13 +266,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "041804.js",
         "audio": "2004-04-18.mp3"
       },
       "fid": "041804/",
       "desc": "T7.3 The Unified Curriculum",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -285,13 +287,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "042504.js",
         "audio": "2004-04-25.mp3"
       },
       "fid": "042504/",
       "desc": "T7.4 The Recognition of Truth",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

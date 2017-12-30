@@ -276,13 +276,14 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "041003.js",
         "audio": "2003-04-10.mp3"
       },
       "fid": "041003/",
       "desc": "T3.II Miracles as True Perception",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -296,13 +297,14 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "042403.js",
         "audio": "2003-04-24.mp3"
       },
       "fid": "042403/",
       "desc": "T3.II Miracles as True Perception",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

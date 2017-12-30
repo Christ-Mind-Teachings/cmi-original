@@ -29,6 +29,8 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Mar 20, 2003
  "   | Timing | NWFFACIM | Study Group | Mar 27, 2003
  "   | Timing | NWFFACIM | Study Group | Apr 03, 2003
+ "   | Timing | NWFFACIM | Study Group | Apr 10, 2003
+ "   | Timing | NWFFACIM | Study Group | Apr 24, 2003
  "   | Timing | NWFFACIM | Study Group | May 25, 2003
  "   | Format | NWFFACIM | Study Group | Aug 03, 2003
  "   | Format | NWFFACIM | Study Group | Aug 10, 2003
@@ -136,6 +138,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Jan 15, 2006
  "   | Format | NWFFACIM | Study Group | Jan 22, 2006
  "   | Format | NWFFACIM | Study Group | Jan 29, 2006
+ "   | Timing | NWFFACIM | Study Group | Feb 12, 2006
  "   | Format | NWFFACIM | Study Group | Feb 26, 2006
  "   | Timing | NWFFACIM | Study Group | Apr 01, 2006
  "   | Format | NWFFACIM | Study Group | Apr 15, 2006
@@ -632,6 +635,9 @@ Heather Gray | Timing | WOM | Questions | WOK Lesson 2 Q2
 " | Timing | WOM | Early | Heaven on Earth
 Ken Hoover | Timing | NWFFACIM | Study Group | Mar 28, 2004
 " | Timing | NWFFACIM | Study Group | Apr 04, 2004
+" | Timing | NWFFACIM | Study Group | Apr 11, 2004
+" | Timing | NWFFACIM | Study Group | Apr 18, 2004
+" | Timing | NWFFACIM | Study Group | Apr 25, 2004
 " | Timing | NWFFACIM | Study Group | Oct 24, 2009
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009

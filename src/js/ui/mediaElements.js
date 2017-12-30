@@ -105,7 +105,8 @@ function initPlayer(config) {
     }
     //when user may capture time
     else {
-      features = ["playpause", "stop", "current", "skipback", "jumpforward", "speed"];
+      //features = ["playpause", "stop", "current", "skipback", "jumpforward", "speed"];
+      features = ["playpause", "current", "skipback", "jumpforward", "speed"];
     }
 
     $("#cmi-audio-player").mediaelementplayer({

@@ -103,11 +103,12 @@
       "desc": "T11.5 The Sane Curriculum",
       "res": {
         "audio": "2006-02-12.mp3",
+        "timing": "021206.js",
         "timer": "Julief8"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
