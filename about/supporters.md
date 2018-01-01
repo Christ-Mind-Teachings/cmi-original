@@ -31,6 +31,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Apr 03, 2003
  "   | Timing | NWFFACIM | Study Group | Apr 10, 2003
  "   | Timing | NWFFACIM | Study Group | Apr 24, 2003
+ "   | Timing | NWFFACIM | Study Group | May 01, 2003
  "   | Timing | NWFFACIM | Study Group | May 25, 2003
  "   | Format | NWFFACIM | Study Group | Aug 03, 2003
  "   | Format | NWFFACIM | Study Group | Aug 10, 2003
@@ -638,6 +639,8 @@ Ken Hoover | Timing | NWFFACIM | Study Group | Mar 28, 2004
 " | Timing | NWFFACIM | Study Group | Apr 11, 2004
 " | Timing | NWFFACIM | Study Group | Apr 18, 2004
 " | Timing | NWFFACIM | Study Group | Apr 25, 2004
+" | Timing | NWFFACIM | Study Group | May 02, 2004
+" | Timing | NWFFACIM | Study Group | May 09, 2004
 " | Timing | NWFFACIM | Study Group | Oct 24, 2009
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009

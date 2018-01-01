@@ -308,13 +308,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "050204.js",
         "audio": "2004-05-02.mp3"
       },
       "fid": "050204/",
       "desc": "T7.5 Healing and the Changelessness of Mind",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -328,13 +329,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "050904.js",
         "audio": "2004-05-09.mp3"
       },
       "fid": "050904/",
       "desc": "T7.6 From Vigilance to Peace",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

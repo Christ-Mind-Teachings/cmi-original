@@ -318,13 +318,14 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "050103.js",
         "audio": "2003-05-01.mp3"
       },
       "fid": "050103/",
       "desc": "T3.III Perception vs Knowledge",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
