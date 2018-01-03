@@ -367,13 +367,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "052304.js",
         "audio": "2004-05-23.mp3"
       },
       "fid": "052304/",
       "desc": "T7.6 From Vigilance to Peace",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -387,13 +388,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "053004.js",
         "audio": "2004-05-30.mp3"
       },
       "fid": "053004/",
       "desc": "T7.7 The Total Commitment",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

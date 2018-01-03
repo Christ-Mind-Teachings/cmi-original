@@ -398,11 +398,12 @@
       "title": "Sexuality",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "h01q2.js",
         "audio": "Q01.02.mp3"
       },
       "url": "/wom/questions/h01q2/",
@@ -433,11 +434,12 @@
       "title": "40 Days and Nights",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "l02q1.js",
         "audio": "Q02.01.mp3"
       },
       "url": "/wom/questions/h02q1/",
@@ -450,11 +452,12 @@
       "title": "Mary",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "l02q2.js",
         "audio": "Q02.02.mp3"
       },
       "url": "/wom/questions/h02q2/",
@@ -467,11 +470,12 @@
       "title": "ACIM",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "l06q1.js",
         "audio": "Q06.01.mp3"
       },
       "url": "/wom/questions/h06q1/",
@@ -499,11 +503,12 @@
       "fid": "h06q3/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "l06q3.js",
         "audio": "Q06.02.mp3"
       },
       "url": "/wom/questions/h06q3/",
@@ -550,11 +555,12 @@
       "title": "Unconscious Blocks",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "l07q3.js",
         "audio": "Q07.03.mp3"
       },
       "url": "/wom/questions/h07q3/",
@@ -567,11 +573,12 @@
       "title": "Discipline",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "l07q4.js",
         "audio": "Q07.04.mp3"
       },
       "url": "/wom/questions/h07q4/",
@@ -584,11 +591,12 @@
       "title": "Christian Pentecostal and New Age",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "h07q5.js",
         "audio": "Q07.05.mp3"
       },
       "url": "/wom/questions/h07q5/",

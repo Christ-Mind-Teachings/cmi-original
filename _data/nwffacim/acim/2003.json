@@ -339,13 +339,14 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "051103.js",
         "audio": "2003-05-11.mp3"
       },
       "fid": "051103/",
       "desc": "T3.IV Error and the Ego",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -359,13 +360,14 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "051803.js",
         "audio": "2003-05-18.mp3"
       },
       "fid": "051803/",
       "desc": "T3.IV Error and the Ego",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -399,13 +401,14 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "060103.js",
         "audio": "2003-06-01.mp3"
       },
       "fid": "060103/",
       "desc": "T3.IV Error and the Ego",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

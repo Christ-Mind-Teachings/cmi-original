@@ -32,7 +32,10 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Apr 10, 2003
  "   | Timing | NWFFACIM | Study Group | Apr 24, 2003
  "   | Timing | NWFFACIM | Study Group | May 01, 2003
+ "   | Timing | NWFFACIM | Study Group | May 11, 2003
+ "   | Timing | NWFFACIM | Study Group | May 18, 2003
  "   | Timing | NWFFACIM | Study Group | May 25, 2003
+ "   | Timing | NWFFACIM | Study Group | Jun 01, 2003
  "   | Format | NWFFACIM | Study Group | Aug 03, 2003
  "   | Format | NWFFACIM | Study Group | Aug 10, 2003
  "   | Format | NWFFACIM | Study Group | Aug 17, 2003
@@ -509,6 +512,14 @@ John Hempstead | Timing | WOM | Early | Walk with Me
 Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | WOM | WOH | Lesson 09
 " | Timing | WOM | WOH | Lesson 10
+" | Timing | WOM | Questions | WOH Lesson 01 Q2
+" | Timing | WOM | Questions | WOH Lesson 02 Q1
+" | Timing | WOM | Questions | WOH Lesson 02 Q2
+" | Timing | WOM | Questions | WOH Lesson 06 Q1
+" | Timing | WOM | Questions | WOH Lesson 06 Q3
+" | Timing | WOM | Questions | WOH Lesson 07 Q3
+" | Timing | WOM | Questions | WOH Lesson 07 Q4
+" | Timing | WOM | Questions | WOH Lesson 07 Q5
 " | Timing | WOM | WOT | Lesson 08
 " | Timing | WOM | WOT | Lesson 10
 " | Timing | WOM | WOT | Lesson 11
@@ -641,6 +652,8 @@ Ken Hoover | Timing | NWFFACIM | Study Group | Mar 28, 2004
 " | Timing | NWFFACIM | Study Group | Apr 25, 2004
 " | Timing | NWFFACIM | Study Group | May 02, 2004
 " | Timing | NWFFACIM | Study Group | May 09, 2004
+" | Timing | NWFFACIM | Study Group | May 23, 2004
+" | Timing | NWFFACIM | Study Group | May 30, 2004
 " | Timing | NWFFACIM | Study Group | Oct 24, 2009
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009
