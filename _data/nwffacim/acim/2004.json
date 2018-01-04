@@ -163,13 +163,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "030704.js",
         "audio": "2004-03-07.mp3"
       },
       "fid": "030704/",
       "desc": "T6.6 'To Have Peace, Teach Peace to Learn It'",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -183,13 +184,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "031404.js",
         "audio": "2004-03-14.mp3"
       },
       "fid": "031404/",
       "desc": "T6.7 'Be Vigilant Only for God and His Kingdom'",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

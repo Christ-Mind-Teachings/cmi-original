@@ -422,13 +422,14 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "060803.js",
         "audio": "2003-06-08.mp3"
       },
       "fid": "060803/",
       "desc": "T3.V Beyond Pereception",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

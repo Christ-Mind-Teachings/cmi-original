@@ -799,11 +799,12 @@
       "fid": "121805/",
       "desc": "T11.2 The Mechanism for Miracles",
       "res": {
+        "timing": "121805.js",
         "audio": "2005-12-18.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
