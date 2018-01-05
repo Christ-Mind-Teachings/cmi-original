@@ -443,13 +443,14 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "061503.js",
         "audio": "2003-06-15.mp3"
       },
       "fid": "061503/",
       "desc": "T3.VI Judgement and the Authority Problem",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -463,13 +464,14 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "062203.js",
         "audio": "2003-06-22.mp3"
       },
       "fid": "062203/",
       "desc": "T3.VI Judgement and the Authority Problem",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

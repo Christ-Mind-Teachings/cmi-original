@@ -411,13 +411,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "061304.js",
         "audio": "2004-06-13.mp3"
       },
       "fid": "061304/",
       "desc": "T7.7 The Total Commitment",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -433,11 +434,12 @@
       "desc": "T7.7 The Total Commitment",
       "res": {
         "timer": "Ken",
+        "timing": "062004.js",
         "audio": "2004-06-20.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
