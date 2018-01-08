@@ -485,12 +485,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "062903.js",
         "audio": "2003-06-29.mp3"
       },
       "fid": "062903/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

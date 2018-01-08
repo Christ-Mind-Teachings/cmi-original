@@ -455,11 +455,12 @@
       "desc": "T7.8 The Defense of Conflict",
       "res": {
         "timer": "Ken",
+        "timing": "062704.js",
         "audio": "2004-06-27.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -493,13 +494,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "071804.js",
         "audio": "2004-07-18.mp3"
       },
       "fid": "071804/",
       "desc": "T7.9 The Extension of the Kingdom",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -515,11 +517,12 @@
       "desc": "T7.10 The Confusion of Strength and Weakness",
       "res": {
         "timer": "Ken",
+        "timing": "072504.js",
         "audio": "2004-07-25.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -533,13 +536,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "080104.js",
         "audio": "2004-08-01.mp3"
       },
       "fid": "080104/",
       "desc": "T7.11 The State of Grace",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
