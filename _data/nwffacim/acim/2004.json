@@ -557,13 +557,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "080804.js",
         "audio": "2004-08-08.mp3"
       },
       "fid": "080804/",
       "desc": "T8 The Journey Back",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -579,11 +580,12 @@
       "desc": "T8.1 The Direction of the Curriculum",
       "res": {
         "timer": "Ken",
+        "timing": "081504.js",
         "audio": "2004-08-15.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

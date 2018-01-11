@@ -597,6 +597,12 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Jul 24, 2010
 " | Timing | NWFFACIM | Study Group | Aug 07, 2010
 " | Timing | NWFFACIM | Study Group | Aug 28, 2010
+" | Timing | NWFFACIM | Study Group | Sep 04, 2010
+" | Timing | NWFFACIM | Study Group | Sep 11, 2010
+" | Timing | NWFFACIM | Study Group | Sep 25, 2010
+" | Timing | NWFFACIM | Study Group | Oct 02, 2010
+" | Timing | NWFFACIM | Study Group | Oct 09, 2010
+" | Timing | NWFFACIM | Study Group | Oct 16, 2010
 " | Timing | NWFFACIM | Study Group | Nov 13, 2010
 " | Timing | NWFFACIM | Study Group | Nov 20, 2010
 " | Timing | NWFFACIM | Study Group | Mar 20, 2011
@@ -666,6 +672,8 @@ Ken Hoover | Timing | NWFFACIM | Study Group | Mar 07, 2004
 " | Timing | NWFFACIM | Study Group | Jul 18, 2004
 " | Timing | NWFFACIM | Study Group | Jul 25, 2004
 " | Timing | NWFFACIM | Study Group | Aug 01, 2004
+" | Timing | NWFFACIM | Study Group | Aug 08, 2004
+" | Timing | NWFFACIM | Study Group | Aug 15, 2004
 " | Timing | NWFFACIM | Study Group | Oct 24, 2009
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009
