@@ -1,0 +1,247 @@
+{
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2017/"
+  },
+  "base": "/nwffacim/2017/",
+  "intro": "/nwffacim/intro/",
+  "title": "ACIM Study Group 2017",
+  "page": [
+    {
+      "intro": true,
+      "url": "/nwffacim/intro/2017/",
+      "idx": 0,
+      "title": "About 2017 Transcripts",
+      "next": "/nwffacim/2017/040817/",
+      "prev": "/nwffacim/2017/120417/",
+      "fid": "2017/"
+    },
+    {
+      "fid": "040817/",
+      "desc": "W59, W60, and W61 I Am the Light of the World",
+      "res": {
+        "audio": "2017-04-09.mp3"
+      },
+      "complete": {
+        "format": 1,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/040817/",
+      "idx": 1,
+      "title": "Apr 8, 2017",
+      "next": "/nwffacim/2017/041617/",
+      "prev": "/nwffacim/intro/2017/"
+    },
+    {
+      "fid": "041617/",
+      "desc": "Discussion",
+      "res": {
+        "audio": "2017-04-16.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/041617/",
+      "idx": 2,
+      "title": "Apr 16, 2017",
+      "next": "/nwffacim/2017/042317/",
+      "prev": "/nwffacim/2017/040817/"
+    },
+    {
+      "fid": "042317/",
+      "desc": "T10.1 Projection versus Extension",
+      "res": {
+        "audio": "2017-04-23.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/042317/",
+      "idx": 3,
+      "title": "Apr 23, 2017",
+      "next": "/nwffacim/2017/043017/",
+      "prev": "/nwffacim/2017/041617/"
+    },
+    {
+      "fid": "043017/",
+      "desc": "M30 As for the Rest...",
+      "res": {
+        "audio": "2017-04-30.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/043017/",
+      "idx": 4,
+      "title": "Apr 30, 2017",
+      "next": "/nwffacim/2017/051217/",
+      "prev": "/nwffacim/2017/042317/"
+    },
+    {
+      "fid": "051217/",
+      "desc": "Discussion",
+      "res": {
+        "audio": "2017-05-12.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/051217/",
+      "idx": 5,
+      "title": "May 12, 2017",
+      "next": "/nwffacim/2017/060917/",
+      "prev": "/nwffacim/2017/043017/"
+    },
+    {
+      "fid": "060917/",
+      "desc": "T17.8 Conditions of Forgiveness",
+      "res": {
+        "audio": "2017-06-09.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/060917/",
+      "idx": 6,
+      "title": "Jun 9, 2017",
+      "next": "/nwffacim/2017/071117/",
+      "prev": "/nwffacim/2017/051217/"
+    },
+    {
+      "fid": "071117/",
+      "desc": "Discussion",
+      "res": {
+        "audio": "2017-07-11.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/071117/",
+      "idx": 7,
+      "title": "Jul 11, 2017",
+      "next": "/nwffacim/2017/072317/",
+      "prev": "/nwffacim/2017/060917/"
+    },
+    {
+      "fid": "072317/",
+      "desc": "T14.5 The Shift to Miracles",
+      "res": {
+        "audio": "2017-07-23.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/072317/",
+      "idx": 8,
+      "title": "Jul 23, 2017",
+      "next": "/nwffacim/2017/092317/",
+      "prev": "/nwffacim/2017/071117/"
+    },
+    {
+      "fid": "092317/",
+      "desc": "T14.6 The Test of Truth",
+      "res": {
+        "audio": "2017-09-23.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/092317/",
+      "idx": 9,
+      "title": "Sep 23, 2017",
+      "next": "/nwffacim/2017/100117/",
+      "prev": "/nwffacim/2017/072317/"
+    },
+    {
+      "fid": "100117/",
+      "desc": "T14.6 The Test of Truth",
+      "res": {
+        "audio": "2017-10-01.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/100117/",
+      "idx": 10,
+      "title": "Oct 1, 2017",
+      "next": "/nwffacim/2017/101717/",
+      "prev": "/nwffacim/2017/092317/"
+    },
+    {
+      "fid": "101717/",
+      "desc": "Discussion",
+      "res": {
+        "audio": "2017-10-17.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/101717/",
+      "idx": 11,
+      "title": "Oct 17, 2017",
+      "next": "/nwffacim/2017/120417/",
+      "prev": "/nwffacim/2017/100117/"
+    },
+    {
+      "fid": "120417/",
+      "desc": "Discussion",
+      "res": {
+        "audio": "2017-12-04.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2017/120417/",
+      "idx": 12,
+      "title": "Dec 4, 2017",
+      "next": "/nwffacim/intro/2017/",
+      "prev": "/nwffacim/2017/101717/"
+    }
+  ]
+}

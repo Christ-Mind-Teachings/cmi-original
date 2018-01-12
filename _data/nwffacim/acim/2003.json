@@ -506,12 +506,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "070603.js",
         "audio": "2003-07-06.mp3"
       },
       "fid": "070603/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -526,12 +527,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "071303.js",
         "audio": "2003-07-13.mp3"
       },
       "fid": "071303/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

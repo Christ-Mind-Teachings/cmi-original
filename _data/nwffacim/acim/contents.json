@@ -123,11 +123,11 @@
       "image": "monkey.jpg"
     },
     {
-      "display": false,
+      "display": true,
       "year": "2017",
       "title": "2017",
       "about-url": "/2017/",
-      "desc": "?? Sessions",
+      "desc": "Twelve Sessions",
       "image": "rooster.jpg"
     }
   ]

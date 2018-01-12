@@ -599,13 +599,14 @@
     {
       "res": {
         "timer": "Ken",
+        "timing": "082204.js",
         "audio": "2004-08-22.mp3"
       },
       "fid": "082204/",
       "desc": "T8.2 The Rationale for Choice",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -631,11 +631,12 @@
       "summary": "Father, I'd Rather Do It My Way",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "102310.js",
         "audio": "2010-10-23.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
