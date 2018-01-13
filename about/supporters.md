@@ -477,6 +477,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Jul 16, 2016
  "   | Format | NWFFACIM | Study Group | Jul 16, 2016
  "   | Timing | NWFFACIM | Study Group | Aug 02, 2016
+ "   | Timing | NWFFACIM | Study Group | Apr 08, 2017
 Gail Leopold | Timing | WOM | WOH | Lesson 03
 " | Timing | WOM | WOH | Lesson 04
 " | Timing | WOM | WOH | Lesson 05

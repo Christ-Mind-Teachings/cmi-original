@@ -36,6 +36,7 @@ optional
 config
 work/audio
 work/aws
+work/orie
 
 # Recommended in Ben Balter's Jekyll Style Guide
 .sass-cache

@@ -23,7 +23,7 @@
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -38,10 +38,11 @@
       "fid": "041617/",
       "desc": "Discussion",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-04-16.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -57,10 +58,11 @@
       "fid": "042317/",
       "desc": "T10.1 Projection versus Extension",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-04-23.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -76,10 +78,11 @@
       "fid": "043017/",
       "desc": "M30 As for the Rest...",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-04-30.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -95,10 +98,11 @@
       "fid": "051217/",
       "desc": "Discussion",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-05-12.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -114,10 +118,11 @@
       "fid": "060917/",
       "desc": "T17.8 Conditions of Forgiveness",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-06-09.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -133,10 +138,11 @@
       "fid": "071117/",
       "desc": "Discussion",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-07-11.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -152,10 +158,11 @@
       "fid": "072317/",
       "desc": "T14.5 The Shift to Miracles",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-07-23.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -171,10 +178,11 @@
       "fid": "092317/",
       "desc": "T14.6 The Test of Truth",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-09-23.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -190,10 +198,11 @@
       "fid": "100117/",
       "desc": "T14.6 The Test of Truth",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-10-01.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -209,10 +218,11 @@
       "fid": "101717/",
       "desc": "Discussion",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-10-17.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
@@ -228,10 +238,11 @@
       "fid": "120417/",
       "desc": "Discussion",
       "res": {
+        "timer": "Julief8",
         "audio": "2017-12-04.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0
