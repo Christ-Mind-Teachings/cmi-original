@@ -40,11 +40,12 @@
       "desc": "Discussion",
       "res": {
         "timer": "Julief8",
+        "timing": "041617.js",
         "audio": "2017-04-16.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
