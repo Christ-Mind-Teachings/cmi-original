@@ -61,11 +61,12 @@
       "desc": "T10.1 Projection versus Extension",
       "res": {
         "timer": "Julief8",
+        "timing": "042317.js",
         "audio": "2017-04-23.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

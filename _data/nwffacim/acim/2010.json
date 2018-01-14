@@ -653,11 +653,12 @@
       "summary": "The Second Creation",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "110610.js",
         "audio": "2010-11-06.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -717,11 +718,12 @@
       "summary": "Agreements of Special Relationships",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "112710.js",
         "audio": "2010-11-27.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -738,11 +740,12 @@
       "summary": "Concocted Definitions",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "120410.js",
         "audio": "2010-12-04.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -759,11 +762,12 @@
       "summary": "The First Gift of Christmas",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "121810.js",
         "audio": "2010-12-18.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -479,6 +479,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Aug 02, 2016
  "   | Timing | NWFFACIM | Study Group | Apr 08, 2017
  "   | Timing | NWFFACIM | Study Group | Apr 16, 2017
+ "   | Timing | NWFFACIM | Study Group | Apr 23, 2017
 Gail Leopold | Timing | WOM | WOH | Lesson 03
 " | Timing | WOM | WOH | Lesson 04
 " | Timing | WOM | WOH | Lesson 05
@@ -612,6 +613,8 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Nov 13, 2010
 " | Timing | NWFFACIM | Study Group | Nov 20, 2010
 " | Timing | NWFFACIM | Study Group | Nov 27, 2010
+" | Timing | NWFFACIM | Study Group | Dec 04, 2010
+" | Timing | NWFFACIM | Study Group | Dec 18, 2010
 " | Timing | NWFFACIM | Study Group | Mar 20, 2011
 " | Timing | NWFFACIM | Study Group | Mar 26, 2011
 " | Timing | NWFFACIM | Study Group | Apr 03, 2011
