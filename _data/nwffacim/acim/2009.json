@@ -82,11 +82,12 @@
       "desc": "T15.3 Littleness versus Magnitude",
       "res": {
         "timer": "Ken",
+        "timing": "012409.js",
         "audio": "2009-01-24.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -102,11 +103,12 @@
       "desc": "T15.3 Littleness versus Magnitude",
       "res": {
         "timer": "Ken",
+        "timing": "020709.js",
         "audio": "2009-02-07.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

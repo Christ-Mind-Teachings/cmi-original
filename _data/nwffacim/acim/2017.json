@@ -82,11 +82,12 @@
       "desc": "M30 As for the Rest...",
       "res": {
         "timer": "Julief8",
+        "timing": "043017.js",
         "audio": "2017-04-30.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -102,11 +103,12 @@
       "desc": "Discussion",
       "res": {
         "timer": "Julief8",
+        "timing": "051217.js",
         "audio": "2017-05-12.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -122,11 +124,12 @@
       "desc": "T17.8 Conditions of Forgiveness",
       "res": {
         "timer": "Julief8",
+        "timing": "060917.js",
         "audio": "2017-06-09.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

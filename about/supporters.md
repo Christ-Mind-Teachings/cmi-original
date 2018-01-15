@@ -480,6 +480,9 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Apr 08, 2017
  "   | Timing | NWFFACIM | Study Group | Apr 16, 2017
  "   | Timing | NWFFACIM | Study Group | Apr 23, 2017
+ "   | Timing | NWFFACIM | Study Group | Apr 30, 2017
+ "   | Timing | NWFFACIM | Study Group | May 12, 2017
+ "   | Timing | NWFFACIM | Study Group | Jun 09, 2017
 Gail Leopold | Timing | WOM | WOH | Lesson 03
 " | Timing | WOM | WOH | Lesson 04
 " | Timing | WOM | WOH | Lesson 05
@@ -685,6 +688,8 @@ Ken Hoover | Timing | NWFFACIM | Study Group | Mar 07, 2004
 " | Timing | NWFFACIM | Study Group | Aug 08, 2004
 " | Timing | NWFFACIM | Study Group | Aug 15, 2004
 " | Timing | NWFFACIM | Study Group | Aug 22, 2004
+" | Timing | NWFFACIM | Study Group | Jan 24, 2009
+" | Timing | NWFFACIM | Study Group | Feb 07, 2009
 " | Timing | NWFFACIM | Study Group | Oct 24, 2009
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009
