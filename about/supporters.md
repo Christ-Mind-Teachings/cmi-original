@@ -690,6 +690,7 @@ Ken Hoover | Timing | NWFFACIM | Study Group | Mar 07, 2004
 " | Timing | NWFFACIM | Study Group | Aug 22, 2004
 " | Timing | NWFFACIM | Study Group | Jan 24, 2009
 " | Timing | NWFFACIM | Study Group | Feb 07, 2009
+" | Timing | NWFFACIM | Study Group | Feb 28, 2009
 " | Timing | NWFFACIM | Study Group | Oct 24, 2009
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009
