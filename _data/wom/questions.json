@@ -526,6 +526,7 @@
         "fb": 0
       },
       "res": {
+        "timing": "h07q1.js",
         "audio": "Q07.01.mp3"
       },
       "url": "/wom/questions/h07q1/",
@@ -544,7 +545,7 @@
       },
       "res": {
         "audio": "Q07.02.mp3",
-        "timing": "l07q2.js"
+        "timing": "h07q2.js"
       },
       "url": "/wom/questions/h07q2/",
       "idx": 30,
@@ -561,7 +562,7 @@
         "fb": 0
       },
       "res": {
-        "timing": "l07q3.js",
+        "timing": "h07q3.js",
         "audio": "Q07.03.mp3"
       },
       "url": "/wom/questions/h07q3/",
@@ -579,7 +580,7 @@
         "fb": 0
       },
       "res": {
-        "timing": "l07q4.js",
+        "timing": "h07q4.js",
         "audio": "Q07.04.mp3"
       },
       "url": "/wom/questions/h07q4/",

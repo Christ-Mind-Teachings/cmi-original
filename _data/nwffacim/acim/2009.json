@@ -305,11 +305,12 @@
       "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "060709.js",
         "audio": "2009-06-07.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

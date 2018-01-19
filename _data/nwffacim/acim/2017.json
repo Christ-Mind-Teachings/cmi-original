@@ -145,11 +145,12 @@
       "desc": "Discussion",
       "res": {
         "timer": "Julief8",
+        "timing": "071117.js",
         "audio": "2017-07-11.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -165,11 +166,12 @@
       "desc": "T14.5 The Shift to Miracles",
       "res": {
         "timer": "Julief8",
+        "timing": "072317.js",
         "audio": "2017-07-23.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
