@@ -187,11 +187,12 @@
       "desc": "T14.6 The Test of Truth",
       "res": {
         "timer": "Julief8",
+        "timing": "092317.js",
         "audio": "2017-09-23.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

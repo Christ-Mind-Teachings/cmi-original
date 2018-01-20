@@ -485,6 +485,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Jun 09, 2017
  "   | Timing | NWFFACIM | Study Group | Jul 11, 2017
  "   | Timing | NWFFACIM | Study Group | Jul 23, 2017
+ "   | Timing | NWFFACIM | Study Group | Sep 23, 2017
 Gail Leopold | Timing | WOM | WOH | Lesson 03
 " | Timing | WOM | WOH | Lesson 04
 " | Timing | WOM | WOH | Lesson 05
@@ -591,6 +592,8 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Sep 09, 2007
 " | Timing | NWFFACIM | Study Group | Sep 16, 2007
 " | Timing | NWFFACIM | Study Group | Jun 07, 2009
+" | Timing | NWFFACIM | Study Group | Jun 13, 2009
+" | Timing | NWFFACIM | Study Group | Jun 20, 2009
 " | Timing | NWFFACIM | Study Group | Jan 16, 2010
 " | Timing | NWFFACIM | Study Group | Jan 30, 2010
 " | Timing | NWFFACIM | Study Group | Feb 06, 2010
@@ -695,6 +698,8 @@ Ken Hoover | Timing | NWFFACIM | Study Group | Mar 07, 2004
 " | Timing | NWFFACIM | Study Group | Jan 24, 2009
 " | Timing | NWFFACIM | Study Group | Feb 07, 2009
 " | Timing | NWFFACIM | Study Group | Feb 28, 2009
+" | Timing | NWFFACIM | Study Group | Mar 14, 2009
+" | Timing | NWFFACIM | Study Group | Mar 28, 2009
 " | Timing | NWFFACIM | Study Group | Oct 24, 2009
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009

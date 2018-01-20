@@ -145,11 +145,12 @@
       "desc": "T15.3 Littleness versus Magnitude",
       "res": {
         "timer": "Ken",
+        "timing": "031409.js",
         "audio": "2009-03-14.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -165,11 +166,12 @@
       "desc": "T15.4 Practicing the Holy Instant",
       "res": {
         "timer": "Ken",
+        "timing": "032809.js",
         "audio": "2009-03-28.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -326,11 +328,12 @@
       "desc": "T15.6 The Holy Instant and the Laws of God",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "061309.js",
         "audio": "2009-06-13.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -346,11 +349,12 @@
       "desc": "T15.6 The Holy Instant and the Laws of God",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "062009.js",
         "audio": "2009-06-20.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
