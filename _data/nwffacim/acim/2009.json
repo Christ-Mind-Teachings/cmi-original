@@ -187,11 +187,12 @@
       "desc": "T15.4 Practicing the Holy Instant",
       "res": {
         "timer": "Ken",
+        "timing": "040409.js",
         "audio": "2009-04-04.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -207,11 +208,12 @@
       "desc": "T15.3 Littleness versus Magnitude",
       "res": {
         "timer": "Ken",
+        "timing": "041209.js",
         "audio": "2009-04-12.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -227,11 +229,12 @@
       "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "timer": "Ken",
+        "timing": "042509.js",
         "audio": "2009-04-25.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

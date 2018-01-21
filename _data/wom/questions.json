@@ -611,11 +611,12 @@
       "title": "Holy Spirit and Oversoul",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "h08q1.js",
         "audio": "Q08.01.mp3"
       },
       "url": "/wom/questions/h08q1/",
@@ -628,11 +629,12 @@
       "title": "Healing",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "h08q2.js",
         "audio": "Q08.02.mp3"
       },
       "url": "/wom/questions/h08q2/",
@@ -660,11 +662,12 @@
       "title": "Astrology",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "h10q1.js",
         "audio": "Q10.01.mp3"
       },
       "url": "/wom/questions/h10q1/",
@@ -784,11 +787,12 @@
       "title": "Mary Magdalene",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "h12q2.js",
         "audio": "Q12.02.mp3"
       },
       "url": "/wom/questions/h12q2/",

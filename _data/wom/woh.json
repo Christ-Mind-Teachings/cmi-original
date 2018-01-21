@@ -137,12 +137,13 @@
       "complete": {
         "copyright": 0,
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
-        "audio": "L07.mp3"
+        "audio": "L07.mp3",
+        "timing": "l07.js"
       },
       "title": "Lesson Seven",
       "url": "/wom/woh/l07/",

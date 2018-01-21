@@ -208,11 +208,12 @@
       "desc": "T14.6 The Test of Truth",
       "res": {
         "timer": "Julief8",
+        "timing": "100117.js",
         "audio": "2017-10-01.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -228,11 +229,12 @@
       "desc": "Discussion",
       "res": {
         "timer": "Julief8",
+        "timing": "101717.js",
         "audio": "2017-10-17.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -248,11 +250,12 @@
       "desc": "Discussion",
       "res": {
         "timer": "Julief8",
+        "timing": "120417.js",
         "audio": "2017-12-04.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },

@@ -486,6 +486,9 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Jul 11, 2017
  "   | Timing | NWFFACIM | Study Group | Jul 23, 2017
  "   | Timing | NWFFACIM | Study Group | Sep 23, 2017
+ "   | Timing | NWFFACIM | Study Group | Oct 01, 2017
+ "   | Timing | NWFFACIM | Study Group | Oct 17, 2017
+ "   | Timing | NWFFACIM | Study Group | Dec 04, 2017
 Gail Leopold | Timing | WOM | WOH | Lesson 03
 " | Timing | WOM | WOH | Lesson 04
 " | Timing | WOM | WOH | Lesson 05
@@ -525,6 +528,7 @@ John Hempstead | Timing | WOM | Early | Walk with Me
 " | Timing | WOM | Early | Meaning of Ascension
 " | Timing | WOM | Early | Divine Feminine
 Ndivhuwo | Timing | WOM | WOH | Lesson 02
+" | Timing | WOM | WOH | Lesson 07
 " | Timing | WOM | WOH | Lesson 09
 " | Timing | WOM | WOH | Lesson 10
 " | Timing | WOM | Questions | WOH Lesson 01 Q2
@@ -536,6 +540,9 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | WOM | Questions | WOH Lesson 07 Q3
 " | Timing | WOM | Questions | WOH Lesson 07 Q4
 " | Timing | WOM | Questions | WOH Lesson 07 Q5
+" | Timing | WOM | Questions | WOH Lesson 08 Q1
+" | Timing | WOM | Questions | WOH Lesson 10 Q1
+" | Timing | WOM | Questions | WOH Lesson 12 Q2
 " | Timing | WOM | WOT | Lesson 08
 " | Timing | WOM | WOT | Lesson 10
 " | Timing | WOM | WOT | Lesson 11
@@ -700,6 +707,9 @@ Ken Hoover | Timing | NWFFACIM | Study Group | Mar 07, 2004
 " | Timing | NWFFACIM | Study Group | Feb 28, 2009
 " | Timing | NWFFACIM | Study Group | Mar 14, 2009
 " | Timing | NWFFACIM | Study Group | Mar 28, 2009
+" | Timing | NWFFACIM | Study Group | Apr 04, 2009
+" | Timing | NWFFACIM | Study Group | Apr 12, 2009
+" | Timing | NWFFACIM | Study Group | Apr 25, 2009
 " | Timing | NWFFACIM | Study Group | Oct 24, 2009
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009
