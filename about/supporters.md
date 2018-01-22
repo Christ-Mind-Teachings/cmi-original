@@ -42,6 +42,8 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Jun 29, 2003
  "   | Timing | NWFFACIM | Study Group | Jul 06, 2003
  "   | Timing | NWFFACIM | Study Group | Jul 13, 2003
+ "   | Timing | NWFFACIM | Study Group | Jul 20, 2003
+ "   | Timing | NWFFACIM | Study Group | Jul 27, 2003
  "   | Format | NWFFACIM | Study Group | Aug 03, 2003
  "   | Format | NWFFACIM | Study Group | Aug 10, 2003
  "   | Format | NWFFACIM | Study Group | Aug 17, 2003
@@ -554,6 +556,7 @@ Ndivhuwo | Timing | WOM | WOH | Lesson 02
 " | Timing | WOM | WOK | Lesson 07
 " | Timing | WOM | WOK | Lesson 08
 " | Timing | WOM | WOK | Lesson 09
+" | Timing | WOM | WOK | Lesson 11
 " | Timing | NWFFACIM  | Study Group | Oct 02, 2002
 " | Timing | NWFFACIM  | Study Group | Oct 10, 2002
 " | Timing | NWFFACIM  | Study Group | Oct 17, 2002

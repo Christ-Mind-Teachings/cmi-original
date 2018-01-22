@@ -548,12 +548,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "072003.js",
         "audio": "2003-07-20.mp3"
       },
       "fid": "072003/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -568,12 +569,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "072703.js",
         "audio": "2003-07-27.mp3"
       },
       "fid": "072703/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
