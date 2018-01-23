@@ -23224,6 +23224,25 @@ function addBookmarkToggleListener() {
   });
 }
 
+//the sidebar 'Bookmark' option - toggles display of
+//paragraph bookmarks
+function addParagraphNumberToggleListener() {
+  $(".paranum").on("click", function(e) {
+    e.preventDefault();
+    $(".transcript p i.bkmark").each(function(idx) {
+      var parent = $(this).parent();
+      var id = parent.attr("id");
+
+      if (parent.children("span.pnum").length > 0) {
+        parent.children("span.pnum").remove();
+      }
+      else {
+        parent.prepend(`<span class='pnum'>(${id})&nbsp;</span>`);
+      }
+    });
+  });
+}
+
 function addShowBookmarkDialogListener() {
   $(".list-bookmarks").on("click", function(e) {
     e.preventDefault();
@@ -23369,6 +23388,7 @@ module.exports = {
       showBookmarks();
       addBookmarkListener();
       addBookmarkToggleListener();
+      addParagraphNumberToggleListener();
     }
     else {
       //hide sidebar bookmark option
