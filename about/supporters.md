@@ -44,11 +44,17 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Jul 13, 2003
  "   | Timing | NWFFACIM | Study Group | Jul 20, 2003
  "   | Timing | NWFFACIM | Study Group | Jul 27, 2003
+ "   | Timing | NWFFACIM | Study Group | Aug 03, 2003
  "   | Format | NWFFACIM | Study Group | Aug 03, 2003
+ "   | Timing | NWFFACIM | Study Group | Aug 10, 2003
  "   | Format | NWFFACIM | Study Group | Aug 10, 2003
+ "   | Timing | NWFFACIM | Study Group | Aug 17, 2003
  "   | Format | NWFFACIM | Study Group | Aug 17, 2003
+ "   | Timing | NWFFACIM | Study Group | Aug 24, 2003
  "   | Format | NWFFACIM | Study Group | Aug 24, 2003
+ "   | Timing | NWFFACIM | Study Group | Aug 31, 2003
  "   | Format | NWFFACIM | Study Group | Aug 31, 2003
+ "   | Timing | NWFFACIM | Study Group | Sep 07, 2003
  "   | Format | NWFFACIM | Study Group | Sep 07, 2003
  "   | Format | NWFFACIM | Study Group | Sep 14, 2003
  "   | Format | NWFFACIM | Study Group | Sep 21, 2003

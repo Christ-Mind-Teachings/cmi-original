@@ -590,12 +590,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "080303.js",
         "audio": "2003-08-03.mp3"
       },
       "fid": "080303/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -610,12 +611,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "081003.js",
         "audio": "2003-08-10.mp3"
       },
       "fid": "081003/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -630,12 +632,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "081703.js",
         "audio": "2003-08-17.mp3"
       },
       "fid": "081703/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -650,12 +653,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "082403.js",
         "audio": "2003-08-24.mp3"
       },
       "fid": "082403/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -670,12 +674,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "083103.js",
         "audio": "2003-08-31.mp3"
       },
       "fid": "083103/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -690,12 +695,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "090703.js",
         "audio": "2003-09-07.mp3"
       },
       "fid": "090703/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
