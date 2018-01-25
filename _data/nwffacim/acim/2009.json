@@ -250,11 +250,12 @@
       "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "timer": "Ken",
+        "timing": "050909.js",
         "audio": "2009-05-09.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
