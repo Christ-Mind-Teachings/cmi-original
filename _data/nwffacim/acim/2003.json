@@ -716,12 +716,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "091403.js",
         "audio": "2003-09-14.mp3"
       },
       "fid": "091403/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -736,12 +737,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "092103.js",
         "audio": "2003-09-21.mp3"
       },
       "fid": "092103/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
