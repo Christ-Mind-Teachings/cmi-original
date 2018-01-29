@@ -758,12 +758,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "092803.js",
         "audio": "2003-09-28.mp3"
       },
       "fid": "092803/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

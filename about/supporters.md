@@ -60,6 +60,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Sep 14, 2003
  "   | Timing | NWFFACIM | Study Group | Sep 21, 2003
  "   | Format | NWFFACIM | Study Group | Sep 21, 2003
+ "   | Timing | NWFFACIM | Study Group | Sep 28, 2003
  "   | Timing | NWFFACIM | Study Group | Oct 12, 2003
  "   | Format | NWFFACIM | Study Group | Oct 19, 2003
  "   | Format | NWFFACIM | Study Group | Oct 26, 2003
@@ -613,6 +614,8 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Jun 13, 2009
 " | Timing | NWFFACIM | Study Group | Jun 20, 2009
 " | Timing | NWFFACIM | Study Group | Jul 25, 2009
+" | Timing | NWFFACIM | Study Group | Nov 22, 2009
+" | Timing | NWFFACIM | Study Group | Nov 28, 2009
 " | Timing | NWFFACIM | Study Group | Jan 16, 2010
 " | Timing | NWFFACIM | Study Group | Jan 30, 2010
 " | Timing | NWFFACIM | Study Group | Feb 06, 2010
@@ -723,6 +726,8 @@ Ken Hoover | Timing | NWFFACIM | Study Group | Mar 07, 2004
 " | Timing | NWFFACIM | Study Group | Apr 12, 2009
 " | Timing | NWFFACIM | Study Group | Apr 25, 2009
 " | Timing | NWFFACIM | Study Group | May 09, 2009
+" | Timing | NWFFACIM | Study Group | May 24, 2009
+" | Timing | NWFFACIM | Study Group | May 31, 2009
 " | Timing | NWFFACIM | Study Group | Oct 24, 2009
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009

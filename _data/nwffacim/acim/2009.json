@@ -271,11 +271,12 @@
       "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "timer": "Ken",
+        "timing": "052409.js",
         "audio": "2009-05-24.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -291,11 +292,12 @@
       "desc": "T15.5 The Holy Instant and Special Relationships",
       "res": {
         "timer": "Ken",
+        "timing": "053109.js",
         "audio": "2009-05-31.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -660,11 +662,12 @@
       "desc": "T15.10 The End of Sacrifice",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "112209.js",
         "audio": "2009-11-22.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -680,11 +683,12 @@
       "desc": "T15.10 The End of Sacrifice",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "112809.js",
         "audio": "2009-11-28.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
