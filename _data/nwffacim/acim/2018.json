@@ -1,0 +1,38 @@
+{
+  "domain": {
+    "audio": "https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio/2018/"
+  },
+  "base": "/nwffacim/2018/",
+  "intro": "/nwffacim/intro/",
+  "title": "ACIM Study Group 2018",
+  "page": [
+    {
+      "intro": true,
+      "url": "/nwffacim/intro/2018/",
+      "idx": 0,
+      "title": "About 2018 Transcripts",
+      "next": "/nwffacim/2018/013118/",
+      "prev": "/nwffacim/2018/013118/",
+      "fid": "2018/"
+    },
+    {
+      "fid": "013118/",
+      "desc": "",
+      "res": {
+        "audio": "2018-01-31.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2018/013118/",
+      "idx": 1,
+      "title": "Jan 31, 2018",
+      "next": "/nwffacim/intro/2018/",
+      "prev": "/nwffacim/intro/2018/"
+    }
+  ]
+}

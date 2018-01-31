@@ -15,8 +15,19 @@ bid: "acimc"
 ## *ACIM* Study Group Transcripts
 
   <div class="lib-card-container-3">
-    <!-- 2017 -->
+    <!-- 2018 -->
     <div class="libcard new">
+      <div class="card-image-small">
+        <a title="Study Group 2018" href="/nwffacim/intro/2018/">
+          <img src="/public/img/nwffacim/study/2018.jpg">
+        </a>
+      </div>
+      <div class="card-copy">
+        <p> Current Year </p>
+      </div>
+    </div>
+    <!-- 2017 -->
+    <div class="libcard">
       <div class="card-image-small">
         <a title="Study Group 2017" href="/nwffacim/intro/2017/">
           <img src="/public/img/nwffacim/study/2017.jpg">
