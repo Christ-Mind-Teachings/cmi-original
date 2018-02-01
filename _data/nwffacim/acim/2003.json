@@ -799,12 +799,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "101903.js",
         "audio": "2003-10-19.mp3"
       },
       "fid": "101903/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -819,12 +820,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "102603.js",
         "audio": "2003-10-26.mp3"
       },
       "fid": "102603/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

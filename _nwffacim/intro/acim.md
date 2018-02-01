@@ -37,8 +37,6 @@ bid: "acimc"
         <p>
         Twelve sessions
         </p>
-        <p class="notice">Added Jan 12, 2018. See session listing for
-        status.</p>
       </div>
     </div>
     <!-- 2016 -->

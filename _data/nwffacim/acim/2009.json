@@ -518,7 +518,7 @@
       "fid": "091209/",
       "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
-        "timer": "Yodi.debebe",
+        "timer": "JoeBlake",
         "audio": "2009-09-12.mp3"
       },
       "complete": {
@@ -538,7 +538,7 @@
       "fid": "091909/",
       "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
-        "timer": "Yodi.debebe",
+        "timer": "JoeBlake",
         "audio": "2009-09-19.mp3"
       },
       "complete": {
@@ -558,7 +558,7 @@
       "fid": "092709/",
       "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
-        "timer": "Yodi.debebe",
+        "timer": "JoeBlake",
         "audio": "2009-09-27.mp3"
       },
       "complete": {
@@ -578,7 +578,7 @@
       "fid": "101009/",
       "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
-        "timer": "Yodi.debebe",
+        "timer": "JoeBlake",
         "audio": "2009-10-10.mp3"
       },
       "complete": {
@@ -704,11 +704,12 @@
       "desc": "T16.1 True Empathy",
       "res": {
         "timer": "Ken",
+        "timing": "120509.js",
         "audio": "2009-12-05.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
