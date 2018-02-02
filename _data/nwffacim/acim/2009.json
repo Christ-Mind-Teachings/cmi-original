@@ -519,11 +519,12 @@
       "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
         "timer": "JoeBlake",
+        "timing": "091209.js",
         "audio": "2009-09-12.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

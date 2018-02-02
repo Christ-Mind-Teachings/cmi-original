@@ -734,6 +734,7 @@ Ken Hoover | Timing | NWFFACIM | Study Group | Mar 07, 2004
 " | Timing | NWFFACIM | Study Group | Oct 31, 2009
 " | Timing | NWFFACIM | Study Group | Nov 14, 2009
 " | Timing | NWFFACIM | Study Group | Dec 05, 2009
+Joe Blake | Timing | NWFFACIM | Study Group | Sep 12, 2009
 
 
 
