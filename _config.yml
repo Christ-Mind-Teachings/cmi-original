@@ -9,6 +9,8 @@ baseurl:      ''
 keywords:     'Christ Mind, ACIM, Way of Mastery, Raj, Jesus, Christ, Love'
 home:         "/library/"
 port:         4040
+gems:
+  - jekyll-sitemap
 
 # About/contact
 author:
