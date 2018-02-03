@@ -841,12 +841,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "110203.js",
         "audio": "2003-11-02.mp3"
       },
       "fid": "110203/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
