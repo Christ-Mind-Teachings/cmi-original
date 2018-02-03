@@ -459,11 +459,12 @@
       "desc": "T15.7 The Holy Instant and Communication",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "080809.js",
         "audio": "2009-08-08.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
