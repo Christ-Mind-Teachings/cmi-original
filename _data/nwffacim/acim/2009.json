@@ -480,11 +480,12 @@
       "desc": "T15.7 The Holy Instant and Communication",
       "res": {
         "timer": "Yodi.debebe",
+        "timing": "082909.js",
         "audio": "2009-08-29.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -562,11 +563,12 @@
       "desc": "T15.8 The Holy Instant and Real Relationships",
       "res": {
         "timer": "JoeBlake",
+        "timing": "092709.js",
         "audio": "2009-09-27.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -728,11 +730,12 @@
       "desc": "T16.1 True Empathy",
       "res": {
         "timer": "Ken",
+        "timing": "121909.js",
         "audio": "2009-12-19.mp3"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

@@ -862,12 +862,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "110903.js",
         "audio": "2003-11-09.mp3"
       },
       "fid": "110903/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -902,12 +903,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "112303.js",
         "audio": "2003-11-23.mp3"
       },
       "fid": "112303/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -922,12 +924,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "120703.js",
         "audio": "2003-12-07.mp3"
       },
       "fid": "120703/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
