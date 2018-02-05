@@ -945,12 +945,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "121403.js",
         "audio": "2003-12-14.mp3"
       },
       "fid": "121403/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
@@ -965,12 +966,13 @@
     {
       "res": {
         "timer": "Julief8",
+        "timing": "122103.js",
         "audio": "2003-12-21.mp3"
       },
       "fid": "122103/",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
