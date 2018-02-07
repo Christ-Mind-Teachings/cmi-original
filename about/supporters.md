@@ -622,6 +622,7 @@ Yodi Debebe | Timing | NWFFACIM | Study Group | Jan 08, 2006
 " | Timing | NWFFACIM | Study Group | Jun 13, 2009
 " | Timing | NWFFACIM | Study Group | Jun 20, 2009
 " | Timing | NWFFACIM | Study Group | Jul 25, 2009
+" | Timing | NWFFACIM | Study Group | Aug 01, 2009
 " | Timing | NWFFACIM | Study Group | Aug 08, 2009
 " | Timing | NWFFACIM | Study Group | Aug 29, 2009
 " | Timing | NWFFACIM | Study Group | Sep 05, 2009
