@@ -268,7 +268,7 @@ function addBookmarkListener() {
 module.exports = {
   //bookmark.js
   initialize: function(audioStartTimeFunc) {
-    console.log("bookmark init");
+    //console.log("bookmark init");
 
     if ($(".transcript").length > 0) {
       setStartTime = audioStartTimeFunc;
@@ -277,6 +277,9 @@ module.exports = {
       addBookmarkListener();
       addBookmarkToggleListener();
       addParagraphNumberToggleListener();
+
+      //default: show paragraph numbers
+      $(".paranum").trigger("click");
     }
     else {
       //hide sidebar bookmark option

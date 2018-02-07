@@ -23370,7 +23370,7 @@ function addBookmarkListener() {
 module.exports = {
   //bookmark.js
   initialize: function(audioStartTimeFunc) {
-    console.log("bookmark init");
+    //console.log("bookmark init");
 
     if ($(".transcript").length > 0) {
       setStartTime = audioStartTimeFunc;
@@ -23379,6 +23379,9 @@ module.exports = {
       addBookmarkListener();
       addBookmarkToggleListener();
       addParagraphNumberToggleListener();
+
+      //default: show paragraph numbers
+      $(".paranum").trigger("click");
     }
     else {
       //hide sidebar bookmark option
@@ -24062,13 +24065,15 @@ function createPlayerDisplayToggle(config) {
 
   $(config.audioToggle).on("click", function(e) {
     e.preventDefault();
-    //$(config.hidePlayer).toggle();
     if ($(".audio-player-wrapper").hasClass("hide-player")) {
       $(".audio-player-wrapper").removeClass("hide-player");
     }
     else {
       $(".audio-player-wrapper").addClass("hide-player");
     }
+
+    //toggle paragraph play from here icons
+    $(".sidebar-nav-item.playmark").trigger("click");
   });
 }
 
@@ -24086,12 +24091,13 @@ function initPlayer(config) {
     audioElement.attr("src", audioUrl);
 
     //player controls when we have timing data
-    if (typeof window.cmi_audio_timing_data !== "undefined") {
-      features = ["playpause", "stop", "progress", "current"];
+    //if (typeof window.cmi_audio_timing_data !== "undefined") {
+    if (typeof window.cmiAudioTimingData !== "undefined") {
+      features = ["playpause", "current", "duration", "stop"];
     }
     //if we don"t allow time capture
     else if (!transcriptFormatComplete) {
-      features = ["playpause", "stop", "progress", "current"];
+      features = ["playpause", "current", "duration", "stop"];
     }
     //when user may capture time
     else {
