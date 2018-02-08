@@ -24093,11 +24093,11 @@ function initPlayer(config) {
     //player controls when we have timing data
     //if (typeof window.cmi_audio_timing_data !== "undefined") {
     if (typeof window.cmiAudioTimingData !== "undefined") {
-      features = ["playpause", "current", "duration", "stop"];
+      features = ["playpause", "current", "duration", "stop", "speed"];
     }
     //if we don"t allow time capture
     else if (!transcriptFormatComplete) {
-      features = ["playpause", "current", "duration", "stop"];
+      features = ["playpause", "current", "duration", "stop", "speed"];
     }
     //when user may capture time
     else {
