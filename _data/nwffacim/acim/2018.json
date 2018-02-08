@@ -17,12 +17,12 @@
     },
     {
       "fid": "013118/",
-      "desc": "",
+      "desc": "Discussion",
       "res": {
         "audio": "2018-01-31.mp3"
       },
       "complete": {
-        "format": 0,
+        "format": 1,
         "audio": 1,
         "index": 0,
         "fb": 0

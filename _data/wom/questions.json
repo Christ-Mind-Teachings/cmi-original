@@ -680,11 +680,12 @@
       "title": "Symbology of the Cross",
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
       "res": {
+        "timing": "h10q2.js",
         "audio": "Q10.02.mp3"
       },
       "url": "/wom/questions/h10q2/",
