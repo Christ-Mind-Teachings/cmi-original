@@ -16,6 +16,8 @@ var enabled = false;
 var seeking = false;
 var seekSnap = false;
 
+var disableScroll = false;
+
 //real or test data
 var timingData;
 
@@ -81,7 +83,9 @@ function showNscroll(idx) {
   var tinfo = timingData.time[idx];
 
   //scroll into view
-  scroll(document.getElementById(tinfo.id));
+  if (!disableScroll) {
+    scroll(document.getElementById(tinfo.id));
+  }
 
   if (prevptr > -1) {
     $("#" + timingData.time[prevptr].id).removeClass(hilightClass);
@@ -223,6 +227,25 @@ module.exports = {
       console.error("hilight.getTime(%s) failed to get paragraph start time.", p);
     }
     return pTime;
+  },
+
+  /*
+   * disable audio playback scroll
+   * - called when timing is taken on transcript that already has timing
+   * - this happens when the timing needs to be redone.
+   */
+  disableScroll: function() {
+    //if there is timing data
+    if (enabled) {
+      disableScroll = true;
+    }
+  },
+
+  enableScroll: function() {
+    //if there is timing data
+    if (enabled) {
+      disableScroll = false;
+    }
   }
 
 };

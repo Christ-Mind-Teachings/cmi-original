@@ -23781,7 +23781,7 @@ function toggleMarkers() {
   var fa = $(".transcript p i.timing");
   //var fa = $(".transcript p i.fa");
 
-  //create markers is not on page
+  //create markers if not on page
   //- do markers exist?
   if (fa.length !== 0) {
     //yes - toggle display
@@ -23789,9 +23789,15 @@ function toggleMarkers() {
     $(".transcript p i.timing").toggle();
     if ($(".transcript").hasClass("capture")) {
       $(".transcript").removeClass("capture");
+
+      console.log("enable audio playback scroll");
+      hilight.enableScroll();
     }
     else {
       $(".transcript").addClass("capture");
+
+      console.log("disable audio playback scroll");
+      hilight.disableScroll();
     }
   }
   else if (typeof ids !== "undefined") {
@@ -23800,6 +23806,10 @@ function toggleMarkers() {
         $(this).prepend("<i class='timing fa fa-2x fa-border fa-pull-left " + markerIcon + "'></i>");
       }
     });
+
+    //
+    console.log("disable audio playback scroll");
+    hilight.disableScroll();
 
     //automatically record a time of 0 for paragraph 0. This allows user to change
     //the p0 time when it doesn"t start at 0.
@@ -23904,6 +23914,8 @@ var enabled = false;
 var seeking = false;
 var seekSnap = false;
 
+var disableScroll = false;
+
 //real or test data
 var timingData;
 
@@ -23969,7 +23981,9 @@ function showNscroll(idx) {
   var tinfo = timingData.time[idx];
 
   //scroll into view
-  scroll(document.getElementById(tinfo.id));
+  if (!disableScroll) {
+    scroll(document.getElementById(tinfo.id));
+  }
 
   if (prevptr > -1) {
     $("#" + timingData.time[prevptr].id).removeClass(hilightClass);
@@ -24111,6 +24125,25 @@ module.exports = {
       console.error("hilight.getTime(%s) failed to get paragraph start time.", p);
     }
     return pTime;
+  },
+
+  /*
+   * disable audio playback scroll
+   * - called when timing is taken on transcript that already has timing
+   * - this happens when the timing needs to be redone.
+   */
+  disableScroll: function() {
+    //if there is timing data
+    if (enabled) {
+      disableScroll = true;
+    }
+  },
+
+  enableScroll: function() {
+    //if there is timing data
+    if (enabled) {
+      disableScroll = false;
+    }
   }
 
 };
