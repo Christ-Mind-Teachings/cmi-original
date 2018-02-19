@@ -18,6 +18,10 @@ var audioPlaying = false;
 var captureRequested = false;
 var captureId = "";
 
+var haveTimingData = false;
+var isEditor = false;
+var markerIcon = "fa-bullseye";
+
 var increaseSpeed = true;
 
 function DeleteException(message) {
@@ -43,15 +47,27 @@ function autoCapture(o) {
 
 //called only when captureRequested == true
 function markParagraph(o) {
-  var pi = $("#" + o.id).children("i");
+  var pi = $("#" + o.id).children("i.timing");
   var captureLength;
 
   if (!captureRequested) {
     return;
   }
 
-  //mark as captured
-  if (pi.hasClass("fa-bullseye")) {
+  /*
+   * The markerIcon will be fa-bullseye or fa-clock. It's fa-clock
+   * when we are editing timing data and not collecting it new.
+   * The fa-clock marker indicates we have a time for the data point and a
+   * check indicates we have recorded a new time. If the time is removed,
+   * by clicking the check we show that as a bullseye.
+   */
+  if (pi.hasClass(markerIcon)) {
+    pi.removeClass(markerIcon).addClass("fa-check");
+    capture.add(o);
+    //timeTest.enable();
+    console.log("%s captured at %s", o.id, o.seconds);
+  }
+  else if (pi.hasClass("fa-bullseye")) {
     pi.removeClass("fa-bullseye").addClass("fa-check");
     capture.add(o);
     //timeTest.enable();
@@ -59,6 +75,7 @@ function markParagraph(o) {
   }
   //user clicked a captured paragraph, mark for delete
   else if (pi.hasClass("fa-check")) {
+    //pi.removeClass("fa-check").addClass(markerIcon);
     pi.removeClass("fa-check").addClass("fa-bullseye");
 
     captureLength = capture.remove(o);
@@ -67,9 +84,6 @@ function markParagraph(o) {
     }
     else {
       console.log("%s deleted at %s", o.id, o.seconds);
-      if (captureLength < 2) {
-        //timeTest.disable();
-      }
     }
   }
   else {
@@ -85,7 +99,9 @@ function markParagraph(o) {
 }
 
 //add option to sidebar to capture audio play time
-function enableSidebarTimeCapture() {
+function enableSidebarTimeCapture(htd, isEd) {
+
+  //console.log("enableTimeCapture: haveTimingData: %s, isEditor: %s", haveTimingData, isEditor);
 
   //transcript_format_complete is defined globally
   if (!transcriptFormatComplete) {
@@ -93,93 +109,115 @@ function enableSidebarTimeCapture() {
     return;
   }
 
-  //check if timing data collection is reserved to a specific user
-  var pageInfo = config.getInfo(location.pathname);
-  //console.log("Page Info: ", pageInfo);
-  if (pageInfo.timer && pageInfo.timer !== "none") {
+  //set globla value
+  haveTimingData = htd;
+  isEditor = isEd;
+  markerIcon = htd ? "fa-clock-o": "fa-bullseye";
 
-    //don't enable time collection if current user is not registered user
-    var userInfo = store.get("userInfo");
-    if (!userInfo) {
-      //user not registered
-      console.log("capture disabled, assigned to: %s", pageInfo.timer);
-      return;
-    }
+  if (haveTimingData) {
+    capture.initAudioTimes(window.cmiAudioTimingData.time);
+  }
 
-    if (userInfo.uid !== pageInfo.timer) {
-      //user not assigned to data collection for this page
-      console.log("capture disabled, assigned to: %s", pageInfo.timer);
-      return;
+  /*
+   * if we don't have timing data we set up time capture if there is no
+   * reservation or if the user has the session reserved
+   */
+  if (!haveTimingData) {
+    //check if timing data collection is reserved to a specific user
+    var pageInfo = config.getInfo(location.pathname);
+    //console.log("Page Info: ", pageInfo);
+    if (pageInfo.timer && pageInfo.timer !== "none") {
+
+      //don't enable time collection if current user is not registered user
+      var userInfo = store.get("userInfo");
+      if (!userInfo) {
+        //user not registered
+        console.log("capture disabled, assigned to: %s", pageInfo.timer);
+        return;
+      }
+
+      if (userInfo.uid !== pageInfo.timer) {
+        //user not assigned to data collection for this page
+        console.log("capture disabled, assigned to: %s", pageInfo.timer);
+        return;
+      }
     }
   }
 
-  //show sidebar menu option
-  $(".pmarker-wrapper").css("display", "block");
+  /*
+   * Enable time capture if we don't have timing data or if we do
+   * and the user in an editor
+   */
+  if (!haveTimingData || (haveTimingData && isEditor)) {
 
-  //toggle display of paragraph markers used
-  //to record audio playback time
-  //console.log("setting up .pmarker-toggle listener");
-  $(".pmarker-toggle").on("click", function(e) {
-    var ct = $(".pmarker-toggle");
-    e.preventDefault();
-    if (ct.children("i").hasClass("fa-toggle-off")) {
-      ct.html("<i class='fa fa-toggle-on'></i>&nbsp;Disable Time Capture");
-    }
-    else {
-      ct.html("<i class='fa fa-toggle-off'></i>&nbsp;Enable Time Capture");
-    }
+    //show sidebar menu option
+    $(".pmarker-wrapper").css("display", "block");
 
-    toggleMarkers();
-  });
+    //toggle display of paragraph markers used
+    //to record audio playback time
+    //console.log("setting up .pmarker-toggle listener");
+    $(".pmarker-toggle").on("click", function(e) {
+      var ct = $(".pmarker-toggle");
+      e.preventDefault();
+      if (ct.children("i").hasClass("fa-toggle-off")) {
+        ct.html("<i class='fa fa-toggle-on'></i>&nbsp;Disable Time Capture");
+      }
+      else {
+        ct.html("<i class='fa fa-toggle-off'></i>&nbsp;Enable Time Capture");
+      }
 
-  //init unsubmitted data warning
-  ays.init();
+      toggleMarkers();
+    });
 
-  $(".time-lister").on("click", function(e) {
-    var data;
-    e.preventDefault();
+    //init unsubmitted data warning
+    ays.init();
 
-    if (capture.length() < 2) {
-      data = "No data captured yet.";
-    }
-    else {
-      data = JSON.stringify(capture.getData());
-      data = "var cmiAudioTimingData = " + data + ";";
-    }
+    $(".time-lister").on("click", function(e) {
+      var data;
+      e.preventDefault();
 
-    $("#audio-data-form").attr("action", capture.getBase());
-    $("#captured-audio-data").html(data);
-    $(".submit-message").html("");
-    $("#modal-1").trigger("click");
-  });
+      if (capture.length() < 2) {
+        data = "No data captured yet.";
+      }
+      else {
+        data = JSON.stringify(capture.getData());
+        data = "var cmiAudioTimingData = " + data + ";";
+      }
 
-  //initialize modal window
-  modal.initialize("#modal-1");
+      $("#audio-data-form").attr("action", capture.getBase());
+      $("#captured-audio-data").html(data);
+      $(".submit-message").html("");
+      $("#modal-1").trigger("click");
+    });
 
-  //submit time submit form in modal window
-  $("#audio-data-form").submit(function(e) {
-    e.preventDefault();
+    //initialize modal window
+    modal.initialize("#modal-1");
 
-    //if no data yet captured, cancel submit
-    if (capture.length() < 2) {
-      $(".submit-message").html("No data captured yet!");
-      return;
-    }
+    //submit time submit form in modal window
+    $("#audio-data-form").submit(function(e) {
+      e.preventDefault();
 
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize())
-      //.then(function() {
-      .done(function() {
-        notify.success("Thank you!");
-        $(".modal-close").trigger("click");
+      //if no data yet captured, cancel submit
+      if (capture.length() < 2) {
+        $(".submit-message").html("No data captured yet!");
+        return;
+      }
 
-        //signal data submitted
-        ays.dataEvent(0);
-      })
-      .fail(function(e) {
-        $(".submit-message").html("Drat! Your submit failed.");
-      });
-  });
+      var $form = $(this);
+      $.post($form.attr("action"), $form.serialize())
+        //.then(function() {
+        .done(function() {
+          notify.success("Thank you!");
+          $(".modal-close").trigger("click");
+
+          //signal data submitted
+          ays.dataEvent(0);
+        })
+        .fail(function(e) {
+          $(".submit-message").html("Drat! Your submit failed.");
+        });
+    });
+  }
 }
 
 //create listeners for each paragraph and
@@ -275,7 +313,7 @@ function toggleMarkers() {
   else if (typeof ids !== "undefined") {
     $(".transcript p").each(function(idx) {
       if (!$(this).hasClass("omit")) {
-        $(this).prepend("<i class='timing fa fa-2x fa-border fa-pull-left fa-bullseye'></i>");
+        $(this).prepend("<i class='timing fa fa-2x fa-border fa-pull-left " + markerIcon + "'></i>");
       }
     });
 
@@ -293,7 +331,7 @@ module.exports = {
 
   initialize: function(player) {
     var captureOptions = {
-      base: window.location.pathname,
+      base: location.pathname,
       title: $(".post-title").text()
     };
 
