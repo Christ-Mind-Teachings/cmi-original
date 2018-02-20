@@ -570,7 +570,7 @@
       },
       "complete": {
         "format": 1,
-        "audio": 2,
+        "audio": 3,
         "index": 1,
         "fb": 0
       },

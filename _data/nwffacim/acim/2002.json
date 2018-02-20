@@ -63,7 +63,7 @@
         "index": 1,
         "fb": 0
       },
-      "desc": "T1.In Introduction",
+      "desc": "T1.In Introduction and Meaning of Miracles",
       "res": {
         "audio": "2002-08-07.mp3",
         "timing": "080702.js"
@@ -99,7 +99,7 @@
         "index": 1,
         "fb": 0
       },
-      "desc": "T1.I Principles of Miracles, Principle 33",
+      "desc": "T1.I Principles of Miracles, Principle 33-41",
       "res": {
         "audio": "2002-08-28.mp3",
         "timing": "082802.js"
@@ -119,7 +119,7 @@
         "index": 1,
         "fb": 0
       },
-      "desc": "T1.I Principles of Miracles, Principle 42",
+      "desc": "T1.I Principles of Miracles, Principle 42-46",
       "res": {
         "audio": "2002-09-04.mp3",
         "timing": "090402.js"
@@ -195,7 +195,7 @@
       "fid": "100202/",
       "complete": {
         "format": 1,
-        "audio": 2,
+        "audio": 3,
         "index": 1,
         "fb": 0
       },
@@ -216,7 +216,7 @@
       "desc": "T1.V Wholeness and Spirit",
       "complete": {
         "format": 1,
-        "audio": 2,
+        "audio": 3,
         "index": 1,
         "fb": 0
       },
@@ -313,7 +313,7 @@
     },
     {
       "fid": "112102/",
-      "desc": "Discussion",
+      "desc": "It's All About Gift",
       "complete": {
         "format": 1,
         "audio": 2,
