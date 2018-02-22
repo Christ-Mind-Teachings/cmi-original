@@ -1636,17 +1636,19 @@
         {
           "url": "chap1500/",
           "ref": "T15",
-          "title": "Introduction"
+          "title": "Introduction",
+          "nwffacim": [
+            {
+              "title": "Oct 26, 2008",
+              "url": "/nwffacim/2008/102608/"
+            }
+          ]
         },
         {
           "ref": "T15.1",
           "url": "chap1501/",
           "title": "The Uses of Time",
           "nwffacim": [
-            {
-              "title": "Oct 26, 2008",
-              "url": "/nwffacim/2008/102608/"
-            },
             {
               "title": "Nov 02, 2008",
               "url": "/nwffacim/2008/110208/"
