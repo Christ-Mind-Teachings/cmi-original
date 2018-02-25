@@ -250,7 +250,13 @@
       "url": "/acim/manual/chap30/",
       "idx": 30,
       "next": "/acim/manual/chap31/",
-      "prev": "/acim/manual/chap29/"
+      "prev": "/acim/manual/chap29/",
+      "nwffacim": [
+        {
+          "title": "Apr 30, 2017",
+          "url": "/nwffacim/2017/043017/"
+        }
+      ]
     },
     {
       "fid": "chap31/",
