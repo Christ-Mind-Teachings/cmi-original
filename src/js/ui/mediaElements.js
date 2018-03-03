@@ -3,12 +3,17 @@
 var url = require("../util/url");
 var hilight = require("./hilight");
 var capture = require("./capture");
+var cmiConfig = require("../bundle/config/config");
+var store = require("store");
 
 var player;
 var playing = false;
 var audioStartTime = 0;
 var initialized = false;
 var haveTimingData = false;
+
+//indicates if user is an editor - can edit timing data
+var isEditor = false;
 
 function showPlayer() {
   if ($(".audio-player-wrapper").hasClass("hide-player")) {
@@ -18,16 +23,7 @@ function showPlayer() {
 
 //this is called only when we have audio timing data
 function initPlayFromHere() {
-  var store = require("store");
-
-  /*
-  var playFromHere = store.get("play-from-here");
-  console.log("playFromHere: %s", playFromHere);
-
-  if (!playFromHere) {
-    return;
-  }
-  */
+  console.log("initPlayFromHere()");
 
   // add markers to each paragraph
   $(".transcript p").each(function(idx) {
@@ -100,7 +96,17 @@ function initPlayer(config) {
     //player controls when we have timing data
     //if (typeof window.cmi_audio_timing_data !== "undefined") {
     if (typeof window.cmiAudioTimingData !== "undefined") {
-      features = ["playpause", "current", "duration", "stop", "speed"];
+      haveTimingData = true;
+
+      //if user is an editor and we have timing data it's possible the user
+      //will want to redo timing so we add controls used when timing
+      if (isEditor) {
+        //skipback and jumpforward not neede - use play-from-here controls
+        features = ["playpause", "current", "duration", "speed"];
+      }
+      else {
+        features = ["playpause", "current", "duration", "stop", "speed"];
+      }
     }
     //if we don"t allow time capture
     else if (!transcriptFormatComplete) {
@@ -111,6 +117,8 @@ function initPlayer(config) {
       //features = ["playpause", "stop", "current", "skipback", "jumpforward", "speed"];
       features = ["playpause", "current", "skipback", "jumpforward", "speed"];
     }
+
+    console.log("features: ", features);
 
     $("#cmi-audio-player").mediaelementplayer({
       pluginPath: "/public/js/lib/mediaelement/build/",
@@ -123,14 +131,15 @@ function initPlayer(config) {
         // - returns object indicating whether enabled and audio start time
         var hinfo = hilight.initialize(config.hilightClass);
 
-        //if we don"t have timing data enable support to get it
-        if (!hinfo.enabled) {
-          capture.enableSidebarTimeCapture();
+        //if we don't have timing data enable support to get it or
+        //if we do have timing data and the user is an editor enable
+        //support to modify the timing
+        if (!hinfo.enabled || (hinfo.enabled && isEditor)) {
+          capture.enableSidebarTimeCapture(hinfo.enabled, isEditor);
         }
         else {
           //we've got timing data
           audioStartTime = hinfo.startTime;
-          haveTimingData = true;
         }
       }
     });
@@ -249,6 +258,14 @@ function setStartTime(p) {
 module.exports = {
   //mediaElements.js
   initialize: function(config) {
+    var userInfo = store.get("userInfo");
+
+    if (userInfo) {
+      console.log("userInfo: ", userInfo);
+      isEditor = cmiConfig.isEditor(userInfo.uid);
+      console.log("user %s is an editor? %s", userInfo.uid, isEditor);
+    }
+
     init(config);
 
     if (haveTimingData) {

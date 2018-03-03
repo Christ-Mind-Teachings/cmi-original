@@ -1,0 +1,53 @@
+var cmiAudioTimingData = {
+    "base": "/nwffacim/2018/022818/",
+    "title": "Feb 29, 2018 Audio Test",
+    "time": [{
+        "id": "p0",
+        "seconds": 0
+    }, {
+        "id": "p1",
+        "seconds": 23.956073
+    }, {
+        "id": "p2",
+        "seconds": 47.467351
+    }, {
+        "id": "p3",
+        "seconds": 60.953975
+    }, {
+        "id": "p4",
+        "seconds": 90.461453
+    }, {
+        "id": "p5",
+        "seconds": 125.469452
+    }, {
+        "id": "p6",
+        "seconds": 130.718005
+    }, {
+        "id": "p7",
+        "seconds": 150.202987
+    }, {
+        "id": "p8",
+        "seconds": 239.699134
+    }, {
+        "id": "p9",
+        "seconds": 263.209389
+    }, {
+        "id": "p10",
+        "seconds": 302.968498
+    }, {
+        "id": "p11",
+        "seconds": 345.466532
+    }, {
+        "id": "p12",
+        "seconds": 478.454424
+    }, {
+        "id": "p13",
+        "seconds": 501.198966
+    }, {
+        "id": "p14",
+        "seconds": 523.716104
+    }, {
+        "id": "p15",
+        "seconds": 573.702549
+    }]
+};

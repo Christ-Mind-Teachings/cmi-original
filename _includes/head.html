@@ -36,13 +36,15 @@
 
   <script src="/public/js/lib/jQuery/jquery.min.js"></script>
   {% include script/load-media-elements.html %}
-  {% include script/load-hypothesis.html %}
   {% include script/load-webclip.html %}
   {% include script/select2.html %}
   <script src="/public/js/cmi.js"></script>
 
   <!-- google -->
   {% include script/analytics.html %}
+
+  {% comment %}
+  {% include script/load-hypothesis.html %}
 
   {% if page.hypothesis %}
   <!-- hypothesis -->
@@ -54,5 +56,6 @@
   </script>
   <script src="https://hypothes.is/embed.js" async></script>
   {% endif %}
+  {% endcomment %}
 
 </head>

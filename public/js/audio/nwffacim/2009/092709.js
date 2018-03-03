@@ -1,9 +1,8 @@
 var cmiAudioTimingData = {
-    "base": "/nwffacim/2009/092709/",
-    "title": "Sep 27, 2009 T15.8 The Holy Instant and Real Relationships",
     "time": [{
         "id": "p0",
-        "seconds": 0
+        "seconds": 0,
+        "prevTime": 0
     }, {
         "id": "p1",
         "seconds": 13.105478
@@ -267,102 +266,136 @@ var cmiAudioTimingData = {
         "seconds": 2697.375812
     }, {
         "id": "p88",
-        "seconds": 2701.128218
+        "seconds": 2700.881702914
     }, {
         "id": "p89",
-        "seconds": 2742.130619
+        "seconds": 2740.804582127,
+        "prevTime": 2742.130619
     }, {
         "id": "p90",
-        "seconds": 2753.116878
+        "seconds": 2752.865902006,
+        "prevTime": 2753.116878
     }, {
         "id": "p91",
-        "seconds": 2755.384168
+        "seconds": 2755.627164886,
+        "prevTime": 2755.384168
     }, {
         "id": "p92",
-        "seconds": 2757.621549
+        "seconds": 2757.383833676,
+        "prevTime": 2757.621549
     }, {
         "id": "p93",
-        "seconds": 2759.374091
+        "seconds": 2758.388896463,
+        "prevTime": 2759.374091
     }, {
         "id": "p94",
-        "seconds": 2763.366878
+        "seconds": 2759.89534141,
+        "prevTime": 2763.366878
     }, {
         "id": "p95",
-        "seconds": 2849.123871
+        "seconds": 2852.31194785,
+        "prevTime": 2849.123871
     }, {
         "id": "p96",
-        "seconds": 2860.111175
+        "seconds": 2872.900892152,
+        "prevTime": 2860.111175
     }, {
         "id": "p97",
-        "seconds": 2931.361268
+        "seconds": 2944.213722605,
+        "prevTime": 2931.361268
     }, {
         "id": "p98",
-        "seconds": 2977.87061
+        "seconds": 2989.414482008,
+        "prevTime": 2977.87061
     }, {
         "id": "p99",
-        "seconds": 3050.363263
+        "seconds": 3062.492644565,
+        "prevTime": 3050.363263
     }, {
         "id": "p100",
-        "seconds": 3104.860315
+        "seconds": 3111.958647635,
+        "prevTime": 3104.860315
     }, {
         "id": "p101",
-        "seconds": 3131.113265
+        "seconds": 3142.842469797,
+        "prevTime": 3131.113265
     }, {
         "id": "p102",
-        "seconds": 3219.357912
+        "seconds": 3231.231523194,
+        "prevTime": 3219.357912
     }, {
         "id": "p103",
-        "seconds": 3237.375732
+        "seconds": 3249.058235393,
+        "prevTime": 3237.375732
     }, {
         "id": "p104",
-        "seconds": 3290.123515
+        "seconds": 3301.034110879,
+        "prevTime": 3290.123515
     }, {
         "id": "p105",
-        "seconds": 3304.366347
+        "seconds": 3315.595919508,
+        "prevTime": 3304.366347
     }, {
         "id": "p106",
-        "seconds": 3313.621245
+        "seconds": 3323.128522808,
+        "prevTime": 3313.621245
     }, {
         "id": "p107",
-        "seconds": 3324.116483
+        "seconds": 3335.683591034,
+        "prevTime": 3324.116483
     }, {
         "id": "p108",
-        "seconds": 3327.377367
+        "seconds": 3339.952708024,
+        "prevTime": 3327.377367
     }, {
         "id": "p109",
-        "seconds": 3329.619658
+        "seconds": 3341.961758496,
+        "prevTime": 3329.619658
     }, {
         "id": "p110",
-        "seconds": 3345.619206
+        "seconds": 3357.028334003,
+        "prevTime": 3345.619206
     }, {
         "id": "p111",
-        "seconds": 3401.624737
+        "seconds": 3413.023641922,
+        "prevTime": 3401.624737
     }, {
         "id": "p112",
-        "seconds": 3414.359181
+        "seconds": 3427.58646604,
+        "prevTime": 3414.359181
     }, {
         "id": "p113",
-        "seconds": 3425.610905
+        "seconds": 3435.632029653,
+        "prevTime": 3425.610905
     }, {
         "id": "p114",
-        "seconds": 3437.126782
+        "seconds": 3448.943485994,
+        "prevTime": 3437.126782
     }, {
         "id": "p115",
-        "seconds": 3468.879642
+        "seconds": 3478.319514744,
+        "prevTime": 3468.879642
     }, {
         "id": "p116",
-        "seconds": 3475.626732
+        "seconds": 3487.861290062,
+        "prevTime": 3475.626732
     }, {
         "id": "p117",
-        "seconds": 3509.620746
+        "seconds": 3519.245916526,
+        "prevTime": 3509.620746
     }, {
         "id": "p118",
-        "seconds": 3573.616213
+        "seconds": 3581.006822966,
+        "prevTime": 3573.616213
     }, {
         "id": "p119",
-        "seconds": 3658.624286
+        "seconds": 3666.3867502,
+        "prevTime": 3658.624286
     }, {
         "id": "p120",
-        "seconds": 3673.114447
-    }]
+        "seconds": 3682.706130491,
+        "prevTime": 3673.114447
+    }],
+    "base": "/nwffacim/2009/092709/",
+    "title": "Sep 27, 2009 T15.8 The Holy Instant and Real Relationships"
 };

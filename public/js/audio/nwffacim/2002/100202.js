@@ -846,8 +846,8 @@ var cmiAudioTimingData = {
         "prevTime": 4282.850967
     }, {
         "id": "p215",
-        "seconds": 4310.274487967,
-        "prevTime": 4310.284050081
+        "seconds": 4310.284050081,
+        "prevTime": 4290.087534
     }, {
         "id": "p216",
         "seconds": 4378.327414697,
