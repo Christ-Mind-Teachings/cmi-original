@@ -352,10 +352,12 @@
     {
       "fid": "051604/",
       "desc": "T7.6 From Vigilance to Peace",
-      "note": "celestialrealm.com references 2004-05-02.mp3 instead of May 16",
+      "res": {
+        "audio": "051604.mp3"
+      },
       "complete": {
         "format": 1,
-        "audio": 0,
+        "audio": 1,
         "index": 1,
         "fb": 0
       },
