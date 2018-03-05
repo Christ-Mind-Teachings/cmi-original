@@ -25,6 +25,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Timing | NWFFACIM | Study Group | Dec 05, 2002
  "   | Timing | NWFFACIM | Study Group | Dec 12, 2002
  "   | Timing | NWFFACIM | Study Group | Jan 02, 2003
+ "   | Timing | NWFFACIM | Study Group | Jan 23, 2003
  "   | Timing | NWFFACIM | Study Group | Mar 13, 2003
  "   | Timing | NWFFACIM | Study Group | Mar 20, 2003
  "   | Timing | NWFFACIM | Study Group | Mar 27, 2003
@@ -95,6 +96,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Apr 25, 2004
  "   | Format | NWFFACIM | Study Group | May 02, 2004
  "   | Format | NWFFACIM | Study Group | May 09, 2004
+ "   | Timing | NWFFACIM | Study Group | May 16, 2004
  "   | Format | NWFFACIM | Study Group | May 16, 2004
  "   | Format | NWFFACIM | Study Group | May 30, 2004
  "   | Format | NWFFACIM | Study Group | Jun 13, 2004
@@ -344,6 +346,7 @@ Julie Franklin | Timing | NWFFACIM | Study Group | Jul 31, 2002
  "   | Format | NWFFACIM | Study Group | Jan 01, 2011
  "   | Timing | NWFFACIM | Study Group | Jan 08, 2011
  "   | Format | NWFFACIM | Study Group | Jan 08, 2011
+ "   | Timing | NWFFACIM | Study Group | Jan 15, 2011
  "   | Timing | NWFFACIM | Study Group | Jan 22, 2011
  "   | Format | NWFFACIM | Study Group | Jan 22, 2011
  "   | Timing | NWFFACIM | Study Group | Feb 05, 2011

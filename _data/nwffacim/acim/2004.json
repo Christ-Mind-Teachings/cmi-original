@@ -353,11 +353,12 @@
       "fid": "051604/",
       "desc": "T7.6 From Vigilance to Peace",
       "res": {
-        "audio": "051604.mp3"
+        "audio": "051604.mp3",
+        "timing": "051604.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },

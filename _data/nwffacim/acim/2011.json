@@ -59,11 +59,12 @@
       "fid": "011511/",
       "desc": "Discussion",
       "res": {
-        "audio": "011511.mp3"
+        "audio": "011511.mp3",
+        "timing": "011511.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 1,
         "fb": 0
       },
