@@ -39,11 +39,12 @@
       "fid": "031118/",
       "desc": "Discussion",
       "res": {
-        "audio": "2018-03-11.mp3"
+        "audio": "2018-03-11.mp3",
+        "timing": "031118.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
