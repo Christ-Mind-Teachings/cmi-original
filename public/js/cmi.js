@@ -21509,7 +21509,7 @@ var store = require("store");
 var _ = require("underscore");
 
 var cmiConfig;
-var apiEndpoint = "https://r70r21lpv0.execute-api.us-east-1.amazonaws.com/latest/search";
+var apiEndpoint = "https://d9lsdwxpfg.execute-api.us-east-1.amazonaws.com/latest/search";
 var idxEndpoint = "https://4r9azgy1hb.execute-api.us-east-1.amazonaws.com/latest/index";
 
 function getSourceEditors(sid) {
