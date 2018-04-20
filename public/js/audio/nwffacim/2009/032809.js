@@ -1,6 +1,4 @@
 var cmiAudioTimingData = {
-    "base": "/nwffacim/2009/032809/",
-    "title": "Mar 28, 2009 T15.4 Practicing the Holy Instant",
     "time": [{
         "id": "p0",
         "seconds": 0,
@@ -347,164 +345,208 @@ var cmiAudioTimingData = {
         "prevTime": 2435.955997
     }, {
         "id": "p89",
-        "seconds": 2432.968329,
-        "prevTime": 2443.910185
+        "seconds": 2432.406063,
+        "prevTime": 2432.968329
     }, {
         "id": "p90",
-        "seconds": 2434.4628,
-        "prevTime": 2445.897081
+        "seconds": 2433.918317,
+        "prevTime": 2434.4628
     }, {
         "id": "p91",
-        "seconds": 2454.214606,
-        "prevTime": 2466.034206
+        "seconds": 2454.15249,
+        "prevTime": 2454.214606
     }, {
         "id": "p92",
-        "seconds": 2478.402929
+        "seconds": 2477.66219,
+        "prevTime": 2478.402929
     }, {
         "id": "p93",
-        "seconds": 2481.911602,
-        "prevTime": 2493.792935
+        "seconds": 2481.91702,
+        "prevTime": 2481.911602
     }, {
         "id": "p94",
-        "seconds": 2504.40109,
-        "prevTime": 2516.760101
+        "seconds": 2504.408391,
+        "prevTime": 2504.40109
     }, {
         "id": "p95",
-        "seconds": 2521.914566,
-        "prevTime": 2533.767747
+        "seconds": 2522.148541,
+        "prevTime": 2521.914566
     }, {
         "id": "p96",
-        "seconds": 2599.149294,
-        "prevTime": 2611.664393
+        "seconds": 2599.402382,
+        "prevTime": 2599.149294
     }, {
         "id": "p97",
-        "seconds": 2636.869456
+        "seconds": 2625.652263,
+        "prevTime": 2636.869456
     }, {
         "id": "p98",
-        "seconds": 2642.822414
+        "seconds": 2630.906524,
+        "prevTime": 2642.822414
     }, {
         "id": "p99",
-        "seconds": 2651.889414
+        "seconds": 2639.661709,
+        "prevTime": 2651.889414
     }, {
         "id": "p100",
-        "seconds": 2688.169664
+        "seconds": 2675.911546,
+        "prevTime": 2688.169664
     }, {
         "id": "p101",
-        "seconds": 2692.146789
+        "seconds": 2680.164045,
+        "prevTime": 2692.146789
     }, {
         "id": "p102",
-        "seconds": 2696.116247
+        "seconds": 2684.401594,
+        "prevTime": 2696.116247
     }, {
         "id": "p103",
-        "seconds": 2710.572685
+        "seconds": 2698.654732,
+        "prevTime": 2710.572685
     }, {
         "id": "p104",
-        "seconds": 2753.357476
+        "seconds": 2740.899946,
+        "prevTime": 2753.357476
     }, {
         "id": "p105",
-        "seconds": 2767.82006
+        "seconds": 2755.903161,
+        "prevTime": 2767.82006
     }, {
         "id": "p106",
-        "seconds": 2781.422914
+        "seconds": 2769.169803,
+        "prevTime": 2781.422914
     }, {
         "id": "p107",
-        "seconds": 2807.775331
+        "seconds": 2795.667402,
+        "prevTime": 2807.775331
     }, {
         "id": "p108",
-        "seconds": 2820.259726
+        "seconds": 2808.156265,
+        "prevTime": 2820.259726
     }, {
         "id": "p109",
-        "seconds": 2831.602726
+        "seconds": 2820.151678,
+        "prevTime": 2831.602726
     }, {
         "id": "p110",
-        "seconds": 2839.430851
+        "seconds": 2828.159096,
+        "prevTime": 2839.430851
     }, {
         "id": "p111",
-        "seconds": 2891.892996
+        "seconds": 2879.663808,
+        "prevTime": 2891.892996
     }, {
         "id": "p112",
-        "seconds": 2900.411788
+        "seconds": 2888.670939,
+        "prevTime": 2900.411788
     }, {
         "id": "p113",
-        "seconds": 2922.538767
+        "seconds": 2910.167785,
+        "prevTime": 2922.538767
     }, {
         "id": "p114",
-        "seconds": 2927.077017
+        "seconds": 2915.417084,
+        "prevTime": 2927.077017
     }, {
         "id": "p115",
-        "seconds": 2928.219455
+        "seconds": 2916.660378,
+        "prevTime": 2928.219455
     }, {
         "id": "p116",
-        "seconds": 2932.19733
+        "seconds": 2920.417255,
+        "prevTime": 2932.19733
     }, {
         "id": "p117",
-        "seconds": 2940.989684
+        "seconds": 2929.400345,
+        "prevTime": 2940.989684
     }, {
         "id": "p118",
-        "seconds": 2958.271538
+        "seconds": 2946.913712,
+        "prevTime": 2958.271538
     }, {
         "id": "p119",
-        "seconds": 3006.150371
+        "seconds": 2993.666179,
+        "prevTime": 3006.150371
     }, {
         "id": "p120",
-        "seconds": 3033.637642
+        "seconds": 3018.986092,
+        "prevTime": 3033.637642
     }, {
         "id": "p121",
-        "seconds": 3066.809996
+        "seconds": 3051.499269,
+        "prevTime": 3066.809996
     }, {
         "id": "p122",
-        "seconds": 3140.20608
+        "seconds": 3124.752687,
+        "prevTime": 3140.20608
     }, {
         "id": "p123",
-        "seconds": 3147.012226
+        "seconds": 3132.736457,
+        "prevTime": 3147.012226
     }, {
         "id": "p124",
-        "seconds": 3148.430226
+        "seconds": 3134.252966,
+        "prevTime": 3148.430226
     }, {
         "id": "p125",
-        "seconds": 3166.586351
+        "seconds": 3152.494824,
+        "prevTime": 3166.586351
     }, {
         "id": "p126",
-        "seconds": 3196.633184
+        "seconds": 3181.252278,
+        "prevTime": 3196.633184
     }, {
         "id": "p127",
-        "seconds": 3218.737934
+        "seconds": 3204.243548,
+        "prevTime": 3218.737934
     }, {
         "id": "p128",
-        "seconds": 3221.580038
+        "seconds": 3207.501006,
+        "prevTime": 3221.580038
     }, {
         "id": "p129",
-        "seconds": 3226.69108
+        "seconds": 3212.480194,
+        "prevTime": 3226.69108
     }, {
         "id": "p130",
-        "seconds": 3232.933101
+        "seconds": 3216.983306,
+        "prevTime": 3232.933101
     }, {
         "id": "p131",
-        "seconds": 3242.005017
+        "seconds": 3228.253331,
+        "prevTime": 3242.005017
     }, {
         "id": "p132",
-        "seconds": 3271.774121
+        "seconds": 3257.739943,
+        "prevTime": 3271.774121
     }, {
         "id": "p133",
-        "seconds": 3273.478705
+        "seconds": 3259.484493,
+        "prevTime": 3273.478705
     }, {
         "id": "p134",
-        "seconds": 3295.020538
+        "seconds": 3280.2357,
+        "prevTime": 3295.020538
     }, {
         "id": "p135",
-        "seconds": 3339.790226
+        "seconds": 3325.24381,
+        "prevTime": 3339.790226
     }, {
         "id": "p136",
-        "seconds": 3391.358496
+        "seconds": 3376.494604,
+        "prevTime": 3391.358496
     }, {
         "id": "p137",
-        "seconds": 3470.980955
+        "seconds": 3455.990926,
+        "prevTime": 3470.980955
     }, {
         "id": "p138",
-        "seconds": 3495.623163
+        "seconds": 3479.75454,
+        "prevTime": 3495.623163
     }, {
         "id": "p139",
         "seconds": 3531.059392
-    }]
+    }],
+    "base": "/nwffacim/2009/032809/",
+    "title": "Mar 28, 2009 T15.4 Practicing the Holy Instant"
 };
-
