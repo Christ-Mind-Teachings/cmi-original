@@ -502,11 +502,11 @@
       "desc": "T19.4 The Obstacles to Peace",
       "res": {
         "audio": "2012-09-30.mp3",
-        "timing": "093012.js"
+        "xtiming": "093012.js"
       },
       "complete": {
         "format": 1,
-        "audio": 2,
+        "audio": 1,
         "index": 1,
         "fb": 0
       },
