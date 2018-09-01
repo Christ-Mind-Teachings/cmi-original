@@ -12,7 +12,7 @@
       "idx": 0,
       "title": "About 2018 Transcripts",
       "next": "/nwffacim/2018/013118/",
-      "prev": "/nwffacim/2018/081918/",
+      "prev": "/nwffacim/2018/082918/",
       "fid": "2018/"
     },
     {
@@ -59,11 +59,12 @@
       "fid": "081918/",
       "desc": "Discussion",
       "res": {
-        "audio": "2018-08-19.mp3"
+        "audio": "2018-08-19.mp3",
+        "timing": "081918.js"
       },
       "complete": {
         "format": 1,
-        "audio": 1,
+        "audio": 2,
         "index": 0,
         "fb": 0
       },
@@ -71,8 +72,27 @@
       "url": "/nwffacim/2018/081918/",
       "idx": 3,
       "title": "Aug 19, 2018",
-      "next": "/nwffacim/intro/2018/",
+      "next": "/nwffacim/2018/082918/",
       "prev": "/nwffacim/2018/031118/"
+    },
+    {
+      "fid": "082918/",
+      "desc": "Discussion",
+      "res": {
+        "audio": "2018-08-29.mp3"
+      },
+      "complete": {
+        "format": 0,
+        "audio": 1,
+        "index": 0,
+        "fb": 0
+      },
+      "intro": false,
+      "url": "/nwffacim/2018/082918/",
+      "idx": 4,
+      "title": "Aug 29, 2018",
+      "next": "/nwffacim/intro/2018/",
+      "prev": "/nwffacim/2018/081918/"
     }
   ]
 }
