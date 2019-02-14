@@ -120,6 +120,30 @@ module.exports = {
         width: 30
       };
 
+// ------------ start direct user to new site --------------
+      var url;
+      switch(source) {
+        case "wom":
+          url = "https://wom.christmind.info/";
+          break;
+        case "nwffacim":
+          url = "https://raj.christmind.info/";
+          break;
+        case "acim":
+          url = "https://acim.christmind.info/";
+          break;
+        default:
+          url = "https://acim.christmind.info/";
+          break;
+      }
+
+      $("#search-message").css({"color":"white", "background-color":"red"});
+
+      displayMessage("Please use the new search function! You will be redirected in 10 seconds. Click the <i class='fa fa-search'></i> icon in the menu bar to start.", true);
+      setInterval(function() {location.href=url;}, 10000);
+      return;
+// ------------ end direct user to new site --------------
+
       displayMessage("Please wait...", true);
       doSearch(queryInfo).then(function(response) {
         //console.log("query count: %s", response.data.count);
