@@ -6,7 +6,7 @@ load-search: true
 ---
 
 <h2 style="color:red">
-  Note: This Search Page Is No Longer Active
+  Note: Search has moved. See below for directions.
 </h2>
 
 <div style="font-size:1.2em">
