@@ -124,16 +124,16 @@ module.exports = {
       var url;
       switch(source) {
         case "wom":
-          url = "https://wom.christmind.info/";
+          url = "https://www.christmind.info/t/wom";
           break;
         case "nwffacim":
-          url = "https://raj.christmind.info/";
+          url = "https://www.christmind.info/t/raj";
           break;
         case "acim":
-          url = "https://acim.christmind.info/";
+          url = "https://www.christmind.info/t/acim";
           break;
         default:
-          url = "https://acim.christmind.info/";
+          url = "https://www.christmind.info/t/acim";
           break;
       }
 

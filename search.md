@@ -14,13 +14,13 @@ Please use the new search feature. Click the link below depending on
 what you want to search, then click the <i class="fa fa-search"></i> icon in the menu bar to start.
 <ul>
 <li>
-  <a href="https://acim.christmind.info/">ACIM Sparkly Edition</a>
+  <a href="https://www.christmind.info/t/acim">ACIM Sparkly Edition</a>
 </li>
 <li>
-  <a href="https://raj.christmind.info/">The Raj Material (NWFFACIM)</a>
+  <a href="https://www.christmind.info/t/raj">The Raj Material (NWFFACIM)</a>
 </li>
 <li>
-  <a href="https://wom.christmind.info/">The Way of Mastery</a>
+  <a href="https://www.christmind.info/t/wom">The Way of Mastery</a>
 </li>
 </ul>
 </div>
