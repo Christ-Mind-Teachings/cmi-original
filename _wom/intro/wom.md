@@ -46,7 +46,7 @@ here and include:
 - The core teaching - a compilation of a three year period of monthly messages.
     - [ Year One: *The Way of the Heart* ](/wom/intro/woh/)
     - [ Year Two: *The Way of Transformation* ](/wom/intro/wot/)
-    - [ Year Three: *The Way of Knowning* ](/wom/intro/wok/)
+    - [ Year Three: *The Way of Knowing* ](/wom/intro/wok/)
 
 Also available is:
 
