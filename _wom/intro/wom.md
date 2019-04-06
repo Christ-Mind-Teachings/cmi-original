@@ -24,6 +24,28 @@ fb:
 
 <div markdown="1" class="container content">
 
+  <div class="notice">
+    <h2>Please Note:</h2>
+    <p>
+      A new version of the Library is available at <a href="https://www.christmind.info">
+      https://www.christmind.info.</a> Please switch to that version because this one will
+      soon be shutdown.
+    </p>
+    <p>
+      If there is a reason why you prefer using this site instead
+      of the new one please let me know via the <a
+      href="https://www.christmind.info/acq/contact">contact form.</a>
+    </p>
+    <p>
+      Watch instructional videos to learn about using the new site. Videos can
+      be found at <a href="https://www.christmind.info/acq/video">
+        https://www.christmind.info/acq/video.</a>
+    </p>
+    <p>
+      Thanks, Rick Mercer
+    </p>
+  </div>
+
 # The Way of Mastery
 
 The *Way of Mastery* was birthed from the relationship between Jeshua
