@@ -1,6 +1,12 @@
 # Netlify url rewrite file
 # - used to comply with the DMCA Takedown Request from SCF over WOM content
 
+/nwffacim/*               https://www.christmind.info/t/raj
+/acim/*                   https://www.christmind.info/t/acim
+/wom/*                    https://www.christmind.info/t/wom
+/library/*                https://www.christmind.info/
+/                         https://www.christmind.info/
+
 # Way of the Heart
 # /wom/woh/l01  /about/scf 307
 # /wom/woh/l02  /about/scf 307
