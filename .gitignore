@@ -54,3 +54,6 @@ src/dist
 semantic.json
 semantic
 
+
+# Local Netlify folder
+.netlify

@@ -671,7 +671,7 @@ colors:
   turquoise: '#0fbfcf'
 
 # force inclusion of
-include: [_redirects, LICENSE.txt]
+include: [LICENSE.txt]
 
 # Exclusions from the final site
 exclude: [
