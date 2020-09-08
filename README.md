@@ -2,6 +2,8 @@
 
 ## Introduction
 
+THIS REPO IS RETIRED.
+
 Christmind.info is a library for learning and sharing inspiration from 
 contemporary teachings of Christ, of which there are many.
 
